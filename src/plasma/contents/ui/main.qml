@@ -29,12 +29,20 @@ Item
     Plasmoid.toolTipSubText: PkUpdates.message
     Plasmoid.icon: PkUpdates.iconName
 
+    property bool checkDaily: plasmoid.configuration.daily
+    property bool checkWeekly: plasmoid.configuration.weekly
+    property bool checkMonthly: plasmoid.configuration.monthly
+
+    readonly property int secsInDay: 60 * 60 * 24;
+    readonly property int secsInWeek: secsInDay * 7;
+    readonly property int secsInMonth: secsInDay * 30;
+
     Timer {
         id: timer
         repeat: true
         triggeredOnStart: true
-        interval: 1000 * 60 * 60 * 24; // 1 day
-        onTriggered: PkUpdates.checkUpdates()
+        interval: 1000 * 60 * 60; // 1 hour
+        onTriggered: PkUpdates.checkUpdates(needsForcedUpdate())
     }
 
     Binding {
@@ -53,6 +61,20 @@ Item
                 plasmoid.expanded = !plasmoid.expanded
             }
         }
+    }
+
+    function needsForcedUpdate() {
+        var secs = PkUpdates.secondsSinceLastRefresh();
+        if (secs === -1) { // never checked before
+            return true;
+        } else if (checkDaily) {
+            return secs >= secsInDay;
+        } else if (checkWeekly) {
+            return secs >= secsInWeek;
+        } else if (checkMonthly) {
+            return secs >= secsInMonth;
+        }
+        return false;
     }
 
     Component.onCompleted: {

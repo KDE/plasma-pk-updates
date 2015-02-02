@@ -170,6 +170,7 @@ int PkUpdates::secondsSinceLastRefresh() const
 {
     QDBusReply<uint> lastCheckReply = PackageKit::Daemon::getTimeSinceAction(PackageKit::Transaction::Role::RoleRefreshCache);
     if (lastCheckReply.isValid()) {
+        qDebug() << "Seconds since last refresh: " << lastCheckReply.value();
         if (lastCheckReply.value() != UINT_MAX) // not never
             return lastCheckReply.value();
     }
