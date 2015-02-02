@@ -160,11 +160,6 @@ void PkUpdates::reviewUpdates()
 
 void PkUpdates::getUpdates()
 {
-    if (m_updatesTrans) {
-        qDebug() << "Aborting update check while the transaction is still running:" << m_updatesTrans->isCallerActive();
-        return;
-    }
-
     m_updatesTrans = PackageKit::Daemon::getUpdates();
     setActive(true);
 
