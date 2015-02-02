@@ -33,10 +33,13 @@ Item {
     property alias cfg_daily: daily.checked
     property alias cfg_weekly: weekly.checked
     property alias cfg_monthly: monthly.checked
+    property alias cfg_check_on_mobile: mobile.checked
+    property alias cfg_check_on_battery: battery.checked
 
     Column {
         id: pageColumn
         spacing: units.smallSpacing
+
         GroupBox {
             ExclusiveGroup { id: intervalGroup }
             title: i18n("Check Interval")
@@ -58,6 +61,15 @@ Item {
                     exclusiveGroup: intervalGroup
                 }
             }
+        }
+
+        CheckBox {
+            id: mobile
+            text: i18n("Even on a mobile connection")
+        }
+        CheckBox {
+            id: battery
+            text: i18n("Even when on battery")
         }
     }
 }
