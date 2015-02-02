@@ -50,6 +50,8 @@ class PkUpdates : public QObject
     Q_PROPERTY(QString packageNames READ packageNames NOTIFY updatesChanged)
     Q_PROPERTY(QStringList packageIds READ packageIds NOTIFY updatesChanged)
     Q_PROPERTY(bool isActive READ isActive NOTIFY isActiveChanged)
+    Q_PROPERTY(bool isNetworkOnline READ isNetworkOnline NOTIFY networkStateChanged)
+    Q_PROPERTY(bool isNetworkMobile READ isNetworkMobile NOTIFY networkStateChanged)
 
 public:
     explicit PkUpdates(QObject *parent = 0);
@@ -115,6 +117,16 @@ public:
      */
     QStringList packageIds() const;
 
+    /**
+     * @return whether the network is online
+     */
+    bool isNetworkOnline() const;
+
+    /**
+     * @return whether we are on a mobile network connection (assumes isNetworkOnline())
+     */
+    bool isNetworkMobile() const;
+
 signals:
     /**
      * Emitted when the number uf updates has changed
@@ -131,6 +143,7 @@ signals:
     void timestampChanged();
     void isActiveChanged();
     void percentageChanged();
+    void networkStateChanged();
 
 public slots:
     /**
@@ -147,9 +160,9 @@ public slots:
     Q_INVOKABLE void reviewUpdates();
 
     /**
-      * @return the number of seconds elapsed from the last cache check
+      * @return the number of seconds elapsed from the last cache check, -1 if never
       */
-    Q_INVOKABLE int secondsSinceLastRefresh() const;
+    Q_INVOKABLE qint64 secondsSinceLastRefresh() const;
 
 private slots:
     void getUpdates();

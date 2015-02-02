@@ -33,6 +33,9 @@ Item
     property bool checkWeekly: plasmoid.configuration.weekly
     property bool checkMonthly: plasmoid.configuration.monthly
 
+    property bool checkOnMobile: plasmoid.configuration.check_on_mobile
+    property bool checkOnBattery: plasmoid.configuration.check_on_battery
+
     readonly property int secsInDay: 60 * 60 * 24;
     readonly property int secsInWeek: secsInDay * 7;
     readonly property int secsInMonth: secsInDay * 30;
@@ -42,7 +45,10 @@ Item
         repeat: true
         triggeredOnStart: true
         interval: 1000 * 60 * 60; // 1 hour
-        onTriggered: PkUpdates.checkUpdates(needsForcedUpdate())
+        onTriggered: {
+            if (networkAllowed())
+                PkUpdates.checkUpdates(needsForcedUpdate())
+        }
     }
 
     Binding {
@@ -75,6 +81,10 @@ Item
             return secs >= secsInMonth;
         }
         return false;
+    }
+
+    function networkAllowed() {
+        return PkUpdates.isNetworkMobile ? checkOnMobile : PkUpdates.isNetworkOnline
     }
 
     Component.onCompleted: {

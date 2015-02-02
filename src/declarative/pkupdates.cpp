@@ -39,6 +39,7 @@ PkUpdates::PkUpdates(QObject *parent) :
 
     connect(PackageKit::Daemon::global(), &PackageKit::Daemon::changed, this, &PkUpdates::onChanged);
     connect(PackageKit::Daemon::global(), &PackageKit::Daemon::updatesChanged, this, &PkUpdates::onUpdatesChanged);
+    connect(PackageKit::Daemon::global(), &PackageKit::Daemon::networkStateChanged, this, &PkUpdates::networkStateChanged);
 }
 
 PkUpdates::~PkUpdates()
@@ -135,6 +136,16 @@ QStringList PkUpdates::packageIds() const
     return m_updateList;
 }
 
+bool PkUpdates::isNetworkOnline() const
+{
+    return PackageKit::Daemon::networkState() > PackageKit::Daemon::Network::NetworkOffline;
+}
+
+bool PkUpdates::isNetworkMobile() const
+{
+    return PackageKit::Daemon::networkState() == PackageKit::Daemon::Network::NetworkMobile;
+}
+
 QString PkUpdates::timestamp() const
 {
     int lastCheck = secondsSinceLastRefresh();
@@ -166,7 +177,7 @@ void PkUpdates::reviewUpdates()
     // TODO
 }
 
-int PkUpdates::secondsSinceLastRefresh() const
+qint64 PkUpdates::secondsSinceLastRefresh() const
 {
     QDBusReply<uint> lastCheckReply = PackageKit::Daemon::getTimeSinceAction(PackageKit::Transaction::Role::RoleRefreshCache);
     if (lastCheckReply.isValid()) {
