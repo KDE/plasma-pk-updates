@@ -5,13 +5,12 @@ Comment=Get software updates
 
 Icon=system-software-update
 Type=Service
-X-KDE-ServiceTypes=Plasma/Applet
+X-KDE-ServiceTypes=Plasma/Applet,Plasma/PopupApplet
 
 X-Plasma-API=declarativeappletscript
 X-Plasma-MainScript=ui/main.qml
 
 X-Plasma-NotificationArea=true
-X-Plasma-DBusActivationService=org.freedesktop.PackageKit
 
 X-KDE-PluginInfo-Name=org.kde.plasma.pkupdates
 X-KDE-PluginInfo-Category=System Information
