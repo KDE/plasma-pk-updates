@@ -1,0 +1,3 @@
+module org.kde.plasma.PackageKit
+
+plugin plasmapk_qmlplugins
