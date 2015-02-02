@@ -250,6 +250,7 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
             return;
         } else {
             qDebug() << "Cache transaction didn't finish successfully";
+            emit done();
         }
     } else if (trans->role() == PackageKit::Transaction::RoleGetUpdates) {
         if (status == PackageKit::Transaction::ExitSuccess) {
@@ -268,7 +269,7 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
 void PkUpdates::onErrorCode(PackageKit::Transaction::Error error, const QString &details)
 {
     qWarning() << "PK error:" << details << "type:" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)error, "Error");
-    setStatusMessage(PkStrings::error(error) + "<br>" + details);
+    setStatusMessage(PkStrings::error(error) + "<br><br>" + PkStrings::errorMessage(error));
 }
 
 void PkUpdates::setStatusMessage(const QString &message)
