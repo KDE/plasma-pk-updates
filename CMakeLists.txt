@@ -26,6 +26,7 @@ find_package(KF5 REQUIRED
     I18n
     CoreAddons # KFormat
     Config # KConfig
+    KDELibs4Support #Solid::Power
 )
 
 find_package(packagekitqt5 REQUIRED)

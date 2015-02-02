@@ -26,6 +26,7 @@
 #include <KLocalizedString>
 #include <KFormat>
 #include <KConfigCore/KConfigGroup>
+#include <Solid/PowerManagement>
 
 #include "pkupdates.h"
 #include "PkStrings.h"
@@ -40,6 +41,9 @@ PkUpdates::PkUpdates(QObject *parent) :
     connect(PackageKit::Daemon::global(), &PackageKit::Daemon::changed, this, &PkUpdates::onChanged);
     connect(PackageKit::Daemon::global(), &PackageKit::Daemon::updatesChanged, this, &PkUpdates::onUpdatesChanged);
     connect(PackageKit::Daemon::global(), &PackageKit::Daemon::networkStateChanged, this, &PkUpdates::networkStateChanged);
+
+    connect(Solid::PowerManagement::notifier(), &Solid::PowerManagement::Notifier::appShouldConserveResourcesChanged,
+            this, &PkUpdates::isOnBatteryChanged);
 }
 
 PkUpdates::~PkUpdates()
@@ -138,12 +142,20 @@ QStringList PkUpdates::packageIds() const
 
 bool PkUpdates::isNetworkOnline() const
 {
+    qDebug() << "Is net online:" << (PackageKit::Daemon::networkState() > PackageKit::Daemon::Network::NetworkOffline);
     return PackageKit::Daemon::networkState() > PackageKit::Daemon::Network::NetworkOffline;
 }
 
 bool PkUpdates::isNetworkMobile() const
 {
+    qDebug() << "Is net mobile:" << (PackageKit::Daemon::networkState() == PackageKit::Daemon::Network::NetworkMobile);
     return PackageKit::Daemon::networkState() == PackageKit::Daemon::Network::NetworkMobile;
+}
+
+bool PkUpdates::isOnBattery() const
+{
+    qDebug() << "Is on battery:" << Solid::PowerManagement::appShouldConserveResources();
+    return Solid::PowerManagement::appShouldConserveResources();
 }
 
 QString PkUpdates::timestamp() const

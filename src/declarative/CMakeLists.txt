@@ -13,6 +13,7 @@ target_link_libraries(plasmapk_qmlplugins
     KF5::I18n
     KF5::CoreAddons
     KF5::ConfigCore
+    KF5::KDELibs4Support
     PK::packagekitqt5
 )
 
@@ -33,5 +34,6 @@ target_link_libraries(plasmapk-console
     KF5::I18n
     KF5::CoreAddons
     KF5::ConfigCore
+    KF5::KDELibs4Support
     PK::packagekitqt5
 )

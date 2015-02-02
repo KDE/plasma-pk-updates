@@ -52,6 +52,7 @@ class PkUpdates : public QObject
     Q_PROPERTY(bool isActive READ isActive NOTIFY isActiveChanged)
     Q_PROPERTY(bool isNetworkOnline READ isNetworkOnline NOTIFY networkStateChanged)
     Q_PROPERTY(bool isNetworkMobile READ isNetworkMobile NOTIFY networkStateChanged)
+    Q_PROPERTY(bool isOnBattery READ isOnBattery NOTIFY isOnBatteryChanged)
 
 public:
     explicit PkUpdates(QObject *parent = 0);
@@ -127,6 +128,11 @@ public:
      */
     bool isNetworkMobile() const;
 
+    /**
+     * @return whether we are running on battery
+     */
+    bool isOnBattery() const;
+
 signals:
     /**
      * Emitted when the number uf updates has changed
@@ -144,6 +150,7 @@ signals:
     void isActiveChanged();
     void percentageChanged();
     void networkStateChanged();
+    void isOnBatteryChanged();
 
 public slots:
     /**

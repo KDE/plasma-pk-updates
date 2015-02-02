@@ -46,7 +46,7 @@ Item
         triggeredOnStart: true
         interval: 1000 * 60 * 60; // 1 hour
         onTriggered: {
-            if (networkAllowed())
+            if (networkAllowed() && batteryAllowed())
                 PkUpdates.checkUpdates(needsForcedUpdate())
         }
     }
@@ -87,7 +87,13 @@ Item
         return PkUpdates.isNetworkMobile ? checkOnMobile : PkUpdates.isNetworkOnline
     }
 
+    function batteryAllowed() {
+        return PkUpdates.isOnBattery ? checkOnBattery : true;
+    }
+
     Component.onCompleted: {
+        PkUpdates.networkStateChanged.connect(timer.restart)
+        PkUpdates.isOnBatteryChanged.connect(timer.restart)
         timer.start()
     }
 }
