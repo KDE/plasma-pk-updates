@@ -25,8 +25,8 @@
 
 void QmlPlugins::registerTypes(const char* uri)
 {
-    Q_ASSERT(uri == QLatin1String("org.kde.plasma.private.PackageKit"));
+    Q_ASSERT(uri == QLatin1String("org.kde.plasma.PackageKit"));
 
-    // @uri org.kde.plasma.private.PackageKit.PkUpdates
+    // @uri org.kde.plasma.PackageKit.PkUpdates
     qmlRegisterSingletonType<PkUpdates>(uri, 1, 0, "PkUpdates", [](QQmlEngine*, QJSEngine*) -> QObject* { return new PkUpdates; });
 }
