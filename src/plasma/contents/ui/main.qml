@@ -29,6 +29,14 @@ Item
     Plasmoid.toolTipSubText: PkUpdates.message
     Plasmoid.icon: PkUpdates.iconName
 
+    Timer {
+        id: timer
+        repeat: true
+        triggeredOnStart: true
+        interval: 1000 * 60 * 60 * 24; // 1 day
+        onTriggered: PkUpdates.checkUpdates()
+    }
+
     Binding {
         target: plasmoid
         property: "status"
@@ -48,6 +56,6 @@ Item
     }
 
     Component.onCompleted: {
-        PkUpdates.checkUpdates()
+        timer.start()
     }
 }

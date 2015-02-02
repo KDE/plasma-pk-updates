@@ -67,6 +67,7 @@ Item
             onClicked: PkUpdates.isSystemUpToDate ? PkUpdates.checkUpdates(true) : PkUpdates.reviewUpdates()
         }
         Label {
+            visible: !PkUpdates.isActive
             id: timestampLabel
             Layout.fillWidth: true
             wrapMode: Text.WordWrap
