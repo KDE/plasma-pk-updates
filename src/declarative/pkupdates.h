@@ -86,7 +86,7 @@ public:
     QString message() const;
 
     /**
-     * @return the progress percentage (0..100)
+     * @return the progress percentage (0..100), 101 as a special value indicating indeterminate value
      */
     int percentage() const;
 

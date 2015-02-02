@@ -196,8 +196,8 @@ void PkUpdates::onStatusChanged()
     PackageKit::Transaction * trans;
     if ((trans = qobject_cast<PackageKit::Transaction *>(sender()))) {
         qDebug() << "Transaction status changed:"
-                 << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)trans->status(), "Status");
-        qDebug() << "Percentage:" << trans->percentage();
+                 << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)trans->status(), "Status")
+                 << QStringLiteral("(%1%)").arg(trans->percentage());
         setStatusMessage(PkStrings::status(trans->status()));
         setPercentage(trans->percentage());
     }
