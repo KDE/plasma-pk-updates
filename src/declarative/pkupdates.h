@@ -136,6 +136,8 @@ public slots:
     /**
       * Perform a cache update, possibly resulting in an update check. Signal updatesChanged() gets emitted
       * as a result. Consult the count() property whether there are new updates available.
+      *
+      * @param force whether to force the cache refresh
       */
     Q_INVOKABLE void checkUpdates(bool force = false);
 
@@ -143,6 +145,11 @@ public slots:
       * Launch the updater software to review and actually perform the update itself.
       */
     Q_INVOKABLE void reviewUpdates();
+
+    /**
+      * @return the number of seconds elapsed from the last cache check
+      */
+    Q_INVOKABLE int secondsSinceLastRefresh() const;
 
 private slots:
     void getUpdates();

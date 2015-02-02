@@ -137,13 +137,10 @@ QStringList PkUpdates::packageIds() const
 
 QString PkUpdates::timestamp() const
 {
-    QDBusReply<uint> lastCheckReply = PackageKit::Daemon::getTimeSinceAction(PackageKit::Transaction::Role::RoleRefreshCache);
-    if (lastCheckReply.isValid()) {
-        qDebug() << "Last cache check was" << lastCheckReply.value() << "seconds ago";
+    int lastCheck = secondsSinceLastRefresh();
 
-        if (lastCheckReply.value() != UINT_MAX) // not never
-            return i18n("Last checked: %1 ago", KFormat().formatSpelloutDuration(lastCheckReply.value() * 1000));
-    }
+    if (lastCheck != -1)
+        return i18n("Last checked: %1 ago", KFormat().formatSpelloutDuration(lastCheck * 1000));
 
     return i18n("Last checked: never");
 }
@@ -167,6 +164,17 @@ void PkUpdates::checkUpdates(bool force)
 void PkUpdates::reviewUpdates()
 {
     // TODO
+}
+
+int PkUpdates::secondsSinceLastRefresh() const
+{
+    QDBusReply<uint> lastCheckReply = PackageKit::Daemon::getTimeSinceAction(PackageKit::Transaction::Role::RoleRefreshCache);
+    if (lastCheckReply.isValid()) {
+        if (lastCheckReply.value() != UINT_MAX) // not never
+            return lastCheckReply.value();
+    }
+
+    return -1;
 }
 
 void PkUpdates::getUpdates()
