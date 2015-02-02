@@ -43,6 +43,10 @@ PkUpdates::PkUpdates(QObject *parent) :
 
 PkUpdates::~PkUpdates()
 {
+    if (m_cacheTrans)
+        m_cacheTrans->deleteLater();
+    if (m_updatesTrans)
+        m_updatesTrans->deleteLater();
 }
 
 int PkUpdates::count() const
