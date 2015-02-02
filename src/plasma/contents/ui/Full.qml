@@ -20,6 +20,7 @@
 
 import QtQuick 2.1
 import QtQuick.Layouts 1.1
+import QtQuick.Controls 1.3
 import org.kde.plasma.extras 2.0 as PlasmaExtras
 import org.kde.plasma.components 2.0
 import org.kde.plasma.PackageKit 1.0
@@ -52,6 +53,14 @@ Item
             Layout.fillWidth: true
             wrapMode: Text.WordWrap
             text: i18n("Status: %1", PkUpdates.statusMessage)
+        }
+        ProgressBar {
+            visible: PkUpdates.isActive
+            Layout.fillWidth: true
+            minimumValue: 0
+            maximumValue: 101 // workaround a bug in ProgressBar! if the value is > max, it's set to max and never changes below
+            value: PkUpdates.percentage
+            indeterminate: PkUpdates.percentage > 100
         }
         Label {
             Layout.fillWidth: true

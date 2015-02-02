@@ -43,7 +43,8 @@ class PkUpdates : public QObject
     Q_PROPERTY(int securityCount READ securityCount NOTIFY updatesChanged)
     Q_PROPERTY(bool isSystemUpToDate READ isSystemUpToDate NOTIFY updatesChanged)
     Q_PROPERTY(QString iconName READ iconName NOTIFY updatesChanged)
-    Q_PROPERTY(QString message READ message NOTIFY updatesChanged)
+    Q_PROPERTY(QString message READ message NOTIFY isActiveChanged)
+    Q_PROPERTY(int percentage READ percentage NOTIFY percentageChanged)
     Q_PROPERTY(QString timestamp READ timestamp NOTIFY updatesChanged)
     Q_PROPERTY(QString statusMessage READ statusMessage NOTIFY statusMessageChanged)
     Q_PROPERTY(QString packageNames READ packageNames NOTIFY updatesChanged)
@@ -85,6 +86,11 @@ public:
     QString message() const;
 
     /**
+     * @return the progress percentage (0..100)
+     */
+    int percentage() const;
+
+    /**
      * @return time stamp of the last update check
      */
     QString timestamp() const;
@@ -124,6 +130,7 @@ signals:
     void statusMessageChanged();
     void timestampChanged();
     void isActiveChanged();
+    void percentageChanged();
 
 public slots:
     /**
@@ -149,6 +156,7 @@ private slots:
 private:
     void setStatusMessage(const QString &message);
     void setActive(bool active);
+    void setPercentage(int value);
     QPointer<PackageKit::Transaction> m_updatesTrans;
     QPointer<PackageKit::Transaction> m_cacheTrans;
     QStringList m_updateList;
@@ -156,6 +164,7 @@ private:
     QStringList m_securityList;
     QString m_statusMessage;
     bool m_active = false;
+    int m_percentage = 0;
 };
 
 #endif // PLASMA_PK_UPDATES_H

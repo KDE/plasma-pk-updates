@@ -25,7 +25,7 @@ import org.kde.plasma.PackageKit 1.0
 
 Item
 {
-    Plasmoid.fullRepresentation: Full {id: popup}
+    Plasmoid.fullRepresentation: Full {}
     Plasmoid.toolTipSubText: PkUpdates.message
     Plasmoid.icon: PkUpdates.iconName
 

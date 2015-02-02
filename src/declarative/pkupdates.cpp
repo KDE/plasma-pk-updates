@@ -43,10 +43,16 @@ PkUpdates::PkUpdates(QObject *parent) :
 
 PkUpdates::~PkUpdates()
 {
-    if (m_cacheTrans)
+    if (m_cacheTrans) {
+        if (m_cacheTrans->allowCancel())
+            m_cacheTrans->cancel();
         m_cacheTrans->deleteLater();
-    if (m_updatesTrans)
+    }
+    if (m_updatesTrans) {
+        if (m_updatesTrans->allowCancel())
+            m_updatesTrans->cancel();
         m_updatesTrans->deleteLater();
+    }
 }
 
 int PkUpdates::count() const
@@ -98,6 +104,11 @@ QString PkUpdates::message() const
     }
 
     return i18n("Your system is up to date");
+}
+
+int PkUpdates::percentage() const
+{
+    return m_percentage;
 }
 
 QString PkUpdates::statusMessage() const
@@ -186,7 +197,9 @@ void PkUpdates::onStatusChanged()
     if ((trans = qobject_cast<PackageKit::Transaction *>(sender()))) {
         qDebug() << "Transaction status changed:"
                  << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)trans->status(), "Status");
+        qDebug() << "Percentage:" << trans->percentage();
         setStatusMessage(PkStrings::status(trans->status()));
+        setPercentage(trans->percentage());
     }
 }
 
@@ -222,14 +235,14 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
                 "finished with status" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)status, "Exit") <<
                 "in" << runtime/1000 << "seconds";
 
-    if (m_cacheTrans && trans == m_cacheTrans) {
+    if (trans->role() == PackageKit::Transaction::RoleRefreshCache) {
         if (status == PackageKit::Transaction::ExitSuccess) {
             qDebug() << "Cache transaction finished successfully";
             return;
         } else {
             qDebug() << "Cache transaction didn't finish successfully";
         }
-    } else if (m_updatesTrans && trans == m_updatesTrans) {
+    } else if (trans->role() == PackageKit::Transaction::RoleGetUpdates) {
         if (status == PackageKit::Transaction::ExitSuccess) {
             qDebug() << "Check updates transaction finished successfully";
         } else {
@@ -260,5 +273,13 @@ void PkUpdates::setActive(bool active)
     if (active != m_active) {
         m_active = active;
         emit isActiveChanged();
+    }
+}
+
+void PkUpdates::setPercentage(int value)
+{
+    if (value != m_percentage) {
+        m_percentage = value;
+        emit percentageChanged();
     }
 }
