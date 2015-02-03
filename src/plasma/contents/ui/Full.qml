@@ -41,13 +41,11 @@ Item
     }
 
     function populateModel() {
-        print("Populating the update model")
         updatesModel.clear()
         var packages = PkUpdates.packages
         for (var id in packages) {
             if (packages.hasOwnProperty(id)) {
                 var desc = packages[id]
-                print("Package: " + id)
                 updatesModel.append({"selected": true, "id": id, "name": PkUpdates.packageName(id), "desc": desc})
             }
         }
@@ -98,7 +96,6 @@ Item
             model: PlasmaCore.SortFilterModel {
                 sourceModel: updatesModel
                 filterRole: "name"
-                filterRegExp: filter.text
             }
             sortIndicatorColumn: 1
             //sortIndicatorVisible: true
@@ -133,6 +130,7 @@ Item
             tooltip: PkUpdates.isSystemUpToDate ? i18n("Checks for any available updates") : i18n("Performs the software update")
             onClicked: PkUpdates.isSystemUpToDate ? PkUpdates.checkUpdates(true) : selectedPackages()
         }
+
         Label {
             visible: !PkUpdates.isActive
             id: timestampLabel
@@ -147,7 +145,7 @@ Item
         for (var i = 0; i < updatesModel.count; i++) {
             var pkg = updatesModel.get(i)
             if (pkg.selected) {
-                print("Package " + pkg.id + " selected for update")
+                //print("Package " + pkg.id + " selected for update")
                 result.push(pkg.id)
             }
         }
