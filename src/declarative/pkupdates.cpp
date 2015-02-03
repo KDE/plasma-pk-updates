@@ -106,6 +106,8 @@ QString PkUpdates::message() const
             return msg + "<br>" + i18n("(including %1)", extra.join(i18n(" and ")));
     } else if (isActive()) {
         return i18n("Checking for updates");
+    } else if (!isNetworkOnline()) {
+        return i18n("Your system is offline");
     }
 
     return i18n("Your system is up to date");

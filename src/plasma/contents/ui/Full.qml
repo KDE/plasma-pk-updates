@@ -127,7 +127,7 @@ Item
         }
 
         Button {
-            visible: !PkUpdates.isActive
+            visible: !PkUpdates.isActive && PkUpdates.isNetworkOnline
             anchors.horizontalCenter: parent.horizontalCenter
             text: PkUpdates.isSystemUpToDate ? i18n("Check For Updates") : i18n("Install Updates")
             tooltip: PkUpdates.isSystemUpToDate ? i18n("Checks for any available updates") : i18n("Performs the software update")
