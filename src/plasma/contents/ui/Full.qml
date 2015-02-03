@@ -22,7 +22,8 @@ import QtQuick 2.1
 import QtQuick.Layouts 1.1
 import QtQuick.Controls 1.3
 import org.kde.plasma.extras 2.0 as PlasmaExtras
-import org.kde.plasma.components 2.0
+import org.kde.plasma.core 2.0 as PlasmaCore
+//import org.kde.plasma.components 2.0 as PC
 import org.kde.plasma.PackageKit 1.0
 
 Item
@@ -32,6 +33,29 @@ Item
         property: "text"
         value: PkUpdates.timestamp
         when: !plasmoid.expanded
+    }
+
+    Component.onCompleted: {
+        PkUpdates.updatesChanged.connect(populateModel)
+        populateModel()
+    }
+
+    function populateModel() {
+        print("Populating the update model")
+        updatesModel.clear()
+        var packages = PkUpdates.packages
+        for (var id in packages) {
+            if (packages.hasOwnProperty(id)) {
+                var desc = packages[id]
+                print("Package: " + id)
+                updatesModel.append({"selected": true, "id": id, "name": PkUpdates.packageName(id), "desc": desc})
+            }
+        }
+        nameColumn.resizeToContents()
+    }
+
+    ListModel {
+        id: updatesModel
     }
 
     PlasmaExtras.Heading {
@@ -44,6 +68,7 @@ Item
 
     ColumnLayout
     {
+        spacing: units.largeSpacing
         anchors {
             fill: parent
             topMargin: header.height
@@ -58,22 +83,55 @@ Item
             visible: PkUpdates.isActive
             Layout.fillWidth: true
             minimumValue: 0
-            maximumValue: 101 // workaround a bug in ProgressBar! if the value is > max, it's set to max and never changes below
+            maximumValue: 101 // BUG workaround a bug in ProgressBar! if the value is > max, it's set to max and never changes below
             value: PkUpdates.percentage
             indeterminate: PkUpdates.percentage > 100
         }
-        Label {
-            Layout.fillWidth: true
-            wrapMode: Text.WordWrap
-            visible: PkUpdates.count
-            text: PkUpdates.packageNames
+
+        CheckBox {
+            id: dummyCheckBox
+            visible: false
         }
+
+        TableView {
+            id: updatesView
+            model: PlasmaCore.SortFilterModel {
+                sourceModel: updatesModel
+                filterRole: "name"
+                filterRegExp: filter.text
+            }
+            sortIndicatorColumn: 1
+            //sortIndicatorVisible: true
+            focus: visible
+            headerVisible: false // FIXME looks broken
+            visible: PkUpdates.count && !PkUpdates.isActive
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+
+            TableViewColumn {
+                id: checkColumn
+                role: "selected"
+                width: dummyCheckBox.width
+                resizable: false
+                movable: false
+                delegate: CheckBox {
+                    id: checkbox
+                    checked: styleData.value
+                    onClicked: {
+                        updatesModel.setProperty(styleData.row, "selected", checked)
+                    }
+                }
+            }
+            TableViewColumn { id: nameColumn; role: "name"; title: i18n("Package"); width: 200 }
+            TableViewColumn { role: "desc"; title: i18n("Description"); width: 600 }
+        }
+
         Button {
             visible: !PkUpdates.isActive
             anchors.horizontalCenter: parent.horizontalCenter
-            text: PkUpdates.isSystemUpToDate ? i18n("Check For Updates") : i18n("Review Updates")
-            tooltip: PkUpdates.isSystemUpToDate ? i18n("Checks for any available updates") : i18n("Launches the software to perform the update")
-            onClicked: PkUpdates.isSystemUpToDate ? PkUpdates.checkUpdates(true) : PkUpdates.reviewUpdates()
+            text: PkUpdates.isSystemUpToDate ? i18n("Check For Updates") : i18n("Install Updates")
+            tooltip: PkUpdates.isSystemUpToDate ? i18n("Checks for any available updates") : i18n("Performs the software update")
+            onClicked: PkUpdates.isSystemUpToDate ? PkUpdates.checkUpdates(true) : selectedPackages()
         }
         Label {
             visible: !PkUpdates.isActive
@@ -82,5 +140,17 @@ Item
             wrapMode: Text.WordWrap
             text: PkUpdates.timestamp
         }
+    }
+
+    function selectedPackages() {
+        var result = []
+        for (var i = 0; i < updatesModel.count; i++) {
+            var pkg = updatesModel.get(i)
+            if (pkg.selected) {
+                print("Package " + pkg.id + " selected for update")
+                result.push(pkg.id)
+            }
+        }
+        return result
     }
 }

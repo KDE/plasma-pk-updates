@@ -48,7 +48,7 @@ class PkUpdates : public QObject
     Q_PROPERTY(QString timestamp READ timestamp NOTIFY updatesChanged)
     Q_PROPERTY(QString statusMessage READ statusMessage NOTIFY statusMessageChanged)
     Q_PROPERTY(QString packageNames READ packageNames NOTIFY updatesChanged)
-    Q_PROPERTY(QStringList packageIds READ packageIds NOTIFY updatesChanged)
+    Q_PROPERTY(QVariantMap packages READ packages NOTIFY updatesChanged)
     Q_PROPERTY(bool isActive READ isActive NOTIFY isActiveChanged)
     Q_PROPERTY(bool isNetworkOnline READ isNetworkOnline NOTIFY networkStateChanged)
     Q_PROPERTY(bool isNetworkMobile READ isNetworkMobile NOTIFY networkStateChanged)
@@ -114,9 +114,9 @@ public:
     bool isActive() const;
 
     /**
-     * @return the IDs of the packages to update
+     * @return the packages to update (key=packageId, value=description)
      */
-    QStringList packageIds() const;
+    QVariantMap packages() const;
 
     /**
      * @return whether the network is online
@@ -171,6 +171,8 @@ public slots:
       */
     Q_INVOKABLE qint64 secondsSinceLastRefresh() const;
 
+    Q_INVOKABLE static QString packageName(const QString & pkgId);
+
 private slots:
     void getUpdates();
     void onChanged();
@@ -186,7 +188,7 @@ private:
     void setPercentage(int value);
     QPointer<PackageKit::Transaction> m_updatesTrans;
     QPointer<PackageKit::Transaction> m_cacheTrans;
-    QStringList m_updateList;
+    QVariantMap m_updateList;
     QStringList m_importantList;
     QStringList m_securityList;
     QString m_statusMessage;

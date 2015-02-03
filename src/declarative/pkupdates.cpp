@@ -124,7 +124,7 @@ QString PkUpdates::statusMessage() const
 QString PkUpdates::packageNames() const
 {
     QStringList tmp;
-    foreach (const QString & entry, m_updateList) {
+    foreach (const QString & entry, m_updateList.keys()) {
         tmp.append(PackageKit::Daemon::packageName(entry));
     }
     return tmp.join(", ");
@@ -135,7 +135,7 @@ bool PkUpdates::isActive() const
     return m_active;
 }
 
-QStringList PkUpdates::packageIds() const
+QVariantMap PkUpdates::packages() const
 {
     return m_updateList;
 }
@@ -197,6 +197,11 @@ qint64 PkUpdates::secondsSinceLastRefresh() const
     return -1;
 }
 
+QString PkUpdates::packageName(const QString &pkgId)
+{
+    return PackageKit::Daemon::packageName(pkgId);
+}
+
 void PkUpdates::getUpdates()
 {
     m_updatesTrans = PackageKit::Daemon::getUpdates();
@@ -254,7 +259,7 @@ void PkUpdates::onPackage(PackageKit::Transaction::Info info, const QString &pac
     default:
         break;
     }
-    m_updateList << packageID;
+    m_updateList.insert(packageID, summary);
 }
 
 void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
