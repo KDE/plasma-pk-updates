@@ -172,10 +172,6 @@ void PkUpdates::checkUpdates(bool force)
 {
     qDebug() << "Checking updates, forced:" << force;
 
-    m_updateList.clear();
-    m_importantList.clear();
-    m_securityList.clear();
-
     m_cacheTrans = PackageKit::Daemon::refreshCache(force);
     setActive(true);
 
@@ -205,6 +201,10 @@ void PkUpdates::getUpdates()
 {
     m_updatesTrans = PackageKit::Daemon::getUpdates();
     setActive(true);
+
+    m_updateList.clear();
+    m_importantList.clear();
+    m_securityList.clear();
 
     connect(m_updatesTrans, &PackageKit::Transaction::statusChanged, this, &PkUpdates::onStatusChanged);
     connect(m_updatesTrans, &PackageKit::Transaction::finished, this, &PkUpdates::onFinished);
