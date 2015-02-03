@@ -18,9 +18,7 @@
 
 import QtQuick 2.2
 import QtQuick.Controls 1.3
-
 import org.kde.plasma.core 2.0 as PlasmaCore
-import org.kde.plasma.components 2.0 as PlasmaComponents
 
 Item {
     id: iconsPage
@@ -65,11 +63,11 @@ Item {
 
         CheckBox {
             id: mobile
-            text: i18n("Even on a mobile connection")
+            text: i18n("Check for updates even on a mobile connection")
         }
         CheckBox {
             id: battery
-            text: i18n("Even when on battery")
+            text: i18n("Check for updates even when on battery")
         }
     }
 }
