@@ -58,7 +58,6 @@ Item
 
     PlasmaExtras.Heading {
         id: header
-        Layout.fillWidth: true
         level: 3
         wrapMode: Text.WordWrap
         text: PkUpdates.message
@@ -70,20 +69,6 @@ Item
         anchors {
             fill: parent
             topMargin: header.height
-        }
-        Label {
-            visible: PkUpdates.isActive
-            Layout.fillWidth: true
-            wrapMode: Text.WordWrap
-            text: i18n("Status: %1", PkUpdates.statusMessage)
-        }
-        ProgressBar {
-            visible: PkUpdates.isActive
-            Layout.fillWidth: true
-            minimumValue: 0
-            maximumValue: 101 // BUG workaround a bug in ProgressBar! if the value is > max, it's set to max and never changes below
-            value: PkUpdates.percentage
-            indeterminate: PkUpdates.percentage > 100
         }
 
         CheckBox {
@@ -126,17 +111,40 @@ Item
         Button {
             visible: !PkUpdates.isActive && PkUpdates.isNetworkOnline
             anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: parent.verticalCenter
             text: PkUpdates.isSystemUpToDate ? i18n("Check For Updates") : i18n("Install Updates")
             tooltip: PkUpdates.isSystemUpToDate ? i18n("Checks for any available updates") : i18n("Performs the software update")
             onClicked: PkUpdates.isSystemUpToDate ? timer.restart() : PkUpdates.installUpdates(selectedPackages())
         }
 
-        Label {
-            visible: !PkUpdates.isActive
-            id: timestampLabel
-            Layout.fillWidth: true
-            wrapMode: Text.WordWrap
-            text: PkUpdates.timestamp
+        BusyIndicator {
+            running: PkUpdates.isActive
+            visible: running
+            anchors.horizontalCenter: parent.horizontalCenter
+        }
+
+        RowLayout {
+            spacing: units.largeSpacing
+            anchors.bottom: parent.bottom
+            Label {
+                visible: !PkUpdates.isActive
+                id: timestampLabel
+                wrapMode: Text.WordWrap
+                text: PkUpdates.timestamp
+            }
+            Label {
+                visible: PkUpdates.isActive
+                wrapMode: Text.WordWrap
+                text: PkUpdates.statusMessage
+            }
+            ProgressBar {
+                visible: PkUpdates.isActive
+                Layout.fillWidth: true
+                minimumValue: 0
+                maximumValue: 101 // BUG workaround a bug in ProgressBar! if the value is > max, it's set to max and never changes below
+                value: PkUpdates.percentage
+                indeterminate: PkUpdates.percentage > 100
+            }
         }
     }
 

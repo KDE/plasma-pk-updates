@@ -322,7 +322,6 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
             qDebug() << "Update packages transaction didn't finish successfully";
         }
         qDebug() << "Number of not installed updates:" << m_updateList.count();
-        // TODO should maybe do a forced cache update after this
     }
 
     setActive(false);
