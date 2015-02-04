@@ -25,7 +25,8 @@ find_package(KF5 REQUIRED
     Plasma
     I18n
     CoreAddons # KFormat
-    Config # KConfig
+    Notifications
+    IconThemes # KIconLoader
     KDELibs4Support #Solid::Power
 )
 

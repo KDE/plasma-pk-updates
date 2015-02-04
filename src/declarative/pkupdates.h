@@ -162,15 +162,20 @@ public slots:
     Q_INVOKABLE void checkUpdates(bool force = false);
 
     /**
-      * Launch the updater software to review and actually perform the update itself.
+      * Launch the update process
+      *
+      * @param packageIds list of package IDs to update
       */
-    Q_INVOKABLE void reviewUpdates();
+    Q_INVOKABLE void installUpdates(const QStringList & packageIds);
 
     /**
       * @return the number of seconds elapsed from the last cache check, -1 if never
       */
     Q_INVOKABLE qint64 secondsSinceLastRefresh() const;
 
+    /**
+      * @return the package name extracted from its ID
+      */
     Q_INVOKABLE static QString packageName(const QString & pkgId);
 
 private slots:
@@ -179,8 +184,10 @@ private slots:
     void onUpdatesChanged();
     void onStatusChanged();
     void onPackage(PackageKit::Transaction::Info info, const QString &packageID, const QString &summary);
+    void onPackageUpdated(PackageKit::Transaction::Info info, const QString &packageID, const QString &summary);
     void onFinished(PackageKit::Transaction::Exit status, uint runtime);
     void onErrorCode(PackageKit::Transaction::Error error, const QString &details);
+    void onRequireRestart(PackageKit::Transaction::Restart type, const QString &packageID);
 
 private:
     void setStatusMessage(const QString &message);
@@ -188,6 +195,7 @@ private:
     void setPercentage(int value);
     QPointer<PackageKit::Transaction> m_updatesTrans;
     QPointer<PackageKit::Transaction> m_cacheTrans;
+    QPointer<PackageKit::Transaction> m_installTrans;
     QVariantMap m_updateList;
     QStringList m_importantList;
     QStringList m_securityList;

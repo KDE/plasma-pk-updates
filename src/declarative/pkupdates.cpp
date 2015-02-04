@@ -22,11 +22,13 @@
 #include <QDebug>
 #include <QTimer>
 #include <QDBusReply>
+#include <QIcon>
 
 #include <KLocalizedString>
 #include <KFormat>
-#include <KConfigCore/KConfigGroup>
+#include <KNotification>
 #include <Solid/PowerManagement>
+#include <KIconLoader>
 
 #include "pkupdates.h"
 #include "PkStrings.h"
@@ -34,7 +36,8 @@
 PkUpdates::PkUpdates(QObject *parent) :
     QObject(parent),
     m_updatesTrans(Q_NULLPTR),
-    m_cacheTrans(Q_NULLPTR)
+    m_cacheTrans(Q_NULLPTR),
+    m_installTrans(Q_NULLPTR)
 {
     setStatusMessage(i18n("Idle"));
 
@@ -57,6 +60,9 @@ PkUpdates::~PkUpdates()
         if (m_updatesTrans->allowCancel())
             m_updatesTrans->cancel();
         m_updatesTrans->deleteLater();
+    }
+    if (m_installTrans) {
+        m_installTrans->deleteLater();
     }
 }
 
@@ -182,11 +188,6 @@ void PkUpdates::checkUpdates(bool force)
     connect(m_cacheTrans, &PackageKit::Transaction::errorCode, this, &PkUpdates::onErrorCode);
 }
 
-void PkUpdates::reviewUpdates()
-{
-    // TODO
-}
-
 qint64 PkUpdates::secondsSinceLastRefresh() const
 {
     QDBusReply<uint> lastCheckReply = PackageKit::Daemon::getTimeSinceAction(PackageKit::Transaction::Role::RoleRefreshCache);
@@ -219,6 +220,20 @@ void PkUpdates::getUpdates()
     connect(m_updatesTrans, &PackageKit::Transaction::package, this, &PkUpdates::onPackage);
 }
 
+void PkUpdates::installUpdates(const QStringList &packageIds)
+{
+    qDebug() << "Installing updates" << packageIds;
+
+    m_installTrans = PackageKit::Daemon::updatePackages(packageIds);
+    setActive(true);
+
+    connect(m_installTrans, &PackageKit::Transaction::statusChanged, this, &PkUpdates::onStatusChanged);
+    connect(m_installTrans, &PackageKit::Transaction::finished, this, &PkUpdates::onFinished);
+    connect(m_installTrans, &PackageKit::Transaction::errorCode, this, &PkUpdates::onErrorCode);
+    connect(m_installTrans, &PackageKit::Transaction::package, this, &PkUpdates::onPackageUpdated);
+    connect(m_installTrans, &PackageKit::Transaction::requireRestart, this, &PkUpdates::onRequireRestart);
+}
+
 void PkUpdates::onChanged()
 {
     qDebug() << "Daemon changed";
@@ -244,7 +259,7 @@ void PkUpdates::onStatusChanged()
 
 void PkUpdates::onPackage(PackageKit::Transaction::Info info, const QString &packageID, const QString &summary)
 {
-    qDebug() << "Got package:" << packageID << ", summary:" << summary <<
+    qDebug() << "Got update package:" << packageID << ", summary:" << summary <<
                 ", type:" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)info, "Info");
 
     switch (info) {
@@ -262,6 +277,16 @@ void PkUpdates::onPackage(PackageKit::Transaction::Info info, const QString &pac
         break;
     }
     m_updateList.insert(packageID, summary);
+}
+
+void PkUpdates::onPackageUpdated(PackageKit::Transaction::Info info, const QString &packageID, const QString &summary)
+{
+    qDebug() << "Package updating:" << packageID <<
+                ", type:" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)info, "Info");
+    if (info == PackageKit::Transaction::InfoFinished) {
+        qDebug() << "Finished, removing from updates list";
+        m_updateList.remove(packageID);
+    }
 }
 
 void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
@@ -290,6 +315,14 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
         }
         qDebug() << "Total number of updates: " << count();
         emit done();
+    } else if (trans->role() == PackageKit::Transaction::RoleUpdatePackages) {
+        if (status == PackageKit::Transaction::ExitSuccess) {
+            qDebug() << "Update packages transaction finished successfully";
+        } else {
+            qDebug() << "Update packages transaction didn't finish successfully";
+        }
+        qDebug() << "Number of not installed updates:" << m_updateList.count();
+        // TODO should maybe do a forced cache update after this
     }
 
     setActive(false);
@@ -299,7 +332,14 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
 void PkUpdates::onErrorCode(PackageKit::Transaction::Error error, const QString &details)
 {
     qWarning() << "PK error:" << details << "type:" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)error, "Error");
-    setStatusMessage(PkStrings::error(error) + "<br><br>" + PkStrings::errorMessage(error));
+    KNotification::event(KNotification::Error, i18n("Update Error"), PkStrings::error(error) + " " + PkStrings::errorMessage(error),
+                         KIconLoader::global()->loadIcon("system-software-update", KIconLoader::Desktop));
+}
+
+void PkUpdates::onRequireRestart(PackageKit::Transaction::Restart type, const QString &packageID)
+{
+    qDebug() << "Restart" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)type, "Restart")
+             << "is required for package" << packageID;
 }
 
 void PkUpdates::setStatusMessage(const QString &message)

@@ -100,7 +100,7 @@ Item
             sortIndicatorColumn: 1
             //sortIndicatorVisible: true
             focus: visible
-            headerVisible: false // FIXME looks broken
+            headerVisible: false // BUG looks broken with default Qt style
             visible: PkUpdates.count && !PkUpdates.isActive
             Layout.fillWidth: true
             Layout.fillHeight: true
@@ -128,7 +128,7 @@ Item
             anchors.horizontalCenter: parent.horizontalCenter
             text: PkUpdates.isSystemUpToDate ? i18n("Check For Updates") : i18n("Install Updates")
             tooltip: PkUpdates.isSystemUpToDate ? i18n("Checks for any available updates") : i18n("Performs the software update")
-            onClicked: PkUpdates.isSystemUpToDate ? PkUpdates.checkUpdates(true) : selectedPackages()
+            onClicked: PkUpdates.isSystemUpToDate ? timer.restart() : PkUpdates.installUpdates(selectedPackages())
         }
 
         Label {

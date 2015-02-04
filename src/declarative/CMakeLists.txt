@@ -12,7 +12,8 @@ target_link_libraries(plasmapk_qmlplugins
     Qt5::DBus
     KF5::I18n
     KF5::CoreAddons
-    KF5::ConfigCore
+    KF5::Notifications
+    KF5::IconThemes
     KF5::KDELibs4Support
     PK::packagekitqt5
 )
