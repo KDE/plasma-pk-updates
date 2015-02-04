@@ -189,7 +189,7 @@ private slots:
     void onUpdatesChanged();
     void onStatusChanged();
     void onPackage(PackageKit::Transaction::Info info, const QString &packageID, const QString &summary);
-    void onPackageUpdated(PackageKit::Transaction::Info info, const QString &packageID, const QString &summary);
+    void onPackageUpdating(PackageKit::Transaction::Info info, const QString &packageID, const QString &summary);
     void onFinished(PackageKit::Transaction::Exit status, uint runtime);
     void onErrorCode(PackageKit::Transaction::Error error, const QString &details);
     void onRequireRestart(PackageKit::Transaction::Restart type, const QString &packageID);

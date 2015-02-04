@@ -41,6 +41,7 @@ Item
     }
 
     function populateModel() {
+        print("Populating model")
         updatesModel.clear()
         var packages = PkUpdates.packages
         for (var id in packages) {
@@ -115,7 +116,7 @@ Item
             anchors.bottomMargin: units.largeSpacing
             text: PkUpdates.isSystemUpToDate ? i18n("Check For Updates") : i18n("Install Updates")
             tooltip: PkUpdates.isSystemUpToDate ? i18n("Checks for any available updates") : i18n("Performs the software update")
-            onClicked: PkUpdates.isSystemUpToDate ? timer.restart() : PkUpdates.installUpdates(selectedPackages())
+            onClicked: PkUpdates.isSystemUpToDate ? PkUpdates.checkUpdates(needsForcedUpdate()) : PkUpdates.installUpdates(selectedPackages())
         }
 
         BusyIndicator {
@@ -155,7 +156,7 @@ Item
         for (var i = 0; i < updatesModel.count; i++) {
             var pkg = updatesModel.get(i)
             if (pkg.selected) {
-                //print("Package " + pkg.id + " selected for update")
+                print("Package " + pkg.id + " selected for update")
                 result.push(pkg.id)
             }
         }

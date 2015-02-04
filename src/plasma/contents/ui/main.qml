@@ -88,7 +88,7 @@ Item
     }
 
     function batteryAllowed() {
-        return PkUpdates.isOnBattery ? checkOnBattery : true;
+        return PkUpdates.isOnBattery ? checkOnBattery : true
     }
 
     Component.onCompleted: {

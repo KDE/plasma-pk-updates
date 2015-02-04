@@ -242,7 +242,7 @@ void PkUpdates::installUpdates(const QStringList &packageIds)
     connect(m_installTrans, &PackageKit::Transaction::statusChanged, this, &PkUpdates::onStatusChanged);
     connect(m_installTrans, &PackageKit::Transaction::finished, this, &PkUpdates::onFinished);
     connect(m_installTrans, &PackageKit::Transaction::errorCode, this, &PkUpdates::onErrorCode);
-    connect(m_installTrans, &PackageKit::Transaction::package, this, &PkUpdates::onPackageUpdated);
+    connect(m_installTrans, &PackageKit::Transaction::package, this, &PkUpdates::onPackageUpdating);
     connect(m_installTrans, &PackageKit::Transaction::requireRestart, this, &PkUpdates::onRequireRestart);
 }
 
@@ -291,14 +291,12 @@ void PkUpdates::onPackage(PackageKit::Transaction::Info info, const QString &pac
     m_updateList.insert(packageID, summary);
 }
 
-void PkUpdates::onPackageUpdated(PackageKit::Transaction::Info info, const QString &packageID, const QString &summary)
+void PkUpdates::onPackageUpdating(PackageKit::Transaction::Info info, const QString &packageID, const QString &summary)
 {
+    Q_UNUSED(summary)
     qDebug() << "Package updating:" << packageID <<
                 ", type:" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)info, "Info");
-    if (info == PackageKit::Transaction::InfoFinished) {
-        qDebug() << "Finished, removing from updates list";
-        m_updateList.remove(packageID);
-    }
+    setStatusMessage(PkStrings::infoPresent(info) + " " + PackageKit::Daemon::packageName(packageID));
 }
 
 void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
@@ -333,7 +331,8 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
         } else {
             qDebug() << "Update packages transaction didn't finish successfully";
         }
-        qDebug() << "Number of not installed updates:" << m_updateList.count();
+        setActive(false);
+        return;
     }
 
     setActive(false);
