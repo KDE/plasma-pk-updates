@@ -264,7 +264,7 @@ void PkUpdates::onStatusChanged()
         qDebug() << "Transaction status changed:"
                  << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)trans->status(), "Status")
                  << QStringLiteral("(%1%)").arg(trans->percentage());
-        setStatusMessage(PkStrings::status(trans->status()));
+        setStatusMessage(PkStrings::status(trans->status(), trans->speed(), trans->downloadSizeRemaining()));
         setPercentage(trans->percentage());
     }
 }
