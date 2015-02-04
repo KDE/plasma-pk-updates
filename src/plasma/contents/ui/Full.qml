@@ -111,7 +111,8 @@ Item
         Button {
             visible: !PkUpdates.isActive && PkUpdates.isNetworkOnline
             anchors.horizontalCenter: parent.horizontalCenter
-            anchors.verticalCenter: parent.verticalCenter
+            anchors.bottom: statusbar.top
+            anchors.bottomMargin: units.largeSpacing
             text: PkUpdates.isSystemUpToDate ? i18n("Check For Updates") : i18n("Install Updates")
             tooltip: PkUpdates.isSystemUpToDate ? i18n("Checks for any available updates") : i18n("Performs the software update")
             onClicked: PkUpdates.isSystemUpToDate ? timer.restart() : PkUpdates.installUpdates(selectedPackages())
@@ -124,6 +125,7 @@ Item
         }
 
         RowLayout {
+            id: statusbar
             spacing: units.largeSpacing
             anchors.bottom: parent.bottom
             Label {

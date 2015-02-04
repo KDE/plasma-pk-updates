@@ -174,6 +174,11 @@ public slots:
     Q_INVOKABLE qint64 secondsSinceLastRefresh() const;
 
     /**
+      * @return the number of seconds elapsed from the last update, -1 if never
+      */
+    Q_INVOKABLE qint64 secondsSinceLastUpdate() const;
+
+    /**
       * @return the package name extracted from its ID
       */
     Q_INVOKABLE static QString packageName(const QString & pkgId);

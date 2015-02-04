@@ -200,6 +200,18 @@ qint64 PkUpdates::secondsSinceLastRefresh() const
     return -1;
 }
 
+qint64 PkUpdates::secondsSinceLastUpdate() const
+{
+    QDBusReply<uint> lastCheckReply = PackageKit::Daemon::getTimeSinceAction(PackageKit::Transaction::Role::RoleGetUpdates);
+    if (lastCheckReply.isValid()) {
+        qDebug() << "Seconds since last update: " << lastCheckReply.value();
+        if (lastCheckReply.value() != UINT_MAX) // not never
+            return lastCheckReply.value();
+    }
+
+    return -1;
+}
+
 QString PkUpdates::packageName(const QString &pkgId)
 {
     return PackageKit::Daemon::packageName(pkgId);

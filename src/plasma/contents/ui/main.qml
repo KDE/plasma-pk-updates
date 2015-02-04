@@ -70,7 +70,7 @@ Item
     }
 
     function needsForcedUpdate() {
-        var secs = PkUpdates.secondsSinceLastRefresh();
+        var secs = PkUpdates.secondsSinceLastUpdate();
         if (secs === -1) { // never checked before
             return true;
         } else if (checkDaily) {
