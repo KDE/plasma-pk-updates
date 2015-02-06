@@ -58,7 +58,6 @@ Item {
                 updatesModel.append({"selected": true, "id": id, "name": PkUpdates.packageName(id), "desc": desc})
             }
         }
-        nameColumn.resizeToContents()
     }
 
     ListModel {
@@ -80,14 +79,12 @@ Item {
         }
 
         PlasmaExtras.ScrollArea {
-
             Layout.fillWidth: true
             Layout.fillHeight: true
+            visible: PkUpdates.count && !PkUpdates.isActive
 
             ListView {
                 id: updatesView
-
-                visible: PkUpdates.count && !PkUpdates.isActive
                 clip: true
                 model: PlasmaCore.SortFilterModel {
                     sourceModel: updatesModel
