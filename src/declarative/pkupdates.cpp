@@ -288,7 +288,7 @@ void PkUpdates::onPackageUpdating(PackageKit::Transaction::Info info, const QStr
 {
     Q_UNUSED(summary)
     qDebug() << "Package updating:" << packageID <<
-                ", type:" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)info, "Info");
+                ", info:" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)info, "Info");
     setStatusMessage(PkStrings::infoPresent(info) + " " + PackageKit::Daemon::packageName(packageID));
     setPercentage(m_installTrans->percentage());
 }
