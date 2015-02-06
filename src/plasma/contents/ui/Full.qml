@@ -23,11 +23,19 @@ import QtQuick.Layouts 1.1
 import QtQuick.Controls 1.3
 import org.kde.plasma.extras 2.0 as PlasmaExtras
 import org.kde.plasma.core 2.0 as PlasmaCore
-//import org.kde.plasma.components 2.0 as PC
 import org.kde.plasma.PackageKit 1.0
 
 Item
 {
+    readonly property bool __anySelected: {
+        for (var i = 0; i < updatesModel.count; i++) {
+            var pkg = updatesModel.get(i)
+            if (pkg.selected)
+                return true
+        }
+        return false
+    }
+
     Binding {
         target: timestampLabel
         property: "text"
@@ -61,7 +69,7 @@ Item
         id: header
         level: 3
         wrapMode: Text.WordWrap
-        text: PkUpdates.message
+        text: !PkUpdates.isNetworkOnline ? i18n("Network is offline") : PkUpdates.message
     }
 
     ColumnLayout
@@ -110,13 +118,27 @@ Item
         }
 
         Button {
-            visible: !PkUpdates.isActive && PkUpdates.isNetworkOnline
+            id: btnCheck
+            visible: !PkUpdates.count && PkUpdates.isNetworkOnline
+            enabled: !PkUpdates.isActive
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: statusbar.top
             anchors.bottomMargin: units.largeSpacing
-            text: PkUpdates.isSystemUpToDate ? i18n("Check For Updates") : i18n("Install Updates")
-            tooltip: PkUpdates.isSystemUpToDate ? i18n("Checks for any available updates") : i18n("Performs the software update")
-            onClicked: PkUpdates.isSystemUpToDate ? PkUpdates.checkUpdates(needsForcedUpdate()) : PkUpdates.installUpdates(selectedPackages())
+            text: i18n("Check For Updates")
+            tooltip: i18n("Checks for any available updates")
+            onClicked: PkUpdates.checkUpdates(needsForcedUpdate())
+        }
+
+        Button {
+            id: btnUpdate
+            visible: PkUpdates.count && PkUpdates.isNetworkOnline
+            enabled: __anySelected && !PkUpdates.isActive
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.bottom: statusbar.top
+            anchors.bottomMargin: units.largeSpacing
+            text: i18n("Install Updates")
+            tooltip: i18n("Performs the software update")
+            onClicked: PkUpdates.installUpdates(selectedPackages())
         }
 
         BusyIndicator {
