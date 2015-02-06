@@ -142,13 +142,13 @@ QVariantMap PkUpdates::packages() const
 bool PkUpdates::isNetworkOnline() const
 {
     qDebug() << "Is net online:" << (PackageKit::Daemon::networkState() > PackageKit::Daemon::Network::NetworkOffline);
-    return PackageKit::Daemon::networkState() > PackageKit::Daemon::Network::NetworkOffline;
+    return (PackageKit::Daemon::networkState() > PackageKit::Daemon::Network::NetworkOffline);
 }
 
 bool PkUpdates::isNetworkMobile() const
 {
     qDebug() << "Is net mobile:" << (PackageKit::Daemon::networkState() == PackageKit::Daemon::Network::NetworkMobile);
-    return PackageKit::Daemon::networkState() == PackageKit::Daemon::Network::NetworkMobile;
+    return (PackageKit::Daemon::networkState() == PackageKit::Daemon::Network::NetworkMobile);
 }
 
 bool PkUpdates::isOnBattery() const
