@@ -21,12 +21,12 @@
 import QtQuick 2.1
 import QtQuick.Layouts 1.1
 import QtQuick.Controls 1.3
+import org.kde.plasma.components 2.0 as PlasmaComponents
 import org.kde.plasma.extras 2.0 as PlasmaExtras
 import org.kde.plasma.core 2.0 as PlasmaCore
 import org.kde.plasma.PackageKit 1.0
 
-Item
-{
+Item {
     readonly property bool __anySelected: {
         for (var i = 0; i < updatesModel.count; i++) {
             var pkg = updatesModel.get(i)
@@ -72,49 +72,91 @@ Item
         text: !PkUpdates.isNetworkOnline ? i18n("Network is offline") : PkUpdates.message
     }
 
-    ColumnLayout
-    {
+    ColumnLayout {
         spacing: units.largeSpacing
         anchors {
             fill: parent
             topMargin: header.height
         }
 
-        CheckBox {
-            id: dummyCheckBox
-            visible: false
-        }
+        PlasmaExtras.ScrollArea {
 
-        TableView {
-            id: updatesView
-            model: PlasmaCore.SortFilterModel {
-                sourceModel: updatesModel
-                filterRole: "name"
-            }
-            sortIndicatorColumn: 1
-            //sortIndicatorVisible: true
-            focus: visible
-            headerVisible: false // BUG looks broken with default Qt style
-            visible: PkUpdates.count && !PkUpdates.isActive
             Layout.fillWidth: true
             Layout.fillHeight: true
 
-            TableViewColumn {
-                id: checkColumn
-                role: "selected"
-                width: dummyCheckBox.width
-                resizable: false
-                movable: false
-                delegate: CheckBox {
-                    id: checkbox
-                    checked: styleData.value
-                    onClicked: {
-                        updatesModel.setProperty(styleData.row, "selected", checked)
+            ListView {
+                id: updatesView
+
+                visible: PkUpdates.count && !PkUpdates.isActive
+                clip: true
+                model: PlasmaCore.SortFilterModel {
+                    sourceModel: updatesModel
+                    filterRole: "name"
+                }
+                anchors.fill: parent
+                currentIndex: -1
+                boundsBehavior: Flickable.StopAtBounds
+                delegate: packageComponent
+
+                Component {
+                    id: packageComponent
+
+                    PlasmaComponents.ListItem {
+                        height: packageInfoColumn.height + units.gridUnit
+                        width: parent.width
+
+                        PlasmaComponents.CheckBox {
+                            id: checkbox
+                            anchors {
+                                left: parent.left
+                                verticalCenter: packageInfoColumn.verticalCenter
+                            }
+                            checked: selected
+                            onClicked: {
+                                updatesModel.setProperty(index, "selected", checked)
+                            }
+                        }
+
+                        Column {
+                            id: packageInfoColumn
+
+                            anchors {
+                                left: checkbox.right
+                                right: parent.right
+                                verticalCenter: parent.verticalCenter
+                                leftMargin: Math.round(units.gridUnit / 2)
+                                rightMargin: Math.round(units.gridUnit / 2)
+                            }
+                            height: packageNameLabel.height + packageDescriptionLabel.height
+
+                            PlasmaComponents.Label {
+                                id: packageNameLabel
+                                height: paintedHeight
+                                anchors {
+                                    left: parent.left
+                                    right: parent.right
+                                }
+                                elide: Text.ElideRight;
+                                text: name
+                            }
+
+                            PlasmaComponents.Label {
+                                id: packageDescriptionLabel
+                                height: paintedHeight
+                                anchors {
+                                    left: parent.left
+                                    right: parent.right
+                                }
+                                elide: Text.ElideRight;
+                                font.italic: true
+                                font.pointSize: theme.smallestFont.pointSize;
+                                opacity: 0.6;
+                                text: desc
+                            }
+                        }
                     }
                 }
             }
-            TableViewColumn { id: nameColumn; role: "name"; title: i18n("Package"); width: 200 }
-            TableViewColumn { role: "desc"; title: i18n("Description"); width: 600 }
         }
 
         Button {
@@ -145,6 +187,7 @@ Item
             running: PkUpdates.isActive
             visible: running
             anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: parent.verticalCenter
         }
 
         RowLayout {
