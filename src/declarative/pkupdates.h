@@ -47,7 +47,6 @@ class PkUpdates : public QObject
     Q_PROPERTY(int percentage READ percentage NOTIFY percentageChanged)
     Q_PROPERTY(QString timestamp READ timestamp NOTIFY updatesChanged)
     Q_PROPERTY(QString statusMessage READ statusMessage NOTIFY statusMessageChanged)
-    Q_PROPERTY(QString packageNames READ packageNames NOTIFY updatesChanged)
     Q_PROPERTY(QVariantMap packages READ packages NOTIFY updatesChanged)
     Q_PROPERTY(bool isActive READ isActive NOTIFY isActiveChanged)
     Q_PROPERTY(bool isNetworkOnline READ isNetworkOnline NOTIFY networkStateChanged)
@@ -102,11 +101,6 @@ public:
      * @return status messsage conveying the action being currently performed
      */
     QString statusMessage() const;
-
-    /**
-     * @return a comma separated (human readable) list of package names to update
-     */
-    QString packageNames() const;
 
     /**
      * @return whether we're currently checking for updates or not
