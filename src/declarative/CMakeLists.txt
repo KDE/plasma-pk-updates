@@ -1,3 +1,5 @@
+add_definitions(-DTRANSLATION_DOMAIN="pkupdates")
+
 set(plasmapk_qmlplugins_SRCS
    qmlplugins.cpp
    pkupdates.cpp
