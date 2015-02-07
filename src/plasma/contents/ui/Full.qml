@@ -91,8 +91,6 @@ Item {
         }
         Label {
             visible: PkUpdates.isActive
-            wrapMode: Text.WordWrap
-            font.italic: true
             font.pointSize: theme.smallestFont.pointSize;
             opacity: 0.6;
             text: PkUpdates.statusMessage
