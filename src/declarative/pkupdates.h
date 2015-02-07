@@ -127,6 +127,14 @@ public:
      */
     bool isOnBattery() const;
 
+    /**
+     * Request details about the details
+     * @param pkgIds Package IDs
+     *
+     * Emits updateDetail()
+     */
+    void getUpdateDetails(const QStringList & pkgIds);
+
 signals:
     /**
      * Emitted when the number uf updates has changed
@@ -137,6 +145,15 @@ signals:
      * Emitted when the updates check is finished (with success or error)
      */
     void done();
+
+    /**
+     * Emitted with update details
+     * @see getUpdateDetails()
+     */
+    void updateDetail(const QString &packageID, const QStringList &updates, const QStringList &obsoletes, const QStringList &vendorUrls,
+                      const QStringList &bugzillaUrls, const QStringList &cveUrls, PackageKit::Transaction::Restart restart,
+                      const QString &updateText, const QString &changelog, PackageKit::Transaction::UpdateState state,
+                      const QDateTime &issued, const QDateTime &updated);
 
     // private ;)
     void statusMessageChanged();

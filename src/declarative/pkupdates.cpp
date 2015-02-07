@@ -157,6 +157,13 @@ bool PkUpdates::isOnBattery() const
     return Solid::PowerManagement::appShouldConserveResources();
 }
 
+void PkUpdates::getUpdateDetails(const QStringList &pkgIds)
+{
+    qDebug() << "Requesting update details for" << pkgIds;
+    PackageKit::Transaction * trans = PackageKit::Daemon::getDetails(pkgIds);
+    connect(trans, &PackageKit::Transaction::updateDetail, this, &PkUpdates::updateDetail);
+}
+
 QString PkUpdates::timestamp() const
 {
     int lastCheck = secondsSinceLastUpdate();
