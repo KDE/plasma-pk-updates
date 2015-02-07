@@ -54,7 +54,7 @@ Item {
         for (var id in packages) {
             if (packages.hasOwnProperty(id)) {
                 var desc = packages[id]
-                updatesModel.append({"selected": true, "id": id, "name": PkUpdates.packageName(id), "desc": desc})
+                updatesModel.append({"selected": true, "id": id, "name": PkUpdates.packageName(id), "desc": desc, "version": PkUpdates.packageVersion(id)})
             }
         }
     }
@@ -133,7 +133,7 @@ Item {
                                     right: parent.right
                                 }
                                 elide: Text.ElideRight;
-                                text: name
+                                text: i18nc("Package Name (Version)", "%1 (%2)", name, version)
                             }
 
                             PlasmaComponents.Label {

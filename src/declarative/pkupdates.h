@@ -177,6 +177,11 @@ public slots:
       */
     Q_INVOKABLE static QString packageName(const QString & pkgId);
 
+    /**
+      * @return the package version extracted from its ID
+      */
+    Q_INVOKABLE static QString packageVersion(const QString & pkgId);
+
 private slots:
     void getUpdates();
     void onChanged();

@@ -209,6 +209,11 @@ QString PkUpdates::packageName(const QString &pkgId)
     return PackageKit::Daemon::packageName(pkgId);
 }
 
+QString PkUpdates::packageVersion(const QString &pkgId)
+{
+    return PackageKit::Daemon::packageVersion(pkgId);
+}
+
 void PkUpdates::getUpdates()
 {
     m_updatesTrans = PackageKit::Daemon::getUpdates();
