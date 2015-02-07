@@ -45,6 +45,7 @@ Item {
 
     Component.onCompleted: {
         PkUpdates.updatesChanged.connect(populateModel)
+        populateModel()
     }
 
     function populateModel() {
