@@ -339,7 +339,7 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
         if (status == PackageKit::Transaction::ExitSuccess) {
             qDebug() << "Update packages transaction finished successfully";
             KNotification::event(KNotification::Notification, i18n("Updates Installed"),
-                                 i18np("Successfully installed 1 update", "Successfully installed %1 updates", m_updateList.count()), // FIXME count
+                                 i18n("Software packages successfully updated."),
                                  KIconLoader::global()->loadIcon("system-software-update", KIconLoader::Desktop));
         } else {
             qDebug() << "Update packages transaction didn't finish successfully";
