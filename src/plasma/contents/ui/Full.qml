@@ -65,19 +65,58 @@ Item {
 
     PlasmaExtras.Heading {
         id: header
-        level: 3
+        level: 4
         wrapMode: Text.WordWrap
         text: !PkUpdates.isNetworkOnline ? i18n("Network is offline") : PkUpdates.message
+    }
+
+    RowLayout {
+        id: statusbar
+        anchors {
+            left: parent.left
+            right: parent.right
+            top: header.bottom
+            rightMargin: Math.round(units.gridUnit / 2)
+        }
+        spacing: units.largeSpacing
+        Label {
+            id: timestampLabel
+            visible: !PkUpdates.isActive
+            wrapMode: Text.WordWrap
+            font.italic: true
+            font.pointSize: theme.smallestFont.pointSize;
+            opacity: 0.6;
+            text: PkUpdates.timestamp
+        }
+        Label {
+            visible: PkUpdates.isActive
+            wrapMode: Text.WordWrap
+            font.italic: true
+            font.pointSize: theme.smallestFont.pointSize;
+            opacity: 0.6;
+            text: PkUpdates.statusMessage
+        }
+        ProgressBar {
+            visible: PkUpdates.isActive
+            Layout.fillWidth: true
+            minimumValue: 0
+            maximumValue: 101 // BUG workaround a bug in ProgressBar! if the value is > max, it's set to max and never changes below
+            value: PkUpdates.percentage
+            indeterminate: PkUpdates.percentage > 100
+        }
     }
 
     ColumnLayout {
         spacing: units.largeSpacing
         anchors {
-            fill: parent
-            topMargin: header.height
+            bottom: parent.bottom
+            left: parent.left
+            right: parent.right
+            top: statusbar.bottom
         }
 
         PlasmaExtras.ScrollArea {
+            id: updatesScrollArea
             Layout.fillWidth: true
             Layout.fillHeight: true
             visible: PkUpdates.count && !PkUpdates.isActive
@@ -100,6 +139,8 @@ Item {
                     PlasmaComponents.ListItem {
                         height: packageInfoColumn.height + units.gridUnit
                         width: parent.width
+                        enabled: true
+                        checked: containsMouse
 
                         PlasmaComponents.CheckBox {
                             id: checkbox
@@ -116,6 +157,7 @@ Item {
                         Column {
                             id: packageInfoColumn
 
+                            height: packageNameLabel.height + packageDescriptionLabel.height
                             anchors {
                                 left: checkbox.right
                                 right: parent.right
@@ -123,7 +165,6 @@ Item {
                                 leftMargin: Math.round(units.gridUnit / 2)
                                 rightMargin: Math.round(units.gridUnit / 2)
                             }
-                            height: packageNameLabel.height + packageDescriptionLabel.height
 
                             PlasmaComponents.Label {
                                 id: packageNameLabel
@@ -135,7 +176,6 @@ Item {
                                 elide: Text.ElideRight;
                                 text: i18nc("Package Name (Version)", "%1 (%2)", name, version)
                             }
-
                             PlasmaComponents.Label {
                                 id: packageDescriptionLabel
                                 height: paintedHeight
@@ -150,6 +190,11 @@ Item {
                                 text: desc
                             }
                         }
+
+                        onClicked: {
+                            checkbox.checked = !checkbox.checked
+                            updatesModel.setProperty(index, "selected", checkbox.checked)
+                        }
                     }
                 }
             }
@@ -159,9 +204,11 @@ Item {
             id: btnCheck
             visible: !PkUpdates.count && PkUpdates.isNetworkOnline
             enabled: !PkUpdates.isActive
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.bottom: statusbar.top
-            anchors.bottomMargin: units.largeSpacing
+            anchors {
+                bottom: parent.bottom
+                bottomMargin: Math.round(units.gridUnit / 3)
+                horizontalCenter: parent.horizontalCenter
+            }
             text: i18n("Check For Updates")
             tooltip: i18n("Checks for any available updates")
             onClicked: PkUpdates.checkUpdates(needsForcedUpdate()) // circumvent the checks, the user knows what they're doing ;)
@@ -169,11 +216,13 @@ Item {
 
         Button {
             id: btnUpdate
-            visible: PkUpdates.count && PkUpdates.isNetworkOnline
-            enabled: __anySelected && !PkUpdates.isActive
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.bottom: statusbar.top
-            anchors.bottomMargin: units.largeSpacing
+            visible: PkUpdates.count && PkUpdates.isNetworkOnline && !PkUpdates.isActive
+            enabled: __anySelected
+            anchors {
+                bottom: parent.bottom
+                bottomMargin: Math.round(units.gridUnit / 3)
+                horizontalCenter: parent.horizontalCenter
+            }
             text: i18n("Install Updates")
             tooltip: i18n("Performs the software update")
             onClicked: PkUpdates.installUpdates(selectedPackages())
@@ -184,31 +233,6 @@ Item {
             visible: running
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
-        }
-
-        RowLayout {
-            id: statusbar
-            spacing: units.largeSpacing
-            anchors.bottom: parent.bottom
-            Label {
-                visible: !PkUpdates.isActive
-                id: timestampLabel
-                wrapMode: Text.WordWrap
-                text: PkUpdates.timestamp
-            }
-            Label {
-                visible: PkUpdates.isActive
-                wrapMode: Text.WordWrap
-                text: PkUpdates.statusMessage
-            }
-            ProgressBar {
-                visible: PkUpdates.isActive
-                Layout.fillWidth: true
-                minimumValue: 0
-                maximumValue: 101 // BUG workaround a bug in ProgressBar! if the value is > max, it's set to max and never changes below
-                value: PkUpdates.percentage
-                indeterminate: PkUpdates.percentage > 100
-            }
         }
     }
 

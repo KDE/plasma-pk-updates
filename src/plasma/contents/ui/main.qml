@@ -59,8 +59,7 @@ Item
 
     Plasmoid.compactRepresentation: PlasmaCore.IconItem {
         source: PkUpdates.iconName
-        width: 4
-        height: 4
+        anchors.fill: parent
         MouseArea {
             anchors.fill: parent
             onClicked: {
