@@ -29,6 +29,9 @@ Item
     Plasmoid.toolTipSubText: PkUpdates.message
     Plasmoid.icon: PkUpdates.iconName
 
+    Plasmoid.switchWidth: units.gridUnit * 10;
+    Plasmoid.switchHeight: units.gridUnit * 10;
+
     property bool checkDaily: plasmoid.configuration.daily
     property bool checkWeekly: plasmoid.configuration.weekly
     property bool checkMonthly: plasmoid.configuration.monthly
