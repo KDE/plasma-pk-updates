@@ -257,6 +257,8 @@ void PkUpdates::onStatusChanged()
         qDebug() << "Transaction status changed:"
                  << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)trans->status(), "Status")
                  << QStringLiteral("(%1%)").arg(trans->percentage());
+        if (trans->status() == PackageKit::Transaction::StatusFinished)
+            return;
         setStatusMessage(PkStrings::status(trans->status(), trans->speed(), trans->downloadSizeRemaining()));
         setPercentage(trans->percentage());
     }
@@ -299,6 +301,8 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
     if (!trans)
         return;
 
+    trans->deleteLater();
+
     qDebug() << "Transaction" << trans->tid().path() <<
                 "finished with status" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)status, "Exit") <<
                 "in" << runtime/1000 << "seconds";
@@ -306,7 +310,6 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
     if (trans->role() == PackageKit::Transaction::RoleRefreshCache) {
         if (status == PackageKit::Transaction::ExitSuccess) {
             qDebug() << "Cache transaction finished successfully";
-            setActive(false);
             return;
         } else {
             qDebug() << "Cache transaction didn't finish successfully";
@@ -324,12 +327,15 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
         if (status == PackageKit::Transaction::ExitSuccess) {
             qDebug() << "Update packages transaction finished successfully";
             KNotification::event(KNotification::Notification, i18n("Updates Installed"),
-                                 i18np("Successfully instaled 1 update", "Successfully installed %1 updates", m_updateList.count()),
+                                 i18np("Successfully installed 1 update", "Successfully installed %1 updates", m_updateList.count()), // FIXME count
                                  KIconLoader::global()->loadIcon("system-software-update", KIconLoader::Desktop));
-            m_updateList.clear();
         } else {
             qDebug() << "Update packages transaction didn't finish successfully";
         }
+        setActive(false);
+        return;
+    } else {
+        qDebug() << "Unhandled transaction type:" << PackageKit::Daemon::enumToString<PackageKit::Transaction>(trans->role(), "Role");
         setActive(false);
         return;
     }

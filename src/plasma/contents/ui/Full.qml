@@ -45,7 +45,6 @@ Item {
 
     Component.onCompleted: {
         PkUpdates.updatesChanged.connect(populateModel)
-        populateModel()
     }
 
     function populateModel() {
@@ -165,7 +164,7 @@ Item {
             anchors.bottomMargin: units.largeSpacing
             text: i18n("Check For Updates")
             tooltip: i18n("Checks for any available updates")
-            onClicked: PkUpdates.checkUpdates(needsForcedUpdate()) // circumvent the battery check, the user knows what they're doing ;)
+            onClicked: PkUpdates.checkUpdates(needsForcedUpdate()) // circumvent the checks, the user knows what they're doing ;)
         }
 
         Button {
