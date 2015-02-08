@@ -127,14 +127,6 @@ public:
      */
     bool isOnBattery() const;
 
-    /**
-     * Request details about the details
-     * @param pkgIds Package IDs
-     *
-     * Emits updateDetail()
-     */
-    void getUpdateDetails(const QStringList & pkgIds);
-
 signals:
     /**
      * Emitted when the number uf updates has changed
@@ -198,6 +190,14 @@ public slots:
       * @return the package version extracted from its ID
       */
     Q_INVOKABLE static QString packageVersion(const QString & pkgId);
+
+    /**
+     * Request details about the details
+     * @param pkgIds Package IDs
+     *
+     * Emits updateDetail()
+     */
+    Q_INVOKABLE void getUpdateDetails(const QStringList & pkgIds);
 
 private slots:
     void getUpdates();
