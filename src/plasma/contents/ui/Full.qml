@@ -45,6 +45,7 @@ Item {
 
     Component.onCompleted: {
         PkUpdates.updatesChanged.connect(populateModel)
+        PkUpdates.updateDetail.connect(updateDetails)
         populateModel()
     }
 
@@ -58,6 +59,12 @@ Item {
                 updatesModel.append({"selected": true, "id": id, "name": PkUpdates.packageName(id), "desc": desc, "version": PkUpdates.packageVersion(id)})
             }
         }
+    }
+
+    function updateDetails(packageID, updateText, urls) {
+        print("Got update details for: " + packageID)
+        print("Update text: " + updateText)
+        print("URLs: " + urls)
     }
 
     ListModel {
@@ -191,8 +198,7 @@ Item {
                         }
 
                         onClicked: {
-                            checkbox.checked = !checkbox.checked
-                            updatesModel.setProperty(index, "selected", checkbox.checked)
+                            PkUpdates.getUpdateDetails(id)
                         }
                     }
                 }
@@ -210,7 +216,7 @@ Item {
             }
             text: i18n("Check For Updates")
             tooltip: i18n("Checks for any available updates")
-            onClicked: PkUpdates.checkUpdates(needsForcedUpdate()) // circumvent the checks, the user knows what they're doing ;)
+            onClicked: PkUpdates.checkUpdates(true) // circumvent the checks, the user knows what they're doing ;)
         }
 
         Button {

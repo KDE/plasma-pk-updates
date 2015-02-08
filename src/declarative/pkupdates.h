@@ -142,10 +142,7 @@ signals:
      * Emitted with update details
      * @see getUpdateDetails()
      */
-    void updateDetail(const QString &packageID, const QStringList &updates, const QStringList &obsoletes, const QStringList &vendorUrls,
-                      const QStringList &bugzillaUrls, const QStringList &cveUrls, PackageKit::Transaction::Restart restart,
-                      const QString &updateText, const QString &changelog, PackageKit::Transaction::UpdateState state,
-                      const QDateTime &issued, const QDateTime &updated);
+    void updateDetail(const QString &packageID, const QString &updateText, const QStringList &urls);
 
     // private ;)
     void statusMessageChanged();
@@ -197,7 +194,7 @@ public slots:
      *
      * Emits updateDetail()
      */
-    Q_INVOKABLE void getUpdateDetails(const QStringList & pkgIds);
+    Q_INVOKABLE void getUpdateDetails(const QString & pkgID);
 
 private slots:
     void getUpdates();
@@ -209,6 +206,10 @@ private slots:
     void onFinished(PackageKit::Transaction::Exit status, uint runtime);
     void onErrorCode(PackageKit::Transaction::Error error, const QString &details);
     void onRequireRestart(PackageKit::Transaction::Restart type, const QString &packageID);
+    void onUpdateDetail(const QString &packageID, const QStringList &updates, const QStringList &obsoletes, const QStringList &vendorUrls,
+                        const QStringList &bugzillaUrls, const QStringList &cveUrls, PackageKit::Transaction::Restart restart,
+                        const QString &updateText, const QString &changelog, PackageKit::Transaction::UpdateState state,
+                        const QDateTime &issued, const QDateTime &updated);
 
 private:
     void setStatusMessage(const QString &message);
@@ -217,6 +218,7 @@ private:
     QPointer<PackageKit::Transaction> m_updatesTrans;
     QPointer<PackageKit::Transaction> m_cacheTrans;
     QPointer<PackageKit::Transaction> m_installTrans;
+    QPointer<PackageKit::Transaction> m_detailTrans;
     QVariantMap m_updateList;
     QStringList m_importantList;
     QStringList m_securityList;

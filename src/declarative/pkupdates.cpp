@@ -37,7 +37,8 @@ PkUpdates::PkUpdates(QObject *parent) :
     QObject(parent),
     m_updatesTrans(Q_NULLPTR),
     m_cacheTrans(Q_NULLPTR),
-    m_installTrans(Q_NULLPTR)
+    m_installTrans(Q_NULLPTR),
+    m_detailTrans(Q_NULLPTR)
 {
     setStatusMessage(i18n("Idle"));
 
@@ -63,6 +64,9 @@ PkUpdates::~PkUpdates()
     }
     if (m_installTrans) {
         m_installTrans->deleteLater();
+    }
+    if (m_detailTrans) {
+        m_detailTrans->deleteLater();
     }
 }
 
@@ -157,11 +161,11 @@ bool PkUpdates::isOnBattery() const
     return Solid::PowerManagement::appShouldConserveResources();
 }
 
-void PkUpdates::getUpdateDetails(const QStringList &pkgIds)
+void PkUpdates::getUpdateDetails(const QString &pkgID)
 {
-    qDebug() << "Requesting update details for" << pkgIds;
-    PackageKit::Transaction * trans = PackageKit::Daemon::getDetails(pkgIds);
-    connect(trans, &PackageKit::Transaction::updateDetail, this, &PkUpdates::updateDetail);
+    qDebug() << "Requesting update details for" << pkgID;
+    m_detailTrans = PackageKit::Daemon::getUpdateDetail(pkgID);
+    connect(m_detailTrans, &PackageKit::Transaction::updateDetail, this, &PkUpdates::onUpdateDetail);
 }
 
 QString PkUpdates::timestamp() const
@@ -367,6 +371,15 @@ void PkUpdates::onRequireRestart(PackageKit::Transaction::Restart type, const QS
 {
     qDebug() << "RESTART" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)type, "Restart")
              << "is required for package" << packageID;
+}
+
+void PkUpdates::onUpdateDetail(const QString &packageID, const QStringList &updates, const QStringList &obsoletes,
+                               const QStringList &vendorUrls, const QStringList &bugzillaUrls, const QStringList &cveUrls,
+                               PackageKit::Transaction::Restart restart, const QString &updateText, const QString &changelog,
+                               PackageKit::Transaction::UpdateState state, const QDateTime &issued, const QDateTime &updated)
+{
+    qDebug() << "Got update details for" << packageID;
+    emit updateDetail(packageID, updateText, bugzillaUrls);
 }
 
 void PkUpdates::setStatusMessage(const QString &message)
