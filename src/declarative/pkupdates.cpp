@@ -102,7 +102,9 @@ QString PkUpdates::iconName() const
 
 QString PkUpdates::message() const
 {
-    if (!isSystemUpToDate()) {
+    if (isActive()) {
+        return i18n("Working");
+    } else if (!isSystemUpToDate()) {
         QStringList extra;
         const QString msg = i18np("You have 1 new update", "You have %1 new updates", count());
         if (securityCount()>0)
@@ -114,8 +116,6 @@ QString PkUpdates::message() const
             return msg;
         else
             return msg + "<br>" + i18n("(including %1)", extra.join(i18n(" and ")));
-    } else if (isActive()) {
-        return i18n("Checking for updates");
     } else if (!isNetworkOnline()) {
         return i18n("Your system is offline");
     }
