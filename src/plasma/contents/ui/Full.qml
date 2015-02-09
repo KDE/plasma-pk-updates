@@ -207,7 +207,7 @@ Item {
 
         Button {
             id: btnCheck
-            visible: !PkUpdates.count && PkUpdates.isNetworkOnline
+            visible: !PkUpdates.count && PkUpdates.isNetworkOnline && !PkUpdates.isActive
             enabled: !PkUpdates.isActive
             anchors {
                 bottom: parent.bottom
