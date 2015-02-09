@@ -334,6 +334,12 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
     } else if (trans->role() == PackageKit::Transaction::RoleGetUpdates) {
         if (status == PackageKit::Transaction::ExitSuccess) {
             qDebug() << "Check updates transaction finished successfully";
+            const int upCount = count();
+            if (upCount > 0) {
+                KNotification::event(KNotification::Notification, i18n("Software Updates Available"),
+                                     i18np("You have 1 new update", "You have %1 new updates", upCount),
+                                     KIconLoader::global()->loadIcon("system-software-update", KIconLoader::Desktop));
+            }
         } else {
             qDebug() << "Check updates transaction didn't finish successfully";
         }
@@ -379,6 +385,8 @@ void PkUpdates::onUpdateDetail(const QString &packageID, const QStringList &upda
                                PackageKit::Transaction::UpdateState state, const QDateTime &issued, const QDateTime &updated)
 {
     qDebug() << "Got update details for" << packageID;
+    //qDebug() << "Restart type:" << restart;
+
     emit updateDetail(packageID, updateText, bugzillaUrls);
 }
 

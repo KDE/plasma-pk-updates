@@ -62,7 +62,7 @@ Item {
     }
 
     function updateDetails(packageID, updateText, urls) {
-        print("Got update details for: " + packageID)
+        //print("Got update details for: " + packageID)
         print("Update text: " + updateText)
         print("URLs: " + urls)
     }
