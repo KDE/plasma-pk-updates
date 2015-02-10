@@ -102,14 +102,20 @@ Item {
             opacity: 0.6;
             text: PkUpdates.statusMessage
         }
-        ProgressBar {
-            visible: PkUpdates.isActive
-            Layout.fillWidth: true
-            minimumValue: 0
-            maximumValue: 101 // BUG workaround a bug in ProgressBar! if the value is > max, it's set to max and never changes below
-            value: PkUpdates.percentage
-            indeterminate: PkUpdates.percentage > 100
+    }
+
+    ProgressBar {
+        id: progressBar
+        anchors {
+            left: parent.left
+            right: parent.right
+            top: statusbar.bottom
         }
+        visible: PkUpdates.isActive
+        minimumValue: 0
+        maximumValue: 101 // BUG workaround a bug in ProgressBar! if the value is > max, it's set to max and never changes below
+        value: PkUpdates.percentage
+        indeterminate: PkUpdates.percentage > 100
     }
 
     ColumnLayout {
@@ -118,7 +124,7 @@ Item {
             bottom: parent.bottom
             left: parent.left
             right: parent.right
-            top: statusbar.bottom
+            top: progressBar.bottom
         }
 
         PlasmaExtras.ScrollArea {
