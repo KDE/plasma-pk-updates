@@ -29,6 +29,8 @@
 #include <KNotification>
 #include <Solid/PowerManagement>
 #include <KIconLoader>
+#include <KConfigGroup>
+#include <KSharedConfig>
 
 #include "pkupdates.h"
 #include "PkStrings.h"
@@ -45,6 +47,8 @@ PkUpdates::PkUpdates(QObject *parent) :
     connect(PackageKit::Daemon::global(), &PackageKit::Daemon::changed, this, &PkUpdates::onChanged);
     connect(PackageKit::Daemon::global(), &PackageKit::Daemon::updatesChanged, this, &PkUpdates::onUpdatesChanged);
     connect(PackageKit::Daemon::global(), &PackageKit::Daemon::networkStateChanged, this, &PkUpdates::networkStateChanged);
+    connect(Solid::PowerManagement::notifier(), &Solid::PowerManagement::Notifier::resumingFromSuspend, this,
+            [this] {PackageKit::Daemon::stateHasChanged("resume");});
 
     connect(Solid::PowerManagement::notifier(), &Solid::PowerManagement::Notifier::appShouldConserveResourcesChanged,
             this, &PkUpdates::isOnBatteryChanged);
@@ -182,6 +186,12 @@ void PkUpdates::checkUpdates(bool force)
 {
     qDebug() << "Checking updates, forced:" << force;
 
+    if (force) { // save the timestamp
+        KConfigGroup grp(KSharedConfig::openConfig("plasma-pk-updates"), "General");
+        grp.writeEntry("Timestamp", QDateTime::currentDateTime().toMSecsSinceEpoch());
+        grp.sync();
+    }
+
     m_cacheTrans = PackageKit::Daemon::refreshCache(force);
     setActive(true);
 
@@ -191,21 +201,15 @@ void PkUpdates::checkUpdates(bool force)
     connect(m_cacheTrans, &PackageKit::Transaction::requireRestart, this, &PkUpdates::onRequireRestart);
 }
 
-qint64 PkUpdates::secondsSinceLastRefresh() const
+qint64 PkUpdates::lastRefreshTimestamp() const
 {
-    QDBusReply<uint> lastCheckReply = PackageKit::Daemon::getTimeSinceAction(PackageKit::Transaction::Role::RoleRefreshCache);
-    if (lastCheckReply.isValid()) {
-        qDebug() << "Seconds since last refresh: " << lastCheckReply.value();
-        if (lastCheckReply.value() != UINT_MAX) // not never
-            return lastCheckReply.value();
-    }
-
-    return -1;
+    KConfigGroup grp(KSharedConfig::openConfig("plasma-pk-updates"), "General");
+    return grp.readEntry<qint64>("Timestamp", -1);
 }
 
 qint64 PkUpdates::secondsSinceLastUpdate() const
 {
-    QDBusReply<uint> lastCheckReply = PackageKit::Daemon::getTimeSinceAction(PackageKit::Transaction::Role::RoleUpdatePackages);
+    QDBusReply<uint> lastCheckReply = PackageKit::Daemon::getTimeSinceAction(PackageKit::Transaction::Role::RoleGetUpdates);
     if (lastCheckReply.isValid()) {
         qDebug() << "Seconds since last update: " << lastCheckReply.value();
         if (lastCheckReply.value() != UINT_MAX) // not never

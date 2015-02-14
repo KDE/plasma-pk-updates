@@ -72,8 +72,8 @@ Item
     }
 
     function needsForcedUpdate() {
-        var secs = PkUpdates.secondsSinceLastUpdate();
-        if (secs === -1) { // never checked before
+        var secs = (Date.now() - PkUpdates.lastRefreshTimestamp())/1000; // compare with the saved timestamp
+        if (secs < -1) { // never checked before
             return true;
         } else if (checkDaily) {
             return secs >= secsInDay;

@@ -169,9 +169,9 @@ public slots:
     Q_INVOKABLE void installUpdates(const QStringList & packageIds);
 
     /**
-      * @return the number of seconds elapsed from the last cache check, -1 if never
+      * @return the timestamp (in milliseconds) of the last cache check, -1 if never
       */
-    Q_INVOKABLE qint64 secondsSinceLastRefresh() const;
+    Q_INVOKABLE qint64 lastRefreshTimestamp() const;
 
     /**
       * @return the number of seconds elapsed from the last update, -1 if never
