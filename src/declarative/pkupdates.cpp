@@ -174,10 +174,10 @@ void PkUpdates::getUpdateDetails(const QString &pkgID)
 
 QString PkUpdates::timestamp() const
 {
-    int lastCheck = secondsSinceLastUpdate();
+    qint64 lastCheck = QDateTime::currentMSecsSinceEpoch() - lastRefreshTimestamp();
 
     if (lastCheck != -1)
-        return i18n("Last updated: %1 ago", KFormat().formatSpelloutDuration(lastCheck * 1000));
+        return i18n("Last updated: %1 ago", KFormat().formatSpelloutDuration(lastCheck));
 
     return i18n("Last updated: never");
 }
@@ -205,18 +205,6 @@ qint64 PkUpdates::lastRefreshTimestamp() const
 {
     KConfigGroup grp(KSharedConfig::openConfig("plasma-pk-updates"), "General");
     return grp.readEntry<qint64>("Timestamp", -1);
-}
-
-qint64 PkUpdates::secondsSinceLastUpdate() const
-{
-    QDBusReply<uint> lastCheckReply = PackageKit::Daemon::getTimeSinceAction(PackageKit::Transaction::Role::RoleGetUpdates);
-    if (lastCheckReply.isValid()) {
-        qDebug() << "Seconds since last update: " << lastCheckReply.value();
-        if (lastCheckReply.value() != UINT_MAX) // not never
-            return lastCheckReply.value();
-    }
-
-    return -1;
 }
 
 QString PkUpdates::packageName(const QString &pkgId)

@@ -33,7 +33,7 @@ class QTimer;
  * @brief The PkUpdates class
  *
  * Backend class to check for available PackageKit system updates.
- * Use checkUpdates() to perform the check.
+ * Use checkUpdates() to perform the check, retrieve them with packages()
  */
 class PkUpdates : public QObject
 {
@@ -172,11 +172,6 @@ public slots:
       * @return the timestamp (in milliseconds) of the last cache check, -1 if never
       */
     Q_INVOKABLE qint64 lastRefreshTimestamp() const;
-
-    /**
-      * @return the number of seconds elapsed from the last update, -1 if never
-      */
-    Q_INVOKABLE qint64 secondsSinceLastUpdate() const;
 
     /**
       * @return the package name extracted from its ID
