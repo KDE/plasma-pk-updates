@@ -80,7 +80,6 @@ PlasmaComponents.ListItem {
                 right: parent.right
             }
             elide: Text.ElideRight;
-            font.italic: true
             font.pointSize: theme.smallestFont.pointSize;
             opacity: 0.6;
             text: desc
@@ -126,7 +125,7 @@ PlasmaComponents.ListItem {
                 right: parent.right
             }
             font.weight: Font.DemiBold
-            text: i18n("Update description")
+            text: i18n("Update Description")
         }
 
         PlasmaComponents.Label {
@@ -136,7 +135,6 @@ PlasmaComponents.ListItem {
                 left: parent.left
                 right: parent.right
             }
-            font.italic: true
             font.pointSize: theme.smallestFont.pointSize;
             opacity: 0.6;
             text: (!updateText || updateText.length === 0) ? i18n("No description available") : updateText
@@ -152,14 +150,13 @@ PlasmaComponents.ListItem {
                 right: parent.right
             }
             font.weight: Font.DemiBold
-            text: i18n("Update urls")
+            text: i18n("Related URLs")
         }
 
         Repeater {
             model: updateUrls
             PlasmaComponents.Label {
                 height: paintedHeight
-                font.italic: true
                 font.pointSize: theme.smallestFont.pointSize;
                 opacity: 0.6;
                 text: "<a href=\"" + modelData + "\">" + modelData + "</a>"
