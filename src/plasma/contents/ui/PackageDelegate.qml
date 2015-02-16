@@ -30,7 +30,7 @@ PlasmaComponents.ListItem {
     id: packageDelegate
 
     property string updateText
-    property string updateUrls
+    property variant updateUrls: [ ]
     property bool expanded: ListView.isCurrentItem
 
     height: packageInfoColumn.height + detailsInfoColumn.height + Math.round(units.gridUnit / 2)
@@ -146,7 +146,7 @@ PlasmaComponents.ListItem {
         PlasmaComponents.Label {
             id: urlsLabel
             height: visible ? paintedHeight : 0
-            visible: updateUrls && updateUrls.length !== 0
+            visible: updateUrls.length !== 0 || updateUrls === null || updateUrls === undefined
             anchors {
                 left: parent.left
                 right: parent.right
@@ -156,17 +156,16 @@ PlasmaComponents.ListItem {
         }
 
         Repeater {
-            model: updateUrls.split(",")
+            model: updateUrls
             PlasmaComponents.Label {
                 height: paintedHeight
                 font.italic: true
                 font.pointSize: theme.smallestFont.pointSize;
                 opacity: 0.6;
-//                 text: i18nc("<a href=\"%1\">%1</a>", modelData)
-                text: modelData
+                text: "<a href=\"" + modelData + "\">" + modelData + "</a>"
                 textFormat: Text.RichText
                 wrapMode: Text.WordWrap
-//                 onLinkActivated: Qt.openUrlExternally(modelData)
+                onLinkActivated: Qt.openUrlExternally(modelData)
             }
         }
     }
