@@ -124,7 +124,7 @@ Item {
             bottom: parent.bottom
             left: parent.left
             right: parent.right
-            top: progressBar.bottom
+            top: statusbar.bottom
         }
 
         PlasmaExtras.ScrollArea {
