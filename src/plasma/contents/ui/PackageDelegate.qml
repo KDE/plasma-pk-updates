@@ -157,7 +157,7 @@ PlasmaComponents.ListItem {
             model: updateUrls
             PlasmaComponents.Label {
                 height: paintedHeight
-                font.italic: true
+                color: theme.linkColor
                 font.pointSize: theme.smallestFont.pointSize
                 font.underline: true
                 opacity: 0.6;
