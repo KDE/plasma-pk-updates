@@ -139,7 +139,7 @@ PlasmaComponents.ListItem {
             font.italic: true
             font.pointSize: theme.smallestFont.pointSize;
             opacity: 0.6;
-            text: updateText
+            text: (!updateText || updateText.length === 0) ? i18n("No description available") : updateText
             wrapMode: Text.WordWrap
         }
 
