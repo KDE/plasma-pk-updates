@@ -157,12 +157,27 @@ PlasmaComponents.ListItem {
             model: updateUrls
             PlasmaComponents.Label {
                 height: paintedHeight
-                font.pointSize: theme.smallestFont.pointSize;
+                font.italic: true
+                font.pointSize: theme.smallestFont.pointSize
+                font.underline: true
                 opacity: 0.6;
-                text: "<a href=\"" + modelData + "\">" + modelData + "</a>"
-                textFormat: Text.RichText
+                text: modelData
                 wrapMode: Text.WordWrap
-                onLinkActivated: Qt.openUrlExternally(modelData)
+
+                MouseArea {
+                    anchors.fill: parent
+                    hoverEnabled: true
+
+                    onClicked: {
+                        Qt.openUrlExternally(modelData)
+                    }
+                    onEntered: {
+                        cursorShape = Qt.PointingHandCursor
+                    }
+                    onExited: {
+                        cursorShape = Qt.ArrowCursor
+                    }
+                }
             }
         }
     }
