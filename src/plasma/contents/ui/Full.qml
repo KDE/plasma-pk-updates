@@ -1,6 +1,7 @@
 /***************************************************************************
  *   Copyright (C) 2013 by Aleix Pol Gonzalez <aleixpol@blue-systems.com>  *
  *   Copyright (C) 2015 by Lukáš Tinkl <lukas@kde.org>                     *
+ *   Copyright (C) 2015 by Jan Grulich <jgrulich@redhat.com>               *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -65,6 +66,8 @@ Item {
         //print("Got update details for: " + packageID)
         print("Update text: " + updateText)
         print("URLs: " + urls)
+        updatesView.currentItem.updateText = updateText
+        updatesView.currentItem.updateUrls = urls
     }
 
     ListModel {
@@ -143,67 +146,12 @@ Item {
                 anchors.fill: parent
                 currentIndex: -1
                 boundsBehavior: Flickable.StopAtBounds
-                delegate: packageComponent
-
-                Component {
-                    id: packageComponent
-
-                    PlasmaComponents.ListItem {
-                        height: packageInfoColumn.height + units.gridUnit
-                        width: parent.width
-                        enabled: true
-                        checked: containsMouse
-
-                        PlasmaComponents.CheckBox {
-                            id: checkbox
-                            anchors {
-                                left: parent.left
-                                verticalCenter: packageInfoColumn.verticalCenter
-                            }
-                            checked: selected
-                            onClicked: {
-                                updatesModel.setProperty(index, "selected", checked)
-                            }
-                        }
-
-                        Column {
-                            id: packageInfoColumn
-
-                            height: packageNameLabel.height + packageDescriptionLabel.height
-                            anchors {
-                                left: checkbox.right
-                                right: parent.right
-                                verticalCenter: parent.verticalCenter
-                                leftMargin: Math.round(units.gridUnit / 2)
-                                rightMargin: Math.round(units.gridUnit / 2)
-                            }
-
-                            PlasmaComponents.Label {
-                                id: packageNameLabel
-                                height: paintedHeight
-                                anchors {
-                                    left: parent.left
-                                    right: parent.right
-                                }
-                                elide: Text.ElideRight;
-                                text: i18nc("Package Name (Version)", "%1 (%2)", name, version)
-                            }
-                            PlasmaComponents.Label {
-                                id: packageDescriptionLabel
-                                height: paintedHeight
-                                anchors {
-                                    left: parent.left
-                                    right: parent.right
-                                }
-                                elide: Text.ElideRight;
-                                font.italic: true
-                                font.pointSize: theme.smallestFont.pointSize;
-                                opacity: 0.6;
-                                text: desc
-                            }
-                        }
-
-                        onClicked: {
+                delegate: PackageDelegate {
+                    onClicked: {
+                        if (updatesView.currentIndex === index) {
+                            updatesView.currentIndex = -1
+                        } else {
+                            updatesView.currentIndex = index
                             PkUpdates.getUpdateDetails(id)
                         }
                     }
