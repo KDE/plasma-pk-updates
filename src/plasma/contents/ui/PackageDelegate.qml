@@ -146,7 +146,7 @@ PlasmaComponents.ListItem {
         PlasmaComponents.Label {
             id: urlsLabel
             height: visible ? paintedHeight : 0
-            visible: updateUrls.length !== 0 || updateUrls === null || updateUrls === undefined
+            visible: updateUrls.length !== 0 && updateUrls !== null && updateUrls !== undefined
             anchors {
                 left: parent.left
                 right: parent.right
