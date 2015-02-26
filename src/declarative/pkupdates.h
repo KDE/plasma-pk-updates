@@ -52,8 +52,11 @@ class PkUpdates : public QObject
     Q_PROPERTY(bool isNetworkOnline READ isNetworkOnline NOTIFY networkStateChanged)
     Q_PROPERTY(bool isNetworkMobile READ isNetworkMobile NOTIFY networkStateChanged)
     Q_PROPERTY(bool isOnBattery READ isOnBattery NOTIFY isOnBatteryChanged)
+    Q_ENUMS(Activity)
 
 public:
+    enum Activity {Idle, CheckingUpdates, GettingUpdates, InstallingUpdates};
+
     explicit PkUpdates(QObject *parent = 0);
     ~PkUpdates();
 
@@ -208,7 +211,7 @@ private slots:
 
 private:
     void setStatusMessage(const QString &message);
-    void setActive(bool active);
+    void setActivity(Activity act);
     void setPercentage(int value);
     QPointer<PackageKit::Transaction> m_updatesTrans;
     QPointer<PackageKit::Transaction> m_cacheTrans;
@@ -218,8 +221,8 @@ private:
     QStringList m_importantList;
     QStringList m_securityList;
     QString m_statusMessage;
-    bool m_active = false;
     int m_percentage = 0;
+    Activity m_activity = Idle;
 };
 
 #endif // PLASMA_PK_UPDATES_H

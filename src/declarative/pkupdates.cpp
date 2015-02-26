@@ -96,7 +96,7 @@ bool PkUpdates::isSystemUpToDate() const
 
 QString PkUpdates::iconName() const
 {
-    if (securityCount()>0)
+    if (securityCount() > 0)
         return "security-low";
     else if (importantCount() > 0)
         return "security-medium";
@@ -107,11 +107,18 @@ QString PkUpdates::iconName() const
 QString PkUpdates::message() const
 {
     if (isActive()) {
+        if (m_activity == CheckingUpdates)
+            return i18n("Checking updates");
+        else if (m_activity == GettingUpdates)
+            return i18n("Getting updates");
+        else if (m_activity == InstallingUpdates)
+            return i18n("Installing updates");
+
         return i18n("Working");
     } else if (!isSystemUpToDate()) {
         QStringList extra;
         const QString msg = i18np("You have 1 new update", "You have %1 new updates", count());
-        if (securityCount()>0)
+        if (securityCount() > 0)
             extra += i18np("1 security update", "%1 security updates", securityCount());
         if (importantCount() > 0)
             extra += i18np("1 important update", "%1 important updates", importantCount());
@@ -139,7 +146,7 @@ QString PkUpdates::statusMessage() const
 
 bool PkUpdates::isActive() const
 {
-    return m_active;
+    return m_activity != Idle;
 }
 
 QVariantMap PkUpdates::packages() const
@@ -193,7 +200,7 @@ void PkUpdates::checkUpdates(bool force)
     }
 
     m_cacheTrans = PackageKit::Daemon::refreshCache(force);
-    setActive(true);
+    setActivity(CheckingUpdates);
 
     connect(m_cacheTrans, &PackageKit::Transaction::statusChanged, this, &PkUpdates::onStatusChanged);
     connect(m_cacheTrans, &PackageKit::Transaction::finished, this, &PkUpdates::onFinished);
@@ -220,7 +227,7 @@ QString PkUpdates::packageVersion(const QString &pkgId)
 void PkUpdates::getUpdates()
 {
     m_updatesTrans = PackageKit::Daemon::getUpdates();
-    setActive(true);
+    setActivity(GettingUpdates);
 
     m_updateList.clear();
     m_importantList.clear();
@@ -238,7 +245,7 @@ void PkUpdates::installUpdates(const QStringList &packageIds)
     qDebug() << "Installing updates" << packageIds;
 
     m_installTrans = PackageKit::Daemon::updatePackages(packageIds);
-    setActive(true);
+    setActivity(InstallingUpdates);
 
     connect(m_installTrans, &PackageKit::Transaction::statusChanged, this, &PkUpdates::onStatusChanged);
     connect(m_installTrans, &PackageKit::Transaction::finished, this, &PkUpdates::onFinished);
@@ -346,15 +353,15 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
         } else {
             qDebug() << "Update packages transaction didn't finish successfully";
         }
-        setActive(false);
+        setActivity(Idle);
         return;
     } else {
         qDebug() << "Unhandled transaction type:" << PackageKit::Daemon::enumToString<PackageKit::Transaction>(trans->role(), "Role");
-        setActive(false);
+        setActivity(Idle);
         return;
     }
 
-    setActive(false);
+    setActivity(Idle);
     emit updatesChanged();
 }
 
@@ -377,7 +384,6 @@ void PkUpdates::onUpdateDetail(const QString &packageID, const QStringList &upda
                                PackageKit::Transaction::UpdateState state, const QDateTime &issued, const QDateTime &updated)
 {
     qDebug() << "Got update details for" << packageID;
-    //qDebug() << "Restart type:" << restart;
 
     emit updateDetail(packageID, updateText, bugzillaUrls);
 }
@@ -388,10 +394,10 @@ void PkUpdates::setStatusMessage(const QString &message)
     emit statusMessageChanged();
 }
 
-void PkUpdates::setActive(bool active)
+void PkUpdates::setActivity(Activity act)
 {
-    if (active != m_active) {
-        m_active = active;
+    if (act != m_activity) {
+        m_activity = act;
         emit isActiveChanged();
     }
 }
