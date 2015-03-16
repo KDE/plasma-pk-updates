@@ -244,7 +244,7 @@ void PkUpdates::installUpdates(const QStringList &packageIds)
 {
     qDebug() << "Installing updates" << packageIds;
 
-    m_installTrans = PackageKit::Daemon::updatePackages(packageIds);
+    m_installTrans = PackageKit::Daemon::updatePackages(packageIds, PackageKit::Transaction::TransactionFlagNone);
     setActivity(InstallingUpdates);
 
     connect(m_installTrans, &PackageKit::Transaction::statusChanged, this, &PkUpdates::onStatusChanged);
@@ -252,6 +252,7 @@ void PkUpdates::installUpdates(const QStringList &packageIds)
     connect(m_installTrans, &PackageKit::Transaction::errorCode, this, &PkUpdates::onErrorCode);
     connect(m_installTrans, &PackageKit::Transaction::package, this, &PkUpdates::onPackageUpdating);
     connect(m_installTrans, &PackageKit::Transaction::requireRestart, this, &PkUpdates::onRequireRestart);
+    connect(m_installTrans, &PackageKit::Transaction::repoSignatureRequired, this, &PkUpdates::onRepoSignatureRequired);
 }
 
 void PkUpdates::onChanged()
@@ -386,6 +387,14 @@ void PkUpdates::onUpdateDetail(const QString &packageID, const QStringList &upda
     qDebug() << "Got update details for" << packageID;
 
     emit updateDetail(packageID, updateText, bugzillaUrls);
+}
+
+void PkUpdates::onRepoSignatureRequired(const QString &packageID, const QString &repoName, const QString &keyUrl, const QString &keyUserid,
+                                        const QString &keyId, const QString &keyFingerprint, const QString &keyTimestamp,
+                                        PackageKit::Transaction::SigType type)
+{
+    // TODO provide a way to confirm and import GPG keys
+    qDebug() << "Repo sig required" << packageID;
 }
 
 void PkUpdates::setStatusMessage(const QString &message)

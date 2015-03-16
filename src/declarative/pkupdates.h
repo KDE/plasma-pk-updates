@@ -208,6 +208,8 @@ private slots:
                         const QStringList &bugzillaUrls, const QStringList &cveUrls, PackageKit::Transaction::Restart restart,
                         const QString &updateText, const QString &changelog, PackageKit::Transaction::UpdateState state,
                         const QDateTime &issued, const QDateTime &updated);
+    void onRepoSignatureRequired(const QString & packageID, const QString & repoName, const QString & keyUrl, const QString & keyUserid,
+                                 const QString & keyId, const QString & keyFingerprint, const QString & keyTimestamp, PackageKit::Transaction::SigType type);
 
 private:
     void setStatusMessage(const QString &message);
