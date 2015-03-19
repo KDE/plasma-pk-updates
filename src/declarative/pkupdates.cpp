@@ -244,7 +244,7 @@ void PkUpdates::installUpdates(const QStringList &packageIds)
 {
     qDebug() << "Installing updates" << packageIds;
 
-    m_installTrans = PackageKit::Daemon::updatePackages(packageIds, PackageKit::Transaction::TransactionFlagNone);
+    m_installTrans = PackageKit::Daemon::updatePackages(packageIds);
     setActivity(InstallingUpdates);
 
     connect(m_installTrans, &PackageKit::Transaction::statusChanged, this, &PkUpdates::onStatusChanged);
