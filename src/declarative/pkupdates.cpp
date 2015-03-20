@@ -181,7 +181,7 @@ void PkUpdates::getUpdateDetails(const QString &pkgID)
 
 QString PkUpdates::timestamp() const
 {
-    qint64 lastCheck = QDateTime::currentMSecsSinceEpoch() - lastRefreshTimestamp();
+    const qint64 lastCheck = QDateTime::currentMSecsSinceEpoch() - lastRefreshTimestamp();
 
     if (lastCheck != -1)
         return i18n("Last updated: %1 ago", KFormat().formatSpelloutDuration(lastCheck));
@@ -206,6 +206,7 @@ void PkUpdates::checkUpdates(bool force)
     connect(m_cacheTrans, &PackageKit::Transaction::finished, this, &PkUpdates::onFinished);
     connect(m_cacheTrans, &PackageKit::Transaction::errorCode, this, &PkUpdates::onErrorCode);
     connect(m_cacheTrans, &PackageKit::Transaction::requireRestart, this, &PkUpdates::onRequireRestart);
+    connect(m_cacheTrans, &PackageKit::Transaction::repoSignatureRequired, this, &PkUpdates::onRepoSignatureRequired);
 }
 
 qint64 PkUpdates::lastRefreshTimestamp() const
@@ -238,6 +239,7 @@ void PkUpdates::getUpdates()
     connect(m_updatesTrans, &PackageKit::Transaction::errorCode, this, &PkUpdates::onErrorCode);
     connect(m_updatesTrans, &PackageKit::Transaction::package, this, &PkUpdates::onPackage);
     connect(m_updatesTrans, &PackageKit::Transaction::requireRestart, this, &PkUpdates::onRequireRestart);
+    connect(m_updatesTrans, &PackageKit::Transaction::repoSignatureRequired, this, &PkUpdates::onRepoSignatureRequired);
 }
 
 void PkUpdates::installUpdates(const QStringList &packageIds)
