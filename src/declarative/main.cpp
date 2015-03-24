@@ -15,14 +15,14 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include <QCoreApplication>
+#include <QApplication>
 #include <QDebug>
 
 #include "pkupdates.h"
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication app(argc, argv);
+    QApplication app(argc, argv);
     app.setOrganizationName("KDE");
     app.setOrganizationDomain("kde.org");
     app.setApplicationName("PkConsole");
