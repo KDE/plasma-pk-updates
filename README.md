@@ -1,4 +1,4 @@
-# Plasma system updates
+# Plasma software updates
 Plasma applet for software updates using PackageKit
 
 Author: Lukáš Tinkl &lt;lukas@kde.org&gt;
