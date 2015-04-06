@@ -169,7 +169,7 @@ public slots:
       *
       * @param packageIds list of package IDs to update
       */
-    Q_INVOKABLE void installUpdates(const QStringList & packageIds);
+    Q_INVOKABLE void installUpdates(const QStringList & packageIds, bool simulate = true, bool untrusted = false);
 
     /**
       * @return the timestamp (in milliseconds) of the last cache check, -1 if never

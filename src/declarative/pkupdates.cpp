@@ -242,11 +242,19 @@ void PkUpdates::getUpdates()
     connect(m_updatesTrans, &PackageKit::Transaction::repoSignatureRequired, this, &PkUpdates::onRepoSignatureRequired);
 }
 
-void PkUpdates::installUpdates(const QStringList &packageIds)
+void PkUpdates::installUpdates(const QStringList &packageIds, bool simulate, bool untrusted)
 {
-    qDebug() << "Installing updates" << packageIds;
+    qDebug() << "Installing updates" << packageIds << ", simulate:" << simulate << ", untrusted:" << untrusted;
 
-    m_installTrans = PackageKit::Daemon::updatePackages(packageIds);
+    PackageKit::Transaction::TransactionFlags flags = PackageKit::Transaction::TransactionFlagOnlyTrusted;
+    if (simulate) {
+        flags |= PackageKit::Transaction::TransactionFlagSimulate;
+    } else if (untrusted) {
+        flags = PackageKit::Transaction::TransactionFlagNone;
+    }
+
+    m_installTrans = PackageKit::Daemon::updatePackages(packageIds, flags);
+    m_installTrans->setProperty("packages", packageIds);
     setActivity(InstallingUpdates);
 
     connect(m_installTrans, &PackageKit::Transaction::statusChanged, this, &PkUpdates::onStatusChanged);
@@ -348,10 +356,21 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
         qDebug() << "Total number of updates: " << count();
         emit done();
     } else if (trans->role() == PackageKit::Transaction::RoleUpdatePackages) {
-        if (status == PackageKit::Transaction::ExitSuccess) {
+        const QStringList packages = trans->property("packages").toStringList();
+        qDebug() << "Finished updating packages:" << packages;
+        if (status == PackageKit::Transaction::ExitNeedUntrusted) {
+            qDebug() << "Transaction needs untrusted packages";
+            // restart transaction with "untrusted" flag
+            installUpdates(packages, false /*simulate*/, true /*untrusted*/);
+            return;
+        } else if (status == PackageKit::Transaction::ExitSuccess && trans->transactionFlags().testFlag(PackageKit::Transaction::TransactionFlagSimulate)) {
+            qDebug() << "Simulation finished with success, restarting the transaction";
+            installUpdates(packages, false /*simulate*/, false /*untrusted*/);
+            return;
+        } else if (status == PackageKit::Transaction::ExitSuccess) {
             qDebug() << "Update packages transaction finished successfully";
             KNotification::event(KNotification::Notification, i18n("Updates Installed"),
-                                 i18n("Software packages successfully updated."),
+                                 i18np("Successfully updated %1 package", "Successfully updated %1 packages", packages.count()),
                                  KIconLoader::global()->loadIcon("system-software-update", KIconLoader::Desktop));
         } else {
             qDebug() << "Update packages transaction didn't finish successfully";
@@ -371,6 +390,9 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
 void PkUpdates::onErrorCode(PackageKit::Transaction::Error error, const QString &details)
 {
     qWarning() << "PK error:" << details << "type:" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)error, "Error");
+    if (error == PackageKit::Transaction::ErrorBadGpgSignature)
+        return;
+
     KNotification::event(KNotification::Error, i18n("Update Error"), PkStrings::error(error) + " " + PkStrings::errorMessage(error),
                          KIconLoader::global()->loadIcon("system-software-update", KIconLoader::Desktop));
 }
