@@ -184,9 +184,9 @@ QString PkUpdates::timestamp() const
     const qint64 lastCheck = QDateTime::currentMSecsSinceEpoch() - lastRefreshTimestamp();
 
     if (lastCheck != -1)
-        return i18n("Last updated: %1 ago", KFormat().formatSpelloutDuration(lastCheck));
+        return i18n("Last update: %1 ago", KFormat().formatSpelloutDuration(lastCheck));
 
-    return i18n("Last updated: never");
+    return i18n("Last update: never");
 }
 
 void PkUpdates::checkUpdates(bool force)
@@ -317,8 +317,18 @@ void PkUpdates::onPackageUpdating(PackageKit::Transaction::Info info, const QStr
     Q_UNUSED(summary)
     qDebug() << "Package updating:" << packageID <<
                 ", info:" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)info, "Info");
-    setStatusMessage(PkStrings::infoPresent(info) + " " + PackageKit::Daemon::packageName(packageID));
-    setPercentage(m_installTrans->percentage());
+
+    const uint percent = m_installTrans->percentage();
+
+    if (percent >= 0 && percent <= 100) {
+        setStatusMessage(i18nc("1 installation status, 2 pkg name, 3 percentage", "%1 %2 (%3%)",
+                               PkStrings::infoPresent(info), PackageKit::Daemon::packageName(packageID), percent));
+    } else {
+        setStatusMessage(i18nc("1 installation status, 2 pkg name", "%1 %2",
+                               PkStrings::infoPresent(info), PackageKit::Daemon::packageName(packageID), percent));
+    }
+
+    setPercentage(percent);
 }
 
 void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
