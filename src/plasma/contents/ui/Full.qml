@@ -70,6 +70,15 @@ Item {
         updatesView.currentItem.updateUrls = urls
     }
 
+    function updateInterval(daily, weekly, monthly) {
+        if (weekly)
+            return i18n("weekly");
+        else if (monthly)
+            return i18n("monthly");
+
+        return i18n("daily");
+    }
+
     ListModel {
         id: updatesModel
     }
@@ -81,7 +90,7 @@ Item {
         text: !PkUpdates.isNetworkOnline ? i18n("Network is offline") : PkUpdates.message
     }
 
-    RowLayout {
+    ColumnLayout {
         id: statusbar
         anchors {
             left: parent.left
@@ -100,10 +109,16 @@ Item {
             text: PkUpdates.timestamp
         }
         Label {
-            visible: PkUpdates.isActive
+            visible: PkUpdates.isActive || !PkUpdates.count
             font.pointSize: theme.smallestFont.pointSize;
             opacity: 0.6;
-            text: PkUpdates.statusMessage
+            text: PkUpdates.isActive ? PkUpdates.statusMessage : i18n("Updates are automatically checked %1.<br>" +
+                                                                      "Click the 'Check For Updates' button below to search for updates manually.",
+                                                                      updateInterval(plasmoid.configuration.daily,
+                                                                                     plasmoid.configuration.weekly,
+                                                                                     plasmoid.configuration.monthly));
+            Layout.fillWidth: true
+            wrapMode: Text.WordWrap
         }
     }
 
