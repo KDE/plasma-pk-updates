@@ -112,11 +112,17 @@ Item {
             visible: PkUpdates.isActive || !PkUpdates.count
             font.pointSize: theme.smallestFont.pointSize;
             opacity: 0.6;
-            text: PkUpdates.isActive ? PkUpdates.statusMessage : i18n("Updates are automatically checked %1.<br>" +
-                                                                      "Click the 'Check For Updates' button below to search for updates manually.",
-                                                                      updateInterval(plasmoid.configuration.daily,
-                                                                                     plasmoid.configuration.weekly,
-                                                                                     plasmoid.configuration.monthly));
+            text: {
+                if (PkUpdates.isActive)
+                    return PkUpdates.statusMessage
+                else if (PkUpdates.isNetworkOnline)
+                    return i18n("Updates are automatically checked %1.<br>" +
+                                "Click the 'Check For Updates' button below to search for updates manually.",
+                                updateInterval(plasmoid.configuration.daily,
+                                               plasmoid.configuration.weekly,
+                                               plasmoid.configuration.monthly));
+                return ""
+            }
             Layout.fillWidth: true
             wrapMode: Text.WordWrap
         }
