@@ -35,6 +35,8 @@
 #include "pkupdates.h"
 #include "PkStrings.h"
 
+Q_LOGGING_CATEGORY(PLASMA_PK_UPDATES, "plasma-pk-updates")
+
 PkUpdates::PkUpdates(QObject *parent) :
     QObject(parent),
     m_updatesTrans(Q_NULLPTR),
@@ -156,25 +158,25 @@ QVariantMap PkUpdates::packages() const
 
 bool PkUpdates::isNetworkOnline() const
 {
-    qDebug() << "Is net online:" << (PackageKit::Daemon::networkState() > PackageKit::Daemon::Network::NetworkOffline);
+    qCDebug(PLASMA_PK_UPDATES) << "Is net online:" << (PackageKit::Daemon::networkState() > PackageKit::Daemon::Network::NetworkOffline);
     return (PackageKit::Daemon::networkState() > PackageKit::Daemon::Network::NetworkOffline);
 }
 
 bool PkUpdates::isNetworkMobile() const
 {
-    qDebug() << "Is net mobile:" << (PackageKit::Daemon::networkState() == PackageKit::Daemon::Network::NetworkMobile);
+    qCDebug(PLASMA_PK_UPDATES) << "Is net mobile:" << (PackageKit::Daemon::networkState() == PackageKit::Daemon::Network::NetworkMobile);
     return (PackageKit::Daemon::networkState() == PackageKit::Daemon::Network::NetworkMobile);
 }
 
 bool PkUpdates::isOnBattery() const
 {
-    qDebug() << "Is on battery:" << Solid::PowerManagement::appShouldConserveResources();
+    qCDebug(PLASMA_PK_UPDATES) << "Is on battery:" << Solid::PowerManagement::appShouldConserveResources();
     return Solid::PowerManagement::appShouldConserveResources();
 }
 
 void PkUpdates::getUpdateDetails(const QString &pkgID)
 {
-    qDebug() << "Requesting update details for" << pkgID;
+    qCDebug(PLASMA_PK_UPDATES) << "Requesting update details for" << pkgID;
     m_detailTrans = PackageKit::Daemon::getUpdateDetail(pkgID);
     connect(m_detailTrans, &PackageKit::Transaction::updateDetail, this, &PkUpdates::onUpdateDetail);
 }
@@ -191,7 +193,7 @@ QString PkUpdates::timestamp() const
 
 void PkUpdates::checkUpdates(bool force)
 {
-    qDebug() << "Checking updates, forced:" << force;
+    qCDebug(PLASMA_PK_UPDATES) << "Checking updates, forced:" << force;
 
     if (force) { // save the timestamp
         KConfigGroup grp(KSharedConfig::openConfig("plasma-pk-updates"), "General");
@@ -244,7 +246,7 @@ void PkUpdates::getUpdates()
 
 void PkUpdates::installUpdates(const QStringList &packageIds, bool simulate, bool untrusted)
 {
-    qDebug() << "Installing updates" << packageIds << ", simulate:" << simulate << ", untrusted:" << untrusted;
+    qCDebug(PLASMA_PK_UPDATES) << "Installing updates" << packageIds << ", simulate:" << simulate << ", untrusted:" << untrusted;
 
     PackageKit::Transaction::TransactionFlags flags = PackageKit::Transaction::TransactionFlagOnlyTrusted;
     if (simulate) {
@@ -267,12 +269,12 @@ void PkUpdates::installUpdates(const QStringList &packageIds, bool simulate, boo
 
 void PkUpdates::onChanged()
 {
-    qDebug() << "Daemon changed";
+    qCDebug(PLASMA_PK_UPDATES) << "Daemon changed";
 }
 
 void PkUpdates::onUpdatesChanged()
 {
-    qDebug() << "Updates changed, getting updates!";
+    qCDebug(PLASMA_PK_UPDATES) << "Updates changed, getting updates!";
     getUpdates();
 }
 
@@ -280,7 +282,7 @@ void PkUpdates::onStatusChanged()
 {
     PackageKit::Transaction * trans;
     if ((trans = qobject_cast<PackageKit::Transaction *>(sender()))) {
-        qDebug() << "Transaction status changed:"
+        qCDebug(PLASMA_PK_UPDATES) << "Transaction status changed:"
                  << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)trans->status(), "Status")
                  << QStringLiteral("(%1%)").arg(trans->percentage());
         if (trans->status() == PackageKit::Transaction::StatusFinished)
@@ -292,7 +294,7 @@ void PkUpdates::onStatusChanged()
 
 void PkUpdates::onPackage(PackageKit::Transaction::Info info, const QString &packageID, const QString &summary)
 {
-    qDebug() << "Got update package:" << packageID << ", summary:" << summary <<
+    qCDebug(PLASMA_PK_UPDATES) << "Got update package:" << packageID << ", summary:" << summary <<
                 ", type:" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)info, "Info");
 
     switch (info) {
@@ -315,7 +317,7 @@ void PkUpdates::onPackage(PackageKit::Transaction::Info info, const QString &pac
 void PkUpdates::onPackageUpdating(PackageKit::Transaction::Info info, const QString &packageID, const QString &summary)
 {
     Q_UNUSED(summary)
-    qDebug() << "Package updating:" << packageID <<
+    qCDebug(PLASMA_PK_UPDATES) << "Package updating:" << packageID <<
                 ", info:" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)info, "Info");
 
     const uint percent = m_installTrans->percentage();
@@ -339,21 +341,21 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
 
     trans->deleteLater();
 
-    qDebug() << "Transaction" << trans->tid().path() <<
+    qCDebug(PLASMA_PK_UPDATES) << "Transaction" << trans->tid().path() <<
                 "finished with status" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)status, "Exit") <<
                 "in" << runtime/1000 << "seconds";
 
     if (trans->role() == PackageKit::Transaction::RoleRefreshCache) {
         if (status == PackageKit::Transaction::ExitSuccess) {
-            qDebug() << "Cache transaction finished successfully";
+            qCDebug(PLASMA_PK_UPDATES) << "Cache transaction finished successfully";
             return;
         } else {
-            qDebug() << "Cache transaction didn't finish successfully";
+            qCDebug(PLASMA_PK_UPDATES) << "Cache transaction didn't finish successfully";
             emit done();
         }
     } else if (trans->role() == PackageKit::Transaction::RoleGetUpdates) {
         if (status == PackageKit::Transaction::ExitSuccess) {
-            qDebug() << "Check updates transaction finished successfully";
+            qCDebug(PLASMA_PK_UPDATES) << "Check updates transaction finished successfully";
             const int upCount = count();
             if (upCount > 0) {
                 KNotification::event(KNotification::Notification, i18n("Software Updates Available"),
@@ -361,34 +363,34 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
                                      KIconLoader::global()->loadIcon("system-software-update", KIconLoader::Desktop), 0, KNotification::Persistent);
             }
         } else {
-            qDebug() << "Check updates transaction didn't finish successfully";
+            qCDebug(PLASMA_PK_UPDATES) << "Check updates transaction didn't finish successfully";
         }
-        qDebug() << "Total number of updates: " << count();
+        qCDebug(PLASMA_PK_UPDATES) << "Total number of updates: " << count();
         emit done();
     } else if (trans->role() == PackageKit::Transaction::RoleUpdatePackages) {
         const QStringList packages = trans->property("packages").toStringList();
-        qDebug() << "Finished updating packages:" << packages;
+        qCDebug(PLASMA_PK_UPDATES) << "Finished updating packages:" << packages;
         if (status == PackageKit::Transaction::ExitNeedUntrusted) {
-            qDebug() << "Transaction needs untrusted packages";
+            qCDebug(PLASMA_PK_UPDATES) << "Transaction needs untrusted packages";
             // restart transaction with "untrusted" flag
             installUpdates(packages, false /*simulate*/, true /*untrusted*/);
             return;
         } else if (status == PackageKit::Transaction::ExitSuccess && trans->transactionFlags().testFlag(PackageKit::Transaction::TransactionFlagSimulate)) {
-            qDebug() << "Simulation finished with success, restarting the transaction";
+            qCDebug(PLASMA_PK_UPDATES) << "Simulation finished with success, restarting the transaction";
             installUpdates(packages, false /*simulate*/, false /*untrusted*/);
             return;
         } else if (status == PackageKit::Transaction::ExitSuccess) {
-            qDebug() << "Update packages transaction finished successfully";
+            qCDebug(PLASMA_PK_UPDATES) << "Update packages transaction finished successfully";
             KNotification::event(KNotification::Notification, i18n("Updates Installed"),
                                  i18np("Successfully updated %1 package", "Successfully updated %1 packages", packages.count()),
                                  KIconLoader::global()->loadIcon("system-software-update", KIconLoader::Desktop), 0, KNotification::Persistent);
         } else {
-            qDebug() << "Update packages transaction didn't finish successfully";
+            qCDebug(PLASMA_PK_UPDATES) << "Update packages transaction didn't finish successfully";
         }
         setActivity(Idle);
         return;
     } else {
-        qDebug() << "Unhandled transaction type:" << PackageKit::Daemon::enumToString<PackageKit::Transaction>(trans->role(), "Role");
+        qCDebug(PLASMA_PK_UPDATES) << "Unhandled transaction type:" << PackageKit::Daemon::enumToString<PackageKit::Transaction>(trans->role(), "Role");
         setActivity(Idle);
         return;
     }
@@ -409,7 +411,7 @@ void PkUpdates::onErrorCode(PackageKit::Transaction::Error error, const QString 
 
 void PkUpdates::onRequireRestart(PackageKit::Transaction::Restart type, const QString &packageID)
 {
-    qDebug() << "RESTART" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)type, "Restart")
+    qCDebug(PLASMA_PK_UPDATES) << "RESTART" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)type, "Restart")
              << "is required for package" << packageID;
 }
 
@@ -418,7 +420,7 @@ void PkUpdates::onUpdateDetail(const QString &packageID, const QStringList &upda
                                PackageKit::Transaction::Restart restart, const QString &updateText, const QString &changelog,
                                PackageKit::Transaction::UpdateState state, const QDateTime &issued, const QDateTime &updated)
 {
-    qDebug() << "Got update details for" << packageID;
+    qCDebug(PLASMA_PK_UPDATES) << "Got update details for" << packageID;
 
     emit updateDetail(packageID, updateText, bugzillaUrls);
 }
@@ -428,7 +430,7 @@ void PkUpdates::onRepoSignatureRequired(const QString &packageID, const QString 
                                         PackageKit::Transaction::SigType type)
 {
     // TODO provide a way to confirm and import GPG keys
-    qDebug() << "Repo sig required" << packageID;
+    qCDebug(PLASMA_PK_UPDATES) << "Repo sig required" << packageID;
 }
 
 void PkUpdates::setStatusMessage(const QString &message)

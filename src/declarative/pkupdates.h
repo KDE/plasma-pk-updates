@@ -23,11 +23,14 @@
 
 #include <QObject>
 #include <QPointer>
+#include <QLoggingCategory>
 
 #include <PackageKit/Daemon>
 #include <PackageKit/Transaction>
 
 class QTimer;
+
+Q_DECLARE_LOGGING_CATEGORY(PLASMA_PK_UPDATES)
 
 /**
  * @brief The PkUpdates class
