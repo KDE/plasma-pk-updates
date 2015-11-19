@@ -420,6 +420,16 @@ void PkUpdates::onUpdateDetail(const QString &packageID, const QStringList &upda
                                PackageKit::Transaction::Restart restart, const QString &updateText, const QString &changelog,
                                PackageKit::Transaction::UpdateState state, const QDateTime &issued, const QDateTime &updated)
 {
+    Q_UNUSED(updates);
+    Q_UNUSED(obsoletes);
+    Q_UNUSED(vendorUrls);
+    Q_UNUSED(cveUrls);
+    Q_UNUSED(restart);
+    Q_UNUSED(changelog);
+    Q_UNUSED(state);
+    Q_UNUSED(issued);
+    Q_UNUSED(updated);
+
     qCDebug(PLASMA_PK_UPDATES) << "Got update details for" << packageID;
 
     emit updateDetail(packageID, updateText, bugzillaUrls);
@@ -429,6 +439,14 @@ void PkUpdates::onRepoSignatureRequired(const QString &packageID, const QString 
                                         const QString &keyId, const QString &keyFingerprint, const QString &keyTimestamp,
                                         PackageKit::Transaction::SigType type)
 {
+    Q_UNUSED(repoName);
+    Q_UNUSED(keyUrl);
+    Q_UNUSED(keyUserid);
+    Q_UNUSED(keyId);
+    Q_UNUSED(keyFingerprint);
+    Q_UNUSED(keyTimestamp);
+    Q_UNUSED(type);
+
     // TODO provide a way to confirm and import GPG keys
     qCDebug(PLASMA_PK_UPDATES) << "Repo sig required" << packageID;
 }
