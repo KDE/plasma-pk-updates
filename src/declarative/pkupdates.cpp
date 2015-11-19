@@ -22,7 +22,6 @@
 #include <QDebug>
 #include <QTimer>
 #include <QDBusReply>
-#include <QIcon>
 
 #include <KLocalizedString>
 #include <KFormat>

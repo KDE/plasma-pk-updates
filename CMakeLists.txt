@@ -41,7 +41,7 @@ add_definitions(
 
 if(CMAKE_COMPILER_IS_GNUCXX)
   # more aggressive warnings and C++11 support
-  SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall") 
+  SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall")
 endif()
 
 
