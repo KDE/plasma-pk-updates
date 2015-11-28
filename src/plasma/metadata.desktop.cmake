@@ -1,7 +1,23 @@
 [Desktop Entry]
 Name=Software Updates
+Name[ca]=Actualitzacions de programari
+Name[ca@valencia]=Actualitzacions de programari
+Name[nl]=Elementen voor software bijwerken
+Name[pt]=Actualizações de Aplicações
+Name[pt_BR]=Atualização de aplicativos
+Name[sv]=Uppdateringar av programvara
+Name[uk]=Оновлення програм
+Name[x-test]=xxSoftware Updatesxx
 
 Comment=Get software updates
+Comment[ca]=Obtén les actualitzacions de programari
+Comment[ca@valencia]=Obtén les actualitzacions de programari
+Comment[nl]=Elementen voor software bijwerken ophalen
+Comment[pt]=Obter actualizações das aplicações
+Comment[pt_BR]=Obter a atualização de aplicativos
+Comment[sv]=Hämta uppdateringar av programvara
+Comment[uk]=Отримання оновлень програм
+Comment[x-test]=xxGet software updatesxx
 
 Icon=system-software-update
 Type=Service
