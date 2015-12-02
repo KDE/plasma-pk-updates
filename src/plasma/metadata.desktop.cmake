@@ -2,6 +2,7 @@
 Name=Software Updates
 Name[ca]=Actualitzacions de programari
 Name[ca@valencia]=Actualitzacions de programari
+Name[da]=Softwareopdateringer
 Name[lt]=Programų atnaujinimai
 Name[nl]=Elementen voor software bijwerken
 Name[nn]=Programoppdateringar
@@ -16,6 +17,7 @@ Name[x-test]=xxSoftware Updatesxx
 Comment=Get software updates
 Comment[ca]=Obtén les actualitzacions de programari
 Comment[ca@valencia]=Obtén les actualitzacions de programari
+Comment[da]=Hent softwareopdateringer
 Comment[lt]=Parsisiųsti programų atnaujinimus
 Comment[nl]=Elementen voor software bijwerken ophalen
 Comment[nn]=Hent programoppdateringar
