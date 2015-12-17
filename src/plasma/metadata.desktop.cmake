@@ -16,6 +16,7 @@ Name[sk]=Aktualizácie softvéru
 Name[sv]=Uppdateringar av programvara
 Name[uk]=Оновлення програм
 Name[x-test]=xxSoftware Updatesxx
+Name[zh_CN]=软件更新
 
 Comment=Get software updates
 Comment[ca]=Obtén les actualitzacions de programari
@@ -34,6 +35,7 @@ Comment[sk]=Získať aktualizácie softvéru
 Comment[sv]=Hämta uppdateringar av programvara
 Comment[uk]=Отримання оновлень програм
 Comment[x-test]=xxGet software updatesxx
+Comment[zh_CN]=获取软件更新
 
 Icon=system-software-update
 Type=Service
