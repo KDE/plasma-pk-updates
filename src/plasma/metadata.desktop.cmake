@@ -2,6 +2,7 @@
 Name=Software Updates
 Name[ca]=Actualitzacions de programari
 Name[ca@valencia]=Actualitzacions de programari
+Name[cs]=Aktualizace software
 Name[da]=Softwareopdateringer
 Name[de]=Softwareaktualisierungen
 Name[es]=Actualizaciones de software
@@ -22,6 +23,7 @@ Name[zh_CN]=软件更新
 Comment=Get software updates
 Comment[ca]=Obtén les actualitzacions de programari
 Comment[ca@valencia]=Obtén les actualitzacions de programari
+Comment[cs]=Získejte aktualizace software
 Comment[da]=Hent softwareopdateringer
 Comment[de]=Softwareaktualisierungen beziehen
 Comment[es]=Obtener actualizaciones de software
