@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Software Updates
+Name[ast]=Anovamientos de software
 Name[ca]=Actualitzacions de programari
 Name[ca@valencia]=Actualitzacions de programari
 Name[cs]=Aktualizace software
