@@ -99,7 +99,8 @@ Item {
             rightMargin: Math.round(units.gridUnit / 2)
         }
         spacing: units.largeSpacing
-        Label {
+
+        PlasmaComponents.Label {
             id: timestampLabel
             visible: !PkUpdates.isActive
             wrapMode: Text.WordWrap
@@ -108,7 +109,8 @@ Item {
             opacity: 0.6;
             text: PkUpdates.timestamp
         }
-        Label {
+
+        PlasmaComponents.Label {
             visible: PkUpdates.isActive || !PkUpdates.count
             font.pointSize: theme.smallestFont.pointSize;
             opacity: 0.6;
@@ -180,7 +182,7 @@ Item {
             }
         }
 
-        Button {
+        PlasmaComponents.Button {
             id: btnCheck
             visible: !PkUpdates.count && PkUpdates.isNetworkOnline && !PkUpdates.isActive
             enabled: !PkUpdates.isActive
@@ -194,7 +196,7 @@ Item {
             onClicked: PkUpdates.checkUpdates(true) // circumvent the checks, the user knows what they're doing ;)
         }
 
-        Button {
+        PlasmaComponents.Button {
             id: btnUpdate
             visible: PkUpdates.count && PkUpdates.isNetworkOnline && !PkUpdates.isActive
             enabled: __anySelected
@@ -208,7 +210,7 @@ Item {
             onClicked: PkUpdates.installUpdates(selectedPackages())
         }
 
-        BusyIndicator {
+        PlasmaComponents.BusyIndicator {
             running: PkUpdates.isActive
             visible: running
             anchors.horizontalCenter: parent.horizontalCenter

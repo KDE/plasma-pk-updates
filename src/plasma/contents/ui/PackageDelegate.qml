@@ -72,6 +72,7 @@ PlasmaComponents.ListItem {
             elide: Text.ElideRight;
             text: i18nc("Package Name (Version)", "%1 (%2)", name, version)
         }
+
         PlasmaComponents.Label {
             id: packageDescriptionLabel
             height: paintedHeight
