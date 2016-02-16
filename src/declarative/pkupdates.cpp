@@ -190,19 +190,20 @@ QString PkUpdates::timestamp() const
     return i18n("Last update: never");
 }
 
-void PkUpdates::checkUpdates(bool force)
+void PkUpdates::checkUpdates()
 {
-    qCDebug(PLASMA_PK_UPDATES) << "Checking updates, forced:" << force;
+    qCDebug(PLASMA_PK_UPDATES) << "Checking updates, forced";
 
-    if (force) { // save the timestamp
-        KConfigGroup grp(KSharedConfig::openConfig("plasma-pk-updates"), "General");
-        grp.writeEntry("Timestamp", QDateTime::currentDateTime().toMSecsSinceEpoch());
-        grp.sync();
-    }
+    // save the timestamp
+    KConfigGroup grp(KSharedConfig::openConfig("plasma-pk-updates"), "General");
+    grp.writeEntry("Timestamp", QDateTime::currentDateTime().toMSecsSinceEpoch());
+    grp.sync();
 
-    m_cacheTrans = PackageKit::Daemon::refreshCache(force);
+   // ask the Packagekit daemon to refresh the cache
+    m_cacheTrans = PackageKit::Daemon::refreshCache(true);
     setActivity(CheckingUpdates);
 
+    // evaluate the result
     connect(m_cacheTrans, &PackageKit::Transaction::statusChanged, this, &PkUpdates::onStatusChanged);
     connect(m_cacheTrans, &PackageKit::Transaction::finished, this, &PkUpdates::onFinished);
     connect(m_cacheTrans, &PackageKit::Transaction::errorCode, this, &PkUpdates::onErrorCode);

@@ -50,8 +50,8 @@ Item
         triggeredOnStart: true
         interval: 1000 * 60 * 60; // 1 hour
         onTriggered: {
-            if (networkAllowed() && batteryAllowed())
-                PkUpdates.checkUpdates(needsForcedUpdate())
+            if (needsForcedUpdate() && networkAllowed() && batteryAllowed())
+                PkUpdates.checkUpdates()
         }
     }
 

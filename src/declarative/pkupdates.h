@@ -165,7 +165,7 @@ public slots:
       *
       * @param force whether to force the cache refresh
       */
-    Q_INVOKABLE void checkUpdates(bool force = false);
+    Q_INVOKABLE void checkUpdates();
 
     /**
       * Launch the update process
