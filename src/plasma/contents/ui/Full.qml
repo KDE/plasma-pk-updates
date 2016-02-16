@@ -263,11 +263,7 @@ Item {
         for (var id in packages) {
             if (packages.hasOwnProperty(id)) {
                 var desc = packages[id]
-                if (populatePreSelected) {
-                    updatesModel.append({"selected": true, "id": id, "name": PkUpdates.packageName(id), "desc": desc, "version": PkUpdates.packageVersion(id)})
-                } else {
-                    updatesModel.append({"selected": false, "id": id, "name": PkUpdates.packageName(id), "desc": desc, "version": PkUpdates.packageVersion(id)})
-                }
+                updatesModel.append({"selected": populatePreSelected, "id": id, "name": PkUpdates.packageName(id), "desc": desc, "version": PkUpdates.packageVersion(id)})
             }
         }
     }
