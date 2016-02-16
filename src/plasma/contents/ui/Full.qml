@@ -28,14 +28,9 @@ import org.kde.plasma.core 2.0 as PlasmaCore
 import org.kde.plasma.PackageKit 1.0
 
 Item {
-    readonly property bool __anySelected: {
-        for (var i = 0; i < updatesModel.count; i++) {
-            var pkg = updatesModel.get(i)
-            if (pkg.selected)
-                return true
-        }
-        return false
-    }
+    property bool anySelected: checkAnySelected()
+    property bool allSelected: checkAllSelected()
+    property bool populatePreSelected: true
 
     Binding {
         target: timestampLabel
@@ -48,35 +43,6 @@ Item {
         PkUpdates.updatesChanged.connect(populateModel)
         PkUpdates.updateDetail.connect(updateDetails)
         populateModel()
-    }
-
-    function populateModel() {
-        print("Populating model")
-        updatesModel.clear()
-        var packages = PkUpdates.packages
-        for (var id in packages) {
-            if (packages.hasOwnProperty(id)) {
-                var desc = packages[id]
-                updatesModel.append({"selected": true, "id": id, "name": PkUpdates.packageName(id), "desc": desc, "version": PkUpdates.packageVersion(id)})
-            }
-        }
-    }
-
-    function updateDetails(packageID, updateText, urls) {
-        //print("Got update details for: " + packageID)
-        print("Update text: " + updateText)
-        print("URLs: " + urls)
-        updatesView.currentItem.updateText = updateText
-        updatesView.currentItem.updateUrls = urls
-    }
-
-    function updateInterval(daily, weekly, monthly) {
-        if (weekly)
-            return i18n("weekly");
-        else if (monthly)
-            return i18n("monthly");
-
-        return i18n("daily");
     }
 
     ListModel {
@@ -145,7 +111,7 @@ Item {
     }
 
     ColumnLayout {
-        spacing: units.largeSpacing
+        spacing: units.smallSpacing
         anchors {
             bottom: parent.bottom
             left: parent.left
@@ -182,6 +148,48 @@ Item {
             }
         }
 
+        RowLayout {
+            visible: PkUpdates.count && !PkUpdates.isActive
+            PlasmaComponents.CheckBox {
+                id: chkSelectAll
+                anchors {
+                    left: parent.left
+                    leftMargin: Math.round(units.gridUnit / 3)
+                }
+                checkedState: anySelected ? (allSelected ? Qt.Checked : Qt.PartiallyChecked) : Qt.Unchecked
+                partiallyCheckedEnabled: true
+            }
+
+            PlasmaComponents.Label {
+                id: lblSelectAll
+                height: paintedHeight
+                anchors {
+                    left: chkSelectAll.right
+                    leftMargin: Math.round(units.gridUnit / 2)
+                }
+                elide: Text.ElideRight;
+                text: i18n("Select all packages")
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                enabled: true
+
+                onClicked: {
+                    if (chkSelectAll.checkedState == Qt.Unchecked) {
+                        populatePreSelected = true
+                        populateModel()
+                    } else if (chkSelectAll.checkedState == Qt.PartiallyChecked) {
+                        populatePreSelected = true
+                        populateModel()
+                    } else {
+                        populatePreSelected = false
+                        populateModel()
+                    }
+                }
+            }
+        }
+
         PlasmaComponents.Button {
             id: btnCheck
             visible: !PkUpdates.count && PkUpdates.isNetworkOnline && !PkUpdates.isActive
@@ -199,7 +207,7 @@ Item {
         PlasmaComponents.Button {
             id: btnUpdate
             visible: PkUpdates.count && PkUpdates.isNetworkOnline && !PkUpdates.isActive
-            enabled: __anySelected
+            enabled: anySelected
             anchors {
                 bottom: parent.bottom
                 bottomMargin: Math.round(units.gridUnit / 3)
@@ -218,6 +226,24 @@ Item {
         }
     }
 
+    function checkAnySelected() {
+        for (var i = 0; i < updatesModel.count; i++) {
+            var pkg = updatesModel.get(i)
+            if (pkg.selected)
+                return true
+        }
+        return false
+    }
+
+    function checkAllSelected() {
+        for (var i = 0; i < updatesModel.count; i++) {
+            var pkg = updatesModel.get(i)
+            if (!pkg.selected)
+                return false
+        }
+        return true
+    }
+
     function selectedPackages() {
         var result = []
         for (var i = 0; i < updatesModel.count; i++) {
@@ -228,5 +254,38 @@ Item {
             }
         }
         return result
+    }
+
+    function populateModel() {
+        print("Populating model")
+        updatesModel.clear()
+        var packages = PkUpdates.packages
+        for (var id in packages) {
+            if (packages.hasOwnProperty(id)) {
+                var desc = packages[id]
+                if (populatePreSelected) {
+                    updatesModel.append({"selected": true, "id": id, "name": PkUpdates.packageName(id), "desc": desc, "version": PkUpdates.packageVersion(id)})
+                } else {
+                    updatesModel.append({"selected": false, "id": id, "name": PkUpdates.packageName(id), "desc": desc, "version": PkUpdates.packageVersion(id)})
+                }
+            }
+        }
+    }
+
+    function updateDetails(packageID, updateText, urls) {
+        //print("Got update details for: " + packageID)
+        print("Update text: " + updateText)
+        print("URLs: " + urls)
+        updatesView.currentItem.updateText = updateText
+        updatesView.currentItem.updateUrls = urls
+    }
+
+    function updateInterval(daily, weekly, monthly) {
+        if (weekly)
+            return i18n("weekly");
+        else if (monthly)
+            return i18n("monthly");
+
+        return i18n("daily");
     }
 }
