@@ -177,7 +177,7 @@ void PkUpdates::getUpdateDetails(const QString &pkgID)
 {
     qCDebug(PLASMA_PK_UPDATES) << "Requesting update details for" << pkgID;
     m_detailTrans = PackageKit::Daemon::getUpdateDetail(pkgID);
-    connect(m_detailTrans, &PackageKit::Transaction::updateDetail, this, &PkUpdates::onUpdateDetail);
+    connect(m_detailTrans.data(), &PackageKit::Transaction::updateDetail, this, &PkUpdates::onUpdateDetail);
 }
 
 QString PkUpdates::timestamp() const
@@ -204,11 +204,11 @@ void PkUpdates::checkUpdates()
     setActivity(CheckingUpdates);
 
     // evaluate the result
-    connect(m_cacheTrans, &PackageKit::Transaction::statusChanged, this, &PkUpdates::onStatusChanged);
-    connect(m_cacheTrans, &PackageKit::Transaction::finished, this, &PkUpdates::onFinished);
-    connect(m_cacheTrans, &PackageKit::Transaction::errorCode, this, &PkUpdates::onErrorCode);
-    connect(m_cacheTrans, &PackageKit::Transaction::requireRestart, this, &PkUpdates::onRequireRestart);
-    connect(m_cacheTrans, &PackageKit::Transaction::repoSignatureRequired, this, &PkUpdates::onRepoSignatureRequired);
+    connect(m_cacheTrans.data(), &PackageKit::Transaction::statusChanged, this, &PkUpdates::onStatusChanged);
+    connect(m_cacheTrans.data(), &PackageKit::Transaction::finished, this, &PkUpdates::onFinished);
+    connect(m_cacheTrans.data(), &PackageKit::Transaction::errorCode, this, &PkUpdates::onErrorCode);
+    connect(m_cacheTrans.data(), &PackageKit::Transaction::requireRestart, this, &PkUpdates::onRequireRestart);
+    connect(m_cacheTrans.data(), &PackageKit::Transaction::repoSignatureRequired, this, &PkUpdates::onRepoSignatureRequired);
 }
 
 qint64 PkUpdates::lastRefreshTimestamp() const
@@ -236,12 +236,12 @@ void PkUpdates::getUpdates()
     m_importantList.clear();
     m_securityList.clear();
 
-    connect(m_updatesTrans, &PackageKit::Transaction::statusChanged, this, &PkUpdates::onStatusChanged);
-    connect(m_updatesTrans, &PackageKit::Transaction::finished, this, &PkUpdates::onFinished);
-    connect(m_updatesTrans, &PackageKit::Transaction::errorCode, this, &PkUpdates::onErrorCode);
-    connect(m_updatesTrans, &PackageKit::Transaction::package, this, &PkUpdates::onPackage);
-    connect(m_updatesTrans, &PackageKit::Transaction::requireRestart, this, &PkUpdates::onRequireRestart);
-    connect(m_updatesTrans, &PackageKit::Transaction::repoSignatureRequired, this, &PkUpdates::onRepoSignatureRequired);
+    connect(m_updatesTrans.data(), &PackageKit::Transaction::statusChanged, this, &PkUpdates::onStatusChanged);
+    connect(m_updatesTrans.data(), &PackageKit::Transaction::finished, this, &PkUpdates::onFinished);
+    connect(m_updatesTrans.data(), &PackageKit::Transaction::errorCode, this, &PkUpdates::onErrorCode);
+    connect(m_updatesTrans.data(), &PackageKit::Transaction::package, this, &PkUpdates::onPackage);
+    connect(m_updatesTrans.data(), &PackageKit::Transaction::requireRestart, this, &PkUpdates::onRequireRestart);
+    connect(m_updatesTrans.data(), &PackageKit::Transaction::repoSignatureRequired, this, &PkUpdates::onRepoSignatureRequired);
 }
 
 void PkUpdates::installUpdates(const QStringList &packageIds, bool simulate, bool untrusted)
@@ -259,12 +259,12 @@ void PkUpdates::installUpdates(const QStringList &packageIds, bool simulate, boo
     m_installTrans->setProperty("packages", packageIds);
     setActivity(InstallingUpdates);
 
-    connect(m_installTrans, &PackageKit::Transaction::statusChanged, this, &PkUpdates::onStatusChanged);
-    connect(m_installTrans, &PackageKit::Transaction::finished, this, &PkUpdates::onFinished);
-    connect(m_installTrans, &PackageKit::Transaction::errorCode, this, &PkUpdates::onErrorCode);
-    connect(m_installTrans, &PackageKit::Transaction::package, this, &PkUpdates::onPackageUpdating);
-    connect(m_installTrans, &PackageKit::Transaction::requireRestart, this, &PkUpdates::onRequireRestart);
-    connect(m_installTrans, &PackageKit::Transaction::repoSignatureRequired, this, &PkUpdates::onRepoSignatureRequired);
+    connect(m_installTrans.data(), &PackageKit::Transaction::statusChanged, this, &PkUpdates::onStatusChanged);
+    connect(m_installTrans.data(), &PackageKit::Transaction::finished, this, &PkUpdates::onFinished);
+    connect(m_installTrans.data(), &PackageKit::Transaction::errorCode, this, &PkUpdates::onErrorCode);
+    connect(m_installTrans.data(), &PackageKit::Transaction::package, this, &PkUpdates::onPackageUpdating);
+    connect(m_installTrans.data(), &PackageKit::Transaction::requireRestart, this, &PkUpdates::onRequireRestart);
+    connect(m_installTrans.data(), &PackageKit::Transaction::repoSignatureRequired, this, &PkUpdates::onRepoSignatureRequired);
 }
 
 void PkUpdates::onChanged()
