@@ -97,12 +97,15 @@ bool PkUpdates::isSystemUpToDate() const
 
 QString PkUpdates::iconName() const
 {
-    if (securityCount() > 0)
-        return "security-low";
-    else if (importantCount() > 0)
-        return "security-medium";
-
-    return "security-high";
+    if (securityCount() > 0) {
+        return "update-hight";
+    } else if (importantCount() > 0) {
+        return "update-medium";
+    } else if (count() > 0) {
+        return "update-low";
+    } else {
+        return "update-none";
+    }
 }
 
 QString PkUpdates::message() const
