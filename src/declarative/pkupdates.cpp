@@ -22,6 +22,7 @@
 #include <QDebug>
 #include <QTimer>
 #include <QDBusReply>
+#include <QDBusInterface>
 
 #include <KLocalizedString>
 #include <KFormat>
@@ -414,6 +415,31 @@ void PkUpdates::onErrorCode(PackageKit::Transaction::Error error, const QString 
 
 void PkUpdates::onRequireRestart(PackageKit::Transaction::Restart type, const QString &packageID)
 {
+    if (type == PackageKit::Transaction::RestartSystem || type == PackageKit::Transaction::RestartSession) {
+        KNotification *notification = new KNotification(QLatin1String("notification"), KNotification::Persistent);
+        notification->setPixmap(KIconLoader::global()->loadIcon("system-software-update", KIconLoader::Desktop));
+        if (type == PackageKit::Transaction::RestartSystem) {
+            notification->setActions(QStringList{QLatin1String("Restart")});
+            notification->setTitle(i18n("Restart is required"));
+            notification->setText(i18n("The computer will have to be restarted after the update for the changes to take effect."));
+        } else {
+            notification->setActions(QStringList{QLatin1String("Logout")});
+            notification->setTitle(i18n("Session restart is required"));
+            notification->setText(i18n("You will need to log out and back in after the update for the changes to take effect."));
+        }
+
+        connect(notification, &KNotification::action1Activated, this, [type] () {
+            QDBusInterface interface("org.kde.ksmserver", "/KSMServer", "org.kde.KSMServerInterface", QDBusConnection::sessionBus());
+            if (type == PackageKit::Transaction::RestartSystem) {
+                interface.asyncCall("logout", 0, 1, 2); // Options: do not ask again | reboot | force
+            } else {
+                interface.asyncCall("logout", 0, 0, 2); // Options: do not ask again | logout | force
+            }
+        });
+
+        notification->sendEvent();
+    }
+
     qCDebug(PLASMA_PK_UPDATES) << "RESTART" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)type, "Restart")
              << "is required for package" << packageID;
 }
