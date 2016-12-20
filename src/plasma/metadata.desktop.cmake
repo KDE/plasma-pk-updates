@@ -48,7 +48,7 @@ Comment[zh_CN]=获取软件更新
 
 Icon=system-software-update
 Type=Service
-X-KDE-ServiceTypes=Plasma/Applet,Plasma/PopupApplet
+X-KDE-ServiceTypes=Plasma/Applet
 
 X-Plasma-API=declarativeappletscript
 X-Plasma-MainScript=ui/main.qml
