@@ -28,6 +28,8 @@ import org.kde.plasma.core 2.0 as PlasmaCore
 import org.kde.plasma.PackageKit 1.0
 
 Item {
+    id: fullRepresentation
+
     property bool anySelected: checkAnySelected()
     property bool allSelected: checkAllSelected()
     property bool populatePreSelected: true
@@ -144,6 +146,13 @@ Item {
                             PkUpdates.getUpdateDetails(id)
                         }
                     }
+                    onCheckedStateChanged: {
+                        if (checked) {
+                            fullRepresentation.anySelected = true
+                        } else {
+                            anySelected = checkAnySelected()
+                        }
+                    }
                 }
             }
         }
@@ -186,6 +195,7 @@ Item {
                         populatePreSelected = false
                         populateModel()
                     }
+                    fullRepresentation.anySelected = checkAnySelected()
                 }
             }
         }

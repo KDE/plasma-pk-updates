@@ -33,6 +33,8 @@ PlasmaComponents.ListItem {
     property variant updateUrls: [ ]
     property bool expanded: ListView.isCurrentItem
 
+    signal checkedStateChanged(bool checked)
+
     height: packageInfoColumn.height + detailsInfoColumn.height + Math.round(units.gridUnit / 2)
     width: parent.width
     enabled: true
@@ -47,6 +49,7 @@ PlasmaComponents.ListItem {
         checked: selected
         onClicked: {
             updatesModel.setProperty(index, "selected", checked)
+            packageDelegate.checkedStateChanged(checked)
         }
     }
 
