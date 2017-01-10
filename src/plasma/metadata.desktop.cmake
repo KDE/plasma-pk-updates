@@ -24,6 +24,7 @@ Name[x-test]=xxSoftware Updatesxx
 Name[zh_CN]=软件更新
 
 Comment=Get software updates
+Comment[ast]=Consigue anovamientos de software
 Comment[ca]=Obtén les actualitzacions de programari
 Comment[ca@valencia]=Obtén les actualitzacions de programari
 Comment[cs]=Získejte aktualizace software
