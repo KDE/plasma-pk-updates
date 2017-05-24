@@ -41,11 +41,13 @@ Item {
         when: !plasmoid.expanded
     }
 
-    Component.onCompleted: {
-        PkUpdates.updatesChanged.connect(populateModel)
-        PkUpdates.updateDetail.connect(updateDetails)
-        populateModel()
+    Connections {
+        target: PkUpdates
+        onUpdatesChanged: populateModel()
+        onUpdateDetail: updateDetails()
     }
+
+    Component.onCompleted: populateModel()
 
     ListModel {
         id: updatesModel
@@ -150,7 +152,7 @@ Item {
                         if (checked) {
                             fullRepresentation.anySelected = true
                         } else {
-                            anySelected = checkAnySelected()
+                            fullRepresentation.anySelected = checkAnySelected()
                         }
                     }
                 }
@@ -165,7 +167,7 @@ Item {
                     left: parent.left
                     leftMargin: Math.round(units.gridUnit / 3)
                 }
-                checkedState: anySelected ? (allSelected ? Qt.Checked : Qt.PartiallyChecked) : Qt.Unchecked
+                checkedState: fullRepresentation.anySelected ? (fullRepresentation.allSelected ? Qt.Checked : Qt.PartiallyChecked) : Qt.Unchecked
                 partiallyCheckedEnabled: true
             }
 
@@ -217,7 +219,7 @@ Item {
         PlasmaComponents.Button {
             id: btnUpdate
             visible: PkUpdates.count && PkUpdates.isNetworkOnline && !PkUpdates.isActive
-            enabled: anySelected
+            enabled: fullRepresentation.anySelected
             anchors {
                 bottom: parent.bottom
                 bottomMargin: Math.round(units.gridUnit / 3)
@@ -231,8 +233,7 @@ Item {
         PlasmaComponents.BusyIndicator {
             running: PkUpdates.isActive
             visible: running
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.verticalCenter: parent.verticalCenter
+            anchors.centerIn: parent
         }
     }
 

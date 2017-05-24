@@ -50,7 +50,7 @@ PkUpdates::PkUpdates(QObject *parent) :
     connect(PackageKit::Daemon::global(), &PackageKit::Daemon::updatesChanged, this, &PkUpdates::onUpdatesChanged);
     connect(PackageKit::Daemon::global(), &PackageKit::Daemon::networkStateChanged, this, &PkUpdates::networkStateChanged);
     connect(Solid::PowerManagement::notifier(), &Solid::PowerManagement::Notifier::resumingFromSuspend, this,
-            [this] {PackageKit::Daemon::stateHasChanged("resume");});
+            [this] {PackageKit::Daemon::stateHasChanged(QStringLiteral("resume"));});
 
     connect(Solid::PowerManagement::notifier(), &Solid::PowerManagement::Notifier::appShouldConserveResourcesChanged,
             this, &PkUpdates::isOnBatteryChanged);
@@ -99,13 +99,13 @@ bool PkUpdates::isSystemUpToDate() const
 QString PkUpdates::iconName() const
 {
     if (securityCount() > 0) {
-        return "update-high";
+        return QStringLiteral("update-high");
     } else if (importantCount() > 0) {
-        return "update-medium";
+        return QStringLiteral("update-medium");
     } else if (count() > 0) {
-        return "update-low";
+        return QStringLiteral("update-low");
     } else {
-        return "update-none";
+        return QStringLiteral("update-none");
     }
 }
 
@@ -189,12 +189,12 @@ QString PkUpdates::timestamp() const
     const qint64 lastCheck = QDateTime::currentMSecsSinceEpoch() - lastRefreshTimestamp();
 
     if (lastCheck != -1)
-        return i18n("Last update: %1 ago", KFormat().formatSpelloutDuration(lastCheck));
+        return i18n("Last check: %1 ago", KFormat().formatSpelloutDuration(lastCheck));
 
-    return i18n("Last update: never");
+    return i18n("Last check: never");
 }
 
-void PkUpdates::checkUpdates()
+void PkUpdates::checkUpdates(bool force)
 {
     qCDebug(PLASMA_PK_UPDATES) << "Checking updates, forced";
 
@@ -203,8 +203,8 @@ void PkUpdates::checkUpdates()
     grp.writeEntry("Timestamp", QDateTime::currentDateTime().toMSecsSinceEpoch());
     grp.sync();
 
-   // ask the Packagekit daemon to refresh the cache
-    m_cacheTrans = PackageKit::Daemon::refreshCache(true);
+    // ask the Packagekit daemon to refresh the cache
+    m_cacheTrans = PackageKit::Daemon::refreshCache(force);
     setActivity(CheckingUpdates);
 
     // evaluate the result
@@ -390,6 +390,9 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
                                  KIconLoader::global()->loadIcon("system-software-update", KIconLoader::Desktop), 0, KNotification::Persistent);
         } else {
             qCDebug(PLASMA_PK_UPDATES) << "Update packages transaction didn't finish successfully";
+            // just try to refresh cache in case of error, the user might have installed the updates manually meanwhile
+            checkUpdates(false /* force */);
+            return;
         }
         setActivity(Idle);
         return;
@@ -409,7 +412,7 @@ void PkUpdates::onErrorCode(PackageKit::Transaction::Error error, const QString 
     if (error == PackageKit::Transaction::ErrorBadGpgSignature)
         return;
 
-    KNotification::event(KNotification::Error, i18n("Update Error"), PkStrings::error(error) + " " + PkStrings::errorMessage(error),
+    KNotification::event(KNotification::Error, i18n("Update Error"), details,
                          KIconLoader::global()->loadIcon("system-software-update", KIconLoader::Desktop), 0, KNotification::Persistent);
 }
 

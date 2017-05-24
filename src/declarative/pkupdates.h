@@ -55,12 +55,12 @@ class PkUpdates : public QObject
     Q_PROPERTY(bool isNetworkOnline READ isNetworkOnline NOTIFY networkStateChanged)
     Q_PROPERTY(bool isNetworkMobile READ isNetworkMobile NOTIFY networkStateChanged)
     Q_PROPERTY(bool isOnBattery READ isOnBattery NOTIFY isOnBatteryChanged)
-    Q_ENUMS(Activity)
 
 public:
     enum Activity {Idle, CheckingUpdates, GettingUpdates, InstallingUpdates};
+    Q_ENUM(Activity)
 
-    explicit PkUpdates(QObject *parent = 0);
+    explicit PkUpdates(QObject *parent = nullptr);
     ~PkUpdates();
 
     /**
@@ -152,7 +152,6 @@ signals:
 
     // private ;)
     void statusMessageChanged();
-    void timestampChanged();
     void isActiveChanged();
     void percentageChanged();
     void networkStateChanged();
@@ -165,7 +164,7 @@ public slots:
       *
       * @param force whether to force the cache refresh
       */
-    Q_INVOKABLE void checkUpdates();
+    Q_INVOKABLE void checkUpdates(bool force = true);
 
     /**
       * Launch the update process

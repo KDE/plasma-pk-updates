@@ -44,14 +44,18 @@ Item
     readonly property int secsInWeek: secsInDay * 7;
     readonly property int secsInMonth: secsInDay * 30;
 
+    readonly property bool networkAllowed: PkUpdates.isNetworkMobile ? checkOnMobile : PkUpdates.isNetworkOnline
+    readonly property bool batteryAllowed: PkUpdates.isOnBattery ? checkOnBattery : true
+
     Timer {
         id: timer
         repeat: true
         triggeredOnStart: true
         interval: 1000 * 60 * 60; // 1 hour
         onTriggered: {
-            if (needsForcedUpdate() && networkAllowed() && batteryAllowed())
-                PkUpdates.checkUpdates()
+            if (needsForcedUpdate() && networkAllowed && batteryAllowed) {
+                PkUpdates.checkUpdates();
+            }
         }
     }
 
@@ -66,9 +70,7 @@ Item
         anchors.fill: parent
         MouseArea {
             anchors.fill: parent
-            onClicked: {
-                plasmoid.expanded = !plasmoid.expanded
-            }
+            onClicked: plasmoid.expanded = !plasmoid.expanded
         }
     }
 
@@ -86,17 +88,11 @@ Item
         return false;
     }
 
-    function networkAllowed() {
-        return PkUpdates.isNetworkMobile ? checkOnMobile : PkUpdates.isNetworkOnline
+    Connections {
+        target: PkUpdates
+        onNetworkStateChanged: timer.restart()
+        onIsOnBatteryChanged: timer.restart()
     }
 
-    function batteryAllowed() {
-        return PkUpdates.isOnBattery ? checkOnBattery : true
-    }
-
-    Component.onCompleted: {
-        PkUpdates.networkStateChanged.connect(timer.restart)
-        PkUpdates.isOnBatteryChanged.connect(timer.restart)
-        timer.start()
-    }
+    Component.onCompleted: timer.start()
 }

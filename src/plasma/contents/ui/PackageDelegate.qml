@@ -30,8 +30,8 @@ PlasmaComponents.ListItem {
     id: packageDelegate
 
     property string updateText
-    property variant updateUrls: [ ]
-    property bool expanded: ListView.isCurrentItem
+    property variant updateUrls: []
+    readonly property bool expanded: ListView.isCurrentItem
 
     signal checkedStateChanged(bool checked)
 
@@ -129,7 +129,7 @@ PlasmaComponents.ListItem {
                 right: parent.right
             }
             font.weight: Font.DemiBold
-            text: i18n("Update Description")
+            text: i18nc("description of the update", "Update Description")
         }
 
         PlasmaComponents.Label {
@@ -141,14 +141,14 @@ PlasmaComponents.ListItem {
             }
             font.pointSize: theme.smallestFont.pointSize;
             opacity: 0.6;
-            text: (!updateText || updateText.length === 0) ? i18n("No description available") : updateText
+            text: updateText == "" ? i18n("No description available") : updateText
             wrapMode: Text.WordWrap
         }
 
         PlasmaComponents.Label {
             id: urlsLabel
             height: visible ? paintedHeight : 0
-            visible: updateUrls.length !== 0 && updateUrls !== null && updateUrls !== undefined
+            visible: !!updateUrls
             anchors {
                 left: parent.left
                 right: parent.right
@@ -171,15 +171,10 @@ PlasmaComponents.ListItem {
                 MouseArea {
                     anchors.fill: parent
                     hoverEnabled: true
+                    cursorShape: Qt.PointingHandCursor
 
                     onClicked: {
                         Qt.openUrlExternally(modelData)
-                    }
-                    onEntered: {
-                        cursorShape = Qt.PointingHandCursor
-                    }
-                    onExited: {
-                        cursorShape = Qt.ArrowCursor
                     }
                 }
             }

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(plasma-pk-updates VERSION 0.3.0)
+project(plasma-pk-updates VERSION 0.3.1)
 add_definitions(-DPROJECT_VERSION="\\\"${PROJECT_VERSION}\\\"")
 
 find_package(ECM 1.3.0 REQUIRED NO_MODULE)
