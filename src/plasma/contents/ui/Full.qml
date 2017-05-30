@@ -44,7 +44,7 @@ Item {
     Connections {
         target: PkUpdates
         onUpdatesChanged: populateModel()
-        onUpdateDetail: updateDetails()
+        onUpdateDetail: updateDetails(packageID, updateText, urls)
     }
 
     Component.onCompleted: populateModel()
