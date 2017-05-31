@@ -88,8 +88,7 @@ Item {
                 if (PkUpdates.isActive)
                     return PkUpdates.statusMessage
                 else if (PkUpdates.isNetworkOnline)
-                    return i18n("Updates are automatically checked %1.<br>" +
-                                "Click the 'Check For Updates' button below to search for updates manually.",
+                    return i18n("Updates are automatically checked %1.<br>Click the 'Check For Updates' button below to search for updates manually.",
                                 updateInterval(plasmoid.configuration.daily,
                                                plasmoid.configuration.weekly,
                                                plasmoid.configuration.monthly));
