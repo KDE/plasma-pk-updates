@@ -419,7 +419,7 @@ void PkUpdates::onErrorCode(PackageKit::Transaction::Error error, const QString 
 void PkUpdates::onRequireRestart(PackageKit::Transaction::Restart type, const QString &packageID)
 {
     if (type == PackageKit::Transaction::RestartSystem || type == PackageKit::Transaction::RestartSession) {
-        KNotification *notification = new KNotification(QLatin1String("notification"), KNotification::Persistent);
+        KNotification *notification = new KNotification(QLatin1String("notification"), KNotification::Persistent | KNotification::DefaultEvent);
         notification->setPixmap(KIconLoader::global()->loadIcon("system-software-update", KIconLoader::Desktop));
         if (type == PackageKit::Transaction::RestartSystem) {
             notification->setActions(QStringList{QLatin1String("Restart")});
