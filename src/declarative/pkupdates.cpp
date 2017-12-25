@@ -198,11 +198,6 @@ void PkUpdates::checkUpdates(bool force)
 {
     qCDebug(PLASMA_PK_UPDATES) << "Checking updates, forced";
 
-    // save the timestamp
-    KConfigGroup grp(KSharedConfig::openConfig("plasma-pk-updates"), "General");
-    grp.writeEntry("Timestamp", QDateTime::currentDateTime().toMSecsSinceEpoch());
-    grp.sync();
-
     // ask the Packagekit daemon to refresh the cache
     m_cacheTrans = PackageKit::Daemon::refreshCache(force);
     setActivity(CheckingUpdates);
@@ -352,6 +347,12 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
     if (trans->role() == PackageKit::Transaction::RoleRefreshCache) {
         if (status == PackageKit::Transaction::ExitSuccess) {
             qCDebug(PLASMA_PK_UPDATES) << "Cache transaction finished successfully";
+
+            // save the timestamp
+            KConfigGroup grp(KSharedConfig::openConfig("plasma-pk-updates"), "General");
+            grp.writeEntry("Timestamp", QDateTime::currentDateTime().toMSecsSinceEpoch());
+            grp.sync();
+
             return;
         } else {
             qCDebug(PLASMA_PK_UPDATES) << "Cache transaction didn't finish successfully";
