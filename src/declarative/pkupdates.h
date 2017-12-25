@@ -227,6 +227,7 @@ private:
     QString m_statusMessage;
     int m_percentage = 0;
     Activity m_activity = Idle;
+    bool m_lastCheckSuccessful = false;
 };
 
 #endif // PLASMA_PK_UPDATES_H
