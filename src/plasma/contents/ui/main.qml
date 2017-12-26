@@ -94,5 +94,10 @@ Item
         onIsOnBatteryChanged: timer.restart()
     }
 
-    Component.onCompleted: timer.start()
+    Component.onCompleted: {
+        if(!needsForcedUpdate() && batteryAllowed) {
+            PkUpdates.checkUpdates(false);
+        }
+        timer.start()
+    }
 }
