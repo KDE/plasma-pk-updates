@@ -45,6 +45,7 @@ Item {
         target: PkUpdates
         onUpdatesChanged: populateModel()
         onUpdateDetail: updateDetails(packageID, updateText, urls)
+        onUpdatesInstalled: plasmoid.expanded = false
     }
 
     Component.onCompleted: populateModel()

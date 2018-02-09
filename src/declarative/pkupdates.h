@@ -145,6 +145,11 @@ signals:
     void done();
 
     /**
+     * Emitted after updates were installed successfully
+     */
+    void updatesInstalled();
+
+    /**
      * Emitted with update details
      * @see getUpdateDetails()
      */

@@ -395,6 +395,7 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
             KNotification::event(KNotification::Notification, i18n("Updates Installed"),
                                  i18np("Successfully updated %1 package", "Successfully updated %1 packages", packages.count()),
                                  KIconLoader::global()->loadIcon("system-software-update", KIconLoader::Desktop), 0, KNotification::Persistent);
+            emit updatesInstalled();
         } else {
             qCDebug(PLASMA_PK_UPDATES) << "Update packages transaction didn't finish successfully";
             // just try to refresh cache in case of error, the user might have installed the updates manually meanwhile
