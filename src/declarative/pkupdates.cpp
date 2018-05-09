@@ -131,7 +131,7 @@ QString PkUpdates::message() const
         if (extra.isEmpty())
             return msg;
         else
-            return msg + "<br>" + i18n("(including %1)", extra.join(i18n(" and ")));
+            return msg + "\n" + i18n("(including %1)", extra.join(i18n(" and ")));
     } else if (!isNetworkOnline()) {
         return i18n("Your system is offline");
     } else if (!m_lastCheckSuccessful) {
