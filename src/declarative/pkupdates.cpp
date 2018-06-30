@@ -304,6 +304,7 @@ void PkUpdates::installUpdates(const QStringList &packageIds, bool simulate, boo
         flags = PackageKit::Transaction::TransactionFlagNone;
     }
 
+    m_restartType = PackageKit::Transaction::RestartNone;
     m_requiredEulas.clear();
     m_packages = packageIds;
     m_installTrans = PackageKit::Daemon::updatePackages(m_packages, flags);
@@ -467,6 +468,7 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
                                  s_pkUpdatesIconName, nullptr,
                                  KNotification::CloseOnTimeout,
                                  s_componentName);
+            showRestartNotification();
             emit updatesInstalled();
         } else {
             qCDebug(PLASMA_PK_UPDATES) << "Update packages transaction didn't finish successfully";
@@ -530,34 +532,84 @@ void PkUpdates::showError(PackageKit::Transaction::Error error, const QString &d
 
 void PkUpdates::onRequireRestart(PackageKit::Transaction::Restart type, const QString &packageID)
 {
-    if (type == PackageKit::Transaction::RestartSystem || type == PackageKit::Transaction::RestartSession) {
-        KNotification *notification = new KNotification(s_eventIdRestartRequired, KNotification::Persistent);
-        notification->setComponentName(s_componentName);
-        notification->setIconName(s_pkUpdatesIconName);
-        if (type == PackageKit::Transaction::RestartSystem) {
-            notification->setActions(QStringList{i18nc("@action:button", "Restart")});
-            notification->setTitle(i18n("Restart is required"));
-            notification->setText(i18n("The computer will have to be restarted after the update for the changes to take effect."));
-        } else {
-            notification->setActions(QStringList{i18nc("@action:button", "Logout")});
-            notification->setTitle(i18n("Session restart is required"));
-            notification->setText(i18n("You will need to log out and back in after the update for the changes to take effect."));
-        }
-
-        connect(notification, &KNotification::action1Activated, this, [type] () {
-            QDBusInterface interface("org.kde.ksmserver", "/KSMServer", "org.kde.KSMServerInterface", QDBusConnection::sessionBus());
-            if (type == PackageKit::Transaction::RestartSystem) {
-                interface.asyncCall("logout", 0, 1, 2); // Options: do not ask again | reboot | force
-            } else {
-                interface.asyncCall("logout", 0, 0, 2); // Options: do not ask again | logout | force
-            }
-        });
-
-        notification->sendEvent();
-    }
+    PackageKit::Transaction * trans = qobject_cast<PackageKit::Transaction *>(sender());
+    if (!trans)
+        return;
 
     qCDebug(PLASMA_PK_UPDATES) << "RESTART" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)type, "Restart")
              << "is required for package" << packageID;
+
+    // Only replace if the new type has a higher place in the list than the current one.
+    static const PackageKit::Transaction::Restart restart_order[] = {
+        PackageKit::Transaction::RestartNone,
+        PackageKit::Transaction::RestartApplication,
+        PackageKit::Transaction::RestartSession,
+        PackageKit::Transaction::RestartSecuritySession,
+        PackageKit::Transaction::RestartSystem,
+        PackageKit::Transaction::RestartSecuritySystem,
+    };
+
+    auto prio_current = std::find(std::begin(restart_order), std::end(restart_order), m_restartType),
+         prio_new = std::find(std::begin(restart_order), std::end(restart_order), type);
+
+    if(prio_new == std::end(restart_order)) {
+        qWarning() << "Unknown/unhandled restart type" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)type, "Restart");
+        return;
+    }
+
+    // Compare the priority
+    if(std::distance(prio_current, prio_new) <= 0)
+        return;
+
+    m_restartType = type;
+    m_restartPackageID = packageID;
+}
+
+void PkUpdates::showRestartNotification()
+{
+    KNotification *notification = nullptr;
+    bool reboot = false;
+
+    switch(m_restartType)
+    {
+    case PackageKit::Transaction::RestartSystem:
+    case PackageKit::Transaction::RestartSecuritySystem:
+        notification = new KNotification(s_eventIdRestartRequired, KNotification::Persistent);
+
+        notification->setActions(QStringList{QLatin1String("Restart")});
+        notification->setTitle(i18n("Restart is required"));
+        notification->setText(i18n("The computer will have to be restarted after the update for the changes to take effect."));
+
+        reboot = true;
+        break;
+    case PackageKit::Transaction::RestartSession:
+    case PackageKit::Transaction::RestartSecuritySession:
+        notification = new KNotification(s_eventIdRestartRequired, KNotification::Persistent);
+
+        notification->setActions(QStringList{QLatin1String("Logout")});
+        notification->setTitle(i18n("Session restart is required"));
+        notification->setText(i18n("You will need to log out and back in after the update for the changes to take effect."));
+        break;
+    case PackageKit::Transaction::RestartNone:
+    case PackageKit::Transaction::RestartApplication:
+        return;
+    default:
+        qWarning() << "Unknown/unhandled restart type" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)m_restartType, "Restart");
+        return;
+    }
+
+    notification->setComponentName(s_componentName);
+    notification->setIconName(s_pkUpdatesIconName);
+    connect(notification, &KNotification::action1Activated, this, [reboot] () {
+        QDBusInterface interface("org.kde.ksmserver", "/KSMServer", "org.kde.KSMServerInterface", QDBusConnection::sessionBus());
+        if (reboot) {
+            interface.asyncCall("logout", 0, 1, 2); // Options: do not ask again | reboot | force
+        } else {
+            interface.asyncCall("logout", 0, 0, 2); // Options: do not ask again | logout | force
+        }
+    });
+
+    notification->sendEvent();
 }
 
 void PkUpdates::onUpdateDetail(const QString &packageID, const QStringList &updates, const QStringList &obsoletes,

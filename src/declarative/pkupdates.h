@@ -253,6 +253,7 @@ private:
     void setPercentage(int value);
     void showError(PackageKit::Transaction::Error error, const QString &details);
     void promptNextEulaAgreement();
+    void showRestartNotification();
     QPointer<PackageKit::Transaction> m_updatesTrans;
     QPointer<PackageKit::Transaction> m_cacheTrans;
     QPointer<PackageKit::Transaction> m_installTrans;
@@ -279,6 +280,8 @@ private:
     // If a transaction failed because of required EULAs,
     // this contains a map of their IDs to their data
     QMap<QString, EulaData> m_requiredEulas;
+    PackageKit::Transaction::Restart m_restartType = PackageKit::Transaction::RestartNone;
+    QString m_restartPackageID;
 };
 
 #endif // PLASMA_PK_UPDATES_H
