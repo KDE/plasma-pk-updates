@@ -25,6 +25,7 @@ Name[tr]=Yazılım Güncellemeleri
 Name[uk]=Оновлення програм
 Name[x-test]=xxSoftware Updatesxx
 Name[zh_CN]=软件更新
+Name[zh_TW]=軟體更新
 
 Comment=Get software updates
 Comment[ast]=Consigue anovamientos de software
@@ -52,6 +53,7 @@ Comment[tr]=Yazılım güncellemelerini al
 Comment[uk]=Отримання оновлень програм
 Comment[x-test]=xxGet software updatesxx
 Comment[zh_CN]=获取软件更新
+Comment[zh_TW]=取得軟體更新
 
 Icon=system-software-update
 Type=Service
