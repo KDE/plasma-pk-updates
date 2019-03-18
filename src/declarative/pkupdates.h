@@ -46,7 +46,7 @@ class PkUpdates : public QObject
     Q_PROPERTY(int securityCount READ securityCount NOTIFY updatesChanged)
     Q_PROPERTY(bool isSystemUpToDate READ isSystemUpToDate NOTIFY updatesChanged)
     Q_PROPERTY(QString iconName READ iconName NOTIFY updatesChanged)
-    Q_PROPERTY(QString message READ message NOTIFY isActiveChanged)
+    Q_PROPERTY(QString message READ message NOTIFY messageChanged)
     Q_PROPERTY(int percentage READ percentage NOTIFY percentageChanged)
     Q_PROPERTY(QString timestamp READ timestamp NOTIFY updatesChanged)
     Q_PROPERTY(QString statusMessage READ statusMessage NOTIFY statusMessageChanged)
@@ -161,6 +161,7 @@ signals:
     void percentageChanged();
     void networkStateChanged();
     void isOnBatteryChanged();
+    void messageChanged();
 
 public slots:
     /**
@@ -201,6 +202,8 @@ public slots:
      */
     Q_INVOKABLE void getUpdateDetails(const QString & pkgID);
 
+    Q_INVOKABLE void doDelayedCheckUpdates();
+
 private slots:
     void getUpdates();
     void onChanged();
@@ -233,6 +236,7 @@ private:
     int m_percentage = 0;
     Activity m_activity = Idle;
     bool m_lastCheckSuccessful = false;
+    bool m_checkUpdatesWhenNetworkOnline = false;
 };
 
 #endif // PLASMA_PK_UPDATES_H

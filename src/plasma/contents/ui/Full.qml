@@ -127,7 +127,7 @@ Item {
             id: updatesScrollArea
             Layout.fillWidth: true
             Layout.fillHeight: true
-            visible: PkUpdates.count && !PkUpdates.isActive
+            visible: PkUpdates.count && PkUpdates.isNetworkOnline && !PkUpdates.isActive
 
             ListView {
                 id: updatesView
@@ -160,7 +160,7 @@ Item {
         }
 
         RowLayout {
-            visible: PkUpdates.count && !PkUpdates.isActive
+            visible: PkUpdates.count && PkUpdates.isNetworkOnline && !PkUpdates.isActive
             PlasmaComponents.CheckBox {
                 id: chkSelectAll
                 anchors {

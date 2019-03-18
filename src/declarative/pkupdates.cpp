@@ -54,6 +54,10 @@ PkUpdates::PkUpdates(QObject *parent) :
 
     connect(Solid::PowerManagement::notifier(), &Solid::PowerManagement::Notifier::appShouldConserveResourcesChanged,
             this, &PkUpdates::isOnBatteryChanged);
+
+    connect(PackageKit::Daemon::global(), &PackageKit::Daemon::networkStateChanged, this, &PkUpdates::doDelayedCheckUpdates);
+    connect(this, &PkUpdates::isActiveChanged, this, &PkUpdates::messageChanged);
+    connect(this, &PkUpdates::networkStateChanged, this, &PkUpdates::messageChanged);
 }
 
 PkUpdates::~PkUpdates()
@@ -167,6 +171,16 @@ bool PkUpdates::isNetworkOnline() const
     return (PackageKit::Daemon::networkState() > PackageKit::Daemon::Network::NetworkOffline);
 }
 
+void PkUpdates::doDelayedCheckUpdates()
+{
+    if (m_checkUpdatesWhenNetworkOnline && isNetworkOnline())
+    {
+        qCDebug(PLASMA_PK_UPDATES) << "CheckUpdates was delayed. Doing it now";
+        m_checkUpdatesWhenNetworkOnline = false;
+        checkUpdates();
+    }
+}
+
 bool PkUpdates::isNetworkMobile() const
 {
     qCDebug(PLASMA_PK_UPDATES) << "Is net mobile:" << (PackageKit::Daemon::networkState() == PackageKit::Daemon::Network::NetworkMobile);
@@ -198,6 +212,12 @@ QString PkUpdates::timestamp() const
 
 void PkUpdates::checkUpdates(bool force)
 {
+    if (!isNetworkOnline())
+    {
+        qCDebug(PLASMA_PK_UPDATES) << "Checking updates delayed. Network is offline";
+        m_checkUpdatesWhenNetworkOnline = true;
+        return;
+    }
     qCDebug(PLASMA_PK_UPDATES) << "Checking updates, forced";
 
     // ask the Packagekit daemon to refresh the cache
