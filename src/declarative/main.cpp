@@ -29,7 +29,6 @@ int main(int argc, char *argv[])
 
     PkUpdates * upd = new PkUpdates(qApp);
     QObject::connect(upd, &PkUpdates::done, qApp, &QCoreApplication::quit);
-    upd->checkUpdates();
 
     return app.exec();
 }

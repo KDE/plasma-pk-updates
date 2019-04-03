@@ -95,9 +95,6 @@ Item
     }
 
     Component.onCompleted: {
-        if(!needsForcedUpdate() && batteryAllowed) {
-            PkUpdates.checkUpdates(false);
-        }
         timer.start()
     }
 }
