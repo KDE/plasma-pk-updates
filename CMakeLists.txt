@@ -26,7 +26,6 @@ find_package(KF5 REQUIRED
     I18n
     CoreAddons # KFormat
     Notifications
-    IconThemes # KIconLoader
     KDELibs4Support #Solid::Power
 )
 

@@ -28,7 +28,6 @@
 #include <KFormat>
 #include <KNotification>
 #include <Solid/PowerManagement>
-#include <KIconLoader>
 #include <KConfigGroup>
 #include <KSharedConfig>
 
@@ -36,6 +35,11 @@
 #include "PkStrings.h"
 
 Q_LOGGING_CATEGORY(PLASMA_PK_UPDATES, "plasma-pk-updates")
+
+namespace
+{
+    const auto s_pkUpdatesIconName = QStringLiteral("system-software-update");
+} // namespace {
 
 PkUpdates::PkUpdates(QObject *parent) :
     QObject(parent),
@@ -391,7 +395,7 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
             if (upCount > 0) {
                 KNotification::event(KNotification::Notification, i18n("Software Updates Available"),
                                      i18np("You have 1 new update", "You have %1 new updates", upCount),
-                                     KIconLoader::global()->loadIcon("system-software-update", KIconLoader::Desktop), 0, KNotification::Persistent);
+                                     s_pkUpdatesIconName, 0, KNotification::Persistent);
             }
         } else {
             qCDebug(PLASMA_PK_UPDATES) << "Check updates transaction didn't finish successfully";
@@ -414,7 +418,7 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
             qCDebug(PLASMA_PK_UPDATES) << "Update packages transaction finished successfully";
             KNotification::event(KNotification::Notification, i18n("Updates Installed"),
                                  i18np("Successfully updated %1 package", "Successfully updated %1 packages", packages.count()),
-                                 KIconLoader::global()->loadIcon("system-software-update", KIconLoader::Desktop), 0, KNotification::Persistent);
+                                 s_pkUpdatesIconName, 0, KNotification::Persistent);
             emit updatesInstalled();
         } else {
             qCDebug(PLASMA_PK_UPDATES) << "Update packages transaction didn't finish successfully";
@@ -441,14 +445,14 @@ void PkUpdates::onErrorCode(PackageKit::Transaction::Error error, const QString 
         return;
 
     KNotification::event(KNotification::Error, i18n("Update Error"), details,
-                         KIconLoader::global()->loadIcon("system-software-update", KIconLoader::Desktop), 0, KNotification::Persistent);
+                         s_pkUpdatesIconName, 0, KNotification::Persistent);
 }
 
 void PkUpdates::onRequireRestart(PackageKit::Transaction::Restart type, const QString &packageID)
 {
     if (type == PackageKit::Transaction::RestartSystem || type == PackageKit::Transaction::RestartSession) {
         KNotification *notification = new KNotification(QLatin1String("notification"), KNotification::Persistent | KNotification::DefaultEvent);
-        notification->setPixmap(KIconLoader::global()->loadIcon("system-software-update", KIconLoader::Desktop));
+        notification->setIconName(s_pkUpdatesIconName);
         if (type == PackageKit::Transaction::RestartSystem) {
             notification->setActions(QStringList{QLatin1String("Restart")});
             notification->setTitle(i18n("Restart is required"));
