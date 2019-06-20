@@ -395,7 +395,7 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
             if (upCount > 0) {
                 KNotification::event(KNotification::Notification, i18n("Software Updates Available"),
                                      i18np("You have 1 new update", "You have %1 new updates", upCount),
-                                     s_pkUpdatesIconName, 0, KNotification::Persistent);
+                                     s_pkUpdatesIconName, nullptr, KNotification::Persistent);
             }
         } else {
             qCDebug(PLASMA_PK_UPDATES) << "Check updates transaction didn't finish successfully";
@@ -418,7 +418,7 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
             qCDebug(PLASMA_PK_UPDATES) << "Update packages transaction finished successfully";
             KNotification::event(KNotification::Notification, i18n("Updates Installed"),
                                  i18np("Successfully updated %1 package", "Successfully updated %1 packages", packages.count()),
-                                 s_pkUpdatesIconName, 0, KNotification::Persistent);
+                                 s_pkUpdatesIconName, nullptr, KNotification::Persistent);
             emit updatesInstalled();
         } else {
             qCDebug(PLASMA_PK_UPDATES) << "Update packages transaction didn't finish successfully";
@@ -445,7 +445,7 @@ void PkUpdates::onErrorCode(PackageKit::Transaction::Error error, const QString 
         return;
 
     KNotification::event(KNotification::Error, i18n("Update Error"), details,
-                         s_pkUpdatesIconName, 0, KNotification::Persistent);
+                         s_pkUpdatesIconName, nullptr, KNotification::Persistent);
 }
 
 void PkUpdates::onRequireRestart(PackageKit::Transaction::Restart type, const QString &packageID)
