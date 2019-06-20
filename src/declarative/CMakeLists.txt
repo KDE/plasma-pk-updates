@@ -16,7 +16,7 @@ target_link_libraries(plasmapk_qmlplugins
     KF5::CoreAddons
     KF5::Notifications
     KF5::ConfigCore
-    KF5::KDELibs4Support
+    KF5::Solid
     PK::packagekitqt5
 )
 
@@ -38,7 +38,7 @@ target_link_libraries(plasmapk-console
     KF5::I18n
     KF5::CoreAddons
     KF5::ConfigCore
-    KF5::KDELibs4Support
+    KF5::Solid
     KF5::Notifications
     PK::packagekitqt5
 )

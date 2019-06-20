@@ -27,7 +27,8 @@
 #include <KLocalizedString>
 #include <KFormat>
 #include <KNotification>
-#include <Solid/PowerManagement>
+#include <Solid/Power>
+#include <Solid/AcPluggedJob>
 #include <KConfigGroup>
 #include <KSharedConfig>
 
@@ -47,18 +48,32 @@ namespace
 } // namespace {
 
 PkUpdates::PkUpdates(QObject *parent) :
-    QObject(parent)
+    QObject(parent),
+    m_isOnBattery(true)
 {
     setStatusMessage(i18n("Idle"));
 
     connect(PackageKit::Daemon::global(), &PackageKit::Daemon::changed, this, &PkUpdates::onChanged);
     connect(PackageKit::Daemon::global(), &PackageKit::Daemon::updatesChanged, this, &PkUpdates::onUpdatesChanged);
     connect(PackageKit::Daemon::global(), &PackageKit::Daemon::networkStateChanged, this, &PkUpdates::networkStateChanged);
-    connect(Solid::PowerManagement::notifier(), &Solid::PowerManagement::Notifier::resumingFromSuspend, this,
+    connect(Solid::Power::self(), &Solid::Power::resumeFromSuspend, this,
             [this] {PackageKit::Daemon::stateHasChanged(QStringLiteral("resume"));});
 
-    connect(Solid::PowerManagement::notifier(), &Solid::PowerManagement::Notifier::appShouldConserveResourcesChanged,
-            this, &PkUpdates::isOnBatteryChanged);
+    connect(Solid::Power::self(), &Solid::Power::acPluggedChanged, this, [this] (bool acPlugged) {
+            qCDebug(PLASMA_PK_UPDATES) << "acPluggedChanged onBattery:" << m_isOnBattery << "->" << !acPlugged;
+            if (!acPlugged != m_isOnBattery) {
+                m_isOnBattery = !acPlugged;
+                emit PkUpdates::isOnBatteryChanged();
+            }
+    });
+    auto acPluggedJob = Solid::Power::self()->isAcPlugged(this);
+    connect(acPluggedJob , &Solid::Job::result, this, [this] (Solid::Job* job) {
+        bool acPlugged = static_cast<Solid::AcPluggedJob*>(job)->isPlugged();
+        qCDebug(PLASMA_PK_UPDATES) << "acPlugged initial state" << acPlugged;
+        m_isOnBattery = !acPlugged;
+        emit PkUpdates::isOnBatteryChanged();
+    });
+    acPluggedJob->start();
 
     connect(PackageKit::Daemon::global(), &PackageKit::Daemon::networkStateChanged, this, &PkUpdates::doDelayedCheckUpdates);
     connect(this, &PkUpdates::isActiveChanged, this, &PkUpdates::messageChanged);
@@ -194,8 +209,8 @@ bool PkUpdates::isNetworkMobile() const
 
 bool PkUpdates::isOnBattery() const
 {
-    qCDebug(PLASMA_PK_UPDATES) << "Is on battery:" << Solid::PowerManagement::appShouldConserveResources();
-    return Solid::PowerManagement::appShouldConserveResources();
+    qCDebug(PLASMA_PK_UPDATES) << "Is on battery:" << m_isOnBattery;
+    return m_isOnBattery;
 }
 
 void PkUpdates::getUpdateDetails(const QString &pkgID)

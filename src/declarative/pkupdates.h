@@ -240,6 +240,7 @@ private:
     Activity m_activity = Idle;
     bool m_lastCheckSuccessful = false;
     bool m_checkUpdatesWhenNetworkOnline = false;
+    bool m_isOnBattery;
 };
 
 #endif // PLASMA_PK_UPDATES_H

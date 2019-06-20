@@ -26,7 +26,7 @@ find_package(KF5 REQUIRED
     I18n
     CoreAddons # KFormat
     Notifications
-    KDELibs4Support #Solid::Power
+    Solid # Solid::Power
 )
 
 find_package(packagekitqt5 REQUIRED)
