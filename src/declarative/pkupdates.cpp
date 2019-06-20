@@ -352,7 +352,7 @@ void PkUpdates::onPackageUpdating(PackageKit::Transaction::Info info, const QStr
 
     const uint percent = m_installTrans->percentage();
 
-    if (percent >= 0 && percent <= 100) {
+    if (percent <= 100) {
         setStatusMessage(i18nc("1 installation status, 2 pkg name, 3 percentage", "%1 %2 (%3%)",
                                PkStrings::infoPresent(info), PackageKit::Daemon::packageName(packageID), percent));
     } else {
