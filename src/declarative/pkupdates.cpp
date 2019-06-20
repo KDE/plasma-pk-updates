@@ -47,11 +47,7 @@ namespace
 } // namespace {
 
 PkUpdates::PkUpdates(QObject *parent) :
-    QObject(parent),
-    m_updatesTrans(Q_NULLPTR),
-    m_cacheTrans(Q_NULLPTR),
-    m_installTrans(Q_NULLPTR),
-    m_detailTrans(Q_NULLPTR)
+    QObject(parent)
 {
     setStatusMessage(i18n("Idle"));
 
