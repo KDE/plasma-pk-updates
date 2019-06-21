@@ -22,6 +22,7 @@ target_link_libraries(plasmapk_qmlplugins
 
 install(TARGETS plasmapk_qmlplugins DESTINATION ${QML_INSTALL_DIR}/org/kde/plasma/PackageKit)
 install(FILES qmldir DESTINATION ${QML_INSTALL_DIR}/org/kde/plasma/PackageKit)
+install(FILES plasma_pk_updates.notifyrc DESTINATION  ${KNOTIFYRC_INSTALL_DIR} )
 
 # test binary
 set(plasmapk_console_SRCS

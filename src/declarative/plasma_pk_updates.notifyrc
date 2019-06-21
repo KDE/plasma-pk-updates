@@ -1,0 +1,23 @@
+[Global]
+IconName=system-software-update
+Comment=Software Updates
+
+[Event/updatesAvailable]
+Name=Updates Available
+Comment=Software updates for the system are available
+Action=Popup
+
+[Event/updatesInstalled]
+Name=Updates Installed
+Comment=The updates have been installed successfully
+Action=Popup
+
+[Event/restartRequired]
+Name=Restart Required
+Comment=A session or computer restart is required
+Action=Popup
+
+[Event/updateError]
+Name=Update Error
+Comment=An error occured
+Action=Popup

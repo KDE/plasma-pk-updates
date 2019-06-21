@@ -39,6 +39,11 @@ Q_LOGGING_CATEGORY(PLASMA_PK_UPDATES, "plasma-pk-updates")
 namespace
 {
     const auto s_pkUpdatesIconName = QStringLiteral("system-software-update");
+    const auto s_componentName = QStringLiteral("plasma_pk_updates");
+    const auto s_eventIdUpdatesAvailable = QStringLiteral("updatesAvailable");
+    const auto s_eventIdUpdatesInstalled = QStringLiteral("updatesInstalled");
+    const auto s_eventIdRestartRequired = QStringLiteral("restartRequired");
+    const auto s_eventIdError = QStringLiteral("updateError");
 } // namespace {
 
 PkUpdates::PkUpdates(QObject *parent) :
@@ -393,9 +398,11 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
             qCDebug(PLASMA_PK_UPDATES) << "Check updates transaction finished successfully";
             const int upCount = count();
             if (upCount > 0) {
-                KNotification::event(KNotification::Notification, i18n("Software Updates Available"),
+                KNotification::event(s_eventIdUpdatesAvailable,
+                                     QString(),
                                      i18np("You have 1 new update", "You have %1 new updates", upCount),
-                                     s_pkUpdatesIconName, nullptr, KNotification::Persistent);
+                                     s_pkUpdatesIconName, nullptr, KNotification::Persistent,
+                                     s_componentName);
             }
         } else {
             qCDebug(PLASMA_PK_UPDATES) << "Check updates transaction didn't finish successfully";
@@ -416,9 +423,12 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
             return;
         } else if (status == PackageKit::Transaction::ExitSuccess) {
             qCDebug(PLASMA_PK_UPDATES) << "Update packages transaction finished successfully";
-            KNotification::event(KNotification::Notification, i18n("Updates Installed"),
+            KNotification::event(s_eventIdUpdatesInstalled,
+                                 i18n("Updates Installed"),
                                  i18np("Successfully updated %1 package", "Successfully updated %1 packages", packages.count()),
-                                 s_pkUpdatesIconName, nullptr, KNotification::Persistent);
+                                 s_pkUpdatesIconName, nullptr,
+                                 KNotification::Persistent,
+                                 s_componentName);
             emit updatesInstalled();
         } else {
             qCDebug(PLASMA_PK_UPDATES) << "Update packages transaction didn't finish successfully";
@@ -444,14 +454,18 @@ void PkUpdates::onErrorCode(PackageKit::Transaction::Error error, const QString 
     if (error == PackageKit::Transaction::ErrorBadGpgSignature)
         return;
 
-    KNotification::event(KNotification::Error, i18n("Update Error"), details,
-                         s_pkUpdatesIconName, nullptr, KNotification::Persistent);
+    KNotification::event(s_eventIdError, i18n("Update Error"),
+                         details,
+                         s_pkUpdatesIconName, nullptr,
+                         KNotification::Persistent,
+                         s_componentName);
 }
 
 void PkUpdates::onRequireRestart(PackageKit::Transaction::Restart type, const QString &packageID)
 {
     if (type == PackageKit::Transaction::RestartSystem || type == PackageKit::Transaction::RestartSession) {
-        KNotification *notification = new KNotification(QLatin1String("notification"), KNotification::Persistent | KNotification::DefaultEvent);
+        KNotification *notification = new KNotification(s_eventIdRestartRequired, KNotification::Persistent);
+        notification->setComponentName(s_componentName);
         notification->setIconName(s_pkUpdatesIconName);
         if (type == PackageKit::Transaction::RestartSystem) {
             notification->setActions(QStringList{QLatin1String("Restart")});
