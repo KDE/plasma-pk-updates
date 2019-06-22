@@ -29,6 +29,7 @@
 #include <PackageKit/Transaction>
 
 class QTimer;
+class KNotification;
 
 Q_DECLARE_LOGGING_CATEGORY(PLASMA_PK_UPDATES)
 
@@ -229,6 +230,8 @@ private:
     QPointer<PackageKit::Transaction> m_cacheTrans;
     QPointer<PackageKit::Transaction> m_installTrans;
     QPointer<PackageKit::Transaction> m_detailTrans;
+    QPointer<KNotification> m_lastNotification;
+    int m_lastUpdateCount = 0;
     QVariantMap m_updateList;
     QStringList m_importantList;
     QStringList m_securityList;

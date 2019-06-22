@@ -397,12 +397,22 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
         if (m_lastCheckSuccessful) {
             qCDebug(PLASMA_PK_UPDATES) << "Check updates transaction finished successfully";
             const int upCount = count();
-            if (upCount > 0) {
-                KNotification::event(s_eventIdUpdatesAvailable,
+            if (upCount != m_lastUpdateCount && m_lastNotification) {
+                qCDebug(PLASMA_PK_UPDATES) << "Disposing old update count notification";
+                m_lastNotification->close();
+            }
+            if (upCount > 0 && upCount != m_lastUpdateCount) {
+                m_lastUpdateCount = upCount;
+                m_lastNotification = KNotification::event(s_eventIdUpdatesAvailable,
                                      QString(),
                                      i18np("You have 1 new update", "You have %1 new updates", upCount),
                                      s_pkUpdatesIconName, nullptr, KNotification::Persistent,
                                      s_componentName);
+                connect(m_lastNotification, &KNotification::closed, this, [this] {
+                    qCDebug(PLASMA_PK_UPDATES) << "Old notification closed";
+                    m_lastNotification = nullptr;
+                    m_lastUpdateCount = 0;
+                });
             }
         } else {
             qCDebug(PLASMA_PK_UPDATES) << "Check updates transaction didn't finish successfully";
@@ -423,11 +433,14 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
             return;
         } else if (status == PackageKit::Transaction::ExitSuccess) {
             qCDebug(PLASMA_PK_UPDATES) << "Update packages transaction finished successfully";
+            if (m_lastNotification) {
+                m_lastNotification->close();
+            }
             KNotification::event(s_eventIdUpdatesInstalled,
                                  i18n("Updates Installed"),
                                  i18np("Successfully updated %1 package", "Successfully updated %1 packages", packages.count()),
                                  s_pkUpdatesIconName, nullptr,
-                                 KNotification::Persistent,
+                                 KNotification::CloseOnTimeout,
                                  s_componentName);
             emit updatesInstalled();
         } else {
