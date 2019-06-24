@@ -329,7 +329,7 @@ void PkUpdates::onPackage(PackageKit::Transaction::Info info, const QString &pac
 
     switch (info) {
     case PackageKit::Transaction::InfoBlocked:
-        // Blocked updates are not instalable updates so there is no
+        // Blocked updates are not installable updates so there is no
         // reason to show/count them
         return;
     case PackageKit::Transaction::InfoImportant:

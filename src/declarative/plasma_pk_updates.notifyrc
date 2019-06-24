@@ -19,5 +19,5 @@ Action=Popup
 
 [Event/updateError]
 Name=Update Error
-Comment=An error occured
+Comment=An error occurred
 Action=Popup

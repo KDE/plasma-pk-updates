@@ -90,7 +90,7 @@ public:
     QString iconName() const;
 
     /**
-     * @return the overal status with number of available updates
+     * @return the overall status with number of available updates
      */
     QString message() const;
 
