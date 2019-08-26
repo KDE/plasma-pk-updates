@@ -156,6 +156,17 @@ signals:
      */
     void updateDetail(const QString &packageID, const QString &updateText, const QStringList &urls);
 
+    /**
+     * Emitted when an EULA agreement prevents the transaction from running
+     * @param eulaId the EULA identifier
+     * @param packageID ID of the package for which an EULA is required
+     * @param vendorName the vendor name
+     * @param licenseAgreement the EULA text
+     *
+     * @see eulaAgreementResult()
+     */
+    void eulaRequired(const QString &eulaID, const QString &packageID, const QString &vendor, const QString &licenseAgreement);
+
     // private ;)
     void statusMessageChanged();
     void isActiveChanged();
@@ -205,6 +216,11 @@ public slots:
 
     Q_INVOKABLE void doDelayedCheckUpdates();
 
+    /**
+     * If agreed to eulaID, starts an EULA acceptance transaction and continues.
+     */
+    Q_INVOKABLE void eulaAgreementResult(const QString &eulaID, bool agreed);
+
 private slots:
     void getUpdates();
     void onChanged();
@@ -221,15 +237,25 @@ private slots:
                         const QDateTime &issued, const QDateTime &updated);
     void onRepoSignatureRequired(const QString & packageID, const QString & repoName, const QString & keyUrl, const QString & keyUserid,
                                  const QString & keyId, const QString & keyFingerprint, const QString & keyTimestamp, PackageKit::Transaction::SigType type);
+    void onEulaRequired(const QString &eulaID, const QString &packageID, const QString &vendor, const QString &licenseAgreement);
 
 private:
+    struct EulaData {
+        QString packageID;
+        QString vendor;
+        QString licenseAgreement;
+    };
+
     void setStatusMessage(const QString &message);
     void setActivity(Activity act);
     void setPercentage(int value);
+    void promptNextEulaAgreement();
     QPointer<PackageKit::Transaction> m_updatesTrans;
     QPointer<PackageKit::Transaction> m_cacheTrans;
     QPointer<PackageKit::Transaction> m_installTrans;
     QPointer<PackageKit::Transaction> m_detailTrans;
+    QPointer<PackageKit::Transaction> m_eulaTrans;
+    QStringList m_packages;
     QPointer<KNotification> m_lastNotification;
     int m_lastUpdateCount = 0;
     QVariantMap m_updateList;
@@ -241,6 +267,9 @@ private:
     bool m_lastCheckSuccessful = false;
     bool m_checkUpdatesWhenNetworkOnline = false;
     bool m_isOnBattery;
+    // If a transaction failed because of required EULAs,
+    // this contains a map of their IDs to their data
+    QMap<QString, EulaData> m_requiredEulas;
 };
 
 #endif // PLASMA_PK_UPDATES_H

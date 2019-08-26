@@ -296,8 +296,9 @@ void PkUpdates::installUpdates(const QStringList &packageIds, bool simulate, boo
         flags = PackageKit::Transaction::TransactionFlagNone;
     }
 
-    m_installTrans = PackageKit::Daemon::updatePackages(packageIds, flags);
-    m_installTrans->setProperty("packages", packageIds);
+    m_requiredEulas.clear();
+    m_packages = packageIds;
+    m_installTrans = PackageKit::Daemon::updatePackages(m_packages, flags);
     setActivity(InstallingUpdates);
 
     connect(m_installTrans.data(), &PackageKit::Transaction::statusChanged, this, &PkUpdates::onStatusChanged);
@@ -306,6 +307,7 @@ void PkUpdates::installUpdates(const QStringList &packageIds, bool simulate, boo
     connect(m_installTrans.data(), &PackageKit::Transaction::package, this, &PkUpdates::onPackageUpdating);
     connect(m_installTrans.data(), &PackageKit::Transaction::requireRestart, this, &PkUpdates::onRequireRestart);
     connect(m_installTrans.data(), &PackageKit::Transaction::repoSignatureRequired, this, &PkUpdates::onRepoSignatureRequired);
+    connect(m_installTrans.data(), &PackageKit::Transaction::eulaRequired, this, &PkUpdates::onEulaRequired);
 }
 
 void PkUpdates::onChanged()
@@ -431,16 +433,19 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
         qCDebug(PLASMA_PK_UPDATES) << "Total number of updates: " << count();
         emit done();
     } else if (trans->role() == PackageKit::Transaction::RoleUpdatePackages) {
-        const QStringList packages = trans->property("packages").toStringList();
-        qCDebug(PLASMA_PK_UPDATES) << "Finished updating packages:" << packages;
+        qCDebug(PLASMA_PK_UPDATES) << "Finished updating packages:" << m_packages;
         if (status == PackageKit::Transaction::ExitNeedUntrusted) {
             qCDebug(PLASMA_PK_UPDATES) << "Transaction needs untrusted packages";
             // restart transaction with "untrusted" flag
-            installUpdates(packages, false /*simulate*/, true /*untrusted*/);
+            installUpdates(m_packages, false /*simulate*/, true /*untrusted*/);
+            return;
+        } else if (status == PackageKit::Transaction::ExitEulaRequired) {
+            qCDebug(PLASMA_PK_UPDATES) << "Acceptance of EULAs required";
+            promptNextEulaAgreement();
             return;
         } else if (status == PackageKit::Transaction::ExitSuccess && trans->transactionFlags().testFlag(PackageKit::Transaction::TransactionFlagSimulate)) {
             qCDebug(PLASMA_PK_UPDATES) << "Simulation finished with success, restarting the transaction";
-            installUpdates(packages, false /*simulate*/, false /*untrusted*/);
+            installUpdates(m_packages, false /*simulate*/, false /*untrusted*/);
             return;
         } else if (status == PackageKit::Transaction::ExitSuccess) {
             qCDebug(PLASMA_PK_UPDATES) << "Update packages transaction finished successfully";
@@ -449,7 +454,7 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
             }
             KNotification::event(s_eventIdUpdatesInstalled,
                                  i18n("Updates Installed"),
-                                 i18np("Successfully updated %1 package", "Successfully updated %1 packages", packages.count()),
+                                 i18np("Successfully updated %1 package", "Successfully updated %1 packages", m_packages.count()),
                                  s_pkUpdatesIconName, nullptr,
                                  KNotification::CloseOnTimeout,
                                  s_componentName);
@@ -475,7 +480,7 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
 void PkUpdates::onErrorCode(PackageKit::Transaction::Error error, const QString &details)
 {
     qWarning() << "PK error:" << details << "type:" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)error, "Error");
-    if (error == PackageKit::Transaction::ErrorBadGpgSignature)
+    if (error == PackageKit::Transaction::ErrorBadGpgSignature || error == PackageKit::Transaction::ErrorNoLicenseAgreement)
         return;
 
     KNotification::event(s_eventIdError, i18n("Update Error"),
@@ -551,6 +556,46 @@ void PkUpdates::onRepoSignatureRequired(const QString &packageID, const QString 
 
     // TODO provide a way to confirm and import GPG keys
     qCDebug(PLASMA_PK_UPDATES) << "Repo sig required" << packageID;
+}
+
+void PkUpdates::onEulaRequired(const QString &eulaID, const QString &packageID, const QString &vendor, const QString &licenseAgreement)
+{
+    m_requiredEulas[eulaID] = {packageID, vendor, licenseAgreement};
+}
+
+void PkUpdates::promptNextEulaAgreement()
+{
+    if(m_requiredEulas.empty()) {
+        // Restart the transaction
+        installUpdates(m_packages, false, false);
+        return;
+    }
+
+    QString eulaID = m_requiredEulas.firstKey();
+    const EulaData &eula = m_requiredEulas[eulaID];
+    emit eulaRequired(eulaID, eula.packageID, eula.vendor, eula.licenseAgreement);
+}
+
+void PkUpdates::eulaAgreementResult(const QString &eulaID, bool agreed)
+{
+    if(!agreed) {
+        qCDebug(PLASMA_PK_UPDATES) << "EULA declined";
+        // Do the same as the failure case in onFinished
+        checkUpdates(false /* force */);
+        return;
+    }
+
+    m_eulaTrans = PackageKit::Daemon::acceptEula(eulaID);
+    connect(m_eulaTrans.data(), &PackageKit::Transaction::finished, this,
+            [this, eulaID] (PackageKit::Transaction::Exit exit, uint) {
+                if (exit == PackageKit::Transaction::ExitSuccess) {
+                    m_requiredEulas.remove(eulaID);
+                    promptNextEulaAgreement();
+                } else {
+                    qCWarning(PLASMA_PK_UPDATES) << "EULA acceptance failed";
+                }
+            }
+    );
 }
 
 void PkUpdates::setStatusMessage(const QString &message)

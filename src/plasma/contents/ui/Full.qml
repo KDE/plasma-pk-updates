@@ -22,6 +22,7 @@
 import QtQuick 2.1
 import QtQuick.Layouts 1.1
 import QtQuick.Controls 1.3
+import QtQuick.Dialogs 1.2
 import org.kde.plasma.components 2.0 as PlasmaComponents
 import org.kde.plasma.extras 2.0 as PlasmaExtras
 import org.kde.plasma.core 2.0 as PlasmaCore
@@ -46,9 +47,67 @@ Item {
         onUpdatesChanged: populateModel()
         onUpdateDetail: updateDetails(packageID, updateText, urls)
         onUpdatesInstalled: plasmoid.expanded = false
+        onEulaRequired: eulaDialog.showPrompt(eulaID, packageID, vendor, licenseAgreement)
     }
 
     Component.onCompleted: populateModel()
+
+    Dialog {
+        property string eulaID: ""
+        property string packageName: ""
+        property string vendor: ""
+        property string licenseText: ""
+
+        property bool buttonClicked: false
+
+        id: eulaDialog
+        title: i18n("License Agreement for %1").arg(packageName)
+        standardButtons: StandardButton.Yes | StandardButton.No
+
+        ColumnLayout {
+            anchors.fill: parent
+
+            Label {
+                text: i18n("License agreement required for %1 (from %2):").arg(eulaDialog.packageName).arg(eulaDialog.vendor)
+            }
+
+            TextArea {
+                Layout.fillWidth: true
+                Layout.fillHeight: true
+                Layout.minimumWidth: 400
+                Layout.minimumHeight: 200
+                text: eulaDialog.licenseText
+                readOnly: true
+            }
+
+            Label {
+                text: i18n("Do you accept?")
+            }
+        }
+
+        onVisibleChanged: {
+            // onRejected does not fire on dialog closing, so implement that ourselves
+            if(!visible && !buttonClicked)
+                onNo();
+        }
+        onNo: {
+            buttonClicked = true;
+            PkUpdates.eulaAgreementResult(this.eulaID, false);
+        }
+        onYes: {
+            buttonClicked = true;
+            PkUpdates.eulaAgreementResult(this.eulaID, true);
+        }
+
+        function showPrompt(eulaID, packageID, vendor, licenseAgreement) {
+            this.eulaID = eulaID;
+            this.packageName = PkUpdates.packageName(packageID);
+            this.vendor = vendor;
+            this.licenseText = licenseAgreement;
+
+            this.visible = true;
+        }
+    }
 
     ListModel {
         id: updatesModel
