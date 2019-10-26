@@ -497,11 +497,11 @@ void PkUpdates::onRequireRestart(PackageKit::Transaction::Restart type, const QS
         notification->setComponentName(s_componentName);
         notification->setIconName(s_pkUpdatesIconName);
         if (type == PackageKit::Transaction::RestartSystem) {
-            notification->setActions(QStringList{QLatin1String("Restart")});
+            notification->setActions(QStringList{i18nc("@action:button", "Restart")});
             notification->setTitle(i18n("Restart is required"));
             notification->setText(i18n("The computer will have to be restarted after the update for the changes to take effect."));
         } else {
-            notification->setActions(QStringList{QLatin1String("Logout")});
+            notification->setActions(QStringList{i18nc("@action:button", "Logout")});
             notification->setTitle(i18n("Session restart is required"));
             notification->setText(i18n("You will need to log out and back in after the update for the changes to take effect."));
         }
