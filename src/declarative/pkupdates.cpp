@@ -197,7 +197,7 @@ void PkUpdates::doDelayedCheckUpdates()
     {
         qCDebug(PLASMA_PK_UPDATES) << "CheckUpdates was delayed. Doing it now";
         m_checkUpdatesWhenNetworkOnline = false;
-        checkUpdates();
+        checkUpdates(true /* force */, m_isManualCheck /* manual */);
     }
 }
 
@@ -230,8 +230,10 @@ QString PkUpdates::timestamp() const
     return i18n("Last check: never");
 }
 
-void PkUpdates::checkUpdates(bool force)
+void PkUpdates::checkUpdates(bool force, bool manual)
 {
+    m_isManualCheck = manual;
+
     if (!isNetworkOnline())
     {
         qCDebug(PLASMA_PK_UPDATES) << "Checking updates delayed. Network is offline";
@@ -247,7 +249,7 @@ void PkUpdates::checkUpdates(bool force)
     // evaluate the result
     connect(m_cacheTrans.data(), &PackageKit::Transaction::statusChanged, this, &PkUpdates::onStatusChanged);
     connect(m_cacheTrans.data(), &PackageKit::Transaction::finished, this, &PkUpdates::onFinished);
-    connect(m_cacheTrans.data(), &PackageKit::Transaction::errorCode, this, &PkUpdates::onErrorCode);
+    connect(m_cacheTrans.data(), &PackageKit::Transaction::errorCode, this, &PkUpdates::onRefreshErrorCode);
     connect(m_cacheTrans.data(), &PackageKit::Transaction::requireRestart, this, &PkUpdates::onRequireRestart);
     connect(m_cacheTrans.data(), &PackageKit::Transaction::repoSignatureRequired, this, &PkUpdates::onRepoSignatureRequired);
 }
@@ -397,6 +399,7 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
             // save the timestamp
             KConfigGroup grp(KSharedConfig::openConfig("plasma-pk-updates"), "General");
             grp.writeEntry("Timestamp", QDateTime::currentDateTime().toMSecsSinceEpoch());
+            grp.writeEntry("FailedAutoRefeshCount", 0);
             grp.sync();
 
             return;
@@ -462,7 +465,7 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
         } else {
             qCDebug(PLASMA_PK_UPDATES) << "Update packages transaction didn't finish successfully";
             // just try to refresh cache in case of error, the user might have installed the updates manually meanwhile
-            checkUpdates(false /* force */);
+            checkUpdates(false /* force */, false /* manual */);
             return;
         }
         setActivity(Idle);
@@ -478,6 +481,35 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
 }
 
 void PkUpdates::onErrorCode(PackageKit::Transaction::Error error, const QString &details)
+{
+    showError(error, details);
+}
+
+void PkUpdates::onRefreshErrorCode(PackageKit::Transaction::Error error, const QString &details)
+{
+    if(!m_isManualCheck) {
+        auto isTransientError = [] (PackageKit::Transaction::Error error) {
+            return (error == PackageKit::Transaction::ErrorFailedInitialization) ||
+                   (error == PackageKit::Transaction::ErrorNoNetwork) ||
+                   (error == PackageKit::Transaction::ErrorCannotGetLock);
+        };
+
+        KConfigGroup grp(KSharedConfig::openConfig("plasma-pk-updates"), "General");
+        auto failCount = grp.readEntry<qint64>("FailedAutoRefeshCount", 0);
+        failCount += 1;
+        grp.writeEntry("FailedAutoRefeshCount", failCount);
+        grp.sync();
+
+        if(failCount <= 1 && isTransientError(error)) {
+            qDebug(PLASMA_PK_UPDATES) << "Ignoring notification for likely transient error during automatic check";
+            return;
+        }
+    }
+
+    showError(error, details);
+}
+
+void PkUpdates::showError(PackageKit::Transaction::Error error, const QString &details)
 {
     qWarning() << "PK error:" << details << "type:" << PackageKit::Daemon::enumToString<PackageKit::Transaction>((int)error, "Error");
     if (error == PackageKit::Transaction::ErrorBadGpgSignature || error == PackageKit::Transaction::ErrorNoLicenseAgreement)
@@ -581,7 +613,7 @@ void PkUpdates::eulaAgreementResult(const QString &eulaID, bool agreed)
     if(!agreed) {
         qCDebug(PLASMA_PK_UPDATES) << "EULA declined";
         // Do the same as the failure case in onFinished
-        checkUpdates(false /* force */);
+        checkUpdates(false /* force */, m_isManualCheck /* manual */);
         return;
     }
 

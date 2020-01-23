@@ -181,8 +181,9 @@ public slots:
       * as a result. Consult the count() property whether there are new updates available.
       *
       * @param force whether to force the cache refresh
+      * @param manual whether this check was triggered via explicit user interaction
       */
-    Q_INVOKABLE void checkUpdates(bool force = true);
+    Q_INVOKABLE void checkUpdates(bool force = true, bool manual = false);
 
     /**
       * Launch the update process
@@ -230,6 +231,7 @@ private slots:
     void onPackageUpdating(PackageKit::Transaction::Info info, const QString &packageID, const QString &summary);
     void onFinished(PackageKit::Transaction::Exit status, uint runtime);
     void onErrorCode(PackageKit::Transaction::Error error, const QString &details);
+    void onRefreshErrorCode(PackageKit::Transaction::Error error, const QString &details);
     void onRequireRestart(PackageKit::Transaction::Restart type, const QString &packageID);
     void onUpdateDetail(const QString &packageID, const QStringList &updates, const QStringList &obsoletes, const QStringList &vendorUrls,
                         const QStringList &bugzillaUrls, const QStringList &cveUrls, PackageKit::Transaction::Restart restart,
@@ -249,6 +251,7 @@ private:
     void setStatusMessage(const QString &message);
     void setActivity(Activity act);
     void setPercentage(int value);
+    void showError(PackageKit::Transaction::Error error, const QString &details);
     void promptNextEulaAgreement();
     QPointer<PackageKit::Transaction> m_updatesTrans;
     QPointer<PackageKit::Transaction> m_cacheTrans;
@@ -267,6 +270,8 @@ private:
     bool m_lastCheckSuccessful = false;
     bool m_checkUpdatesWhenNetworkOnline = false;
     bool m_isOnBattery;
+    // If the current check was triggered manually
+    bool m_isManualCheck;
     // If a transaction failed because of required EULAs,
     // this contains a map of their IDs to their data
     QMap<QString, EulaData> m_requiredEulas;
