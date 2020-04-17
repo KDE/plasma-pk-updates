@@ -498,6 +498,7 @@ void PkUpdates::onRefreshErrorCode(PackageKit::Transaction::Error error, const Q
     if(!m_isManualCheck) {
         auto isTransientError = [] (PackageKit::Transaction::Error error) {
             return (error == PackageKit::Transaction::ErrorFailedInitialization) ||
+                   (error == PackageKit::Transaction::ErrorNotAuthorized) ||
                    (error == PackageKit::Transaction::ErrorNoNetwork) ||
                    (error == PackageKit::Transaction::ErrorCannotGetLock);
         };
