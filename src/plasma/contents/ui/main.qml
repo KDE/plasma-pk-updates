@@ -40,6 +40,9 @@ Item
     property bool checkOnMobile: plasmoid.configuration.check_on_mobile
     property bool checkOnBattery: plasmoid.configuration.check_on_battery
 
+    property double lastCheckAttempt: PkUpdates.lastRefreshTimestamp()
+    readonly property int secsAutoCheckLimit: 10 * 60
+
     readonly property int secsInDay: 60 * 60 * 24;
     readonly property int secsInWeek: secsInDay * 7;
     readonly property int secsInMonth: secsInDay * 30;
@@ -54,6 +57,7 @@ Item
         interval: 1000 * 60 * 60; // 1 hour
         onTriggered: {
             if (needsForcedUpdate() && networkAllowed && batteryAllowed) {
+                lastCheckAttempt = Date.now();
                 PkUpdates.checkUpdates(false /* manual */);
             }
         }
@@ -75,6 +79,10 @@ Item
     }
 
     function needsForcedUpdate() {
+        if ((Date.now() - lastCheckAttempt)/1000 < secsAutoCheckLimit) {
+            return false;
+        }
+
         var secs = (Date.now() - PkUpdates.lastRefreshTimestamp())/1000; // compare with the saved timestamp
         if (secs < 0) { // never checked before
             return true;
