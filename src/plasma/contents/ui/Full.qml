@@ -23,7 +23,7 @@ import QtQuick 2.1
 import QtQuick.Layouts 1.1
 import QtQuick.Controls 1.3
 import QtQuick.Dialogs 1.2
-import org.kde.plasma.components 2.0 as PlasmaComponents
+import org.kde.plasma.components 3.0 as PlasmaComponents3
 import org.kde.plasma.extras 2.0 as PlasmaExtras
 import org.kde.plasma.core 2.0 as PlasmaCore
 import org.kde.plasma.PackageKit 1.0
@@ -130,7 +130,7 @@ Item {
         }
         spacing: units.largeSpacing
 
-        PlasmaComponents.Label {
+        PlasmaComponents3.Label {
             id: timestampLabel
             visible: !PkUpdates.isActive
             wrapMode: Text.WordWrap
@@ -140,7 +140,7 @@ Item {
             text: PkUpdates.timestamp
         }
 
-        PlasmaComponents.Label {
+        PlasmaComponents3.Label {
             visible: PkUpdates.isActive || !PkUpdates.count
             font.pointSize: theme.smallestFont.pointSize;
             opacity: 0.6;
@@ -207,7 +207,7 @@ Item {
                             PkUpdates.getUpdateDetails(id)
                         }
                     }
-                    onCheckedStateChanged: {
+                    onCheckStateChanged: {
                         if (checked) {
                             fullRepresentation.anySelected = true
                         } else {
@@ -220,19 +220,18 @@ Item {
 
         RowLayout {
             visible: PkUpdates.count && PkUpdates.isNetworkOnline && !PkUpdates.isActive
-            PlasmaComponents.CheckBox {
+            PlasmaComponents3.CheckBox {
                 id: chkSelectAll
                 anchors {
                     left: parent.left
                     leftMargin: Math.round(units.gridUnit / 3)
                 }
-                checkedState: fullRepresentation.anySelected ? (fullRepresentation.allSelected ? Qt.Checked : Qt.PartiallyChecked) : Qt.Unchecked
-                partiallyCheckedEnabled: true
+                checkState: fullRepresentation.anySelected ? (fullRepresentation.allSelected ? Qt.Checked : Qt.PartiallyChecked) : Qt.Unchecked
+                tristate: true
             }
 
-            PlasmaComponents.Label {
+            PlasmaComponents3.Label {
                 id: lblSelectAll
-                height: paintedHeight
                 anchors {
                     left: chkSelectAll.right
                     leftMargin: Math.round(units.gridUnit / 2)
@@ -246,10 +245,10 @@ Item {
                 enabled: true
 
                 onClicked: {
-                    if (chkSelectAll.checkedState == Qt.Unchecked) {
+                    if (chkSelectAll.checkState == Qt.Unchecked) {
                         populatePreSelected = true
                         populateModel()
-                    } else if (chkSelectAll.checkedState == Qt.PartiallyChecked) {
+                    } else if (chkSelectAll.checkState == Qt.PartiallyChecked) {
                         populatePreSelected = true
                         populateModel()
                     } else {
@@ -261,7 +260,7 @@ Item {
             }
         }
 
-        PlasmaComponents.Button {
+        PlasmaComponents3.Button {
             id: btnCheck
             visible: !PkUpdates.count && PkUpdates.isNetworkOnline && !PkUpdates.isActive
             enabled: !PkUpdates.isActive
@@ -271,11 +270,14 @@ Item {
                 horizontalCenter: parent.horizontalCenter
             }
             text: i18n("Check For Updates")
-            tooltip: i18n("Checks for any available updates")
             onClicked: PkUpdates.checkUpdates(true /* manual */) // circumvent the checks, the user knows what they're doing ;)
+
+            PlasmaComponents3.ToolTip {
+                text: i18n("Checks for any available updates")
+            }
         }
 
-        PlasmaComponents.Button {
+        PlasmaComponents3.Button {
             id: btnUpdate
             visible: PkUpdates.count && PkUpdates.isNetworkOnline && !PkUpdates.isActive
             enabled: fullRepresentation.anySelected
@@ -285,11 +287,14 @@ Item {
                 horizontalCenter: parent.horizontalCenter
             }
             text: i18n("Install Updates")
-            tooltip: i18n("Performs the software update")
             onClicked: PkUpdates.installUpdates(selectedPackages())
+
+            PlasmaComponents3.ToolTip {
+                text: i18n("Performs the software update")
+            }
         }
 
-        PlasmaComponents.BusyIndicator {
+        PlasmaComponents3.BusyIndicator {
             running: PkUpdates.isActive
             visible: running
             anchors.centerIn: parent

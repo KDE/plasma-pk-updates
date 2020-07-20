@@ -22,7 +22,8 @@
 import QtQuick 2.1
 import QtQuick.Layouts 1.1
 import QtQuick.Controls 1.3
-import org.kde.plasma.components 2.0 as PlasmaComponents
+import org.kde.plasma.components 2.0 as PlasmaComponents // for ListItem
+import org.kde.plasma.components 2.0 as PlasmaComponents3
 import org.kde.plasma.extras 2.0 as PlasmaExtras
 import org.kde.plasma.core 2.0 as PlasmaCore
 
@@ -33,14 +34,14 @@ PlasmaComponents.ListItem {
     property variant updateUrls: []
     readonly property bool expanded: ListView.isCurrentItem
 
-    signal checkedStateChanged(bool checked)
+    signal checkStateChanged(bool checked)
 
     height: packageInfoColumn.height + detailsInfoColumn.height + Math.round(units.gridUnit / 2)
     width: parent.width
     enabled: true
     checked: containsMouse || expanded
 
-    PlasmaComponents.CheckBox {
+    PlasmaComponents3.CheckBox {
         id: checkbox
         anchors {
             left: parent.left
@@ -49,7 +50,7 @@ PlasmaComponents.ListItem {
         checked: selected
         onClicked: {
             updatesModel.setProperty(index, "selected", checked)
-            packageDelegate.checkedStateChanged(checked)
+            packageDelegate.checkStateChanged(checked)
         }
     }
 
@@ -65,9 +66,8 @@ PlasmaComponents.ListItem {
             rightMargin: Math.round(units.gridUnit / 2)
         }
 
-        PlasmaComponents.Label {
+        PlasmaComponents3.Label {
             id: packageNameLabel
-            height: paintedHeight
             anchors {
                 left: parent.left
                 right: parent.right
@@ -76,9 +76,8 @@ PlasmaComponents.ListItem {
             text: i18nc("Package Name (Version)", "%1 (%2)", name, version)
         }
 
-        PlasmaComponents.Label {
+        PlasmaComponents3.Label {
             id: packageDescriptionLabel
-            height: paintedHeight
             anchors {
                 left: parent.left
                 right: parent.right
@@ -121,9 +120,8 @@ PlasmaComponents.ListItem {
             }
         }
 
-        PlasmaComponents.Label {
+        PlasmaComponents3.Label {
             id: descriptionLabel
-            height: paintedHeight
             anchors {
                 left: parent.left
                 right: parent.right
@@ -132,9 +130,8 @@ PlasmaComponents.ListItem {
             text: i18nc("description of the update", "Update Description")
         }
 
-        PlasmaComponents.Label {
+        PlasmaComponents3.Label {
             id: descriptionContentLabel
-            height: paintedHeight
             anchors {
                 left: parent.left
                 right: parent.right
@@ -145,9 +142,8 @@ PlasmaComponents.ListItem {
             wrapMode: Text.WordWrap
         }
 
-        PlasmaComponents.Label {
+        PlasmaComponents3.Label {
             id: urlsLabel
-            height: visible ? paintedHeight : 0
             visible: !!updateUrls
             anchors {
                 left: parent.left
@@ -159,8 +155,7 @@ PlasmaComponents.ListItem {
 
         Repeater {
             model: updateUrls
-            PlasmaComponents.Label {
-                height: paintedHeight
+            PlasmaComponents3.Label {
                 color: theme.linkColor
                 font.pointSize: theme.smallestFont.pointSize
                 font.underline: true
