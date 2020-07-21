@@ -21,7 +21,7 @@
 
 import QtQuick 2.1
 import QtQuick.Layouts 1.1
-import QtQuick.Controls 1.3
+import QtQuick.Controls 2.5 as QQC2
 import QtQuick.Dialogs 1.2
 import org.kde.plasma.components 3.0 as PlasmaComponents3
 import org.kde.plasma.extras 2.0 as PlasmaExtras
@@ -34,6 +34,9 @@ Item {
     property bool anySelected: checkAnySelected()
     property bool allSelected: checkAllSelected()
     property bool populatePreSelected: true
+
+    width: units.gridUnit * 20
+    height: units.gridUnit * 20
 
     Binding {
         target: timestampLabel
@@ -67,11 +70,11 @@ Item {
         ColumnLayout {
             anchors.fill: parent
 
-            Label {
+            QQC2.Label {
                 text: i18n("License agreement required for %1 (from %2):").arg(eulaDialog.packageName).arg(eulaDialog.vendor)
             }
 
-            TextArea {
+            QQC2.TextArea {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 Layout.minimumWidth: 400
@@ -80,7 +83,7 @@ Item {
                 readOnly: true
             }
 
-            Label {
+            QQC2.Label {
                 text: i18n("Do you accept?")
             }
         }
@@ -113,42 +116,30 @@ Item {
         id: updatesModel
     }
 
-    PlasmaExtras.Heading {
-        id: header
-        level: 4
-        wrapMode: Text.WordWrap
-        text: !PkUpdates.isNetworkOnline ? i18n("Network is offline") : PkUpdates.message
-    }
 
     ColumnLayout {
         id: statusbar
-        anchors {
-            left: parent.left
-            right: parent.right
-            top: header.bottom
-            rightMargin: Math.round(units.gridUnit / 2)
-        }
-        spacing: units.largeSpacing
 
-        PlasmaComponents3.Label {
-            id: timestampLabel
-            visible: !PkUpdates.isActive
+        anchors.fill: parent
+
+        spacing: units.smallSpacing
+
+        PlasmaExtras.Heading {
+            Layout.fillWidth: true
+            level: 4
             wrapMode: Text.WordWrap
-            font.italic: true
-            font.pointSize: theme.smallestFont.pointSize;
-            opacity: 0.6;
-            text: PkUpdates.timestamp
+            text: !PkUpdates.isNetworkOnline ? i18n("Network is offline") : PkUpdates.message
         }
 
         PlasmaComponents3.Label {
-            visible: PkUpdates.isActive || !PkUpdates.count
+            visible: PkUpdates.isActive || PkUpdates.count === 0
             font.pointSize: theme.smallestFont.pointSize;
             opacity: 0.6;
             text: {
                 if (PkUpdates.isActive)
                     return PkUpdates.statusMessage
                 else if (PkUpdates.isNetworkOnline)
-                    return i18n("Updates are automatically checked %1.<br>Click the 'Check For Updates' button below to search for updates manually.",
+                    return i18n("Updates are automatically checked %1.",
                                 updateInterval(plasmoid.configuration.daily,
                                                plasmoid.configuration.weekly,
                                                plasmoid.configuration.monthly));
@@ -157,39 +148,38 @@ Item {
             Layout.fillWidth: true
             wrapMode: Text.WordWrap
         }
-    }
 
-    ProgressBar {
-        id: progressBar
-        anchors {
-            left: parent.left
-            right: parent.right
-            top: statusbar.bottom
+        PlasmaComponents3.Label {
+            id: timestampLabel
+            Layout.fillWidth: true
+            visible: !PkUpdates.isActive
+            wrapMode: Text.WordWrap
+            font.italic: true
+            font.pointSize: theme.smallestFont.pointSize;
+            opacity: 0.6;
+            text: PkUpdates.timestamp
         }
-        visible: PkUpdates.isActive
-        minimumValue: 0
-        maximumValue: 101 // BUG workaround a bug in ProgressBar! if the value is > max, it's set to max and never changes below
-        value: PkUpdates.percentage
-        indeterminate: PkUpdates.percentage > 100
-    }
 
-    ColumnLayout {
-        spacing: units.smallSpacing
-        anchors {
-            bottom: parent.bottom
-            left: parent.left
-            right: parent.right
-            top: statusbar.bottom
+        PlasmaComponents3.ProgressBar {
+            Layout.fillWidth: true
+            visible: PkUpdates.isActive
+            from: 0
+            to: 101 // BUG workaround a bug in ProgressBar! if the value is > max, it's set to max and never changes below
+            value: PkUpdates.percentage
+            indeterminate: PkUpdates.percentage > 100
         }
 
         PlasmaExtras.ScrollArea {
-            id: updatesScrollArea
+            id: listViewScrollArea
+
             Layout.fillWidth: true
             Layout.fillHeight: true
+
             visible: PkUpdates.count && PkUpdates.isNetworkOnline && !PkUpdates.isActive
 
             ListView {
                 id: updatesView
+
                 clip: true
                 model: PlasmaCore.SortFilterModel {
                     sourceModel: updatesModel
@@ -218,86 +208,74 @@ Item {
             }
         }
 
-        RowLayout {
-            visible: PkUpdates.count && PkUpdates.isNetworkOnline && !PkUpdates.isActive
-            PlasmaComponents3.CheckBox {
-                id: chkSelectAll
-                anchors {
-                    left: parent.left
-                    leftMargin: Math.round(units.gridUnit / 3)
-                }
-                checkState: fullRepresentation.anySelected ? (fullRepresentation.allSelected ? Qt.Checked : Qt.PartiallyChecked) : Qt.Unchecked
-                tristate: true
+        // Container for other items that can be shown when the main scroll
+        // view is not visible
+        Item {
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+
+            visible: !listViewScrollArea.visible
+
+            PlasmaComponents3.BusyIndicator {
+                running: PkUpdates.isActive && PkUpdates.count == 0
+                visible: running
+                anchors.centerIn: parent
             }
 
-            PlasmaComponents3.Label {
-                id: lblSelectAll
-                anchors {
-                    left: chkSelectAll.right
-                    leftMargin: Math.round(units.gridUnit / 2)
-                }
-                elide: Text.ElideRight;
-                text: i18n("Select all packages")
-            }
+            PlasmaExtras.PlaceholderMessage {
+                anchors.centerIn: parent
+                width: parent.width - (units.largeSpacing * 4)
 
-            MouseArea {
-                anchors.fill: parent
-                enabled: true
+                visible: PkUpdates.count === 0 && PkUpdates.isNetworkOnline && !PkUpdates.isActive
 
-                onClicked: {
-                    if (chkSelectAll.checkState == Qt.Unchecked) {
-                        populatePreSelected = true
-                        populateModel()
-                    } else if (chkSelectAll.checkState == Qt.PartiallyChecked) {
-                        populatePreSelected = true
-                        populateModel()
-                    } else {
-                        populatePreSelected = false
-                        populateModel()
+                text: i18n("No updates available")
+
+                helpfulAction: QQC2.Action {
+                    icon.name: "view-refresh"
+                    text: "Check for Updates"
+                    onTriggered: {
+                        PkUpdates.checkUpdates(true /* manual */) // circumvent the checks, the user knows what they're doing ;)
                     }
-                    fullRepresentation.anySelected = checkAnySelected()
+                }
+            }
+        }
+
+        PlasmaComponents3.CheckBox {
+            Layout.fillWidth: true
+            Layout.leftMargin: units.smallSpacing
+
+            visible: PkUpdates.count !== 0 && PkUpdates.isNetworkOnline && !PkUpdates.isActive
+
+            tristate: true
+
+            checkState: updatesModel.count === 0         ? Qt.Unchecked
+                        : fullRepresentation.allSelected ? Qt.Checked
+                                                         : Qt.PartiallyChecked
+
+            text: i18n("Select all packages")
+
+            onClicked: {
+                if (fullRepresentation.allSelected) {
+                    populatePreSelected = false;
+                    populateModel();
+                } else {
+                    populatePreSelected = true;
+                    populateModel();
                 }
             }
         }
 
         PlasmaComponents3.Button {
-            id: btnCheck
-            visible: !PkUpdates.count && PkUpdates.isNetworkOnline && !PkUpdates.isActive
-            enabled: !PkUpdates.isActive
-            anchors {
-                bottom: parent.bottom
-                bottomMargin: Math.round(units.gridUnit / 3)
-                horizontalCenter: parent.horizontalCenter
-            }
-            text: i18n("Check For Updates")
-            onClicked: PkUpdates.checkUpdates(true /* manual */) // circumvent the checks, the user knows what they're doing ;)
-
-            PlasmaComponents3.ToolTip {
-                text: i18n("Checks for any available updates")
-            }
-        }
-
-        PlasmaComponents3.Button {
-            id: btnUpdate
-            visible: PkUpdates.count && PkUpdates.isNetworkOnline && !PkUpdates.isActive
+            visible: PkUpdates.count !== 0 && PkUpdates.isNetworkOnline && !PkUpdates.isActive
+            icon.name: "install"
             enabled: fullRepresentation.anySelected
-            anchors {
-                bottom: parent.bottom
-                bottomMargin: Math.round(units.gridUnit / 3)
-                horizontalCenter: parent.horizontalCenter
-            }
+            Layout.alignment: Qt.AlignHCenter
             text: i18n("Install Updates")
             onClicked: PkUpdates.installUpdates(selectedPackages())
 
             PlasmaComponents3.ToolTip {
                 text: i18n("Performs the software update")
             }
-        }
-
-        PlasmaComponents3.BusyIndicator {
-            running: PkUpdates.isActive
-            visible: running
-            anchors.centerIn: parent
         }
     }
 

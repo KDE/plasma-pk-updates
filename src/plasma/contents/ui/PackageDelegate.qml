@@ -19,12 +19,10 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  ***************************************************************************/
 
-import QtQuick 2.1
-import QtQuick.Layouts 1.1
-import QtQuick.Controls 1.3
+import QtQuick 2.5
+import QtQuick.Layouts 1.13
 import org.kde.plasma.components 2.0 as PlasmaComponents // for ListItem
 import org.kde.plasma.components 2.0 as PlasmaComponents3
-import org.kde.plasma.extras 2.0 as PlasmaExtras
 import org.kde.plasma.core 2.0 as PlasmaCore
 
 PlasmaComponents.ListItem {
@@ -36,140 +34,103 @@ PlasmaComponents.ListItem {
 
     signal checkStateChanged(bool checked)
 
-    height: packageInfoColumn.height + detailsInfoColumn.height + Math.round(units.gridUnit / 2)
+    height: innerLayout.height + (units.smallSpacing * 2)
     width: parent.width
     enabled: true
     checked: containsMouse || expanded
 
-    PlasmaComponents3.CheckBox {
-        id: checkbox
-        anchors {
-            left: parent.left
-            verticalCenter: packageInfoColumn.verticalCenter
-        }
-        checked: selected
-        onClicked: {
-            updatesModel.setProperty(index, "selected", checked)
-            packageDelegate.checkStateChanged(checked)
-        }
-    }
+    RowLayout {
+        id: innerLayout
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.top: parent.top
 
-    Column {
-        id: packageInfoColumn
-
-        height: packageNameLabel.height + packageDescriptionLabel.height
-        anchors {
-            left: checkbox.right
-            right: parent.right
-            top: parent.top
-            leftMargin: Math.round(units.gridUnit / 2)
-            rightMargin: Math.round(units.gridUnit / 2)
-        }
-
-        PlasmaComponents3.Label {
-            id: packageNameLabel
-            anchors {
-                left: parent.left
-                right: parent.right
-            }
-            elide: Text.ElideRight;
-            text: i18nc("Package Name (Version)", "%1 (%2)", name, version)
-        }
-
-        PlasmaComponents3.Label {
-            id: packageDescriptionLabel
-            anchors {
-                left: parent.left
-                right: parent.right
-            }
-            elide: Text.ElideRight;
-            font.pointSize: theme.smallestFont.pointSize;
-            opacity: 0.6;
-            text: desc
-        }
-    }
-
-    Column {
-        id: detailsInfoColumn
-        height: packageDelegate.expanded ? childrenRect.height + Math.round(units.gridUnit / 2) : 0
-        visible: expanded
-        spacing: 2
-
-        anchors {
-            left: checkbox.right
-            right: parent.right
-            top: packageInfoColumn.bottom
-            leftMargin: Math.round(units.gridUnit / 2)
-            rightMargin: Math.round(units.gridUnit / 2)
-            topMargin: Math.round(units.gridUnit / 3)
-        }
-
-        PlasmaCore.SvgItem {
-            id: detailsSeparator;
-            height: lineSvg.elementSize("horizontal-line").height;
-            width: parent.width;
-            anchors {
-                left: parent.left;
-                right: parent.right;
-            }
-            elementId: "horizontal-line";
-
-            svg: PlasmaCore.Svg {
-                id: lineSvg;
-                imagePath: "widgets/line";
+        PlasmaComponents3.CheckBox {
+            Layout.alignment: Qt.AlignVCenter
+            checked: selected
+            onClicked: {
+                updatesModel.setProperty(index, "selected", checked)
+                packageDelegate.checkStateChanged(checked)
             }
         }
 
-        PlasmaComponents3.Label {
-            id: descriptionLabel
-            anchors {
-                left: parent.left
-                right: parent.right
-            }
-            font.weight: Font.DemiBold
-            text: i18nc("description of the update", "Update Description")
-        }
+        ColumnLayout {
+            spacing: 0
+            Layout.alignment: Qt.AlignVCenter
 
-        PlasmaComponents3.Label {
-            id: descriptionContentLabel
-            anchors {
-                left: parent.left
-                right: parent.right
-            }
-            font.pointSize: theme.smallestFont.pointSize;
-            opacity: 0.6;
-            text: updateText == "" ? i18n("No description available") : updateText
-            wrapMode: Text.WordWrap
-        }
-
-        PlasmaComponents3.Label {
-            id: urlsLabel
-            visible: !!updateUrls
-            anchors {
-                left: parent.left
-                right: parent.right
-            }
-            font.weight: Font.DemiBold
-            text: i18n("Related URLs")
-        }
-
-        Repeater {
-            model: updateUrls
             PlasmaComponents3.Label {
-                color: theme.linkColor
+                Layout.fillWidth: true
+                elide: Text.ElideRight
+                text: i18nc("Package Name (Version)", "%1 (%2)", name, version)
+            }
+
+            PlasmaComponents3.Label {
+                Layout.fillWidth: true
+                elide: Text.ElideRight
                 font.pointSize: theme.smallestFont.pointSize
-                font.underline: true
-                opacity: 0.6;
-                text: modelData
-                wrapMode: Text.WordWrap
+                opacity: 0.6
+                text: desc
+            }
 
-                MouseArea {
-                    anchors.fill: parent
-                    hoverEnabled: true
-                    cursorShape: Qt.PointingHandCursor
+            ColumnLayout {
+                visible: packageDelegate.expanded
+                spacing: 0
 
-                    onClicked: {
-                        Qt.openUrlExternally(modelData)
+                PlasmaCore.SvgItem {
+                    Layout.preferredHeight: lineSvg.elementSize("horizontal-line").height
+                    Layout.fillWidth: true
+                    Layout.topMargin: units.smallSpacing
+                    Layout.bottomMargin: units.smallSpacing
+
+                    elementId: "horizontal-line";
+
+                    svg: PlasmaCore.Svg {
+                        id: lineSvg;
+                        imagePath: "widgets/line";
+                    }
+                }
+
+                PlasmaComponents3.Label {
+                    Layout.fillWidth: true
+                    font.weight: Font.DemiBold
+                    text: i18nc("description of the update", "Update Description")
+                }
+
+                PlasmaComponents3.Label {
+                    Layout.fillWidth: true
+                    font.pointSize: theme.smallestFont.pointSize
+                    opacity: 0.6
+                    text: updateText == "" ? i18n("No description available") : updateText
+                    wrapMode: Text.WordWrap
+                }
+
+                PlasmaComponents3.Label {
+                    visible: updateUrls.count > 0
+                    Layout.fillWidth: true
+                    font.weight: Font.DemiBold
+                    text: i18n("Related URLs")
+                }
+
+                Repeater {
+                    model: updateUrls
+                    PlasmaComponents3.Label {
+                        Layout.fillWidth: true
+                        color: theme.linkColor
+                        font.pointSize: theme.smallestFont.pointSize
+                        font.underline: true
+                        opacity: 0.6
+                        text: modelData
+                        wrapMode: Text.WordWrap
+
+                        MouseArea {
+                            anchors.fill: parent
+                            hoverEnabled: true
+                            cursorShape: Qt.PointingHandCursor
+
+                            onClicked: {
+                                Qt.openUrlExternally(modelData)
+                            }
+                        }
                     }
                 }
             }
