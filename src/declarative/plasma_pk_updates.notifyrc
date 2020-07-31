@@ -99,8 +99,8 @@ Action=Popup
 
 [Event/updatesInstalled]
 Name=Updates Installed
-Name[ca]=S'han instal·lat les actualitzacions
-Name[ca@valencia]=S'han instal·lat les actualitzacions
+Name[ca]=Actualitzacions instal·lades
+Name[ca@valencia]=Actualitzacions instal·lades
 Name[cs]=Aktualizace byly nainstalovány
 Name[da]=Opdateringer installeret
 Name[de]=Aktualisierungen installiert
@@ -130,8 +130,8 @@ Name[x-test]=xxUpdates Installedxx
 Name[zh_CN]=更新已安装
 Name[zh_TW]=已安裝更新
 Comment=The updates have been installed successfully
-Comment[ca]=Les actualitzacions s'han instal·lat correctament
-Comment[ca@valencia]=Les actualitzacions s'han instal·lat correctament
+Comment[ca]=Les actualitzacions que s'han instal·lat correctament
+Comment[ca@valencia]=Les actualitzacions que s'han instal·lat correctament
 Comment[cs]=Aktualizace byly úspěšně nainstalovány
 Comment[da]=Opdateringerne er blevet installeret
 Comment[de]=Die Aktualisierungen wurden erfolgreich installiert
