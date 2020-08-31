@@ -248,9 +248,9 @@ Item {
 
             tristate: true
 
-            checkState: updatesModel.count === 0         ? Qt.Unchecked
-                        : fullRepresentation.allSelected ? Qt.Checked
-                                                         : Qt.PartiallyChecked
+            checkState: fullRepresentation.allSelected ? Qt.Checked :
+                        (fullRepresentation.anySelected ? Qt.PartiallyChecked
+                                                        : Qt.Unchecked)
 
             text: i18n("Select all packages")
 
