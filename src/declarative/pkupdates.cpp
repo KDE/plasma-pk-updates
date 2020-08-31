@@ -158,11 +158,17 @@ QString PkUpdates::message() const
             return msg + "\n" + i18n("(including %1)", extra.join(i18n(" and ")));
     } else if (!isNetworkOnline()) {
         return i18n("Your system is offline");
-    } else if (!m_lastCheckSuccessful) {
-        return i18n("Checking for updates failed");
     }
 
-    return i18n("Your system is up to date");
+    switch (m_lastCheckState) {
+    case NoCheckDone:
+        return i18n("Not checked for updates yet");
+    default:
+    case CheckFailed:
+        return i18n("Checking for updates failed");
+    case CheckSucceeded:
+        return i18n("Your system is up to date");
+    }
 }
 
 int PkUpdates::percentage() const
@@ -391,9 +397,9 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
                 "in" << runtime/1000 << "seconds";
 
     if (trans->role() == PackageKit::Transaction::RoleRefreshCache) {
-        m_lastCheckSuccessful = status == PackageKit::Transaction::ExitSuccess; 
+        m_lastCheckState = status == PackageKit::Transaction::ExitSuccess ? CheckSucceeded : CheckFailed;
 
-        if (m_lastCheckSuccessful) {
+        if (m_lastCheckState == CheckSucceeded) {
             qCDebug(PLASMA_PK_UPDATES) << "Cache transaction finished successfully";
 
             // save the timestamp
@@ -408,9 +414,9 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
             emit done();
         }
     } else if (trans->role() == PackageKit::Transaction::RoleGetUpdates) {
-        m_lastCheckSuccessful = status == PackageKit::Transaction::ExitSuccess;
+        m_lastCheckState = status == PackageKit::Transaction::ExitSuccess ? CheckSucceeded : CheckFailed;
 
-        if (m_lastCheckSuccessful) {
+        if (m_lastCheckState == CheckSucceeded) {
             qCDebug(PLASMA_PK_UPDATES) << "Check updates transaction finished successfully";
             const int upCount = count();
             if (upCount != m_lastUpdateCount && m_lastNotification) {

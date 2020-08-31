@@ -267,7 +267,11 @@ private:
     QString m_statusMessage;
     int m_percentage = 0;
     Activity m_activity = Idle;
-    bool m_lastCheckSuccessful = false;
+    enum {
+        NoCheckDone,
+        CheckFailed,
+        CheckSucceeded
+    } m_lastCheckState = NoCheckDone;
     bool m_checkUpdatesWhenNetworkOnline = false;
     bool m_isOnBattery;
     // If the current check was triggered manually
