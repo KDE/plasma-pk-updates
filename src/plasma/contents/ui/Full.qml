@@ -31,8 +31,8 @@ import org.kde.plasma.PackageKit 1.0
 Item {
     id: fullRepresentation
 
-    property bool anySelected: checkAnySelected()
-    property bool allSelected: checkAllSelected()
+    property bool anySelected: false
+    property bool allSelected: false
     property bool populatePreSelected: true
 
     width: units.gridUnit * 20
@@ -197,13 +197,7 @@ Item {
                             PkUpdates.getUpdateDetails(id)
                         }
                     }
-                    onCheckStateChanged: {
-                        if (checked) {
-                            fullRepresentation.anySelected = true
-                        } else {
-                            fullRepresentation.anySelected = checkAnySelected()
-                        }
-                    }
+                    onCheckStateChanged: updateSelectionState();
                 }
             }
         }
@@ -255,13 +249,8 @@ Item {
             text: i18n("Select all packages")
 
             onClicked: {
-                if (fullRepresentation.allSelected) {
-                    populatePreSelected = false;
-                    populateModel();
-                } else {
-                    populatePreSelected = true;
-                    populateModel();
-                }
+                populatePreSelected = !fullRepresentation.anySelected;
+                populateModel();
             }
         }
 
@@ -279,22 +268,22 @@ Item {
         }
     }
 
-    function checkAnySelected() {
+    function updateSelectionState() {
+        console.log("Updating state of selection");
+        var anySelected = false;
+        var allSelected = true;
         for (var i = 0; i < updatesModel.count; i++) {
             var pkg = updatesModel.get(i)
             if (pkg.selected)
-                return true
-        }
-        return false
-    }
+                anySelected = true;
+            else
+                allSelected = false;
 
-    function checkAllSelected() {
-        for (var i = 0; i < updatesModel.count; i++) {
-            var pkg = updatesModel.get(i)
-            if (!pkg.selected)
-                return false
+            if (anySelected && !allSelected)
+                break; // Can't change anymore
         }
-        return true
+        fullRepresentation.anySelected = anySelected;
+        fullRepresentation.allSelected = allSelected;
     }
 
     function selectedPackages() {
@@ -319,6 +308,7 @@ Item {
                 updatesModel.append({"selected": populatePreSelected, "id": id, "name": PkUpdates.packageName(id), "desc": desc, "version": PkUpdates.packageVersion(id)})
             }
         }
+        updateSelectionState();
     }
 
     function updateDetails(packageID, updateText, urls) {
