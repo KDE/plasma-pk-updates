@@ -222,7 +222,7 @@ Item {
 
                 visible: PkUpdates.count === 0 && PkUpdates.isNetworkOnline && !PkUpdates.isActive
 
-                text: i18n("No updates available")
+                text: PkUpdates.lastCheckSuccessful ? i18n("No updates available") : ""
 
                 helpfulAction: QQC2.Action {
                     icon.name: "view-refresh"

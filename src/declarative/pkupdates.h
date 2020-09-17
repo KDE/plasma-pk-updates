@@ -56,6 +56,7 @@ class PkUpdates : public QObject
     Q_PROPERTY(bool isNetworkOnline READ isNetworkOnline NOTIFY networkStateChanged)
     Q_PROPERTY(bool isNetworkMobile READ isNetworkMobile NOTIFY networkStateChanged)
     Q_PROPERTY(bool isOnBattery READ isOnBattery NOTIFY isOnBatteryChanged)
+    Q_PROPERTY(bool lastCheckSuccessful READ lastCheckSuccessful NOTIFY lastCheckSuccessfulChanged)
 
 public:
     enum Activity {Idle, CheckingUpdates, GettingUpdates, InstallingUpdates};
@@ -134,6 +135,11 @@ public:
      */
     bool isOnBattery() const;
 
+        /**
+     * @return whether the last check for updates succeeded
+     */
+    bool lastCheckSuccessful() const;
+
 signals:
     /**
      * Emitted when the number uf updates has changed
@@ -173,6 +179,7 @@ signals:
     void percentageChanged();
     void networkStateChanged();
     void isOnBatteryChanged();
+    void lastCheckSuccessfulChanged();
     void messageChanged();
 
 public slots:
