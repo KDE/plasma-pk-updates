@@ -42,7 +42,7 @@ PlasmaExtras.ListItem {
         id: innerLayout
         anchors.left: parent.left
         anchors.right: parent.right
-        anchors.top: parent.top
+        anchors.verticalCenter: parent.verticalCenter
 
         PlasmaComponents3.CheckBox {
             Layout.alignment: Qt.AlignVCenter
@@ -54,8 +54,7 @@ PlasmaExtras.ListItem {
         }
 
         ColumnLayout {
-            spacing: 0
-            Layout.alignment: Qt.AlignVCenter
+            spacing: units.smallSpacing / 2
 
             PlasmaComponents3.Label {
                 Layout.fillWidth: true
@@ -73,13 +72,11 @@ PlasmaExtras.ListItem {
 
             ColumnLayout {
                 visible: packageDelegate.expanded
-                spacing: 0
+                spacing: units.smallSpacing / 2
 
                 PlasmaCore.SvgItem {
                     Layout.preferredHeight: lineSvg.elementSize("horizontal-line").height
                     Layout.fillWidth: true
-                    Layout.topMargin: units.smallSpacing
-                    Layout.bottomMargin: units.smallSpacing
 
                     elementId: "horizontal-line";
 
