@@ -187,15 +187,18 @@ Item {
                 }
                 anchors.fill: parent
                 currentIndex: -1
+                property int lastIndex: -1
                 boundsBehavior: Flickable.StopAtBounds
                 delegate: PackageDelegate {
                     onClicked: {
-                        if (updatesView.currentIndex === index) {
+                        if (updatesView.lastIndex == updatesView.currentIndex) {
+                            // Unselect as current
                             updatesView.currentIndex = -1
                         } else {
-                            updatesView.currentIndex = index
+                            // Expand, load details
                             PkUpdates.getUpdateDetails(id)
                         }
+                        updatesView.lastIndex = updatesView.currentIndex
                     }
                     onCheckStateChanged: updateSelectionState();
                 }
