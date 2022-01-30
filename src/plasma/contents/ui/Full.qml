@@ -272,7 +272,7 @@ Item {
             }
             text: i18n("Check For Updates")
             tooltip: i18n("Checks for any available updates")
-            onClicked: PkUpdates.checkUpdates(true /* force */, true /* manual */) // circumvent the checks, the user knows what they're doing ;)
+            onClicked: PkUpdates.checkUpdates(true /* manual */) // circumvent the checks, the user knows what they're doing ;)
         }
 
         PlasmaComponents.Button {

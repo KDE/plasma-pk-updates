@@ -180,10 +180,9 @@ public slots:
       * Perform a cache update, possibly resulting in an update check. Signal updatesChanged() gets emitted
       * as a result. Consult the count() property whether there are new updates available.
       *
-      * @param force whether to force the cache refresh
       * @param manual whether this check was triggered via explicit user interaction
       */
-    Q_INVOKABLE void checkUpdates(bool force = true, bool manual = false);
+    Q_INVOKABLE void checkUpdates(bool manual = false);
 
     /**
       * Launch the update process

@@ -54,7 +54,7 @@ Item
         interval: 1000 * 60 * 60; // 1 hour
         onTriggered: {
             if (needsForcedUpdate() && networkAllowed && batteryAllowed) {
-                PkUpdates.checkUpdates(true /* force */, false /* manual */);
+                PkUpdates.checkUpdates(false /* manual */);
             }
         }
     }

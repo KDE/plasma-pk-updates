@@ -203,7 +203,7 @@ void PkUpdates::doDelayedCheckUpdates()
     {
         qCDebug(PLASMA_PK_UPDATES) << "CheckUpdates was delayed. Doing it now";
         m_checkUpdatesWhenNetworkOnline = false;
-        checkUpdates(true /* force */, m_isManualCheck /* manual */);
+        checkUpdates(m_isManualCheck /* manual */);
     }
 }
 
@@ -236,7 +236,7 @@ QString PkUpdates::timestamp() const
     return i18n("Last check: never");
 }
 
-void PkUpdates::checkUpdates(bool force, bool manual)
+void PkUpdates::checkUpdates(bool manual)
 {
     m_isManualCheck = manual;
 
@@ -246,10 +246,10 @@ void PkUpdates::checkUpdates(bool force, bool manual)
         m_checkUpdatesWhenNetworkOnline = true;
         return;
     }
-    qCDebug(PLASMA_PK_UPDATES) << "Checking updates, forced";
+    qCDebug(PLASMA_PK_UPDATES) << "Checking for updates";
 
     // ask the Packagekit daemon to refresh the cache
-    m_cacheTrans = PackageKit::Daemon::refreshCache(force);
+    m_cacheTrans = PackageKit::Daemon::refreshCache(false);
     setActivity(CheckingUpdates);
 
     // evaluate the result
@@ -473,7 +473,7 @@ void PkUpdates::onFinished(PackageKit::Transaction::Exit status, uint runtime)
         } else {
             qCDebug(PLASMA_PK_UPDATES) << "Update packages transaction didn't finish successfully";
             // just try to refresh cache in case of error, the user might have installed the updates manually meanwhile
-            checkUpdates(false /* force */, false /* manual */);
+            checkUpdates(false /* manual */);
             return;
         }
         setActivity(Idle);
@@ -671,7 +671,7 @@ void PkUpdates::eulaAgreementResult(const QString &eulaID, bool agreed)
     if(!agreed) {
         qCDebug(PLASMA_PK_UPDATES) << "EULA declined";
         // Do the same as the failure case in onFinished
-        checkUpdates(false /* force */, m_isManualCheck /* manual */);
+        checkUpdates(m_isManualCheck /* manual */);
         return;
     }
 
