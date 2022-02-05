@@ -17,7 +17,7 @@
  */
 
 import QtQuick 2.2
-import QtQuick.Controls 1.3
+import QtQuick.Controls 2.5
 import org.kde.plasma.core 2.0 as PlasmaCore
 
 Item {
@@ -26,7 +26,6 @@ Item {
     height: childrenRect.height
     implicitWidth: pageColumn.implicitWidth
     implicitHeight: pageColumn.implicitHeight
-
 
     property alias cfg_daily: daily.checked
     property alias cfg_weekly: weekly.checked
@@ -39,24 +38,23 @@ Item {
         spacing: units.smallSpacing
 
         GroupBox {
-            ExclusiveGroup { id: intervalGroup }
+            width: parent.width
+            ButtonGroup { buttons: intervalColumn.children }
             title: i18n("Check Interval")
             Column {
+                id: intervalColumn
                 spacing: units.smallSpacing
                 RadioButton {
                     id: daily
                     text: i18n("Daily")
-                    exclusiveGroup: intervalGroup
                 }
                 RadioButton {
                     id: weekly
                     text: i18n("Weekly")
-                    exclusiveGroup: intervalGroup
                 }
                 RadioButton {
                     id: monthly
                     text: i18n("Monthly")
-                    exclusiveGroup: intervalGroup
                 }
             }
         }
