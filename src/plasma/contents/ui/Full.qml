@@ -34,6 +34,8 @@ Item {
     property bool anySelected: checkAnySelected()
     property bool allSelected: checkAllSelected()
     property bool populatePreSelected: true
+    property bool populateDeSelected: false
+    property string deselectPkgs: plasmoid.configuration.deselect_pkgs
 
     Binding {
         target: timestampLabel
@@ -326,14 +328,33 @@ Item {
         return result
     }
 
+    function deselectPackages(name,deselectPkgsList) {
+        var select = populatePreSelected
+        for (var e of deselectPkgsList) {
+            if (e === name) {
+                print("Deselecting " + e)
+                select = populateDeSelected
+                break
+            }
+        }
+        return select
+    }
+
     function populateModel() {
         print("Populating model")
+        print("Packages to deselect: " + deselectPkgs)
+        var deselectPkgsList = deselectPkgs.split(",")
         updatesModel.clear()
         var packages = PkUpdates.packages
         for (var id in packages) {
             if (packages.hasOwnProperty(id)) {
                 var desc = packages[id]
-                updatesModel.append({"selected": populatePreSelected, "id": id, "name": PkUpdates.packageName(id), "desc": desc, "version": PkUpdates.packageVersion(id)})
+                var name = PkUpdates.packageName(id)
+                updatesModel.append({"selected": deselectPackages(name,deselectPkgsList),
+                                     "id": id,
+                                     "name": name,
+                                     "desc": desc,
+                                     "version": PkUpdates.packageVersion(id)})
             }
         }
     }

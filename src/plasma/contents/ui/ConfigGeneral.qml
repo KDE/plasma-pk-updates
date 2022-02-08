@@ -33,6 +33,7 @@ Item {
     property alias cfg_monthly: monthly.checked
     property alias cfg_check_on_mobile: mobile.checked
     property alias cfg_check_on_battery: battery.checked
+    property alias cfg_deselect_pkgs: deselect_pkgs.text
 
     Column {
         id: pageColumn
@@ -68,6 +69,14 @@ Item {
         CheckBox {
             id: battery
             text: i18n("Check for updates even when on battery")
+        }
+        Label {
+            text: i18n("Packages or patches to deselect")
+        }
+        TextField {
+            id: deselect_pkgs
+            width: parent.width
+            placeholderText: i18n('[Comma-delimited list of packages to deselect]')
         }
     }
 }
