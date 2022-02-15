@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Software Updates
+Name[az]=Proqram Təminatı Yenilənmələri
 Name[ca]=Actualitzacions de programari
 Name[ca@valencia]=Actualitzacions de programari
 Name[cs]=Aktualizace software
@@ -36,6 +37,7 @@ Name[zh_CN]=软件更新
 Name[zh_TW]=軟體更新
 
 Comment=Get software updates
+Comment[az]=Proqram təminatı yenilənmələrini alın
 Comment[ca]=Obtén les actualitzacions de programari
 Comment[ca@valencia]=Obtén les actualitzacions de programari
 Comment[cs]=Získejte aktualizace software
