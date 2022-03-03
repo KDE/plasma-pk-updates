@@ -18,14 +18,14 @@
 
 import QtQuick 2.2
 import QtQuick.Controls 2.5
-import org.kde.plasma.core 2.0 as PlasmaCore
 
-Item {
+import org.kde.kirigami 2.5 as Kirigami
+
+Kirigami.FormLayout {
     id: iconsPage
-    width: childrenRect.width
-    height: childrenRect.height
-    implicitWidth: pageColumn.implicitWidth
-    implicitHeight: pageColumn.implicitHeight
+
+    anchors.left: parent.left
+    anchors.right: parent.right
 
     property alias cfg_daily: daily.checked
     property alias cfg_weekly: weekly.checked
@@ -33,39 +33,37 @@ Item {
     property alias cfg_check_on_mobile: mobile.checked
     property alias cfg_check_on_battery: battery.checked
 
-    Column {
-        id: pageColumn
-        spacing: units.smallSpacing
+    ButtonGroup {
+        id: intervalGroup
+    }
 
-        GroupBox {
-            width: parent.width
-            ButtonGroup { buttons: intervalColumn.children }
-            title: i18n("Check Interval")
-            Column {
-                id: intervalColumn
-                spacing: units.smallSpacing
-                RadioButton {
-                    id: daily
-                    text: i18n("Daily")
-                }
-                RadioButton {
-                    id: weekly
-                    text: i18n("Weekly")
-                }
-                RadioButton {
-                    id: monthly
-                    text: i18n("Monthly")
-                }
-            }
-        }
+    RadioButton {
+        id: daily
+        Kirigami.FormData.label: i18nc("@label check interval for updates", "Check interval:")
+        ButtonGroup.group: intervalGroup
+        text: i18n("Daily")
+    }
 
-        CheckBox {
-            id: mobile
-            text: i18n("Check for updates even on a mobile connection")
-        }
-        CheckBox {
-            id: battery
-            text: i18n("Check for updates even when on battery")
-        }
+    RadioButton {
+        id: weekly
+        ButtonGroup.group: intervalGroup
+        text: i18n("Weekly")
+    }
+
+    RadioButton {
+        id: monthly
+        ButtonGroup.group: intervalGroup
+        text: i18n("Monthly")
+    }
+
+    CheckBox {
+        id: mobile
+        Kirigami.FormData.label: i18nc("@label part of a sentence", "Check for updates when:")
+        text: i18nc("@option:check part of a sentence: Check for updates when", "On a mobile connection")
+    }
+
+    CheckBox {
+        id: battery
+        text: i18nc("@option:check part of a sentence: Check for updates when", "On battery")
     }
 }
