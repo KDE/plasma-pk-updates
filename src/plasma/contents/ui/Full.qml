@@ -74,13 +74,27 @@ Item {
                 text: i18n("License agreement required for %1 (from %2):").arg(eulaDialog.packageName).arg(eulaDialog.vendor)
             }
 
-            QQC2.TextArea {
+            QQC2.ScrollView {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
+                // The Dialog uses the implicit size as minimum,
+                // so this doesn't have much effect...
                 Layout.minimumWidth: 400
                 Layout.minimumHeight: 200
-                text: eulaDialog.licenseText
-                readOnly: true
+
+                Layout.preferredWidth: 600
+                Layout.preferredHeight: 500
+
+                // Work around that TextArea does not redraw
+                // when the visible area changes after resizing.
+                onHeightChanged: licenseArea.update()
+                onWidthChanged: licenseArea.update()
+
+                QQC2.TextArea {
+                    id: licenseArea
+                    text: eulaDialog.licenseText
+                    readOnly: true
+                }
             }
 
             QQC2.Label {
