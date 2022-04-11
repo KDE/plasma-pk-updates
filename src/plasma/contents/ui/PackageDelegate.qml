@@ -34,7 +34,7 @@ PlasmaExtras.ListItem {
 
     signal checkStateChanged(bool checked)
 
-    height: innerLayout.height + (units.smallSpacing * 2)
+    implicitHeight: innerLayout.implicitHeight + (units.smallSpacing * 2)
     enabled: true
     checked: containsMouse || expanded
     // The binding is overwritten on clicks, as this is for some reason a Button
