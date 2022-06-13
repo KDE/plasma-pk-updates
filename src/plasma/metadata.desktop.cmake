@@ -2,7 +2,7 @@
 Name=Software Updates
 Name[az]=Proqram Təminatı Yenilənmələri
 Name[ca]=Actualitzacions de programari
-Name[ca@valencia]=Actualisacions de programari
+Name[ca@valencia]=Actualitzacions de programari
 Name[cs]=Aktualizace software
 Name[da]=Softwareopdateringer
 Name[de]=Softwareaktualisierungen
@@ -39,7 +39,7 @@ Name[zh_TW]=軟體更新
 Comment=Get software updates
 Comment[az]=Proqram təminatı yenilənmələrini alın
 Comment[ca]=Obtén les actualitzacions de programari
-Comment[ca@valencia]=Obtin les actualisacions de programari
+Comment[ca@valencia]=Obtin les actualitzacions de programari
 Comment[cs]=Získejte aktualizace software
 Comment[da]=Hent softwareopdateringer
 Comment[de]=Softwareaktualisierungen beziehen
