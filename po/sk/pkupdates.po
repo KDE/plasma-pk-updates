@@ -1,0 +1,2357 @@
+# translation of pkupdates.po to Slovak
+# Roman Paholik <wizzardsk@gmail.com>, 2015, 2016, 2017, 2018, 2022.
+# Matej Mrenica <matejm98mthw@gmail.com>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: pkupdates\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-02-06 00:50+0000\n"
+"PO-Revision-Date: 2022-04-09 20:12+0200\n"
+"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
+"Language-Team: Slovak <kde-sk@linux.sk>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 21.12.3\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: PkStrings.cpp:37
+#, kde-format
+msgctxt "This is when the transaction status is not known"
+msgid "Unknown state"
+msgstr "Neznámy stav"
+
+#: PkStrings.cpp:40
+#, kde-format
+msgctxt "transaction state, the daemon is in the process of starting"
+msgid "Waiting for service to start"
+msgstr "Čaká sa na spustenie služby"
+
+#: PkStrings.cpp:43
+#, kde-format
+msgctxt "transaction state, the transaction is waiting for another to complete"
+msgid "Waiting for other tasks"
+msgstr "Čaká sa na ďalšie úlohy"
+
+#: PkStrings.cpp:46
+#, kde-format
+msgctxt "transaction state, just started"
+msgid "Running task"
+msgstr "Prebieha úloha"
+
+#: PkStrings.cpp:49
+#, kde-format
+msgctxt "transaction state, is querying data"
+msgid "Querying"
+msgstr "Zisťuje sa"
+
+#: PkStrings.cpp:52
+#, kde-format
+msgctxt "transaction state, getting data from a server"
+msgid "Getting information"
+msgstr "Získavajú sa informácie"
+
+#: PkStrings.cpp:55
+#, kde-format
+msgctxt "transaction state, removing packages"
+msgid "Removing packages"
+msgstr "Odstraňujú sa balíčky"
+
+#: PkStrings.cpp:59
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading at %1/s, %2 remaining"
+msgstr "Preberá sa rýchlosťou %1/s, zostáva %2"
+
+#: PkStrings.cpp:64
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading at %1/s"
+msgstr "Preberá sa rýchlosťou %1/s"
+
+#: PkStrings.cpp:68
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading, %1 remaining"
+msgstr "Preberá sa, zostáva %1"
+
+#: PkStrings.cpp:72
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading"
+msgstr "Preberá sa"
+
+#: PkStrings.cpp:76
+#, kde-format
+msgctxt "transaction state, installing packages"
+msgid "Installing packages"
+msgstr "Inštalujú sa balíčky"
+
+#: PkStrings.cpp:79
+#, kde-format
+msgctxt "transaction state, refreshing internal lists"
+msgid "Refreshing software list"
+msgstr "Obnovuje sa zoznam softvéru"
+
+#: PkStrings.cpp:82
+#, kde-format
+msgctxt "transaction state, installing updates"
+msgid "Updating packages"
+msgstr "Aktualizujú sa balíčky"
+
+#: PkStrings.cpp:85
+#, kde-format
+msgctxt "transaction state, removing old packages, and cleaning config files"
+msgid "Cleaning up packages"
+msgstr "Čistia sa balíčky"
+
+#: PkStrings.cpp:88
+#, kde-format
+msgctxt "transaction state, obsoleting old packages"
+msgid "Obsoleting packages"
+msgstr "Označujú sa zastarané balíčky"
+
+#: PkStrings.cpp:91
+#, kde-format
+msgctxt "transaction state, checking the transaction before we do it"
+msgid "Resolving dependencies"
+msgstr "Riešia sa závislosti"
+
+#: PkStrings.cpp:94
+#, kde-format
+msgctxt ""
+"transaction state, checking if we have all the security keys for the "
+"operation"
+msgid "Checking signatures"
+msgstr "Kontrolujú sa podpisy"
+
+#: PkStrings.cpp:97
+#, kde-format
+msgctxt "transaction state, when we're doing a test transaction"
+msgid "Testing changes"
+msgstr "Testujú sa zmeny"
+
+#: PkStrings.cpp:100
+#, kde-format
+msgctxt "transaction state, when we're writing to the system package database"
+msgid "Committing changes"
+msgstr "Potvrdzujú sa zmeny"
+
+#: PkStrings.cpp:103
+#, kde-format
+msgctxt "transaction state, requesting data from a server"
+msgid "Requesting data"
+msgstr "Vyžadovanie dát"
+
+#: PkStrings.cpp:106
+#, kde-format
+msgctxt "transaction state, all done!"
+msgid "Finished"
+msgstr "Dokončené"
+
+#: PkStrings.cpp:109
+#, kde-format
+msgctxt "transaction state, in the process of cancelling"
+msgid "Cancelling"
+msgstr "Ruší sa"
+
+#: PkStrings.cpp:112
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading repository information"
+msgstr "Sťahujú sa informácie o repozitároch"
+
+#: PkStrings.cpp:115
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading list of packages"
+msgstr "Sťahuje sa zoznam balíčkov"
+
+#: PkStrings.cpp:118
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading file lists"
+msgstr "Sťahuje sa zoznam súborov"
+
+#: PkStrings.cpp:121
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading lists of changes"
+msgstr "Sťahujú sa zoznamy zmien"
+
+#: PkStrings.cpp:124
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading groups"
+msgstr "Sťahujú sa skupiny"
+
+#: PkStrings.cpp:127
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading update information"
+msgstr "Sťahujú sa informácie o aktualizáciách"
+
+#: PkStrings.cpp:130
+#, kde-format
+msgctxt "transaction state, repackaging delta files"
+msgid "Repackaging files"
+msgstr "Znovu sa balia súbory"
+
+#: PkStrings.cpp:133
+#, kde-format
+msgctxt "transaction state, loading databases"
+msgid "Loading cache"
+msgstr "Načítava sa vyrovnávacia pamäť"
+
+#: PkStrings.cpp:136
+#, kde-format
+msgctxt "transaction state, scanning for running processes"
+msgid "Scanning installed applications"
+msgstr "Prehľadávajú sa nainštalované aplikácie"
+
+#: PkStrings.cpp:139
+#, kde-format
+msgctxt ""
+"transaction state, generating a list of packages installed on the system"
+msgid "Generating package lists"
+msgstr "Generuje sa zoznam balíčkov"
+
+#: PkStrings.cpp:142
+#, kde-format
+msgctxt "transaction state, when we're waiting for the native tools to exit"
+msgid "Waiting for package manager lock"
+msgstr "Čaká sa na zámok správcu balíčkov"
+
+#: PkStrings.cpp:145
+#, kde-format
+msgctxt "waiting for user to type in a password"
+msgid "Waiting for authentication"
+msgstr "Čaká sa na overenie"
+
+#: PkStrings.cpp:148
+#, kde-format
+msgctxt "we are updating the list of processes"
+msgid "Updating the list of running applications"
+msgstr "Aktualizuje sa zoznam bežiacich aplikácií"
+
+#: PkStrings.cpp:151
+#, kde-format
+msgctxt "we are checking executable files in use"
+msgid "Checking for applications currently in use"
+msgstr "Kontrolujú sa aktuálne používané aplikácie"
+
+#: PkStrings.cpp:154
+#, kde-format
+msgctxt "we are checking for libraries in use"
+msgid "Checking for libraries currently in use"
+msgstr "Kontrolujú sa aktuálne používané knižnice"
+
+#: PkStrings.cpp:157
+#, kde-format
+msgctxt "we are copying package files to prepare to install"
+msgid "Copying files"
+msgstr "Kopírujú sa súbory"
+
+#: PkStrings.cpp:167
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Downloaded"
+msgstr "Prevzatý balík"
+
+#: PkStrings.cpp:169
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Updated"
+msgstr "Aktualizovaný balík"
+
+#: PkStrings.cpp:171
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Installed"
+msgstr "Nainštalovaný balík"
+
+#: PkStrings.cpp:173
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Removed"
+msgstr "Odstránený balík"
+
+#: PkStrings.cpp:175
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Cleaned Up"
+msgstr "Vyčistený balík"
+
+#: PkStrings.cpp:177
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Obsoleted"
+msgstr "Zastaraný balík"
+
+#: PkStrings.cpp:188
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Unknown role type"
+msgstr "Neznámy typ úlohy"
+
+#: PkStrings.cpp:190
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting dependencies"
+msgstr "Získavajú sa závislosti"
+
+#: PkStrings.cpp:192
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting update detail"
+msgstr "Získavajú sa podrobnosti o aktualizácii"
+
+#: PkStrings.cpp:195
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting details"
+msgstr "Získavajú sa podrobnosti"
+
+#: PkStrings.cpp:197
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting requires"
+msgstr "Získavajú sa požiadavky"
+
+#: PkStrings.cpp:199
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting updates"
+msgstr "Získavajú sa aktualizácie"
+
+#: PkStrings.cpp:201
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching details"
+msgstr "Hľadajú sa podrobnosti"
+
+#: PkStrings.cpp:203
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching for file"
+msgstr "Hľadá sa súbor"
+
+#: PkStrings.cpp:205
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching groups"
+msgstr "Hľadajú sa skupiny"
+
+#: PkStrings.cpp:207
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching by package name"
+msgstr "Hľadá sa podľa názvu súboru"
+
+#: PkStrings.cpp:210
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating removal"
+msgstr "Simulácia odstránenia"
+
+#: PkStrings.cpp:212 PkStrings.cpp:219 PkStrings.cpp:260
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading packages"
+msgstr "Preberajú sa balíky"
+
+#: PkStrings.cpp:214
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Removing"
+msgstr "Odstraňuje sa"
+
+#: PkStrings.cpp:217
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating install"
+msgstr "Simuluje sa inštalácia"
+
+#: PkStrings.cpp:221
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing"
+msgstr "Inštaluje sa"
+
+#: PkStrings.cpp:224
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating file install"
+msgstr "Simulácia inštalácie súborov"
+
+#: PkStrings.cpp:226
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading required packages"
+msgstr "Preberajú sa potrebné balíky"
+
+#: PkStrings.cpp:228
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing file"
+msgstr "Inštaluje sa súbor"
+
+#: PkStrings.cpp:230
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Refreshing package cache"
+msgstr "Obnovuje sa vyrovnávacia pamäť balíkov"
+
+#: PkStrings.cpp:233
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating update"
+msgstr "Simuluje sa aktualizácia"
+
+#: PkStrings.cpp:235
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading updates"
+msgstr "Preberajú sa aktualizácie"
+
+#: PkStrings.cpp:237
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Updating packages"
+msgstr "Aktualizujú sa balíky"
+
+#: PkStrings.cpp:239
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Canceling"
+msgstr "Ruší sa"
+
+#: PkStrings.cpp:241
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting list of repositories"
+msgstr "Získava sa zoznam repozitárov"
+
+#: PkStrings.cpp:243
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Enabling repository"
+msgstr "Povoľuje sa repozitár"
+
+#: PkStrings.cpp:245
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Setting repository data"
+msgstr "Nastavujú sa dáta repozitára"
+
+#: PkStrings.cpp:247
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Resolving"
+msgstr "Rieši sa"
+
+#: PkStrings.cpp:250
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting file list"
+msgstr "Získava sa zoznam súborov"
+
+#: PkStrings.cpp:252
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting what provides"
+msgstr "Získava sa čo poskytuje"
+
+#: PkStrings.cpp:254
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing signature"
+msgstr "Inštaluje sa podpis"
+
+#: PkStrings.cpp:256
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting package lists"
+msgstr "Získava sa zoznam balíkov"
+
+#: PkStrings.cpp:258
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Accepting EULA"
+msgstr "Prijíma sa EULA"
+
+#: PkStrings.cpp:262
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting distribution upgrade information"
+msgstr "Získavajú sa informácie o inovácií distribúcie"
+
+#: PkStrings.cpp:264
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting categories"
+msgstr "Získavajú sa kategórie"
+
+#: PkStrings.cpp:266
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting old transactions"
+msgstr "Získavajú sa staré transakcie"
+
+#: PkStrings.cpp:268
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Repairing system"
+msgstr "Opravuje sa systém"
+
+#: PkStrings.cpp:270
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Removing repository"
+msgstr "Odstraňujem repozitár"
+
+#: PkStrings.cpp:280
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Unknown role type"
+msgstr "Neznámy typ role"
+
+#: PkStrings.cpp:282
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got dependencies"
+msgstr "Získané závislosti"
+
+#: PkStrings.cpp:284
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got update detail"
+msgstr "Získané podrobnosti o aktualizácii"
+
+#: PkStrings.cpp:287
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got details"
+msgstr "Získané podrobnosti"
+
+#: PkStrings.cpp:289
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got requires"
+msgstr "Získané požiadavky"
+
+#: PkStrings.cpp:291
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got updates"
+msgstr "Získané aktualizácie"
+
+#: PkStrings.cpp:293
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for package details"
+msgstr "Nájdené podrobnosti o balíku"
+
+#: PkStrings.cpp:295
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for file"
+msgstr "Nájdený súbor"
+
+#: PkStrings.cpp:297
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched groups"
+msgstr "Nájdené skupiny"
+
+#: PkStrings.cpp:299
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for package name"
+msgstr "Nájdený názov balíka"
+
+#: PkStrings.cpp:301
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Removed packages"
+msgstr "Odstránené balíky"
+
+#: PkStrings.cpp:303
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed packages"
+msgstr "Nainštalované balíky"
+
+#: PkStrings.cpp:305
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed local files"
+msgstr "Nainštalované lokálne súbory"
+
+#: PkStrings.cpp:307
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Refreshed package cache"
+msgstr "Obnovená vyrovnávacia pamäť balíkov"
+
+#: PkStrings.cpp:309
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Updated packages"
+msgstr "Aktualizované balíky"
+
+#: PkStrings.cpp:311
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Canceled"
+msgstr "Zrušené"
+
+#: PkStrings.cpp:313
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got list of repositories"
+msgstr "Získaný zoznam repozitárov"
+
+#: PkStrings.cpp:315
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Enabled repository"
+msgstr "Povolený repozitár"
+
+#: PkStrings.cpp:317
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Set repository data"
+msgstr "Nastavené dáta repozitára"
+
+#: PkStrings.cpp:319
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Resolved"
+msgstr "Vyriešené"
+
+#: PkStrings.cpp:322
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got file list"
+msgstr "Získaný zoznam súborov"
+
+#: PkStrings.cpp:324
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got what provides"
+msgstr "Získané čo poskytuje"
+
+#: PkStrings.cpp:326
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed signature"
+msgstr "Nainštalovaný podpis"
+
+#: PkStrings.cpp:328
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got package lists"
+msgstr "Získaný zoznam balíkov"
+
+#: PkStrings.cpp:330
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Accepted EULA"
+msgstr "Prijatá EULA"
+
+#: PkStrings.cpp:332
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Downloaded packages"
+msgstr "Prevzaté balíky"
+
+#: PkStrings.cpp:334
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got distribution upgrades"
+msgstr "Získané inovácie distribúcie"
+
+#: PkStrings.cpp:336
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got categories"
+msgstr "Získané kategórie"
+
+#: PkStrings.cpp:338
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got old transactions"
+msgstr "Získané staré transakcie"
+
+#: PkStrings.cpp:340
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Repaired system"
+msgstr "Systém opravený"
+
+#: PkStrings.cpp:342
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Removed repository"
+msgstr "Odstránený repozitár"
+
+#: PkStrings.cpp:352
+#, kde-format
+msgid "Downloading"
+msgstr "Sťahovanie"
+
+#: PkStrings.cpp:354
+#, kde-format
+msgid "Updating"
+msgstr "Aktualizuje sa"
+
+#: PkStrings.cpp:356
+#, kde-format
+msgid "Installing"
+msgstr "Inštalovanie"
+
+#: PkStrings.cpp:358
+#, kde-format
+msgid "Removing"
+msgstr "Odstraňuje sa"
+
+#: PkStrings.cpp:360
+#, kde-format
+msgid "Cleaning up"
+msgstr "Čistí sa"
+
+#: PkStrings.cpp:362
+#, kde-format
+msgid "Obsoleting"
+msgstr "Označuje sa ako zastaraný"
+
+#: PkStrings.cpp:364
+#, kde-format
+msgid "Reinstalling"
+msgstr "Znovu sa inštaluje"
+
+#: PkStrings.cpp:366
+#, kde-format
+msgid "Preparing"
+msgstr "Pripravujem"
+
+#: PkStrings.cpp:368
+#, kde-format
+msgid "Decompressing"
+msgstr "Rozbaľuje sa"
+
+#: PkStrings.cpp:379
+#, kde-format
+msgid "Downloaded"
+msgstr "Stiahnuté"
+
+#: PkStrings.cpp:381
+#, kde-format
+msgid "Updated"
+msgstr "Aktualizované"
+
+#: PkStrings.cpp:383
+#, kde-format
+msgid "Installed"
+msgstr "Nainštalované"
+
+#: PkStrings.cpp:385
+#, kde-format
+msgid "Removed"
+msgstr "Odstránené"
+
+#: PkStrings.cpp:387
+#, kde-format
+msgid "Cleaned up"
+msgstr "Vyčistené"
+
+#: PkStrings.cpp:389
+#, kde-format
+msgid "Obsoleted"
+msgstr "Zastarané"
+
+#: PkStrings.cpp:391
+#, kde-format
+msgid "Reinstalled"
+msgstr "Znovu nainštalované"
+
+#: PkStrings.cpp:393
+#, kde-format
+msgid "Prepared"
+msgstr "Pripravené"
+
+#: PkStrings.cpp:395
+#, kde-format
+msgid "Decompressed"
+msgstr "Rozbalené"
+
+#: PkStrings.cpp:406
+#, kde-format
+msgid "No network connection available"
+msgstr "Nie je dostupné sieťové pripojenie"
+
+#: PkStrings.cpp:408
+#, kde-format
+msgid "No package cache is available"
+msgstr "Nie je dostupná vyrovnávacia pamäť balíkov"
+
+#: PkStrings.cpp:410
+#, kde-format
+msgid "Out of memory"
+msgstr "Nedostatok pamäte"
+
+#: PkStrings.cpp:412
+#, kde-format
+msgid "Failed to create a thread"
+msgstr "Nepodarilo sa vytvoriť vlákno"
+
+#: PkStrings.cpp:414
+#, kde-format
+msgid "Not supported by this backend"
+msgstr "Nie je podporované týmto backendom"
+
+#: PkStrings.cpp:416
+#, kde-format
+msgid "An internal system error has occurred"
+msgstr "Nastala vnútorná systémová chyba"
+
+#: PkStrings.cpp:418
+#, kde-format
+msgid "A security trust relationship is not present"
+msgstr "Bezpečnostný vzťah dôvery nie je k dispozícii"
+
+#: PkStrings.cpp:420
+#, kde-format
+msgid "The package is not installed"
+msgstr "balík nie je nainštalovaný"
+
+#: PkStrings.cpp:422
+#, kde-format
+msgid "The package was not found"
+msgstr "balík nebol nájdený"
+
+#: PkStrings.cpp:424
+#, kde-format
+msgid "The package is already installed"
+msgstr "balík je už nainštalovaný"
+
+#: PkStrings.cpp:426
+#, kde-format
+msgid "The package download failed"
+msgstr "Preberanie balíka zlyhalo"
+
+#: PkStrings.cpp:428
+#, kde-format
+msgid "The group was not found"
+msgstr "Skupina nebola nájdená"
+
+#: PkStrings.cpp:430
+#, kde-format
+msgid "The group list was invalid"
+msgstr "Zoznam skupín bol neplatný"
+
+#: PkStrings.cpp:432
+#, kde-format
+msgid "Dependency resolution failed"
+msgstr "Riešenie závislostí zlyhalo"
+
+#: PkStrings.cpp:434
+#, kde-format
+msgid "Search filter was invalid"
+msgstr "Filter hľadania bol neplatný"
+
+#: PkStrings.cpp:436
+#, kde-format
+msgid "The package identifier was not well formed"
+msgstr "Identifikátor balíka nie je v správnom formáte"
+
+#: PkStrings.cpp:438
+#, kde-format
+msgid "Transaction error"
+msgstr "Chyba transakcie"
+
+#: PkStrings.cpp:440
+#, kde-format
+msgid "Repository name was not found"
+msgstr "Názov repozitára nebol nájdený"
+
+#: PkStrings.cpp:442
+#, kde-format
+msgid "Could not remove a protected system package"
+msgstr "Nepodarilo sa odstrániť chránený systémový balík"
+
+#: PkStrings.cpp:444
+#, kde-format
+msgid "The task was canceled"
+msgstr "Úloha bola zrušená"
+
+#: PkStrings.cpp:446
+#, kde-format
+msgid "The task was forcibly canceled"
+msgstr "Úloha bola násilne zrušená"
+
+#: PkStrings.cpp:448
+#, kde-format
+msgid "Reading the config file failed"
+msgstr "Čítanie konfiguračného súboru zlyhalo"
+
+#: PkStrings.cpp:450
+#, kde-format
+msgid "The task cannot be cancelled"
+msgstr "Úloha nemôže byť zrušená"
+
+#: PkStrings.cpp:452
+#, kde-format
+msgid "Source packages cannot be installed"
+msgstr "Zdrojové balíky nemôžu byť nainštalované"
+
+#: PkStrings.cpp:454
+#, kde-format
+msgid "The license agreement failed"
+msgstr "Licenčná zmluva zlyhala"
+
+#: PkStrings.cpp:456
+#, kde-format
+msgid "Local file conflict between packages"
+msgstr "Konflikt lokálneho súboru medzi balíkami"
+
+#: PkStrings.cpp:458
+#, kde-format
+msgid "Packages are not compatible"
+msgstr "balíky nie sú kompatibilné"
+
+#: PkStrings.cpp:460
+#, kde-format
+msgid "Problem connecting to a software origin"
+msgstr "Problém pri pripájaní k pôvodu softvéru"
+
+#: PkStrings.cpp:462
+#, kde-format
+msgid "Failed to initialize"
+msgstr "Inicializácia zlyhala"
+
+#: PkStrings.cpp:464
+#, kde-format
+msgid "Failed to finalize"
+msgstr "Dokončenie zlyhalo"
+
+#: PkStrings.cpp:466
+#, kde-format
+msgid "Cannot get lock"
+msgstr "Nie je možné získať zámok"
+
+#: PkStrings.cpp:468
+#, kde-format
+msgid "No packages to update"
+msgstr "Žiadne balíky na aktualizáciu"
+
+#: PkStrings.cpp:470
+#, kde-format
+msgid "Cannot write repository configuration"
+msgstr "Nie je možné zapísať konfiguráciu repozitára"
+
+#: PkStrings.cpp:472
+#, kde-format
+msgid "Local install failed"
+msgstr "Lokálna inštalácia zlyhala"
+
+#: PkStrings.cpp:474
+#, kde-format
+msgid "Bad GPG signature"
+msgstr "Zlý GPG podpis"
+
+#: PkStrings.cpp:476
+#, kde-format
+msgid "Missing GPG signature"
+msgstr "Chýbajúci GPG podpis"
+
+#: PkStrings.cpp:478
+#, kde-format
+msgid "Repository configuration invalid"
+msgstr "Konfigurácia repozitára je neplatná"
+
+#: PkStrings.cpp:480
+#, kde-format
+msgid "Invalid package file"
+msgstr "Neplatný súbor balíka"
+
+#: PkStrings.cpp:482
+#, kde-format
+msgid "Package install blocked"
+msgstr "Inštalácia balíka zablokovaná"
+
+#: PkStrings.cpp:484
+#, kde-format
+msgid "Package is corrupt"
+msgstr "balík je poškodený"
+
+#: PkStrings.cpp:486
+#, kde-format
+msgid "All packages are already installed"
+msgstr "Všetky balíky sú už nainštalované"
+
+#: PkStrings.cpp:488
+#, kde-format
+msgid "The specified file could not be found"
+msgstr "Zadaný súbor sa nepodarilo nájsť"
+
+#: PkStrings.cpp:490
+#, kde-format
+msgid "No more mirrors are available"
+msgstr "Nie sú dostupné ďalšie zrkadlá"
+
+#: PkStrings.cpp:492
+#, kde-format
+msgid "No distribution upgrade data is available"
+msgstr "Nie sú dostupné dáta k inovácií distribúcie"
+
+#: PkStrings.cpp:494
+#, kde-format
+msgid "Package is incompatible with this system"
+msgstr "balík je nekompatibilný s týmto systémom"
+
+#: PkStrings.cpp:496
+#, kde-format
+msgid "No space is left on the disk"
+msgstr "Na disku nie je dostatok miesta"
+
+#: PkStrings.cpp:498
+#, kde-format
+msgid "A media change is required"
+msgstr "Je vyžadovaná zmena média"
+
+#: PkStrings.cpp:500
+#, kde-format
+msgid "Authorization failed"
+msgstr "Overenie zlyhalo"
+
+#: PkStrings.cpp:502
+#, kde-format
+msgid "Update not found"
+msgstr "Aktualizácia nenájdená"
+
+#: PkStrings.cpp:504
+#, kde-format
+msgid "Cannot install from untrusted origin"
+msgstr "Nie je možné inštalovať z nedôveryhodného pôvodu"
+
+#: PkStrings.cpp:506
+#, kde-format
+msgid "Cannot update from untrusted origin"
+msgstr "Nie je možné aktualizovať z nedôveryhodného pôvodu"
+
+#: PkStrings.cpp:508
+#, kde-format
+msgid "Cannot get the file list"
+msgstr "Nie je možné získať zoznam súborov"
+
+#: PkStrings.cpp:510
+#, kde-format
+msgid "Cannot get package requires"
+msgstr "Nie je možné získať požiadavky balíka"
+
+#: PkStrings.cpp:512
+#, kde-format
+msgid "Cannot disable origin"
+msgstr "Nie je možné zakázať pôvod"
+
+#: PkStrings.cpp:514
+#, kde-format
+msgid "The download failed"
+msgstr "Preberanie zlyhalo"
+
+#: PkStrings.cpp:516
+#, kde-format
+msgid "Package failed to configure"
+msgstr "Konfigurácia balíka zlyhala"
+
+#: PkStrings.cpp:518
+#, kde-format
+msgid "Package failed to build"
+msgstr "Zostavenie balíka zlyhalo"
+
+#: PkStrings.cpp:520
+#, kde-format
+msgid "Package failed to install"
+msgstr "Inštalácia balíka zlyhala"
+
+#: PkStrings.cpp:522
+#, kde-format
+msgid "Package failed to be removed"
+msgstr "Odstránenie balíka zlyhalo"
+
+#: PkStrings.cpp:524
+#, kde-format
+msgid "Update failed due to running process"
+msgstr "Aktualizácia zlyhala kvôli bežiacemu procesu"
+
+#: PkStrings.cpp:526
+#, kde-format
+msgid "The package database was changed"
+msgstr "Databáza balíkov sa zmenila"
+
+#: PkStrings.cpp:528
+#, kde-format
+msgid "Virtual provide type is not supported"
+msgstr "Virtuálne poskytovanie nie je podporované"
+
+#: PkStrings.cpp:530
+#, kde-format
+msgid "Install root is invalid"
+msgstr "Inštalačný koreň je neplatný"
+
+#: PkStrings.cpp:532
+#, kde-format
+msgid "Cannot fetch install sources"
+msgstr "Nie je možné získať inštalačné zdroje"
+
+#: PkStrings.cpp:534
+#, kde-format
+msgid "Rescheduled due to priority"
+msgstr "Preplánované kvôli priorite"
+
+#: PkStrings.cpp:536
+#, kde-format
+msgid "Unfinished transaction"
+msgstr "Nedokončená transakcia"
+
+#: PkStrings.cpp:538
+#, kde-format
+msgid "Lock required"
+msgstr "Vyžaduje sa zámok"
+
+#: PkStrings.cpp:540
+#, kde-format
+msgid "Unknown error"
+msgstr "Neznáma chyba"
+
+#: PkStrings.cpp:550
+#, kde-format
+msgid ""
+"There is no network connection available.\n"
+"Please check your connection settings and try again"
+msgstr ""
+"Nie je dostupné sieťové pripojenie.\n"
+"Prosím skontrolujte nastavenie pripojenia a skúste to znovu"
+
+#: PkStrings.cpp:553
+#, kde-format
+msgid ""
+"The package list needs to be rebuilt.\n"
+"This should have been done by the backend automatically."
+msgstr ""
+"Je potrebné znovu zostaviť zoznam balíčkov.\n"
+"To by mal spraviť automaticky backend."
+
+#: PkStrings.cpp:556
+#, kde-format
+msgid ""
+"The service that is responsible for handling user requests is out of "
+"memory.\n"
+"Please close some programs or restart your computer."
+msgstr ""
+"Služba, ktorá je zodpovedná za spracovanie užívateľských požiadaviek, má "
+"nedostatok pamäte.\n"
+"Prosím ukončite niektoré programy alebo reštartujte svoj počítač."
+
+#: PkStrings.cpp:559
+#, kde-format
+msgid "A thread could not be created to service the user request."
+msgstr "Vlákno pre obsluhu užívateľských požiadaviek sa nepodarilo vytvoriť."
+
+#: PkStrings.cpp:561
+#, kde-format
+msgid ""
+"The action is not supported by this backend.\n"
+"Please report a bug as this should not have happened."
+msgstr ""
+"Akcia nie je týmto backendom podporovaná.\n"
+"Prosím nahláste chybu, pretože toto by sa nemalo stať."
+
+#: PkStrings.cpp:564
+#, kde-format
+msgid ""
+"A problem that we were not expecting has occurred.\n"
+"Please report this bug with the error description."
+msgstr ""
+"Nastal neočakávaný problém.\n"
+"Prosím nahláste chybu s popisom problému."
+
+#: PkStrings.cpp:567
+#, kde-format
+msgid ""
+"A security trust relationship could not be made with the software origin.\n"
+"Please check your software signature settings."
+msgstr ""
+"Nepodarilo sa vytvoriť bezpečnostný vzťah dôvery s pôvodom softvéru.\n"
+"Prosím, skontrolujte svoje nastavenie softvérových podpisov."
+
+#: PkStrings.cpp:570
+#, kde-format
+msgid ""
+"The package that is trying to be removed or updated is not already installed."
+msgstr ""
+"Balíček, ktorý má byť odstránený alebo aktualizovaný, už nie je "
+"nainštalovaný."
+
+#: PkStrings.cpp:572
+#, kde-format
+msgid ""
+"The package that is being modified was not found on your system or in any "
+"software origin."
+msgstr ""
+"Balíček, ktorý má byť zmenený, nebol nájdený vo vašom systéme ani v žiadnom "
+"zdroji softvéru."
+
+#: PkStrings.cpp:574
+#, kde-format
+msgid "The package that is trying to be installed is already installed."
+msgstr "balík, ktorý má byť nainštalovaný, je už nainštalovaný."
+
+#: PkStrings.cpp:576
+#, kde-format
+msgid ""
+"The package download failed.\n"
+"Please check your network connectivity."
+msgstr ""
+"Preberanie balíka zlyhalo.\n"
+"Prosím, skontrolujte svoje sieťové pripojenie."
+
+#: PkStrings.cpp:579
+#, kde-format
+msgid ""
+"The group type was not found.\n"
+"Please check your group list and try again."
+msgstr ""
+"Typ skupiny nebol nájdený.\n"
+"Prosím skontrolujte svoj zoznam skupín a skúste to znovu."
+
+#: PkStrings.cpp:582
+#, kde-format
+msgid ""
+"The group list could not be loaded.\n"
+"Refreshing your cache may help, although this is normally a software origin "
+"error."
+msgstr ""
+"Zoznam skupín sa nepodarilo načítať.\n"
+"Obnovenie vyrovnávacej pamäte môže pomôcť, hoci je toto obvykle chyba zdroja "
+"softvéru."
+
+#: PkStrings.cpp:586
+#, kde-format
+msgid ""
+"A package dependency could not be found.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Závislosť balíka sa nepodarilo nájsť.\n"
+"Viac informácií je dostupných v podrobnej správe."
+
+#: PkStrings.cpp:589
+#, kde-format
+msgid "The search filter was not correctly formed."
+msgstr "Filter hľadania nebol zadaný správne."
+
+#: PkStrings.cpp:591
+#, kde-format
+msgid ""
+"The package identifier was not well formed when sent to the system daemon.\n"
+"This normally indicates an internal bug and should be reported."
+msgstr ""
+"Identifikátor balíčka nebol správne zadaný pri posielaní systémovému "
+"démonu.\n"
+"Toto obvykle naznačuje internú chybu a mala by byť nahlásená."
+
+#: PkStrings.cpp:594
+#, kde-format
+msgid ""
+"An error occurred while running the transaction.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Nastala chyba počas behu transakcie.\n"
+"Viac informácií je dostupných v podrobnej správe."
+
+#: PkStrings.cpp:597
+#, kde-format
+msgid ""
+"The remote software origin name was not found.\n"
+"You may need to enable an item in Software Origins."
+msgstr ""
+"Názov vzdialeného zdroja softvéru nebol nájdený.\n"
+"Možno bude treba povoliť túto položku v Zdrojoch softvéru."
+
+#: PkStrings.cpp:600
+#, kde-format
+msgid "Removing a protected system package is not allowed."
+msgstr "Odstránenie chráneného systémového balíčka nie je povolené."
+
+#: PkStrings.cpp:602
+#, kde-format
+msgid "The task was canceled successfully and no packages were changed."
+msgstr "Úloha bola úspešne zrušená a neboli zmenené žiadne balíky."
+
+#: PkStrings.cpp:604
+#, kde-format
+msgid ""
+"The task was canceled successfully and no packages were changed.\n"
+"The backend did not exit cleanly."
+msgstr ""
+"Úloha bola úspešne zrušená a neboli zmenené žiadne balíčky.\n"
+"Backend ale nebol korektne ukončený."
+
+#: PkStrings.cpp:607
+#, kde-format
+msgid ""
+"The native package configuration file could not be opened.\n"
+"Please make sure your system's configuration is valid."
+msgstr ""
+"Natívny konfiguračný súbor sa nepodarilo otvoriť.\n"
+"Prosím skontrolujte, či je systémové nastavenie v poriadku."
+
+#: PkStrings.cpp:610
+#, kde-format
+msgid "The task is not safe to be cancelled at this time."
+msgstr "V tejto chvíli nie je bezpečné zrušiť úlohu."
+
+#: PkStrings.cpp:612
+#, kde-format
+msgid ""
+"Source packages are not normally installed this way.\n"
+"Check the extension of the file you are trying to install."
+msgstr ""
+"Zdrojové balíčky sa obvykle neinštalujú týmto spôsobom.\n"
+"Skontrolujte príponu súboru, ktorý sa pokúšate nainštalovať."
+
+#: PkStrings.cpp:615
+#, kde-format
+msgid ""
+"The license agreement was not agreed to.\n"
+"To use this software you have to accept the license."
+msgstr ""
+"Nebola potvrdená licenčná zmluva.\n"
+"Ak chcete používať tento softvér, musíte prijať licenciu."
+
+#: PkStrings.cpp:618
+#, kde-format
+msgid ""
+"Two packages provide the same file.\n"
+"This is usually due to mixing packages for different software origins."
+msgstr ""
+"Dva balíky poskytujú rovnaký súbor.\n"
+"Toto je obvykle kvôli miešaniu balíkov z rôznych pôvodov softvéru."
+
+#: PkStrings.cpp:621
+#, kde-format
+msgid ""
+"Multiple packages exist that are not compatible with each other.\n"
+"This is usually due to mixing packages from different software origins."
+msgstr ""
+"Existuje viacero balíkov, ktoré nie sú navzájom kompatibilné.\n"
+"Toto je obvykle kvôli miešaniu balíkov z rôznych pôvodov softvéru."
+
+#: PkStrings.cpp:624
+#, kde-format
+msgid ""
+"There was a (possibly temporary) problem connecting to a software origins.\n"
+"Please check the detailed error for further details."
+msgstr ""
+"Nastal (pravdepodobne dočasný) problém s pripojením k pôvodu softvéru.\n"
+"Pre viac podrobností, prosím, skontrolujte podrobné chybové hlásenie."
+
+#: PkStrings.cpp:627
+#, kde-format
+msgid ""
+"Failed to initialize packaging backend.\n"
+"This may occur if other packaging tools are being used simultaneously."
+msgstr ""
+"Nepodarilo sa inicializovať balíčkovací backend.\n"
+"Toto môže nastať, ak sú súčasne používané rôzne balíčkovacie nástroje."
+
+#: PkStrings.cpp:630
+#, kde-format
+msgid ""
+"Failed to close down the backend instance.\n"
+"This error can normally be ignored."
+msgstr ""
+"Nepodarilo sa zatvoriť inštanciu backendu.\n"
+"Táto chyba môže byť obvykle ignorovaná."
+
+#: PkStrings.cpp:633
+#, kde-format
+msgid ""
+"Cannot get the exclusive lock on the packaging backend.\n"
+"Please close any other legacy packaging tools that may be open."
+msgstr ""
+"Nie je možné získať výhradný zámok na balíkovací backend.\n"
+"Prosím, ukončite všetky ostatné nástroje balíkov, ktoré môžu byť otvorené."
+
+#: PkStrings.cpp:636
+#, kde-format
+msgid "None of the selected packages could be updated."
+msgstr "Žiadny z vybraných balíčkov sa nepodarilo aktualizovať."
+
+#: PkStrings.cpp:638
+#, kde-format
+msgid "The repository configuration could not be modified."
+msgstr "Nastavenie repozitára sa nepodarilo zmeniť."
+
+#: PkStrings.cpp:640
+#, kde-format
+msgid ""
+"Installing the local file failed.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Inštalácia lokálneho súboru zlyhala.\n"
+"Viac informácií je dostupných v podrobnej správe."
+
+#: PkStrings.cpp:643
+#, kde-format
+msgid "The package signature could not be verified."
+msgstr "Podpis balíčka sa nepodarilo overiť."
+
+#: PkStrings.cpp:645
+#, kde-format
+msgid ""
+"The package signature was missing and this package is untrusted.\n"
+"This package was not signed with a GPG key when created."
+msgstr ""
+"Chýba podpis balíčka, a preto je tento balíček nedôveryhodný.\n"
+"Tento balíček nebol pri vytváraní podpísaný GPG kľúčom."
+
+#: PkStrings.cpp:648
+#, kde-format
+msgid "Repository configuration was invalid and could not be read."
+msgstr "Nastavenie repozitára je neplatné a nemôže byť načítané."
+
+#: PkStrings.cpp:650
+#, kde-format
+msgid ""
+"The package you are attempting to install is not valid.\n"
+"The package file could be corrupt, or not a proper package."
+msgstr ""
+"Balíček, ktorý sa pokúšate nainštalovať, je neplatný.\n"
+"Súbor balíčku môže byť poškodený, alebo nie je balíčkom."
+
+#: PkStrings.cpp:653
+#, kde-format
+msgid ""
+"Installation of this package was prevented by your packaging system's "
+"configuration."
+msgstr ""
+"Nastavenie vášho balíčkovacieho systému zabránilo inštalácii tohto balíčka."
+
+#: PkStrings.cpp:655
+#, kde-format
+msgid ""
+"The package that was downloaded is corrupt and needs to be downloaded again."
+msgstr ""
+"Balíček, ktorý bol stiahnutý, je poškodený a je potrebné ho stiahnuť znovu."
+
+#: PkStrings.cpp:657
+#, kde-format
+msgid ""
+"All of the packages selected for install are already installed on the system."
+msgstr "Všetky balíčky vybrané na inštaláciu sú už v systéme nainštalované."
+
+#: PkStrings.cpp:659
+#, kde-format
+msgid ""
+"The specified file could not be found on the system.\n"
+"Check that the file still exists and has not been deleted."
+msgstr ""
+"Zadaný súbor sa nepodarilo nájsť v systéme.\n"
+"Skontrolujte, či súbor stále existuje a nebol odstránený."
+
+#: PkStrings.cpp:662
+#, kde-format
+msgid ""
+"Required data could not be found on any of the configured software origins.\n"
+"There were no more download mirrors that could be tried."
+msgstr ""
+"Požadované dáta sa nepodarilo nájsť v žiadnom z nastavených zdrojov "
+"softvéru.\n"
+"Nie je dostupné žiadne ďalšie zrkadlo, ktoré by sa dalo vyskúšať."
+
+#: PkStrings.cpp:665
+#, kde-format
+msgid ""
+"Required upgrade data could not be found in any of the configured software "
+"origins.\n"
+"The list of distribution upgrades will be unavailable."
+msgstr ""
+"Požadované dáta sa nepodarilo nájsť v žiadnom z nastavených zdrojov "
+"softvéru.\n"
+"Zoznam inovácií pre distribúciu nebude dostupný."
+
+#: PkStrings.cpp:668
+#, kde-format
+msgid ""
+"The package that is trying to be installed is incompatible with this system."
+msgstr ""
+"Balíček, ktorý má byť nainštalovaný, nie je kompatibilný s týmto systémom."
+
+#: PkStrings.cpp:670
+#, kde-format
+msgid ""
+"There is insufficient space on the device.\n"
+"Free some space on the system disk to perform this operation."
+msgstr ""
+"Na zariadení nie je dostatok miesta.\n"
+"Uvoľnite miesto na systémovom disku na vykonanie tejto operácie."
+
+#: PkStrings.cpp:673
+#, kde-format
+msgid "Additional media is required to complete the transaction."
+msgstr "Na dokončenie tejto transakcie je vyžadované ďalšie médium."
+
+#: PkStrings.cpp:675
+#, kde-format
+msgid ""
+"You have failed to provide correct authentication.\n"
+"Please check any passwords or account settings."
+msgstr ""
+"Nepodarilo sa overiť vašu totožnosť.\n"
+"Prosím skontrolujte heslá alebo nastavenie konta."
+
+#: PkStrings.cpp:678
+#, kde-format
+msgid ""
+"The specified update could not be found.\n"
+"It could have already been installed or no longer available on the remote "
+"server."
+msgstr ""
+"Zadanú aktualizáciu sa nepodarilo nájsť.\n"
+"Môže byť už nainštalovaná alebo nedostupná na vzdialenom servery."
+
+#: PkStrings.cpp:681
+#, kde-format
+msgid "The package could not be installed from untrusted origin."
+msgstr "Nepodarilo sa nainštalovať balíček z nedôveryhodného zdroja."
+
+#: PkStrings.cpp:683
+#, kde-format
+msgid "The package could not be updated from untrusted origin."
+msgstr "Nepodarilo sa aktualizovať balíček z nedôveryhodného zdroja."
+
+#: PkStrings.cpp:685
+#, kde-format
+msgid "The file list is not available for this package."
+msgstr "Pre tento balík nie je dostupný zoznam súborov."
+
+#: PkStrings.cpp:687
+#, kde-format
+msgid "The information about what requires this package could not be obtained."
+msgstr "Nepodarilo sa získať informácie o požiadavkách tohto balíka."
+
+#: PkStrings.cpp:689
+#, kde-format
+msgid "The specified software origin could not be disabled."
+msgstr "Nepodarilo sa zakázať zadaný zdroj softvéru."
+
+#: PkStrings.cpp:691
+#, kde-format
+msgid ""
+"The download could not be done automatically and should be done manually.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Preberanie sa nepodarilo vykonať automaticky a malo by byť vykonané ručne.\n"
+"Viac informácií je dostupných v podrobnom hlásení."
+
+#: PkStrings.cpp:694
+#, kde-format
+msgid ""
+"One of the selected packages failed to configure correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Jeden z vybraných balíkov sa nepodarilo správne nastaviť.\n"
+"Viac informácií je dostupných v podrobnej správe."
+
+#: PkStrings.cpp:697
+#, kde-format
+msgid ""
+"One of the selected packages failed to build correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Jeden z vybraných balíkov sa nepodarilo správne zostaviť.\n"
+"Viac informácií je dostupných v podrobnej správe."
+
+#: PkStrings.cpp:700
+#, kde-format
+msgid ""
+"One of the selected packages failed to install correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Jeden z vybraných balíkov sa nepodarilo správne nainštalovať.\n"
+"Viac informácií je dostupných v podrobnej správe."
+
+#: PkStrings.cpp:703
+#, kde-format
+msgid ""
+"One of the selected packages failed to be removed correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Jeden z vybraných balíkov sa nepodarilo správne odstrániť.\n"
+"Viac informácií je dostupných v podrobnej správe."
+
+#: PkStrings.cpp:706
+#, kde-format
+msgid ""
+"A program is running that has to be closed before the update can proceed.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Pred pokračovaním aktualizácie je potrebné uzavrieť bežiaci program.\n"
+"Viac informácií je dostupných v podrobnej správe."
+
+#: PkStrings.cpp:709
+#, kde-format
+msgid "The package database was changed while the request was running."
+msgstr "Databáza balíkov sa zmenila počas vykonávania požiadavky."
+
+#: PkStrings.cpp:711
+#, kde-format
+msgid "The virtual provide type is not supported by this system."
+msgstr "Virtuálne poskytovanie nie je podporované systémom"
+
+#: PkStrings.cpp:713
+#, kde-format
+msgid "The install root is invalid. Please contact your administrator."
+msgstr "Inštalačný koreň je neplatný. Prosím, kontaktuje správcu systému."
+
+#: PkStrings.cpp:715
+#, kde-format
+msgid "The list of software could not be downloaded."
+msgstr "Nepodarilo sa prevziať zoznam softvéru."
+
+#: PkStrings.cpp:717
+#, kde-format
+msgid ""
+"The transaction has been cancelled and will be retried when the system is "
+"idle."
+msgstr "Transakcia bola prerušená a spustená bude až bude systém nečinný."
+
+#: PkStrings.cpp:719
+#, kde-format
+msgid "A previous package management transaction was interrupted."
+msgstr "Predošlá transakcia správy balíkov bola prerušená."
+
+#: PkStrings.cpp:721
+#, kde-format
+msgid "A package manager lock is required."
+msgstr "Vyžaduje sa zámok správcu balíkov."
+
+#: PkStrings.cpp:723
+#, kde-format
+msgid ""
+"Unknown error, please report a bug.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Neznáma chyba, prosím, nahláste chybu.\n"
+"Viac informácií je dostupných v podrobnej správe."
+
+#: PkStrings.cpp:734
+#, kde-format
+msgctxt "The group type"
+msgid "Accessibility"
+msgstr "Prístupnosť"
+
+#: PkStrings.cpp:736
+#, kde-format
+msgctxt "The group type"
+msgid "Accessories"
+msgstr "Príslušenstvo"
+
+#: PkStrings.cpp:738
+#, kde-format
+msgctxt "The group type"
+msgid "Education"
+msgstr "Vzdelanie"
+
+#: PkStrings.cpp:740
+#, kde-format
+msgctxt "The group type"
+msgid "Games"
+msgstr "Hry"
+
+#: PkStrings.cpp:742
+#, kde-format
+msgctxt "The group type"
+msgid "Graphics"
+msgstr "Grafika"
+
+#: PkStrings.cpp:744
+#, kde-format
+msgctxt "The group type"
+msgid "Internet"
+msgstr "Internet"
+
+#: PkStrings.cpp:746
+#, kde-format
+msgctxt "The group type"
+msgid "Office"
+msgstr "Kancelária"
+
+#: PkStrings.cpp:748
+#, kde-format
+msgctxt "The group type"
+msgid "Others"
+msgstr "Ostatné"
+
+#: PkStrings.cpp:750
+#, kde-format
+msgctxt "The group type"
+msgid "Development"
+msgstr "Vývoj"
+
+#: PkStrings.cpp:752
+#, kde-format
+msgctxt "The group type"
+msgid "Multimedia"
+msgstr "Multimédiá"
+
+#: PkStrings.cpp:754
+#, kde-format
+msgctxt "The group type"
+msgid "System"
+msgstr "Systém"
+
+#: PkStrings.cpp:756
+#, kde-format
+msgctxt "The group type"
+msgid "GNOME desktop"
+msgstr "Prostredie GNOME"
+
+#: PkStrings.cpp:758
+#, kde-format
+msgctxt "The group type"
+msgid "KDE desktop"
+msgstr "Prostredie KDE"
+
+#: PkStrings.cpp:760
+#, kde-format
+msgctxt "The group type"
+msgid "XFCE desktop"
+msgstr "Prostredie XFCE"
+
+#: PkStrings.cpp:762
+#, kde-format
+msgctxt "The group type"
+msgid "Other desktops"
+msgstr "Ostatné prostredia"
+
+#: PkStrings.cpp:764
+#, kde-format
+msgctxt "The group type"
+msgid "Publishing"
+msgstr "Publikovanie"
+
+#: PkStrings.cpp:766
+#, kde-format
+msgctxt "The group type"
+msgid "Servers"
+msgstr "Servery"
+
+#: PkStrings.cpp:768
+#, kde-format
+msgctxt "The group type"
+msgid "Fonts"
+msgstr "Písma"
+
+#: PkStrings.cpp:770
+#, kde-format
+msgctxt "The group type"
+msgid "Admin tools"
+msgstr "Administrácia"
+
+#: PkStrings.cpp:772
+#, kde-format
+msgctxt "The group type"
+msgid "Legacy"
+msgstr "Staršie aplikácie"
+
+#: PkStrings.cpp:774
+#, kde-format
+msgctxt "The group type"
+msgid "Localization"
+msgstr "Lokalizácia"
+
+#: PkStrings.cpp:776
+#, kde-format
+msgctxt "The group type"
+msgid "Virtualization"
+msgstr "Virtualizácia"
+
+#: PkStrings.cpp:778
+#, kde-format
+msgctxt "The group type"
+msgid "Security"
+msgstr "Bezpečnosť"
+
+#: PkStrings.cpp:780
+#, kde-format
+msgctxt "The group type"
+msgid "Power management"
+msgstr "Správa napájania"
+
+#: PkStrings.cpp:782
+#, kde-format
+msgctxt "The group type"
+msgid "Communication"
+msgstr "Komunikácia"
+
+#: PkStrings.cpp:784
+#, kde-format
+msgctxt "The group type"
+msgid "Network"
+msgstr "Sieť"
+
+#: PkStrings.cpp:786
+#, kde-format
+msgctxt "The group type"
+msgid "Maps"
+msgstr "Mapy"
+
+#: PkStrings.cpp:788
+#, kde-format
+msgctxt "The group type"
+msgid "Software sources"
+msgstr "Zdroje softvéru"
+
+#: PkStrings.cpp:790
+#, kde-format
+msgctxt "The group type"
+msgid "Science"
+msgstr "Veda"
+
+#: PkStrings.cpp:792
+#, kde-format
+msgctxt "The group type"
+msgid "Documentation"
+msgstr "Dokumentácia"
+
+#: PkStrings.cpp:794
+#, kde-format
+msgctxt "The group type"
+msgid "Electronics"
+msgstr "Elektronika"
+
+#: PkStrings.cpp:796
+#, kde-format
+msgctxt "The group type"
+msgid "Package collections"
+msgstr "Kolekcie balíkov"
+
+#: PkStrings.cpp:798
+#, kde-format
+msgctxt "The group type"
+msgid "Vendor"
+msgstr "Dodávateľ"
+
+#: PkStrings.cpp:800
+#, kde-format
+msgctxt "The group type"
+msgid "Newest packages"
+msgstr "Najnovšie balíky"
+
+#: PkStrings.cpp:802
+#, kde-format
+msgctxt "The group type"
+msgid "Unknown group"
+msgstr "Neznáma skupina"
+
+#: PkStrings.cpp:813
+#, kde-format
+msgctxt "The type of update"
+msgid "Trivial update"
+msgstr "Obyčajná aktualizácia"
+
+#: PkStrings.cpp:815
+#, kde-format
+msgctxt "The type of update"
+msgid "Normal update"
+msgstr "Normálna aktualizácia"
+
+#: PkStrings.cpp:817
+#, kde-format
+msgctxt "The type of update"
+msgid "Important update"
+msgstr "Dôležitá aktualizácia"
+
+#: PkStrings.cpp:819
+#, kde-format
+msgctxt "The type of update"
+msgid "Security update"
+msgstr "Bezpečnostná aktualizácia"
+
+#: PkStrings.cpp:821
+#, kde-format
+msgctxt "The type of update"
+msgid "Bug fix update"
+msgstr "Opravná aktualizácia"
+
+#: PkStrings.cpp:823
+#, kde-format
+msgctxt "The type of update"
+msgid "Enhancement update"
+msgstr "Vylepšujúca aktualizácia"
+
+#: PkStrings.cpp:825
+#, kde-format
+msgctxt "The type of update"
+msgid "Blocked update"
+msgstr "Blokovaná aktualizácia"
+
+#: PkStrings.cpp:828
+#, kde-format
+msgctxt "The type of update"
+msgid "Installed"
+msgstr "Nainštalované"
+
+#: PkStrings.cpp:831
+#, kde-format
+msgctxt "The type of update"
+msgid "Available"
+msgstr "Dostupné"
+
+#: PkStrings.cpp:833
+#, kde-format
+msgctxt "The type of update"
+msgid "Unknown update"
+msgstr "Neznáma aktualizácia"
+
+#: PkStrings.cpp:844
+#, kde-format
+msgid "No Updates Available"
+msgstr "Nie sú dostupné žiadne aktualizácie"
+
+#: PkStrings.cpp:847
+#, kde-format
+msgctxt "Some updates were selected on the view"
+msgid "1 Update Selected"
+msgid_plural "%1 Updates Selected"
+msgstr[0] "Vybraná 1 aktualizácia"
+msgstr[1] "Vybrané %1 aktualizácie"
+msgstr[2] "Vybraných %1 aktualizácií"
+
+#: PkStrings.cpp:851
+#, kde-format
+msgctxt "Some updates are being shown on the screen"
+msgid "1 Update"
+msgid_plural "%1 Updates"
+msgstr[0] "Aktualizovať"
+msgstr[1] "%1 aktualizácie"
+msgstr[2] "%1 aktualizácií"
+
+#: PkStrings.cpp:854
+#, kde-format
+msgctxt "Type of update, in the case it's just an update"
+msgid "%1, %2"
+msgstr "%1, %2"
+
+#: PkStrings.cpp:855
+#, kde-format
+msgctxt "Part of: %1 Updates, %1 Selected"
+msgid "%1 Update"
+msgid_plural "%1 Updates"
+msgstr[0] "Aktualizovať"
+msgstr[1] "%1 aktualizácie"
+msgstr[2] "%1 aktualizácií"
+
+#: PkStrings.cpp:856
+#, kde-format
+msgctxt "Part of: %1 Updates, %1 Selected"
+msgid "%1 Selected"
+msgid_plural "%1 Selected"
+msgstr[0] "%1 vybrané"
+msgstr[1] "%1 vybrané"
+msgstr[2] "%1 vybrané"
+
+#: PkStrings.cpp:860
+#, kde-format
+msgid "No Packages"
+msgstr "Žiadne balíky"
+
+#: PkStrings.cpp:862
+#, kde-format
+msgid "1 Package"
+msgid_plural "%1 Packages"
+msgstr[0] "Balík"
+msgstr[1] "%1 balíky"
+msgstr[2] "%1 balíkov"
+
+#: PkStrings.cpp:870
+#, kde-format
+msgid "No restart is necessary"
+msgstr "Nie je potrebný reštart"
+
+#: PkStrings.cpp:872
+#, kde-format
+msgid "You will be required to restart this application"
+msgstr "Bude potrebné reštartovať túto aplikáciu"
+
+#: PkStrings.cpp:874
+#, kde-format
+msgid "You will be required to log out and back in"
+msgstr "Bude potrebné odhlásiť sa a znovu prihlásiť"
+
+#: PkStrings.cpp:876
+#, kde-format
+msgid "A restart will be required"
+msgstr "Bude potrebný reštart"
+
+#: PkStrings.cpp:878
+#, kde-format
+msgid "You will be required to log out and back in due to a security update."
+msgstr ""
+"Bude potrebné odhlásiť sa a znovu prihlásiť kvôli bezpečnostnej aktualizácii."
+
+#: PkStrings.cpp:880
+#, kde-format
+msgid "A restart will be required due to a security update."
+msgstr "Bude potrebný reštart kvôli bezpečnostnej aktualizácii."
+
+#: PkStrings.cpp:893
+#, kde-format
+msgid "No restart is required"
+msgstr "Nie je potrebný reštart"
+
+#: PkStrings.cpp:895
+#, kde-format
+msgid "A restart is required"
+msgstr "Je potrebný reštart"
+
+#: PkStrings.cpp:897
+#, kde-format
+msgid "You need to log out and log back in"
+msgstr "Je potrebné sa odhlásiť a znovu prihlásiť"
+
+#: PkStrings.cpp:899
+#, kde-format
+msgid "You need to restart the application"
+msgstr "Je potrebné reštartovať aplikáciu"
+
+#: PkStrings.cpp:901
+#, kde-format
+msgid "You need to log out and log back in to remain secure."
+msgstr ""
+"Je potrebné sa odhlásiť a znovu prihlásiť kvôli zachovaniu bezpečnosti."
+
+#: PkStrings.cpp:903
+#, kde-format
+msgid "A restart is required to remain secure."
+msgstr "Je vyžadovaný reštart kvôli zachovaniu bezpečnosti."
+
+#: PkStrings.cpp:916
+#, kde-format
+msgid "Stable"
+msgstr "Stabilný"
+
+#: PkStrings.cpp:918
+#, kde-format
+msgid "Unstable"
+msgstr "Nestabilné"
+
+#: PkStrings.cpp:920
+#, kde-format
+msgid "Testing"
+msgstr "Testovanie"
+
+#: PkStrings.cpp:933
+#, kde-format
+msgid "Please insert the CD labeled '%1', and press continue."
+msgstr "Prosím, vložte CD označené '%1', a kliknite na pokračovať."
+
+#: PkStrings.cpp:935
+#, kde-format
+msgid "Please insert the DVD labeled '%1', and press continue."
+msgstr "Prosím, vložte DVD označené '%1', a kliknite na pokračovať."
+
+#: PkStrings.cpp:937
+#, kde-format
+msgid "Please insert the disc labeled '%1', and press continue."
+msgstr "Prosím, vložte disk označený '%1', a kliknite na pokračovať."
+
+#: PkStrings.cpp:939 PkStrings.cpp:942
+#, kde-format
+msgid "Please insert the medium labeled '%1', and press continue."
+msgstr "Prosím, vložte médium označené '%1', a kliknite na pokračovať."
+
+#: PkStrings.cpp:950
+#, kde-format
+msgid "You do not have the necessary privileges to perform this action."
+msgstr "Nemáte dostatočné práva na vykonanie tejto akcie."
+
+#: PkStrings.cpp:952
+#, kde-format
+msgid "Could not get a transaction id from packagekitd."
+msgstr "Nepodarilo sa získať transakčné id z packagekitd."
+
+#: PkStrings.cpp:954
+#, kde-format
+msgid "Cannot connect to this transaction id."
+msgstr "Nedá sa pripojiť k tomuto transakčnému id."
+
+#: PkStrings.cpp:956
+#, kde-format
+msgid "This action is unknown."
+msgstr "Neznáma akcia."
+
+#: PkStrings.cpp:958
+#, kde-format
+msgid "The packagekitd service could not be started."
+msgstr "Nepodarilo sa spustiť službu packagekitd."
+
+#: PkStrings.cpp:960
+#, kde-format
+msgid "The query is not valid."
+msgstr "Dotaz je neplatný."
+
+#: PkStrings.cpp:962
+#, kde-format
+msgid "The file is not valid."
+msgstr "Súbor je neplatný."
+
+#: PkStrings.cpp:964
+#, kde-format
+msgid "This function is not yet supported."
+msgstr "Táto funkcia ešte nie je podporovaná."
+
+#: PkStrings.cpp:966
+#, kde-format
+msgid "Could not talk to packagekitd."
+msgstr "Nepodarilo sa komunikovať s packagekitd."
+
+#: PkStrings.cpp:968
+#, kde-format
+msgid "Error talking to packagekitd."
+msgstr "Chyba komunikácie s packagekitd."
+
+#: PkStrings.cpp:971 PkStrings.cpp:974
+#, kde-format
+msgid "An unknown error happened."
+msgstr "Nastala neznáma chyba."
+
+#: PkStrings.cpp:988 pkupdates.cpp:170
+#, kde-format
+msgid "Your system is up to date"
+msgstr "Váš systém je aktuálny"
+
+#: PkStrings.cpp:990
+#, kde-format
+msgid "You have no updates"
+msgstr "Nemáte žiadne aktualizácie"
+
+#: PkStrings.cpp:992
+#, kde-format
+msgid "Last check for updates was more than a month ago"
+msgstr "Posledná kontrola aktualizácií prebehla pred viac ako mesiacom"
+
+#: PkStrings.cpp:1000
+#, kde-format
+msgid "Verified %1 ago"
+msgstr "Čas od poslednej kontroly: %1"
+
+#: PkStrings.cpp:1002
+#, kde-format
+msgid "It's strongly recommended that you check for new updates now"
+msgstr "Je dôrazne odporúčané skontrolovať aktualizácie teraz"
+
+#: pkupdates.cpp:54
+#, kde-format
+msgid "Idle"
+msgstr "Nečinný"
+
+#: pkupdates.cpp:140
+#, kde-format
+msgid "Checking updates"
+msgstr "Vyberám aktualizácie"
+
+#: pkupdates.cpp:142
+#, kde-format
+msgid "Getting updates"
+msgstr "Získavajú sa aktualizácie"
+
+#: pkupdates.cpp:144
+#, kde-format
+msgid "Installing updates"
+msgstr "Inštalujem aktualizácie"
+
+#: pkupdates.cpp:146
+#, kde-format
+msgid "Working"
+msgstr "Pracovný"
+
+#: pkupdates.cpp:149 pkupdates.cpp:439
+#, kde-format
+msgid "You have 1 new update"
+msgid_plural "You have %1 new updates"
+msgstr[0] "Máte 1 novú aktualizáciu"
+msgstr[1] "Máte %1 nové aktualizácie"
+msgstr[2] "Máte %1 nových aktualizácií"
+
+#: pkupdates.cpp:151
+#, kde-format
+msgid "1 security update"
+msgid_plural "%1 security updates"
+msgstr[0] "Bezpečnostná aktualizácia"
+msgstr[1] "%1 bezpečnostných aktualizácií"
+msgstr[2] "%1 bezpečnostných aktualizácií"
+
+#: pkupdates.cpp:153
+#, kde-format
+msgid "1 important update"
+msgid_plural "%1 important updates"
+msgstr[0] "1 dôležitá aktualizácia"
+msgstr[1] "%1 dôležité aktualizácie"
+msgstr[2] "%1 dôležitýách aktualizácií"
+
+#: pkupdates.cpp:158
+#, kde-format
+msgid " and "
+msgstr " a "
+
+#: pkupdates.cpp:158
+#, kde-format
+msgid "(including %1)"
+msgstr "(vrátane %1)"
+
+#: pkupdates.cpp:160
+#, kde-format
+msgid "Your system is offline"
+msgstr "Váš systém je offline"
+
+#: pkupdates.cpp:165
+#, kde-format
+msgid "Not checked for updates yet"
+msgstr "Aktualizácie ešte nekontrolované"
+
+#: pkupdates.cpp:168
+#, kde-format
+msgid "Checking for updates failed"
+msgstr "Kontrola aktualizácií zlyhala"
+
+#: pkupdates.cpp:241
+#, kde-format
+msgid "Last check: %1 ago"
+msgstr "Posledná aktualizácia: pred %1"
+
+#: pkupdates.cpp:243
+#, kde-format
+msgid "Last check: never"
+msgstr "Posledná aktualizácia: nikdy"
+
+#: pkupdates.cpp:385
+#, kde-format
+msgctxt "1 installation status, 2 pkg name, 3 percentage"
+msgid "%1 %2 (%3%)"
+msgstr "%1 %2 (%3%)"
+
+#: pkupdates.cpp:388
+#, kde-format
+msgctxt "1 installation status, 2 pkg name"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: pkupdates.cpp:474
+#, kde-format
+msgid "Updates Installed"
+msgstr "Aktualizácie nainštalované"
+
+#: pkupdates.cpp:475
+#, kde-format
+msgid "Successfully updated %1 package"
+msgid_plural "Successfully updated %1 packages"
+msgstr[0] "Úspešne nainštalovaný %1 balík"
+msgstr[1] "Úspešne nainštalované %1 balíky"
+msgstr[2] "Úspešne nainštalovaných %1 balíkov"
+
+#: pkupdates.cpp:539
+#, kde-format
+msgid "Update Error"
+msgstr "Chyba aktualizácie"
+
+#: pkupdates.cpp:593
+#, kde-format
+msgid "Restart is required"
+msgstr "Je potrebný reštart"
+
+#: pkupdates.cpp:594
+#, kde-format
+msgid ""
+"The computer will have to be restarted after the update for the changes to "
+"take effect."
+msgstr ""
+"Aby sa po aktualizácii zmeny prejavili, budete musieť reštartovať počítač."
+
+#: pkupdates.cpp:603
+#, kde-format
+msgid "Session restart is required"
+msgstr "Je potrebný reštart sedenia"
+
+#: pkupdates.cpp:604
+#, kde-format
+msgid ""
+"You will need to log out and back in after the update for the changes to "
+"take effect."
+msgstr ""
+"Aby sa po aktualizácii zmeny prejavili, budete sa musieť odhlásiť a znovu "
+"prihlásiť."
+
+#~ msgctxt "@action:button"
+#~ msgid "Restart"
+#~ msgstr "Reštartovať"
+
+#~ msgctxt "@action:button"
+#~ msgid "Logout"
+#~ msgstr "Odhlásiť sa"
+
+#~ msgid "Software Updates Available"
+#~ msgstr "Sú dostupné aktualizácie systému"
+
+#~ msgid "A mirror is possibly broken"
+#~ msgstr "Zrkadlo je pravdepodobne poškodené"
+
+#~ msgid "The connection was refused"
+#~ msgstr "Pripojenie bolo odmietnuté"
+
+#~ msgid "The parameter was invalid"
+#~ msgstr "Parameter bol neplatný"
+
+#~ msgid "The priority was invalid"
+#~ msgstr "Priorita bola neplatná"
+
+#~ msgid "Backend warning"
+#~ msgstr "Varovanie backendu"
+
+#~ msgid "Daemon warning"
+#~ msgstr "Varovanie démona"
+
+#~ msgid "The package list cache is being rebuilt"
+#~ msgstr "Zostavuje sa vyrovnávacia pamäť zoznamu balíčkov"
+
+#~ msgid "An untrusted package was installed"
+#~ msgstr "Bol nainštalovaný nedôveryhodný balík"
+
+#~ msgid "A newer package exists"
+#~ msgstr "Existuje novší balíček"
+
+#~ msgid "Could not find package"
+#~ msgstr "Nepodarilo sa nájsť balíček"
+
+#~ msgid "Configuration files were changed"
+#~ msgstr "Konfiguračné súbory boli zmenené"
+
+#~ msgid "Package is already installed"
+#~ msgstr "uBalík je už nainštalovaný"
+
+#~ msgid "Automatic cleanup is being ignored"
+#~ msgstr "Ignoruje sa automatické čistenie"
+
+#~ msgid "Software source download failed"
+#~ msgstr "Stiahnutie zdroja softvéru zlyhalo"
+
+#~ msgid "This software source is for developers only"
+#~ msgstr "Tento zdroj softvéru je iba pre vývojárov"
+
+#~ msgid "Other updates have been held back"
+#~ msgstr "Ostatné aktualizácie boli pozdržané"

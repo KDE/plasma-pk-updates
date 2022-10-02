@@ -1,0 +1,2289 @@
+# Fuminobu Takeyama <ftake@geeko.jp>, 2018.
+# Fumiaki Okushi <fumiaki.okushi@gmail.com>, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: pkupdates\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-02-06 00:50+0000\n"
+"PO-Revision-Date: 2018-02-04 18:54-0800\n"
+"Last-Translator: Fumiaki Okushi <fumiaki.okushi@gmail.com>\n"
+"Language-Team: Japanese <kde-jp@kde.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Generator: Lokalize 2.0\n"
+
+#: PkStrings.cpp:37
+#, kde-format
+msgctxt "This is when the transaction status is not known"
+msgid "Unknown state"
+msgstr "未知の状態"
+
+#: PkStrings.cpp:40
+#, kde-format
+msgctxt "transaction state, the daemon is in the process of starting"
+msgid "Waiting for service to start"
+msgstr "サービス開始を待機中"
+
+#: PkStrings.cpp:43
+#, kde-format
+msgctxt "transaction state, the transaction is waiting for another to complete"
+msgid "Waiting for other tasks"
+msgstr "他のタスクを待機中"
+
+#: PkStrings.cpp:46
+#, kde-format
+msgctxt "transaction state, just started"
+msgid "Running task"
+msgstr "タスクを実行中"
+
+#: PkStrings.cpp:49
+#, kde-format
+msgctxt "transaction state, is querying data"
+msgid "Querying"
+msgstr "クエリ中"
+
+#: PkStrings.cpp:52
+#, kde-format
+msgctxt "transaction state, getting data from a server"
+msgid "Getting information"
+msgstr "情報を取得中"
+
+#: PkStrings.cpp:55
+#, kde-format
+msgctxt "transaction state, removing packages"
+msgid "Removing packages"
+msgstr "パッケージを削除中"
+
+#: PkStrings.cpp:59
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading at %1/s, %2 remaining"
+msgstr ""
+
+#: PkStrings.cpp:64
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading at %1/s"
+msgstr ""
+
+#: PkStrings.cpp:68
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading, %1 remaining"
+msgstr ""
+
+#: PkStrings.cpp:72
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading"
+msgstr "ダウンロード中"
+
+#: PkStrings.cpp:76
+#, kde-format
+msgctxt "transaction state, installing packages"
+msgid "Installing packages"
+msgstr "パッケージをインストール中"
+
+#: PkStrings.cpp:79
+#, kde-format
+msgctxt "transaction state, refreshing internal lists"
+msgid "Refreshing software list"
+msgstr "ソフトウェアリストを更新中"
+
+#: PkStrings.cpp:82
+#, kde-format
+msgctxt "transaction state, installing updates"
+msgid "Updating packages"
+msgstr "パッケージを更新中"
+
+#: PkStrings.cpp:85
+#, kde-format
+msgctxt "transaction state, removing old packages, and cleaning config files"
+msgid "Cleaning up packages"
+msgstr "パッケージをクリーニング中"
+
+#: PkStrings.cpp:88
+#, kde-format
+msgctxt "transaction state, obsoleting old packages"
+msgid "Obsoleting packages"
+msgstr "パッケージを廃止中"
+
+#: PkStrings.cpp:91
+#, kde-format
+msgctxt "transaction state, checking the transaction before we do it"
+msgid "Resolving dependencies"
+msgstr "依存性を解決中"
+
+#: PkStrings.cpp:94
+#, kde-format
+msgctxt ""
+"transaction state, checking if we have all the security keys for the "
+"operation"
+msgid "Checking signatures"
+msgstr "署名をチェック中"
+
+#: PkStrings.cpp:97
+#, kde-format
+msgctxt "transaction state, when we're doing a test transaction"
+msgid "Testing changes"
+msgstr "変更をテスト中"
+
+#: PkStrings.cpp:100
+#, kde-format
+msgctxt "transaction state, when we're writing to the system package database"
+msgid "Committing changes"
+msgstr "変更を適用中"
+
+#: PkStrings.cpp:103
+#, kde-format
+msgctxt "transaction state, requesting data from a server"
+msgid "Requesting data"
+msgstr "データを要求中"
+
+#: PkStrings.cpp:106
+#, kde-format
+msgctxt "transaction state, all done!"
+msgid "Finished"
+msgstr "完了"
+
+#: PkStrings.cpp:109
+#, kde-format
+msgctxt "transaction state, in the process of cancelling"
+msgid "Cancelling"
+msgstr "キャンセル中"
+
+#: PkStrings.cpp:112
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading repository information"
+msgstr "リポジトリ情報をダウンロード中"
+
+#: PkStrings.cpp:115
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading list of packages"
+msgstr "パッケージリストをダウンロード中"
+
+#: PkStrings.cpp:118
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading file lists"
+msgstr "ファイルリストをダウンロード中"
+
+#: PkStrings.cpp:121
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading lists of changes"
+msgstr "変更リストをダウンロード中"
+
+#: PkStrings.cpp:124
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading groups"
+msgstr "グループをダウンロード中"
+
+#: PkStrings.cpp:127
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading update information"
+msgstr "更新情報をダウンロード中"
+
+#: PkStrings.cpp:130
+#, kde-format
+msgctxt "transaction state, repackaging delta files"
+msgid "Repackaging files"
+msgstr "ファイルを再パッケージ中"
+
+#: PkStrings.cpp:133
+#, kde-format
+msgctxt "transaction state, loading databases"
+msgid "Loading cache"
+msgstr "キャッシュを読み込み中"
+
+#: PkStrings.cpp:136
+#, kde-format
+msgctxt "transaction state, scanning for running processes"
+msgid "Scanning installed applications"
+msgstr "インストール済みのアプリケーションをスキャン中"
+
+#: PkStrings.cpp:139
+#, kde-format
+msgctxt ""
+"transaction state, generating a list of packages installed on the system"
+msgid "Generating package lists"
+msgstr "パッケージリストを生成中"
+
+#: PkStrings.cpp:142
+#, kde-format
+msgctxt "transaction state, when we're waiting for the native tools to exit"
+msgid "Waiting for package manager lock"
+msgstr "パッケージマネージャのロック待ち中"
+
+#: PkStrings.cpp:145
+#, kde-format
+msgctxt "waiting for user to type in a password"
+msgid "Waiting for authentication"
+msgstr "認証待ち中"
+
+#: PkStrings.cpp:148
+#, kde-format
+msgctxt "we are updating the list of processes"
+msgid "Updating the list of running applications"
+msgstr "実行されているアプリケーションリストの更新中"
+
+#: PkStrings.cpp:151
+#, kde-format
+msgctxt "we are checking executable files in use"
+msgid "Checking for applications currently in use"
+msgstr "現在使用中のアプリケーションをチェック中"
+
+#: PkStrings.cpp:154
+#, kde-format
+msgctxt "we are checking for libraries in use"
+msgid "Checking for libraries currently in use"
+msgstr "現在使用中のライブラリをチェック中"
+
+#: PkStrings.cpp:157
+#, kde-format
+msgctxt "we are copying package files to prepare to install"
+msgid "Copying files"
+msgstr "ファイルをコピー中"
+
+#: PkStrings.cpp:167
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Downloaded"
+msgstr "ダウンロード済み"
+
+#: PkStrings.cpp:169
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Updated"
+msgstr "更新済"
+
+#: PkStrings.cpp:171
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Installed"
+msgstr "インストール済み"
+
+#: PkStrings.cpp:173
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Removed"
+msgstr "削除済み"
+
+#: PkStrings.cpp:175
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Cleaned Up"
+msgstr "クリーンアップ済み"
+
+#: PkStrings.cpp:177
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Obsoleted"
+msgstr "廃止済み"
+
+#: PkStrings.cpp:188
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Unknown role type"
+msgstr "未知のロールタイプ"
+
+#: PkStrings.cpp:190
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting dependencies"
+msgstr "依存を取得中"
+
+#: PkStrings.cpp:192
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting update detail"
+msgstr "更新の詳細を取得中"
+
+#: PkStrings.cpp:195
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting details"
+msgstr "詳細を取得中"
+
+#: PkStrings.cpp:197
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting requires"
+msgstr "依存先を取得中"
+
+#: PkStrings.cpp:199
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting updates"
+msgstr "更新を取得中"
+
+#: PkStrings.cpp:201
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching details"
+msgstr "詳細を検索中"
+
+#: PkStrings.cpp:203
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching for file"
+msgstr "ファイルを検索中"
+
+#: PkStrings.cpp:205
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching groups"
+msgstr "グループを検索中"
+
+#: PkStrings.cpp:207
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching by package name"
+msgstr "パッケージ名で検索中"
+
+#: PkStrings.cpp:210
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating removal"
+msgstr "削除をシミュレート中"
+
+#: PkStrings.cpp:212 PkStrings.cpp:219 PkStrings.cpp:260
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading packages"
+msgstr "パッケージをダウンロード中"
+
+#: PkStrings.cpp:214
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Removing"
+msgstr "削除中"
+
+#: PkStrings.cpp:217
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating install"
+msgstr "インストールをシミュレート中"
+
+#: PkStrings.cpp:221
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing"
+msgstr "インストール中"
+
+#: PkStrings.cpp:224
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating file install"
+msgstr "ファイルのインストールをシミュレート中"
+
+#: PkStrings.cpp:226
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading required packages"
+msgstr "依存するパッケージをダウンロード中"
+
+#: PkStrings.cpp:228
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing file"
+msgstr "ファイルをインストール中"
+
+#: PkStrings.cpp:230
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Refreshing package cache"
+msgstr "パッケージキャッシュを更新中"
+
+#: PkStrings.cpp:233
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating update"
+msgstr "更新をシミュレート中"
+
+#: PkStrings.cpp:235
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading updates"
+msgstr "更新をダウンロード中"
+
+#: PkStrings.cpp:237
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Updating packages"
+msgstr "パッケージを更新中"
+
+#: PkStrings.cpp:239
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Canceling"
+msgstr "キャンセル中"
+
+#: PkStrings.cpp:241
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting list of repositories"
+msgstr "リポジトリのリストを取得中"
+
+#: PkStrings.cpp:243
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Enabling repository"
+msgstr "リポジトリを有効化中"
+
+#: PkStrings.cpp:245
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Setting repository data"
+msgstr "リポジトリのデータを設定中"
+
+#: PkStrings.cpp:247
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Resolving"
+msgstr "解決中"
+
+#: PkStrings.cpp:250
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting file list"
+msgstr "ファイルリストを取得中"
+
+#: PkStrings.cpp:252
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting what provides"
+msgstr "提供パッケージを取得中"
+
+#: PkStrings.cpp:254
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing signature"
+msgstr "署名をインストール中"
+
+#: PkStrings.cpp:256
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting package lists"
+msgstr "パッケージリストを取得中"
+
+#: PkStrings.cpp:258
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Accepting EULA"
+msgstr "EULA を承諾中"
+
+#: PkStrings.cpp:262
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting distribution upgrade information"
+msgstr "ディストリビューションのアップグレード情報を取得中"
+
+#: PkStrings.cpp:264
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting categories"
+msgstr "カテゴリを取得中"
+
+#: PkStrings.cpp:266
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting old transactions"
+msgstr "古い処理を取得中"
+
+#: PkStrings.cpp:268
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Repairing system"
+msgstr "システム"
+
+#: PkStrings.cpp:270
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Removing repository"
+msgstr "リポジトリを削除中"
+
+#: PkStrings.cpp:280
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Unknown role type"
+msgstr "未知のロールタイプ"
+
+#: PkStrings.cpp:282
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got dependencies"
+msgstr "依存性を取得済"
+
+#: PkStrings.cpp:284
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got update detail"
+msgstr "更新の詳細を取得済"
+
+#: PkStrings.cpp:287
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got details"
+msgstr "詳細を取得済"
+
+#: PkStrings.cpp:289
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got requires"
+msgstr "要求先を取得済"
+
+#: PkStrings.cpp:291
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got updates"
+msgstr "更新を取得済"
+
+#: PkStrings.cpp:293
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for package details"
+msgstr "パッケージの詳細を検索済"
+
+#: PkStrings.cpp:295
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for file"
+msgstr "ファイルを検索済"
+
+#: PkStrings.cpp:297
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched groups"
+msgstr "グループを検索済"
+
+#: PkStrings.cpp:299
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for package name"
+msgstr "パッケージ名を検索済"
+
+#: PkStrings.cpp:301
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Removed packages"
+msgstr "パッケージを削除済"
+
+#: PkStrings.cpp:303
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed packages"
+msgstr "パッケージをインストール済"
+
+#: PkStrings.cpp:305
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed local files"
+msgstr "ローカルファイルをインストール済"
+
+#: PkStrings.cpp:307
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Refreshed package cache"
+msgstr "パッケージキャッシュを更新済"
+
+#: PkStrings.cpp:309
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Updated packages"
+msgstr "パッケージを更新済"
+
+#: PkStrings.cpp:311
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Canceled"
+msgstr "キャンセル済"
+
+#: PkStrings.cpp:313
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got list of repositories"
+msgstr "リポジトリのリストを取得済"
+
+#: PkStrings.cpp:315
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Enabled repository"
+msgstr "リポジトリを有効化済"
+
+#: PkStrings.cpp:317
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Set repository data"
+msgstr "リポジトリデータを設定済"
+
+#: PkStrings.cpp:319
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Resolved"
+msgstr "解決済"
+
+#: PkStrings.cpp:322
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got file list"
+msgstr "ファイルリストを取得済"
+
+#: PkStrings.cpp:324
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got what provides"
+msgstr "提供パッケージを取得済"
+
+#: PkStrings.cpp:326
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed signature"
+msgstr "署名をインストール済"
+
+#: PkStrings.cpp:328
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got package lists"
+msgstr "パッケージリストを取得済"
+
+#: PkStrings.cpp:330
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Accepted EULA"
+msgstr "EULA を承諾済み"
+
+#: PkStrings.cpp:332
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Downloaded packages"
+msgstr "パッケージをダウンロード済"
+
+#: PkStrings.cpp:334
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got distribution upgrades"
+msgstr "ディストリビューションアップグレードを取得済"
+
+#: PkStrings.cpp:336
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got categories"
+msgstr "カテゴリを取得済"
+
+#: PkStrings.cpp:338
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got old transactions"
+msgstr "古い処理を取得済"
+
+#: PkStrings.cpp:340
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Repaired system"
+msgstr "システムを修復済み"
+
+#: PkStrings.cpp:342
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Removed repository"
+msgstr "リポジトリを削除済み"
+
+#: PkStrings.cpp:352
+#, kde-format
+msgid "Downloading"
+msgstr "ダウンロード中"
+
+#: PkStrings.cpp:354
+#, kde-format
+msgid "Updating"
+msgstr "更新中"
+
+#: PkStrings.cpp:356
+#, kde-format
+msgid "Installing"
+msgstr "インストール中"
+
+#: PkStrings.cpp:358
+#, kde-format
+msgid "Removing"
+msgstr "削除中"
+
+#: PkStrings.cpp:360
+#, kde-format
+msgid "Cleaning up"
+msgstr "クリーニング中"
+
+#: PkStrings.cpp:362
+#, kde-format
+msgid "Obsoleting"
+msgstr "廃止中"
+
+#: PkStrings.cpp:364
+#, kde-format
+msgid "Reinstalling"
+msgstr "再インストール中"
+
+#: PkStrings.cpp:366
+#, kde-format
+msgid "Preparing"
+msgstr "修復中"
+
+#: PkStrings.cpp:368
+#, kde-format
+msgid "Decompressing"
+msgstr "展開中"
+
+#: PkStrings.cpp:379
+#, kde-format
+msgid "Downloaded"
+msgstr "ダウンロード済み"
+
+#: PkStrings.cpp:381
+#, kde-format
+msgid "Updated"
+msgstr "更新済み"
+
+#: PkStrings.cpp:383
+#, kde-format
+msgid "Installed"
+msgstr "インストール済み"
+
+#: PkStrings.cpp:385
+#, kde-format
+msgid "Removed"
+msgstr "削除済み"
+
+#: PkStrings.cpp:387
+#, kde-format
+msgid "Cleaned up"
+msgstr "クリーンアップ済み"
+
+#: PkStrings.cpp:389
+#, kde-format
+msgid "Obsoleted"
+msgstr "廃止済み"
+
+#: PkStrings.cpp:391
+#, kde-format
+msgid "Reinstalled"
+msgstr "再インストール済み"
+
+#: PkStrings.cpp:393
+#, kde-format
+msgid "Prepared"
+msgstr "準備済み"
+
+#: PkStrings.cpp:395
+#, kde-format
+msgid "Decompressed"
+msgstr "展開済み"
+
+#: PkStrings.cpp:406
+#, kde-format
+msgid "No network connection available"
+msgstr "利用可能なネットワーク接続がありません"
+
+#: PkStrings.cpp:408
+#, kde-format
+msgid "No package cache is available"
+msgstr "利用可能なパッケージキャッシュがありません。"
+
+#: PkStrings.cpp:410
+#, kde-format
+msgid "Out of memory"
+msgstr "メモリ不足"
+
+#: PkStrings.cpp:412
+#, kde-format
+msgid "Failed to create a thread"
+msgstr "スレッド作成に失敗しました。"
+
+#: PkStrings.cpp:414
+#, kde-format
+msgid "Not supported by this backend"
+msgstr "このバックエンドではサポートされていません"
+
+#: PkStrings.cpp:416
+#, kde-format
+msgid "An internal system error has occurred"
+msgstr "システム内部エラーが発生しました"
+
+#: PkStrings.cpp:418
+#, kde-format
+msgid "A security trust relationship is not present"
+msgstr "セキュリティ信頼関係が結ばれていません"
+
+#: PkStrings.cpp:420
+#, kde-format
+msgid "The package is not installed"
+msgstr "パッケージはインストールされていません"
+
+#: PkStrings.cpp:422
+#, kde-format
+msgid "The package was not found"
+msgstr "パッケージが見つかりませんでした"
+
+#: PkStrings.cpp:424
+#, kde-format
+msgid "The package is already installed"
+msgstr "パッケージは既にインストールされています"
+
+#: PkStrings.cpp:426
+#, kde-format
+msgid "The package download failed"
+msgstr "パッケージのダウンロードに失敗しました"
+
+#: PkStrings.cpp:428
+#, kde-format
+msgid "The group was not found"
+msgstr "グループが見つかりませんでした"
+
+#: PkStrings.cpp:430
+#, kde-format
+msgid "The group list was invalid"
+msgstr "グループリストが無効です"
+
+#: PkStrings.cpp:432
+#, kde-format
+msgid "Dependency resolution failed"
+msgstr "依存性の解決に失敗しました"
+
+#: PkStrings.cpp:434
+#, kde-format
+msgid "Search filter was invalid"
+msgstr "検索フィルタが無効です"
+
+#: PkStrings.cpp:436
+#, kde-format
+msgid "The package identifier was not well formed"
+msgstr "パッケージ識別子が正しく形成されていません"
+
+#: PkStrings.cpp:438
+#, kde-format
+msgid "Transaction error"
+msgstr "処理エラー"
+
+#: PkStrings.cpp:440
+#, kde-format
+msgid "Repository name was not found"
+msgstr "リポジトリ名が見つかりませんでした"
+
+#: PkStrings.cpp:442
+#, kde-format
+msgid "Could not remove a protected system package"
+msgstr "保護されたシステムパッケージを削除できませんでした"
+
+#: PkStrings.cpp:444
+#, kde-format
+msgid "The task was canceled"
+msgstr "タスクがキャンセルされました"
+
+#: PkStrings.cpp:446
+#, kde-format
+msgid "The task was forcibly canceled"
+msgstr "タスクが強制的にキャンセルされました"
+
+#: PkStrings.cpp:448
+#, kde-format
+msgid "Reading the config file failed"
+msgstr "設定ファイル読み込みに失敗しました"
+
+#: PkStrings.cpp:450
+#, kde-format
+msgid "The task cannot be cancelled"
+msgstr "タスクがキャンセルできませんでした"
+
+#: PkStrings.cpp:452
+#, kde-format
+msgid "Source packages cannot be installed"
+msgstr "ソースパッケージがインストールできませんでした"
+
+#: PkStrings.cpp:454
+#, kde-format
+msgid "The license agreement failed"
+msgstr "ライセンスの同意に失敗しました"
+
+#: PkStrings.cpp:456
+#, kde-format
+msgid "Local file conflict between packages"
+msgstr "ローカルファイルとパッケージが競合しています"
+
+#: PkStrings.cpp:458
+#, kde-format
+msgid "Packages are not compatible"
+msgstr "パッケージに互換性がありません"
+
+#: PkStrings.cpp:460
+#, kde-format
+msgid "Problem connecting to a software origin"
+msgstr "ソフトウェアの配布元の接続に問題があります"
+
+#: PkStrings.cpp:462
+#, kde-format
+msgid "Failed to initialize"
+msgstr "初期化に失敗しました"
+
+#: PkStrings.cpp:464
+#, kde-format
+msgid "Failed to finalize"
+msgstr "終了処理に失敗しました"
+
+#: PkStrings.cpp:466
+#, kde-format
+msgid "Cannot get lock"
+msgstr "ロックできませんでした"
+
+#: PkStrings.cpp:468
+#, kde-format
+msgid "No packages to update"
+msgstr "更新するパッケージはありません"
+
+#: PkStrings.cpp:470
+#, kde-format
+msgid "Cannot write repository configuration"
+msgstr "リポジトリ設定を書き込めません"
+
+#: PkStrings.cpp:472
+#, kde-format
+msgid "Local install failed"
+msgstr "ローカルインストールに失敗しました"
+
+#: PkStrings.cpp:474
+#, kde-format
+msgid "Bad GPG signature"
+msgstr "不正な GPG 署名です"
+
+#: PkStrings.cpp:476
+#, kde-format
+msgid "Missing GPG signature"
+msgstr "GPG 署名がありません"
+
+#: PkStrings.cpp:478
+#, kde-format
+msgid "Repository configuration invalid"
+msgstr "リポジトリ設定が無効です"
+
+#: PkStrings.cpp:480
+#, kde-format
+msgid "Invalid package file"
+msgstr "無効なパッケージファイルです"
+
+#: PkStrings.cpp:482
+#, kde-format
+msgid "Package install blocked"
+msgstr "パッケージのインストールがブロックされました"
+
+#: PkStrings.cpp:484
+#, kde-format
+msgid "Package is corrupt"
+msgstr "パッケージが壊れています"
+
+#: PkStrings.cpp:486
+#, kde-format
+msgid "All packages are already installed"
+msgstr "すべてのパッケージは既にインストールされています"
+
+#: PkStrings.cpp:488
+#, kde-format
+msgid "The specified file could not be found"
+msgstr "指定されたファイルが見つかりませんでした"
+
+#: PkStrings.cpp:490
+#, kde-format
+msgid "No more mirrors are available"
+msgstr "これ以上のミラーは利用可能ではありません"
+
+#: PkStrings.cpp:492
+#, kde-format
+msgid "No distribution upgrade data is available"
+msgstr "利用可能なディストリビューションアップグレードのデータがありません"
+
+#: PkStrings.cpp:494
+#, kde-format
+msgid "Package is incompatible with this system"
+msgstr "パッケージがシステムと互換性がありません"
+
+#: PkStrings.cpp:496
+#, kde-format
+msgid "No space is left on the disk"
+msgstr "ディスクに空き容量がありません"
+
+#: PkStrings.cpp:498
+#, kde-format
+msgid "A media change is required"
+msgstr "メディアの変更が必要です"
+
+#: PkStrings.cpp:500
+#, kde-format
+msgid "Authorization failed"
+msgstr "権限付与に失敗しました"
+
+#: PkStrings.cpp:502
+#, kde-format
+msgid "Update not found"
+msgstr "更新が見つかりませんでした"
+
+#: PkStrings.cpp:504
+#, kde-format
+msgid "Cannot install from untrusted origin"
+msgstr "信頼されていない配布元からインストールできません"
+
+#: PkStrings.cpp:506
+#, kde-format
+msgid "Cannot update from untrusted origin"
+msgstr "信頼されていない配布元から更新できません"
+
+#: PkStrings.cpp:508
+#, kde-format
+msgid "Cannot get the file list"
+msgstr "ファイルリストを取得できません"
+
+#: PkStrings.cpp:510
+#, kde-format
+msgid "Cannot get package requires"
+msgstr "必要なパッケージを取得できません"
+
+#: PkStrings.cpp:512
+#, kde-format
+msgid "Cannot disable origin"
+msgstr "配布元を無効にできません"
+
+#: PkStrings.cpp:514
+#, kde-format
+msgid "The download failed"
+msgstr "ダウンロードに失敗しました"
+
+#: PkStrings.cpp:516
+#, kde-format
+msgid "Package failed to configure"
+msgstr "パッケージの設定に失敗しました"
+
+#: PkStrings.cpp:518
+#, kde-format
+msgid "Package failed to build"
+msgstr "パッケージのビルドに失敗しました"
+
+#: PkStrings.cpp:520
+#, kde-format
+msgid "Package failed to install"
+msgstr "パッケージのインストールに失敗しました"
+
+#: PkStrings.cpp:522
+#, kde-format
+msgid "Package failed to be removed"
+msgstr "パッケージの削除に失敗しました"
+
+#: PkStrings.cpp:524
+#, kde-format
+msgid "Update failed due to running process"
+msgstr "実行中のプロセスにより更新に失敗しました"
+
+#: PkStrings.cpp:526
+#, kde-format
+msgid "The package database was changed"
+msgstr "パッケージデータベースが変更されました"
+
+#: PkStrings.cpp:528
+#, kde-format
+msgid "Virtual provide type is not supported"
+msgstr ""
+
+#: PkStrings.cpp:530
+#, kde-format
+msgid "Install root is invalid"
+msgstr ""
+
+#: PkStrings.cpp:532
+#, kde-format
+msgid "Cannot fetch install sources"
+msgstr "インストールソースを取得できません"
+
+#: PkStrings.cpp:534
+#, kde-format
+msgid "Rescheduled due to priority"
+msgstr "優先度によりリスケジュールされました"
+
+#: PkStrings.cpp:536
+#, kde-format
+msgid "Unfinished transaction"
+msgstr "未完了のトランザクション"
+
+#: PkStrings.cpp:538
+#, kde-format
+msgid "Lock required"
+msgstr "ロックが必要です"
+
+#: PkStrings.cpp:540
+#, kde-format
+msgid "Unknown error"
+msgstr "未知のエラー"
+
+#: PkStrings.cpp:550
+#, kde-format
+msgid ""
+"There is no network connection available.\n"
+"Please check your connection settings and try again"
+msgstr ""
+"利用可能なネットワーク接続がありません。\n"
+"接続設定をチェックし再試行してください"
+
+#: PkStrings.cpp:553
+#, kde-format
+msgid ""
+"The package list needs to be rebuilt.\n"
+"This should have been done by the backend automatically."
+msgstr ""
+"パッケージリストの再構築が必要です。\n"
+"これはバックエンドによって自動的に実行されます。"
+
+#: PkStrings.cpp:556
+#, kde-format
+msgid ""
+"The service that is responsible for handling user requests is out of "
+"memory.\n"
+"Please close some programs or restart your computer."
+msgstr ""
+"ユーザ要求を担当するサービスがメモリ不足です。\n"
+"プログラムを閉じるかコンピュータを再起動してください。"
+
+#: PkStrings.cpp:559
+#, kde-format
+msgid "A thread could not be created to service the user request."
+msgstr "ユーザ要求を提供するためのスレッドを作成できませんでした。"
+
+#: PkStrings.cpp:561
+#, kde-format
+msgid ""
+"The action is not supported by this backend.\n"
+"Please report a bug as this should not have happened."
+msgstr ""
+"アクションがバックエンドによってサポートされていません。\n"
+"再発防止のためにバグをレポートしてください。"
+
+#: PkStrings.cpp:564
+#, kde-format
+msgid ""
+"A problem that we were not expecting has occurred.\n"
+"Please report this bug with the error description."
+msgstr ""
+"想定していない問題が発生しました。\n"
+"エラーの記述とともにバグをレポートしてください。"
+
+#: PkStrings.cpp:567
+#, kde-format
+msgid ""
+"A security trust relationship could not be made with the software origin.\n"
+"Please check your software signature settings."
+msgstr ""
+"ソフトウェア配布元とセキュリティ信頼関係を結べませんでした。\n"
+"ソフトウェア署名設定をチェックしてください。"
+
+#: PkStrings.cpp:570
+#, kde-format
+msgid ""
+"The package that is trying to be removed or updated is not already installed."
+msgstr "削除もしくは更新しようとしたパッケージはインストールされていません。"
+
+#: PkStrings.cpp:572
+#, kde-format
+msgid ""
+"The package that is being modified was not found on your system or in any "
+"software origin."
+msgstr ""
+"更新されたパッケージがあなたのシステムもしくはどのソフトウェア配布元において"
+"も見つかりませんでした。"
+
+#: PkStrings.cpp:574
+#, kde-format
+msgid "The package that is trying to be installed is already installed."
+msgstr "インストールしようとしたパッケージは既にインストールされています."
+
+#: PkStrings.cpp:576
+#, kde-format
+msgid ""
+"The package download failed.\n"
+"Please check your network connectivity."
+msgstr ""
+"パッケージのダウンロードに失敗しました。\n"
+"ネットワーク接続をチェックしてください。"
+
+#: PkStrings.cpp:579
+#, kde-format
+msgid ""
+"The group type was not found.\n"
+"Please check your group list and try again."
+msgstr ""
+"グループタイプが見つかりませんでした。\n"
+"グループリストをチェックして再試行してください。"
+
+#: PkStrings.cpp:582
+#, kde-format
+msgid ""
+"The group list could not be loaded.\n"
+"Refreshing your cache may help, although this is normally a software origin "
+"error."
+msgstr ""
+"グループリストを読み込めませんでした。\n"
+"たいていこれはソフトウェア配布元のエラーですが、キャッシュ更新が役に立つ可能"
+"性があります。"
+
+#: PkStrings.cpp:586
+#, kde-format
+msgid ""
+"A package dependency could not be found.\n"
+"More information is available in the detailed report."
+msgstr ""
+"パッケージ依存性が見つかりませんでした。\n"
+"詳細な情報は詳細レポートにて利用可能です。"
+
+#: PkStrings.cpp:589
+#, kde-format
+msgid "The search filter was not correctly formed."
+msgstr "検索フィルタが正しくセットされていません。"
+
+#: PkStrings.cpp:591
+#, kde-format
+msgid ""
+"The package identifier was not well formed when sent to the system daemon.\n"
+"This normally indicates an internal bug and should be reported."
+msgstr ""
+"システムデーモンに送信する際のパッケージ識別子が正しくセットされていませ"
+"ん。\n"
+"これは通常内部バグであり、バグレポートがすべきものです。"
+
+#: PkStrings.cpp:594
+#, kde-format
+msgid ""
+"An error occurred while running the transaction.\n"
+"More information is available in the detailed report."
+msgstr ""
+"処理中にエラーが発生しました。\n"
+"詳細な情報は詳細レポートにて利用可能です。"
+
+#: PkStrings.cpp:597
+#, kde-format
+msgid ""
+"The remote software origin name was not found.\n"
+"You may need to enable an item in Software Origins."
+msgstr ""
+"リモートのソフトウェア配布元名が見つかりませんでした。\n"
+"ソフトウェア配布元のアイテムを有功にする必要があります。"
+
+#: PkStrings.cpp:600
+#, kde-format
+msgid "Removing a protected system package is not allowed."
+msgstr "保護されたシステムパッケージの削除は許可されていません。"
+
+#: PkStrings.cpp:602
+#, kde-format
+msgid "The task was canceled successfully and no packages were changed."
+msgstr "タスクは無事キャンセルされ、パッケージの変更は行われませんでした。"
+
+#: PkStrings.cpp:604
+#, kde-format
+msgid ""
+"The task was canceled successfully and no packages were changed.\n"
+"The backend did not exit cleanly."
+msgstr ""
+"タスクは無事キャンセルされ、パッケージの変更は行われませんでした。\n"
+"バックエンドはクリーンに終了しませんでした。"
+
+#: PkStrings.cpp:607
+#, kde-format
+msgid ""
+"The native package configuration file could not be opened.\n"
+"Please make sure your system's configuration is valid."
+msgstr ""
+"ネイティブパッケージ設定ファイルが開けませんでした。\n"
+"システム設定が有効か確認してください。"
+
+#: PkStrings.cpp:610
+#, kde-format
+msgid "The task is not safe to be cancelled at this time."
+msgstr "現時点ではタスクのキャンセルは安全ではありません。"
+
+#: PkStrings.cpp:612
+#, kde-format
+msgid ""
+"Source packages are not normally installed this way.\n"
+"Check the extension of the file you are trying to install."
+msgstr ""
+"ソースパッケージがこのように正しくインストールできませんでした。\n"
+"インストールしようとしているファイルの拡張子をチェックしてください。"
+
+#: PkStrings.cpp:615
+#, kde-format
+msgid ""
+"The license agreement was not agreed to.\n"
+"To use this software you have to accept the license."
+msgstr ""
+"ライセンス同意にて同意が行われませんでした。\n"
+"このソフトウェアの使用にはライセンスを受け入れる必要があります。"
+
+#: PkStrings.cpp:618
+#, kde-format
+msgid ""
+"Two packages provide the same file.\n"
+"This is usually due to mixing packages for different software origins."
+msgstr ""
+"二つのパッケージが同一のファイルを提供しています。\n"
+"これは通常異なるソフトウェア配布元からのパッケージの混在によります。"
+
+#: PkStrings.cpp:621
+#, kde-format
+msgid ""
+"Multiple packages exist that are not compatible with each other.\n"
+"This is usually due to mixing packages from different software origins."
+msgstr ""
+"互いに互換性のない複数のパッケージが存在します。\n"
+"これは通常異なるソフトウェア配布元からのパッケージの混在によります。"
+
+#: PkStrings.cpp:624
+#, kde-format
+msgid ""
+"There was a (possibly temporary) problem connecting to a software origins.\n"
+"Please check the detailed error for further details."
+msgstr ""
+"ソフトウェアの配布元への接続に (おそらく一時的な) 問題があります。\n"
+"より詳しくは詳細なエラーを確認してください。"
+
+#: PkStrings.cpp:627
+#, kde-format
+msgid ""
+"Failed to initialize packaging backend.\n"
+"This may occur if other packaging tools are being used simultaneously."
+msgstr ""
+"パッケージングバックエンドの初期化に失敗しました。\n"
+"これは他のパッケージングツールが同時に動いているときに発生することがありま"
+"す。"
+
+#: PkStrings.cpp:630
+#, kde-format
+msgid ""
+"Failed to close down the backend instance.\n"
+"This error can normally be ignored."
+msgstr ""
+"バックエンドインスタンスの終了に失敗しました。\n"
+"このエラーは多くの場合、無視できます。"
+
+#: PkStrings.cpp:633
+#, kde-format
+msgid ""
+"Cannot get the exclusive lock on the packaging backend.\n"
+"Please close any other legacy packaging tools that may be open."
+msgstr ""
+"パッケージングバックエンドの排他ロックを取得できません。\n"
+"開いている可能性のある他の旧来のパッケージングツールを閉じてください。"
+
+#: PkStrings.cpp:636
+#, kde-format
+msgid "None of the selected packages could be updated."
+msgstr "選択されたパッケージはいずれも更新されませんでした。"
+
+#: PkStrings.cpp:638
+#, kde-format
+msgid "The repository configuration could not be modified."
+msgstr "リポジトリ設定を更新できませんでした。"
+
+#: PkStrings.cpp:640
+#, kde-format
+msgid ""
+"Installing the local file failed.\n"
+"More information is available in the detailed report."
+msgstr ""
+"ローカルファイルのインストールに失敗しました。\n"
+"詳細な情報は詳細レポートにて利用可能です。"
+
+#: PkStrings.cpp:643
+#, kde-format
+msgid "The package signature could not be verified."
+msgstr "パッケージの署名を検証できませんでした。"
+
+#: PkStrings.cpp:645
+#, kde-format
+msgid ""
+"The package signature was missing and this package is untrusted.\n"
+"This package was not signed with a GPG key when created."
+msgstr ""
+"パッケージの署名が不足しているかこのパッケージは信頼できません。\n"
+"このパッケージは作成時に GPG キーで署名されませんでした。"
+
+#: PkStrings.cpp:648
+#, kde-format
+msgid "Repository configuration was invalid and could not be read."
+msgstr "リポジトリの設定が無効のため、読み込むことができませんでした。"
+
+#: PkStrings.cpp:650
+#, kde-format
+msgid ""
+"The package you are attempting to install is not valid.\n"
+"The package file could be corrupt, or not a proper package."
+msgstr ""
+"あなたがインストールしようとしているパッケージは無効です。\n"
+"パッケージファイルが壊れているか適切なパッケージではない可能性があります。"
+
+#: PkStrings.cpp:653
+#, kde-format
+msgid ""
+"Installation of this package was prevented by your packaging system's "
+"configuration."
+msgstr ""
+"このパッケージのインストールはパッケージングシステムの設定により中断されまし"
+"た。"
+
+#: PkStrings.cpp:655
+#, kde-format
+msgid ""
+"The package that was downloaded is corrupt and needs to be downloaded again."
+msgstr ""
+"ダウンロードしたパッケージが壊れているため、もう一度ダウンロードする必要があ"
+"ります。"
+
+#: PkStrings.cpp:657
+#, kde-format
+msgid ""
+"All of the packages selected for install are already installed on the system."
+msgstr ""
+"インストールのために選択したパッケージはすべてシステムにインストール済みで"
+"す。"
+
+#: PkStrings.cpp:659
+#, kde-format
+msgid ""
+"The specified file could not be found on the system.\n"
+"Check that the file still exists and has not been deleted."
+msgstr ""
+"指定されたファイルがシステムで見つかりませんでした。\n"
+"そのファイルがまだ存在し削除されていないことを確認してください。"
+
+#: PkStrings.cpp:662
+#, kde-format
+msgid ""
+"Required data could not be found on any of the configured software origins.\n"
+"There were no more download mirrors that could be tried."
+msgstr ""
+"要求されたデータが設定済みのソフトウェア配布元のいずれでも見つけることができ"
+"ませんでした。\n"
+"試行できるダウンロードミラーがありません。"
+
+#: PkStrings.cpp:665
+#, kde-format
+msgid ""
+"Required upgrade data could not be found in any of the configured software "
+"origins.\n"
+"The list of distribution upgrades will be unavailable."
+msgstr ""
+"要求されたアップグレードデータが設定済みのソフトウェア配布元のいずれにも存在"
+"しません。\n"
+"ディストリビューションアップグレードのリストは利用できません。"
+
+#: PkStrings.cpp:668
+#, kde-format
+msgid ""
+"The package that is trying to be installed is incompatible with this system."
+msgstr "インストールしようとしたパッケージはこのシステムと互換性がありません。"
+
+#: PkStrings.cpp:670
+#, kde-format
+msgid ""
+"There is insufficient space on the device.\n"
+"Free some space on the system disk to perform this operation."
+msgstr ""
+"このデバイスには必要最低限の空き容量がありません。\n"
+"この操作を実行するにはシステムディスク上の領域を開放してください。"
+
+#: PkStrings.cpp:673
+#, kde-format
+msgid "Additional media is required to complete the transaction."
+msgstr "処理を完了するには追加のメディアが必要です."
+
+#: PkStrings.cpp:675
+#, kde-format
+msgid ""
+"You have failed to provide correct authentication.\n"
+"Please check any passwords or account settings."
+msgstr ""
+"正しい認証情報の送信に失敗しました。\n"
+"パスワードまたはアカウント設定を確認してください。"
+
+#: PkStrings.cpp:678
+#, kde-format
+msgid ""
+"The specified update could not be found.\n"
+"It could have already been installed or no longer available on the remote "
+"server."
+msgstr ""
+"指定された更新が見つかりませんでした。\n"
+"既にインストール済みかリモートサーバから入手できません。"
+
+#: PkStrings.cpp:681
+#, kde-format
+msgid "The package could not be installed from untrusted origin."
+msgstr "パッケージを信頼されていない配布元からインストールできませんでした"
+
+#: PkStrings.cpp:683
+#, kde-format
+msgid "The package could not be updated from untrusted origin."
+msgstr "パッケージを信頼されていない配布元から更新できませんでした"
+
+#: PkStrings.cpp:685
+#, kde-format
+msgid "The file list is not available for this package."
+msgstr "このパッケージのファイルリストは利用できません。"
+
+#: PkStrings.cpp:687
+#, kde-format
+msgid "The information about what requires this package could not be obtained."
+msgstr "このパッケージを要求するパッケージの情報を取得できませんでした。"
+
+#: PkStrings.cpp:689
+#, kde-format
+msgid "The specified software origin could not be disabled."
+msgstr "指定したソフトウェア配布元を無効にできませんでした。"
+
+#: PkStrings.cpp:691
+#, kde-format
+msgid ""
+"The download could not be done automatically and should be done manually.\n"
+"More information is available in the detailed report."
+msgstr ""
+"ダウンロードが自動的に行われなかったため、手動で行う必要があります。\n"
+"詳細な情報は詳細レポートにて利用可能です。"
+
+#: PkStrings.cpp:694
+#, kde-format
+msgid ""
+"One of the selected packages failed to configure correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"選択したパッケージの一つを正常に設定できませんでした。\n"
+"詳細な情報は詳細レポートにて利用可能です。"
+
+#: PkStrings.cpp:697
+#, kde-format
+msgid ""
+"One of the selected packages failed to build correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"選択したパッケージの一つを正常にビルドできませんでした。\n"
+"詳細な情報は詳細レポートにて利用可能です。"
+
+#: PkStrings.cpp:700
+#, kde-format
+msgid ""
+"One of the selected packages failed to install correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"選択したパッケージの一つを正しくインストールできませんでした。\n"
+"詳細な情報は詳細レポートにて利用可能です。"
+
+#: PkStrings.cpp:703
+#, kde-format
+msgid ""
+"One of the selected packages failed to be removed correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"選択したパッケージの一つを正常に削除できませんでした。\n"
+"詳細な情報は詳細レポートにて利用可能です。"
+
+#: PkStrings.cpp:706
+#, kde-format
+msgid ""
+"A program is running that has to be closed before the update can proceed.\n"
+"More information is available in the detailed report."
+msgstr ""
+"実行しているプログラムは更新を続行する前に閉じる必要があります。\n"
+"詳細な情報は詳細レポートにて利用可能です。"
+
+#: PkStrings.cpp:709
+#, kde-format
+msgid "The package database was changed while the request was running."
+msgstr "要求の実行中にパッケージデータベースが変更されました。"
+
+#: PkStrings.cpp:711
+#, kde-format
+msgid "The virtual provide type is not supported by this system."
+msgstr ""
+
+#: PkStrings.cpp:713
+#, kde-format
+msgid "The install root is invalid. Please contact your administrator."
+msgstr "インストールルートが無効です。管理者に連絡してください。"
+
+#: PkStrings.cpp:715
+#, kde-format
+msgid "The list of software could not be downloaded."
+msgstr "ソフトウェアのリストをダウンロードできませんでした。"
+
+#: PkStrings.cpp:717
+#, kde-format
+msgid ""
+"The transaction has been cancelled and will be retried when the system is "
+"idle."
+msgstr ""
+"トランザクションはキャンセルされました。システムが待機中のときに再開します。"
+
+#: PkStrings.cpp:719
+#, kde-format
+msgid "A previous package management transaction was interrupted."
+msgstr "直前のパッケージ管理トランザクションが割り込まれました。"
+
+#: PkStrings.cpp:721
+#, kde-format
+msgid "A package manager lock is required."
+msgstr "パッケージマネージャのロックが必要です。"
+
+#: PkStrings.cpp:723
+#, kde-format
+msgid ""
+"Unknown error, please report a bug.\n"
+"More information is available in the detailed report."
+msgstr ""
+"未知のエラー。バグを報告してください。\n"
+"詳細な情報は詳細レポートにて利用可能です。"
+
+#: PkStrings.cpp:734
+#, kde-format
+msgctxt "The group type"
+msgid "Accessibility"
+msgstr "アクセシビリティ"
+
+#: PkStrings.cpp:736
+#, kde-format
+msgctxt "The group type"
+msgid "Accessories"
+msgstr "アクセサリ"
+
+#: PkStrings.cpp:738
+#, kde-format
+msgctxt "The group type"
+msgid "Education"
+msgstr "教育"
+
+#: PkStrings.cpp:740
+#, kde-format
+msgctxt "The group type"
+msgid "Games"
+msgstr "ゲーム"
+
+#: PkStrings.cpp:742
+#, kde-format
+msgctxt "The group type"
+msgid "Graphics"
+msgstr "グラフィック"
+
+#: PkStrings.cpp:744
+#, kde-format
+msgctxt "The group type"
+msgid "Internet"
+msgstr "インターネット"
+
+#: PkStrings.cpp:746
+#, kde-format
+msgctxt "The group type"
+msgid "Office"
+msgstr "オフィス"
+
+#: PkStrings.cpp:748
+#, kde-format
+msgctxt "The group type"
+msgid "Others"
+msgstr "その他"
+
+#: PkStrings.cpp:750
+#, kde-format
+msgctxt "The group type"
+msgid "Development"
+msgstr "開発"
+
+#: PkStrings.cpp:752
+#, kde-format
+msgctxt "The group type"
+msgid "Multimedia"
+msgstr "マルチメディア"
+
+#: PkStrings.cpp:754
+#, kde-format
+msgctxt "The group type"
+msgid "System"
+msgstr "システム"
+
+#: PkStrings.cpp:756
+#, kde-format
+msgctxt "The group type"
+msgid "GNOME desktop"
+msgstr "GNOME デスクトップ"
+
+#: PkStrings.cpp:758
+#, kde-format
+msgctxt "The group type"
+msgid "KDE desktop"
+msgstr "KDE デスクトップ"
+
+#: PkStrings.cpp:760
+#, kde-format
+msgctxt "The group type"
+msgid "XFCE desktop"
+msgstr "XFCE デスクトップ"
+
+#: PkStrings.cpp:762
+#, kde-format
+msgctxt "The group type"
+msgid "Other desktops"
+msgstr "その他デスクトップ"
+
+#: PkStrings.cpp:764
+#, kde-format
+msgctxt "The group type"
+msgid "Publishing"
+msgstr "出版"
+
+#: PkStrings.cpp:766
+#, kde-format
+msgctxt "The group type"
+msgid "Servers"
+msgstr "サーバ"
+
+#: PkStrings.cpp:768
+#, kde-format
+msgctxt "The group type"
+msgid "Fonts"
+msgstr "フォント"
+
+#: PkStrings.cpp:770
+#, kde-format
+msgctxt "The group type"
+msgid "Admin tools"
+msgstr "管理ツール"
+
+#: PkStrings.cpp:772
+#, kde-format
+msgctxt "The group type"
+msgid "Legacy"
+msgstr "レガシー"
+
+#: PkStrings.cpp:774
+#, kde-format
+msgctxt "The group type"
+msgid "Localization"
+msgstr "ローカル化"
+
+#: PkStrings.cpp:776
+#, kde-format
+msgctxt "The group type"
+msgid "Virtualization"
+msgstr "仮想化"
+
+#: PkStrings.cpp:778
+#, kde-format
+msgctxt "The group type"
+msgid "Security"
+msgstr "セキュリティ"
+
+#: PkStrings.cpp:780
+#, kde-format
+msgctxt "The group type"
+msgid "Power management"
+msgstr "電源管理"
+
+#: PkStrings.cpp:782
+#, kde-format
+msgctxt "The group type"
+msgid "Communication"
+msgstr "コミュニケーション"
+
+#: PkStrings.cpp:784
+#, kde-format
+msgctxt "The group type"
+msgid "Network"
+msgstr "ネットワーク"
+
+#: PkStrings.cpp:786
+#, kde-format
+msgctxt "The group type"
+msgid "Maps"
+msgstr "マップ"
+
+#: PkStrings.cpp:788
+#, kde-format
+msgctxt "The group type"
+msgid "Software sources"
+msgstr "ソフトウェアソース"
+
+#: PkStrings.cpp:790
+#, kde-format
+msgctxt "The group type"
+msgid "Science"
+msgstr "科学"
+
+#: PkStrings.cpp:792
+#, kde-format
+msgctxt "The group type"
+msgid "Documentation"
+msgstr "ドキュメンテーション"
+
+#: PkStrings.cpp:794
+#, kde-format
+msgctxt "The group type"
+msgid "Electronics"
+msgstr "エレクトロニクス"
+
+#: PkStrings.cpp:796
+#, kde-format
+msgctxt "The group type"
+msgid "Package collections"
+msgstr "パッケージコレクション"
+
+#: PkStrings.cpp:798
+#, kde-format
+msgctxt "The group type"
+msgid "Vendor"
+msgstr "ベンダー"
+
+#: PkStrings.cpp:800
+#, kde-format
+msgctxt "The group type"
+msgid "Newest packages"
+msgstr "最新パッケージ"
+
+#: PkStrings.cpp:802
+#, kde-format
+msgctxt "The group type"
+msgid "Unknown group"
+msgstr "未知のグループ"
+
+#: PkStrings.cpp:813
+#, kde-format
+msgctxt "The type of update"
+msgid "Trivial update"
+msgstr "影響の小さい更新"
+
+#: PkStrings.cpp:815
+#, kde-format
+msgctxt "The type of update"
+msgid "Normal update"
+msgstr "通常の更新"
+
+#: PkStrings.cpp:817
+#, kde-format
+msgctxt "The type of update"
+msgid "Important update"
+msgstr "重要な更新"
+
+#: PkStrings.cpp:819
+#, kde-format
+msgctxt "The type of update"
+msgid "Security update"
+msgstr "セキュリティ更新"
+
+#: PkStrings.cpp:821
+#, kde-format
+msgctxt "The type of update"
+msgid "Bug fix update"
+msgstr "バグフィックス更新"
+
+#: PkStrings.cpp:823
+#, kde-format
+msgctxt "The type of update"
+msgid "Enhancement update"
+msgstr "機能拡張更新"
+
+#: PkStrings.cpp:825
+#, kde-format
+msgctxt "The type of update"
+msgid "Blocked update"
+msgstr "ブロックされた更新"
+
+#: PkStrings.cpp:828
+#, kde-format
+msgctxt "The type of update"
+msgid "Installed"
+msgstr "インストール済み"
+
+#: PkStrings.cpp:831
+#, kde-format
+msgctxt "The type of update"
+msgid "Available"
+msgstr "利用可能"
+
+#: PkStrings.cpp:833
+#, kde-format
+msgctxt "The type of update"
+msgid "Unknown update"
+msgstr "未知の更新"
+
+#: PkStrings.cpp:844
+#, kde-format
+msgid "No Updates Available"
+msgstr "更新なし"
+
+#: PkStrings.cpp:847
+#, kde-format
+msgctxt "Some updates were selected on the view"
+msgid "1 Update Selected"
+msgid_plural "%1 Updates Selected"
+msgstr[0] "1 の更新選択済み"
+msgstr[1] "%1 の更新選択済み"
+
+#: PkStrings.cpp:851
+#, kde-format
+msgctxt "Some updates are being shown on the screen"
+msgid "1 Update"
+msgid_plural "%1 Updates"
+msgstr[0] "1 の更新"
+msgstr[1] "%1 の更新"
+
+#: PkStrings.cpp:854
+#, kde-format
+msgctxt "Type of update, in the case it's just an update"
+msgid "%1, %2"
+msgstr "%1, %2"
+
+#: PkStrings.cpp:855
+#, kde-format
+msgctxt "Part of: %1 Updates, %1 Selected"
+msgid "%1 Update"
+msgid_plural "%1 Updates"
+msgstr[0] "%1 の更新"
+msgstr[1] "%1 の更新"
+
+#: PkStrings.cpp:856
+#, kde-format
+msgctxt "Part of: %1 Updates, %1 Selected"
+msgid "%1 Selected"
+msgid_plural "%1 Selected"
+msgstr[0] "%1 選択済み"
+msgstr[1] "%1 選択済み"
+
+#: PkStrings.cpp:860
+#, kde-format
+msgid "No Packages"
+msgstr "パッケージなし"
+
+#: PkStrings.cpp:862
+#, kde-format
+msgid "1 Package"
+msgid_plural "%1 Packages"
+msgstr[0] "1 のパッケージ"
+msgstr[1] "%1 のパッケージ"
+
+#: PkStrings.cpp:870
+#, kde-format
+msgid "No restart is necessary"
+msgstr "再起動は必要ありません"
+
+#: PkStrings.cpp:872
+#, kde-format
+msgid "You will be required to restart this application"
+msgstr "このアプリケーションの再起動が必要です"
+
+#: PkStrings.cpp:874
+#, kde-format
+msgid "You will be required to log out and back in"
+msgstr "ログアウトとログインが必要です"
+
+#: PkStrings.cpp:876
+#, kde-format
+msgid "A restart will be required"
+msgstr "再起動が必要です"
+
+#: PkStrings.cpp:878
+#, kde-format
+msgid "You will be required to log out and back in due to a security update."
+msgstr "セキュリティ更新のため、ログアウトとログインが必要とされます。"
+
+#: PkStrings.cpp:880
+#, kde-format
+msgid "A restart will be required due to a security update."
+msgstr "セキュリティ更新のため、再起動が必要とされます。"
+
+#: PkStrings.cpp:893
+#, kde-format
+msgid "No restart is required"
+msgstr "再起動は必要ありません"
+
+#: PkStrings.cpp:895
+#, kde-format
+msgid "A restart is required"
+msgstr "再起動が必要です"
+
+#: PkStrings.cpp:897
+#, kde-format
+msgid "You need to log out and log back in"
+msgstr "ログアウトとログインが必要です"
+
+#: PkStrings.cpp:899
+#, kde-format
+msgid "You need to restart the application"
+msgstr "アプリケーションの再起動が必要です"
+
+#: PkStrings.cpp:901
+#, kde-format
+msgid "You need to log out and log back in to remain secure."
+msgstr "安全のためにログアウトとログインが必要です。"
+
+#: PkStrings.cpp:903
+#, kde-format
+msgid "A restart is required to remain secure."
+msgstr "安全のために再起動が必要です。"
+
+#: PkStrings.cpp:916
+#, kde-format
+msgid "Stable"
+msgstr "安定"
+
+#: PkStrings.cpp:918
+#, kde-format
+msgid "Unstable"
+msgstr "不安定"
+
+#: PkStrings.cpp:920
+#, kde-format
+msgid "Testing"
+msgstr "テスト中"
+
+#: PkStrings.cpp:933
+#, kde-format
+msgid "Please insert the CD labeled '%1', and press continue."
+msgstr "'%1' というラベルの CD を挿入し、続行を押してください。"
+
+#: PkStrings.cpp:935
+#, kde-format
+msgid "Please insert the DVD labeled '%1', and press continue."
+msgstr "'%1' というラベルの DVD を挿入し、続行を押してください。"
+
+#: PkStrings.cpp:937
+#, kde-format
+msgid "Please insert the disc labeled '%1', and press continue."
+msgstr "'%1' というラベルのディスクを挿入し、続行を押してください。"
+
+#: PkStrings.cpp:939 PkStrings.cpp:942
+#, kde-format
+msgid "Please insert the medium labeled '%1', and press continue."
+msgstr "'%1' というラベルのメディアを挿入し、続行を押してください。"
+
+#: PkStrings.cpp:950
+#, kde-format
+msgid "You do not have the necessary privileges to perform this action."
+msgstr "このアクションを実行するのに必要な権限がありません。"
+
+#: PkStrings.cpp:952
+#, kde-format
+msgid "Could not get a transaction id from packagekitd."
+msgstr "packagekitd から処理 id の取得できませんでした。"
+
+#: PkStrings.cpp:954
+#, kde-format
+msgid "Cannot connect to this transaction id."
+msgstr "この処理 id に接続できませんでした。"
+
+#: PkStrings.cpp:956
+#, kde-format
+msgid "This action is unknown."
+msgstr "このアクションは未知です。"
+
+#: PkStrings.cpp:958
+#, kde-format
+msgid "The packagekitd service could not be started."
+msgstr "packagekitd サービスを開始できませんでした。"
+
+#: PkStrings.cpp:960
+#, kde-format
+msgid "The query is not valid."
+msgstr "クエリが無効です。"
+
+#: PkStrings.cpp:962
+#, kde-format
+msgid "The file is not valid."
+msgstr "ファイルが無効です。"
+
+#: PkStrings.cpp:964
+#, kde-format
+msgid "This function is not yet supported."
+msgstr "この機能はまだサポートされていません。"
+
+#: PkStrings.cpp:966
+#, kde-format
+msgid "Could not talk to packagekitd."
+msgstr "packagekitd と通信できませんでした。"
+
+#: PkStrings.cpp:968
+#, kde-format
+msgid "Error talking to packagekitd."
+msgstr "packagekitd との通信エラー"
+
+#: PkStrings.cpp:971 PkStrings.cpp:974
+#, kde-format
+msgid "An unknown error happened."
+msgstr "未知のエラーが発生しました。"
+
+#: PkStrings.cpp:988 pkupdates.cpp:170
+#, kde-format
+msgid "Your system is up to date"
+msgstr "システムは最新"
+
+#: PkStrings.cpp:990
+#, kde-format
+msgid "You have no updates"
+msgstr "更新はありません"
+
+#: PkStrings.cpp:992
+#, kde-format
+msgid "Last check for updates was more than a month ago"
+msgstr "更新の最終確認は1カ月以上前"
+
+#: PkStrings.cpp:1000
+#, kde-format
+msgid "Verified %1 ago"
+msgstr "%1 前に検証済み"
+
+#: PkStrings.cpp:1002
+#, kde-format
+msgid "It's strongly recommended that you check for new updates now"
+msgstr "新しい更新を今すぐ確認することが強く推奨されます"
+
+#: pkupdates.cpp:54
+#, kde-format
+msgid "Idle"
+msgstr "待機中"
+
+#: pkupdates.cpp:140
+#, kde-format
+msgid "Checking updates"
+msgstr "更新を確認中"
+
+#: pkupdates.cpp:142
+#, kde-format
+msgid "Getting updates"
+msgstr "更新を取得中"
+
+#: pkupdates.cpp:144
+#, kde-format
+msgid "Installing updates"
+msgstr "更新をインストール中"
+
+#: pkupdates.cpp:146
+#, kde-format
+msgid "Working"
+msgstr ""
+
+#: pkupdates.cpp:149 pkupdates.cpp:439
+#, kde-format
+msgid "You have 1 new update"
+msgid_plural "You have %1 new updates"
+msgstr[0] "1 新しい更新"
+msgstr[1] "%1 新しい更新"
+
+#: pkupdates.cpp:151
+#, kde-format
+msgid "1 security update"
+msgid_plural "%1 security updates"
+msgstr[0] "1 セキュリティ更新"
+msgstr[1] "%1 セキュリティ更新"
+
+#: pkupdates.cpp:153
+#, kde-format
+msgid "1 important update"
+msgid_plural "%1 important updates"
+msgstr[0] "1 の重要な更新"
+msgstr[1] "%1 の重要な更新"
+
+#: pkupdates.cpp:158
+#, kde-format
+msgid " and "
+msgstr ""
+
+#: pkupdates.cpp:158
+#, kde-format
+msgid "(including %1)"
+msgstr "(%1 を含む)"
+
+#: pkupdates.cpp:160
+#, kde-format
+msgid "Your system is offline"
+msgstr "システムはオフライン"
+
+#: pkupdates.cpp:165
+#, fuzzy, kde-format
+#| msgid "Checking for updates failed"
+msgid "Not checked for updates yet"
+msgstr "更新の確認に失敗"
+
+#: pkupdates.cpp:168
+#, kde-format
+msgid "Checking for updates failed"
+msgstr "更新の確認に失敗"
+
+#: pkupdates.cpp:241
+#, kde-format
+msgid "Last check: %1 ago"
+msgstr "最終チェック: %1 前"
+
+#: pkupdates.cpp:243
+#, kde-format
+msgid "Last check: never"
+msgstr "最終チェック: なし"
+
+#: pkupdates.cpp:385
+#, kde-format
+msgctxt "1 installation status, 2 pkg name, 3 percentage"
+msgid "%1 %2 (%3%)"
+msgstr "%1 %2 (%3%)"
+
+#: pkupdates.cpp:388
+#, kde-format
+msgctxt "1 installation status, 2 pkg name"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: pkupdates.cpp:474
+#, kde-format
+msgid "Updates Installed"
+msgstr ""
+
+#: pkupdates.cpp:475
+#, kde-format
+msgid "Successfully updated %1 package"
+msgid_plural "Successfully updated %1 packages"
+msgstr[0] "%1 のパッケージを正常に更新"
+msgstr[1] "%1 のパッケージを正常に更新"
+
+#: pkupdates.cpp:539
+#, kde-format
+msgid "Update Error"
+msgstr "更新エラー"
+
+#: pkupdates.cpp:593
+#, kde-format
+msgid "Restart is required"
+msgstr "再起動が必要"
+
+#: pkupdates.cpp:594
+#, kde-format
+msgid ""
+"The computer will have to be restarted after the update for the changes to "
+"take effect."
+msgstr "変更を反映するには、更新後にコンピュータを再起動する必要があります。"
+
+#: pkupdates.cpp:603
+#, kde-format
+msgid "Session restart is required"
+msgstr "セッションの再起動が必要"
+
+#: pkupdates.cpp:604
+#, kde-format
+msgid ""
+"You will need to log out and back in after the update for the changes to "
+"take effect."
+msgstr ""
+"変更を反映するには、更新後にログアウトし再度ログインする必要があります。"

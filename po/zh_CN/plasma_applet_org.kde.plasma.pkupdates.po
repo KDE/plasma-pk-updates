@@ -1,0 +1,145 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeorg\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-07 00:46+0000\n"
+"PO-Revision-Date: 2022-09-20 01:56\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: kdeorg\n"
+"X-Crowdin-Project-ID: 269464\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /kf5-trunk/messages/plasma-pk-updates/plasma_applet_org.kde."
+"plasma.pkupdates.pot\n"
+"X-Crowdin-File-ID: 6042\n"
+
+#: contents/config/config.qml:26
+#, kde-format
+msgid "General"
+msgstr "常规"
+
+#: contents/ui/ConfigGeneral.qml:42
+#, kde-format
+msgctxt "@label check interval for updates"
+msgid "Check interval:"
+msgstr "检查间隔："
+
+#: contents/ui/ConfigGeneral.qml:44
+#, kde-format
+msgid "Daily"
+msgstr "每天"
+
+#: contents/ui/ConfigGeneral.qml:50
+#, kde-format
+msgid "Weekly"
+msgstr "每周"
+
+#: contents/ui/ConfigGeneral.qml:56
+#, kde-format
+msgid "Monthly"
+msgstr "每月"
+
+#: contents/ui/ConfigGeneral.qml:61
+#, kde-format
+msgctxt "@label part of a sentence"
+msgid "Check for updates when:"
+msgstr "检查更新条件："
+
+#: contents/ui/ConfigGeneral.qml:62
+#, kde-format
+msgctxt "@option:check part of a sentence: Check for updates when"
+msgid "On a mobile connection"
+msgstr "使用移动网络时"
+
+#: contents/ui/ConfigGeneral.qml:67
+#, kde-format
+msgctxt "@option:check part of a sentence: Check for updates when"
+msgid "On battery"
+msgstr "使用电池时"
+
+#: contents/ui/Full.qml:67
+#, kde-format
+msgid "License Agreement for %1"
+msgstr "%1 的许可证"
+
+#: contents/ui/Full.qml:74
+#, kde-format
+msgid "License agreement required for %1 (from %2):"
+msgstr "%1 (来自 %2 ) 需要的许可证："
+
+#: contents/ui/Full.qml:101
+#, kde-format
+msgid "Do you accept?"
+msgstr "您接受吗？"
+
+#: contents/ui/Full.qml:145
+#, kde-format
+msgid "Network is offline"
+msgstr "网络处于离线状态"
+
+#: contents/ui/Full.qml:156
+#, kde-format
+msgid "Updates are automatically checked %1."
+msgstr "%1自动检查更新。"
+
+#: contents/ui/Full.qml:242
+#, kde-format
+msgid "No updates available"
+msgstr "没有可用更新"
+
+#: contents/ui/Full.qml:266
+#, kde-format
+msgid "Select all packages"
+msgstr "选择所有软件包"
+
+#: contents/ui/Full.qml:279
+#, kde-format
+msgid "Install Updates"
+msgstr "安装更新"
+
+#: contents/ui/Full.qml:283
+#, kde-format
+msgid "Performs the software update"
+msgstr "执行软件更新"
+
+#: contents/ui/Full.qml:341
+#, kde-format
+msgid "weekly"
+msgstr "每周"
+
+#: contents/ui/Full.qml:343
+#, kde-format
+msgid "monthly"
+msgstr "每月"
+
+#: contents/ui/Full.qml:345
+#, kde-format
+msgid "daily"
+msgstr "每天"
+
+#: contents/ui/PackageDelegate.qml:64
+#, kde-format
+msgctxt "Package Name (Version)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: contents/ui/PackageDelegate.qml:94
+#, kde-format
+msgctxt "description of the update"
+msgid "Update Description"
+msgstr "更新描述"
+
+#: contents/ui/PackageDelegate.qml:101
+#, kde-format
+msgid "No description available"
+msgstr "没有可用的描述"
+
+#: contents/ui/PackageDelegate.qml:109
+#, kde-format
+msgid "Related URLs"
+msgstr "相关链接"

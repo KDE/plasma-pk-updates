@@ -1,0 +1,158 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2015, 2016, 2017, 2019, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-07 00:46+0000\n"
+"PO-Revision-Date: 2022-03-13 11:15+0100\n"
+"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
+"Language-Team: Polish <kde-i18n-doc@kde.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 22.03.70\n"
+
+#: contents/config/config.qml:26
+#, kde-format
+msgid "General"
+msgstr "Ogólne"
+
+#: contents/ui/ConfigGeneral.qml:42
+#, kde-format
+msgctxt "@label check interval for updates"
+msgid "Check interval:"
+msgstr "Okres sprawdzania:"
+
+#: contents/ui/ConfigGeneral.qml:44
+#, kde-format
+msgid "Daily"
+msgstr "Codziennie"
+
+#: contents/ui/ConfigGeneral.qml:50
+#, kde-format
+msgid "Weekly"
+msgstr "Co tydzień"
+
+#: contents/ui/ConfigGeneral.qml:56
+#, kde-format
+msgid "Monthly"
+msgstr "Miesięcznie"
+
+#: contents/ui/ConfigGeneral.qml:61
+#, kde-format
+msgctxt "@label part of a sentence"
+msgid "Check for updates when:"
+msgstr "Sprawdź uaktualnienia gdy:"
+
+#: contents/ui/ConfigGeneral.qml:62
+#, kde-format
+msgctxt "@option:check part of a sentence: Check for updates when"
+msgid "On a mobile connection"
+msgstr "Na połączeniu komórkowym"
+
+#: contents/ui/ConfigGeneral.qml:67
+#, kde-format
+msgctxt "@option:check part of a sentence: Check for updates when"
+msgid "On battery"
+msgstr "Na baterii"
+
+#: contents/ui/Full.qml:67
+#, kde-format
+msgid "License Agreement for %1"
+msgstr "Umowa licencyjna dla %1"
+
+#: contents/ui/Full.qml:74
+#, kde-format
+msgid "License agreement required for %1 (from %2):"
+msgstr "Umowa licencyjna wymagana dla %1 (od %2):"
+
+#: contents/ui/Full.qml:101
+#, kde-format
+msgid "Do you accept?"
+msgstr "Czy się zgadzasz?"
+
+#: contents/ui/Full.qml:145
+#, kde-format
+msgid "Network is offline"
+msgstr "Brak sieci"
+
+#: contents/ui/Full.qml:156
+#, kde-format
+msgid "Updates are automatically checked %1."
+msgstr "Uaktualnienia są sprawdzanie samoczynnie %1."
+
+#: contents/ui/Full.qml:242
+#, kde-format
+msgid "No updates available"
+msgstr "Brak uaktualnień"
+
+#: contents/ui/Full.qml:266
+#, kde-format
+msgid "Select all packages"
+msgstr "Wybierz wszystkie pakiety"
+
+#: contents/ui/Full.qml:279
+#, kde-format
+msgid "Install Updates"
+msgstr "Wgraj uaktualnienia"
+
+#: contents/ui/Full.qml:283
+#, kde-format
+msgid "Performs the software update"
+msgstr "Wykonaj uaktualnienie systemu"
+
+#: contents/ui/Full.qml:341
+#, kde-format
+msgid "weekly"
+msgstr "co tydzień"
+
+#: contents/ui/Full.qml:343
+#, kde-format
+msgid "monthly"
+msgstr "miesięcznie"
+
+#: contents/ui/Full.qml:345
+#, kde-format
+msgid "daily"
+msgstr "codziennie"
+
+#: contents/ui/PackageDelegate.qml:64
+#, kde-format
+msgctxt "Package Name (Version)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: contents/ui/PackageDelegate.qml:94
+#, kde-format
+msgctxt "description of the update"
+msgid "Update Description"
+msgstr "Opis uaktualnienia"
+
+#: contents/ui/PackageDelegate.qml:101
+#, kde-format
+msgid "No description available"
+msgstr "Brak opisu"
+
+#: contents/ui/PackageDelegate.qml:109
+#, kde-format
+msgid "Related URLs"
+msgstr "Powiązane adresy URL"
+
+#~ msgid "Check for updates even when on battery"
+#~ msgstr "Sprawdzaj uaktualnienia nawet na zasilaniu z baterii"
+
+#~ msgid ""
+#~ "Updates are automatically checked %1.<br>Click the 'Check For Updates' "
+#~ "button below to search for updates manually."
+#~ msgstr ""
+#~ "Uaktualnienia są samoczynnie sprawdzane %1.<br>Naciśnij na 'Sprawdź "
+#~ "uaktualnienia', aby ręcznie sprawdzić uaktualnienia."
+
+#~ msgid "Checks for any available updates"
+#~ msgstr "Sprawdza dostępne uaktualnienia"

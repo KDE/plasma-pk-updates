@@ -1,0 +1,2308 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the plasma-pk-updates package.
+# Wantoyo <wantoyek@gmail.com>, 2019, 2020, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-pk-updates\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-02-06 00:50+0000\n"
+"PO-Revision-Date: 2022-08-26 23:44+0700\n"
+"Last-Translator: Wantoyèk <wantoyek@gmail.com>\n"
+"Language-Team: https://t.me/Localizations_KDE_Indonesia\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 21.12.3\n"
+
+#: PkStrings.cpp:37
+#, kde-format
+msgctxt "This is when the transaction status is not known"
+msgid "Unknown state"
+msgstr "Keadaan tidak diketahui"
+
+#: PkStrings.cpp:40
+#, kde-format
+msgctxt "transaction state, the daemon is in the process of starting"
+msgid "Waiting for service to start"
+msgstr "Menunggu layanan untuk memulai"
+
+#: PkStrings.cpp:43
+#, kde-format
+msgctxt "transaction state, the transaction is waiting for another to complete"
+msgid "Waiting for other tasks"
+msgstr "Menunggu tugas lain"
+
+#: PkStrings.cpp:46
+#, kde-format
+msgctxt "transaction state, just started"
+msgid "Running task"
+msgstr "Tugas yang berjalan"
+
+#: PkStrings.cpp:49
+#, kde-format
+msgctxt "transaction state, is querying data"
+msgid "Querying"
+msgstr "Peng-query-an"
+
+#: PkStrings.cpp:52
+#, kde-format
+msgctxt "transaction state, getting data from a server"
+msgid "Getting information"
+msgstr "Mendapatkan informasi"
+
+#: PkStrings.cpp:55
+#, kde-format
+msgctxt "transaction state, removing packages"
+msgid "Removing packages"
+msgstr "Menghapus paket"
+
+#: PkStrings.cpp:59
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading at %1/s, %2 remaining"
+msgstr "Mengunduh pada %1/d, tersisa %2"
+
+#: PkStrings.cpp:64
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading at %1/s"
+msgstr "Mengunduh pada %1/d"
+
+#: PkStrings.cpp:68
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading, %1 remaining"
+msgstr "Mengunduh, tersisa %1"
+
+#: PkStrings.cpp:72
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading"
+msgstr "Mengunduh"
+
+#: PkStrings.cpp:76
+#, kde-format
+msgctxt "transaction state, installing packages"
+msgid "Installing packages"
+msgstr "Menginstal paket-paket"
+
+#: PkStrings.cpp:79
+#, kde-format
+msgctxt "transaction state, refreshing internal lists"
+msgid "Refreshing software list"
+msgstr "Menyegarkan daftar perangkat lunak"
+
+#: PkStrings.cpp:82
+#, kde-format
+msgctxt "transaction state, installing updates"
+msgid "Updating packages"
+msgstr "Memperbarui paket-paket"
+
+#: PkStrings.cpp:85
+#, kde-format
+msgctxt "transaction state, removing old packages, and cleaning config files"
+msgid "Cleaning up packages"
+msgstr "Membereskan paket-paket"
+
+#: PkStrings.cpp:88
+#, kde-format
+msgctxt "transaction state, obsoleting old packages"
+msgid "Obsoleting packages"
+msgstr "Mengusangkan paket-paket"
+
+#: PkStrings.cpp:91
+#, kde-format
+msgctxt "transaction state, checking the transaction before we do it"
+msgid "Resolving dependencies"
+msgstr "Menyelesaikan ketergantungan"
+
+#: PkStrings.cpp:94
+#, kde-format
+msgctxt ""
+"transaction state, checking if we have all the security keys for the "
+"operation"
+msgid "Checking signatures"
+msgstr "Memeriksa tandatanganan"
+
+#: PkStrings.cpp:97
+#, kde-format
+msgctxt "transaction state, when we're doing a test transaction"
+msgid "Testing changes"
+msgstr "Menguji perubahan"
+
+#: PkStrings.cpp:100
+#, kde-format
+msgctxt "transaction state, when we're writing to the system package database"
+msgid "Committing changes"
+msgstr "Melakukan perubahan"
+
+#: PkStrings.cpp:103
+#, kde-format
+msgctxt "transaction state, requesting data from a server"
+msgid "Requesting data"
+msgstr "Meminta data"
+
+#: PkStrings.cpp:106
+#, kde-format
+msgctxt "transaction state, all done!"
+msgid "Finished"
+msgstr "Beres"
+
+#: PkStrings.cpp:109
+#, kde-format
+msgctxt "transaction state, in the process of cancelling"
+msgid "Cancelling"
+msgstr "Membatalkan"
+
+#: PkStrings.cpp:112
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading repository information"
+msgstr "Mengunduh informasi repositori"
+
+#: PkStrings.cpp:115
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading list of packages"
+msgstr "Mengunduh daftar paket-paket"
+
+#: PkStrings.cpp:118
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading file lists"
+msgstr "Mengunduh daftar file"
+
+#: PkStrings.cpp:121
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading lists of changes"
+msgstr "Mengunduh daftar perubahan"
+
+#: PkStrings.cpp:124
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading groups"
+msgstr "Mengunduh kelompokan"
+
+#: PkStrings.cpp:127
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading update information"
+msgstr "Mengunduh informasi pembaruan"
+
+#: PkStrings.cpp:130
+#, kde-format
+msgctxt "transaction state, repackaging delta files"
+msgid "Repackaging files"
+msgstr "Memaket ulang file-file"
+
+#: PkStrings.cpp:133
+#, kde-format
+msgctxt "transaction state, loading databases"
+msgid "Loading cache"
+msgstr "Memuat cache"
+
+#: PkStrings.cpp:136
+#, kde-format
+msgctxt "transaction state, scanning for running processes"
+msgid "Scanning installed applications"
+msgstr "Memindai aplikasi yang terinstal"
+
+#: PkStrings.cpp:139
+#, kde-format
+msgctxt ""
+"transaction state, generating a list of packages installed on the system"
+msgid "Generating package lists"
+msgstr "Menghasilkan daftar paket"
+
+#: PkStrings.cpp:142
+#, kde-format
+msgctxt "transaction state, when we're waiting for the native tools to exit"
+msgid "Waiting for package manager lock"
+msgstr "Menunggu kunci pengelola paket"
+
+#: PkStrings.cpp:145
+#, kde-format
+msgctxt "waiting for user to type in a password"
+msgid "Waiting for authentication"
+msgstr "Menunggu autentikasi"
+
+#: PkStrings.cpp:148
+#, kde-format
+msgctxt "we are updating the list of processes"
+msgid "Updating the list of running applications"
+msgstr "Memperbarui daftar pada aplikasi yang berjalan"
+
+#: PkStrings.cpp:151
+#, kde-format
+msgctxt "we are checking executable files in use"
+msgid "Checking for applications currently in use"
+msgstr "Memeriksa aplikasi yang saat ini sedang digunakan"
+
+#: PkStrings.cpp:154
+#, kde-format
+msgctxt "we are checking for libraries in use"
+msgid "Checking for libraries currently in use"
+msgstr "Memeriksa pustaka lib yang saat ini sedang digunakan"
+
+#: PkStrings.cpp:157
+#, kde-format
+msgctxt "we are copying package files to prepare to install"
+msgid "Copying files"
+msgstr "Menyalin file-file"
+
+#: PkStrings.cpp:167
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Downloaded"
+msgstr "Terunduh"
+
+#: PkStrings.cpp:169
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Updated"
+msgstr "Terbarukan"
+
+#: PkStrings.cpp:171
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Installed"
+msgstr "Terinstal"
+
+#: PkStrings.cpp:173
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Removed"
+msgstr "Terhapus"
+
+#: PkStrings.cpp:175
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Cleaned Up"
+msgstr "Terbereskan"
+
+#: PkStrings.cpp:177
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Obsoleted"
+msgstr "Terusang"
+
+#: PkStrings.cpp:188
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Unknown role type"
+msgstr "Tipe peraturan yang tidak diketahui"
+
+#: PkStrings.cpp:190
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting dependencies"
+msgstr "Mendapatkan ketergantungan"
+
+#: PkStrings.cpp:192
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting update detail"
+msgstr "Mendapatkan perincian pembaruan"
+
+#: PkStrings.cpp:195
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting details"
+msgstr "Mendapatkan perincian"
+
+#: PkStrings.cpp:197
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting requires"
+msgstr "Mendapatkan yang diperlukan"
+
+#: PkStrings.cpp:199
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting updates"
+msgstr "Mendapatkan pembaruan"
+
+#: PkStrings.cpp:201
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching details"
+msgstr "Mencari perincian"
+
+#: PkStrings.cpp:203
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching for file"
+msgstr "Mencari file"
+
+#: PkStrings.cpp:205
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching groups"
+msgstr "Mencari kelompok"
+
+#: PkStrings.cpp:207
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching by package name"
+msgstr "Mencari berdasarkan nama paket"
+
+#: PkStrings.cpp:210
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating removal"
+msgstr "Mensimulasikan penghapusan"
+
+#: PkStrings.cpp:212 PkStrings.cpp:219 PkStrings.cpp:260
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading packages"
+msgstr "Mengunduh paket-paket"
+
+#: PkStrings.cpp:214
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Removing"
+msgstr "Menghapus"
+
+#: PkStrings.cpp:217
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating install"
+msgstr "Mensimulasikan penginstalan"
+
+#: PkStrings.cpp:221
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing"
+msgstr "Menginstal"
+
+#: PkStrings.cpp:224
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating file install"
+msgstr "Mensimulasikan penginstalan file"
+
+#: PkStrings.cpp:226
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading required packages"
+msgstr "Mengunduh paket-paket yang diperlukan"
+
+#: PkStrings.cpp:228
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing file"
+msgstr "Menginstal file"
+
+#: PkStrings.cpp:230
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Refreshing package cache"
+msgstr "Menyegarkan cache paket"
+
+#: PkStrings.cpp:233
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating update"
+msgstr "Mensimulasikan pembaruan"
+
+#: PkStrings.cpp:235
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading updates"
+msgstr "Mengunduh pembaruan"
+
+#: PkStrings.cpp:237
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Updating packages"
+msgstr "Memperbarui paket-paket"
+
+#: PkStrings.cpp:239
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Canceling"
+msgstr "Membatalkan"
+
+#: PkStrings.cpp:241
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting list of repositories"
+msgstr "Mendapatkan daftar repositori"
+
+#: PkStrings.cpp:243
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Enabling repository"
+msgstr "Memfungsikan repositori"
+
+#: PkStrings.cpp:245
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Setting repository data"
+msgstr "Mengatur data repositori"
+
+#: PkStrings.cpp:247
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Resolving"
+msgstr "Menyelesaikan"
+
+#: PkStrings.cpp:250
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting file list"
+msgstr "Mendapatkan daftar file"
+
+#: PkStrings.cpp:252
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting what provides"
+msgstr "Mendapatkan penyedia apa"
+
+#: PkStrings.cpp:254
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing signature"
+msgstr "Menginstal tandatangan"
+
+#: PkStrings.cpp:256
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting package lists"
+msgstr "Menghasilkan daftar paket"
+
+#: PkStrings.cpp:258
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Accepting EULA"
+msgstr "Setujui EULA"
+
+#: PkStrings.cpp:262
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting distribution upgrade information"
+msgstr "Mendapatkan informasi peningkatan versi distribusi"
+
+#: PkStrings.cpp:264
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting categories"
+msgstr "Mendapatkan kategori"
+
+#: PkStrings.cpp:266
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting old transactions"
+msgstr "Mendapatkan transaksi lawas"
+
+#: PkStrings.cpp:268
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Repairing system"
+msgstr "Mereparasi sistem"
+
+#: PkStrings.cpp:270
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Removing repository"
+msgstr "Menghapus repositori"
+
+#: PkStrings.cpp:280
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Unknown role type"
+msgstr "Tipe peraturan tidak diketahui"
+
+#: PkStrings.cpp:282
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got dependencies"
+msgstr "Mendapat ketergantungan"
+
+#: PkStrings.cpp:284
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got update detail"
+msgstr "Mendapat perincian pembaruan"
+
+#: PkStrings.cpp:287
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got details"
+msgstr "Mendapat perincian"
+
+#: PkStrings.cpp:289
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got requires"
+msgstr "Mendapat yang diperlukan"
+
+#: PkStrings.cpp:291
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got updates"
+msgstr "Mendapat pembaruan"
+
+#: PkStrings.cpp:293
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for package details"
+msgstr "Perincian paket yang dicari"
+
+#: PkStrings.cpp:295
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for file"
+msgstr "File yang dicari"
+
+#: PkStrings.cpp:297
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched groups"
+msgstr "Kelompok yang dicari"
+
+#: PkStrings.cpp:299
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for package name"
+msgstr "Nama paket yang dicari"
+
+#: PkStrings.cpp:301
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Removed packages"
+msgstr "Paket-paket yang dihapus"
+
+#: PkStrings.cpp:303
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed packages"
+msgstr "Paket-paket yang diinstal"
+
+#: PkStrings.cpp:305
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed local files"
+msgstr "File lokal yang diinstal"
+
+#: PkStrings.cpp:307
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Refreshed package cache"
+msgstr "Cache paket yang disegarkan"
+
+#: PkStrings.cpp:309
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Updated packages"
+msgstr "Paket-paket yang diperbarui"
+
+#: PkStrings.cpp:311
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Canceled"
+msgstr "Dibatalkan"
+
+#: PkStrings.cpp:313
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got list of repositories"
+msgstr "Mendapat daftar repositori"
+
+#: PkStrings.cpp:315
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Enabled repository"
+msgstr "Repositori yang difungsikan"
+
+#: PkStrings.cpp:317
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Set repository data"
+msgstr "Atur data repositori"
+
+#: PkStrings.cpp:319
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Resolved"
+msgstr "Diselesaikan"
+
+#: PkStrings.cpp:322
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got file list"
+msgstr "Mendapat daftar file"
+
+#: PkStrings.cpp:324
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got what provides"
+msgstr "Mendapat penyedia apa"
+
+#: PkStrings.cpp:326
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed signature"
+msgstr "Tandatangan yang diinstal"
+
+#: PkStrings.cpp:328
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got package lists"
+msgstr "Mendapat daftar paket"
+
+#: PkStrings.cpp:330
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Accepted EULA"
+msgstr "EULA yang disetujui"
+
+#: PkStrings.cpp:332
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Downloaded packages"
+msgstr "Paket-paket yang diunduh"
+
+#: PkStrings.cpp:334
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got distribution upgrades"
+msgstr "Mendapat peningkatan versi distribusi"
+
+#: PkStrings.cpp:336
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got categories"
+msgstr "Mendapat kategori"
+
+#: PkStrings.cpp:338
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got old transactions"
+msgstr "Mendapat transaksi lawas"
+
+#: PkStrings.cpp:340
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Repaired system"
+msgstr "Sistem direparasi"
+
+#: PkStrings.cpp:342
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Removed repository"
+msgstr "Repositori yang dihapus"
+
+#: PkStrings.cpp:352
+#, kde-format
+msgid "Downloading"
+msgstr "Mengunduh"
+
+#: PkStrings.cpp:354
+#, kde-format
+msgid "Updating"
+msgstr "Memperbarui"
+
+#: PkStrings.cpp:356
+#, kde-format
+msgid "Installing"
+msgstr "Menginstal"
+
+#: PkStrings.cpp:358
+#, kde-format
+msgid "Removing"
+msgstr "Menghapus"
+
+#: PkStrings.cpp:360
+#, kde-format
+msgid "Cleaning up"
+msgstr "Membereskan"
+
+#: PkStrings.cpp:362
+#, kde-format
+msgid "Obsoleting"
+msgstr "Mengusangkan"
+
+#: PkStrings.cpp:364
+#, kde-format
+msgid "Reinstalling"
+msgstr "Menginstal ulang"
+
+#: PkStrings.cpp:366
+#, kde-format
+msgid "Preparing"
+msgstr "Mempersiapkan"
+
+#: PkStrings.cpp:368
+#, kde-format
+msgid "Decompressing"
+msgstr "Mendekompres"
+
+#: PkStrings.cpp:379
+#, kde-format
+msgid "Downloaded"
+msgstr "Diunduh"
+
+#: PkStrings.cpp:381
+#, kde-format
+msgid "Updated"
+msgstr "Diperbarui"
+
+#: PkStrings.cpp:383
+#, kde-format
+msgid "Installed"
+msgstr "Diinstal"
+
+#: PkStrings.cpp:385
+#, kde-format
+msgid "Removed"
+msgstr "Dihapus"
+
+#: PkStrings.cpp:387
+#, kde-format
+msgid "Cleaned up"
+msgstr "Dibereskan"
+
+#: PkStrings.cpp:389
+#, kde-format
+msgid "Obsoleted"
+msgstr "Diusangkan"
+
+#: PkStrings.cpp:391
+#, kde-format
+msgid "Reinstalled"
+msgstr "Diinstal ulang"
+
+#: PkStrings.cpp:393
+#, kde-format
+msgid "Prepared"
+msgstr "Disiapkan"
+
+#: PkStrings.cpp:395
+#, kde-format
+msgid "Decompressed"
+msgstr "Didekompres"
+
+#: PkStrings.cpp:406
+#, kde-format
+msgid "No network connection available"
+msgstr "Tidak ada koneksi jaringan yang tersedia"
+
+#: PkStrings.cpp:408
+#, kde-format
+msgid "No package cache is available"
+msgstr "Tidak ada cache paket yang tersedia"
+
+#: PkStrings.cpp:410
+#, kde-format
+msgid "Out of memory"
+msgstr "Kehabisan memori"
+
+#: PkStrings.cpp:412
+#, kde-format
+msgid "Failed to create a thread"
+msgstr "Gagal menciptakan utas"
+
+#: PkStrings.cpp:414
+#, kde-format
+msgid "Not supported by this backend"
+msgstr "Tidak didukung oleh backend ini"
+
+#: PkStrings.cpp:416
+#, kde-format
+msgid "An internal system error has occurred"
+msgstr "Sebuah error sistem internal telah terjadi"
+
+#: PkStrings.cpp:418
+#, kde-format
+msgid "A security trust relationship is not present"
+msgstr "Sebuah hubungan kepercayaan keamanan tidaklah ada"
+
+#: PkStrings.cpp:420
+#, kde-format
+msgid "The package is not installed"
+msgstr "Paket tidaklah terinstal"
+
+#: PkStrings.cpp:422
+#, kde-format
+msgid "The package was not found"
+msgstr "Paket tidaklah ditemukan"
+
+#: PkStrings.cpp:424
+#, kde-format
+msgid "The package is already installed"
+msgstr "Paket sudah terinstal"
+
+#: PkStrings.cpp:426
+#, kde-format
+msgid "The package download failed"
+msgstr "Pengunduhan paket gagal"
+
+#: PkStrings.cpp:428
+#, kde-format
+msgid "The group was not found"
+msgstr "Kelompok tidaklah ditemukan"
+
+#: PkStrings.cpp:430
+#, kde-format
+msgid "The group list was invalid"
+msgstr "Daftar kelompok tidaklah absah"
+
+#: PkStrings.cpp:432
+#, kde-format
+msgid "Dependency resolution failed"
+msgstr "Gagal pemberesan ketergantungan"
+
+#: PkStrings.cpp:434
+#, kde-format
+msgid "Search filter was invalid"
+msgstr "Filter pencarian tidaklah absah"
+
+#: PkStrings.cpp:436
+#, kde-format
+msgid "The package identifier was not well formed"
+msgstr "Pengidentifikasi paket tidak terbentuk dengan baik"
+
+#: PkStrings.cpp:438
+#, kde-format
+msgid "Transaction error"
+msgstr "Error transaksi"
+
+#: PkStrings.cpp:440
+#, kde-format
+msgid "Repository name was not found"
+msgstr "Nama repositori tidaklah ditemukan"
+
+#: PkStrings.cpp:442
+#, kde-format
+msgid "Could not remove a protected system package"
+msgstr "Tidak bisa menghapus paket sistem terlindungi"
+
+#: PkStrings.cpp:444
+#, kde-format
+msgid "The task was canceled"
+msgstr "Tugas telah dibatalkan"
+
+#: PkStrings.cpp:446
+#, kde-format
+msgid "The task was forcibly canceled"
+msgstr "Tugas telah dibatalkan secara paksa"
+
+#: PkStrings.cpp:448
+#, kde-format
+msgid "Reading the config file failed"
+msgstr "Pembacaan file konfig gagal"
+
+#: PkStrings.cpp:450
+#, kde-format
+msgid "The task cannot be cancelled"
+msgstr "Tugas tidak bisa dibatalkan"
+
+#: PkStrings.cpp:452
+#, kde-format
+msgid "Source packages cannot be installed"
+msgstr "Paket-paket sumber tidak bisa dibatalkan"
+
+#: PkStrings.cpp:454
+#, kde-format
+msgid "The license agreement failed"
+msgstr "Perjanjian lisensi gagal"
+
+#: PkStrings.cpp:456
+#, kde-format
+msgid "Local file conflict between packages"
+msgstr "File lokal konflik antara paket-paket"
+
+#: PkStrings.cpp:458
+#, kde-format
+msgid "Packages are not compatible"
+msgstr "Paket-paket tidaklah kompatibel"
+
+#: PkStrings.cpp:460
+#, kde-format
+msgid "Problem connecting to a software origin"
+msgstr "Masalah pengkoneksian ke sebuah origin perangkat lunak"
+
+#: PkStrings.cpp:462
+#, kde-format
+msgid "Failed to initialize"
+msgstr "Gagal mengenali"
+
+#: PkStrings.cpp:464
+#, kde-format
+msgid "Failed to finalize"
+msgstr "Gagal membereskan"
+
+#: PkStrings.cpp:466
+#, kde-format
+msgid "Cannot get lock"
+msgstr "Tidak bisa mendapatkan kunci"
+
+#: PkStrings.cpp:468
+#, kde-format
+msgid "No packages to update"
+msgstr "Tidak ada paket untuk diperbarui"
+
+#: PkStrings.cpp:470
+#, kde-format
+msgid "Cannot write repository configuration"
+msgstr "Tidak bisa menulis konfigurasi repositori"
+
+#: PkStrings.cpp:472
+#, kde-format
+msgid "Local install failed"
+msgstr "Penginstalan lokal gagal"
+
+#: PkStrings.cpp:474
+#, kde-format
+msgid "Bad GPG signature"
+msgstr "Tandatangan GPG buruk"
+
+#: PkStrings.cpp:476
+#, kde-format
+msgid "Missing GPG signature"
+msgstr "Tandatangan GPG hilang"
+
+#: PkStrings.cpp:478
+#, kde-format
+msgid "Repository configuration invalid"
+msgstr "Konfigurasi repositori tidak absah"
+
+#: PkStrings.cpp:480
+#, kde-format
+msgid "Invalid package file"
+msgstr "File paket tidak absah"
+
+#: PkStrings.cpp:482
+#, kde-format
+msgid "Package install blocked"
+msgstr "Penginstalan paket terhalang"
+
+#: PkStrings.cpp:484
+#, kde-format
+msgid "Package is corrupt"
+msgstr "Paket telah korup"
+
+#: PkStrings.cpp:486
+#, kde-format
+msgid "All packages are already installed"
+msgstr "Semua paket siap diinstal"
+
+#: PkStrings.cpp:488
+#, kde-format
+msgid "The specified file could not be found"
+msgstr "File yang ditentukan tidak ketemu"
+
+#: PkStrings.cpp:490
+#, kde-format
+msgid "No more mirrors are available"
+msgstr "Tidak ada lagi mirror yang tersedia"
+
+#: PkStrings.cpp:492
+#, kde-format
+msgid "No distribution upgrade data is available"
+msgstr "Tidak ada data peningkatan versi distribusi yang tersedia"
+
+#: PkStrings.cpp:494
+#, kde-format
+msgid "Package is incompatible with this system"
+msgstr "Paket tidak kompatibel dengan sistem ini"
+
+#: PkStrings.cpp:496
+#, kde-format
+msgid "No space is left on the disk"
+msgstr "Tidak ada ruang kosong yang tersisa pada disk"
+
+#: PkStrings.cpp:498
+#, kde-format
+msgid "A media change is required"
+msgstr "Sebuah perubahan media diperlukan"
+
+#: PkStrings.cpp:500
+#, kde-format
+msgid "Authorization failed"
+msgstr "Otorisasi gagal"
+
+#: PkStrings.cpp:502
+#, kde-format
+msgid "Update not found"
+msgstr "Pembaruan tidak ditemukan"
+
+#: PkStrings.cpp:504
+#, kde-format
+msgid "Cannot install from untrusted origin"
+msgstr "Tidak bisa menginstal dari origin yang tak terpercaya"
+
+#: PkStrings.cpp:506
+#, kde-format
+msgid "Cannot update from untrusted origin"
+msgstr "Tidak bisa memperbarui dari origin yang tak terpercaya"
+
+#: PkStrings.cpp:508
+#, kde-format
+msgid "Cannot get the file list"
+msgstr "Tidak bisa mendapatkan daftar file"
+
+#: PkStrings.cpp:510
+#, kde-format
+msgid "Cannot get package requires"
+msgstr "Tidak bisa mendapatkan keperluan paket"
+
+#: PkStrings.cpp:512
+#, kde-format
+msgid "Cannot disable origin"
+msgstr "Tidak bisa menonfungsikan origin"
+
+#: PkStrings.cpp:514
+#, kde-format
+msgid "The download failed"
+msgstr "Pengunduhan gagal"
+
+#: PkStrings.cpp:516
+#, kde-format
+msgid "Package failed to configure"
+msgstr "Paket gagal untuk dikonfigurasi"
+
+#: PkStrings.cpp:518
+#, kde-format
+msgid "Package failed to build"
+msgstr "Gagal membangun paket"
+
+#: PkStrings.cpp:520
+#, kde-format
+msgid "Package failed to install"
+msgstr "Gagal menginstal paket"
+
+#: PkStrings.cpp:522
+#, kde-format
+msgid "Package failed to be removed"
+msgstr "Paket gagal dihapus"
+
+#: PkStrings.cpp:524
+#, kde-format
+msgid "Update failed due to running process"
+msgstr "Perbarui gagal karena menjalankan proses"
+
+#: PkStrings.cpp:526
+#, kde-format
+msgid "The package database was changed"
+msgstr "Database paket telah diubah"
+
+#: PkStrings.cpp:528
+#, kde-format
+msgid "Virtual provide type is not supported"
+msgstr "Tipe virtual yang tersedia tidak didukung"
+
+#: PkStrings.cpp:530
+#, kde-format
+msgid "Install root is invalid"
+msgstr "Instal root tidak absah"
+
+#: PkStrings.cpp:532
+#, kde-format
+msgid "Cannot fetch install sources"
+msgstr "Tidak bisa mengambil sumber instal"
+
+#: PkStrings.cpp:534
+#, kde-format
+msgid "Rescheduled due to priority"
+msgstr "Dijadwalkan ulang untuk memprioritaskan"
+
+#: PkStrings.cpp:536
+#, kde-format
+msgid "Unfinished transaction"
+msgstr "Transaksi tidak terselesaikan"
+
+#: PkStrings.cpp:538
+#, kde-format
+msgid "Lock required"
+msgstr "Kunci diperlukan"
+
+#: PkStrings.cpp:540
+#, kde-format
+msgid "Unknown error"
+msgstr "Error tidak diketahui"
+
+#: PkStrings.cpp:550
+#, kde-format
+msgid ""
+"There is no network connection available.\n"
+"Please check your connection settings and try again"
+msgstr ""
+"Tidak adanya koneksi jaringan yang tersedia.\n"
+"Silakan periksa pengaturan koneksimu dan coba kembali"
+
+#: PkStrings.cpp:553
+#, kde-format
+msgid ""
+"The package list needs to be rebuilt.\n"
+"This should have been done by the backend automatically."
+msgstr ""
+"Daftar paket perlu dibangun ulang.\n"
+"Ini seharusnya dilakukan secara otomatis oleh backend."
+
+#: PkStrings.cpp:556
+#, kde-format
+msgid ""
+"The service that is responsible for handling user requests is out of "
+"memory.\n"
+"Please close some programs or restart your computer."
+msgstr ""
+"Layanan yang bertanggung jawab untuk menangani permintaan pengguna yang "
+"kehabisan memori.\n"
+"Silakan tutup beberapa program atau nyalakan ulang komputermu."
+
+#: PkStrings.cpp:559
+#, kde-format
+msgid "A thread could not be created to service the user request."
+msgstr "Sebuah utas tidak bisa diciptakan untuk melayani permintaan pengguna."
+
+#: PkStrings.cpp:561
+#, kde-format
+msgid ""
+"The action is not supported by this backend.\n"
+"Please report a bug as this should not have happened."
+msgstr ""
+"Aksi tidaklah didukung oleh backend ini.\n"
+"Silakan laporkan sebuah bug bahwa ini seharusnya tidak terjadi."
+
+#: PkStrings.cpp:564
+#, kde-format
+msgid ""
+"A problem that we were not expecting has occurred.\n"
+"Please report this bug with the error description."
+msgstr ""
+"Suatu masalah yang tidak diharapkan telah terjadi.\n"
+"Silakan laporkan bug ini dengan deskripsi error tersebut."
+
+#: PkStrings.cpp:567
+#, kde-format
+msgid ""
+"A security trust relationship could not be made with the software origin.\n"
+"Please check your software signature settings."
+msgstr ""
+"Sebuah hubungan kepercayaan keamanan tidak bisa dibuat dengan origin "
+"perangkat lunak.\n"
+"Silakan periksa pengaturan tandatangan perangkat-lunakmu."
+
+#: PkStrings.cpp:570
+#, kde-format
+msgid ""
+"The package that is trying to be removed or updated is not already installed."
+msgstr "Paket yang telah dicoba dihapus atau diperbarui belumlah terpasang."
+
+#: PkStrings.cpp:572
+#, kde-format
+msgid ""
+"The package that is being modified was not found on your system or in any "
+"software origin."
+msgstr ""
+"Paket yang telah dimodifikasi tidaklah ditemukan pada sistemmu atau di "
+"origin perangkat lunak apa pun."
+
+#: PkStrings.cpp:574
+#, kde-format
+msgid "The package that is trying to be installed is already installed."
+msgstr "Paket yang telah dicoba diinstal sudahlah terinstal."
+
+#: PkStrings.cpp:576
+#, kde-format
+msgid ""
+"The package download failed.\n"
+"Please check your network connectivity."
+msgstr ""
+"Pengunduhan paket gagal.\n"
+"Silakan periksa perkoneksian jaringanmu."
+
+#: PkStrings.cpp:579
+#, kde-format
+msgid ""
+"The group type was not found.\n"
+"Please check your group list and try again."
+msgstr ""
+"Tipe kelompok tidaklah ditemukan.\n"
+"Silakan periksa daftar kelompokmu dan cobalah kembali."
+
+#: PkStrings.cpp:582
+#, kde-format
+msgid ""
+"The group list could not be loaded.\n"
+"Refreshing your cache may help, although this is normally a software origin "
+"error."
+msgstr ""
+"Daftar kelompok tidak bisa dimuat.\n"
+"Menyegarkan cache-mu mungkin membantu, meski ini adalah sebuah kesalahan "
+"origin perangkat lunak secara normal."
+
+#: PkStrings.cpp:586
+#, kde-format
+msgid ""
+"A package dependency could not be found.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Suatu ketergantungan paket tidak bisa ditemukan.\n"
+"Informasi selebihnya telah tersedia di laporan terperinci."
+
+#: PkStrings.cpp:589
+#, kde-format
+msgid "The search filter was not correctly formed."
+msgstr "Filter pencarian tidaklah berbentuk secara benar."
+
+#: PkStrings.cpp:591
+#, kde-format
+msgid ""
+"The package identifier was not well formed when sent to the system daemon.\n"
+"This normally indicates an internal bug and should be reported."
+msgstr ""
+"Pengidentifikasi paket tidaklah terbentuk baik ketika mengirim ke daemon "
+"sistem.\n"
+"Ini biasanya mengindikasikan sebuah bug internal dan seharusnya dilaporkan."
+
+#: PkStrings.cpp:594
+#, kde-format
+msgid ""
+"An error occurred while running the transaction.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Suatu error terjadi selagi menjalankan transaksi.\n"
+"Informasi selebihnya telah tersedia di laporan terperinci."
+
+#: PkStrings.cpp:597
+#, kde-format
+msgid ""
+"The remote software origin name was not found.\n"
+"You may need to enable an item in Software Origins."
+msgstr ""
+"Nama origin perangkat lunak jarak jauh tidaklah ditemukan.\n"
+"Kamu perlu memfungsikan sebuah butir di Origin Perangkat Lunak."
+
+#: PkStrings.cpp:600
+#, kde-format
+msgid "Removing a protected system package is not allowed."
+msgstr "Menghapus sebuah paket sistem yang diproteksi tidaklah diperbolehkan."
+
+#: PkStrings.cpp:602
+#, kde-format
+msgid "The task was canceled successfully and no packages were changed."
+msgstr ""
+"Tugas telah berhasil dibatalkan dan tidak ada paket-paket yang berubah."
+
+#: PkStrings.cpp:604
+#, kde-format
+msgid ""
+"The task was canceled successfully and no packages were changed.\n"
+"The backend did not exit cleanly."
+msgstr ""
+"Tugas telah berhasil dibatalkan dan tidak ada paket-paket yang berubah.\n"
+"Si backend belumlah keluar secara lengkap."
+
+#: PkStrings.cpp:607
+#, kde-format
+msgid ""
+"The native package configuration file could not be opened.\n"
+"Please make sure your system's configuration is valid."
+msgstr ""
+"File konfigurasi paket bawaan tidak bisa dibuka.\n"
+"Silakan pastikan bahwa konfigurasi sistemmu telah absah."
+
+#: PkStrings.cpp:610
+#, kde-format
+msgid "The task is not safe to be cancelled at this time."
+msgstr "Tugas tidaklah aman kalau dibatalkan pada saat ini."
+
+#: PkStrings.cpp:612
+#, kde-format
+msgid ""
+"Source packages are not normally installed this way.\n"
+"Check the extension of the file you are trying to install."
+msgstr ""
+"Paket-paket sumber biasanya tidak diinstal dengan cara ini.\n"
+"Periksalah ekstensinya file yang telah kamu coba instal."
+
+#: PkStrings.cpp:615
+#, kde-format
+msgid ""
+"The license agreement was not agreed to.\n"
+"To use this software you have to accept the license."
+msgstr ""
+"Perjanjian lisensi tidaklah disetujui.\n"
+"Untuk menggunakan perangkat lunak ini kamu harus menyetujui lisensi."
+
+#: PkStrings.cpp:618
+#, kde-format
+msgid ""
+"Two packages provide the same file.\n"
+"This is usually due to mixing packages for different software origins."
+msgstr ""
+"Dua paket tersedia file yang sama.\n"
+"Ini biasanya dilakukan untuk mencampur paket-paket bagi origin perangkat "
+"lunak yang berbeda."
+
+#: PkStrings.cpp:621
+#, kde-format
+msgid ""
+"Multiple packages exist that are not compatible with each other.\n"
+"This is usually due to mixing packages from different software origins."
+msgstr ""
+"Beberapa paket yang ada tidaklah kompatibel dengan satu sama lainnya.\n"
+"Ini biasanya dilakukan untuk mencampur paket-paket dari origin perangkat "
+"lunak yang berbeda."
+
+#: PkStrings.cpp:624
+#, kde-format
+msgid ""
+"There was a (possibly temporary) problem connecting to a software origins.\n"
+"Please check the detailed error for further details."
+msgstr ""
+"Ada (kemungkinan sementara) masalah pengkoneksian ke sebuah origin perangkat "
+"lunak.\n"
+"Silakan periksa error terperinci untuk perincian lebih lanjut."
+
+#: PkStrings.cpp:627
+#, kde-format
+msgid ""
+"Failed to initialize packaging backend.\n"
+"This may occur if other packaging tools are being used simultaneously."
+msgstr ""
+"Gagal mengenali backend pemaketan.\n"
+"Hal ini bisa terjadi jika peralatan pemaketan lainnya digunakan secara "
+"bersamaan."
+
+#: PkStrings.cpp:630
+#, kde-format
+msgid ""
+"Failed to close down the backend instance.\n"
+"This error can normally be ignored."
+msgstr ""
+"Gagal menutup instansi backend.\n"
+"Error ini bisa secara normal diabaikan."
+
+#: PkStrings.cpp:633
+#, kde-format
+msgid ""
+"Cannot get the exclusive lock on the packaging backend.\n"
+"Please close any other legacy packaging tools that may be open."
+msgstr ""
+"Tidak bisa mendapatkan kunci eksklusif pada backend pemaketan.\n"
+"Silakan tutup peralatan pemaketan kuno lain yang mungkin sedang dibuka."
+
+#: PkStrings.cpp:636
+#, kde-format
+msgid "None of the selected packages could be updated."
+msgstr "Tak satu pun dari paket-paket yang dipilih bisa diperbarui."
+
+#: PkStrings.cpp:638
+#, kde-format
+msgid "The repository configuration could not be modified."
+msgstr "Konfigurasi repositori tidak bisa dimodifikasi."
+
+#: PkStrings.cpp:640
+#, kde-format
+msgid ""
+"Installing the local file failed.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Penginstalan file lokal, gagal.\n"
+"Informasi selebihnya telah tersedia di laporan terperinci."
+
+#: PkStrings.cpp:643
+#, kde-format
+msgid "The package signature could not be verified."
+msgstr "Tandatangan paket tidak bisa diverifikasi."
+
+#: PkStrings.cpp:645
+#, kde-format
+msgid ""
+"The package signature was missing and this package is untrusted.\n"
+"This package was not signed with a GPG key when created."
+msgstr ""
+"Tandatangan paket tidak ada dan paket ini tidak terpercaya.\n"
+"Paket ini tidak ditandatangani dengan kunci GPG ketika diciptakan."
+
+#: PkStrings.cpp:648
+#, kde-format
+msgid "Repository configuration was invalid and could not be read."
+msgstr "Konfigurasi repositori tidak absah dan tidak bisa dibaca."
+
+#: PkStrings.cpp:650
+#, kde-format
+msgid ""
+"The package you are attempting to install is not valid.\n"
+"The package file could be corrupt, or not a proper package."
+msgstr ""
+"Paket yang telah kamu coba instal tidaklah absah.\n"
+"File paket bisa saja korup, atau bukan paket yang tepat."
+
+#: PkStrings.cpp:653
+#, kde-format
+msgid ""
+"Installation of this package was prevented by your packaging system's "
+"configuration."
+msgstr "Penginstalan paket ini dicegah oleh konfigurasi sistem pemaketanmu."
+
+#: PkStrings.cpp:655
+#, kde-format
+msgid ""
+"The package that was downloaded is corrupt and needs to be downloaded again."
+msgstr "Paket yang diunduh korup dan perlu diunduh lagi."
+
+#: PkStrings.cpp:657
+#, kde-format
+msgid ""
+"All of the packages selected for install are already installed on the system."
+msgstr "Semua paket yang dipilih untuk diinstal sudah diinstal pada sistem."
+
+#: PkStrings.cpp:659
+#, kde-format
+msgid ""
+"The specified file could not be found on the system.\n"
+"Check that the file still exists and has not been deleted."
+msgstr ""
+"File yang ditentukan tidak bisa ditemukan di sistem.\n"
+"Periksalah apakah file tersebut masih ada dan belum dihapus."
+
+#: PkStrings.cpp:662
+#, kde-format
+msgid ""
+"Required data could not be found on any of the configured software origins.\n"
+"There were no more download mirrors that could be tried."
+msgstr ""
+"Data yang diperlukan tidak bisa ditemukan pada origin perangkat lunak mana "
+"pun yang dikonfigurasi.\n"
+"Tidak ada lagi mirror unduhan yang bisa dicoba."
+
+#: PkStrings.cpp:665
+#, kde-format
+msgid ""
+"Required upgrade data could not be found in any of the configured software "
+"origins.\n"
+"The list of distribution upgrades will be unavailable."
+msgstr ""
+"Data peningkatan versi yang diperlukan tidak dapat ditemukan pada origin "
+"perangkat lunak mana pun yang dikonfigurasi.\n"
+"Daftar dari peningkatan versi distribusi akan tak tersedia."
+
+#: PkStrings.cpp:668
+#, kde-format
+msgid ""
+"The package that is trying to be installed is incompatible with this system."
+msgstr ""
+"Paket yang yang telah dicoba diinstal tidaklah kompatibel dengan sistem ini."
+
+#: PkStrings.cpp:670
+#, kde-format
+msgid ""
+"There is insufficient space on the device.\n"
+"Free some space on the system disk to perform this operation."
+msgstr ""
+"Kehabisan ruang pada peranti.\n"
+"Bebaskan beberapa ruang pada disk sistem untuk melakukan operasi ini."
+
+#: PkStrings.cpp:673
+#, kde-format
+msgid "Additional media is required to complete the transaction."
+msgstr "Media tambahan diperlukan untuk merampungkan transaksi."
+
+#: PkStrings.cpp:675
+#, kde-format
+msgid ""
+"You have failed to provide correct authentication.\n"
+"Please check any passwords or account settings."
+msgstr ""
+"Kamu gagal memberikan autentikasi yang benar.\n"
+"Silakan periksa pengaturan akun atau kata sandi."
+
+#: PkStrings.cpp:678
+#, kde-format
+msgid ""
+"The specified update could not be found.\n"
+"It could have already been installed or no longer available on the remote "
+"server."
+msgstr ""
+"Pembaruan yang ditentukan tidak ketemu.\n"
+"Ini mungkin sudah terinstal atau tidak lagi tersedia pada server jarak jauh."
+
+#: PkStrings.cpp:681
+#, kde-format
+msgid "The package could not be installed from untrusted origin."
+msgstr "Paket tidak bisa diinstal dari origin tidak terpercaya."
+
+#: PkStrings.cpp:683
+#, kde-format
+msgid "The package could not be updated from untrusted origin."
+msgstr "Paket tidak bisa diperbarui dari origin tidak terpercaya."
+
+#: PkStrings.cpp:685
+#, kde-format
+msgid "The file list is not available for this package."
+msgstr "Daftar file tidaklah tersedia untuk paket ini."
+
+#: PkStrings.cpp:687
+#, kde-format
+msgid "The information about what requires this package could not be obtained."
+msgstr "Informasi tentang apa yang diperlukan paket ini tidak bisa didapatkan."
+
+#: PkStrings.cpp:689
+#, kde-format
+msgid "The specified software origin could not be disabled."
+msgstr "Origin perangkat lunak tidak bisa dinonfungsikan."
+
+#: PkStrings.cpp:691
+#, kde-format
+msgid ""
+"The download could not be done automatically and should be done manually.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Unduhan tidak bisa dilakukan secara otomatis dan seharusnya dilakukan secara "
+"manual.\n"
+"Informasi selebihnya telah tersedia di laporan terperinci."
+
+#: PkStrings.cpp:694
+#, kde-format
+msgid ""
+"One of the selected packages failed to configure correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Salahsatu paket yang dipilih gagal dikonfigurasi secara benar.\n"
+"Informasi selebihnya telah tersedia di laporan terperinci."
+
+#: PkStrings.cpp:697
+#, kde-format
+msgid ""
+"One of the selected packages failed to build correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Salahsatu paket yang dipilih gagal dibagun secara benar.\n"
+"Informasi selebihnya telah tersedia di laporan terperinci."
+
+#: PkStrings.cpp:700
+#, kde-format
+msgid ""
+"One of the selected packages failed to install correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Salahsatu paket yang dipilih gagal diinstal secara benar.\n"
+"Informasi selebihnya telah tersedia di laporan terperinci."
+
+#: PkStrings.cpp:703
+#, kde-format
+msgid ""
+"One of the selected packages failed to be removed correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Salahsatu paket yang dipilih gagal dihapus secara benar.\n"
+"Informasi selebihnya telah tersedia di laporan terperinci."
+
+#: PkStrings.cpp:706
+#, kde-format
+msgid ""
+"A program is running that has to be closed before the update can proceed.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Sebuah program yang sedang berjalan harus ditutup sebelum pembaruan bisa "
+"diproses.\n"
+"Informasi selebihnya telah tersedia di laporan terperinci."
+
+#: PkStrings.cpp:709
+#, kde-format
+msgid "The package database was changed while the request was running."
+msgstr "Database paket telah diubah sedangkan permintaan sedang berjalan."
+
+#: PkStrings.cpp:711
+#, kde-format
+msgid "The virtual provide type is not supported by this system."
+msgstr "Tipe virtual yang tersedia tidak didukung oleh sistem ini."
+
+#: PkStrings.cpp:713
+#, kde-format
+msgid "The install root is invalid. Please contact your administrator."
+msgstr "Penginstalan root tidak absah. Silakan hubungi administrator kamu."
+
+#: PkStrings.cpp:715
+#, kde-format
+msgid "The list of software could not be downloaded."
+msgstr "Daftar perangkat lunak tidaklah bisa diunduh."
+
+#: PkStrings.cpp:717
+#, kde-format
+msgid ""
+"The transaction has been cancelled and will be retried when the system is "
+"idle."
+msgstr ""
+"Transaksi telah dibatalkan dan akan dicoba ulang ketika sistem sedang idle."
+
+#: PkStrings.cpp:719
+#, kde-format
+msgid "A previous package management transaction was interrupted."
+msgstr "Sebuah transaksi pengelola paket sebelumnya telah terganggu."
+
+#: PkStrings.cpp:721
+#, kde-format
+msgid "A package manager lock is required."
+msgstr "Sebuah kunci pengelola paket telah diperlukan."
+
+#: PkStrings.cpp:723
+#, kde-format
+msgid ""
+"Unknown error, please report a bug.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Error yang tidak diketahui, mohon laporkan bug.\n"
+"Informasi selebihnya telah tersedia di laporan terperinci."
+
+#: PkStrings.cpp:734
+#, kde-format
+msgctxt "The group type"
+msgid "Accessibility"
+msgstr "Aksesibilitas"
+
+#: PkStrings.cpp:736
+#, kde-format
+msgctxt "The group type"
+msgid "Accessories"
+msgstr "Aksesoris"
+
+#: PkStrings.cpp:738
+#, kde-format
+msgctxt "The group type"
+msgid "Education"
+msgstr "Pendidikan"
+
+#: PkStrings.cpp:740
+#, kde-format
+msgctxt "The group type"
+msgid "Games"
+msgstr "Permainan"
+
+#: PkStrings.cpp:742
+#, kde-format
+msgctxt "The group type"
+msgid "Graphics"
+msgstr "Grafik"
+
+#: PkStrings.cpp:744
+#, kde-format
+msgctxt "The group type"
+msgid "Internet"
+msgstr "Internet"
+
+#: PkStrings.cpp:746
+#, kde-format
+msgctxt "The group type"
+msgid "Office"
+msgstr "Perkantoran"
+
+#: PkStrings.cpp:748
+#, kde-format
+msgctxt "The group type"
+msgid "Others"
+msgstr "Lainnya"
+
+#: PkStrings.cpp:750
+#, kde-format
+msgctxt "The group type"
+msgid "Development"
+msgstr "Pengembangan"
+
+#: PkStrings.cpp:752
+#, kde-format
+msgctxt "The group type"
+msgid "Multimedia"
+msgstr "Multimedia"
+
+#: PkStrings.cpp:754
+#, kde-format
+msgctxt "The group type"
+msgid "System"
+msgstr "Sistem"
+
+#: PkStrings.cpp:756
+#, kde-format
+msgctxt "The group type"
+msgid "GNOME desktop"
+msgstr "Desktop GNOME"
+
+#: PkStrings.cpp:758
+#, kde-format
+msgctxt "The group type"
+msgid "KDE desktop"
+msgstr "Desktop KDE"
+
+#: PkStrings.cpp:760
+#, kde-format
+msgctxt "The group type"
+msgid "XFCE desktop"
+msgstr "Desktop XFCE"
+
+#: PkStrings.cpp:762
+#, kde-format
+msgctxt "The group type"
+msgid "Other desktops"
+msgstr "Desktop lainnya"
+
+#: PkStrings.cpp:764
+#, kde-format
+msgctxt "The group type"
+msgid "Publishing"
+msgstr "Penerbitan"
+
+#: PkStrings.cpp:766
+#, kde-format
+msgctxt "The group type"
+msgid "Servers"
+msgstr "Server"
+
+#: PkStrings.cpp:768
+#, kde-format
+msgctxt "The group type"
+msgid "Fonts"
+msgstr "Font"
+
+#: PkStrings.cpp:770
+#, kde-format
+msgctxt "The group type"
+msgid "Admin tools"
+msgstr "Peralatan admin"
+
+#: PkStrings.cpp:772
+#, kde-format
+msgctxt "The group type"
+msgid "Legacy"
+msgstr "Lawasan"
+
+#: PkStrings.cpp:774
+#, kde-format
+msgctxt "The group type"
+msgid "Localization"
+msgstr "Pelokalisan"
+
+#: PkStrings.cpp:776
+#, kde-format
+msgctxt "The group type"
+msgid "Virtualization"
+msgstr "Virtualisasi"
+
+#: PkStrings.cpp:778
+#, kde-format
+msgctxt "The group type"
+msgid "Security"
+msgstr "Keamanan"
+
+#: PkStrings.cpp:780
+#, kde-format
+msgctxt "The group type"
+msgid "Power management"
+msgstr "Pengelolaan daya"
+
+#: PkStrings.cpp:782
+#, kde-format
+msgctxt "The group type"
+msgid "Communication"
+msgstr "Komunikasi"
+
+#: PkStrings.cpp:784
+#, kde-format
+msgctxt "The group type"
+msgid "Network"
+msgstr "Jaringan"
+
+#: PkStrings.cpp:786
+#, kde-format
+msgctxt "The group type"
+msgid "Maps"
+msgstr "Peta"
+
+#: PkStrings.cpp:788
+#, kde-format
+msgctxt "The group type"
+msgid "Software sources"
+msgstr "Sumber perangkat lunak"
+
+#: PkStrings.cpp:790
+#, kde-format
+msgctxt "The group type"
+msgid "Science"
+msgstr "Ilmu pengetahuan"
+
+#: PkStrings.cpp:792
+#, kde-format
+msgctxt "The group type"
+msgid "Documentation"
+msgstr "Dokumentasi"
+
+#: PkStrings.cpp:794
+#, kde-format
+msgctxt "The group type"
+msgid "Electronics"
+msgstr "Elektronika"
+
+#: PkStrings.cpp:796
+#, kde-format
+msgctxt "The group type"
+msgid "Package collections"
+msgstr "Koleksi paket"
+
+#: PkStrings.cpp:798
+#, kde-format
+msgctxt "The group type"
+msgid "Vendor"
+msgstr "Vendor"
+
+#: PkStrings.cpp:800
+#, kde-format
+msgctxt "The group type"
+msgid "Newest packages"
+msgstr "Paket-paket terbaru"
+
+#: PkStrings.cpp:802
+#, kde-format
+msgctxt "The group type"
+msgid "Unknown group"
+msgstr "Kelompok tidak diketahui"
+
+#: PkStrings.cpp:813
+#, kde-format
+msgctxt "The type of update"
+msgid "Trivial update"
+msgstr "Pembaruan sepele"
+
+#: PkStrings.cpp:815
+#, kde-format
+msgctxt "The type of update"
+msgid "Normal update"
+msgstr "Pembaruan biasa"
+
+#: PkStrings.cpp:817
+#, kde-format
+msgctxt "The type of update"
+msgid "Important update"
+msgstr "Pembaruan penting"
+
+#: PkStrings.cpp:819
+#, kde-format
+msgctxt "The type of update"
+msgid "Security update"
+msgstr "Pembaruan keamanan"
+
+#: PkStrings.cpp:821
+#, kde-format
+msgctxt "The type of update"
+msgid "Bug fix update"
+msgstr "Pembaruan perbaikan bug"
+
+#: PkStrings.cpp:823
+#, kde-format
+msgctxt "The type of update"
+msgid "Enhancement update"
+msgstr "Pembaruan perbaikan"
+
+#: PkStrings.cpp:825
+#, kde-format
+msgctxt "The type of update"
+msgid "Blocked update"
+msgstr "Pembaruan terblokir"
+
+#: PkStrings.cpp:828
+#, kde-format
+msgctxt "The type of update"
+msgid "Installed"
+msgstr "Terinstal"
+
+#: PkStrings.cpp:831
+#, kde-format
+msgctxt "The type of update"
+msgid "Available"
+msgstr "Tersedia"
+
+#: PkStrings.cpp:833
+#, kde-format
+msgctxt "The type of update"
+msgid "Unknown update"
+msgstr "Pembaruan tak diketahui"
+
+#: PkStrings.cpp:844
+#, kde-format
+msgid "No Updates Available"
+msgstr "Tidak Ada Pembaruan Yang Tersedia"
+
+#: PkStrings.cpp:847
+#, kde-format
+msgctxt "Some updates were selected on the view"
+msgid "1 Update Selected"
+msgid_plural "%1 Updates Selected"
+msgstr[0] "1 Pembaruan Dipilih"
+msgstr[1] "%1 Pembaruan Dipilih"
+
+#: PkStrings.cpp:851
+#, kde-format
+msgctxt "Some updates are being shown on the screen"
+msgid "1 Update"
+msgid_plural "%1 Updates"
+msgstr[0] "1 Pembaruan"
+msgstr[1] "%1 Pembaruan"
+
+#: PkStrings.cpp:854
+#, kde-format
+msgctxt "Type of update, in the case it's just an update"
+msgid "%1, %2"
+msgstr "%1, %2"
+
+#: PkStrings.cpp:855
+#, kde-format
+msgctxt "Part of: %1 Updates, %1 Selected"
+msgid "%1 Update"
+msgid_plural "%1 Updates"
+msgstr[0] "%1 Pembaruan"
+msgstr[1] "%1 Pembaruan"
+
+#: PkStrings.cpp:856
+#, kde-format
+msgctxt "Part of: %1 Updates, %1 Selected"
+msgid "%1 Selected"
+msgid_plural "%1 Selected"
+msgstr[0] "%1 Dipilih"
+msgstr[1] "%1 Dipilih"
+
+#: PkStrings.cpp:860
+#, kde-format
+msgid "No Packages"
+msgstr "Tidak Ada Paket"
+
+#: PkStrings.cpp:862
+#, kde-format
+msgid "1 Package"
+msgid_plural "%1 Packages"
+msgstr[0] "1 Paket"
+msgstr[1] "%1 Paket"
+
+#: PkStrings.cpp:870
+#, kde-format
+msgid "No restart is necessary"
+msgstr "Tidak perlu menyalakan ulang"
+
+#: PkStrings.cpp:872
+#, kde-format
+msgid "You will be required to restart this application"
+msgstr "Kamu akan diminta untuk menjalankan ulang aplikasi ini"
+
+#: PkStrings.cpp:874
+#, kde-format
+msgid "You will be required to log out and back in"
+msgstr "Kamu akan diminta untuk keluar dan kembali masuk log"
+
+#: PkStrings.cpp:876
+#, kde-format
+msgid "A restart will be required"
+msgstr "Sebuah penyalaan/pemulaian ulang akan diminta"
+
+#: PkStrings.cpp:878
+#, kde-format
+msgid "You will be required to log out and back in due to a security update."
+msgstr ""
+"Kamu akan diminta untuk keluar dan kembali masuk log karena pembaruan "
+"keamanan."
+
+#: PkStrings.cpp:880
+#, kde-format
+msgid "A restart will be required due to a security update."
+msgstr ""
+"Sebuah penyalaan/pemulaian ulang akan diminta karena pembaruan keamanan."
+
+#: PkStrings.cpp:893
+#, kde-format
+msgid "No restart is required"
+msgstr "Tidak ada penyalaan ulang yang diperlukan"
+
+#: PkStrings.cpp:895
+#, kde-format
+msgid "A restart is required"
+msgstr "Sebuah penyalaan/pemulaian ulang diperlukan"
+
+#: PkStrings.cpp:897
+#, kde-format
+msgid "You need to log out and log back in"
+msgstr "Kamu perlu keluar dan kembali masuk log"
+
+#: PkStrings.cpp:899
+#, kde-format
+msgid "You need to restart the application"
+msgstr "Kamu perlu menjalankan ulang aplikasi"
+
+#: PkStrings.cpp:901
+#, kde-format
+msgid "You need to log out and log back in to remain secure."
+msgstr "Kamu perlu keluar dan kembali masuk log untuk lebih amannya."
+
+#: PkStrings.cpp:903
+#, kde-format
+msgid "A restart is required to remain secure."
+msgstr "Sebuah penyalaan/pemulaian ulang diperlukan untuk lebih amannya."
+
+#: PkStrings.cpp:916
+#, kde-format
+msgid "Stable"
+msgstr "Stabil"
+
+#: PkStrings.cpp:918
+#, kde-format
+msgid "Unstable"
+msgstr "Labil"
+
+#: PkStrings.cpp:920
+#, kde-format
+msgid "Testing"
+msgstr "Pengujian"
+
+#: PkStrings.cpp:933
+#, kde-format
+msgid "Please insert the CD labeled '%1', and press continue."
+msgstr "Mohon sisipkan CD yang berlabel '%1', dan tekan lanjutkan."
+
+#: PkStrings.cpp:935
+#, kde-format
+msgid "Please insert the DVD labeled '%1', and press continue."
+msgstr "Mohon sisipkan DVD yang berlabel '%1', dan tekan lanjutkan."
+
+#: PkStrings.cpp:937
+#, kde-format
+msgid "Please insert the disc labeled '%1', and press continue."
+msgstr "Mohon sisipkan cakram yang berlabel '%1', dan tekan lanjutkan."
+
+#: PkStrings.cpp:939 PkStrings.cpp:942
+#, kde-format
+msgid "Please insert the medium labeled '%1', and press continue."
+msgstr "Mohon sisipkan sarana yang berlabel '%1', dan tekan lanjutkan."
+
+#: PkStrings.cpp:950
+#, kde-format
+msgid "You do not have the necessary privileges to perform this action."
+msgstr ""
+"Kamu tidak memiliki hak istimewa yang diperlukan untuk melakukan aksi ini."
+
+#: PkStrings.cpp:952
+#, kde-format
+msgid "Could not get a transaction id from packagekitd."
+msgstr "Tidak bisa mendapatkan id transaksi dari packagekitd."
+
+#: PkStrings.cpp:954
+#, kde-format
+msgid "Cannot connect to this transaction id."
+msgstr "Tidak bisa mengkoneksikan ke id transaksi ini."
+
+#: PkStrings.cpp:956
+#, kde-format
+msgid "This action is unknown."
+msgstr "Aksi ini tidak diketahui."
+
+#: PkStrings.cpp:958
+#, kde-format
+msgid "The packagekitd service could not be started."
+msgstr "Layanan packagekitd tidak bisa ditemukan."
+
+#: PkStrings.cpp:960
+#, kde-format
+msgid "The query is not valid."
+msgstr "Query tidaklah absah."
+
+#: PkStrings.cpp:962
+#, kde-format
+msgid "The file is not valid."
+msgstr "File tidaklah absah."
+
+#: PkStrings.cpp:964
+#, kde-format
+msgid "This function is not yet supported."
+msgstr "Fungsi ini belumlah didukung."
+
+#: PkStrings.cpp:966
+#, kde-format
+msgid "Could not talk to packagekitd."
+msgstr "Tidak bisa berkomunikasi dengan packagekitd."
+
+#: PkStrings.cpp:968
+#, kde-format
+msgid "Error talking to packagekitd."
+msgstr "Error berkomunikasi dengan packagekitd."
+
+#: PkStrings.cpp:971 PkStrings.cpp:974
+#, kde-format
+msgid "An unknown error happened."
+msgstr "Sebuah error tak diketahui terjadi."
+
+#: PkStrings.cpp:988 pkupdates.cpp:170
+#, kde-format
+msgid "Your system is up to date"
+msgstr "Sistemmu telah terbarukan."
+
+#: PkStrings.cpp:990
+#, kde-format
+msgid "You have no updates"
+msgstr "Kamu tidak memiliki pembaruan"
+
+#: PkStrings.cpp:992
+#, kde-format
+msgid "Last check for updates was more than a month ago"
+msgstr "Pemeriksaan terakhir pembaruan adalah lebih dari sebulan yang lalu"
+
+#: PkStrings.cpp:1000
+#, kde-format
+msgid "Verified %1 ago"
+msgstr "Diverifikasi %1 yang lalu"
+
+#: PkStrings.cpp:1002
+#, kde-format
+msgid "It's strongly recommended that you check for new updates now"
+msgstr ""
+"Ini sangat disarankan bahwa kamu harus memeriksa pembaruan yang baru "
+"sekarang juga"
+
+#: pkupdates.cpp:54
+#, kde-format
+msgid "Idle"
+msgstr "Idle"
+
+#: pkupdates.cpp:140
+#, kde-format
+msgid "Checking updates"
+msgstr "Memeriksa pembaruan"
+
+#: pkupdates.cpp:142
+#, kde-format
+msgid "Getting updates"
+msgstr "Mendapatkan pembaruan"
+
+#: pkupdates.cpp:144
+#, kde-format
+msgid "Installing updates"
+msgstr "Menginstal pembaruan"
+
+#: pkupdates.cpp:146
+#, kde-format
+msgid "Working"
+msgstr "Bekerja"
+
+#: pkupdates.cpp:149 pkupdates.cpp:439
+#, kde-format
+msgid "You have 1 new update"
+msgid_plural "You have %1 new updates"
+msgstr[0] "Kamu memiliki 1 pembaruan baru"
+msgstr[1] "Kamu memiliki %1 pembaruan baru"
+
+#: pkupdates.cpp:151
+#, kde-format
+msgid "1 security update"
+msgid_plural "%1 security updates"
+msgstr[0] "1 pembaruan keamanan"
+msgstr[1] "%1 pembaruan keamanan"
+
+#: pkupdates.cpp:153
+#, kde-format
+msgid "1 important update"
+msgid_plural "%1 important updates"
+msgstr[0] "1 pembaruan penting"
+msgstr[1] "%1 pembaruan penting"
+
+#: pkupdates.cpp:158
+#, kde-format
+msgid " and "
+msgstr " dan "
+
+#: pkupdates.cpp:158
+#, kde-format
+msgid "(including %1)"
+msgstr "(termasuk %1)"
+
+#: pkupdates.cpp:160
+#, kde-format
+msgid "Your system is offline"
+msgstr "Sistemmu sedang offline."
+
+#: pkupdates.cpp:165
+#, fuzzy, kde-format
+#| msgid "Checking for updates failed"
+msgid "Not checked for updates yet"
+msgstr "Pemeriksaan pembaruan, gagal"
+
+#: pkupdates.cpp:168
+#, kde-format
+msgid "Checking for updates failed"
+msgstr "Pemeriksaan pembaruan, gagal"
+
+#: pkupdates.cpp:241
+#, kde-format
+msgid "Last check: %1 ago"
+msgstr "Terakhir diperiksa: %1 yang lalu"
+
+#: pkupdates.cpp:243
+#, kde-format
+msgid "Last check: never"
+msgstr "Terakhir diperiksa: belum pernah"
+
+#: pkupdates.cpp:385
+#, kde-format
+msgctxt "1 installation status, 2 pkg name, 3 percentage"
+msgid "%1 %2 (%3%)"
+msgstr "%1 %2 (%3%)"
+
+#: pkupdates.cpp:388
+#, kde-format
+msgctxt "1 installation status, 2 pkg name"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: pkupdates.cpp:474
+#, kde-format
+msgid "Updates Installed"
+msgstr "Pembaruan Terinstal"
+
+#: pkupdates.cpp:475
+#, kde-format
+msgid "Successfully updated %1 package"
+msgid_plural "Successfully updated %1 packages"
+msgstr[0] "Yang berhasil diperbarui %1 paket"
+msgstr[1] "Yang berhasil diperbarui %1 paket"
+
+#: pkupdates.cpp:539
+#, kde-format
+msgid "Update Error"
+msgstr "Error Pembaruan"
+
+#: pkupdates.cpp:593
+#, kde-format
+msgid "Restart is required"
+msgstr "Penyalaan ulang telah diperlukan"
+
+#: pkupdates.cpp:594
+#, kde-format
+msgid ""
+"The computer will have to be restarted after the update for the changes to "
+"take effect."
+msgstr ""
+"Komputer harus dinyalakan ulang setelah pembaruan agar perubahan berpengaruh."
+
+#: pkupdates.cpp:603
+#, kde-format
+msgid "Session restart is required"
+msgstr "Pemulaian ulang sesi telah diperlukan"
+
+#: pkupdates.cpp:604
+#, kde-format
+msgid ""
+"You will need to log out and back in after the update for the changes to "
+"take effect."
+msgstr ""
+"Kamu perlu keluar dan kembali masuk log setelah pembaruan agar perubahan "
+"berpengaruh."
+
+#~ msgctxt "@action:button"
+#~ msgid "Restart"
+#~ msgstr "Nyalakan Ulang"
+
+#~ msgctxt "@action:button"
+#~ msgid "Logout"
+#~ msgstr "Logout"

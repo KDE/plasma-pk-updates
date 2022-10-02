@@ -1,0 +1,164 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>, 2015, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-07 00:46+0000\n"
+"PO-Revision-Date: 2020-01-27 14:39+0200\n"
+"Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
+"Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
+"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
+"X-Generator: Poedit 2.2.4\n"
+
+#: contents/config/config.qml:26
+#, kde-format
+msgid "General"
+msgstr "Bendra"
+
+#: contents/ui/ConfigGeneral.qml:42
+#, fuzzy, kde-format
+#| msgid "Check Interval"
+msgctxt "@label check interval for updates"
+msgid "Check interval:"
+msgstr "Tikrinimo intervalas"
+
+#: contents/ui/ConfigGeneral.qml:44
+#, kde-format
+msgid "Daily"
+msgstr "Kasdien"
+
+#: contents/ui/ConfigGeneral.qml:50
+#, kde-format
+msgid "Weekly"
+msgstr "Kas savaitę"
+
+#: contents/ui/ConfigGeneral.qml:56
+#, kde-format
+msgid "Monthly"
+msgstr "Kas mėnesį"
+
+#: contents/ui/ConfigGeneral.qml:61
+#, fuzzy, kde-format
+#| msgid "Check For Updates"
+msgctxt "@label part of a sentence"
+msgid "Check for updates when:"
+msgstr "Tikrinti, ar yra atnaujinimų"
+
+#: contents/ui/ConfigGeneral.qml:62
+#, fuzzy, kde-format
+#| msgid "Check for updates even on a mobile connection"
+msgctxt "@option:check part of a sentence: Check for updates when"
+msgid "On a mobile connection"
+msgstr "Tikrinti atnaujinimus, netgi naudojantis mobiliuoju ryšiu"
+
+#: contents/ui/ConfigGeneral.qml:67
+#, kde-format
+msgctxt "@option:check part of a sentence: Check for updates when"
+msgid "On battery"
+msgstr ""
+
+#: contents/ui/Full.qml:67
+#, kde-format
+msgid "License Agreement for %1"
+msgstr "%1 licencijos sutartis"
+
+#: contents/ui/Full.qml:74
+#, kde-format
+msgid "License agreement required for %1 (from %2):"
+msgstr "%1 (iš %2) reikalauja licencijos sutarties:"
+
+#: contents/ui/Full.qml:101
+#, kde-format
+msgid "Do you accept?"
+msgstr "Ar sutinkate?"
+
+#: contents/ui/Full.qml:145
+#, kde-format
+msgid "Network is offline"
+msgstr "Neprisijungta prie tinklo"
+
+#: contents/ui/Full.qml:156
+#, fuzzy, kde-format
+#| msgid "Updates are automatically checked %1.<br>"
+msgid "Updates are automatically checked %1."
+msgstr "Atnaujinimų ieškoma %1.<br>"
+
+#: contents/ui/Full.qml:242
+#, fuzzy, kde-format
+#| msgid "No description available"
+msgid "No updates available"
+msgstr "Nėra prieinamo aprašo"
+
+#: contents/ui/Full.qml:266
+#, kde-format
+msgid "Select all packages"
+msgstr "Pažymėti visus paketus"
+
+#: contents/ui/Full.qml:279
+#, kde-format
+msgid "Install Updates"
+msgstr "Įdiegti atnaujinimus"
+
+#: contents/ui/Full.qml:283
+#, kde-format
+msgid "Performs the software update"
+msgstr "Atnaujina programinę įrangą"
+
+#: contents/ui/Full.qml:341
+#, kde-format
+msgid "weekly"
+msgstr "kas savaitę"
+
+#: contents/ui/Full.qml:343
+#, kde-format
+msgid "monthly"
+msgstr "kas mėnesį"
+
+#: contents/ui/Full.qml:345
+#, kde-format
+msgid "daily"
+msgstr "kasdien"
+
+#: contents/ui/PackageDelegate.qml:64
+#, kde-format
+msgctxt "Package Name (Version)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: contents/ui/PackageDelegate.qml:94
+#, kde-format
+msgctxt "description of the update"
+msgid "Update Description"
+msgstr "Atnaujinimo aprašas"
+
+#: contents/ui/PackageDelegate.qml:101
+#, kde-format
+msgid "No description available"
+msgstr "Nėra prieinamo aprašo"
+
+#: contents/ui/PackageDelegate.qml:109
+#, kde-format
+msgid "Related URLs"
+msgstr "Susiję URL adresai"
+
+#~ msgid "Check for updates even when on battery"
+#~ msgstr "Tikrinti atnaujinimus, netgi naudojantis akumuliatoriaus maitinimu"
+
+#~ msgid ""
+#~ "Updates are automatically checked %1.<br>Click the 'Check For Updates' "
+#~ "button below to search for updates manually."
+#~ msgstr ""
+#~ "Atnaujinimai yra automatiškai tikrinami %1.<br>Spustelėkite žemiau "
+#~ "mygtuką \"Tikrinti, ar yra atnaujinimų\" norėdami rankiniu būdu ieškoti, "
+#~ "ar yra atnaujinimų."
+
+#~ msgid "Checks for any available updates"
+#~ msgstr "Ieško bet kokių prieinamų atnaujinimų"

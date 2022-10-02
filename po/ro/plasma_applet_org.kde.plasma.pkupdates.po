@@ -1,0 +1,158 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the plasma-pk-updates package.
+# Sergiu Bivol <sergiu@cip.md>, 2020, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-pk-updates\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-07 00:46+0000\n"
+"PO-Revision-Date: 2022-05-05 12:55+0100\n"
+"Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
+"Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Lokalize 21.12.3\n"
+
+#: contents/config/config.qml:26
+#, kde-format
+msgid "General"
+msgstr "Generale"
+
+#: contents/ui/ConfigGeneral.qml:42
+#, kde-format
+msgctxt "@label check interval for updates"
+msgid "Check interval:"
+msgstr "Interval de verificare:"
+
+#: contents/ui/ConfigGeneral.qml:44
+#, kde-format
+msgid "Daily"
+msgstr "Zilnic"
+
+#: contents/ui/ConfigGeneral.qml:50
+#, kde-format
+msgid "Weekly"
+msgstr "Săptămânal"
+
+#: contents/ui/ConfigGeneral.qml:56
+#, kde-format
+msgid "Monthly"
+msgstr "Lunar"
+
+#: contents/ui/ConfigGeneral.qml:61
+#, kde-format
+msgctxt "@label part of a sentence"
+msgid "Check for updates when:"
+msgstr "Caută actualizări:"
+
+#: contents/ui/ConfigGeneral.qml:62
+#, kde-format
+msgctxt "@option:check part of a sentence: Check for updates when"
+msgid "On a mobile connection"
+msgstr "Pe conexiune mobilă"
+
+#: contents/ui/ConfigGeneral.qml:67
+#, kde-format
+msgctxt "@option:check part of a sentence: Check for updates when"
+msgid "On battery"
+msgstr "Pe acumulator"
+
+#: contents/ui/Full.qml:67
+#, kde-format
+msgid "License Agreement for %1"
+msgstr "Acord de licență pentru %1"
+
+#: contents/ui/Full.qml:74
+#, kde-format
+msgid "License agreement required for %1 (from %2):"
+msgstr "Acord de licență necesar pentru %1 (de la %2):"
+
+#: contents/ui/Full.qml:101
+#, kde-format
+msgid "Do you accept?"
+msgstr "Acceptați?"
+
+#: contents/ui/Full.qml:145
+#, kde-format
+msgid "Network is offline"
+msgstr "Rețeaua e deconectată"
+
+#: contents/ui/Full.qml:156
+#, kde-format
+msgid "Updates are automatically checked %1."
+msgstr "Actualizările se verifică automat %1."
+
+#: contents/ui/Full.qml:242
+#, kde-format
+msgid "No updates available"
+msgstr "Nicio actualizare disponibilă"
+
+#: contents/ui/Full.qml:266
+#, kde-format
+msgid "Select all packages"
+msgstr "Alege toate pachetele"
+
+#: contents/ui/Full.qml:279
+#, kde-format
+msgid "Install Updates"
+msgstr "Instalează actualizări"
+
+#: contents/ui/Full.qml:283
+#, kde-format
+msgid "Performs the software update"
+msgstr "Efectuează actualizarea programelor"
+
+#: contents/ui/Full.qml:341
+#, kde-format
+msgid "weekly"
+msgstr "săptămânal"
+
+#: contents/ui/Full.qml:343
+#, kde-format
+msgid "monthly"
+msgstr "lunar"
+
+#: contents/ui/Full.qml:345
+#, kde-format
+msgid "daily"
+msgstr "zilnic"
+
+#: contents/ui/PackageDelegate.qml:64
+#, kde-format
+msgctxt "Package Name (Version)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: contents/ui/PackageDelegate.qml:94
+#, kde-format
+msgctxt "description of the update"
+msgid "Update Description"
+msgstr "Descrierea actualizării"
+
+#: contents/ui/PackageDelegate.qml:101
+#, kde-format
+msgid "No description available"
+msgstr "Nicio descriere disponibilă"
+
+#: contents/ui/PackageDelegate.qml:109
+#, kde-format
+msgid "Related URLs"
+msgstr "URL-uri legate"
+
+#~ msgid "Check for updates even when on battery"
+#~ msgstr "Caută actualizări chiar și când e pe acumulator"
+
+#~ msgid ""
+#~ "Updates are automatically checked %1.<br>Click the 'Check For Updates' "
+#~ "button below to search for updates manually."
+#~ msgstr ""
+#~ "Actualizările sunt verificate automat %1.<br>Apăsați pe butonul „Caută "
+#~ "actualizări” de mai jos pentru a căuta actualizări manual."
+
+#~ msgid "Checks for any available updates"
+#~ msgstr "Caută actualizări disponibile"

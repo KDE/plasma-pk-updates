@@ -1,0 +1,161 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the plasma-pk-updates package.
+#
+# Marek Laane <qiilaq69@gmail.com>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-pk-updates\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-07 00:46+0000\n"
+"PO-Revision-Date: 2020-01-24 22:44+0200\n"
+"Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
+"Language-Team: Estonian <kde-et@lists.linux.ee>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 19.08.1\n"
+
+#: contents/config/config.qml:26
+#, kde-format
+msgid "General"
+msgstr "Üldine"
+
+#: contents/ui/ConfigGeneral.qml:42
+#, fuzzy, kde-format
+#| msgid "Check Interval"
+msgctxt "@label check interval for updates"
+msgid "Check interval:"
+msgstr "Kontrollimise intervall"
+
+#: contents/ui/ConfigGeneral.qml:44
+#, kde-format
+msgid "Daily"
+msgstr "Iga päev"
+
+#: contents/ui/ConfigGeneral.qml:50
+#, kde-format
+msgid "Weekly"
+msgstr "Iga nädal"
+
+#: contents/ui/ConfigGeneral.qml:56
+#, kde-format
+msgid "Monthly"
+msgstr "Iga kuu"
+
+#: contents/ui/ConfigGeneral.qml:61
+#, fuzzy, kde-format
+#| msgid "Check For Updates"
+msgctxt "@label part of a sentence"
+msgid "Check for updates when:"
+msgstr "Kontrolli uuendusi"
+
+#: contents/ui/ConfigGeneral.qml:62
+#, fuzzy, kde-format
+#| msgid "Check for updates even on a mobile connection"
+msgctxt "@option:check part of a sentence: Check for updates when"
+msgid "On a mobile connection"
+msgstr "Uuenduste kontrollimine isegi mobiiliühenduse korral"
+
+#: contents/ui/ConfigGeneral.qml:67
+#, kde-format
+msgctxt "@option:check part of a sentence: Check for updates when"
+msgid "On battery"
+msgstr ""
+
+#: contents/ui/Full.qml:67
+#, kde-format
+msgid "License Agreement for %1"
+msgstr "%1 litsentsileping"
+
+#: contents/ui/Full.qml:74
+#, kde-format
+msgid "License agreement required for %1 (from %2):"
+msgstr "%1 (%2) vajab litsentsilepingut:"
+
+#: contents/ui/Full.qml:101
+#, kde-format
+msgid "Do you accept?"
+msgstr "Kas nõustuda?"
+
+#: contents/ui/Full.qml:145
+#, kde-format
+msgid "Network is offline"
+msgstr "Võrguühendus puudub"
+
+#: contents/ui/Full.qml:156
+#, kde-format
+msgid "Updates are automatically checked %1."
+msgstr ""
+
+#: contents/ui/Full.qml:242
+#, fuzzy, kde-format
+#| msgid "No description available"
+msgid "No updates available"
+msgstr "Kirjeldus puudub"
+
+#: contents/ui/Full.qml:266
+#, kde-format
+msgid "Select all packages"
+msgstr "Vali kõik paketid"
+
+#: contents/ui/Full.qml:279
+#, kde-format
+msgid "Install Updates"
+msgstr "Paigalda uuendused"
+
+#: contents/ui/Full.qml:283
+#, kde-format
+msgid "Performs the software update"
+msgstr "Tarkvara uuendamine"
+
+#: contents/ui/Full.qml:341
+#, kde-format
+msgid "weekly"
+msgstr "kord nädalas"
+
+#: contents/ui/Full.qml:343
+#, kde-format
+msgid "monthly"
+msgstr "kord kuus"
+
+#: contents/ui/Full.qml:345
+#, kde-format
+msgid "daily"
+msgstr "kord päevas"
+
+#: contents/ui/PackageDelegate.qml:64
+#, kde-format
+msgctxt "Package Name (Version)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: contents/ui/PackageDelegate.qml:94
+#, kde-format
+msgctxt "description of the update"
+msgid "Update Description"
+msgstr "Uuenduse kirjeldus"
+
+#: contents/ui/PackageDelegate.qml:101
+#, kde-format
+msgid "No description available"
+msgstr "Kirjeldus puudub"
+
+#: contents/ui/PackageDelegate.qml:109
+#, kde-format
+msgid "Related URLs"
+msgstr "Seotud URL-id"
+
+#~ msgid "Check for updates even when on battery"
+#~ msgstr "Uuenduste kontrollimine isegi akutoitel"
+
+#~ msgid ""
+#~ "Updates are automatically checked %1.<br>Click the 'Check For Updates' "
+#~ "button below to search for updates manually."
+#~ msgstr ""
+#~ "Uuendusi kontrollitakse automaatselt %1.<br>Klõpsa allpool nupule "
+#~ "\"Kontrolli uuendusi\" uuenduste otsimiseks käsitsi."
+
+#~ msgid "Checks for any available updates"
+#~ msgstr "Saadaolevate uuenduste kontrollimine"

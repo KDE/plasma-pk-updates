@@ -1,0 +1,158 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2015, 2016, 2017, 2019, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-07 00:46+0000\n"
+"PO-Revision-Date: 2022-03-13 17:46+0100\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
+"Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 20.08.1\n"
+
+#: contents/config/config.qml:26
+#, kde-format
+msgid "General"
+msgstr "Allmänt"
+
+#: contents/ui/ConfigGeneral.qml:42
+#, kde-format
+msgctxt "@label check interval for updates"
+msgid "Check interval:"
+msgstr "Kontrollintervall:"
+
+#: contents/ui/ConfigGeneral.qml:44
+#, kde-format
+msgid "Daily"
+msgstr "Dagligen"
+
+#: contents/ui/ConfigGeneral.qml:50
+#, kde-format
+msgid "Weekly"
+msgstr "Veckovis"
+
+#: contents/ui/ConfigGeneral.qml:56
+#, kde-format
+msgid "Monthly"
+msgstr "Månadsvis"
+
+#: contents/ui/ConfigGeneral.qml:61
+#, kde-format
+msgctxt "@label part of a sentence"
+msgid "Check for updates when:"
+msgstr "Kontrollera uppdateringar när:"
+
+#: contents/ui/ConfigGeneral.qml:62
+#, kde-format
+msgctxt "@option:check part of a sentence: Check for updates when"
+msgid "On a mobile connection"
+msgstr "Mobilanslutning används"
+
+#: contents/ui/ConfigGeneral.qml:67
+#, kde-format
+msgctxt "@option:check part of a sentence: Check for updates when"
+msgid "On battery"
+msgstr "Batteri används"
+
+#: contents/ui/Full.qml:67
+#, kde-format
+msgid "License Agreement for %1"
+msgstr "Licensavtal för %1"
+
+#: contents/ui/Full.qml:74
+#, kde-format
+msgid "License agreement required for %1 (from %2):"
+msgstr "Licensavtal krävs för %1 (från %2):"
+
+#: contents/ui/Full.qml:101
+#, kde-format
+msgid "Do you accept?"
+msgstr "Accepterar du?"
+
+#: contents/ui/Full.qml:145
+#, kde-format
+msgid "Network is offline"
+msgstr "Nätverket är nerkopplat"
+
+#: contents/ui/Full.qml:156
+#, kde-format
+msgid "Updates are automatically checked %1."
+msgstr "Uppdateringar kontrolleras automatiskt %1."
+
+#: contents/ui/Full.qml:242
+#, kde-format
+msgid "No updates available"
+msgstr "Inga uppdateringar tillgängliga"
+
+#: contents/ui/Full.qml:266
+#, kde-format
+msgid "Select all packages"
+msgstr "Välj alla paket"
+
+#: contents/ui/Full.qml:279
+#, kde-format
+msgid "Install Updates"
+msgstr "Installera uppdateringar"
+
+#: contents/ui/Full.qml:283
+#, kde-format
+msgid "Performs the software update"
+msgstr "Utför uppdateringen av programvara"
+
+#: contents/ui/Full.qml:341
+#, kde-format
+msgid "weekly"
+msgstr "veckovis"
+
+#: contents/ui/Full.qml:343
+#, kde-format
+msgid "monthly"
+msgstr "månadsvis"
+
+#: contents/ui/Full.qml:345
+#, kde-format
+msgid "daily"
+msgstr "dagligen"
+
+#: contents/ui/PackageDelegate.qml:64
+#, kde-format
+msgctxt "Package Name (Version)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: contents/ui/PackageDelegate.qml:94
+#, kde-format
+msgctxt "description of the update"
+msgid "Update Description"
+msgstr "Beskrivning av uppdatering"
+
+#: contents/ui/PackageDelegate.qml:101
+#, kde-format
+msgid "No description available"
+msgstr "Ingen beskrivning tillgänglig"
+
+#: contents/ui/PackageDelegate.qml:109
+#, kde-format
+msgid "Related URLs"
+msgstr "Relaterade webbadresser"
+
+#~ msgid "Check for updates even when on battery"
+#~ msgstr "Kontrollera uppdateringar också när batteri används"
+
+#~ msgid ""
+#~ "Updates are automatically checked %1.<br>Click the 'Check For Updates' "
+#~ "button below to search for updates manually."
+#~ msgstr ""
+#~ "Uppdateringar kontrolleras automatiskt %1.<br>Klicka på knappen "
+#~ "'Kontrollera uppdateringar' nedan för att söka efter uppdateringar "
+#~ "manuellt."
+
+#~ msgid "Checks for any available updates"
+#~ msgstr "Kontrollerar eventuella tillgängliga uppdateringar"

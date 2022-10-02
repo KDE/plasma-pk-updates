@@ -1,0 +1,2283 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the plasma-pk-updates package.
+#
+# A S Alam <alam.yellow@gmail.com>, 2019, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-pk-updates\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-02-06 00:50+0000\n"
+"PO-Revision-Date: 2020-11-01 21:31-0800\n"
+"Last-Translator: A S Alam <aalam.yellow@gmail.com>\n"
+"Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
+"Language: pa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 20.08.1\n"
+
+#: PkStrings.cpp:37
+#, kde-format
+msgctxt "This is when the transaction status is not known"
+msgid "Unknown state"
+msgstr "ਅਣਪਛਾਤੀ ਹਾਲਤ"
+
+#: PkStrings.cpp:40
+#, kde-format
+msgctxt "transaction state, the daemon is in the process of starting"
+msgid "Waiting for service to start"
+msgstr "ਸਰਵਿਸ ਸ਼ੁਰੂ ਹੋਣ ਲਈ ਉਡੀਕ ਜਾਰੀ ਹੈ"
+
+#: PkStrings.cpp:43
+#, kde-format
+msgctxt "transaction state, the transaction is waiting for another to complete"
+msgid "Waiting for other tasks"
+msgstr "ਹੋਰ ਕੰਮਾਂ ਲਈ ਉਡੀਕ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:46
+#, kde-format
+msgctxt "transaction state, just started"
+msgid "Running task"
+msgstr "ਕੰਮ ਚੱਲ ਰਿਹਾ ਹੈ"
+
+#: PkStrings.cpp:49
+#, kde-format
+msgctxt "transaction state, is querying data"
+msgid "Querying"
+msgstr "ਕਿਊਰੀ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:52
+#, kde-format
+msgctxt "transaction state, getting data from a server"
+msgid "Getting information"
+msgstr "ਜਾਣਕਾਰੀ ਲਈ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:55
+#, kde-format
+msgctxt "transaction state, removing packages"
+msgid "Removing packages"
+msgstr "ਪੈਕੇਜ ਹਟਾਏ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:59
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading at %1/s, %2 remaining"
+msgstr "%1/s ਨਾਲ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ, %2 ਬਾਕੀ"
+
+#: PkStrings.cpp:64
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading at %1/s"
+msgstr "%1/s ਨਾਲ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:68
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading, %1 remaining"
+msgstr "ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ, %1 ਬਾਕੀ"
+
+#: PkStrings.cpp:72
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading"
+msgstr "ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:76
+#, kde-format
+msgctxt "transaction state, installing packages"
+msgid "Installing packages"
+msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:79
+#, kde-format
+msgctxt "transaction state, refreshing internal lists"
+msgid "Refreshing software list"
+msgstr "ਸਾਫਟਵੇਅਰ ਲਿਸਟ ਤਾਜ਼ਾ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:82
+#, kde-format
+msgctxt "transaction state, installing updates"
+msgid "Updating packages"
+msgstr "ਪੈਕੇਜ ਅੱਪਡੇਟ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:85
+#, kde-format
+msgctxt "transaction state, removing old packages, and cleaning config files"
+msgid "Cleaning up packages"
+msgstr "ਪੈਕੇਜ ਸਾਫ਼ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:88
+#, kde-format
+msgctxt "transaction state, obsoleting old packages"
+msgid "Obsoleting packages"
+msgstr "ਪੈਕੇਜ ਬਰਤਰਫ਼ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:91
+#, kde-format
+msgctxt "transaction state, checking the transaction before we do it"
+msgid "Resolving dependencies"
+msgstr "ਨਿਰਭਰਤਾ ਹੱਲ਼ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:94
+#, kde-format
+msgctxt ""
+"transaction state, checking if we have all the security keys for the "
+"operation"
+msgid "Checking signatures"
+msgstr "ਦਸਤਖਤ ਚੈੱਕ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:97
+#, kde-format
+msgctxt "transaction state, when we're doing a test transaction"
+msgid "Testing changes"
+msgstr "ਬਦਲਾਅ ਟੈਸਟ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:100
+#, kde-format
+msgctxt "transaction state, when we're writing to the system package database"
+msgid "Committing changes"
+msgstr "ਬਦਲਾਅ ਕਮਿਟ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:103
+#, kde-format
+msgctxt "transaction state, requesting data from a server"
+msgid "Requesting data"
+msgstr "ਡਾਟੇ ਲਈ ਮੰਗ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:106
+#, kde-format
+msgctxt "transaction state, all done!"
+msgid "Finished"
+msgstr "ਮੁਕੰਮਲ ਹੈ"
+
+#: PkStrings.cpp:109
+#, kde-format
+msgctxt "transaction state, in the process of cancelling"
+msgid "Cancelling"
+msgstr "ਰੱਦ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: PkStrings.cpp:112
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading repository information"
+msgstr "ਰਿਪੋਜ਼ਟਰੀ ਜਾਣਕਾਰੀ ਡਾਊਨਲੋਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:115
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading list of packages"
+msgstr "ਪੈਕੇਜਾਂ ਦੀ ਲਿਸਟ ਡਾਊਨਲੋਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:118
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading file lists"
+msgstr "ਫਾਇਲ ਲਿਸਟ ਡਾਊਨਲੋਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:121
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading lists of changes"
+msgstr "ਬਦਲਾਅ ਦੀ ਲਿਸਟ ਡਾਊਨਲੋਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:124
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading groups"
+msgstr "ਗਰੁੱਪ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:127
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading update information"
+msgstr "ਅੱਪਡੇਟ ਜਾਣਕਾਰੀ ਡਾਊਨਲੋਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:130
+#, kde-format
+msgctxt "transaction state, repackaging delta files"
+msgid "Repackaging files"
+msgstr "ਫਾਇਲਾਂ ਮੁੜ-ਪੈਕ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
+
+#: PkStrings.cpp:133
+#, kde-format
+msgctxt "transaction state, loading databases"
+msgid "Loading cache"
+msgstr "ਕੈਸ਼ ਲੋਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:136
+#, kde-format
+msgctxt "transaction state, scanning for running processes"
+msgid "Scanning installed applications"
+msgstr "ਇੰਸਟਾਲ ਐਪਲੀਕੇਸ਼ਨਾਂ ਸਕੈਨ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
+
+#: PkStrings.cpp:139
+#, kde-format
+msgctxt ""
+"transaction state, generating a list of packages installed on the system"
+msgid "Generating package lists"
+msgstr "ਪੈਕੇਜ ਲਿਸਟਾਂ ਤਿਆਰ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
+
+#: PkStrings.cpp:142
+#, kde-format
+msgctxt "transaction state, when we're waiting for the native tools to exit"
+msgid "Waiting for package manager lock"
+msgstr "ਪੈਕੇਜ ਮੈਨੇਜਰ ਲਾਕ ਲਈ ਉਡੀਕ ਜਾਰੀ"
+
+#: PkStrings.cpp:145
+#, kde-format
+msgctxt "waiting for user to type in a password"
+msgid "Waiting for authentication"
+msgstr "ਪਰਮਾਣਕਿਤਾ ਲਈ ਉਡੀਕ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:148
+#, kde-format
+msgctxt "we are updating the list of processes"
+msgid "Updating the list of running applications"
+msgstr "ਚੱਲ ਰਹੀਆਂ ਐਪਲੀਕੇਸ਼ਨਾਂ ਦੀ ਲਿਸਟ ਅੱਪਡੇਟ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:151
+#, kde-format
+msgctxt "we are checking executable files in use"
+msgid "Checking for applications currently in use"
+msgstr "ਮੌਜੂਦਾ ਵਰਤੋਂ ਅਧੀਨ ਐਪਲੀਕੇਸ਼ਨ ਦੀ ਜਾਂਚ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:154
+#, kde-format
+msgctxt "we are checking for libraries in use"
+msgid "Checking for libraries currently in use"
+msgstr "ਇਸ ਸਮੇਂ ਵਰਤੀਆਂ ਜਾ ਰਹੀਆਂ ਲਾਇਬਰੇਰੀਆਂ ਚੈੱਕ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
+
+#: PkStrings.cpp:157
+#, kde-format
+msgctxt "we are copying package files to prepare to install"
+msgid "Copying files"
+msgstr "ਫਾਇਲਾਂ ਕਾਪੀ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
+
+#: PkStrings.cpp:167
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Downloaded"
+msgstr "ਡਾਊਨਲੋਡ ਕੀਤੇ"
+
+#: PkStrings.cpp:169
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Updated"
+msgstr "ਅੱਪਡੇਟ ਕੀਤੇ"
+
+#: PkStrings.cpp:171
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Installed"
+msgstr "ਇੰਸਟਾਲ ਕੀਤੇ"
+
+#: PkStrings.cpp:173
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Removed"
+msgstr "ਹਟਾਏ"
+
+#: PkStrings.cpp:175
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Cleaned Up"
+msgstr "ਸਾਫ਼ ਕੀਤੇ"
+
+#: PkStrings.cpp:177
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Obsoleted"
+msgstr "ਬਰਤਰਫ਼"
+
+#: PkStrings.cpp:188
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Unknown role type"
+msgstr "ਅਣਪਛਾਤੀ ਰੋਲ ਕਿਸਮ"
+
+#: PkStrings.cpp:190
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting dependencies"
+msgstr "ਨਿਰਭਰਤਾ ਲਈ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:192
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting update detail"
+msgstr "ਅੱਪਡੇਟ ਵੇਰਵਾ ਲਿਆ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: PkStrings.cpp:195
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting details"
+msgstr "ਵੇਰਵੇ ਲਏ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:197
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting requires"
+msgstr "ਚਾਹੀਦੇ ਲਏ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:199
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting updates"
+msgstr "ਅੱਪਡੇਟ ਲਏ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:201
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching details"
+msgstr "ਵੇਰਵੇ ਖੋਜੇ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:203
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching for file"
+msgstr "ਫਾਇਲ ਲਈ ਖੋਜ ਜਾਰੀ ਹੈ"
+
+#: PkStrings.cpp:205
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching groups"
+msgstr "ਗਰੁੱਪ ਖੋਜ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:207
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching by package name"
+msgstr "ਪੈਕੇਜ ਨਾਂ ਨਾਲ ਖੋਜ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:210
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating removal"
+msgstr "ਹਟਾਉਣ ਦੀ ਨਕਲ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:212 PkStrings.cpp:219 PkStrings.cpp:260
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading packages"
+msgstr "ਪੈਕੇਜ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:214
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Removing"
+msgstr "ਹਟਾਇਆ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: PkStrings.cpp:217
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating install"
+msgstr "ਇੰਸਟਾਲ ਕਰਨ ਦੀ ਨਕਲ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:221
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing"
+msgstr "ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: PkStrings.cpp:224
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating file install"
+msgstr "ਫਾਇਲ ਇੰਸਟਾਲ ਕਰਨ ਦੀ ਨਕਲ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:226
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading required packages"
+msgstr "ਲੋੜੀਦੇ ਪੈਕੇਜ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:228
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing file"
+msgstr "ਫਾਇਲ ਇੰਸਟਾਲ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:230
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Refreshing package cache"
+msgstr "ਪੈਕੇਜ ਕੈਸ਼ ਤਾਜ਼ਾ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:233
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating update"
+msgstr "ਅੱਪਡੇਟ ਦੀ ਨਕਲ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:235
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading updates"
+msgstr "ਅੱਪਡੇਟ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:237
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Updating packages"
+msgstr "ਪੈਕੇਜ ਅੱਪਡੇਟ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:239
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Canceling"
+msgstr "ਰੱਦ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: PkStrings.cpp:241
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting list of repositories"
+msgstr "ਰਿਪੋਜ਼ਟਰੀਆਂ ਦੀ ਲਿਸਟ ਲਈ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:243
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Enabling repository"
+msgstr "ਰਿਪੋਜ਼ਟਰੀ ਸਮਰੱਥ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:245
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Setting repository data"
+msgstr "ਰਿਪੋਜ਼ਟਰੀ ਡਾਟਾ ਸੈੱਟ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: PkStrings.cpp:247
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Resolving"
+msgstr "ਹੱਲ਼ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: PkStrings.cpp:250
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting file list"
+msgstr "ਫਾਇਲ ਲਿਸਟ ਲਈ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:252
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting what provides"
+msgstr "ਲਏ ਜਾ ਰਹੇ ਹਨ, ਜੋ ਦਿੰਦੇ ਹਨ"
+
+#: PkStrings.cpp:254
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing signature"
+msgstr "ਦਸਤਖਤ ਇੰਸਟਾਲ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:256
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting package lists"
+msgstr "ਪੈਕੇਜ ਲਿਸਟਾਂ ਲਈਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
+
+#: PkStrings.cpp:258
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Accepting EULA"
+msgstr "EULA ਮਨਜ਼ੂਰ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: PkStrings.cpp:262
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting distribution upgrade information"
+msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਜਾਣਕਾਰੀ ਲਈ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:264
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting categories"
+msgstr "ਕੈਟਾਗਰੀਆਂ ਲਈਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
+
+#: PkStrings.cpp:266
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting old transactions"
+msgstr "ਪੁਰਾਣੀ ਟਰਾਂਸੈਕਸ਼ਨ ਲਈ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:268
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Repairing system"
+msgstr "ਸਿਸਟਮ ਰਿਪੇਅਰ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: PkStrings.cpp:270
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Removing repository"
+msgstr "ਰਿਪੋਜ਼ਟਰੀ ਹਟਾਈ ਜਾ ਰਹੀ ਹੈ"
+
+#: PkStrings.cpp:280
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Unknown role type"
+msgstr "ਅਣਪਛਾਤੀ ਰੋਲ ਕਿਸਮ"
+
+#: PkStrings.cpp:282
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got dependencies"
+msgstr "ਨਿਰਭਰਤਾ ਲਈ ਗਈ"
+
+#: PkStrings.cpp:284
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got update detail"
+msgstr "ਅੱਪਡੇਟ ਵੇਰਵਾ ਲਿਆ"
+
+#: PkStrings.cpp:287
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got details"
+msgstr "ਵੇਰਵੇ ਲਏ"
+
+#: PkStrings.cpp:289
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got requires"
+msgstr "ਚਾਹੀਦੇ ਲਏ ਗਏ"
+
+#: PkStrings.cpp:291
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got updates"
+msgstr "ਅੱਪਡੇਟ ਲਏ"
+
+#: PkStrings.cpp:293
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for package details"
+msgstr "ਪੈਕੇਜ ਵੇਰਵੇ ਲਈ ਖੋਜ ਕੀਤੀ ਗਈ"
+
+#: PkStrings.cpp:295
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for file"
+msgstr "ਫਾਇਲ ਲਈ ਖੋਜ ਕੀਤੀ"
+
+#: PkStrings.cpp:297
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched groups"
+msgstr "ਗਰੁੱਪ ਲਈ ਖੋਜ ਕੀਤੀ"
+
+#: PkStrings.cpp:299
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for package name"
+msgstr "ਪੈਕੇਜ ਨਾਂ ਲਈ ਖੋਜ ਕੀਤੀ"
+
+#: PkStrings.cpp:301
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Removed packages"
+msgstr "ਪੈਕੇਜ ਹਟਾਏ"
+
+#: PkStrings.cpp:303
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed packages"
+msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਕੀਤੇ"
+
+#: PkStrings.cpp:305
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed local files"
+msgstr "ਲੋਕਲ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕੀਤੀਆਂ"
+
+#: PkStrings.cpp:307
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Refreshed package cache"
+msgstr "ਪੈਕੇਜ ਕੈਸ਼ ਤਾਜ਼ਾ ਕੀਤੀ ਗਈ"
+
+#: PkStrings.cpp:309
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Updated packages"
+msgstr "ਪੈਕੇਜ ਅੱਪਡੇਟ ਕੀਤੇ ਗਏ"
+
+#: PkStrings.cpp:311
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Canceled"
+msgstr "ਰੱਦ ਕੀਤਾ"
+
+#: PkStrings.cpp:313
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got list of repositories"
+msgstr "ਰਿਪੋਜ਼ਟਰੀਆਂ ਦੀ ਲਿਸਟ ਲਈ ਗਈ"
+
+#: PkStrings.cpp:315
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Enabled repository"
+msgstr "ਰਿਪੋਜ਼ਟਰੀ ਸਮਰੱਥ ਕੀਤੀ ਗਈ"
+
+#: PkStrings.cpp:317
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Set repository data"
+msgstr "ਰਿਪੋਜ਼ਟਰੀ ਡਾਟਾ ਸੈੱਟ ਕੀਤਾ"
+
+#: PkStrings.cpp:319
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Resolved"
+msgstr "ਹੱਲ਼ ਕੀਤਾ"
+
+#: PkStrings.cpp:322
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got file list"
+msgstr "ਫਾਇਲ ਲਿਸਟ ਲਈ"
+
+#: PkStrings.cpp:324
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got what provides"
+msgstr "ਜੋ ਦਿੰਦੀ ਹੈ ਲਈ ਗਈ"
+
+#: PkStrings.cpp:326
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed signature"
+msgstr "ਦਸਤਖਤ ਇੰਸਟਾਲ ਕੀਤੇ"
+
+#: PkStrings.cpp:328
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got package lists"
+msgstr "ਪੈਕੇਜ ਲਿਸਟ ਲਈ"
+
+#: PkStrings.cpp:330
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Accepted EULA"
+msgstr "EULA ਮਨਜ਼ੂਰ ਕੀਤਾ"
+
+#: PkStrings.cpp:332
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Downloaded packages"
+msgstr "ਪੈਕੇਜ ਡਾਊਨਲੋਡ ਕੀਤੇ"
+
+#: PkStrings.cpp:334
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got distribution upgrades"
+msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਲਏ"
+
+#: PkStrings.cpp:336
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got categories"
+msgstr "ਕੈਟਾਗਰੀ ਲਈਆਂ"
+
+#: PkStrings.cpp:338
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got old transactions"
+msgstr "ਪੁਰਾਣੀ ਟਰਾਂਸੈਕਸ਼ਨ ਲਈ"
+
+#: PkStrings.cpp:340
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Repaired system"
+msgstr "ਸਿਸਟਮ ਰਿਪੇਅਰ ਕੀਤਾ"
+
+#: PkStrings.cpp:342
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Removed repository"
+msgstr "ਰਿਪੋਜ਼ਟਰੀ ਹਟਾਈ ਗਈ"
+
+#: PkStrings.cpp:352
+#, kde-format
+msgid "Downloading"
+msgstr "ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
+
+#: PkStrings.cpp:354
+#, kde-format
+msgid "Updating"
+msgstr "ਅੱਪਡੇਟ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: PkStrings.cpp:356
+#, kde-format
+msgid "Installing"
+msgstr "ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: PkStrings.cpp:358
+#, kde-format
+msgid "Removing"
+msgstr "ਹਟਾਇਆ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: PkStrings.cpp:360
+#, kde-format
+msgid "Cleaning up"
+msgstr "ਸਾਫ਼ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: PkStrings.cpp:362
+#, kde-format
+msgid "Obsoleting"
+msgstr "ਬਰਤਰਫ਼ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: PkStrings.cpp:364
+#, kde-format
+msgid "Reinstalling"
+msgstr "ਮੁੜ-ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: PkStrings.cpp:366
+#, kde-format
+msgid "Preparing"
+msgstr "ਤਿਆਰ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: PkStrings.cpp:368
+#, kde-format
+msgid "Decompressing"
+msgstr "ਡੀ-ਕੰਪਰੈੱਸ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: PkStrings.cpp:379
+#, kde-format
+msgid "Downloaded"
+msgstr "ਡਾਊਨਲੋਡ ਕੀਤਾ"
+
+#: PkStrings.cpp:381
+#, kde-format
+msgid "Updated"
+msgstr "ਅੱਪਡੇਟ ਕੀਤੇ"
+
+#: PkStrings.cpp:383
+#, kde-format
+msgid "Installed"
+msgstr "ਇੰਸਟਾਲ ਕੀਤੇ"
+
+#: PkStrings.cpp:385
+#, kde-format
+msgid "Removed"
+msgstr "ਹਟਾਏ"
+
+#: PkStrings.cpp:387
+#, kde-format
+msgid "Cleaned up"
+msgstr "ਸਾਫ਼ ਕੀਤੇ"
+
+#: PkStrings.cpp:389
+#, kde-format
+msgid "Obsoleted"
+msgstr "ਬਰਤਰਫ਼ ਕੀਤੇ"
+
+#: PkStrings.cpp:391
+#, kde-format
+msgid "Reinstalled"
+msgstr "ਮੁੜ-ਇੰਸਟਾਲ ਕੀਤੇ"
+
+#: PkStrings.cpp:393
+#, kde-format
+msgid "Prepared"
+msgstr "ਤਿਆਰ ਕੀਤੇ"
+
+#: PkStrings.cpp:395
+#, kde-format
+msgid "Decompressed"
+msgstr "ਡੀ-ਕੰਪਰੈੱਸ ਕੀਤਾ"
+
+#: PkStrings.cpp:406
+#, kde-format
+msgid "No network connection available"
+msgstr "ਕੋਈ ਨੈੱਟਵਰਕ ਕਨੈਕਸ਼ਨ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ"
+
+#: PkStrings.cpp:408
+#, kde-format
+msgid "No package cache is available"
+msgstr "ਕੋਈ ਪੈਕੇਜ ਕੈਸ਼ ਉਪਲਬਧ ਨਹੀਂ ਹੈ"
+
+#: PkStrings.cpp:410
+#, kde-format
+msgid "Out of memory"
+msgstr "ਮੈਮੋਰੀ ਤੋਂ ਬਾਹਰ"
+
+#: PkStrings.cpp:412
+#, kde-format
+msgid "Failed to create a thread"
+msgstr "ਥਰਿੱਡ ਬਣਾਉਣ ਲਈ ਫੇਲ੍ਹ"
+
+#: PkStrings.cpp:414
+#, kde-format
+msgid "Not supported by this backend"
+msgstr "ਇਹ ਬੈਕਐਂਡ ਵਲੋਂ ਹਾਲੇ ਸਹਾਇਕ ਨਹੀਂ ਹੈ"
+
+#: PkStrings.cpp:416
+#, kde-format
+msgid "An internal system error has occurred"
+msgstr "ਅੰਦਰੂਨੀ ਸਿਸਟਮ ਗਲਤੀ ਆਈ ਹੈ"
+
+#: PkStrings.cpp:418
+#, kde-format
+msgid "A security trust relationship is not present"
+msgstr "ਸੁਰੱਖਿਆ ਟਰੱਸਟ ਸਬੰਧ ਮੌਜੂਦ ਨਹੀਂ ਹੈ"
+
+#: PkStrings.cpp:420
+#, kde-format
+msgid "The package is not installed"
+msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਨਹੀਂ ਹੈ"
+
+#: PkStrings.cpp:422
+#, kde-format
+msgid "The package was not found"
+msgstr "ਪੈਕੇਜ ਨਹੀਂ ਲੱਭਿਆ"
+
+#: PkStrings.cpp:424
+#, kde-format
+msgid "The package is already installed"
+msgstr "ਪੈਕੇਜ ਪਹਿਲਾਂ ਹੀ ਇੰਸਟਾਲ ਹੈ"
+
+#: PkStrings.cpp:426
+#, kde-format
+msgid "The package download failed"
+msgstr "ਪੈਕੇਜ ਡਾਊਨਲੋਡ ਫੇਲ੍ਹ ਹੈ"
+
+#: PkStrings.cpp:428
+#, kde-format
+msgid "The group was not found"
+msgstr "ਗਰੁੱਪ ਨਹੀਂ ਲੱਭਿਆ"
+
+#: PkStrings.cpp:430
+#, kde-format
+msgid "The group list was invalid"
+msgstr "ਗਰੁੱਪ ਲਿਸਟ ਗਲਤ ਹੈ"
+
+#: PkStrings.cpp:432
+#, kde-format
+msgid "Dependency resolution failed"
+msgstr "ਨਿਰਭਰਤਾ ਹੱਲ਼ ਫੇਲ੍ਹ ਹੈ"
+
+#: PkStrings.cpp:434
+#, kde-format
+msgid "Search filter was invalid"
+msgstr "ਖੋਜ ਫਿਲਟਰ ਗਲਤ ਹੈ"
+
+#: PkStrings.cpp:436
+#, kde-format
+msgid "The package identifier was not well formed"
+msgstr "ਪੈਕੇਜ ਪਛਾਣ ਕਰਤਾ ਠੀਕ ਢੰਗ ਨਾਲ ਤਿਆਰ ਨਹੀਂ"
+
+#: PkStrings.cpp:438
+#, kde-format
+msgid "Transaction error"
+msgstr "ਟਰਾਂਸੈਕਸ਼ਨ ਗਲਤੀ"
+
+#: PkStrings.cpp:440
+#, kde-format
+msgid "Repository name was not found"
+msgstr "ਰਿਪੋਜ਼ਟਰੀ ਨਾਂ ਨਹੀਂ ਲੱਭਿਆ"
+
+#: PkStrings.cpp:442
+#, kde-format
+msgid "Could not remove a protected system package"
+msgstr "ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਸਿਸਟਮ ਪੈਕੇਜ ਹਟਾਇਆ ਨਹੀਂ ਜਾ ਸਕਿਆ"
+
+#: PkStrings.cpp:444
+#, kde-format
+msgid "The task was canceled"
+msgstr "ਟਾਸਕ ਰੱਦ ਕੀਤੀ ਗਈ ਸੀ"
+
+#: PkStrings.cpp:446
+#, kde-format
+msgid "The task was forcibly canceled"
+msgstr "ਟਾਸਕ ਧੱਕੇ ਨਾਲ ਬੰਦ ਕੀਤੀ ਗਈ"
+
+#: PkStrings.cpp:448
+#, kde-format
+msgid "Reading the config file failed"
+msgstr "ਸੰਰਚਨਾ ਫਾਇਲ ਪੜ੍ਹਨ ਲਈ ਫੇਲ੍ਹ"
+
+#: PkStrings.cpp:450
+#, kde-format
+msgid "The task cannot be cancelled"
+msgstr "ਟਾਸਕ ਰੱਦ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ"
+
+#: PkStrings.cpp:452
+#, kde-format
+msgid "Source packages cannot be installed"
+msgstr "ਸਰੋਤ ਪੈਕੇਜ ਇੰਸਟਾਲ ਨਹੀਂ ਕੀਤੇ ਜਾ ਸਕਦੇ"
+
+#: PkStrings.cpp:454
+#, kde-format
+msgid "The license agreement failed"
+msgstr "ਲਸੰਸ ਇਕਰਾਰਨਾਮਾ ਫੇਲ੍ਹ ਹੈ"
+
+#: PkStrings.cpp:456
+#, kde-format
+msgid "Local file conflict between packages"
+msgstr "ਪੈਕੇਜਾਂ ਵਿੱਚ ਲੋਕਲ ਫਾਇਲ ਲਈ ਅਪਵਾਦ ਹੈ"
+
+#: PkStrings.cpp:458
+#, kde-format
+msgid "Packages are not compatible"
+msgstr "ਪੈਕੇਜ ਢੁੱਕਵੇਂ ਨਹੀਂ ਹਨ"
+
+#: PkStrings.cpp:460
+#, kde-format
+msgid "Problem connecting to a software origin"
+msgstr "ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਨਾਲ ਕੁਨੈਕਟ ਕਰਨ ਦੌਰਾਨ ਸਮੱਸਿਆ"
+
+#: PkStrings.cpp:462
+#, kde-format
+msgid "Failed to initialize"
+msgstr "ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
+
+#: PkStrings.cpp:464
+#, kde-format
+msgid "Failed to finalize"
+msgstr "ਪੂਰਾ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
+
+#: PkStrings.cpp:466
+#, kde-format
+msgid "Cannot get lock"
+msgstr "ਲਾਕ ਨਹੀਂ ਲਿਆ ਜਾ ਸਕਦਾ"
+
+#: PkStrings.cpp:468
+#, kde-format
+msgid "No packages to update"
+msgstr "ਕੋਈ ਪੈਕੇਜ ਅੱਪਡੇਟ ਨਹੀਂ"
+
+#: PkStrings.cpp:470
+#, kde-format
+msgid "Cannot write repository configuration"
+msgstr "ਰਿਪੋਜ਼ਟਰੀ ਸੰਰਚਨਾ ਲਿਖੀ ਨਹੀਂ ਜਾ ਸਕਦੀ"
+
+#: PkStrings.cpp:472
+#, kde-format
+msgid "Local install failed"
+msgstr "ਲੋਕਲ ਇੰਸਟਾਲ ਫੇਲ੍ਹ ਹੈ"
+
+#: PkStrings.cpp:474
+#, kde-format
+msgid "Bad GPG signature"
+msgstr "ਖ਼ਰਾਬ GPG ਦਸਤਖਤ"
+
+#: PkStrings.cpp:476
+#, kde-format
+msgid "Missing GPG signature"
+msgstr "ਗੁੰਮ GPG ਦਸਤਖਤ"
+
+#: PkStrings.cpp:478
+#, kde-format
+msgid "Repository configuration invalid"
+msgstr "ਰਿਪੋਜ਼ਟਰੀ ਸੰਰਚਨਾ ਗਲਤ ਹੈ"
+
+#: PkStrings.cpp:480
+#, kde-format
+msgid "Invalid package file"
+msgstr "ਗਲਤ ਪੈਕੇਜ ਫਾਇਲ"
+
+#: PkStrings.cpp:482
+#, kde-format
+msgid "Package install blocked"
+msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਤੇ ਪਾਬੰਦੀ ਲਗਾਈ ਹੈ"
+
+#: PkStrings.cpp:484
+#, kde-format
+msgid "Package is corrupt"
+msgstr "ਪੈਕੇਜ ਨਿਕਾਰਾ ਹੈ"
+
+#: PkStrings.cpp:486
+#, kde-format
+msgid "All packages are already installed"
+msgstr "ਸਭ ਪੈਕੇਜ ਪਹਿਲਾਂ ਹੀ ਇੰਸਟਾਲ ਹਨ"
+
+#: PkStrings.cpp:488
+#, kde-format
+msgid "The specified file could not be found"
+msgstr "ਦਿੱਤੀ ਫਾਇਲ ਨਹੀਂ ਲੱਭੀ ਜਾ ਸਕੀ"
+
+#: PkStrings.cpp:490
+#, kde-format
+msgid "No more mirrors are available"
+msgstr "ਕੋਈ ਹੋਰ ਮਿਰੱਰ ਉਪਲੱਬਧ ਨਹੀਂ ਹਨ"
+
+#: PkStrings.cpp:492
+#, kde-format
+msgid "No distribution upgrade data is available"
+msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਡਾਟਾ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ"
+
+#: PkStrings.cpp:494
+#, kde-format
+msgid "Package is incompatible with this system"
+msgstr "ਪੈਕੇਜ ਇਹ ਸਿਸਟਮ ਲਈ ਅਢੁੱਕਵਾਂ ਹੈ"
+
+#: PkStrings.cpp:496
+#, kde-format
+msgid "No space is left on the disk"
+msgstr "ਡਿਸਕ ਉੱਤੇ ਕੋਈ ਥਾਂ ਨਹੀਂ ਬਚੀ ਹੈ"
+
+#: PkStrings.cpp:498
+#, kde-format
+msgid "A media change is required"
+msgstr "ਮੀਡਿਆ ਬਦਲਣ ਦੀ ਲੋੜ ਹੈ"
+
+#: PkStrings.cpp:500
+#, kde-format
+msgid "Authorization failed"
+msgstr "ਪਰਮਾਣਕਿਤਾ ਫੇਲ੍ਹ ਹੋਈ"
+
+#: PkStrings.cpp:502
+#, kde-format
+msgid "Update not found"
+msgstr "ਅੱਪਡੇਟ ਨਹੀਂ ਲੱਭਿਆ"
+
+#: PkStrings.cpp:504
+#, kde-format
+msgid "Cannot install from untrusted origin"
+msgstr "ਬੇਭਰੋਸੇਯੋਗ ਸਰੋਤ ਤੋਂ ਇੰਸਟਾਲ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ"
+
+#: PkStrings.cpp:506
+#, kde-format
+msgid "Cannot update from untrusted origin"
+msgstr "ਬੇਭਰੋਸੇਯੋਗ ਖੇਤਰ ਤੋਂ ਅੱਪਡੇਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ"
+
+#: PkStrings.cpp:508
+#, kde-format
+msgid "Cannot get the file list"
+msgstr "ਫਾਇਲ ਲਿਸਟ ਲਈ ਨਹੀਂ ਜਾ ਸਕਦੀ"
+
+#: PkStrings.cpp:510
+#, kde-format
+msgid "Cannot get package requires"
+msgstr "ਲੋੜੀਦਾ ਪੈਕੇਜ ਲਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ"
+
+#: PkStrings.cpp:512
+#, kde-format
+msgid "Cannot disable origin"
+msgstr "ਸਰੋਤ ਨੂੰ ਅਸਮਰੱਥ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ"
+
+#: PkStrings.cpp:514
+#, kde-format
+msgid "The download failed"
+msgstr "ਡਾਊਨਲੋਡ ਫੇਲ੍ਹ ਹੈ"
+
+#: PkStrings.cpp:516
+#, kde-format
+msgid "Package failed to configure"
+msgstr "ਸੰਰਚਨਾ ਲਈ ਪੈਕੇਜ ਫੇਲ੍ਹ ਹੈ"
+
+#: PkStrings.cpp:518
+#, kde-format
+msgid "Package failed to build"
+msgstr "ਪੈਕੇਜ ਬਿਲਡ ਹੋਣ ਲਈ ਫੇਲ੍ਹ"
+
+#: PkStrings.cpp:520
+#, kde-format
+msgid "Package failed to install"
+msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਹੋਣ ਲਈ ਫੇਲ੍ਹ ਹੈ"
+
+#: PkStrings.cpp:522
+#, kde-format
+msgid "Package failed to be removed"
+msgstr "ਪੈਕੇਜ ਹਟਾਉਣ ਲਈ ਫੇਲ੍ਹ ਹੈ"
+
+#: PkStrings.cpp:524
+#, kde-format
+msgid "Update failed due to running process"
+msgstr "ਕਾਰਵਾਈ ਚੱਲਣ ਦੇ ਦੌਰਾਨ ਅੱਪਡੇਟ ਫੇਲ੍ਹ ਹੋਇਆ"
+
+#: PkStrings.cpp:526
+#, kde-format
+msgid "The package database was changed"
+msgstr "ਪੈਕੇਜ ਡਾਟਾਬੇਸ ਬਦਲਿਆ ਗਿਆ"
+
+#: PkStrings.cpp:528
+#, kde-format
+msgid "Virtual provide type is not supported"
+msgstr "ਵਰਚੁਅਲ ਦਿੱਤੀ ਕਿਸਮ ਸਹਾਇਕ ਨਹੀਂ ਹੈ"
+
+#: PkStrings.cpp:530
+#, kde-format
+msgid "Install root is invalid"
+msgstr "ਇੰਸਟਾਲ ਰੂਟ ਅਢੁੱਕਵਾਂ ਹੈ"
+
+#: PkStrings.cpp:532
+#, kde-format
+msgid "Cannot fetch install sources"
+msgstr "ਇੰਸਟਾਲ ਸਰੋਤ ਲਏ ਨਹੀਂ ਜਾ ਸਕੇ"
+
+#: PkStrings.cpp:534
+#, kde-format
+msgid "Rescheduled due to priority"
+msgstr "ਤਰਜੀਹ ਕਰਕੇ ਮੁੜ-ਸੈਡਿਊਲ ਕੀਤਾ ਗਿਆ ਹੈ"
+
+#: PkStrings.cpp:536
+#, kde-format
+msgid "Unfinished transaction"
+msgstr "ਅਧੂਰੀ ਪਈ ਟਰਾਂਸੈਕਸ਼ਨ"
+
+#: PkStrings.cpp:538
+#, kde-format
+msgid "Lock required"
+msgstr "ਲਾਕ ਚਾਹੀਦਾ ਹੈ"
+
+#: PkStrings.cpp:540
+#, kde-format
+msgid "Unknown error"
+msgstr "ਅਣਪਛਾਤੀ ਗਲਤੀ"
+
+#: PkStrings.cpp:550
+#, kde-format
+msgid ""
+"There is no network connection available.\n"
+"Please check your connection settings and try again"
+msgstr ""
+"ਕੋਈ ਨੈੱਟਵਰਕ ਕੁਨੈਕਸ਼ਨ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ।\n"
+"ਆਪਣੀ ਕੁਨੈਕਸ਼ਨ ਸੈਟਿੰਗਾਂ ਚੈੱਕ ਕਰਕੇ ਮੁੜ ਟਰਾਈ ਕਰੋ"
+
+#: PkStrings.cpp:553
+#, kde-format
+msgid ""
+"The package list needs to be rebuilt.\n"
+"This should have been done by the backend automatically."
+msgstr ""
+"ਪੈਕੇਜ ਲਿਸਟ ਨੂੰ ਮੁੜ-ਬਣਾਉਣ ਲਈ ਲੋੜ ਹੈ।\n"
+"ਇਹ ਬੈਕਐਂਡ ਵਲੋਂ ਆਟੋਮੈਟਿਕ ਹੀ ਕੀਤਾ ਜਾਵੇਗਾ।"
+
+#: PkStrings.cpp:556
+#, kde-format
+msgid ""
+"The service that is responsible for handling user requests is out of "
+"memory.\n"
+"Please close some programs or restart your computer."
+msgstr ""
+"ਸਰਵਿਸ, ਜੋ ਕਿ ਵਰਤੋਂਕਾਰ ਮੰਗ ਨੂੰ ਹੈਂਡਲ ਕਰਨ ਲਈ ਜਵਾਬਦੇਹ ਹੈ, ਲਈ ਮੈਮੋਰੀ ਖਤਮ ਹੋ ਗਈ ਹੈ।\n"
+"ਕੁਝ ਪਰੋਗਰਾਮ ਬੰਦ ਕਰੋ ਜਾਂ ਕੰਪਿਊਟਰ ਨੂੰ ਮੁੜ-ਚਾਲੂ ਕਰੋ।"
+
+#: PkStrings.cpp:559
+#, kde-format
+msgid "A thread could not be created to service the user request."
+msgstr "ਵਰਤੋਂਕਾਰ ਮੰਗ ਦੀ ਸਰਵਿਸ ਲਈ ਥਰਿੱਡ ਬਣਾਇਆ ਨਹੀਂ ਜਾ ਸਕਿਆ।"
+
+#: PkStrings.cpp:561
+#, kde-format
+msgid ""
+"The action is not supported by this backend.\n"
+"Please report a bug as this should not have happened."
+msgstr ""
+"ਐਕਸ਼ਨ ਇਸ ਬੈਕਐਂਡ ਵਲੋਂ ਸਹਿਯੋਗੀ ਨਹੀਂ ਹੈ।\n"
+"ਇਹ ਹੋਣਾ ਨਹੀਂ ਸੀ ਚਾਹੀਦਾ, ਇਸਕਰਕੇ ਬੱਗ ਰਿਪੋਰਟ ਦਿਓ।"
+
+#: PkStrings.cpp:564
+#, kde-format
+msgid ""
+"A problem that we were not expecting has occurred.\n"
+"Please report this bug with the error description."
+msgstr ""
+"ਇੱਕ ਸਮੱਸਿਆ, ਜਿਸ ਦੀ ਸਾਨੂੰ ਉਮੀਦ ਨਹੀਂ ਸੀ, ਆਈ ਹੈ।\n"
+"ਗਲਤੀ ਵੇਰਵੇ ਸਮੇਤ ਇਹ ਬੱਗ ਰਿਪੋਰਟ ਦਿਓ ਜੀ।"
+
+#: PkStrings.cpp:567
+#, kde-format
+msgid ""
+"A security trust relationship could not be made with the software origin.\n"
+"Please check your software signature settings."
+msgstr ""
+"ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਨਾਲ ਇੱਕ ਸੁਰੱਖਿਆ ਟਰੱਸਟ ਸਬੰਧ ਬਣਾਇਆ ਨਹੀਂ ਜਾ ਸਕਿਆ।\n"
+"ਆਪਣੀ ਸਾਫਟਵੇਅਰ ਦਸਤਖਤ ਸੈਟਿੰਗ ਚੈੱਕ ਕਰੋ ਜੀ।"
+
+#: PkStrings.cpp:570
+#, kde-format
+msgid ""
+"The package that is trying to be removed or updated is not already installed."
+msgstr ""
+"ਪੈਕੇਜ, ਜੋ ਕਿ ਹਟਾਉਣ ਜਾਂ ਅੱਪਡੇਟ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ, ਪਹਿਲਾਂ ਇੰਸਟਾਲ ਹੀ ਨਹੀਂ ਹੈ।"
+
+#: PkStrings.cpp:572
+#, kde-format
+msgid ""
+"The package that is being modified was not found on your system or in any "
+"software origin."
+msgstr "ਪੈਕੇਜ, ਜੋ ਕਿ ਸੋਧਿਆ ਜਾਣਾ ਸੀ, ਤੁਹਾਡੇ ਸਿਸਟਮ ਜਾਂ ਕਿਸੇ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਉੱਤੇ ਨਹੀਂ ਲੱਭਿਆ।"
+
+#: PkStrings.cpp:574
+#, kde-format
+msgid "The package that is trying to be installed is already installed."
+msgstr "ਪੈਕੇਜ, ਜੋ ਕਿ ਇੰਸਟਾਲ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ, ਪਹਿਲਾਂ ਹੀ ਇੰਸਟਾਲ ਹੈ।"
+
+#: PkStrings.cpp:576
+#, kde-format
+msgid ""
+"The package download failed.\n"
+"Please check your network connectivity."
+msgstr ""
+"ਪੈਕੇਜ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ।\n"
+"ਆਪਣਾ ਨੈੱਟਵਰਕ ਕੁਨੈਕਸ਼ਨ ਚੈੱਕ ਕਰੋ ਜੀ।"
+
+#: PkStrings.cpp:579
+#, kde-format
+msgid ""
+"The group type was not found.\n"
+"Please check your group list and try again."
+msgstr ""
+"ਗਰੁੱਪ ਟਾਈਪ ਨਹੀਂ ਲੱਭੀ ਜਾ ਸਕੀ।\n"
+"ਆਪਣੀ ਗਰੁੱਪ ਲਿਸਟ ਚੈੱਕ ਕਰਕੇ ਮੁੜ ਟਰਾਈ ਕਰੋ ਜੀ।"
+
+#: PkStrings.cpp:582
+#, kde-format
+msgid ""
+"The group list could not be loaded.\n"
+"Refreshing your cache may help, although this is normally a software origin "
+"error."
+msgstr ""
+"ਗਰੁੱਪ ਲਿਸਟ ਲੋਡ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕੀ।\n"
+"ਤੁਹਾਡੀ ਕੈਸ਼ ਤਾਜ਼ਾ ਕਰਨ ਨਾਲ ਮਦਦ ਹੋ ਸਕਦੀ ਹੈ, ਭਾਵੇਂ ਕਿ ਇਹ ਇੱਕ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਗਲਤੀ ਹੈ।"
+
+#: PkStrings.cpp:586
+#, kde-format
+msgid ""
+"A package dependency could not be found.\n"
+"More information is available in the detailed report."
+msgstr ""
+"ਪੈਕੇਜ ਨਿਰਭਰਤਾ ਨਹੀਂ ਲੱਭੀ ਹੈ।\n"
+"ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#: PkStrings.cpp:589
+#, kde-format
+msgid "The search filter was not correctly formed."
+msgstr "ਖੋਜ ਫਿਲਟਰ ਠੀਕ ਤਰ੍ਹਾਂ ਨਹੀਂ ਬਣਾਇਆ ਗਿਆ।"
+
+#: PkStrings.cpp:591
+#, kde-format
+msgid ""
+"The package identifier was not well formed when sent to the system daemon.\n"
+"This normally indicates an internal bug and should be reported."
+msgstr ""
+"ਪੈਕੇਜ ਪਛਾਣਕਰਤਾ ਠੀਕ ਰੂਪ ਵਿੱਚ ਨਹੀਂ ਸੀ, ਜਦੋਂ ਸਿਸਟਮ ਡੈਮਨ ਨੂੰ ਭੇਜਿਆ ਗਿਆ।\n"
+"ਇਹ ਅਕਸਰ ਅੰਦਰੂਨੀ ਬੱਗ ਹੁੰਦਾ ਹੈ ਅਤੇ ਇਸ ਬਾਰੇ ਰਿਪੋਰਟ ਕਰਨੀ ਚਾਹੀਦੀ ਹੈ।"
+
+#: PkStrings.cpp:594
+#, kde-format
+msgid ""
+"An error occurred while running the transaction.\n"
+"More information is available in the detailed report."
+msgstr ""
+"ਟਰਾਂਸਜੈਕਸ਼ਨ ਚਲਾਉਣ ਦੌਰਾਨ ਇੱਕ ਗਲਤੀ ਆਈ ਹੈ।\n"
+"ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#: PkStrings.cpp:597
+#, kde-format
+msgid ""
+"The remote software origin name was not found.\n"
+"You may need to enable an item in Software Origins."
+msgstr ""
+"ਰਿਮੋਟ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਨਾਂ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ।\n"
+"ਤੁਹਾਨੂੰ ਸਾਫਟਵੇਅਰ ਸਰੋਤਾਂ ਵਿੱਚ ਆਈਟਮ ਸਮਰੱਥ ਕਰਨ ਦੀ ਲੋੜ ਸਕਦੀ ਹੈ।"
+
+#: PkStrings.cpp:600
+#, kde-format
+msgid "Removing a protected system package is not allowed."
+msgstr "ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਸਿਸਟਮ ਪੈਕੇਜ ਹਟਾਇਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#: PkStrings.cpp:602
+#, kde-format
+msgid "The task was canceled successfully and no packages were changed."
+msgstr "ਟਾਸਕ ਠੀਕ ਢੰਗ ਨਾਲ ਰੱਦ ਹੋ ਗਈ ਹੈ ਅਤੇ ਕੋਈ ਪੈਕੇਜ ਵਿੱਚ ਬਦਲਾਅ ਨਹੀਂ ਕੀਤਾ ਗਿਆ।"
+
+#: PkStrings.cpp:604
+#, kde-format
+msgid ""
+"The task was canceled successfully and no packages were changed.\n"
+"The backend did not exit cleanly."
+msgstr ""
+"ਇਹ ਟਾਸਕ ਠੀਕ ਤਰ੍ਹਾਂ ਰੱਦ ਕੀਤੀ ਗਈ ਹੈ ਅਤੇ ਕੋਈ ਪੈਕੇਜ ਬਦਲਾਅ ਨਹੀਂ ਕੀਤਾ ਗਿਆ ਹੈ।\n"
+"ਬੈਕਐਂਡ ਠੀਕ ਢੰਗ ਨਾਲ ਬੰਦ ਨਹੀਂ ਹੋਇਆ।"
+
+#: PkStrings.cpp:607
+#, kde-format
+msgid ""
+"The native package configuration file could not be opened.\n"
+"Please make sure your system's configuration is valid."
+msgstr ""
+"ਨੇਟਿਵ ਪੈਕੇਜ ਸੰਰਚਨਾ ਫਾਇਲ ਖੋਲ੍ਹੀ ਨਹੀਂ ਜਾ ਸਕੀ ਹੈ।\n"
+"ਯਕੀਨੀ ਬਣਾਉ ਕਿ ਸਿਸਟਮ ਦੀ ਸੰਰਚਨਾ ਠੀਕ ਹੈ।"
+
+#: PkStrings.cpp:610
+#, kde-format
+msgid "The task is not safe to be cancelled at this time."
+msgstr "ਟਾਸਕ ਨੂੰ ਇਸ ਸਮੇਂ ਰੱਦ ਕਰਨਾ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਹੈ।"
+
+#: PkStrings.cpp:612
+#, kde-format
+msgid ""
+"Source packages are not normally installed this way.\n"
+"Check the extension of the file you are trying to install."
+msgstr ""
+"ਸਰੋਤ ਪੈਕੇਜ ਅਕਸਰ ਇਸ ਢੰਗ ਨਾਲ ਇੰਸਟਾਲ ਨਹੀਂ ਕੀਤੇ ਜਾਂਦੇ ਹਨ।\n"
+"ਫਾਇਲ ਦੀ ਇਕਸਟੈਂਸ਼ਨ ਚੈੱਕ ਕਰੋ, ਜੋ ਕਿ ਤੁਸੀਂ ਇੰਸਟਾਲ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਹੇ ਹੋ।"
+
+#: PkStrings.cpp:615
+#, kde-format
+msgid ""
+"The license agreement was not agreed to.\n"
+"To use this software you have to accept the license."
+msgstr ""
+"ਲਸੰਸ ਇਕਰਾਰਨਾਮੇ ਨਾਲ ਸਹਿਮਤ ਨਹੀਂ ਸੀ।\n"
+"ਇਹ ਸਾਫਟਵੇਅਰ ਵਰਤਣ ਲਈ ਤੁਹਾਨੂੰ ਲਸੰਸ ਸ਼ਰਤਾਂ ਮੰਨਣੀਆਂ ਪੈਣਗੀਆਂ।"
+
+#: PkStrings.cpp:618
+#, kde-format
+msgid ""
+"Two packages provide the same file.\n"
+"This is usually due to mixing packages for different software origins."
+msgstr ""
+"ਦੋ ਪੈਕੇਜ ਇੱਕੋ ਹੀ ਫਾਇਲ ਦਿੰਦੇ ਹਨ।\n"
+"ਇਹ ਅਕਸਰ ਵੱਖ ਵੱਖ ਸਾਫਟਵੇਅਰ ਸਰੋਤਾਂ ਲਈ ਪੈਕੇਜ ਰਲਣ ਕਰਕੇ ਹੁੰਦਾ ਹੈ।"
+
+#: PkStrings.cpp:621
+#, kde-format
+msgid ""
+"Multiple packages exist that are not compatible with each other.\n"
+"This is usually due to mixing packages from different software origins."
+msgstr ""
+"ਕਈ ਪੈਕੇਜ ਮੌਜੂਦ ਹਨ, ਜੋ ਕਿ ਆਪਸ ਵਿੱਚ ਰਲਦੇ ਨਹੀਂ ਹਨ।\n"
+"ਇਹ ਅਕਸਰ ਵੱਖ ਵੱਖ ਸਾਫਟਵੇਅਰ ਸਰੋਤਾਂ ਤੋਂ ਪੈਕੇਜ ਮਿਲਾਉਣ ਕਰਕੇ ਹੁੰਦਾ ਹੈ।"
+
+#: PkStrings.cpp:624
+#, kde-format
+msgid ""
+"There was a (possibly temporary) problem connecting to a software origins.\n"
+"Please check the detailed error for further details."
+msgstr ""
+"ਇਹ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਨਾਲ ਕੁਨੈਕਟ ਕਰਨ ਲਈ (ਸ਼ਾਇਦ ਆਰਜ਼ੀ) ਸਮੱਸਿਆ ਹੈ।\n"
+"ਹੋਰ ਜਾਣਕਾਰੀ ਲਈ ਵੇਰਵਾ ਗਲਤੀ ਚੈੱਕ ਕਰੋ ਜੀ।"
+
+#: PkStrings.cpp:627
+#, kde-format
+msgid ""
+"Failed to initialize packaging backend.\n"
+"This may occur if other packaging tools are being used simultaneously."
+msgstr ""
+"ਪੈਕੇਜ ਬੈਕਐਂਡ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ।\n"
+"ਇਹ ਤਾਂ ਹੋ ਸਕਦਾ ਹੈ, ਜੇ ਹੋਰ ਪੈਕੇਜ ਟੂਲ ਵੀ ਇੱਕੋ ਸਮੇਂ ਵਰਤੇ ਜਾ ਰਹੇ ਹਨ।"
+
+#: PkStrings.cpp:630
+#, kde-format
+msgid ""
+"Failed to close down the backend instance.\n"
+"This error can normally be ignored."
+msgstr ""
+"ਬੈਕਐਂਡ ਮੌਕੇ ਨੂੰ ਬੰਦ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ।\n"
+"ਇਹ ਗਲਤੀ ਅਕਸਰ ਅਣਡਿੱਠੀ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ।"
+
+#: PkStrings.cpp:633
+#, kde-format
+msgid ""
+"Cannot get the exclusive lock on the packaging backend.\n"
+"Please close any other legacy packaging tools that may be open."
+msgstr ""
+"ਪੈਕੇਜ ਬੈਕਐਂਡ ਲਈ ਲਾਕ ਨਹੀਂ ਲੈ ਸਕਦਾ ਹੈ।\n"
+"ਹੋਰ ਪੁਰਾਤਨ ਪੈਕੇਜ ਟੂਲ ਬੰਦ ਕਰ ਦਿਓ ਜੀ, ਜੋ ਕਿ ਚਾਲੂ ਹੋ ਸਕਦੇ ਹਨ।"
+
+#: PkStrings.cpp:636
+#, kde-format
+msgid "None of the selected packages could be updated."
+msgstr "ਕੋਈ ਵੀ ਚੁਣਿਆ ਪੈਕੇਜ ਅੱਪਡੇਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
+
+#: PkStrings.cpp:638
+#, kde-format
+msgid "The repository configuration could not be modified."
+msgstr "ਰਿਪੋਜ਼ਟਰੀ ਸੰਰਚਨਾ ਨੂੰ ਸੋਧਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ।"
+
+#: PkStrings.cpp:640
+#, kde-format
+msgid ""
+"Installing the local file failed.\n"
+"More information is available in the detailed report."
+msgstr ""
+"ਲੋਕਲ ਫਾਇਲ ਇੰਸਟਾਲੇਸ਼ਨ ਫੇਲ੍ਹ ਹੋਈ।\n"
+"ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#: PkStrings.cpp:643
+#, kde-format
+msgid "The package signature could not be verified."
+msgstr "ਪੈਕੇਜ ਦਸਤਖਤ ਦੀ ਜਾਂਚ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕੀ।"
+
+#: PkStrings.cpp:645
+#, kde-format
+msgid ""
+"The package signature was missing and this package is untrusted.\n"
+"This package was not signed with a GPG key when created."
+msgstr ""
+"ਪੈਕੇਜ ਦਸਤਖਤ ਗੁੰਮ ਹਨ ਅਤੇ ਇਹ ਪੈਕੇਜ ਅਣ-ਭਰੋਸੇਯੋਗ ਹੈ।\n"
+"ਇਹ ਪੈਕੇਜ GPG ਕੁੰਜੀ ਨਾਲ ਸਾਇਨ ਨਹੀਂ ਹੈ, ਜਦੋਂ ਇਹ ਬਣਾਇਆ ਗਿਆ ਸੀ।"
+
+#: PkStrings.cpp:648
+#, kde-format
+msgid "Repository configuration was invalid and could not be read."
+msgstr "ਰਿਪੋਜ਼ਟਰੀ ਸੰਰਚਨਾ ਗਲਤ ਹੈ ਅਤੇ ਪੜ੍ਹੀ ਨਹੀਂ ਜਾ ਸਕੀ।"
+
+#: PkStrings.cpp:650
+#, kde-format
+msgid ""
+"The package you are attempting to install is not valid.\n"
+"The package file could be corrupt, or not a proper package."
+msgstr ""
+"ਪੈਕੇਜ, ਜੋ ਤੁਸੀਂ ਇੰਸਟਾਲ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਹੇ ਹੋ, ਠੀਕ ਨਹੀਂ ਹੈ।\n"
+"ਜਾਂ ਤਾਂ ਪੈਕੇਜ ਫਾਇਲ ਨਿਕਾਰਾ ਹੈ, ਜਾਂ ਇਹ ਠੀਕ ਪੈਕੇਜ ਹੀ ਨਹੀਂ ਹੈ।"
+
+#: PkStrings.cpp:653
+#, kde-format
+msgid ""
+"Installation of this package was prevented by your packaging system's "
+"configuration."
+msgstr "ਇਹ ਪੈਕੇਜ ਦੀ ਇੰਸਟਾਲ ਨੂੰ ਤੁਹਾਡੇ ਪੈਕੇਜ ਸਿਸਟਮ ਦੀ ਸੰਰਚਨਾ ਵਲੋਂ ਰੋਕਿਆ ਗਿਆ ਹੈ।"
+
+#: PkStrings.cpp:655
+#, kde-format
+msgid ""
+"The package that was downloaded is corrupt and needs to be downloaded again."
+msgstr "ਪੈਕੇਜ, ਜੋ ਕਿ ਡਾਊਨਲੋਡ ਕੀਤਾ ਗਿਆ ਸੀ, ਨਿਕਾਰਾ ਹੋ ਗਿਆ ਹੈ ਅਤੇ ਫੇਰ ਡਾਊਨਲੋਡ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।"
+
+#: PkStrings.cpp:657
+#, kde-format
+msgid ""
+"All of the packages selected for install are already installed on the system."
+msgstr "ਚੁਣੇ ਗਏ ਪੈਕੇਜਾਂ ਵਿੱਚ ਸਭ ਪਹਿਲਾਂ ਹੀ ਸਿਸਟਮ ਉੱਤੇ ਇੰਸਟਾਲ ਹਨ।"
+
+#: PkStrings.cpp:659
+#, kde-format
+msgid ""
+"The specified file could not be found on the system.\n"
+"Check that the file still exists and has not been deleted."
+msgstr ""
+"ਦਿੱਤੀ ਫਾਇਲ ਤੁਹਾਡੇ ਸਿਸਟਮ ਉੱਤੇ ਨਹੀਂ ਲੱਭੀ ਜਾ ਸਕੀ।\n"
+"ਚੈੱਕ ਕਰੋ ਕਿ ਫਾਇਲ ਹਾਲੇ ਵੀ ਮੌਜੂਦ ਹੈ ਅਤੇ ਹਟਾਈ ਨਹੀਂ ਗਈ ਹੈ।"
+
+#: PkStrings.cpp:662
+#, kde-format
+msgid ""
+"Required data could not be found on any of the configured software origins.\n"
+"There were no more download mirrors that could be tried."
+msgstr ""
+"ਲੋੜੀਦਾ ਡਾਟਾ ਕਿਸੇ ਵੀ ਸੰਰਚਿਤ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਉੱਤੇ ਨਹੀਂ ਲੱਭਿਆ।\n"
+"ਕੋਈ ਵੀ ਹੋਰ ਡਾਊਨਲੋਡ ਮਿੱਰਰ ਟਰਾਈ ਕਰਨ ਲਈ ਨਹੀਂ ਹਨ।"
+
+#: PkStrings.cpp:665
+#, kde-format
+msgid ""
+"Required upgrade data could not be found in any of the configured software "
+"origins.\n"
+"The list of distribution upgrades will be unavailable."
+msgstr ""
+"ਲੋੜੀਂਦਾ ਅੱਪਗਰੇਡ ਡਾਟਾ ਕਿਸੇ ਵੀ ਸੰਰਚਿਤ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਉੱਤੇ ਨਹੀਂ ਲੱਭਿਆ।\n"
+"ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਦੀ ਲਿਸਟ ਉਪਲੱਬਧ ਨਹੀਂ।"
+
+#: PkStrings.cpp:668
+#, kde-format
+msgid ""
+"The package that is trying to be installed is incompatible with this system."
+msgstr "ਪੈਕੇਜ, ਜੋ ਕਿ ਇੰਸਟਾਲ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ, ਇਸ ਸਿਸਟਮ ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ ਹੈ।"
+
+#: PkStrings.cpp:670
+#, kde-format
+msgid ""
+"There is insufficient space on the device.\n"
+"Free some space on the system disk to perform this operation."
+msgstr ""
+"ਜੰਤਰ ਉੱਤੇ ਅਢੁੱਕਵੀਂ ਥਾਂ ਨਹੀਂ ਹੈ।\n"
+"ਇਹ ਓਪਰੇਸ਼ਨ ਕਰਨ ਲਈ ਸਿਸਟਮ ਡਿਸਕ ਉੱਤੇ ਕੁਝ ਥਾਂ ਖਾਲੀ ਕਰੋ।"
+
+#: PkStrings.cpp:673
+#, kde-format
+msgid "Additional media is required to complete the transaction."
+msgstr "ਟਰਾਂਜੈਕਸ਼ਨ ਪੂਰੀ ਕਰਨ ਲਈ ਹੋਰ ਮੀਡਿਆ ਦੀ ਲੋੜ ਹੈ।"
+
+#: PkStrings.cpp:675
+#, kde-format
+msgid ""
+"You have failed to provide correct authentication.\n"
+"Please check any passwords or account settings."
+msgstr ""
+"ਤੁਸੀਂ ਠੀਕ ਪਰਮਾਣਕਿਤਾ ਦੇ ਸਕਣ ਲਈ ਫੇਲ੍ਹ ਹੋਏ ਹੋ।\n"
+"ਕੋਈ ਪਾਸਵਰਡ ਜਾਂ ਅਕਾਊਂਟ ਸੈਟਿੰਗਾਂ ਦੀ ਚੈੱਕ ਕਰੋ ਜੀ।"
+
+#: PkStrings.cpp:678
+#, kde-format
+msgid ""
+"The specified update could not be found.\n"
+"It could have already been installed or no longer available on the remote "
+"server."
+msgstr ""
+"ਦਿੱਤਾ ਅੱਪਡੇਟ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ।\n"
+"ਜਾਂ ਤਾਂ ਇਹ ਪਹਿਲਾਂ ਹੀ ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਚੁੱਕਿਆ ਹੈ ਜਾਂ ਰਿਮੋਟ ਸਰਵਰ ਉੱਤੇ ਹੁਣ ਉਪਲੱਬਧ ਹੀ ਨਹੀਂ ਰਿਹਾ।"
+
+#: PkStrings.cpp:681
+#, kde-format
+msgid "The package could not be installed from untrusted origin."
+msgstr "ਪੈਕੇਜ ਬੇਭਰੋਸੇਯੋਗ ਸਰੋਤ ਤੋਂ ਇੰਸਟਾਲ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
+
+#: PkStrings.cpp:683
+#, kde-format
+msgid "The package could not be updated from untrusted origin."
+msgstr "ਪੈਕੇਜ ਬੇਭਰੋਸੇਯੋਗ ਸਰੋਤ ਤੋਂ ਅੱਪਡੇਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
+
+#: PkStrings.cpp:685
+#, kde-format
+msgid "The file list is not available for this package."
+msgstr "ਇਹ ਪੈਕੇਜ ਲਈ ਫਾਇਲ-ਲਿਸਟ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ।"
+
+#: PkStrings.cpp:687
+#, kde-format
+msgid "The information about what requires this package could not be obtained."
+msgstr "ਜਾਣਕਾਰੀ, ਜੋ ਇਸ ਪੈਕੇਜ ਵਲੋਂ ਚਾਹੀਦੀ ਸੀ, ਲਈ ਨਹੀਂ ਜਾ ਸਕੀ।"
+
+#: PkStrings.cpp:689
+#, kde-format
+msgid "The specified software origin could not be disabled."
+msgstr "ਦਿੱਤਾ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਅਸਮਰੱਥ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ ਹੈ।"
+
+#: PkStrings.cpp:691
+#, kde-format
+msgid ""
+"The download could not be done automatically and should be done manually.\n"
+"More information is available in the detailed report."
+msgstr ""
+"ਡਾਊਨਲੋਡ ਨੂੰ ਆਟੋਮੈਟਿਕ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ ਅਤੇ ਖੁਦ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।\n"
+"ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#: PkStrings.cpp:694
+#, kde-format
+msgid ""
+"One of the selected packages failed to configure correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"ਚੁਣੇ ਪੈਕੇਜਾਂ ਵਿੱਚੋਂ ਇੱਕ ਠੀਕ ਤਰ੍ਹਾਂ ਸੰਰਚਿਤ ਹੋਣ ਲਈ ਫੇਲ੍ਹ ਹੈ।\n"
+"ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#: PkStrings.cpp:697
+#, kde-format
+msgid ""
+"One of the selected packages failed to build correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"ਚੁਣੇ ਪੈਕੇਜਾਂ ਵਿੱਚੋਂ ਇੱਕ ਠੀਕ ਤਰ੍ਹਾਂ ਬਿਲਡ ਹੋਣ ਲਈ ਫੇਲ੍ਹ ਹੈ।\n"
+"ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#: PkStrings.cpp:700
+#, kde-format
+msgid ""
+"One of the selected packages failed to install correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"ਚੁਣੇ ਪੈਕੇਜਾਂ ਵਿੱਚੋਂ ਕੋਈ ਠੀਕ ਤਰ੍ਹਾਂ ਇੰਸਟਾਲ ਹੋਣ ਲਈ ਫੇਲ੍ਹ ਹੈ।\n"
+"ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#: PkStrings.cpp:703
+#, kde-format
+msgid ""
+"One of the selected packages failed to be removed correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"ਚੁਣੇ ਪੈਕੇਜਾਂ ਵਿੱਚੋਂ ਕਿਸੇ ਨੂੰ ਠੀਕ ਤਰ੍ਹਾਂ ਹਟਾਉਣ ਲਈ ਫੇਲ੍ਹ ਹੈ।\n"
+"ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#: PkStrings.cpp:706
+#, kde-format
+msgid ""
+"A program is running that has to be closed before the update can proceed.\n"
+"More information is available in the detailed report."
+msgstr ""
+"ਪਰੋਗਰਾਮ ਚੱਲ ਰਿਹਾ ਹੈ, ਜਿਸ ਨੂੰ ਅੱਪਡੇਟ ਜਾਰੀ ਰੱਖਣ ਤੋਂ ਪਹਿਲਾਂ ਬੰਦ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।\n"
+"ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#: PkStrings.cpp:709
+#, kde-format
+msgid "The package database was changed while the request was running."
+msgstr "ਚਲਾਉਣ ਦੀ ਬੇਨਤੀ ਦੇ ਦੌਰਾਨ ਪੈਕੇਜ ਡਾਟਾਬੇਸ ਬਦਲਿਆ ਗਿਆ।"
+
+#: PkStrings.cpp:711
+#, kde-format
+msgid "The virtual provide type is not supported by this system."
+msgstr "ਇਸ ਸਿਸਟਮ ਵਲੋਂ ਵੁਰਚੁਅਲ ਦਿੱਤੀ ਕਿਸਮ ਸਹਾਇਕ ਨਹੀਂ ਹੈ"
+
+#: PkStrings.cpp:713
+#, kde-format
+msgid "The install root is invalid. Please contact your administrator."
+msgstr "ਇੰਸਟਾਲ ਰੂਟ ਗਲਤ ਹੈ। ਆਪਣੇ ਸਿਸਟਮ ਪਰਸ਼ਾਸ਼ਕ ਨਾਲ ਸੰਪਰਕ ਕਰੋ।"
+
+#: PkStrings.cpp:715
+#, kde-format
+msgid "The list of software could not be downloaded."
+msgstr "ਸਾਫਟਵੇਅਰ ਦੀ ਲਿਸਟ ਡਾਊਨਲੋਡ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕੀ।"
+
+#: PkStrings.cpp:717
+#, kde-format
+msgid ""
+"The transaction has been cancelled and will be retried when the system is "
+"idle."
+msgstr "ਟਰਾਂਸੈਕਸ਼ਨ ਨੂੰ ਰੱਦ ਕੀਤਾ ਗਿਆ ਹੈ ਅਤੇ ਸਿਸਟਮ ਵੇਹਲਾ ਹੋਣ ਸਮੇਂ ਮੁੜ-ਪ੍ਰਾਪਤ ਕੀਤਾ ਜਾਵੇਗਾ।"
+
+#: PkStrings.cpp:719
+#, kde-format
+msgid "A previous package management transaction was interrupted."
+msgstr "ਪਿਛਲੀ ਪੈਕੇਜ ਮੈਨਜੇਮੈਂਟ ਟਰਾਂਸੈਕਸ਼ਨ ਨੂੰ ਅਧੂਰਾ ਛੱਡਿਆ ਗਿਆ ਸੀ।"
+
+#: PkStrings.cpp:721
+#, kde-format
+msgid "A package manager lock is required."
+msgstr "ਪੈਕੇਜ ਮੈਨੇਜਰ ਲਾਕ ਚਾਹੀਦਾ ਹੈ।"
+
+#: PkStrings.cpp:723
+#, kde-format
+msgid ""
+"Unknown error, please report a bug.\n"
+"More information is available in the detailed report."
+msgstr ""
+"ਅਣਪਛਾਤੀ ਗਲਤੀ ਹੈ, ਬੱਗ ਦੀ ਰਿਪੋਰਟ ਦਿਓ ਜੀ।\n"
+"ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#: PkStrings.cpp:734
+#, kde-format
+msgctxt "The group type"
+msgid "Accessibility"
+msgstr "ਅਸੈੱਸਬਿਲਟੀ"
+
+#: PkStrings.cpp:736
+#, kde-format
+msgctxt "The group type"
+msgid "Accessories"
+msgstr "ਸਹੂਲਤਾਂ"
+
+#: PkStrings.cpp:738
+#, kde-format
+msgctxt "The group type"
+msgid "Education"
+msgstr "ਸਿੱਖਿਆ"
+
+#: PkStrings.cpp:740
+#, kde-format
+msgctxt "The group type"
+msgid "Games"
+msgstr "ਖੇਡਾਂ"
+
+#: PkStrings.cpp:742
+#, kde-format
+msgctxt "The group type"
+msgid "Graphics"
+msgstr "ਗਰਾਫਿਕਸ"
+
+#: PkStrings.cpp:744
+#, kde-format
+msgctxt "The group type"
+msgid "Internet"
+msgstr "ਇੰਟਰਨੈੱਟ"
+
+#: PkStrings.cpp:746
+#, kde-format
+msgctxt "The group type"
+msgid "Office"
+msgstr "ਆਫਿਸ"
+
+#: PkStrings.cpp:748
+#, kde-format
+msgctxt "The group type"
+msgid "Others"
+msgstr "ਹੋਰ"
+
+#: PkStrings.cpp:750
+#, kde-format
+msgctxt "The group type"
+msgid "Development"
+msgstr "ਡਿਵੈਲਪਮੈਂਟ"
+
+#: PkStrings.cpp:752
+#, kde-format
+msgctxt "The group type"
+msgid "Multimedia"
+msgstr "ਮਲਟੀਮੀਡਿਆ"
+
+#: PkStrings.cpp:754
+#, kde-format
+msgctxt "The group type"
+msgid "System"
+msgstr "ਸਿਸਟਮ"
+
+#: PkStrings.cpp:756
+#, kde-format
+msgctxt "The group type"
+msgid "GNOME desktop"
+msgstr "ਗਨੋਮ ਡੈਸਕਟਾਪ"
+
+#: PkStrings.cpp:758
+#, kde-format
+msgctxt "The group type"
+msgid "KDE desktop"
+msgstr "KDE ਡੈਸਕਟਾਪ"
+
+#: PkStrings.cpp:760
+#, kde-format
+msgctxt "The group type"
+msgid "XFCE desktop"
+msgstr "XFCE ਡੈਸਕਟਾਪ"
+
+#: PkStrings.cpp:762
+#, kde-format
+msgctxt "The group type"
+msgid "Other desktops"
+msgstr "ਹੋਰ ਡੈਸਕਟਾਪ"
+
+#: PkStrings.cpp:764
+#, kde-format
+msgctxt "The group type"
+msgid "Publishing"
+msgstr "ਪਬਲਿਸ਼ਿੰਗ"
+
+#: PkStrings.cpp:766
+#, kde-format
+msgctxt "The group type"
+msgid "Servers"
+msgstr "ਸਰਵਰ"
+
+#: PkStrings.cpp:768
+#, kde-format
+msgctxt "The group type"
+msgid "Fonts"
+msgstr "ਫੋਂਟ"
+
+#: PkStrings.cpp:770
+#, kde-format
+msgctxt "The group type"
+msgid "Admin tools"
+msgstr "ਐਡਮਿਨ ਟੂਲ"
+
+#: PkStrings.cpp:772
+#, kde-format
+msgctxt "The group type"
+msgid "Legacy"
+msgstr "ਪੁਰਾਣੇ"
+
+#: PkStrings.cpp:774
+#, kde-format
+msgctxt "The group type"
+msgid "Localization"
+msgstr "ਲੋਕਾਈਜੇਸ਼ਨ"
+
+#: PkStrings.cpp:776
+#, kde-format
+msgctxt "The group type"
+msgid "Virtualization"
+msgstr "ਵਰਚੁਲਾਈਜੇਸ਼ਨ"
+
+#: PkStrings.cpp:778
+#, kde-format
+msgctxt "The group type"
+msgid "Security"
+msgstr "ਸੁਰੱਖਿਆ"
+
+#: PkStrings.cpp:780
+#, kde-format
+msgctxt "The group type"
+msgid "Power management"
+msgstr "ਪਾਵਰ ਇੰਤਜ਼ਾਮ"
+
+#: PkStrings.cpp:782
+#, kde-format
+msgctxt "The group type"
+msgid "Communication"
+msgstr "ਕਮਿਊਨੀਕੇਸ਼ਨ"
+
+#: PkStrings.cpp:784
+#, kde-format
+msgctxt "The group type"
+msgid "Network"
+msgstr "ਨੈੱਟਵਰਕ"
+
+#: PkStrings.cpp:786
+#, kde-format
+msgctxt "The group type"
+msgid "Maps"
+msgstr "ਨਕਸ਼ੇ"
+
+#: PkStrings.cpp:788
+#, kde-format
+msgctxt "The group type"
+msgid "Software sources"
+msgstr "ਸਾਫਟਵੇਅਰ ਸਰੋਤ"
+
+#: PkStrings.cpp:790
+#, kde-format
+msgctxt "The group type"
+msgid "Science"
+msgstr "ਵਿਗਿਆਨ"
+
+#: PkStrings.cpp:792
+#, kde-format
+msgctxt "The group type"
+msgid "Documentation"
+msgstr "ਡੌਕੂਮੈਨਟੇਸ਼ਨ"
+
+#: PkStrings.cpp:794
+#, kde-format
+msgctxt "The group type"
+msgid "Electronics"
+msgstr "ਇਲੈਕਟਰੋਨਿਕਸ"
+
+#: PkStrings.cpp:796
+#, kde-format
+msgctxt "The group type"
+msgid "Package collections"
+msgstr "ਪੈਕੇਜ ਭੰਡਾਰ"
+
+#: PkStrings.cpp:798
+#, kde-format
+msgctxt "The group type"
+msgid "Vendor"
+msgstr "ਵੇਂਡਰ"
+
+#: PkStrings.cpp:800
+#, kde-format
+msgctxt "The group type"
+msgid "Newest packages"
+msgstr "ਸਭ ਤੋਂ ਨਵੇਂ ਪੈਕੇਜ"
+
+#: PkStrings.cpp:802
+#, kde-format
+msgctxt "The group type"
+msgid "Unknown group"
+msgstr "ਅਣਪਛਾਤੀ ਗਰੁੱਪ"
+
+#: PkStrings.cpp:813
+#, kde-format
+msgctxt "The type of update"
+msgid "Trivial update"
+msgstr "ਟਰੀਵੀਲ ਅੱਪਡੇਟ"
+
+#: PkStrings.cpp:815
+#, kde-format
+msgctxt "The type of update"
+msgid "Normal update"
+msgstr "ਆਮ ਅੱਪਡੇਟ"
+
+#: PkStrings.cpp:817
+#, kde-format
+msgctxt "The type of update"
+msgid "Important update"
+msgstr "ਖਾਸ ਅੱਪਡੇਟ"
+
+#: PkStrings.cpp:819
+#, kde-format
+msgctxt "The type of update"
+msgid "Security update"
+msgstr "ਸੁਰੱਖਿਆ ਅੱਪਡੇਟ"
+
+#: PkStrings.cpp:821
+#, kde-format
+msgctxt "The type of update"
+msgid "Bug fix update"
+msgstr "ਬੱਗ ਫਿਕਸ ਅੱਪਡੇਟ"
+
+#: PkStrings.cpp:823
+#, kde-format
+msgctxt "The type of update"
+msgid "Enhancement update"
+msgstr "ਸੁਧਾਰ ਕੀਤੇ ਅੱਪਡੇਟ"
+
+#: PkStrings.cpp:825
+#, kde-format
+msgctxt "The type of update"
+msgid "Blocked update"
+msgstr "ਪਾਬੰਦੀ ਲਗਾਏ ਅੱਪਡੇਟ"
+
+#: PkStrings.cpp:828
+#, kde-format
+msgctxt "The type of update"
+msgid "Installed"
+msgstr "ਇੰਸਟਾਲ ਕੀਤੇ"
+
+#: PkStrings.cpp:831
+#, kde-format
+msgctxt "The type of update"
+msgid "Available"
+msgstr "ਉਪਲੱਬਧ"
+
+#: PkStrings.cpp:833
+#, kde-format
+msgctxt "The type of update"
+msgid "Unknown update"
+msgstr "ਅਣਪਛਾਤਾ ਅੱਪਡੇਟ"
+
+#: PkStrings.cpp:844
+#, kde-format
+msgid "No Updates Available"
+msgstr "ਕੋਈ ਅੱਪਡੇਟ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ"
+
+#: PkStrings.cpp:847
+#, kde-format
+msgctxt "Some updates were selected on the view"
+msgid "1 Update Selected"
+msgid_plural "%1 Updates Selected"
+msgstr[0] "੧ ਅੱਪਡੇਟ ਚੁਣਿਆ"
+msgstr[1] "%1 ਅੱਪਡੇਟ ਚੁਣੇ"
+
+#: PkStrings.cpp:851
+#, kde-format
+msgctxt "Some updates are being shown on the screen"
+msgid "1 Update"
+msgid_plural "%1 Updates"
+msgstr[0] "੧ ਅੱਪਡੇਟ"
+msgstr[1] "%1 ਅੱਪਡੇਟ"
+
+#: PkStrings.cpp:854
+#, kde-format
+msgctxt "Type of update, in the case it's just an update"
+msgid "%1, %2"
+msgstr "%1, %2"
+
+#: PkStrings.cpp:855
+#, kde-format
+msgctxt "Part of: %1 Updates, %1 Selected"
+msgid "%1 Update"
+msgid_plural "%1 Updates"
+msgstr[0] "%1 ਅੱਪਡੇਟ"
+msgstr[1] "%1 ਅੱਪਡੇਟ"
+
+#: PkStrings.cpp:856
+#, kde-format
+msgctxt "Part of: %1 Updates, %1 Selected"
+msgid "%1 Selected"
+msgid_plural "%1 Selected"
+msgstr[0] "%1 ਚੁਣਿਆ"
+msgstr[1] "%1 ਚੁਣੇ"
+
+#: PkStrings.cpp:860
+#, kde-format
+msgid "No Packages"
+msgstr "ਕੋਈ ਪੈਕੇਜ ਨਹੀਂ"
+
+#: PkStrings.cpp:862
+#, kde-format
+msgid "1 Package"
+msgid_plural "%1 Packages"
+msgstr[0] "੧ ਪੈਕੇਜ"
+msgstr[1] "%1 ਪੈਕੇਜ"
+
+#: PkStrings.cpp:870
+#, kde-format
+msgid "No restart is necessary"
+msgstr "ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ"
+
+#: PkStrings.cpp:872
+#, kde-format
+msgid "You will be required to restart this application"
+msgstr "ਤੁਹਾਨੂੰ ਇਹ ਐਪਲੀਕੇਸ਼ਨ ਮੁੜ-ਚਾਲੂ ਕਰਨੀ ਪਵੇਗੀ"
+
+#: PkStrings.cpp:874
+#, kde-format
+msgid "You will be required to log out and back in"
+msgstr "ਤੁਹਾਨੂੰ ਲਾਗ ਆਉਟ ਕਰਕੇ ਲਾਗਇਨ ਕਰਨ ਦੀ ਲੋੜ ਪਵੇਗੀ"
+
+#: PkStrings.cpp:876
+#, kde-format
+msgid "A restart will be required"
+msgstr "ਮੁੜ-ਚਾਲੂ ਕਰਨਾ ਪਵੇਗਾ"
+
+#: PkStrings.cpp:878
+#, kde-format
+msgid "You will be required to log out and back in due to a security update."
+msgstr "ਸੁਰੱਖਿਆ ਅੱਪਡੇਟ ਕਰਕੇ ਤੁਹਾਨੂੰ ਲਾਗ ਆਫ਼ ਕਰਕੇ ਮੁੜ ਲਾਗ-ਇਨ ਕਰਨ ਪਵੇਗਾ।"
+
+#: PkStrings.cpp:880
+#, kde-format
+msgid "A restart will be required due to a security update."
+msgstr "ਸੁਰੱਖਿਆ ਅੱਪਡੇਟ ਕਰਕੇ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਪਵੇਗੀ।"
+
+#: PkStrings.cpp:893
+#, kde-format
+msgid "No restart is required"
+msgstr "ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ"
+
+#: PkStrings.cpp:895
+#, kde-format
+msgid "A restart is required"
+msgstr "ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ"
+
+#: PkStrings.cpp:897
+#, kde-format
+msgid "You need to log out and log back in"
+msgstr "ਤੁਹਾਨੂੰ ਲਾਗਆਉਟ ਕਰਕੇ ਫੇਰ ਲਾਗਇਨ ਕਰਨ ਦੀ ਲੋੜ ਹੈ"
+
+#: PkStrings.cpp:899
+#, kde-format
+msgid "You need to restart the application"
+msgstr "ਤੁਹਾਨੂੰ ਐਪਲੀਕੇਸ਼ਨ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ"
+
+#: PkStrings.cpp:901
+#, kde-format
+msgid "You need to log out and log back in to remain secure."
+msgstr "ਤੁਹਾਨੂੰ ਸੁਰੱਖਿਅਤ ਰਹਿਣ ਲਈ ਲਾਗ ਆਉਟ ਕਰਕੇ ਲਾਗਇਨ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।"
+
+#: PkStrings.cpp:903
+#, kde-format
+msgid "A restart is required to remain secure."
+msgstr "ਸੁਰੱਖਿਅਤ ਕਰਨ ਲਈ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।"
+
+#: PkStrings.cpp:916
+#, kde-format
+msgid "Stable"
+msgstr "ਸਥਿਰ"
+
+#: PkStrings.cpp:918
+#, kde-format
+msgid "Unstable"
+msgstr "ਅਸਥਿਰ"
+
+#: PkStrings.cpp:920
+#, kde-format
+msgid "Testing"
+msgstr "ਟੈਸਟਿੰਗ"
+
+#: PkStrings.cpp:933
+#, kde-format
+msgid "Please insert the CD labeled '%1', and press continue."
+msgstr "'%1' ਨਾਂ ਦੀ ਸੀਡੀ ਪਾਉ ਜੀ ਅਤੇ ਜਾਰੀ ਰੱਖੋ।"
+
+#: PkStrings.cpp:935
+#, kde-format
+msgid "Please insert the DVD labeled '%1', and press continue."
+msgstr "'%1' ਨਾਂ ਦੀ DVD ਪਾ ਕੇ ਜਾਰੀ ਰੱਖੋ ਜੀ।"
+
+#: PkStrings.cpp:937
+#, kde-format
+msgid "Please insert the disc labeled '%1', and press continue."
+msgstr "'%1' ਨਾਂ ਦੀ ਡਿਸਕ ਪਾ ਕੇ ਜਾਰੀ ਰੱਖੋ।"
+
+#: PkStrings.cpp:939 PkStrings.cpp:942
+#, kde-format
+msgid "Please insert the medium labeled '%1', and press continue."
+msgstr "'%1' ਨਾਂ ਦਾ ਮੀਡਿਅਮ ਪਾ ਕੇ ਜਾਰੀ ਰੱਖੋ।"
+
+#: PkStrings.cpp:950
+#, kde-format
+msgid "You do not have the necessary privileges to perform this action."
+msgstr "ਤੁਹਾਨੂੰ ਇਹ ਕਾਰਵਾਈ ਕਰਨ ਲਈ ਲੋੜੀਦੇ ਅਧਿਕਾਰ ਨਹੀਂ ਹਨ।"
+
+#: PkStrings.cpp:952
+#, kde-format
+msgid "Could not get a transaction id from packagekitd."
+msgstr "packagekitd ਤੋਂ ਟਰਾਂਸੈਕਸ਼ਨ id ਲਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ।"
+
+#: PkStrings.cpp:954
+#, kde-format
+msgid "Cannot connect to this transaction id."
+msgstr "ਇਸ ਟਰਾਂਸੈਕਸ਼ਨ id ਨਾਲ ਕੁਨੈਕਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।"
+
+#: PkStrings.cpp:956
+#, kde-format
+msgid "This action is unknown."
+msgstr "ਇਹ ਕਾਰਵਾਈ ਅਣਜਾਣ ਹੈ।"
+
+#: PkStrings.cpp:958
+#, kde-format
+msgid "The packagekitd service could not be started."
+msgstr "packagekitd ਸਰਵਿਸ ਸ਼ੁਰੂ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ।"
+
+#: PkStrings.cpp:960
+#, kde-format
+msgid "The query is not valid."
+msgstr "ਕਿਊਰੀ ਅਢੁੱਕਵੀਂ ਹੈ।"
+
+#: PkStrings.cpp:962
+#, kde-format
+msgid "The file is not valid."
+msgstr "ਫਾਇਲ ਅਢੁੱਕਵੀਂ ਨਹੀਂ ਹੈ।"
+
+#: PkStrings.cpp:964
+#, kde-format
+msgid "This function is not yet supported."
+msgstr "ਇਹ ਫੰਕਸ਼ਨ ਸਹਾਇਕ ਨਹੀਂ ਹੈ।"
+
+#: PkStrings.cpp:966
+#, kde-format
+msgid "Could not talk to packagekitd."
+msgstr "packagekitd ਨਾਲ ਗੱਲ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ।"
+
+#: PkStrings.cpp:968
+#, kde-format
+msgid "Error talking to packagekitd."
+msgstr "packagekitd ਨਾਲ ਸੰਚਾਰ ਵਿੱਚ ਗਲਤੀ।"
+
+#: PkStrings.cpp:971 PkStrings.cpp:974
+#, kde-format
+msgid "An unknown error happened."
+msgstr "ਅਣਪਛਾਤੀ ਗਲਤੀ ਆਈ ਹੈ।"
+
+#: PkStrings.cpp:988 pkupdates.cpp:170
+#, kde-format
+msgid "Your system is up to date"
+msgstr "ਤੁਹਾਡਾ ਸਿਸਟਮ ਅੱਪ-ਟੂ-ਡੇਟ ਹੈ"
+
+#: PkStrings.cpp:990
+#, kde-format
+msgid "You have no updates"
+msgstr "ਤੁਹਾਡੇ ਲਈ ਕੋਈ ਅੱਪਡੇਟ ਨਹੀਂ"
+
+#: PkStrings.cpp:992
+#, kde-format
+msgid "Last check for updates was more than a month ago"
+msgstr "ਪਿਛਲਾ ਅੱਪਡੇਟ ਇੱਕ ਮਹੀਨੇ ਤੋਂ ਵੱਧ ਸਮੇਂ ਤੋਂ ਪਹਿਲਾਂ ਚੈੱਕ ਕੀਤਾ ਗਿਆ ਸੀ"
+
+#: PkStrings.cpp:1000
+#, kde-format
+msgid "Verified %1 ago"
+msgstr "%1 ਚਿਰ ਪਹਿਲਾਂ ਜਾਂਚਿਆ ਗਿਆ"
+
+#: PkStrings.cpp:1002
+#, kde-format
+msgid "It's strongly recommended that you check for new updates now"
+msgstr "ਇਹ ਜ਼ੋਰਦਾਰ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ ਕਿ ਤੁਸੀਂ ਨਵੇਂ ਅੱਪਡੇਟ ਲਈ ਹੁਣੇ ਚੈੱਕ ਕਰੋ"
+
+#: pkupdates.cpp:54
+#, kde-format
+msgid "Idle"
+msgstr "ਆਈਡਲ"
+
+#: pkupdates.cpp:140
+#, kde-format
+msgid "Checking updates"
+msgstr "ਅੱਪਡੇਟ ਲਈ ਜਾਂਚ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: pkupdates.cpp:142
+#, kde-format
+msgid "Getting updates"
+msgstr "ਅੱਪਡੇਟ ਲਏ ਜਾ ਰਹੇ ਹਨ"
+
+#: pkupdates.cpp:144
+#, kde-format
+msgid "Installing updates"
+msgstr "ਅੱਪਡੇਟ ਇੰਸਟਾਲ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
+
+#: pkupdates.cpp:146
+#, kde-format
+msgid "Working"
+msgstr "ਕੰਮ ਜਾਰੀ ਹੈ"
+
+#: pkupdates.cpp:149 pkupdates.cpp:439
+#, kde-format
+msgid "You have 1 new update"
+msgid_plural "You have %1 new updates"
+msgstr[0] "ਤੁਹਾਡੇ ਲਈ 1 ਅੱਪਡੇਟ ਹੈ"
+msgstr[1] "ਤੁਹਾਡੇ ਲਈ %1 ਅੱਪਡੇਟ ਹਨ"
+
+#: pkupdates.cpp:151
+#, kde-format
+msgid "1 security update"
+msgid_plural "%1 security updates"
+msgstr[0] "1 ਸੁਰੱਖਿਆ ਅੱਪਡੇਟ"
+msgstr[1] "%1 ਸੁਰੱਖਿਆ ਅੱਪਡੇਟ"
+
+#: pkupdates.cpp:153
+#, kde-format
+msgid "1 important update"
+msgid_plural "%1 important updates"
+msgstr[0] "1 ਖਾਸ ਅੱਪਡੇਟ"
+msgstr[1] "%1 ਖਾਸ ਅੱਪਡੇਟ"
+
+#: pkupdates.cpp:158
+#, kde-format
+msgid " and "
+msgstr " ਅਤੇ "
+
+#: pkupdates.cpp:158
+#, kde-format
+msgid "(including %1)"
+msgstr "(%1 ਸਮੇਤ)"
+
+#: pkupdates.cpp:160
+#, kde-format
+msgid "Your system is offline"
+msgstr "ਤੁਹਾਡਾ ਸਿਸਟਮ ਆਫਲਾਈਨ ਹੈ"
+
+#: pkupdates.cpp:165
+#, fuzzy, kde-format
+#| msgid "Checking for updates failed"
+msgid "Not checked for updates yet"
+msgstr "ਅੱਪਡੇਟ ਲਈ ਜਾਂਚ ਕਰਨ ਵਾਸਤੇ ਅਸਫ਼ਲ ਹੈ"
+
+#: pkupdates.cpp:168
+#, kde-format
+msgid "Checking for updates failed"
+msgstr "ਅੱਪਡੇਟ ਲਈ ਜਾਂਚ ਕਰਨ ਵਾਸਤੇ ਅਸਫ਼ਲ ਹੈ"
+
+#: pkupdates.cpp:241
+#, kde-format
+msgid "Last check: %1 ago"
+msgstr "ਆਖਰੀ ਵਾਰ ਜਾਂਚ ਕੀਤੀ: %1 ਪਹਿਲਾਂ"
+
+#: pkupdates.cpp:243
+#, kde-format
+msgid "Last check: never"
+msgstr "ਆਖਰੀ ਵਾਰ ਜਾਂਚ ਕੀਤੀ: ਕਦੇ ਨਹੀਂ"
+
+#: pkupdates.cpp:385
+#, kde-format
+msgctxt "1 installation status, 2 pkg name, 3 percentage"
+msgid "%1 %2 (%3%)"
+msgstr "%1 %2 (%3%)"
+
+#: pkupdates.cpp:388
+#, kde-format
+msgctxt "1 installation status, 2 pkg name"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: pkupdates.cpp:474
+#, kde-format
+msgid "Updates Installed"
+msgstr "ਅੱਪਡੇਟ ਇੰਸਟਾਲ ਹਨ"
+
+#: pkupdates.cpp:475
+#, kde-format
+msgid "Successfully updated %1 package"
+msgid_plural "Successfully updated %1 packages"
+msgstr[0] "ਕਾਮਯਾਬੀ ਨਾਲ %1 ਪੈਕੇਜ ਅੱਪਡੇਟ ਕੀਤਾ"
+msgstr[1] "ਕਾਮਯਾਬੀ ਨਾਲ %1 ਪੈਕੇਜ ਅੱਪਡੇਟ ਕੀਤੇ"
+
+#: pkupdates.cpp:539
+#, kde-format
+msgid "Update Error"
+msgstr "ਅੱਪਡੇਟ ਗਲਤੀ"
+
+#: pkupdates.cpp:593
+#, kde-format
+msgid "Restart is required"
+msgstr "ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ"
+
+#: pkupdates.cpp:594
+#, kde-format
+msgid ""
+"The computer will have to be restarted after the update for the changes to "
+"take effect."
+msgstr "ਬਦਲਾਅ ਨੂੰ ਲਾਗੂ ਕਰਨ ਵਾਸਤੇ ਕੰਪਿਊਟਰ ਨੂੰ ਅੱਪਡੇਟ ਦੇ ਬਾਅਦ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।"
+
+#: pkupdates.cpp:603
+#, kde-format
+msgid "Session restart is required"
+msgstr "ਸ਼ੈਸ਼ਨ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ"
+
+#: pkupdates.cpp:604
+#, kde-format
+msgid ""
+"You will need to log out and back in after the update for the changes to "
+"take effect."
+msgstr "ਬਦਲਾਅ ਨੂੰ ਲਾਗੂ ਕਰਨ ਵਾਸਤੇ ਤੁਹਾਨੂੰ ਅੱਪਡੇਟ ਦੇ ਬਾਅਦ ਲਾਗ ਆਫ਼ ਕਰਕੇ ਮੁੜ ਲਾਗਇਨ ਕਰਨਾ ਪਵੇਗਾ।"
+
+#~ msgctxt "@action:button"
+#~ msgid "Restart"
+#~ msgstr "ਮੁੜ-ਸ਼ੁਰੂ ਕਰੋ"
+
+#~ msgctxt "@action:button"
+#~ msgid "Logout"
+#~ msgstr "ਲਾਗਆਉਟ"

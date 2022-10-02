@@ -1,0 +1,4703 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Artem Sereda <overmind88@gmail.com>, 2009.
+# Alexander Potashev <aspotashev@gmail.com>, 2010, 2017, 2019.
+# Yuri Efremov <yur.arh@gmail.com>, 2010, 2011, 2012, 2013.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-02-06 00:50+0000\n"
+"PO-Revision-Date: 2020-10-04 12:36+0300\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Lokalize 20.08.1\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#: PkStrings.cpp:37
+#, kde-format
+msgctxt "This is when the transaction status is not known"
+msgid "Unknown state"
+msgstr "Неизвестное состояние"
+
+#: PkStrings.cpp:40
+#, kde-format
+msgctxt "transaction state, the daemon is in the process of starting"
+msgid "Waiting for service to start"
+msgstr "Ожидание запуска службы"
+
+#: PkStrings.cpp:43
+#, kde-format
+msgctxt "transaction state, the transaction is waiting for another to complete"
+msgid "Waiting for other tasks"
+msgstr "Ожидание завершения других заданий"
+
+#: PkStrings.cpp:46
+#, kde-format
+msgctxt "transaction state, just started"
+msgid "Running task"
+msgstr "Выполняется задание"
+
+#: PkStrings.cpp:49
+#, kde-format
+msgctxt "transaction state, is querying data"
+msgid "Querying"
+msgstr "Выполнение запроса"
+
+#: PkStrings.cpp:52
+#, kde-format
+msgctxt "transaction state, getting data from a server"
+msgid "Getting information"
+msgstr "Получение информации"
+
+#: PkStrings.cpp:55
+#, kde-format
+msgctxt "transaction state, removing packages"
+msgid "Removing packages"
+msgstr "Удаление пакетов"
+
+#: PkStrings.cpp:59
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading at %1/s, %2 remaining"
+msgstr "Загрузка со скоростью %1/с, осталось %2"
+
+#: PkStrings.cpp:64
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading at %1/s"
+msgstr "Загрузка со скоростью %1/с"
+
+#: PkStrings.cpp:68
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading, %1 remaining"
+msgstr "Загрузка, осталось %1"
+
+#: PkStrings.cpp:72
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading"
+msgstr "Загрузка"
+
+#: PkStrings.cpp:76
+#, kde-format
+msgctxt "transaction state, installing packages"
+msgid "Installing packages"
+msgstr "Установка пакетов"
+
+#: PkStrings.cpp:79
+#, kde-format
+msgctxt "transaction state, refreshing internal lists"
+msgid "Refreshing software list"
+msgstr "Обновление списка пакетов"
+
+#: PkStrings.cpp:82
+#, kde-format
+msgctxt "transaction state, installing updates"
+msgid "Updating packages"
+msgstr "Обновление пакетов"
+
+#: PkStrings.cpp:85
+#, kde-format
+msgctxt "transaction state, removing old packages, and cleaning config files"
+msgid "Cleaning up packages"
+msgstr "Очистка пакетов"
+
+#: PkStrings.cpp:88
+#, kde-format
+msgctxt "transaction state, obsoleting old packages"
+msgid "Obsoleting packages"
+msgstr "Замена пакетов"
+
+#: PkStrings.cpp:91
+#, kde-format
+msgctxt "transaction state, checking the transaction before we do it"
+msgid "Resolving dependencies"
+msgstr "Разрешение зависимостей"
+
+#: PkStrings.cpp:94
+#, kde-format
+msgctxt ""
+"transaction state, checking if we have all the security keys for the "
+"operation"
+msgid "Checking signatures"
+msgstr "Проверка подписей"
+
+#: PkStrings.cpp:97
+#, kde-format
+msgctxt "transaction state, when we're doing a test transaction"
+msgid "Testing changes"
+msgstr "Проверка изменений"
+
+#: PkStrings.cpp:100
+#, kde-format
+msgctxt "transaction state, when we're writing to the system package database"
+msgid "Committing changes"
+msgstr "Сохранение изменений"
+
+#: PkStrings.cpp:103
+#, kde-format
+msgctxt "transaction state, requesting data from a server"
+msgid "Requesting data"
+msgstr "Запрос данных"
+
+#: PkStrings.cpp:106
+#, kde-format
+msgctxt "transaction state, all done!"
+msgid "Finished"
+msgstr "Завершено"
+
+#: PkStrings.cpp:109
+#, kde-format
+msgctxt "transaction state, in the process of cancelling"
+msgid "Cancelling"
+msgstr "Отмена"
+
+#: PkStrings.cpp:112
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading repository information"
+msgstr "Загрузка сведений репозитория"
+
+#: PkStrings.cpp:115
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading list of packages"
+msgstr "Загрузка списка пакетов"
+
+#: PkStrings.cpp:118
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading file lists"
+msgstr "Загрузка списка файлов"
+
+#: PkStrings.cpp:121
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading lists of changes"
+msgstr "Загрузка списка изменений"
+
+#: PkStrings.cpp:124
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading groups"
+msgstr "Загрузка групп"
+
+#: PkStrings.cpp:127
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading update information"
+msgstr "Загрузка информации об обновлениях"
+
+#: PkStrings.cpp:130
+#, kde-format
+msgctxt "transaction state, repackaging delta files"
+msgid "Repackaging files"
+msgstr "Переупаковка файлов"
+
+#: PkStrings.cpp:133
+#, kde-format
+msgctxt "transaction state, loading databases"
+msgid "Loading cache"
+msgstr "Загрузка кэша"
+
+#: PkStrings.cpp:136
+#, kde-format
+msgctxt "transaction state, scanning for running processes"
+msgid "Scanning installed applications"
+msgstr "Сканирование установленных приложений"
+
+#: PkStrings.cpp:139
+#, kde-format
+msgctxt ""
+"transaction state, generating a list of packages installed on the system"
+msgid "Generating package lists"
+msgstr "Создание списка пакетов"
+
+#: PkStrings.cpp:142
+#, kde-format
+msgctxt "transaction state, when we're waiting for the native tools to exit"
+msgid "Waiting for package manager lock"
+msgstr "Ожидание разблокировки менеджера пакетов"
+
+#: PkStrings.cpp:145
+#, kde-format
+msgctxt "waiting for user to type in a password"
+msgid "Waiting for authentication"
+msgstr "Ожидание завершения аутентификации"
+
+#: PkStrings.cpp:148
+#, kde-format
+msgctxt "we are updating the list of processes"
+msgid "Updating the list of running applications"
+msgstr "Обновление списка запущенных приложений"
+
+#: PkStrings.cpp:151
+#, kde-format
+msgctxt "we are checking executable files in use"
+msgid "Checking for applications currently in use"
+msgstr "Выявление используемых приложений"
+
+#: PkStrings.cpp:154
+#, kde-format
+msgctxt "we are checking for libraries in use"
+msgid "Checking for libraries currently in use"
+msgstr "Выявление используемых библиотек"
+
+#: PkStrings.cpp:157
+#, kde-format
+msgctxt "we are copying package files to prepare to install"
+msgid "Copying files"
+msgstr "Копирование файлов"
+
+#: PkStrings.cpp:167
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Downloaded"
+msgstr "Загружен"
+
+#: PkStrings.cpp:169
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Updated"
+msgstr "Обновлён"
+
+#: PkStrings.cpp:171
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Installed"
+msgstr "Установлен"
+
+#: PkStrings.cpp:173
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Removed"
+msgstr "Удалён"
+
+#: PkStrings.cpp:175
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Cleaned Up"
+msgstr "Очищен"
+
+#: PkStrings.cpp:177
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Obsoleted"
+msgstr "Заменён"
+
+#: PkStrings.cpp:188
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Unknown role type"
+msgstr "Неизвестный ролевой тип"
+
+#: PkStrings.cpp:190
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting dependencies"
+msgstr "Получение зависимостей"
+
+#: PkStrings.cpp:192
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting update detail"
+msgstr "Получение сведений об обновлениях"
+
+#: PkStrings.cpp:195
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting details"
+msgstr "Получение сведений"
+
+#: PkStrings.cpp:197
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting requires"
+msgstr "Получение требований"
+
+#: PkStrings.cpp:199
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting updates"
+msgstr "Получение обновлений"
+
+#: PkStrings.cpp:201
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching details"
+msgstr "Поиск сведений"
+
+#: PkStrings.cpp:203
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching for file"
+msgstr "Поиск файла"
+
+#: PkStrings.cpp:205
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching groups"
+msgstr "Поиск групп"
+
+#: PkStrings.cpp:207
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching by package name"
+msgstr "Поиск по имени пакета"
+
+#: PkStrings.cpp:210
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating removal"
+msgstr "Имитирование удаления"
+
+#: PkStrings.cpp:212 PkStrings.cpp:219 PkStrings.cpp:260
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading packages"
+msgstr "Загрузка пакетов"
+
+#: PkStrings.cpp:214
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Removing"
+msgstr "Удаление"
+
+#: PkStrings.cpp:217
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating install"
+msgstr "Имитирование установки"
+
+#: PkStrings.cpp:221
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing"
+msgstr "Установка"
+
+#: PkStrings.cpp:224
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating file install"
+msgstr "Имитирование установки файла"
+
+#: PkStrings.cpp:226
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading required packages"
+msgstr "Загрузка необходимых пакетов"
+
+#: PkStrings.cpp:228
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing file"
+msgstr "Установка файла"
+
+#: PkStrings.cpp:230
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Refreshing package cache"
+msgstr "Обновление кэша пакетов"
+
+#: PkStrings.cpp:233
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating update"
+msgstr "Имитирование обновления"
+
+#: PkStrings.cpp:235
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading updates"
+msgstr "Загрузка обновлений"
+
+#: PkStrings.cpp:237
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Updating packages"
+msgstr "Обновление пакетов"
+
+#: PkStrings.cpp:239
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Canceling"
+msgstr "Отмена"
+
+#: PkStrings.cpp:241
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting list of repositories"
+msgstr "Получение списка репозиториев"
+
+#: PkStrings.cpp:243
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Enabling repository"
+msgstr "Включение репозитория"
+
+#: PkStrings.cpp:245
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Setting repository data"
+msgstr "Восстановление данных репозитория"
+
+#: PkStrings.cpp:247
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Resolving"
+msgstr "Разрешение зависимостей"
+
+#: PkStrings.cpp:250
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting file list"
+msgstr "Получение списка файлов"
+
+#: PkStrings.cpp:252
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting what provides"
+msgstr "Получение предоставлений"
+
+#: PkStrings.cpp:254
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing signature"
+msgstr "Установка подписи"
+
+#: PkStrings.cpp:256
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting package lists"
+msgstr "Получение списков пакетов"
+
+#: PkStrings.cpp:258
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Accepting EULA"
+msgstr "Принятие лицензионного соглашения"
+
+#: PkStrings.cpp:262
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting distribution upgrade information"
+msgstr "Получение информации об обновлении дистрибутива"
+
+#: PkStrings.cpp:264
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting categories"
+msgstr "Получение категорий"
+
+#: PkStrings.cpp:266
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting old transactions"
+msgstr "Получение старых операций"
+
+#: PkStrings.cpp:268
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Repairing system"
+msgstr "Восстановление системы"
+
+#: PkStrings.cpp:270
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Removing repository"
+msgstr "Удаление репозитория"
+
+#: PkStrings.cpp:280
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Unknown role type"
+msgstr "Неизвестный ролевой тип"
+
+#: PkStrings.cpp:282
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got dependencies"
+msgstr "Зависимости получены"
+
+#: PkStrings.cpp:284
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got update detail"
+msgstr "Сведения об обновлении получены"
+
+#: PkStrings.cpp:287
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got details"
+msgstr "Сведения получены"
+
+#: PkStrings.cpp:289
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got requires"
+msgstr "Зависимости получены"
+
+#: PkStrings.cpp:291
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got updates"
+msgstr "Обновления получены"
+
+#: PkStrings.cpp:293
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for package details"
+msgstr "Описание пакета найдено"
+
+#: PkStrings.cpp:295
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for file"
+msgstr "Поиск файла выполнен"
+
+#: PkStrings.cpp:297
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched groups"
+msgstr "Поиск групп выполнен"
+
+#: PkStrings.cpp:299
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for package name"
+msgstr "Поиск имени пакета выполнен"
+
+#: PkStrings.cpp:301
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Removed packages"
+msgstr "Пакеты удалены"
+
+#: PkStrings.cpp:303
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed packages"
+msgstr "Пакеты установлены"
+
+#: PkStrings.cpp:305
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed local files"
+msgstr "Локальные файлы установлены"
+
+#: PkStrings.cpp:307
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Refreshed package cache"
+msgstr "Кэш пакетов обновлён"
+
+#: PkStrings.cpp:309
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Updated packages"
+msgstr "Пакеты обновлены"
+
+#: PkStrings.cpp:311
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Canceled"
+msgstr "Отменено"
+
+#: PkStrings.cpp:313
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got list of repositories"
+msgstr "Список репозиториев получен"
+
+#: PkStrings.cpp:315
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Enabled repository"
+msgstr "Репозиторий подключён"
+
+#: PkStrings.cpp:317
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Set repository data"
+msgstr "Данные репозитория установлены"
+
+#: PkStrings.cpp:319
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Resolved"
+msgstr "Зависимости разрешены"
+
+#: PkStrings.cpp:322
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got file list"
+msgstr "Список файлов получен"
+
+#: PkStrings.cpp:324
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got what provides"
+msgstr "Предоставления получены"
+
+#: PkStrings.cpp:326
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed signature"
+msgstr "Подпись установлена"
+
+#: PkStrings.cpp:328
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got package lists"
+msgstr "Список пакетов получен"
+
+#: PkStrings.cpp:330
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Accepted EULA"
+msgstr "Лицензионное соглашение принято"
+
+#: PkStrings.cpp:332
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Downloaded packages"
+msgstr "Пакеты загружены"
+
+#: PkStrings.cpp:334
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got distribution upgrades"
+msgstr "Обновления дистрибутива получены"
+
+#: PkStrings.cpp:336
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got categories"
+msgstr "Категории получены"
+
+#: PkStrings.cpp:338
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got old transactions"
+msgstr "Старые операции получены"
+
+#: PkStrings.cpp:340
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Repaired system"
+msgstr "Система восстановлена"
+
+#: PkStrings.cpp:342
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Removed repository"
+msgstr "Репозиторий удалён"
+
+#: PkStrings.cpp:352
+#, kde-format
+msgid "Downloading"
+msgstr "Загрузка"
+
+#: PkStrings.cpp:354
+#, kde-format
+msgid "Updating"
+msgstr "Обновление"
+
+#: PkStrings.cpp:356
+#, kde-format
+msgid "Installing"
+msgstr "Установка"
+
+#: PkStrings.cpp:358
+#, kde-format
+msgid "Removing"
+msgstr "Удаление"
+
+#: PkStrings.cpp:360
+#, kde-format
+msgid "Cleaning up"
+msgstr "Очистка"
+
+#: PkStrings.cpp:362
+#, kde-format
+msgid "Obsoleting"
+msgstr "Замена"
+
+#: PkStrings.cpp:364
+#, kde-format
+msgid "Reinstalling"
+msgstr "Переустановка"
+
+#: PkStrings.cpp:366
+#, kde-format
+msgid "Preparing"
+msgstr "Подготовка"
+
+#: PkStrings.cpp:368
+#, kde-format
+msgid "Decompressing"
+msgstr "Распаковка"
+
+#: PkStrings.cpp:379
+#, kde-format
+msgid "Downloaded"
+msgstr "Загружено"
+
+#: PkStrings.cpp:381
+#, kde-format
+msgid "Updated"
+msgstr "Обновлено"
+
+#: PkStrings.cpp:383
+#, kde-format
+msgid "Installed"
+msgstr "Установлено"
+
+#: PkStrings.cpp:385
+#, kde-format
+msgid "Removed"
+msgstr "Удалено"
+
+#: PkStrings.cpp:387
+#, kde-format
+msgid "Cleaned up"
+msgstr "Очищено"
+
+#: PkStrings.cpp:389
+#, kde-format
+msgid "Obsoleted"
+msgstr "Заменено"
+
+#: PkStrings.cpp:391
+#, kde-format
+msgid "Reinstalled"
+msgstr "Переустановлено"
+
+#: PkStrings.cpp:393
+#, kde-format
+msgid "Prepared"
+msgstr "Подготовлено"
+
+#: PkStrings.cpp:395
+#, kde-format
+msgid "Decompressed"
+msgstr "Распаковано"
+
+#: PkStrings.cpp:406
+#, kde-format
+msgid "No network connection available"
+msgstr "Нет доступного сетевого соединения"
+
+#: PkStrings.cpp:408
+#, kde-format
+msgid "No package cache is available"
+msgstr "Кэш пакетов недоступен"
+
+#: PkStrings.cpp:410
+#, kde-format
+msgid "Out of memory"
+msgstr "Недостаточно памяти"
+
+#: PkStrings.cpp:412
+#, kde-format
+msgid "Failed to create a thread"
+msgstr "Сбой создания потока"
+
+#: PkStrings.cpp:414
+#, kde-format
+msgid "Not supported by this backend"
+msgstr "Не поддерживается этим модулем"
+
+#: PkStrings.cpp:416
+#, kde-format
+msgid "An internal system error has occurred"
+msgstr "Произошла внутренняя ошибка системы"
+
+#: PkStrings.cpp:418
+#, kde-format
+msgid "A security trust relationship is not present"
+msgstr "Отсутствуют доверительные отношения в сфере безопасности"
+
+#: PkStrings.cpp:420
+#, kde-format
+msgid "The package is not installed"
+msgstr "Пакет не установлен"
+
+#: PkStrings.cpp:422
+#, kde-format
+msgid "The package was not found"
+msgstr "Пакет не найден"
+
+#: PkStrings.cpp:424
+#, kde-format
+msgid "The package is already installed"
+msgstr "Пакет уже установлен"
+
+#: PkStrings.cpp:426
+#, kde-format
+msgid "The package download failed"
+msgstr "Не удалось загрузить пакет"
+
+#: PkStrings.cpp:428
+#, kde-format
+msgid "The group was not found"
+msgstr "Группа не найдена"
+
+#: PkStrings.cpp:430
+#, kde-format
+msgid "The group list was invalid"
+msgstr "Неверный список групп"
+
+#: PkStrings.cpp:432
+#, kde-format
+msgid "Dependency resolution failed"
+msgstr "Не удалась разрешить зависимости"
+
+#: PkStrings.cpp:434
+#, kde-format
+msgid "Search filter was invalid"
+msgstr "Неверный фильтр поиска"
+
+#: PkStrings.cpp:436
+#, kde-format
+msgid "The package identifier was not well formed"
+msgstr "Идентификатор пакета сформирован неверно"
+
+#: PkStrings.cpp:438
+#, kde-format
+msgid "Transaction error"
+msgstr "Ошибка операции"
+
+#: PkStrings.cpp:440
+#, kde-format
+msgid "Repository name was not found"
+msgstr "Название репозитория не найдено"
+
+#: PkStrings.cpp:442
+#, kde-format
+msgid "Could not remove a protected system package"
+msgstr "Невозможно удалить защищённый системный пакет"
+
+#: PkStrings.cpp:444
+#, kde-format
+msgid "The task was canceled"
+msgstr "Задание было отменено"
+
+#: PkStrings.cpp:446
+#, kde-format
+msgid "The task was forcibly canceled"
+msgstr "Задание было принудительно отменено"
+
+#: PkStrings.cpp:448
+#, kde-format
+msgid "Reading the config file failed"
+msgstr "Сбой чтения файла конфигурации"
+
+#: PkStrings.cpp:450
+#, kde-format
+msgid "The task cannot be cancelled"
+msgstr "Задание не может быть отменено"
+
+#: PkStrings.cpp:452
+#, kde-format
+msgid "Source packages cannot be installed"
+msgstr "Пакеты с исходными текстами не могут быть установлены"
+
+#: PkStrings.cpp:454
+#, kde-format
+msgid "The license agreement failed"
+msgstr "Сбой принятия лицензионного соглашения"
+
+#: PkStrings.cpp:456
+#, kde-format
+msgid "Local file conflict between packages"
+msgstr "Локальный конфликт между пакетами"
+
+#: PkStrings.cpp:458
+#, kde-format
+msgid "Packages are not compatible"
+msgstr "Пакеты не совместимы"
+
+#: PkStrings.cpp:460
+#, kde-format
+msgid "Problem connecting to a software origin"
+msgstr "Ошибка соединения с источником программного обеспечения"
+
+#: PkStrings.cpp:462
+#, kde-format
+msgid "Failed to initialize"
+msgstr "Сбой инициализации"
+
+#: PkStrings.cpp:464
+#, kde-format
+msgid "Failed to finalize"
+msgstr "Сбой завершения"
+
+#: PkStrings.cpp:466
+#, kde-format
+msgid "Cannot get lock"
+msgstr "Не удалось получить блокировку"
+
+#: PkStrings.cpp:468
+#, kde-format
+msgid "No packages to update"
+msgstr "Нет пакетов для обновления"
+
+#: PkStrings.cpp:470
+#, kde-format
+msgid "Cannot write repository configuration"
+msgstr "Не удалось записать конфигурацию репозитория"
+
+#: PkStrings.cpp:472
+#, kde-format
+msgid "Local install failed"
+msgstr "Сбой локальной установки"
+
+#: PkStrings.cpp:474
+#, kde-format
+msgid "Bad GPG signature"
+msgstr "Неверная подпись GPG"
+
+#: PkStrings.cpp:476
+#, kde-format
+msgid "Missing GPG signature"
+msgstr "Отсутствует подпись GPG"
+
+#: PkStrings.cpp:478
+#, kde-format
+msgid "Repository configuration invalid"
+msgstr "Неверная конфигурация репозитория"
+
+#: PkStrings.cpp:480
+#, kde-format
+msgid "Invalid package file"
+msgstr "Неверный файл пакета"
+
+#: PkStrings.cpp:482
+#, kde-format
+msgid "Package install blocked"
+msgstr "Установка пакета заблокирована"
+
+#: PkStrings.cpp:484
+#, kde-format
+msgid "Package is corrupt"
+msgstr "Пакет повреждён"
+
+#: PkStrings.cpp:486
+#, kde-format
+msgid "All packages are already installed"
+msgstr "Все пакеты уже установлены"
+
+#: PkStrings.cpp:488
+#, kde-format
+msgid "The specified file could not be found"
+msgstr "Указанный файл не может быть найден"
+
+#: PkStrings.cpp:490
+#, kde-format
+msgid "No more mirrors are available"
+msgstr "Нет больше доступных зеркал"
+
+#: PkStrings.cpp:492
+#, kde-format
+msgid "No distribution upgrade data is available"
+msgstr "Данные обновления дистрибутива недоступны"
+
+#: PkStrings.cpp:494
+#, kde-format
+msgid "Package is incompatible with this system"
+msgstr "Пакет несовместим с этой системой"
+
+#: PkStrings.cpp:496
+#, kde-format
+msgid "No space is left on the disk"
+msgstr "На диске нет свободного места"
+
+#: PkStrings.cpp:498
+#, kde-format
+msgid "A media change is required"
+msgstr "Требуется смена носителя"
+
+#: PkStrings.cpp:500
+#, kde-format
+msgid "Authorization failed"
+msgstr "Ошибка доступа"
+
+#: PkStrings.cpp:502
+#, kde-format
+msgid "Update not found"
+msgstr "Обновление не найдено"
+
+#: PkStrings.cpp:504
+#, kde-format
+msgid "Cannot install from untrusted origin"
+msgstr "Невозможно выполнить установку из ненадежных источников"
+
+#: PkStrings.cpp:506
+#, kde-format
+msgid "Cannot update from untrusted origin"
+msgstr "Невозможно выполнить обновление из ненадежных источников"
+
+#: PkStrings.cpp:508
+#, kde-format
+msgid "Cannot get the file list"
+msgstr "Не удалось получить список файлов"
+
+#: PkStrings.cpp:510
+#, kde-format
+msgid "Cannot get package requires"
+msgstr "Не удалось получить требуемые пакеты"
+
+#: PkStrings.cpp:512
+#, kde-format
+msgid "Cannot disable origin"
+msgstr "Не удалось отключить источник"
+
+#: PkStrings.cpp:514
+#, kde-format
+msgid "The download failed"
+msgstr "Сбой при загрузке"
+
+#: PkStrings.cpp:516
+#, kde-format
+msgid "Package failed to configure"
+msgstr "Сбой настройки пакета"
+
+#: PkStrings.cpp:518
+#, kde-format
+msgid "Package failed to build"
+msgstr "Сбой при сборке пакета"
+
+#: PkStrings.cpp:520
+#, kde-format
+msgid "Package failed to install"
+msgstr "Сбой при установке пакета"
+
+#: PkStrings.cpp:522
+#, kde-format
+msgid "Package failed to be removed"
+msgstr "Сбой при удалении пакета"
+
+#: PkStrings.cpp:524
+#, kde-format
+msgid "Update failed due to running process"
+msgstr "Сбой обновления из-за запущенного процесса"
+
+#: PkStrings.cpp:526
+#, kde-format
+msgid "The package database was changed"
+msgstr "База данных пакетов была изменена"
+
+#: PkStrings.cpp:528
+#, kde-format
+msgid "Virtual provide type is not supported"
+msgstr "Тип виртуального предоставления не поддерживается"
+
+#: PkStrings.cpp:530
+#, kde-format
+msgid "Install root is invalid"
+msgstr "Установка с правами администратора (root) недопустима"
+
+#: PkStrings.cpp:532
+#, kde-format
+msgid "Cannot fetch install sources"
+msgstr "Не удалось получить источник данных для установки"
+
+#: PkStrings.cpp:534
+#, kde-format
+msgid "Rescheduled due to priority"
+msgstr "Список упорядочен по приоритету"
+
+#: PkStrings.cpp:536
+#, kde-format
+msgid "Unfinished transaction"
+msgstr "Незавершённая операция"
+
+#: PkStrings.cpp:538
+#, kde-format
+msgid "Lock required"
+msgstr "Требуется блокировка"
+
+#: PkStrings.cpp:540
+#, kde-format
+msgid "Unknown error"
+msgstr "Неизвестная ошибка"
+
+#: PkStrings.cpp:550
+#, kde-format
+msgid ""
+"There is no network connection available.\n"
+"Please check your connection settings and try again"
+msgstr ""
+"Нет доступного сетевого соединения.\n"
+"Проверьте сетевое соединение и попробуйте ещё раз"
+
+#: PkStrings.cpp:553
+#, kde-format
+msgid ""
+"The package list needs to be rebuilt.\n"
+"This should have been done by the backend automatically."
+msgstr ""
+"Необходимо перестроить список пакетов.\n"
+"Модуль должен выполнить эту процедуру автоматически."
+
+#: PkStrings.cpp:556
+#, kde-format
+msgid ""
+"The service that is responsible for handling user requests is out of "
+"memory.\n"
+"Please close some programs or restart your computer."
+msgstr ""
+"Недостаточно памяти для работы службы, отвечающей за обработку запросов "
+"пользователей.\n"
+"Необходимо закрыть некоторые программы или перезагрузить компьютер."
+
+#: PkStrings.cpp:559
+#, kde-format
+msgid "A thread could not be created to service the user request."
+msgstr "Для обработки этого запроса пользователя должен быть создан поток."
+
+#: PkStrings.cpp:561
+#, kde-format
+msgid ""
+"The action is not supported by this backend.\n"
+"Please report a bug as this should not have happened."
+msgstr ""
+"Действие не поддерживается этим модулем.\n"
+"Сообщите об ошибке в систему учёта ошибок вашего дистрибутива."
+
+#: PkStrings.cpp:564
+#, kde-format
+msgid ""
+"A problem that we were not expecting has occurred.\n"
+"Please report this bug with the error description."
+msgstr ""
+"Возникла неожиданная проблема.\n"
+"Сообщите об этой ошибке в систему учёта ошибок вашего дистрибутива."
+
+#: PkStrings.cpp:567
+#, kde-format
+msgid ""
+"A security trust relationship could not be made with the software origin.\n"
+"Please check your software signature settings."
+msgstr ""
+"Невозможно создать доверительные отношения в сфере безопасности с источником "
+"программ.\n"
+"Проверьте ваши параметры подписей пакетов."
+
+#: PkStrings.cpp:570
+#, kde-format
+msgid ""
+"The package that is trying to be removed or updated is not already installed."
+msgstr "Пакет, который вы пытаетесь установить или обновить, уже установлен."
+
+#: PkStrings.cpp:572
+#, kde-format
+msgid ""
+"The package that is being modified was not found on your system or in any "
+"software origin."
+msgstr "Изменяемый пакет, не обнаружен ни в системе, ни в источниках программ."
+
+#: PkStrings.cpp:574
+#, kde-format
+msgid "The package that is trying to be installed is already installed."
+msgstr "Пакет, который вы пытаетесь установить, уже установлен."
+
+#: PkStrings.cpp:576
+#, kde-format
+msgid ""
+"The package download failed.\n"
+"Please check your network connectivity."
+msgstr ""
+"Сбой загрузки пакета.\n"
+"Проверьте подключение к сети."
+
+#: PkStrings.cpp:579
+#, kde-format
+msgid ""
+"The group type was not found.\n"
+"Please check your group list and try again."
+msgstr ""
+"Тип группы не был найден.\n"
+"Проверьте список групп и попробуйте ещё раз."
+
+#: PkStrings.cpp:582
+#, kde-format
+msgid ""
+"The group list could not be loaded.\n"
+"Refreshing your cache may help, although this is normally a software origin "
+"error."
+msgstr ""
+"Не удалось загрузить список групп.\n"
+"Может помочь обновление кэша, но обычно это ошибка источника программного "
+"обеспечения."
+
+#: PkStrings.cpp:586
+#, kde-format
+msgid ""
+"A package dependency could not be found.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Не удаётся найти зависимость пакета.\n"
+"Дополнительная информация доступна в детальном отчёте."
+
+#: PkStrings.cpp:589
+#, kde-format
+msgid "The search filter was not correctly formed."
+msgstr "Фильтр поиска сформирован некорректно."
+
+#: PkStrings.cpp:591
+#, kde-format
+msgid ""
+"The package identifier was not well formed when sent to the system daemon.\n"
+"This normally indicates an internal bug and should be reported."
+msgstr ""
+"Идентификатор пакета сформирован неверно при отправке на сервер.\n"
+"Это ошибка, о которой необходимо сообщить разработчикам."
+
+#: PkStrings.cpp:594
+#, kde-format
+msgid ""
+"An error occurred while running the transaction.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Произошла ошибка при выполнении операции.\n"
+"Дополнительная информация доступна в подробном отчёте."
+
+#: PkStrings.cpp:597
+#, kde-format
+msgid ""
+"The remote software origin name was not found.\n"
+"You may need to enable an item in Software Origins."
+msgstr ""
+"Название удалённого источника программ не было найдено.\n"
+"Возможно, вам следует включить репозиторий в списке источников программ."
+
+#: PkStrings.cpp:600
+#, kde-format
+msgid "Removing a protected system package is not allowed."
+msgstr "Удаление защищённых системных пакетов не разрешается."
+
+#: PkStrings.cpp:602
+#, kde-format
+msgid "The task was canceled successfully and no packages were changed."
+msgstr "Задание было прервано, никаких изменений не было сделано."
+
+#: PkStrings.cpp:604
+#, kde-format
+msgid ""
+"The task was canceled successfully and no packages were changed.\n"
+"The backend did not exit cleanly."
+msgstr ""
+"Задание было прервано, никаких изменений не было сделано.\n"
+"Работа модуля завершилась с ошибкой."
+
+#: PkStrings.cpp:607
+#, kde-format
+msgid ""
+"The native package configuration file could not be opened.\n"
+"Please make sure your system's configuration is valid."
+msgstr ""
+"Родной файл конфигурации пакета не удалось открыть.\n"
+"Убедитесь в правильности настройки вашей системы."
+
+#: PkStrings.cpp:610
+#, kde-format
+msgid "The task is not safe to be cancelled at this time."
+msgstr "Небезопасно отменять это задание в текущий момент."
+
+#: PkStrings.cpp:612
+#, kde-format
+msgid ""
+"Source packages are not normally installed this way.\n"
+"Check the extension of the file you are trying to install."
+msgstr ""
+"Пакеты с исходными текстами, как правило, устанавливаются другим способом.\n"
+"Проверьте расширение файла, который вы пытаетесь установить."
+
+#: PkStrings.cpp:615
+#, kde-format
+msgid ""
+"The license agreement was not agreed to.\n"
+"To use this software you have to accept the license."
+msgstr ""
+"Не было принято лицензионное соглашение.\n"
+"Для использования этой программы вы должны принять лицензию."
+
+#: PkStrings.cpp:618
+#, kde-format
+msgid ""
+"Two packages provide the same file.\n"
+"This is usually due to mixing packages for different software origins."
+msgstr ""
+"Два пакета предоставляют одинаковый файл.\n"
+"Причиной этого, как правило, является использование сразу нескольких разных "
+"источников программ."
+
+#: PkStrings.cpp:621
+#, kde-format
+msgid ""
+"Multiple packages exist that are not compatible with each other.\n"
+"This is usually due to mixing packages from different software origins."
+msgstr ""
+"Существует несколько несовместимых между собой пакетов.\n"
+"Причиной этого, как правило, является использование сразу нескольких разных "
+"источников программ."
+
+#: PkStrings.cpp:624
+#, kde-format
+msgid ""
+"There was a (possibly temporary) problem connecting to a software origins.\n"
+"Please check the detailed error for further details."
+msgstr ""
+"Возникла (возможно, временная) проблема с подключением к источнику "
+"программ.\n"
+"Чтобы получить больше информации, смотрите подробности ошибки."
+
+#: PkStrings.cpp:627
+#, kde-format
+msgid ""
+"Failed to initialize packaging backend.\n"
+"This may occur if other packaging tools are being used simultaneously."
+msgstr ""
+"Не удаётся инициализировать модуль управления пакетами.\n"
+"Возможно, одновременно используется другое средство управления пакетами."
+
+#: PkStrings.cpp:630
+#, kde-format
+msgid ""
+"Failed to close down the backend instance.\n"
+"This error can normally be ignored."
+msgstr ""
+"Не удалось завершить работу экземпляра модуля.\n"
+"Эту ошибку можно проигнорировать."
+
+#: PkStrings.cpp:633
+#, kde-format
+msgid ""
+"Cannot get the exclusive lock on the packaging backend.\n"
+"Please close any other legacy packaging tools that may be open."
+msgstr ""
+"Не удалось получить исключительную блокировку модуля.\n"
+"Закройте все остальные утилиты управления пакетами."
+
+#: PkStrings.cpp:636
+#, kde-format
+msgid "None of the selected packages could be updated."
+msgstr "Ни один из выбранных пакетов не может быть обновлён."
+
+#: PkStrings.cpp:638
+#, kde-format
+msgid "The repository configuration could not be modified."
+msgstr "Конфигурация репозитория не может быть изменена."
+
+#: PkStrings.cpp:640
+#, kde-format
+msgid ""
+"Installing the local file failed.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Сбой установки локального файла.\n"
+"Дополнительная информация доступна в подробном отчёте."
+
+#: PkStrings.cpp:643
+#, kde-format
+msgid "The package signature could not be verified."
+msgstr "Не удалось проверить подпись пакета."
+
+#: PkStrings.cpp:645
+#, kde-format
+msgid ""
+"The package signature was missing and this package is untrusted.\n"
+"This package was not signed with a GPG key when created."
+msgstr ""
+"Подпись пакета отсутствует, пакет ненадёжный.\n"
+"Этот пакет при создании не был подписан ключом GPG."
+
+#: PkStrings.cpp:648
+#, kde-format
+msgid "Repository configuration was invalid and could not be read."
+msgstr "Настройка репозитория неверна, он не может быть прочитан."
+
+#: PkStrings.cpp:650
+#, kde-format
+msgid ""
+"The package you are attempting to install is not valid.\n"
+"The package file could be corrupt, or not a proper package."
+msgstr ""
+"Пакет, который вы пытаетесь установить, недействителен.\n"
+"Файл пакета может быть повреждён, или вообще не является пакетом."
+
+#: PkStrings.cpp:653
+#, kde-format
+msgid ""
+"Installation of this package was prevented by your packaging system's "
+"configuration."
+msgstr "Установка этого пакета не допускается конфигурацией вашей системы."
+
+#: PkStrings.cpp:655
+#, kde-format
+msgid ""
+"The package that was downloaded is corrupt and needs to be downloaded again."
+msgstr "Загруженный пакет повреждён, необходимо загрузить его ещё раз."
+
+#: PkStrings.cpp:657
+#, kde-format
+msgid ""
+"All of the packages selected for install are already installed on the system."
+msgstr "Все пакеты, выделенные для установки, уже установлены в системе."
+
+#: PkStrings.cpp:659
+#, kde-format
+msgid ""
+"The specified file could not be found on the system.\n"
+"Check that the file still exists and has not been deleted."
+msgstr ""
+"Не удаётся найти указанный файл в системе.\n"
+"Убедитесь, что файл всё ещё существует и не был удалён."
+
+#: PkStrings.cpp:662
+#, kde-format
+msgid ""
+"Required data could not be found on any of the configured software origins.\n"
+"There were no more download mirrors that could be tried."
+msgstr ""
+"Необходимые данные не удалось найти в настроенных источниках программ.\n"
+"Загрузка всех возможных зеркал завершена."
+
+#: PkStrings.cpp:665
+#, kde-format
+msgid ""
+"Required upgrade data could not be found in any of the configured software "
+"origins.\n"
+"The list of distribution upgrades will be unavailable."
+msgstr ""
+"Не удалось найти необходимые для обновления данные во всех настроенных "
+"источниках программ.\n"
+"Список обновлений дистрибутива будет недоступен."
+
+#: PkStrings.cpp:668
+#, kde-format
+msgid ""
+"The package that is trying to be installed is incompatible with this system."
+msgstr "Пакет, который вы пытаетесь установить, несовместим с этой системой."
+
+#: PkStrings.cpp:670
+#, kde-format
+msgid ""
+"There is insufficient space on the device.\n"
+"Free some space on the system disk to perform this operation."
+msgstr ""
+"На устройстве недостаточно места.\n"
+"Освободите место на диске для выполнения этой операции."
+
+#: PkStrings.cpp:673
+#, kde-format
+msgid "Additional media is required to complete the transaction."
+msgstr "Для завершения действия требуется дополнительный пакет."
+
+#: PkStrings.cpp:675
+#, kde-format
+msgid ""
+"You have failed to provide correct authentication.\n"
+"Please check any passwords or account settings."
+msgstr ""
+"Вам не удалось пройти аутентификацию.\n"
+"Попробуйте другие пароли или проверьте параметры учётной записи."
+
+#: PkStrings.cpp:678
+#, kde-format
+msgid ""
+"The specified update could not be found.\n"
+"It could have already been installed or no longer available on the remote "
+"server."
+msgstr ""
+"Не удалось найти указанное обновление.\n"
+"Возможно, оно уже было установлено или не доступно на удалённом сервере."
+
+#: PkStrings.cpp:681
+#, kde-format
+msgid "The package could not be installed from untrusted origin."
+msgstr "Невозможно установить пакет из ненадежного источника."
+
+#: PkStrings.cpp:683
+#, kde-format
+msgid "The package could not be updated from untrusted origin."
+msgstr "Невозможно обновить пакет из ненадежного источника."
+
+#: PkStrings.cpp:685
+#, kde-format
+msgid "The file list is not available for this package."
+msgstr "Для этого пакета недоступен список файлов."
+
+#: PkStrings.cpp:687
+#, kde-format
+msgid "The information about what requires this package could not be obtained."
+msgstr "Сведения, о том что требует этот пакет, получить не удалось."
+
+#: PkStrings.cpp:689
+#, kde-format
+msgid "The specified software origin could not be disabled."
+msgstr "Указанный источник программного обеспечения не может быть отключён."
+
+#: PkStrings.cpp:691
+#, kde-format
+msgid ""
+"The download could not be done automatically and should be done manually.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Загрузка не может быть сделана в автоматическом режиме, необходимо выполнить "
+"её вручную.\n"
+"Дополнительная информация доступна в подробном отчёте."
+
+#: PkStrings.cpp:694
+#, kde-format
+msgid ""
+"One of the selected packages failed to configure correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Один из выбранных пакетов не удалось правильно настроить.\n"
+"Дополнительная информация доступна в подробном отчёте."
+
+#: PkStrings.cpp:697
+#, kde-format
+msgid ""
+"One of the selected packages failed to build correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Один из выбранных пакетов не удалось правильно собрать.\n"
+"Дополнительная информация доступна в подробном отчёте."
+
+#: PkStrings.cpp:700
+#, kde-format
+msgid ""
+"One of the selected packages failed to install correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Один из выбранных пакетов не удалось правильно установить.\n"
+"Дополнительная информация доступна в подробном отчёте."
+
+#: PkStrings.cpp:703
+#, kde-format
+msgid ""
+"One of the selected packages failed to be removed correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Один из выбранных пакетов не удалось правильно удалить.\n"
+"Дополнительная информация доступна в подробном отчёте."
+
+#: PkStrings.cpp:706
+#, kde-format
+msgid ""
+"A program is running that has to be closed before the update can proceed.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Для продолжения обновления, следует завершить работу программы.\n"
+"Дополнительная информация доступна в подробном отчёте."
+
+#: PkStrings.cpp:709
+#, kde-format
+msgid "The package database was changed while the request was running."
+msgstr "С момента отправки запроса, база данных пакетов была изменена."
+
+#: PkStrings.cpp:711
+#, kde-format
+msgid "The virtual provide type is not supported by this system."
+msgstr "Тип виртуального предоставления не поддерживается этот системой"
+
+#: PkStrings.cpp:713
+#, kde-format
+msgid "The install root is invalid. Please contact your administrator."
+msgstr ""
+"Установка с правами администратора (root) недопустима. Свяжитесь с вашим "
+"системным администратором."
+
+#: PkStrings.cpp:715
+#, kde-format
+msgid "The list of software could not be downloaded."
+msgstr "Не удалось загрузить список пакетов программного обеспечения"
+
+#: PkStrings.cpp:717
+#, kde-format
+msgid ""
+"The transaction has been cancelled and will be retried when the system is "
+"idle."
+msgstr ""
+"Операция была отменена. Повторная попытка будет произведена, когда система "
+"будет находиться в состоянии бездействия."
+
+#: PkStrings.cpp:719
+#, kde-format
+msgid "A previous package management transaction was interrupted."
+msgstr "Предыдущая операция управления пакетами была прервана."
+
+#: PkStrings.cpp:721
+#, kde-format
+msgid "A package manager lock is required."
+msgstr "Требуется блокировка менеджера пакетов."
+
+#: PkStrings.cpp:723
+#, kde-format
+msgid ""
+"Unknown error, please report a bug.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Произошла неизвестная ошибка, пожалуйста, сообщите о ней.\n"
+"Дополнительная информация доступна в подробном отчёте."
+
+#: PkStrings.cpp:734
+#, kde-format
+msgctxt "The group type"
+msgid "Accessibility"
+msgstr "Специальные возможности"
+
+#: PkStrings.cpp:736
+#, kde-format
+msgctxt "The group type"
+msgid "Accessories"
+msgstr "Стандартные"
+
+#: PkStrings.cpp:738
+#, kde-format
+msgctxt "The group type"
+msgid "Education"
+msgstr "Образование"
+
+#: PkStrings.cpp:740
+#, kde-format
+msgctxt "The group type"
+msgid "Games"
+msgstr "Игры"
+
+#: PkStrings.cpp:742
+#, kde-format
+msgctxt "The group type"
+msgid "Graphics"
+msgstr "Графика"
+
+#: PkStrings.cpp:744
+#, kde-format
+msgctxt "The group type"
+msgid "Internet"
+msgstr "Интернет"
+
+#: PkStrings.cpp:746
+#, kde-format
+msgctxt "The group type"
+msgid "Office"
+msgstr "Офис"
+
+#: PkStrings.cpp:748
+#, kde-format
+msgctxt "The group type"
+msgid "Others"
+msgstr "Прочие"
+
+#: PkStrings.cpp:750
+#, kde-format
+msgctxt "The group type"
+msgid "Development"
+msgstr "Разработка"
+
+#: PkStrings.cpp:752
+#, kde-format
+msgctxt "The group type"
+msgid "Multimedia"
+msgstr "Мультимедиа"
+
+#: PkStrings.cpp:754
+#, kde-format
+msgctxt "The group type"
+msgid "System"
+msgstr "Система"
+
+#: PkStrings.cpp:756
+#, kde-format
+msgctxt "The group type"
+msgid "GNOME desktop"
+msgstr "Рабочая среда GNOME"
+
+#: PkStrings.cpp:758
+#, kde-format
+msgctxt "The group type"
+msgid "KDE desktop"
+msgstr "Рабочая среда KDE"
+
+#: PkStrings.cpp:760
+#, kde-format
+msgctxt "The group type"
+msgid "XFCE desktop"
+msgstr "Рабочая среда XFCE"
+
+#: PkStrings.cpp:762
+#, kde-format
+msgctxt "The group type"
+msgid "Other desktops"
+msgstr "Другие рабочие среды"
+
+#: PkStrings.cpp:764
+#, kde-format
+msgctxt "The group type"
+msgid "Publishing"
+msgstr "Публикация"
+
+#: PkStrings.cpp:766
+#, kde-format
+msgctxt "The group type"
+msgid "Servers"
+msgstr "Серверы"
+
+#: PkStrings.cpp:768
+#, kde-format
+msgctxt "The group type"
+msgid "Fonts"
+msgstr "Шрифты"
+
+#: PkStrings.cpp:770
+#, kde-format
+msgctxt "The group type"
+msgid "Admin tools"
+msgstr "Средства администрирования"
+
+#: PkStrings.cpp:772
+#, kde-format
+msgctxt "The group type"
+msgid "Legacy"
+msgstr "Устаревшие"
+
+#: PkStrings.cpp:774
+#, kde-format
+msgctxt "The group type"
+msgid "Localization"
+msgstr "Локализация"
+
+#: PkStrings.cpp:776
+#, kde-format
+msgctxt "The group type"
+msgid "Virtualization"
+msgstr "Виртуализация"
+
+#: PkStrings.cpp:778
+#, kde-format
+msgctxt "The group type"
+msgid "Security"
+msgstr "Безопасность"
+
+#: PkStrings.cpp:780
+#, kde-format
+msgctxt "The group type"
+msgid "Power management"
+msgstr "Управление питанием"
+
+#: PkStrings.cpp:782
+#, kde-format
+msgctxt "The group type"
+msgid "Communication"
+msgstr "Связь"
+
+#: PkStrings.cpp:784
+#, kde-format
+msgctxt "The group type"
+msgid "Network"
+msgstr "Сеть"
+
+#: PkStrings.cpp:786
+#, kde-format
+msgctxt "The group type"
+msgid "Maps"
+msgstr "Карты"
+
+#: PkStrings.cpp:788
+#, kde-format
+msgctxt "The group type"
+msgid "Software sources"
+msgstr "Источники программ"
+
+#: PkStrings.cpp:790
+#, kde-format
+msgctxt "The group type"
+msgid "Science"
+msgstr "Наука"
+
+#: PkStrings.cpp:792
+#, kde-format
+msgctxt "The group type"
+msgid "Documentation"
+msgstr "Документация"
+
+#: PkStrings.cpp:794
+#, kde-format
+msgctxt "The group type"
+msgid "Electronics"
+msgstr "Электроника"
+
+#: PkStrings.cpp:796
+#, kde-format
+msgctxt "The group type"
+msgid "Package collections"
+msgstr "Коллекции пакетов"
+
+#: PkStrings.cpp:798
+#, kde-format
+msgctxt "The group type"
+msgid "Vendor"
+msgstr "Производитель"
+
+#: PkStrings.cpp:800
+#, kde-format
+msgctxt "The group type"
+msgid "Newest packages"
+msgstr "Новейшие пакеты"
+
+#: PkStrings.cpp:802
+#, kde-format
+msgctxt "The group type"
+msgid "Unknown group"
+msgstr "Неизвестная группа"
+
+#: PkStrings.cpp:813
+#, kde-format
+msgctxt "The type of update"
+msgid "Trivial update"
+msgstr "Простое обновление"
+
+#: PkStrings.cpp:815
+#, kde-format
+msgctxt "The type of update"
+msgid "Normal update"
+msgstr "Обычное обновление"
+
+#: PkStrings.cpp:817
+#, kde-format
+msgctxt "The type of update"
+msgid "Important update"
+msgstr "Важное обновление"
+
+#: PkStrings.cpp:819
+#, kde-format
+msgctxt "The type of update"
+msgid "Security update"
+msgstr "Обновление безопасности"
+
+#: PkStrings.cpp:821
+#, kde-format
+msgctxt "The type of update"
+msgid "Bug fix update"
+msgstr "Исправление ошибки"
+
+#: PkStrings.cpp:823
+#, kde-format
+msgctxt "The type of update"
+msgid "Enhancement update"
+msgstr "Улучшающее обновление"
+
+#: PkStrings.cpp:825
+#, kde-format
+msgctxt "The type of update"
+msgid "Blocked update"
+msgstr "Заблокированное обновление"
+
+#: PkStrings.cpp:828
+#, kde-format
+msgctxt "The type of update"
+msgid "Installed"
+msgstr "Установлено"
+
+#: PkStrings.cpp:831
+#, kde-format
+msgctxt "The type of update"
+msgid "Available"
+msgstr "Доступно"
+
+#: PkStrings.cpp:833
+#, kde-format
+msgctxt "The type of update"
+msgid "Unknown update"
+msgstr "Неизвестное обновление"
+
+#: PkStrings.cpp:844
+#, kde-format
+msgid "No Updates Available"
+msgstr "Нет доступных обновлений"
+
+#: PkStrings.cpp:847
+#, kde-format
+msgctxt "Some updates were selected on the view"
+msgid "1 Update Selected"
+msgid_plural "%1 Updates Selected"
+msgstr[0] "Выбрано %1 обновление"
+msgstr[1] "Выбрано %1 обновления"
+msgstr[2] "Выбрано %1 обновлений"
+msgstr[3] "Выбрано одно обновление"
+
+#: PkStrings.cpp:851
+#, kde-format
+msgctxt "Some updates are being shown on the screen"
+msgid "1 Update"
+msgid_plural "%1 Updates"
+msgstr[0] "%1 обновление"
+msgstr[1] "%1 обновления"
+msgstr[2] "%1 обновлений"
+msgstr[3] "Одно обновление"
+
+#: PkStrings.cpp:854
+#, kde-format
+msgctxt "Type of update, in the case it's just an update"
+msgid "%1, %2"
+msgstr "%1, %2"
+
+#: PkStrings.cpp:855
+#, kde-format
+msgctxt "Part of: %1 Updates, %1 Selected"
+msgid "%1 Update"
+msgid_plural "%1 Updates"
+msgstr[0] "%1 обновление"
+msgstr[1] "%1 обновления"
+msgstr[2] "%1 обновлений"
+msgstr[3] "Одно обновление"
+
+#: PkStrings.cpp:856
+#, kde-format
+msgctxt "Part of: %1 Updates, %1 Selected"
+msgid "%1 Selected"
+msgid_plural "%1 Selected"
+msgstr[0] "Выбрано %1"
+msgstr[1] "Выбрано %1"
+msgstr[2] "Выбрано %1"
+msgstr[3] "Выбрано 1"
+
+#: PkStrings.cpp:860
+#, kde-format
+msgid "No Packages"
+msgstr "Нет пакетов"
+
+#: PkStrings.cpp:862
+#, kde-format
+msgid "1 Package"
+msgid_plural "%1 Packages"
+msgstr[0] "%1 пакет"
+msgstr[1] "%1 пакета"
+msgstr[2] "%1 пакетов"
+msgstr[3] "Один пакет"
+
+#: PkStrings.cpp:870
+#, kde-format
+msgid "No restart is necessary"
+msgstr "Перезагрузка не обязательна"
+
+#: PkStrings.cpp:872
+#, kde-format
+msgid "You will be required to restart this application"
+msgstr "Вам необходимо будет перезапустить это приложение"
+
+#: PkStrings.cpp:874
+#, kde-format
+msgid "You will be required to log out and back in"
+msgstr "Вам потребуется перезапустить сеанс."
+
+#: PkStrings.cpp:876
+#, kde-format
+msgid "A restart will be required"
+msgstr "Потребуется перезагрузка системы"
+
+#: PkStrings.cpp:878
+#, kde-format
+msgid "You will be required to log out and back in due to a security update."
+msgstr ""
+"Чтобы обновление безопасности вступило в силу потребуется перезапустить "
+"сеанс."
+
+#: PkStrings.cpp:880
+#, kde-format
+msgid "A restart will be required due to a security update."
+msgstr ""
+"Чтобы обновление безопасности вступило в силу потребуется перезагрузить "
+"систему."
+
+#: PkStrings.cpp:893
+#, kde-format
+msgid "No restart is required"
+msgstr "Перезапуск системы не требуется"
+
+#: PkStrings.cpp:895
+#, kde-format
+msgid "A restart is required"
+msgstr "Требуется перезагрузка"
+
+#: PkStrings.cpp:897
+#, kde-format
+msgid "You need to log out and log back in"
+msgstr "Вам следует перезапустить сеанс"
+
+#: PkStrings.cpp:899
+#, kde-format
+msgid "You need to restart the application"
+msgstr "Вам необходимо перезапустить приложение"
+
+#: PkStrings.cpp:901
+#, kde-format
+msgid "You need to log out and log back in to remain secure."
+msgstr "Чтобы обеспечить безопасность системы, требуется перезапустить сеанс."
+
+#: PkStrings.cpp:903
+#, kde-format
+msgid "A restart is required to remain secure."
+msgstr "Чтобы обеспечить безопасность системы, требуется перезагрузка."
+
+#: PkStrings.cpp:916
+#, kde-format
+msgid "Stable"
+msgstr "Стабильное"
+
+#: PkStrings.cpp:918
+#, kde-format
+msgid "Unstable"
+msgstr "Нестабильное"
+
+#: PkStrings.cpp:920
+#, kde-format
+msgid "Testing"
+msgstr "Тестируемое"
+
+#: PkStrings.cpp:933
+#, kde-format
+msgid "Please insert the CD labeled '%1', and press continue."
+msgstr "Вставьте CD с меткой «%1» и нажмите «Продолжить»."
+
+#: PkStrings.cpp:935
+#, kde-format
+msgid "Please insert the DVD labeled '%1', and press continue."
+msgstr "Вставьте DVD с меткой «%1» и нажмите «Продолжить»."
+
+#: PkStrings.cpp:937
+#, kde-format
+msgid "Please insert the disc labeled '%1', and press continue."
+msgstr "Вставьте диск с меткой «%1» и нажмите «Продолжить»."
+
+#: PkStrings.cpp:939 PkStrings.cpp:942
+#, kde-format
+msgid "Please insert the medium labeled '%1', and press continue."
+msgstr "Вставьте носитель с меткой «%1» и нажмите «Продолжить»."
+
+#: PkStrings.cpp:950
+#, kde-format
+msgid "You do not have the necessary privileges to perform this action."
+msgstr "У вас недостаточно прав для выполнения этого действия."
+
+#: PkStrings.cpp:952
+#, kde-format
+msgid "Could not get a transaction id from packagekitd."
+msgstr "Не удалось получить идентификатор операции из packagekitd."
+
+#: PkStrings.cpp:954
+#, kde-format
+msgid "Cannot connect to this transaction id."
+msgstr "Невозможно подключиться к идентификаторам операции."
+
+#: PkStrings.cpp:956
+#, kde-format
+msgid "This action is unknown."
+msgstr "Неизвестное действие."
+
+#: PkStrings.cpp:958
+#, kde-format
+msgid "The packagekitd service could not be started."
+msgstr "Не удалось запустить службу packagekitd."
+
+#: PkStrings.cpp:960
+#, kde-format
+msgid "The query is not valid."
+msgstr "Неверный запрос."
+
+#: PkStrings.cpp:962
+#, kde-format
+msgid "The file is not valid."
+msgstr "Файл не является действительным."
+
+#: PkStrings.cpp:964
+#, kde-format
+msgid "This function is not yet supported."
+msgstr "Эта функция пока не поддерживается."
+
+#: PkStrings.cpp:966
+#, kde-format
+msgid "Could not talk to packagekitd."
+msgstr "Не удалось связаться с packagekitd."
+
+#: PkStrings.cpp:968
+#, kde-format
+msgid "Error talking to packagekitd."
+msgstr "Ошибка обмена данными с packagekitd."
+
+#: PkStrings.cpp:971 PkStrings.cpp:974
+#, kde-format
+msgid "An unknown error happened."
+msgstr "Произошла неизвестная ошибка."
+
+#: PkStrings.cpp:988 pkupdates.cpp:170
+#, kde-format
+msgid "Your system is up to date"
+msgstr "Система находится в актуальном состоянии"
+
+#: PkStrings.cpp:990
+#, kde-format
+msgid "You have no updates"
+msgstr "Нет обновлений"
+
+#: PkStrings.cpp:992
+#, kde-format
+msgid "Last check for updates was more than a month ago"
+msgstr "Последняя проверка обновлений была больше месяца назад"
+
+#: PkStrings.cpp:1000
+#, kde-format
+msgid "Verified %1 ago"
+msgstr "Проверено %1 назад"
+
+#: PkStrings.cpp:1002
+#, kde-format
+msgid "It's strongly recommended that you check for new updates now"
+msgstr "Настоятельно рекомендуется проверить наличие новых обновлений"
+
+#: pkupdates.cpp:54
+#, kde-format
+msgid "Idle"
+msgstr "Бездействие"
+
+#: pkupdates.cpp:140
+#, kde-format
+msgid "Checking updates"
+msgstr "Проверка обновлений"
+
+#: pkupdates.cpp:142
+#, kde-format
+msgid "Getting updates"
+msgstr "Получение обновлений"
+
+#: pkupdates.cpp:144
+#, kde-format
+msgid "Installing updates"
+msgstr "Установка обновлений"
+
+#: pkupdates.cpp:146
+#, kde-format
+msgid "Working"
+msgstr "Выполняется"
+
+#: pkupdates.cpp:149 pkupdates.cpp:439
+#, kde-format
+msgid "You have 1 new update"
+msgid_plural "You have %1 new updates"
+msgstr[0] "Доступно %1 новое обновление"
+msgstr[1] "Доступны %1 новых обновления"
+msgstr[2] "Доступны %1 новых обновлений"
+msgstr[3] "Доступно %1 новое обновление"
+
+#: pkupdates.cpp:151
+#, kde-format
+msgid "1 security update"
+msgid_plural "%1 security updates"
+msgstr[0] "%1 обновление безопасности"
+msgstr[1] "%1 обновления безопасности"
+msgstr[2] "%1 обновлений безопасности"
+msgstr[3] "%1 обновление безопасности"
+
+#: pkupdates.cpp:153
+#, kde-format
+msgid "1 important update"
+msgid_plural "%1 important updates"
+msgstr[0] "%1 важное обновление"
+msgstr[1] "%1 важных обновления"
+msgstr[2] "%1 важных обновлений"
+msgstr[3] "%1 важное обновление"
+
+#: pkupdates.cpp:158
+#, kde-format
+msgid " and "
+msgstr " и "
+
+#: pkupdates.cpp:158
+#, kde-format
+msgid "(including %1)"
+msgstr "(включая %1)"
+
+#: pkupdates.cpp:160
+#, kde-format
+msgid "Your system is offline"
+msgstr "Система не подключена к сети"
+
+#: pkupdates.cpp:165
+#, fuzzy, kde-format
+#| msgid "Checking for updates failed"
+msgid "Not checked for updates yet"
+msgstr "Не удалось проверить наличие обновлений"
+
+#: pkupdates.cpp:168
+#, kde-format
+msgid "Checking for updates failed"
+msgstr "Не удалось проверить наличие обновлений"
+
+#: pkupdates.cpp:241
+#, kde-format
+msgid "Last check: %1 ago"
+msgstr "Последняя проверка: %1 назад"
+
+#: pkupdates.cpp:243
+#, kde-format
+msgid "Last check: never"
+msgstr "Последняя проверка: никогда"
+
+#: pkupdates.cpp:385
+#, kde-format
+msgctxt "1 installation status, 2 pkg name, 3 percentage"
+msgid "%1 %2 (%3%)"
+msgstr "%1 %2 (%3%)"
+
+#: pkupdates.cpp:388
+#, kde-format
+msgctxt "1 installation status, 2 pkg name"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: pkupdates.cpp:474
+#, kde-format
+msgid "Updates Installed"
+msgstr "Обновления установлены"
+
+#: pkupdates.cpp:475
+#, kde-format
+msgid "Successfully updated %1 package"
+msgid_plural "Successfully updated %1 packages"
+msgstr[0] "Успешно обновлён %1 пакет"
+msgstr[1] "Успешно обновлены %1 пакета"
+msgstr[2] "Успешно обновлены %1 пакетов"
+msgstr[3] "Успешно обновлён %1 пакет"
+
+#: pkupdates.cpp:539
+#, kde-format
+msgid "Update Error"
+msgstr "Ошибка обновления"
+
+#: pkupdates.cpp:593
+#, kde-format
+msgid "Restart is required"
+msgstr "Требуется перезагрузка"
+
+#: pkupdates.cpp:594
+#, kde-format
+msgid ""
+"The computer will have to be restarted after the update for the changes to "
+"take effect."
+msgstr ""
+"Чтобы после обновления изменения вступили в силу, следует перезагрузить "
+"компьютер."
+
+#: pkupdates.cpp:603
+#, kde-format
+msgid "Session restart is required"
+msgstr "Требуется перезапуск сеанса"
+
+#: pkupdates.cpp:604
+#, kde-format
+msgid ""
+"You will need to log out and back in after the update for the changes to "
+"take effect."
+msgstr ""
+"Чтобы после обновления изменения вступили в силу, следует перезапустить "
+"сеанс."
+
+#~ msgctxt "@action:button"
+#~ msgid "Restart"
+#~ msgstr "Перезапустить"
+
+#~ msgctxt "@action:button"
+#~ msgid "Logout"
+#~ msgstr "Завершить сеанс"
+
+#~ msgid "Software Updates Available"
+#~ msgstr "Доступны обновления программного обеспечения"
+
+#~ msgid "A mirror is possibly broken"
+#~ msgstr "Возможно, зеркало неполное"
+
+#~ msgid "The connection was refused"
+#~ msgstr "Соединение было отклонено"
+
+#~ msgid "The parameter was invalid"
+#~ msgstr "Неверный параметр"
+
+#~ msgid "The priority was invalid"
+#~ msgstr "Неверный приоритет"
+
+#~ msgid "Backend warning"
+#~ msgstr "Предупреждение модуля"
+
+#~ msgid "Daemon warning"
+#~ msgstr "Предупреждение демона"
+
+#~ msgid "The package list cache is being rebuilt"
+#~ msgstr "Восстановление кэша списка пакетов"
+
+#~ msgid "An untrusted package was installed"
+#~ msgstr "Был установлен неподписанный пакет"
+
+#~ msgid "A newer package exists"
+#~ msgstr "Существует более новый пакет"
+
+#~ msgid "Could not find package"
+#~ msgstr "Не удаётся найти пакет"
+
+#~ msgid "Configuration files were changed"
+#~ msgstr "Файлы конфигурации были изменены"
+
+#~ msgid "Package is already installed"
+#~ msgstr "Пакет уже установлен"
+
+#~ msgid "Automatic cleanup is being ignored"
+#~ msgstr "Автоматическая очистка проигнорирована"
+
+#~ msgid "Software source download failed"
+#~ msgstr "Загрузка из источника пакетов не удалась"
+
+#~ msgid "This software source is for developers only"
+#~ msgstr "Это программное обеспечение предназначено только для разработчиков"
+
+#~ msgid "Other updates have been held back"
+#~ msgstr "Другие обновления были удержаны"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Леонид Кантер,Юрий Ефремов"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "leon@asplinux.ru,yur.arh@gmail.com"
+
+#~ msgid "Show updates"
+#~ msgstr "Показать обновления"
+
+#~ msgid "Show settings"
+#~ msgstr "Показать параметры"
+
+#~ msgid "Show backend details"
+#~ msgstr "Показать сведения о модуле"
+
+#~ msgid "Mime type installer"
+#~ msgstr "Установка типов MIME"
+
+#~ msgid "Package name installer"
+#~ msgstr "Установка пакета по имени"
+
+#~ msgid "Single file installer"
+#~ msgstr "Установка одного файла"
+
+#~ msgid "Font resource installer"
+#~ msgstr "Установка шрифтов"
+
+#~ msgid "Catalog installer"
+#~ msgstr "Установка каталогов"
+
+#~ msgid "Single package remover"
+#~ msgstr "Удаление одного пакета"
+
+#~ msgid "Package file to install"
+#~ msgstr "Устанавливаемый файл пакета"
+
+#~ msgid "Backend Details"
+#~ msgstr "Сведения о модуле"
+
+#~ msgid "About Backend"
+#~ msgstr "О модуле"
+
+#~ msgid "Backend name:"
+#~ msgstr "Название модуля:"
+
+#~ msgid "Backend description:"
+#~ msgstr "Описание модуля:"
+
+#~ msgid "Backend author:"
+#~ msgstr "Автор модуля:"
+
+#~ msgid "Distribution ID:"
+#~ msgstr "ID дистрибутива:"
+
+#~ msgid "Methods"
+#~ msgstr "Методы"
+
+#~ msgid "Get Updates"
+#~ msgstr "Получить обновления"
+
+#~ msgid "Refresh Cache"
+#~ msgstr "Обновить кэш"
+
+#~ msgid "Search Name"
+#~ msgstr "Поиск по названию"
+
+#~ msgid "Get Package Depends"
+#~ msgstr "Получить список зависимостей пакета"
+
+#~ msgid "Search Details"
+#~ msgstr "Поиск сведений"
+
+#~ msgid "Get Package Requires"
+#~ msgstr "Получить список необходимых пакетов"
+
+#~ msgid "Search Group"
+#~ msgstr "Поиск по группе"
+
+#~ msgid "Get Update Detail"
+#~ msgstr "Получить сведения об обновлении"
+
+#~ msgid "Search File"
+#~ msgstr "Поиск файла"
+
+#~ msgid "Get Package Description"
+#~ msgstr "Получить описание пакета"
+
+#~ msgid "Get Package Files"
+#~ msgstr "Получить файлы пакета"
+
+#~ msgid "Get Distro Upgrades"
+#~ msgstr "Получить обновление дистрибутива"
+
+#~ msgid "Install Packages"
+#~ msgstr "Установить пакеты"
+
+#~ msgid "Update Packages"
+#~ msgstr "Обновить пакеты"
+
+#~ msgid "Remove Packages"
+#~ msgstr "Удалить пакеты"
+
+#~ msgid "Install Files"
+#~ msgstr "Установить файлы"
+
+#~ msgid "Resolve"
+#~ msgstr "Разрешение"
+
+#~ msgid "Cancel"
+#~ msgstr "Отменить"
+
+#~ msgid "Get Packages"
+#~ msgstr "Получить пакеты"
+
+#~ msgid "What Provides"
+#~ msgstr "Предоставления"
+
+#~ msgid "Set Repository Data"
+#~ msgstr "Установить данные репозитория"
+
+#~ msgid "Enable Repository"
+#~ msgstr "Подключить репозиторий"
+
+#~ msgid "Get Repository List"
+#~ msgstr "Получить список репозиториев"
+
+#~ msgid "Repair System"
+#~ msgstr "Восстановить систему"
+
+#~ msgid "Filters"
+#~ msgstr "Фильтры"
+
+#~ msgid "Development"
+#~ msgstr "Средства разработки"
+
+#~ msgid "Package is visible"
+#~ msgstr "Пакет видим"
+
+#~ msgid "Newest"
+#~ msgstr "Новейшие"
+
+#~ msgid "GUI"
+#~ msgstr "Интерфейс"
+
+#~ msgid "Free software"
+#~ msgstr "Свободное ПО"
+
+#~ msgid "Supported"
+#~ msgstr "Поддерживаемые"
+
+#~ msgid "Only native"
+#~ msgstr "Только этой архитектуры"
+
+#~ msgid "PackageKit"
+#~ msgstr "PackageKit"
+
+#~ msgid "Version:"
+#~ msgstr "Версия:"
+
+#, fuzzy
+#~| msgid "Apper is an Application to Get and Manage Software"
+#~ msgid "Apper is an application to get and manage software"
+#~ msgstr ""
+#~ "Apper — программа для загрузки и управления пакетами программного "
+#~ "обеспечения"
+
+#~ msgid "Daniel Nicoletti"
+#~ msgstr "Daniel Nicoletti"
+
+#~ msgid "Adrien Bustany"
+#~ msgstr "Adrien Bustany"
+
+#~ msgid "libpackagekit-qt and other stuff"
+#~ msgstr "libpackagekit-qt и др."
+
+#~ msgid "Distribution upgrade available"
+#~ msgstr "Доступно обновление дистрибутива"
+
+#~ msgid "Start upgrade now"
+#~ msgstr "Начать обновление сейчас"
+
+#~ msgid "Distribution upgrade finished. "
+#~ msgstr "Обновление дистрибутива завершено. "
+
+#~ msgid "Distribution upgrade process exited with code %1."
+#~ msgstr "Процесс обновления дистрибутива завершился с кодом %1."
+
+#~ msgid "The distribution upgrade process failed to start."
+#~ msgstr "Сбой запуска процесса обновления дистрибутива."
+
+#~ msgid ""
+#~ "The distribution upgrade process crashed some time after starting "
+#~ "successfully."
+#~ msgstr ""
+#~ "Произошёл сбой процесса обновления дистрибутива через некоторое время "
+#~ "после его успешного начала."
+
+#~ msgid "The distribution upgrade process failed with an unknown error."
+#~ msgstr ""
+#~ "Процесс обновления дистрибутива завершился аварийно через некоторое время "
+#~ "после его успешного начала."
+
+#~ msgid "The system update has completed"
+#~ msgstr "Обновление системы завершено"
+
+#~ msgid "Package: %2"
+#~ msgid_plural "Packages: %2"
+#~ msgstr[0] "Пакеты: %2"
+#~ msgstr[1] "Пакеты: %2"
+#~ msgstr[2] "Пакеты: %2"
+#~ msgstr[3] "Пакет: %2"
+
+#~ msgid "Details"
+#~ msgstr "Сведения"
+
+#~ msgid "Updates are being automatically installed."
+#~ msgstr "Идёт автоматическая установка обновлений."
+
+#~ msgid "Security updates are being automatically installed."
+#~ msgstr "Идёт автоматическая установка обновлений безопасности."
+
+#~ msgid "Updates are being automatically downloaded."
+#~ msgstr "Обновления были автоматически загружены."
+
+#~ msgid "System update was successful."
+#~ msgstr "Обновление системы прошло успешно."
+
+#~ msgid "The software update failed."
+#~ msgstr "Ошибка обновления программ."
+
+#~ msgid "There is one new update"
+#~ msgid_plural "There are %1 new updates"
+#~ msgstr[0] "Имеется %1 обновление"
+#~ msgstr[1] "Имеется %1 обновления"
+#~ msgstr[2] "Имеется %1 обновлений"
+#~ msgstr[3] "Имеется обновление"
+
+#~ msgid "Review"
+#~ msgstr "Просмотр"
+
+#~ msgid "Install"
+#~ msgstr "Установить"
+
+#~ msgid "KDE interface for managing software"
+#~ msgstr "Интерфейс KDE для управления программным обеспечением"
+
+#~ msgid "(C) 2008-2013 Daniel Nicoletti"
+#~ msgstr "© Daniel Nicoletti, 2008-2013"
+
+#, fuzzy
+#~| msgctxt "@info:credit"
+#~| msgid "Matthias Klumpp"
+#~ msgid "Matthias Klumpp"
+#~ msgstr "Matthias Klumpp"
+
+#~ msgid "Find"
+#~ msgstr "Поиск"
+
+#~ msgid "History"
+#~ msgstr "Журнал"
+
+#~ msgid "Settings"
+#~ msgstr "Параметры"
+
+#~ msgid "&Cancel"
+#~ msgstr "О&тменить"
+
+#~ msgid "Find by &name"
+#~ msgstr "Поиск по &названию"
+
+#~ msgid "Find by f&ile name"
+#~ msgstr "Поиск по имени &файла"
+
+#~ msgid "Find by &description"
+#~ msgstr "Поиск по &описанию"
+
+#~ msgid ""
+#~ "The settings of the current module have changed.\n"
+#~ "Do you want to apply the changes or discard them?"
+#~ msgstr ""
+#~ "Настройка текущего модуля была изменена.\n"
+#~ "Применить изменения или отменить их?"
+
+#~ msgid "Apply Settings"
+#~ msgstr "Применить параметры"
+
+#~ msgid "Updates"
+#~ msgstr "Обновления"
+
+#~ msgid "Pending Changes"
+#~ msgstr "Ожидающие задания"
+
+#~ msgid "Installed Software"
+#~ msgstr "Установленные программы"
+
+#~ msgid "Could not find an application that matched this category"
+#~ msgstr "Не удалось найти приложение, соответствующее данной категории"
+
+#~ msgid "Add and Remove Software"
+#~ msgstr "Установка и удаление программ"
+
+#~ msgid "Search packages"
+#~ msgstr "Поиск пакетов"
+
+#~ msgid "Check for new Updates"
+#~ msgstr "Проверить наличие обновлений"
+
+#~ msgid "General Settings"
+#~ msgstr "Основные параметры"
+
+#~ msgid "Software Origins"
+#~ msgstr "Источники программ"
+
+#~ msgid "Back"
+#~ msgstr "Назад"
+
+#~ msgid "Show Versions"
+#~ msgstr "Показать версию"
+
+#~ msgid "Show Architectures"
+#~ msgstr "Показать архитектуру"
+
+#~ msgid "Show Origins"
+#~ msgstr "Показать источники"
+
+#~ msgid "Show Sizes"
+#~ msgstr "Показать размер"
+
+#~ msgid "Export Installed Package List..."
+#~ msgstr "Экспорт списка установленных пакетов..."
+
+#~ msgid "Install Packages from List..."
+#~ msgstr "Установить пакеты из списка..."
+
+#~ msgid "Lists"
+#~ msgstr "Списки"
+
+#~ msgid "Categories"
+#~ msgstr "Категории"
+
+#~ msgid "Groups"
+#~ msgstr "Группы"
+
+#~ msgid "Collections"
+#~ msgstr "Коллекции"
+
+#~ msgid "Only collections"
+#~ msgstr "Только коллекции"
+
+#~ msgid "Exclude collections"
+#~ msgstr "Исключить коллекции"
+
+#~ msgid "Only installed"
+#~ msgstr "Только установленные"
+
+#~ msgid "Only available"
+#~ msgstr "Только доступные"
+
+#~ msgid "No filter"
+#~ msgstr "Без фильтра"
+
+#~ msgid "Only development"
+#~ msgstr "Только пакеты разработки"
+
+#~ msgid "Only end user files"
+#~ msgstr "Только пользовательские пакеты"
+
+#~ msgid "Graphical"
+#~ msgstr "Графические программы"
+
+#~ msgid "Only graphical"
+#~ msgstr "Только графические"
+
+#~ msgid "Only text"
+#~ msgstr "Только текстовые"
+
+#~ msgctxt "Filter for free packages"
+#~ msgid "Free"
+#~ msgstr "Свободные программы"
+
+#~ msgid "Only free software"
+#~ msgstr "Только свободные программы"
+
+#~ msgid "Only non-free software"
+#~ msgstr "Только несвободные программы"
+
+#~ msgctxt "Filter for supported packages"
+#~ msgid "Supported"
+#~ msgstr "Поддерживаемые программы"
+
+#~ msgid "Only supported software"
+#~ msgstr "Только поддерживаемые"
+
+#~ msgid "Only non-supported software"
+#~ msgstr "Только неподдерживаемые"
+
+#~ msgctxt "Filter for source packages"
+#~ msgid "Source"
+#~ msgstr "Исходный код"
+
+#~ msgid "Only sourcecode"
+#~ msgstr "Только исходный код"
+
+#~ msgid "Only non-sourcecode"
+#~ msgstr "Только бинарные"
+
+#~ msgid "Hide Subpackages"
+#~ msgstr "Скрыть субпакеты"
+
+#~ msgid "Only show one package, not subpackages"
+#~ msgstr "Показывать только один пакет, без субпакетов"
+
+#~ msgid "Only Newest Packages"
+#~ msgstr "Только новейшие пакеты"
+
+#~ msgid "Only show the newest available package"
+#~ msgstr "Показывать только новейшие доступные пакеты"
+
+#~ msgid "Only Native Packages"
+#~ msgstr "Только соответствующие архитектуре"
+
+#~ msgid "Only show packages matching the machine architecture"
+#~ msgstr "Показывать только пакеты, соответствующие архитектуре системы"
+
+#~ msgid "Only Show Applications"
+#~ msgstr "Показывать только приложения"
+
+#~ msgid "Hide packages that are not applications"
+#~ msgstr "Скрыть пакеты, которые не являются приложениями"
+
+#~ msgid "Display"
+#~ msgstr "Показ"
+
+#~ msgid "Description"
+#~ msgstr "Описание"
+
+#~ msgid "Depends On"
+#~ msgstr "Зависит от"
+
+#~ msgid "Required By"
+#~ msgstr "Необходим для"
+
+#~ msgid "File List"
+#~ msgstr "Список файлов"
+
+#~ msgid "No files were found."
+#~ msgstr "Файлы не найдены."
+
+#~ msgid "Could not fetch software details"
+#~ msgstr "Не удалось получить сведения о программном обеспечение"
+
+#~ msgid "Applications"
+#~ msgstr "Приложения"
+
+#~ msgid "License:"
+#~ msgstr "Лицензия:"
+
+#~ msgid "Hide"
+#~ msgstr "Скрыть"
+
+#~ msgid "Could not find screen shot."
+#~ msgstr "Не удалось найти снимок."
+
+#~ msgid "Origin of Packages"
+#~ msgstr "Источники пакетов"
+
+#~ msgid ""
+#~ "A repository was changed, it's highly recommended to refresh the cache"
+#~ msgstr ""
+#~ "В репозиторий были внесены изменения. Настоятельно рекомендуется обновить "
+#~ "кэш."
+
+#~ msgctxt "Inform about distribution upgrades"
+#~ msgid "Never"
+#~ msgstr "Никогда"
+
+#~ msgctxt "Inform about distribution upgrades"
+#~ msgid "Only stable"
+#~ msgstr "Только стабильные"
+
+#~ msgctxt "Inform about distribution upgrades"
+#~ msgid "Stable and development"
+#~ msgstr "Стабильные и тестируемые"
+
+#~ msgctxt "Hourly refresh the package cache"
+#~ msgid "Hourly"
+#~ msgstr "Ежечасно"
+
+#~ msgctxt "Daily refresh the package cache"
+#~ msgid "Daily"
+#~ msgstr "Ежедневно"
+
+#~ msgctxt "Weekly refresh the package cache"
+#~ msgid "Weekly"
+#~ msgstr "Еженедельно"
+
+#~ msgctxt "Monthly refresh the package cache"
+#~ msgid "Monthly"
+#~ msgstr "Ежемесячно"
+
+#~ msgctxt "Never refresh package cache"
+#~ msgid "Never"
+#~ msgstr "Никогда"
+
+#~ msgctxt "No updates will be automatically installed"
+#~ msgid "None"
+#~ msgstr "Ничего"
+
+#~ msgid "Download only"
+#~ msgstr "Только загрузка"
+
+#~ msgid "Security only"
+#~ msgstr "Только обновления безопасности"
+
+#~ msgid "All updates"
+#~ msgstr "Все обновления"
+
+#~ msgid "Check for new updates:"
+#~ msgstr "Проверять обновления:"
+
+#~ msgid "when on a mobile broadband network connection"
+#~ msgstr "при использовании мобильного широкополосного соединения"
+
+#~ msgid "when running on battery"
+#~ msgstr "при работе от аккумулятора"
+
+#~ msgid "Automatically update:"
+#~ msgstr "Автоматически обновлять:"
+
+#~ msgid "Show application launcher after installing new applications"
+#~ msgstr "Показывать окно запуска программ после установки новых приложений"
+
+#~ msgid "Show confirmation dialog when installing or updating packages"
+#~ msgstr ""
+#~ "Показывать диалоговое окно подтверждения установки и обновления пакетов"
+
+#~ msgid "Check for distribution upgrades:"
+#~ msgstr "Проверять обновления дистрибутива:"
+
+#~ msgid "&Show origins of debug and development packages"
+#~ msgstr "&Отображать источники пакетов для отладки и разработки программ"
+
+#~ msgid "Edit Origins"
+#~ msgstr "Изменить источники"
+
+#~ msgid "Refresh transactions list"
+#~ msgstr "Обновить список операций"
+
+#~ msgid "Time since last cache refresh: %1"
+#~ msgstr "С последнего обновления кэша прошло: %1"
+
+#~ msgid "Date"
+#~ msgstr "Дата"
+
+#~ msgid "Action"
+#~ msgstr "Действие"
+
+#~ msgctxt "Machine user who issued the transaction"
+#~ msgid "Username"
+#~ msgstr "Пользователь"
+
+#~ msgid "Application"
+#~ msgstr "Приложение"
+
+#~ msgid "Upgrade"
+#~ msgstr "Обновление"
+
+#~ msgid "Distribution upgrade available: %1"
+#~ msgstr "Доступно обновление дистрибутива: %1"
+
+#~ msgid ""
+#~ "You are about to upgrade your distribution to the latest version. This is "
+#~ "usually a very lengthy process and takes a lot longer than simply "
+#~ "upgrading your packages."
+#~ msgstr ""
+#~ "Вы собираетесь обновить ваш дистрибутив до последней версии. Это, как "
+#~ "правило, длительный процесс, и занимает намного больше времени, чем "
+#~ "простое обновление пакетов."
+
+#~ msgid "It is recommended to plug in your computer before proceeding."
+#~ msgstr "Перед продолжением рекомендуется подключить компьютер к сети."
+
+#~ msgid ""
+#~ "It is recommended that you keep your computer plugged in while the "
+#~ "upgrade is being performed."
+#~ msgstr ""
+#~ "Рекомендуется оставить компьютер подключённым к сети до окончания "
+#~ "процесса обновления."
+
+#~ msgid "Distribution upgrade complete."
+#~ msgstr "Обновление дистрибутива завершено."
+
+#~ msgid "This update will add new features and expand functionality."
+#~ msgstr ""
+#~ "Это обновление добавит новые возможности и расширит функциональность."
+
+#~ msgid "This update will fix bugs and other non-critical problems."
+#~ msgstr "Это обновление исправляет ошибки и другие некритичные проблемы."
+
+#~ msgid "This update is important as it may solve critical problems."
+#~ msgstr ""
+#~ "Это обновление является важным, поскольку может исправить критические "
+#~ "ошибки."
+
+#~ msgid ""
+#~ "This update is needed to fix a security vulnerability with this package."
+#~ msgstr ""
+#~ "Это обновление необходимо для исправления ошибок безопасности, "
+#~ "обнаруженных в этом пакете."
+
+#~ msgid "This update is blocked."
+#~ msgstr "Это обновление заблокировано."
+
+#~ msgid "This notification was issued on %1 and last updated on %2."
+#~ msgstr "Это уведомление было создано %1 и последний раз обновлено %2."
+
+#~ msgid "This notification was issued on %1."
+#~ msgstr "Это уведомление было создано %1."
+
+#~ msgid "For more information about this update please visit this website:"
+#~ msgid_plural ""
+#~ "For more information about this update please visit these websites:"
+#~ msgstr[0] ""
+#~ "Для получения дополнительной информации об этом обновлении посетите эти "
+#~ "сайты:"
+#~ msgstr[1] ""
+#~ "Для получения дополнительной информации об этом обновлении посетите эти "
+#~ "сайты:"
+#~ msgstr[2] ""
+#~ "Для получения дополнительной информации об этом обновлении посетите эти "
+#~ "сайты:"
+#~ msgstr[3] ""
+#~ "Для получения дополнительной информации об этом обновлении посетите этот "
+#~ "сайт:"
+
+#~ msgid ""
+#~ "For more information about bugs fixed by this update please visit this "
+#~ "website:"
+#~ msgid_plural ""
+#~ "For more information about bugs fixed by this update please visit these "
+#~ "websites:"
+#~ msgstr[0] ""
+#~ "Для получения дополнительной информации об этих исправлениях посетите эти "
+#~ "сайты:"
+#~ msgstr[1] ""
+#~ "Для получения дополнительной информации об этих исправлениях посетите эти "
+#~ "сайты:"
+#~ msgstr[2] ""
+#~ "Для получения дополнительной информации об этих исправлениях посетите эти "
+#~ "сайты:"
+#~ msgstr[3] ""
+#~ "Для получения дополнительной информации об этих исправлениях посетите "
+#~ "этот сайт:"
+
+#~ msgid ""
+#~ "For more information about this security update please visit this website:"
+#~ msgid_plural ""
+#~ "For more information about this security update please visit these "
+#~ "websites:"
+#~ msgstr[0] ""
+#~ "Для получения дополнительной информации об этом обновление безопасности "
+#~ "посетите эти сайты:"
+#~ msgstr[1] ""
+#~ "Для получения дополнительной информации об этом обновление безопасности "
+#~ "посетите эти сайты:"
+#~ msgstr[2] ""
+#~ "Для получения дополнительной информации об этом обновление безопасности "
+#~ "посетите эти сайты:"
+#~ msgstr[3] ""
+#~ "Для получения дополнительной информации об этом обновление безопасности "
+#~ "посетите этот сайт:"
+
+#~ msgid ""
+#~ "The classification of this update is unstable which means it is not "
+#~ "designed for production use."
+#~ msgstr ""
+#~ "Это обновление относится к нестабильным, поэтому его не следует "
+#~ "устанавливать на промышленные системы."
+
+#~ msgid ""
+#~ "This is a test update, and is not designed for normal use. Please report "
+#~ "any problems or regressions you encounter."
+#~ msgstr ""
+#~ "Это тестовое обновление, не предназначенное для обычных пользователей. "
+#~ "Пожалуйста, сообщайте о любых проблемах и ухудшениях работы, с которыми "
+#~ "вы столкнётесь."
+
+#~ msgid ""
+#~ "The developer logs will be shown as no description is available for this "
+#~ "update:"
+#~ msgstr ""
+#~ "Поскольку описания этого обновления не было обнаружено, будет показан "
+#~ "журнал изменений, внесенных разработчиками:"
+
+#~ msgid "Updates:"
+#~ msgstr "Обновляет:"
+
+#~ msgid "Obsoletes:"
+#~ msgstr "Заменяет:"
+
+#~ msgid "Repository: %1"
+#~ msgstr "Репозиторий: %1"
+
+#~ msgid "No update description was found."
+#~ msgstr "Описание обновления недоступно."
+
+#~ msgid "Show Current Versions"
+#~ msgstr "Показать текущую версию"
+
+#~ msgid "Estimated download size: %1"
+#~ msgstr "Предполагаемый размер загрузки: %1"
+
+#~ msgid "Check for new updates"
+#~ msgstr "Проверить наличие обновлений"
+
+#~ msgid "KDE Application Installer"
+#~ msgstr "Программа KDE для управления приложениями"
+
+#~ msgctxt "@info:credit"
+#~ msgid "Daniel Nicoletti"
+#~ msgstr "Daniel Nicoletti"
+
+#~ msgid "Developer"
+#~ msgstr "Разработчик"
+
+#~ msgctxt "@info:credit"
+#~ msgid "Matthias Klumpp"
+#~ msgstr "Matthias Klumpp"
+
+#~ msgid "Show verbose information"
+#~ msgstr "Показать подробную информацию"
+
+#~ msgid "IPK package filename"
+#~ msgstr "Название файла пакета IPK"
+
+#, fuzzy
+#~| msgid "Sorry, we didn't get an existing IPK package as parameter."
+#~ msgid "We did not receive a path to an IPK package as parameter."
+#~ msgstr "Не было получено IPK пакета в качестве параметра."
+
+#~ msgid "Package not found!"
+#~ msgstr "Пакет не найден!"
+
+#~ msgid "Continue"
+#~ msgstr "Продолжить"
+
+#~ msgid "Error"
+#~ msgstr "Ошибка"
+
+#~ msgid "An error occurred"
+#~ msgstr "Произошла ошибка"
+
+#~ msgid "Welcome!"
+#~ msgstr "Добро пожаловать!"
+
+#~ msgid "Welcome to the installation of %1!"
+#~ msgstr "Добро пожаловать в процесс установки %1!"
+
+#, fuzzy
+#~| msgid ""
+#~| "Please be careful while installing 3rd-party applications.<br>They may "
+#~| "eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
+#~| "like spying out your passwords.<br>Please do only install this software "
+#~| "if you <b>trust the publisher and the author</b> of it."
+#~ msgid ""
+#~ "Please be careful while installing a 3rd-party application.<br>It might "
+#~ "eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
+#~ "like spying out your passwords.<br>Please do only install this software "
+#~ "if you <b>trust its publisher</b>."
+#~ msgstr ""
+#~ "Будьте осторожны при установке стороннего программного обеспечения.<br> "
+#~ "Установка этого программного обеспечения может <b>нанести вред</b> вашей "
+#~ "системе или привести к установке <b>вредоносных программ</b>, которые "
+#~ "могут похитить конфиденциальные данные, например, ваши пароли.<br> "
+#~ "Устанавливайте стороннее программное обеспечение, только если вы "
+#~ "<b>доверяете сопровождающим и разработчикам</b> данного программного "
+#~ "обеспечения."
+
+#~ msgid "Details about this installation"
+#~ msgstr "Подробнее об этой установке"
+
+#~ msgid "Application description"
+#~ msgstr "Описание приложения"
+
+#~ msgid "Running installation"
+#~ msgstr "Запуск установки"
+
+#~ msgid "Installing %1..."
+#~ msgstr "Установка %1..."
+
+#~ msgid "Installation finished!"
+#~ msgstr "Установка завершена!"
+
+#~ msgid "%1 has been installed successfully!"
+#~ msgstr "%1 успешно установлено!"
+
+#~ msgid "New application available"
+#~ msgid_plural "New applications available"
+#~ msgstr[0] "Доступны новые программы"
+#~ msgstr[1] "Доступны новые программы"
+#~ msgstr[2] "Доступны новые программы"
+#~ msgstr[3] "Доступна новая программа"
+
+#~ msgid "The following application was just installed. Click on it to launch:"
+#~ msgid_plural ""
+#~ "The following applications were just installed. Click on them to launch:"
+#~ msgstr[0] ""
+#~ "Были установлены следующие приложения. Для запуска нажмите на них:"
+#~ msgstr[1] ""
+#~ "Были установлены следующие приложения. Для запуска нажмите на них:"
+#~ msgstr[2] ""
+#~ "Были установлены следующие приложения. Для запуска нажмите на них:"
+#~ msgstr[3] ""
+#~ "Было установлено следующие приложение. Для запуска нажмите на него:"
+
+#~ msgid "Do not show this dialog again"
+#~ msgstr "Больше не показывать"
+
+#~ msgid "Remove"
+#~ msgstr "Удалить"
+
+#~ msgid "Deselect"
+#~ msgstr "Отменить"
+
+#~ msgid "Do not Install"
+#~ msgstr "Не устанавливать"
+
+#~ msgid "Do not Remove"
+#~ msgstr "Не удалять"
+
+#~ msgid "%1 remaining"
+#~ msgstr "%1 осталось"
+
+#~ msgid "Accept Agreement"
+#~ msgstr "Принять соглашение"
+
+#~ msgid "License Agreement Required"
+#~ msgstr "Требуется лицензионное соглашение"
+
+#~ msgid "License required for %1 by %2"
+#~ msgstr "Для %1 требуется лицензия от %2"
+
+#~ msgid "Please read the following important information before continuing:"
+#~ msgstr "Прочитайте, перед тем, как продолжить, следующую важную информацию:"
+
+#~ msgid "Name"
+#~ msgstr "Название"
+
+#~ msgid "Version"
+#~ msgstr "Версия"
+
+#~ msgid "Installed Version"
+#~ msgstr "Установленная версия"
+
+#~ msgid "Arch"
+#~ msgstr "Арх."
+
+#~ msgid "Origin"
+#~ msgstr "Источник"
+
+#~ msgid "Size"
+#~ msgstr "Размер"
+
+#~ msgid ""
+#~ "Version: %1\n"
+#~ "Architecture: %2"
+#~ msgstr ""
+#~ "Версия: %1\n"
+#~ "Архитектура: %2"
+
+#~ msgid "To be Removed"
+#~ msgstr "Будет удалено"
+
+#~ msgid "To be Installed"
+#~ msgstr "Будет установлено"
+
+#~ msgid ""
+#~ "You are about to install unsigned packages that can compromise your "
+#~ "system, as it is impossible to verify if the software came from a trusted "
+#~ "source.\n"
+#~ "\n"
+#~ "Are you sure you want to proceed with the installation?"
+#~ msgstr ""
+#~ "Вы собираетесь установить неподписанные пакеты, которые могут привести к "
+#~ "снижению уровня безопасности вашей системы, поскольку невозможно "
+#~ "проверить надежность источника.\n"
+#~ "\n"
+#~ "Хотите продолжить установку?"
+
+#~ msgid "Installing unsigned software"
+#~ msgstr "Установка неподписанных пакетов"
+
+#~ msgid "%1 (%2%)"
+#~ msgstr "%1 (%2%)"
+
+#~ msgid "icon"
+#~ msgstr "значок"
+
+#~ msgid "Downloading Packages"
+#~ msgstr "Загрузка пакетов"
+
+#~ msgid "Software signature is required"
+#~ msgstr "Программа должна быть подписана"
+
+#~ msgid "Do you trust the origin of packages?"
+#~ msgstr "Доверяете ли вы источнику пакетов?"
+
+#~ msgid "Repository name:"
+#~ msgstr "Имя репозитория:"
+
+#~ msgid "Signature URL:"
+#~ msgstr "URL подписи:"
+
+#~ msgid "Signature user identifier:"
+#~ msgstr "Идентификатор пользователя подписи:"
+
+#~ msgid "Signature identifier:"
+#~ msgstr "Идентификатор подписи:"
+
+#~ msgid "Additional changes"
+#~ msgstr "Дополнительные изменения"
+
+#~ msgid "1 package to remove"
+#~ msgid_plural "%1 packages to remove"
+#~ msgstr[0] "%1 пакет для удаления"
+#~ msgstr[1] "%1 пакета для удаления"
+#~ msgstr[2] "%1 пакетов для удаления"
+#~ msgstr[3] "1 пакет для удаления"
+
+#~ msgid "1 package to downgrade"
+#~ msgid_plural "%1 packages to downgrade"
+#~ msgstr[0] "%1 пакет для снижения версии"
+#~ msgstr[1] "%1 пакета для снижения версии"
+#~ msgstr[2] "%1 пакетов для снижения версии"
+#~ msgstr[3] "1 пакет для снижения версии"
+
+#~ msgid "1 package to reinstall"
+#~ msgid_plural "%1 packages to reinstall"
+#~ msgstr[0] "%1 пакет для переустановки"
+#~ msgstr[1] "%1 пакета для переустановки"
+#~ msgstr[2] "%1 пакетов для переустановки"
+#~ msgstr[3] "1 пакет для переустановки"
+
+#~ msgid "1 package to install"
+#~ msgid_plural "%1 packages to install"
+#~ msgstr[0] "%1 пакет для установки"
+#~ msgstr[1] "%1 пакета для установки"
+#~ msgstr[2] "%1 пакетов для установки"
+#~ msgstr[3] "1 пакет для установки"
+
+#~ msgid "1 package to update"
+#~ msgid_plural "%1 packages to update"
+#~ msgstr[0] "%1 пакет для обновления"
+#~ msgstr[1] "%1 пакета для обновления"
+#~ msgstr[2] "%1 пакетов для обновления"
+#~ msgstr[3] "1 пакет для обновления"
+
+#~ msgid "1 untrusted package"
+#~ msgid_plural "%1 untrusted packages"
+#~ msgstr[0] "%1 неподписанный пакет"
+#~ msgstr[1] "%1 неподписанных пакета"
+#~ msgstr[2] "%1 неподписанных пакетов"
+#~ msgstr[3] "%1 неподписанный пакет"
+
+#~ msgctxt "how many bytes are required for download"
+#~ msgid "Need to get %1 of archives"
+#~ msgstr "Необходимо получить %1 архивов"
+
+#~ msgid ""
+#~ "You are about to install unsigned packages that can compromise your "
+#~ "system, as it is impossible to verify if the software came from a trusted "
+#~ "source."
+#~ msgstr ""
+#~ "Вы собираетесь установить неподписанные пакеты, которые могут привести к "
+#~ "снижению уровня безопасности вашей системы, поскольку невозможно "
+#~ "проверить надежность источника."
+
+#~ msgid "Additional changes are required to complete the task"
+#~ msgstr "Для выполнения задания необходимы дополнительные изменения"
+
+#~ msgid "Do not confirm when installing or updating additional packages"
+#~ msgstr "Не подтверждать установку или обновление дополнительных пакетов"
+
+#~ msgid "TextLabel"
+#~ msgstr "TextLabel"
+
+#~ msgid "Apper PackageKit Session helper"
+#~ msgstr "Вспомогательная программа сеансов Apper PackageKit"
+
+#~ msgid "Trever Fischer"
+#~ msgstr "Trever Fischer"
+
+#~ msgid "Install Packages Catalogs"
+#~ msgstr "Установка каталогов пакетов"
+
+#~ msgid "You can drop more catalogs in here"
+#~ msgstr "Сюда можно переместить дополнительные каталоги"
+
+#~ msgid "No supported catalog was found"
+#~ msgstr "Не найдено ни одного поддерживаемого каталога"
+
+#~ msgid "Do you want to install this catalog?"
+#~ msgid_plural "Do you want to install these catalogs?"
+#~ msgstr[0] "Установить эти каталоги?"
+#~ msgstr[1] "Установить эти каталоги?"
+#~ msgstr[2] "Установить эти каталоги?"
+#~ msgstr[3] "Установить этот каталог?"
+
+#~ msgid "An application wants to install a catalog"
+#~ msgid_plural "An application wants to install catalogs"
+#~ msgstr[0] "Программе требуется установить каталоги"
+#~ msgstr[1] "Программе требуется установить каталоги"
+#~ msgstr[2] "Программе требуется установить каталоги"
+#~ msgstr[3] "Программе требуется установить каталог"
+
+#~ msgid "The application <i>%2</i> wants to install a catalog"
+#~ msgid_plural "The application <i>%2</i> wants to install catalogs"
+#~ msgstr[0] "Программе <i>%2</i> требуется установить каталоги"
+#~ msgstr[1] "Программе <i>%2</i> требуется установить каталоги"
+#~ msgstr[2] "Программе <i>%2</i> требуется установить каталоги"
+#~ msgstr[3] "Программе <i>%2</i> требуется установить каталог"
+
+#~ msgid "Not supported"
+#~ msgstr "Не поддерживается"
+
+#~ msgid ""
+#~ "Your backend does not support any of the needed methods to install a "
+#~ "catalog"
+#~ msgstr ""
+#~ "Ваш модуль не поддерживает ни одного из необходимых методов установки "
+#~ "каталога"
+
+#~ msgid "Catalog not found"
+#~ msgstr "Каталог не найден"
+
+#~ msgid "Could not find a catalog to install"
+#~ msgstr "Не удаётся найти каталог для установки"
+
+#~ msgid "Catalog %2 failed to open"
+#~ msgid_plural "Catalogs %2 failed to open"
+#~ msgstr[0] "Каталоги %2 не удалось открыть"
+#~ msgstr[1] "Каталоги %2 не удалось открыть"
+#~ msgstr[2] "Каталоги %2 не удалось открыть"
+#~ msgstr[3] "Каталог %2 не удалось открыть"
+
+#~ msgid "Failed to open"
+#~ msgstr "Не удалось открыть"
+
+#~ msgid "Catalog is Empty"
+#~ msgstr "Каталог пуст"
+
+#~ msgid "Could not find any package to install in this catalog"
+#~ msgstr "Не удалось найти пакет для установки в этом каталоге"
+
+#~ msgid "Installs new Fonts"
+#~ msgstr "Установка новых шрифтов"
+
+#~ msgid "Could interpret request"
+#~ msgstr "Не удалось обработать запрос"
+
+#~ msgid "Please verify if the request was valid"
+#~ msgstr "Убедитесь, что запрос был составлен корректно"
+
+#~ msgid ""
+#~ "An additional font is required to view this document correctly.\n"
+#~ "Do you want to search for a suitable package now?"
+#~ msgid_plural ""
+#~ "Additional fonts are required to view this document correctly.\n"
+#~ "Do you want to search for suitable packages now?"
+#~ msgstr[0] ""
+#~ "Для правильного просмотра этого документа необходимы дополнительные "
+#~ "шрифты.\n"
+#~ "Выполнить поиск подходящих пакетов сейчас?"
+#~ msgstr[1] ""
+#~ "Для правильного просмотра этого документа необходимы дополнительные "
+#~ "шрифты.\n"
+#~ "Выполнить поиск подходящих пакетов сейчас?"
+#~ msgstr[2] ""
+#~ "Для правильного просмотра этого документа необходимы дополнительные "
+#~ "шрифты.\n"
+#~ "Выполнить поиск подходящих пакетов сейчас?"
+#~ msgstr[3] ""
+#~ "Для правильного просмотра этого документа необходим дополнительный "
+#~ "шрифт.\n"
+#~ "Выполнить поиск подходящего пакета сейчас?"
+
+#~ msgid "A program wants to install a font"
+#~ msgid_plural "A program wants to install fonts"
+#~ msgstr[0] "Программе требуется установить шрифты"
+#~ msgstr[1] "Программе требуется установить шрифты"
+#~ msgstr[2] "Программе требуется установить шрифты"
+#~ msgstr[3] "Программе требуется установить шрифт"
+
+#~ msgid "The application %2 wants to install a font"
+#~ msgid_plural "The application %2 wants to install fonts"
+#~ msgstr[0] "Программе %2 требуется установить шрифты"
+#~ msgstr[1] "Программе %2 требуется установить шрифты"
+#~ msgstr[2] "Программе %2 требуется установить шрифты"
+#~ msgstr[3] "Программе %2 требуется установить шрифт"
+
+#~ msgid "Failed to find font"
+#~ msgstr "Не удалось найти шрифт"
+
+#~ msgid "No new fonts could be found for this document"
+#~ msgstr "Новых шрифтов для этого документа не найдено"
+
+#~ msgid "Failed to search for provides"
+#~ msgstr "Не удалось найти предоставления"
+
+#~ msgid "Install GStreamer Resources"
+#~ msgstr "Установка ресурсов GStreamer"
+
+#~ msgid ""
+#~ "The following plugin is required. Do you want to search for this now?"
+#~ msgid_plural ""
+#~ "The following plugins are required. Do you want to search for these now?"
+#~ msgstr[0] "Требуются следующие дополнения. Выполнить их поиск сейчас?"
+#~ msgstr[1] "Требуются следующие дополнения. Выполнить их поиск сейчас?"
+#~ msgstr[2] "Требуются следующие дополнения. Выполнить их поиск сейчас?"
+#~ msgstr[3] "Требуется следующие дополнение. Выполнить его поиск сейчас?"
+
+#~ msgid "A program requires an additional plugin to decode this file"
+#~ msgid_plural "A program requires additional plugins to decode this file"
+#~ msgstr[0] "Для декодирования этого файла требуются дополнения"
+#~ msgstr[1] "Для декодирования этого файла требуются дополнения"
+#~ msgstr[2] "Для декодирования этого файла требуются дополнения"
+#~ msgstr[3] "Для декодирования этого файла требуется дополнение"
+
+#~ msgid "A program requires an additional plugin to encode this file"
+#~ msgid_plural "A program requires additional plugins to encode this file"
+#~ msgstr[0] "Для кодирования этого файла требуются дополнения"
+#~ msgstr[1] "Для кодирования этого файла требуются дополнения"
+#~ msgstr[2] "Для кодирования этого файла требуются дополнения"
+#~ msgstr[3] "Для кодирования этого файла требуется дополнение"
+
+#~ msgid "A program requires an additional plugin for this operation"
+#~ msgid_plural "A program requires additional plugins for this operation"
+#~ msgstr[0] "Для выполнения этой операции требуются дополнения"
+#~ msgstr[1] "Для выполнения этой операции требуются дополнения"
+#~ msgstr[2] "Для выполнения этой операции требуются дополнения"
+#~ msgstr[3] "Для выполнения этой операции требуется дополнение"
+
+#~ msgid "%2 requires an additional plugin to decode this file"
+#~ msgid_plural "%2 requires additional plugins to decode this file"
+#~ msgstr[0] "%2 требуются дополнения для декодирования этого файла"
+#~ msgstr[1] "%2 требуются дополнения для декодирования этого файла"
+#~ msgstr[2] "%2 требуются дополнения для декодирования этого файла"
+#~ msgstr[3] "%2 требуется дополнение для декодирования этого файла"
+
+#~ msgid "%2 requires an additional plugin to encode this file"
+#~ msgid_plural "%2 requires additional plugins to encode this file"
+#~ msgstr[0] "%2 требуются дополнения для кодирования этого файла"
+#~ msgstr[1] "%2 требуются дополнения для кодирования этого файла"
+#~ msgstr[2] "%2 требуются дополнения для кодирования этого файла"
+#~ msgstr[3] "%2 требуется дополнение для кодирования этого файла"
+
+#~ msgid "%2 requires an additional plugin for this operation"
+#~ msgid_plural "%2 requires additional plugins for this operation"
+#~ msgstr[0] "%2 требуются дополнения для выполнения этой операции"
+#~ msgstr[1] "%2 требуются дополнения для выполнения этой операции"
+#~ msgstr[2] "%2 требуются дополнения для выполнения этой операции"
+#~ msgstr[3] "%2 требуется дополнение для выполнения этой операции"
+
+#~ msgid "No results found"
+#~ msgstr "Ничего не найдено"
+
+#~ msgid "Could not find plugin in any configured software source"
+#~ msgstr "Не удалось найти дополнение ни в одном из источников программ"
+
+#~ msgid "Install Support for File Types"
+#~ msgstr "Установка поддержки типов файлов"
+
+#~ msgid "Do you want to search for a program that can open this file type?"
+#~ msgid_plural ""
+#~ "Do you want to search for a program that can open these file types?"
+#~ msgstr[0] "Найти программу, которая может открывать эти типы файлов?"
+#~ msgstr[1] "Найти программу, которая может открывать эти типы файлов?"
+#~ msgstr[2] "Найти программу, которая может открывать эти типы файлов?"
+#~ msgstr[3] "Найти программу, которая может открывать этот тип файла?"
+
+#~ msgid "No valid file types were provided"
+#~ msgstr "Были предоставлены недопустимые типы файлов"
+
+#~ msgid "A program is requiring support to open this kind of files"
+#~ msgid_plural "A program is requiring support to open these kinds of files"
+#~ msgstr[0] "Программе требуются дополнения для открытия файлов этих типов"
+#~ msgstr[1] "Программе требуются дополнения для открытия файлов этих типов"
+#~ msgstr[2] "Программе требуются дополнения для открытия файлов этих типов"
+#~ msgstr[3] "Программе требуются дополнения для открытия файла этого типа"
+
+#~ msgid "The application %2 is requiring support to open this kind of files"
+#~ msgid_plural ""
+#~ "The application %2 is requiring support to open these kinds of files"
+#~ msgstr[0] "Программе %2 требуются дополнения для открытия файлов этих типов"
+#~ msgstr[1] "Программе %2 требуются дополнения для открытия файлов этих типов"
+#~ msgstr[2] "Программе %2 требуются дополнения для открытия файлов этих типов"
+#~ msgstr[3] "Программе %2 требуются дополнения для открытия файла этого типа"
+
+#~ msgid "Could not find software"
+#~ msgstr "Не удалось найти программу"
+
+#~ msgid "No new applications can be found to handle this type of file"
+#~ msgstr "Нет новых приложений, которые могли бы работать с этим типом файла"
+
+#~ msgid "Install Packages Files"
+#~ msgstr "Установка пакетов с файлами"
+
+#~ msgid "You can drop more files in here"
+#~ msgstr "Сюда можно переместить дополнительные файлы"
+
+#~ msgid "No supported files were provided"
+#~ msgstr "Не обнаружено поддерживаемых файлов"
+
+#~ msgid "Press <i>Continue</i> if you want to install this file"
+#~ msgid_plural "Press <i>Continue</i> if you want to install these files"
+#~ msgstr[0] "Нажмите <i>Продолжить</i>, если хотите установить эти файлы"
+#~ msgstr[1] "Нажмите <i>Продолжить</i>, если хотите установить эти файлы"
+#~ msgstr[2] "Нажмите <i>Продолжить</i>, если хотите установить эти файлы"
+#~ msgstr[3] "Нажмите <i>Продолжить</i>, если хотите установить этот файл"
+
+#~ msgid "An application wants to install a package"
+#~ msgid_plural "An application wants to install packages"
+#~ msgstr[0] "Программе требуется установить пакеты"
+#~ msgstr[1] "Программе требуется установить пакеты"
+#~ msgstr[2] "Программе требуется установить пакеты"
+#~ msgstr[3] "Программе требуется установить пакет"
+
+#~ msgid "The application <i>%2</i> wants to install a package"
+#~ msgid_plural "The application <i>%2</i> wants to install packages"
+#~ msgstr[0] "Программе <i>%2</i> требуется установить пакеты"
+#~ msgstr[1] "Программе <i>%2</i> требуется установить пакеты"
+#~ msgstr[2] "Программе <i>%2</i> требуется установить пакеты"
+#~ msgstr[3] "Программе <i>%2</i> требуется установить пакет"
+
+#~ msgid "Installation Complete"
+#~ msgstr "Установка завершена"
+
+#~ msgid "File was installed successfully"
+#~ msgid_plural "Files were installed successfully"
+#~ msgstr[0] "Файлы были успешно установлены"
+#~ msgstr[1] "Файлы были успешно установлены"
+#~ msgstr[2] "Файлы были успешно установлены"
+#~ msgstr[3] "Файл был успешно установлен"
+
+#~ msgid "Failed to install files"
+#~ msgstr "Сбой установки файлы"
+
+#~ msgid "Could not install files"
+#~ msgstr "Не удалось установить файлы"
+
+#~ msgid "Install Packages by Name"
+#~ msgstr "Установка пакетов по названию"
+
+#~ msgid "No package names were provided"
+#~ msgstr "Имена пакетов не указаны"
+
+#~ msgid "Do you want to search for and install this package now?"
+#~ msgid_plural "Do you want to search for and install these packages now?"
+#~ msgstr[0] "Выполнить поиск и установку этого пакета?"
+#~ msgstr[1] "Выполнить поиск и установку этих пакетов?"
+#~ msgstr[2] "Выполнить поиск и установку этих пакетов?"
+#~ msgstr[3] "Выполнить поиск и установку этого пакета?"
+
+#~ msgid "Failed to install packages"
+#~ msgstr "Не удалось установить пакеты"
+
+#~ msgid "The package %2 is already installed"
+#~ msgid_plural "The packages %2 are already installed"
+#~ msgstr[0] "Пакеты %2 уже установлены"
+#~ msgstr[1] "Пакеты %2 уже установлены"
+#~ msgstr[2] "Пакеты %2 уже установлены"
+#~ msgstr[3] "Пакет %2 уже установлен"
+
+#~ msgid "Could not find %1"
+#~ msgstr "Не удаётся найти %1"
+
+#~ msgid "The package could not be found in any software source"
+#~ msgid_plural "The packages could not be found in any software source"
+#~ msgstr[0] "Не удалось найти пакеты ни в одном из источников программ"
+#~ msgstr[1] "Не удалось найти пакеты ни в одном из источников программ"
+#~ msgstr[2] "Не удалось найти пакеты ни в одном из источников программ"
+#~ msgstr[3] "Не удалось найти пакет ни в одном из источников программ"
+
+#~ msgid "Install Plasma Resources"
+#~ msgstr "Установка ресурсов Plasma"
+
+#~ msgid "%1 data engine"
+#~ msgstr "Источник данных %1"
+
+#~ msgid "%1 script engine"
+#~ msgstr "Источник сценариев %1"
+
+#~ msgid "No supported resources were provided"
+#~ msgstr "Не обнаружено поддерживаемых ресурсов"
+
+#~ msgid ""
+#~ "The following service is required. Do you want to search for this now?"
+#~ msgid_plural ""
+#~ "The following services are required. Do you want to search for these now?"
+#~ msgstr[0] "Требуются следующие службы. Выполнить их поиск сейчас?"
+#~ msgstr[1] "Требуются следующие службы. Выполнить их поиск сейчас?"
+#~ msgstr[2] "Требуются следующие службы. Выполнить их поиск сейчас?"
+#~ msgstr[3] "Требуется следующая служба. Выполнить её поиск сейчас?"
+
+#~ msgid "Plasma requires an additional service for this operation"
+#~ msgid_plural "Plasma requires additional services for this operation"
+#~ msgstr[0] ""
+#~ "Plasma требуются дополнительные службы для выполнения этой операции"
+#~ msgstr[1] ""
+#~ "Plasma требуются дополнительные службы для выполнения этой операции"
+#~ msgstr[2] ""
+#~ "Plasma требуются дополнительные службы для выполнения этой операции"
+#~ msgstr[3] ""
+#~ "Plasma требуется дополнительная служба для выполнения этой операции"
+
+#~ msgid "Failed to search for Plasma service"
+#~ msgstr "Сбой поиска служб Plasma"
+
+#~ msgid "Could not find service in any configured software source"
+#~ msgstr "Не удалось найти службы ни в одном из источников программ"
+
+#~ msgid "Install Printer Drivers"
+#~ msgstr "Установка драйверов принтера"
+
+#~ msgid "Failed to search for printer driver"
+#~ msgstr "Не удалось найти драйвер для принтера"
+
+#~ msgid "Could not find printer driver in any configured software source"
+#~ msgstr ""
+#~ "Не удалось найти драйвер для принтера ни в одном из источников программ"
+
+#~ msgid "Install Packages that Provides Files"
+#~ msgstr "Установка пакетов с предоставляемыми файлами"
+
+#~ msgid "No files were provided"
+#~ msgstr "Не обнаружено предоставляемых файлов"
+
+#~ msgid "Do you want to search for this now?"
+#~ msgid_plural "Do you want to search for these now?"
+#~ msgstr[0] "Произвести поиск сейчас?"
+#~ msgstr[1] "Произвести поиск сейчас?"
+#~ msgstr[2] "Произвести поиск сейчас?"
+#~ msgstr[3] "Произвести поиск сейчас?"
+
+#~ msgid "A program wants to install a file"
+#~ msgid_plural "A program wants to install files"
+#~ msgstr[0] "Программе требуется установить файлы"
+#~ msgstr[1] "Программе требуется установить файлы"
+#~ msgstr[2] "Программе требуется установить файлы"
+#~ msgstr[3] "Программе требуется установить файл"
+
+#~ msgid "The application %2 is asking to install a file"
+#~ msgid_plural "The application %2 is asking to install files"
+#~ msgstr[0] "Программа %2 посылает запрос об установке файлов"
+#~ msgstr[1] "Программа %2 посылает запрос об установке файлов"
+#~ msgstr[2] "Программа %2 посылает запрос об установке файлов"
+#~ msgstr[3] "Программа %2 посылает запрос об установке файла"
+
+#, fuzzy
+#~| msgid "Failed to install file"
+#~| msgid_plural "Failed to install files"
+#~ msgid "Failed to install file"
+#~ msgstr "Не удалось установить файлы"
+
+#~ msgid "The %1 package already provides this file"
+#~ msgstr "Пакет %1 уже предоставляет этот файл"
+
+#~ msgid "Failed to find package"
+#~ msgstr "Не удаётся найти пакет"
+
+#~ msgid "The file could not be found in any packages"
+#~ msgid_plural "The files could not be found in any packages"
+#~ msgstr[0] "Не удалось найти файлы ни в одном из пакетов"
+#~ msgstr[1] "Не удалось найти файлы ни в одном из пакетов"
+#~ msgstr[2] "Не удалось найти файлы ни в одном из пакетов"
+#~ msgstr[3] "Не удалось найти файл ни в одном из пакетов"
+
+#~ msgid "Querying if a Package is Installed"
+#~ msgstr "Сделать запрос, если пакет установлен"
+
+#~ msgid "User canceled the transaction"
+#~ msgstr "Операция отменена пользователем"
+
+#~ msgid "An unknown error happened"
+#~ msgstr "Произошла неизвестная ошибка"
+
+#~ msgid "Remove Packages that Provides Files"
+#~ msgstr "Удаление пакетов с предоставляемыми файлами"
+
+#~ msgid "Do you want to remove the following application?"
+#~ msgid_plural "Do you want to remove the following applications?"
+#~ msgstr[0] "Удалить следующие приложения?"
+#~ msgstr[1] "Удалить следующие приложения?"
+#~ msgstr[2] "Удалить следующие приложения?"
+#~ msgstr[3] "Удалить следующие приложения?"
+
+#~ msgid "Do you want to search for a package providing this file?"
+#~ msgid_plural "Do you want to search for a package providing these files?"
+#~ msgstr[0] "Найти пакет, предоставляющий эти файлы?"
+#~ msgstr[1] "Найти пакет, предоставляющий эти файлы?"
+#~ msgstr[2] "Найти пакет, предоставляющий эти файлы?"
+#~ msgstr[3] "Найти пакет, предоставляющий этот файл?"
+
+#~ msgid "An application is asking to remove an application"
+#~ msgid_plural "An application is asking to remove applications"
+#~ msgstr[0] "Программа посылает запрос об удалении приложений"
+#~ msgstr[1] "Программа посылает запрос об удалении приложений"
+#~ msgstr[2] "Программа посылает запрос об удалении приложений"
+#~ msgstr[3] "Программа посылает запрос об удалении приложения"
+
+#~ msgid "An application is asking to remove a file"
+#~ msgid_plural "An application is asking to remove files"
+#~ msgstr[0] "Программа посылает запрос об удалении файлов"
+#~ msgstr[1] "Программа посылает запрос об удалении файлов"
+#~ msgstr[2] "Программа посылает запрос об удалении файлов"
+#~ msgstr[3] "Программа посылает запрос об удалении файла"
+
+#~ msgid "The application <i>%2</i> is asking to remove an application"
+#~ msgid_plural "The application <i>%2</i> is asking to remove applications"
+#~ msgstr[0] "Программа <i>%2</i> посылает запрос об удалении приложений"
+#~ msgstr[1] "Программа <i>%2</i> посылает запрос об удалении приложений"
+#~ msgstr[2] "Программа <i>%2</i> посылает запрос об удалении приложений"
+#~ msgstr[3] "Программа <i>%2</i> посылает запрос об удалении приложения"
+
+#~ msgid "The application <i>%2</i> is asking to remove a file"
+#~ msgid_plural "The application <i>%2</i> is asking to remove files"
+#~ msgstr[0] "Программа <i>%2</i> посылает запрос об удалении файлов"
+#~ msgstr[1] "Программа <i>%2</i> посылает запрос об удалении файлов"
+#~ msgstr[2] "Программа <i>%2</i> посылает запрос об удалении файлов"
+#~ msgstr[3] "Программа <i>%2</i> посылает запрос об удалении файла"
+
+#~ msgid "No application was found"
+#~ msgstr "Приложение не найдено"
+
+#~ msgid "The file could not be found in any installed package"
+#~ msgid_plural "The files could not be found in any installed package"
+#~ msgstr[0] "Не удалось найти файлы ни в одном из установленных пакетов"
+#~ msgstr[1] "Не удалось найти файлы ни в одном из установленных пакетов"
+#~ msgstr[2] "Не удалось найти файлы ни в одном из установленных пакетов"
+#~ msgstr[3] "Не удалось найти файл ни в одном из установленных пакетов"
+
+#~ msgid "Search Packages that Provides Files"
+#~ msgstr "Поиск пакетов с предоставляемыми файлами"
+
+#~ msgid "The file name could not be found in any software source"
+#~ msgstr ""
+#~ "Файл с соответствующим названием не удалось найти ни в одном из "
+#~ "источников программного обеспечения"
+
+#~ msgid "The following package was found"
+#~ msgid_plural "The following packages were found"
+#~ msgstr[0] "Были найдены следующие пакеты"
+#~ msgstr[1] "Были найдены следующие пакеты"
+#~ msgstr[2] "Были найдены следующие пакеты"
+#~ msgstr[3] "Был найден следующий пакет"
+
+#~ msgid "There are no packages to Install or Remove"
+#~ msgstr "Отсутствуют пакеты для установки или удаления"
+
+#~ msgid "This action should not happen"
+#~ msgstr "Это действие не должно было выполняться"
+
+#~ msgid "Could not find"
+#~ msgstr "Не удаётся найти"
+
+#~ msgid "No packages were found that meet the request"
+#~ msgstr "Не найдено пакетов, соответствующих запросу"
+
+#~ msgid "Failed to find"
+#~ msgstr "Сбой поиска"
+
+#~ msgid "Transaction did not finish with success"
+#~ msgstr "Сбой завершения операции"
+
+#~ msgid "Task completed"
+#~ msgstr "Задача выполнена"
+
+#~ msgid "All operations were committed successfully"
+#~ msgstr "Все операции успешно выполнены"
+
+#~ msgid "Apper"
+#~ msgstr "Apper"
+
+#~ msgid "Application Manager"
+#~ msgstr "Менеджер программ"
+
+#, fuzzy
+#~| msgid "(C) 2012, Matthias Klumpp"
+#~ msgid "(C) 2014, Matthias Klumpp"
+#~ msgstr "© Matthias Klumpp, 2012"
+
+#~ msgid "Not Supported"
+#~ msgstr "Не поддерживается"
+
+#~ msgid "Your current backend does not support installing files"
+#~ msgstr "Текущий модуль не поддерживает установку файлов"
+
+#~ msgid "This package has the following security level: <b>%1</b>"
+#~ msgstr "Уровень безопасности пакета: <b>%1</b>"
+
+#~ msgid "It was signed with a key belonging to these user-ids: %1"
+#~ msgstr ""
+#~ "Подписано ключом, принадлежащим таким идентификаторам пользователей: %1"
+
+#~ msgid "Security hints"
+#~ msgstr "Рекомендации по безопасности"
+
+#~ msgid "Current backend does not support installing files."
+#~ msgstr "Текущий модуль не поддерживает установку файлов."
+
+#~ msgid "Current backend does not support installing packages."
+#~ msgstr "Текущий модуль не поддерживает установку пакетов."
+
+#~ msgid "The current backend does not support removing packages."
+#~ msgstr "Текущий модуль не поддерживает удаление пакетов."
+
+#~ msgid "The current backend does not support updating packages."
+#~ msgstr "Текущий модуль не поддерживает обновление пакетов."
+
+#~ msgid "I agree to the above terms and conditions"
+#~ msgstr "Я согласен с вышеуказанными условиями"
+
+#~ msgid "I don't agree"
+#~ msgstr "Не согласен"
+
+#~ msgid "Install for all users"
+#~ msgstr "Установить для всех пользователей"
+
+#~ msgid "Software license"
+#~ msgstr "Лицензия на программное обеспечение"
+
+#~ msgid "Please read the following terms and conditions carefully!"
+#~ msgstr "Внимательно ознакомьтесь со следующими условиями пользования!"
+
+#~ msgid ""
+#~ "Installing this package will make the following native packages obsolete. "
+#~ "You might consider removing them manually."
+#~ msgstr ""
+#~ "Установка этого пакета сделает следующие пакеты в системе устаревшими. "
+#~ "Вам следует удалить устаревшие пакеты вручную."
+
+#~ msgid "Similar native packages found"
+#~ msgstr "Найдены подобные системные пакеты"
+
+#~ msgid ""
+#~ "You want to install this application as root!\n"
+#~ "This can damage your system or install malicious software for all users.\n"
+#~ "Please only proceed, if you really know what you're doing!\n"
+#~ "Continue?"
+#~ msgstr ""
+#~ "Установка с правами администратора (root)!\n"
+#~ "Это может нанести вред вашей системе, или привести к установке\n"
+#~ "вредоносного программного обеспечения для всех пользователей.\n"
+#~ "Продолжите процесс, если вы уверены в последствиях!\n"
+#~ "Продолжить?"
+
+#~ msgid "Really install as superuser?"
+#~ msgstr "Установить от имени администратора (root)?"
+
+#~ msgid "Upgrade System"
+#~ msgstr "Обновить систему"
+
+#~ msgctxt "The role of the transaction, in present tense"
+#~ msgid "Upgrading system"
+#~ msgstr "Обновление системы"
+
+#~ msgctxt "The role of the transaction, in past tense"
+#~ msgid "Upgraded system"
+#~ msgstr "Система обновлена"
+
+#~ msgid "Failed to simulate file install"
+#~ msgstr "Не удалось выполнить имитацию установки файла"
+
+#~ msgid "Failed to simulate package install"
+#~ msgstr "Не удалось выполнить имитацию установки пакета"
+
+#~ msgid "Failed to simulate package removal"
+#~ msgstr "Не удалось выполнить имитацию удаления пакета"
+
+#~ msgid "Failed to simulate package update"
+#~ msgstr "Не удалось выполнить имитацию обновления пакета"
+
+#~ msgid "Failed to install package"
+#~ msgstr "Не удалось установить пакет"
+
+#~ msgid "Failed to remove package"
+#~ msgstr "Не удалось удалить пакет"
+
+#~ msgid "Failed to update package"
+#~ msgstr "Не удалось обновить пакет"
+
+#~ msgid "Failed to install signature"
+#~ msgstr "Не удалось установить подпись"
+
+#~ msgid "Failed to start resolve transaction"
+#~ msgstr "Сбой запуска разрешения зависимостей"
+
+#~ msgid "Failed to start search file transaction"
+#~ msgstr "Сбой запуска операции поиска файлов"
+
+#~ msgid "(C) 2008-2012 Daniel Nicoletti"
+#~ msgstr "© Daniel Nicoletti, 2008-2012"
+
+#~ msgid "(C) 2008-2011 Daniel Nicoletti"
+#~ msgstr "© Daniel Nicoletti, 2008-2011"
+
+#~ msgid "Failed to set origin data"
+#~ msgstr "Не удалось установить источник данных"
+
+#~ msgid "Software Updater"
+#~ msgstr "Обновление программ"
+
+#~ msgid "Click to upgrade to %1"
+#~ msgstr "Нажмите, чтобы обновить до %1"
+
+#~ msgid "Review Updates"
+#~ msgstr "Просмотр обновлений"
+
+#~ msgid "Configure"
+#~ msgstr "Настроить"
+
+#~ msgid "Apper Sentinel"
+#~ msgstr "Устройство защиты Apper"
+
+#~ msgctxt "transaction state, downloading package files"
+#~ msgid "Downloading packages"
+#~ msgstr "Загрузка пакетов"
+
+#~ msgid "Packages: %1"
+#~ msgstr "Пакеты: %1"
+
+#~ msgid "Ignore"
+#~ msgstr "Игнорировать"
+
+#~ msgid "Transactions"
+#~ msgstr "Операции"
+
+#~ msgid "%1% - %2"
+#~ msgstr "%1% — %2"
+
+#~ msgid "%1"
+#~ msgstr "%1"
+
+#~ msgid "Hide this icon"
+#~ msgstr "Скрыть этот значок"
+
+#~ msgid "Software Manager Messages"
+#~ msgstr "Сообщение менеджера программ"
+
+#~ msgid "One message from the software manager"
+#~ msgid_plural "%1 messages from the software manager"
+#~ msgstr[0] "%1 сообщение от менеджера программ"
+#~ msgstr[1] "%1 сообщения от менеджера программ"
+#~ msgstr[2] "%1 сообщений от менеджера программ"
+#~ msgstr[3] "Сообщение от менеджера программ"
+
+#~ msgid "Show messages"
+#~ msgstr "Показать сообщения"
+
+#~ msgid "Failed to refresh package cache"
+#~ msgstr "Не удалось обновить кэш пакетов"
+
+#~ msgid ""
+#~ "Allows you to hide the window whilst keeping the transaction task running."
+#~ msgstr ""
+#~ "Позволяет скрыть это окно, в то время как задание продолжает выполняться."
+
+#~ msgid "Package"
+#~ msgstr "Пакет"
+
+#, fuzzy
+#~| msgid "Configure"
+#~ msgctxt "Shown when you have not set a weather provider"
+#~ msgid "Please Configure"
+#~ msgstr "Настроить"
+
+#~ msgctxt "The role of the transaction, in present tense"
+#~ msgid "Updating system"
+#~ msgstr "Обновление системы"
+
+#~ msgctxt "The role of the transaction, in past tense"
+#~ msgid "Updated system"
+#~ msgstr "Система обновлена"
+
+#~ msgid "Update System"
+#~ msgstr "Обновить систему"
+
+#~ msgctxt "transaction state, when we return to a previous system state"
+#~ msgid "Rolling back"
+#~ msgstr "Возврат к предыдущему"
+
+#~ msgctxt "The role of the transaction, in present tense"
+#~ msgid "Rolling back"
+#~ msgstr "Откат"
+
+#~ msgctxt "The role of the transaction, in present tense"
+#~ msgid "Simulating the install of files"
+#~ msgstr "Имитирование установки файлов"
+
+#~ msgctxt "The role of the transaction, in past tense"
+#~ msgid "Rolled back"
+#~ msgstr "Откат выполнен"
+
+#~ msgctxt "The role of the transaction, in past tense"
+#~ msgid "Simulated the install of files"
+#~ msgstr "Имитация установки файлов завершена"
+
+#~ msgctxt "The role of the transaction, in past tense"
+#~ msgid "Simulated the install"
+#~ msgstr "Имитация установки завершена"
+
+#~ msgctxt "The role of the transaction, in past tense"
+#~ msgid "Simulated the remove"
+#~ msgstr "Имитация удаления завершена"
+
+#~ msgctxt "The role of the transaction, in past tense"
+#~ msgid "Simulated the update"
+#~ msgstr "Имитация обновления завершена"
+
+#~ msgid "Simulate Install Files"
+#~ msgstr "Имитация установки файлов"
+
+#~ msgid "Simulate Install Packages"
+#~ msgstr "Имитация установки пакетов"
+
+#~ msgid "Simulate Remove Packages"
+#~ msgstr "Имитация удаления пакетов"
+
+#~ msgid "Simulate Update Packages"
+#~ msgstr "Имитация обновления пакетов"
+
+#~ msgid "Update Settings"
+#~ msgstr "Настройка обновления"
+
+#~ msgid "Notify when updates are available"
+#~ msgstr "Уведомлять при наличии обновлений"
+
+#, fuzzy
+#~| msgid "Failed to start setup transaction"
+#~ msgid "Failed to commit transaction"
+#~ msgstr "Не удалось начать установку транзакции"
+
+#~ msgid "Failed to accept EULA"
+#~ msgstr "Не удалось принять лицензионное соглашение"
+
+#~ msgid "Actions"
+#~ msgstr "Действия"
+
+#~ msgid "(C) 2008-2010 Daniel Nicoletti"
+#~ msgstr "© Daniel Nicoletti, 2008-2010"
+
+#, fuzzy
+#~| msgid "Do you want to install this file?"
+#~| msgid_plural "Do you want to install these files?"
+#~ msgid "Press <i>Continue</i> if you want to remove"
+#~ msgstr "Установить эти файлы?"
+
+#, fuzzy
+#~| msgid "Do you want to search for and install this package now?"
+#~| msgid_plural "Do you want to search for and install these packages now?"
+#~ msgid "Do you want to remove a package:"
+#~ msgid_plural "Do you want to remove packages:"
+#~ msgstr[0] "Выполнить поиск и установку этого пакета?"
+#~ msgstr[1] "Выполнить поиск и установку этих пакетов?"
+#~ msgstr[2] "Выполнить поиск и установку этих пакетов?"
+#~ msgstr[3] "Выполнить поиск и установку этого пакета?"
+
+#~ msgid "%2 wants to install a font"
+#~ msgid_plural "%2 wants to install fonts"
+#~ msgstr[0] "%2 хочет установить шрифты"
+#~ msgstr[1] "%2 хочет установить шрифты"
+#~ msgstr[2] "%2 хочет установить шрифты"
+#~ msgstr[3] "%2 хочет установить шрифт"
+
+#~ msgid "Application that can open this type of file"
+#~ msgid_plural "Applications that can open this type of file"
+#~ msgstr[0] "Приложения, которые могут открывать файлы этого типа"
+#~ msgstr[1] "Приложения, которые могут открывать файлы этого типа"
+#~ msgstr[2] "Приложения, которые могут открывать файлы этого типа"
+#~ msgstr[3] "Приложение, которое может открывать файлы этого типа"
+
+#~ msgid "Failed to search for plugin"
+#~ msgstr "Не удалось найти дополнение"
+
+#~ msgid ""
+#~ "An additional program is required to open this type of file:<ul><li>%1</"
+#~ "li></ul>Do you want to search for a program to open this file type now?"
+#~ msgstr ""
+#~ "Для открытия файлов типа <ul><li>%1</li></ul> требуется дополнительная "
+#~ "программа. Выполнить поиск программы для открытия файлов этого типа?"
+
+#~ msgid "A program requires a new mime type"
+#~ msgid_plural "A program requires new mime types"
+#~ msgstr[0] "Программе требуются новые типы MIME"
+#~ msgstr[1] "Программе требуются новые типы MIME"
+#~ msgstr[2] "Программе требуются новые типы MIME"
+#~ msgstr[3] "Программе требуется новый тип MIME"
+
+#~ msgid "%2 requires a new mime type"
+#~ msgid_plural "%2 requires new mime types"
+#~ msgstr[0] "%2 требуются новые типы MIME"
+#~ msgstr[1] "%2 требуются новые типы MIME"
+#~ msgstr[2] "%2 требуются новые типы MIME"
+#~ msgstr[3] "%2 требуется новый тип MIME"
+
+#~ msgctxt "Search for a new mime type"
+#~ msgid "Search"
+#~ msgstr "Поиск"
+
+#~ msgid "did not agree to search"
+#~ msgstr "согласие на поиск не получено"
+
+#, fuzzy
+#~| msgid "A program wants to install a package"
+#~| msgid_plural "A program wants to install packages"
+#~ msgid "An application wants to install a package:"
+#~ msgid_plural "An application wants to install packages:"
+#~ msgstr[0] "Программа хочет установить пакеты"
+#~ msgstr[1] "Программа хочет установить пакеты"
+#~ msgstr[2] "Программа хочет установить пакеты"
+#~ msgstr[3] "Программа хочет установить пакет"
+
+#, fuzzy
+#~| msgid "%2 wants to install a package"
+#~| msgid_plural "%2 wants to install packages"
+#~ msgid "The application <i>%2</i> wants to install a package:"
+#~ msgid_plural "The application <i>%2</i> wants to install packages:"
+#~ msgstr[0] "%2 хочет установить пакеты"
+#~ msgstr[1] "%2 хочет установить пакеты"
+#~ msgstr[2] "%2 хочет установить пакеты"
+#~ msgstr[3] "%2 хочет установить пакет"
+
+#~ msgid "Install catalog"
+#~ msgid_plural "Install catalogs"
+#~ msgstr[0] "Установить каталоги"
+#~ msgstr[1] "Установить каталоги"
+#~ msgstr[2] "Установить каталоги"
+#~ msgstr[3] "Установить каталог"
+
+#~ msgctxt "Parse the catalog search and install it"
+#~ msgid "Install"
+#~ msgstr "Установить"
+
+#~ msgid ""
+#~ "The following file is required: <ul><li>%2</li></ul>Do you want to search "
+#~ "for this now?"
+#~ msgid_plural ""
+#~ "The following files are required: <ul><li>%2</li></ul>Do you want to "
+#~ "search for these now?"
+#~ msgstr[0] ""
+#~ "Требуются следующие файлы: <ul><li>%2</li></ul>Выполнить их поиск сейчас?"
+#~ msgstr[1] ""
+#~ "Требуются следующие файлы: <ul><li>%2</li></ul>Выполнить их поиск сейчас?"
+#~ msgstr[2] ""
+#~ "Требуются следующие файлы: <ul><li>%2</li></ul>Выполнить их поиск сейчас?"
+#~ msgstr[3] ""
+#~ "Требуется следующий файл: <ul><li>%2</li></ul>Выполнить его поиск сейчас?"
+
+#~ msgid "%2 wants to install a file"
+#~ msgid_plural "%2 wants to install files"
+#~ msgstr[0] "%2 хочет установить файлы"
+#~ msgstr[1] "%2 хочет установить файлы"
+#~ msgstr[2] "%2 хочет установить файлы"
+#~ msgstr[3] "%2 хочет установить файл"
+
+#~ msgctxt "Search for a package that provides these files and install it"
+#~ msgid "Install"
+#~ msgstr "Установить"
+
+#~ msgid "A program wants to remove a file"
+#~ msgid_plural "A program wants to remove files"
+#~ msgstr[0] "Программа хочет установить файлы"
+#~ msgstr[1] "Программа хочет установить файлы"
+#~ msgstr[2] "Программа хочет установить файлы"
+#~ msgstr[3] "Программа хочет установить файл"
+
+#~ msgid "%2 wants to remove a file"
+#~ msgid_plural "%2 wants to remove files"
+#~ msgstr[0] "%2 хочет удалить файлы"
+#~ msgstr[1] "%2 хочет удалить файлы"
+#~ msgstr[2] "%2 хочет удалить файлы"
+#~ msgstr[3] "%2 хочет удалить файл"
+
+#~ msgid "The following file is going to be removed:"
+#~ msgid_plural "The following files are going to be removed:"
+#~ msgstr[0] "Следующие файлы будут удалены:"
+#~ msgstr[1] "Следующие файлы будут удалены:"
+#~ msgstr[2] "Следующие файлы будут удалены:"
+#~ msgstr[3] "Следующий файл будет удалён:"
+
+#~ msgctxt "Search for a package and remove"
+#~ msgid "Search"
+#~ msgstr "Поиск"
+
+#~ msgid "Summary"
+#~ msgstr "Краткие сведения"
+
+#~ msgid "KPackageKit Error"
+#~ msgstr "Ошибка KPackageKit"
+
+#~ msgid ""
+#~ "An additional package is required: <ul><li>%2</li></ul>Do you want to "
+#~ "search for and install this package now?"
+#~ msgid_plural ""
+#~ "Additional packages are required: <ul><li>%2</li></ul>Do you want to "
+#~ "search for and install these packages now?"
+#~ msgstr[0] ""
+#~ "Требуются дополнительные пакеты: <ul><li>%2</li></ul>Выполнить их поиск и "
+#~ "установку сейчас?"
+#~ msgstr[1] ""
+#~ "Требуются дополнительные пакеты: <ul><li>%2</li></ul>Выполнить их поиск и "
+#~ "установку сейчас?"
+#~ msgstr[2] ""
+#~ "Требуются дополнительные пакеты: <ul><li>%2</li></ul>Выполнить их поиск и "
+#~ "установку сейчас?"
+#~ msgstr[3] ""
+#~ "Требуется дополнительный пакет: <ul><li>%2</li></ul>Выполнить его поиск и "
+#~ "установку сейчас?"
+
+#~ msgid "A program wants to install a package"
+#~ msgid_plural "A program wants to install packages"
+#~ msgstr[0] "Программа хочет установить пакеты"
+#~ msgstr[1] "Программа хочет установить пакеты"
+#~ msgstr[2] "Программа хочет установить пакеты"
+#~ msgstr[3] "Программа хочет установить пакет"
+
+#~ msgid "%2 wants to install a package"
+#~ msgid_plural "%2 wants to install packages"
+#~ msgstr[0] "%2 хочет установить пакеты"
+#~ msgstr[1] "%2 хочет установить пакеты"
+#~ msgstr[2] "%2 хочет установить пакеты"
+#~ msgstr[3] "%2 хочет установить пакет"
+
+#~ msgctxt "Search for a package and install it"
+#~ msgid "Install"
+#~ msgstr "Установить"
+
+#~ msgid "Architecture"
+#~ msgstr "Архитектура"
+
+#~ msgctxt "Search for packages"
+#~ msgid "Search"
+#~ msgstr "Поиск"
+
+#~ msgid "This item is not supported by your backend, or it is not a file. "
+#~ msgid_plural ""
+#~ "These items are not supported by your backend, or they are not files."
+#~ msgstr[0] ""
+#~ "Эти элементы не поддерживаются вашим модулем, либо не являются файлами."
+#~ msgstr[1] ""
+#~ "Эти элементы не поддерживаются вашим модулем, либо не являются файлами."
+#~ msgstr[2] ""
+#~ "Эти элементы не поддерживаются вашим модулем, либо не являются файлами."
+#~ msgstr[3] ""
+#~ "Этот элемент не поддерживается вашим модулем, либо не является файлом."
+
+#~ msgid "Impossible to install"
+#~ msgstr "Невозможно установить"
+
+#~ msgid "Install?"
+#~ msgstr "Установить?"
+
+#~ msgid "The file was not installed"
+#~ msgid_plural "The files were not installed"
+#~ msgstr[0] "Файлы не были установлены"
+#~ msgstr[1] "Файлы не были установлены"
+#~ msgstr[2] "Файлы не были установлены"
+#~ msgstr[3] "Файл не был установлен"
+
+#~ msgid "Apper Tray Icon"
+#~ msgstr "Значок лотка Apper"
+
+#~ msgid "Refresh package list"
+#~ msgstr "Обновить список пакетов"
+
+#~ msgid "Global Behavior"
+#~ msgstr "Общее поведение"
+
+#, fuzzy
+#~| msgid "Apply Settings"
+#~ msgid "Application Manager Settings"
+#~ msgstr "Применить настройки"
+
+#~ msgid "Review and Update Software"
+#~ msgstr "Просмотр и обновление программного обеспечения"
+
+#~ msgid "Alt+Left"
+#~ msgstr "Alt+Влево"
+
+#~ msgid "Get and Remove Software"
+#~ msgstr "Загрузка и удаление программ"
+
+#~ msgid "KPackageKit settings"
+#~ msgstr "Настройка KPackageKit"
+
+#~ msgid "KPackageKit Tray Icon"
+#~ msgstr "Значок панели KPackageKit"
+
+#~ msgid "Only native architectures"
+#~ msgstr "Только родные архитектуры"
+
+#~ msgid "Only non-native architectures"
+#~ msgstr "Только неродные архитектуры"
+
+#~ msgid "Hide packages"
+#~ msgstr "Скрыть пакеты"
+
+#~ msgid "Message"
+#~ msgstr "Сообщение"
+
+#~ msgid "(C) 2008-2009 Daniel Nicoletti"
+#~ msgstr "© Daniel Nicoletti, 2008-2009"
+
+#, fuzzy
+#~ msgctxt "Type of update, in the case it's just an update"
+#~ msgid "%1 Updates, %2 Selected"
+#~ msgstr "<< Обновить выбранные"
+
+#~ msgid "Rollback"
+#~ msgstr "Откатить"
+
+#, fuzzy
+#~| msgctxt "The transaction state"
+#~| msgid "Finished"
+#~ msgctxt "The transaction finished it's job"
+#~ msgid "Finished"
+#~ msgstr "Готово"
+
+#~ msgid "Type filter"
+#~ msgstr "Фильтр типов"
+
+#~ msgid "Time since last cache refresh: 5 hours"
+#~ msgstr "Время с последнего обновления кэша: 5 часов"
+
+#~ msgid "Home Page"
+#~ msgstr "Домашняя страница"
+
+#~ msgctxt "Group of the package"
+#~ msgid "Group"
+#~ msgstr "Группа"
+
+#, fuzzy
+#~| msgctxt "The role of the transaction, in past tense"
+#~| msgid "Installed packages"
+#~ msgid "Installed Packages"
+#~ msgstr "Пакеты установлены"
+
+#~ msgid "The following package will be installed"
+#~ msgid_plural "The following packages will be installed"
+#~ msgstr[0] "Следующие пакеты были установлены"
+#~ msgstr[1] "Следующие пакеты были установлены"
+#~ msgstr[2] "Следующие пакеты были установлены"
+#~ msgstr[3] "Следующий пакет был установлен"
+
+#~ msgid "The following package will be installed:"
+#~ msgid_plural "The following packages will be installed:"
+#~ msgstr[0] "Следующие пакеты будут установлены:"
+#~ msgstr[1] "Следующие пакеты будут установлены:"
+#~ msgstr[2] "Следующие пакеты будут установлены:"
+#~ msgstr[3] "Следующий пакет будет установлен:"
+
+#~ msgid "Install Now"
+#~ msgstr "Установить сейчас"
+
+#~ msgid "The following package will be removed:"
+#~ msgid_plural "The following packages will be removed:"
+#~ msgstr[0] "Следующие пакеты будут удалены:"
+#~ msgstr[1] "Следующие пакеты будут удалены:"
+#~ msgstr[2] "Следующие пакеты будут удалены:"
+#~ msgstr[3] "Следующий пакет будет удалён:"
+
+#~ msgid "Remove Now"
+#~ msgstr "Удалить сейчас"
+
+#~ msgid "The following package will be removed and installed:"
+#~ msgid_plural "The following packages will be removed and installed:"
+#~ msgstr[0] "Следующие пакеты будут удалены и установлены:"
+#~ msgstr[1] "Следующие пакеты будут удалены и установлены:"
+#~ msgstr[2] "Следующие пакеты будут удалены и установлены:"
+#~ msgstr[3] "Следующий пакет будет удалён и установлен:"
+
+#~ msgid "Apply Now"
+#~ msgstr "Применить сейчас"
+
+#~ msgid "The following file is required:"
+#~ msgid_plural "The following files are required:"
+#~ msgstr[0] "Требуются следующие файлы:"
+#~ msgstr[1] "Требуются следующие файлы:"
+#~ msgstr[2] "Требуются следующие файлы:"
+#~ msgstr[3] "Требуется следующий файл:"
+
+#~ msgid "%1 wants to install a file"
+#~ msgid_plural "%1 wants to install files"
+#~ msgstr[0] "%1 хочет установить файлы"
+#~ msgstr[1] "%1 хочет установить файлы"
+#~ msgstr[2] "%1 хочет установить файлы"
+#~ msgstr[3] "%1 хочет установить файл"
+
+#, fuzzy
+#~| msgid "Find by &description"
+#~ msgid "backend description here"
+#~ msgstr "Поиск по &описанию"
+
+#~ msgid "Not now"
+#~ msgstr "Не сейчас"
+
+#~ msgid "Do you recognise the user and trust this key?"
+#~ msgstr "Вы узнаете пользователя и доверяете этому ключу?"
+
+#~ msgid "Type"
+#~ msgstr "Тип"
+
+#~ msgctxt "State of the upgrade (ie testing, unstable..)"
+#~ msgid "State"
+#~ msgstr "Состояние"
+
+#~ msgid "Issued"
+#~ msgstr "Выпущен"
+
+#~ msgid "New version"
+#~ msgstr "Новая версия"
+
+#~ msgid "Changes"
+#~ msgstr "Изменения"
+
+#~ msgid "Vendor"
+#~ msgstr "Производитель"
+
+#~ msgid "Bugzilla"
+#~ msgstr "Bugzilla"
+
+#~ msgid "CVE"
+#~ msgstr "CVE"
+
+#~ msgid "Notice"
+#~ msgstr "Примечание"
+
+#~ msgid "1 trivial update"
+#~ msgid_plural "%1 trivial updates"
+#~ msgstr[0] "%1 обычное обновление"
+#~ msgstr[1] "%1 обычных обновления"
+#~ msgstr[2] "%1 обычных обновлений"
+#~ msgstr[3] "%1 обычное обновление"
+
+#~ msgid "1 bug fix update"
+#~ msgid_plural "%1 bug fix updates"
+#~ msgstr[0] "%1 исправление ошибки"
+#~ msgstr[1] "%1 исправления ошибок"
+#~ msgstr[2] "%1 исправлений ошибок"
+#~ msgstr[3] "%1 исправление ошибки"
+
+#~ msgid "1 enhancement update"
+#~ msgid_plural "%1 enhancement updates"
+#~ msgstr[0] "%1 улучшение"
+#~ msgstr[1] "%1 улучшения"
+#~ msgstr[2] "%1 улучшений"
+#~ msgstr[3] "%1 улучшение"
+
+#~ msgid "1 blocked update"
+#~ msgid_plural "%1 blocked updates"
+#~ msgstr[0] "%1 заблокированное обновление"
+#~ msgstr[1] "%1 заблокированных обновления"
+#~ msgstr[2] "%1 заблокированных обновлений"
+#~ msgstr[3] "%1 заблокированное обновление"
+
+#~ msgid "1 available package"
+#~ msgid_plural "%1 available packages"
+#~ msgstr[0] "%1 доступный пакет"
+#~ msgstr[1] "%1 доступных пакета"
+#~ msgstr[2] "%1 доступных пакетов"
+#~ msgstr[3] "%1 доступный пакет"
+
+#~ msgid "1 unknown update"
+#~ msgid_plural "%1 unknown updates"
+#~ msgstr[0] "%1 неизвестное обновление"
+#~ msgstr[1] "%1 неизвестных обновления"
+#~ msgstr[2] "%1 неизвестных обновлений"
+#~ msgstr[3] "%1 неизвестное обновление"
+
+#, fuzzy
+#~ msgid "%1 trivial update"
+#~ msgid_plural "%1 trivial updates, %2 selected"
+#~ msgstr[0] "Простое обновление"
+#~ msgstr[1] ""
+#~ msgstr[2] ""
+#~ msgstr[3] "Простое обновление"
+
+#, fuzzy
+#~ msgid "%1 important update"
+#~ msgid_plural "%1 important updates, %2 selected"
+#~ msgstr[0] "Важное обновление"
+#~ msgstr[1] ""
+#~ msgstr[2] ""
+#~ msgstr[3] "Важное обновление"
+
+#, fuzzy
+#~ msgid "%1 security update"
+#~ msgid_plural "%1 security updates, %2 selected"
+#~ msgstr[0] "Обновление безопасности"
+#~ msgstr[1] ""
+#~ msgstr[2] ""
+#~ msgstr[3] "Обновление безопасности"
+
+#, fuzzy
+#~ msgid "%1 bug fix update"
+#~ msgid_plural "%1 bug fix updates, %2 selected"
+#~ msgstr[0] "Исправление ошибки"
+#~ msgstr[1] ""
+#~ msgstr[2] ""
+#~ msgstr[3] "Исправление ошибки"
+
+#, fuzzy
+#~ msgid "%1 enhancement update"
+#~ msgid_plural "%1 enhancement updates, %2 selected"
+#~ msgstr[0] "Улучшение"
+#~ msgstr[1] ""
+#~ msgstr[2] ""
+#~ msgstr[3] "Улучшение"
+
+#, fuzzy
+#~ msgid "%1 blocked update"
+#~ msgid_plural "%1 blocked updates"
+#~ msgstr[0] "Заблокированное обновление"
+#~ msgstr[1] ""
+#~ msgstr[2] ""
+#~ msgstr[3] "Заблокированное обновление"
+
+#, fuzzy
+#~ msgctxt "Type of update, in the case it's just an update"
+#~ msgid "%1 update"
+#~ msgid_plural "%1 updates, %2 selected"
+#~ msgstr[0] "Обновить"
+#~ msgstr[1] ""
+#~ msgstr[2] ""
+#~ msgstr[3] "Обновить"
+
+#~ msgid "Add and remove software"
+#~ msgstr "Установка и удаление программ"
+
+#~ msgid "List of changes"
+#~ msgstr "Список изменений"
+
+#~ msgctxt "Groups of packages"
+#~ msgid "Group:"
+#~ msgid_plural "Groups:"
+#~ msgstr[0] "Группы:"
+#~ msgstr[1] "Группы:"
+#~ msgstr[2] "Группы:"
+#~ msgstr[3] "Группа:"
+
+#~ msgid "View in groups"
+#~ msgstr "Просмотр в группах"
+
+#~ msgid "Display packages in groups according to status"
+#~ msgstr "Отображать пакеты в группах в соответствии с состоянием"
+
+#~ msgid "All Packages"
+#~ msgstr "Все пакеты"
+
+#, fuzzy
+#~| msgid "All Updates"
+#~ msgid "Select All Updates"
+#~ msgstr "Все обновления"
+
+#, fuzzy
+#~| msgid "Finished in %1."
+#~ msgctxt "The time that the transaction took to complete"
+#~ msgid "Finished in %1."
+#~ msgstr "Завершено в %1."
+
+#~ msgid "libfoo"
+#~ msgstr "libfoo"
+
+#, fuzzy
+#~| msgid "Show updates"
+#~ msgid "Show Updates View"
+#~ msgstr "Показать обновления"
+
+#~ msgid "You have %1"
+#~ msgstr "Имеется %1"
+
+#~ msgid "<br /><i>And another update</i>"
+#~ msgid_plural "<br /><i>And %1 more updates</i>"
+#~ msgstr[0] "<br /><i>и ещё %1 обновление</i>"
+#~ msgstr[1] "<br /><i>и ещё %1 обновления</i>"
+#~ msgstr[2] "<br /><i>и ещё %1 обновлений</i>"
+#~ msgstr[3] "<br /><i>и ещё %1 обновление</i>"
+
+#~ msgid "This item is not supported by your backend, or it is not a file."
+#~ msgid_plural ""
+#~ "These items are not supported by your backend, or they are not files."
+#~ msgstr[0] "Этот элемент не поддерживается модулем, или не является файлом."
+#~ msgstr[1] "Эти элементы не поддерживаются модулем, или не являются файлами."
+#~ msgstr[2] "Эти элементы не поддерживаются модулем, или не являются файлами."
+#~ msgstr[3] "Этот элемент не поддерживается модулем, или не является файлом."
+
+#~ msgid "An additional package is required:"
+#~ msgid_plural "Additional packages are required:"
+#~ msgstr[0] "Требуется дополнительный пакет:"
+#~ msgstr[1] "Требуются дополнительный пакеты:"
+#~ msgstr[2] "Требуются дополнительные пакеты:"
+#~ msgstr[3] "Требуется дополнительный пакет:"
+
+#~ msgid ""
+#~ "An additional program is required to open this type of file:<br />%1<br/"
+#~ ">Do you want to search for a program to open this file type now?"
+#~ msgstr ""
+#~ "Для открытия файлов типа <br />%1<br/> требуется дополнительная "
+#~ "программа. Выполнить поиск программы для открытия файлов этого типа?"
+
+#~ msgid "All packages"
+#~ msgstr "Все пакеты"
+
+#, fuzzy
+#~ msgid "You don't have the necessary privileges to perform this action."
+#~ msgstr "У вас недостаточно прав для выполнения этого действия."
+
+#~ msgid "Package Name"
+#~ msgstr "Название пакета"
+
+#~ msgid "Notify when long tasks have been completed"
+#~ msgstr "Уведомлять о завершении длинных заданий"

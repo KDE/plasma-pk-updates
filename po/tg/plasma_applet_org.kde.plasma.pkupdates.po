@@ -1,0 +1,162 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the plasma-pk-updates package.
+#
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-pk-updates\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-07 00:46+0000\n"
+"PO-Revision-Date: 2019-10-10 08:12+0500\n"
+"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"Language-Team: English <kde-i18n-doc@kde.org>\n"
+"Language: tg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 19.04.3\n"
+
+#: contents/config/config.qml:26
+#, kde-format
+msgid "General"
+msgstr "Умумӣ"
+
+#: contents/ui/ConfigGeneral.qml:42
+#, fuzzy, kde-format
+#| msgid "Check Interval"
+msgctxt "@label check interval for updates"
+msgid "Check interval:"
+msgstr "Фосилаи вақти тафтиш"
+
+#: contents/ui/ConfigGeneral.qml:44
+#, kde-format
+msgid "Daily"
+msgstr "Ҳар рӯз"
+
+#: contents/ui/ConfigGeneral.qml:50
+#, kde-format
+msgid "Weekly"
+msgstr "Ҳар ҳафта"
+
+#: contents/ui/ConfigGeneral.qml:56
+#, kde-format
+msgid "Monthly"
+msgstr "Ҳар моҳ"
+
+#: contents/ui/ConfigGeneral.qml:61
+#, fuzzy, kde-format
+#| msgid "Check For Updates"
+msgctxt "@label part of a sentence"
+msgid "Check for updates when:"
+msgstr "Омодагии навсозиҳоро тафтиш кунед"
+
+#: contents/ui/ConfigGeneral.qml:62
+#, fuzzy, kde-format
+#| msgid "Check for updates even on a mobile connection"
+msgctxt "@option:check part of a sentence: Check for updates when"
+msgid "On a mobile connection"
+msgstr "Омодагии навсозиҳоро ҳатто дар пайвастшавии мобилӣ тафтиш кунед"
+
+#: contents/ui/ConfigGeneral.qml:67
+#, kde-format
+msgctxt "@option:check part of a sentence: Check for updates when"
+msgid "On battery"
+msgstr ""
+
+#: contents/ui/Full.qml:67
+#, kde-format
+msgid "License Agreement for %1"
+msgstr "Созишномаи иҷозатномавӣ барои %1"
+
+#: contents/ui/Full.qml:74
+#, kde-format
+msgid "License agreement required for %1 (from %2):"
+msgstr "Созишномаи иҷозатномавӣ барои %1 лозим аст (аз %2):"
+
+#: contents/ui/Full.qml:101
+#, kde-format
+msgid "Do you accept?"
+msgstr "Қабул мекунед?"
+
+#: contents/ui/Full.qml:145
+#, kde-format
+msgid "Network is offline"
+msgstr "Шабака дар хати алоқа нест"
+
+#: contents/ui/Full.qml:156
+#, kde-format
+msgid "Updates are automatically checked %1."
+msgstr ""
+
+#: contents/ui/Full.qml:242
+#, fuzzy, kde-format
+#| msgid "No description available"
+msgid "No updates available"
+msgstr "Ягон тавсиф дастрас нест"
+
+#: contents/ui/Full.qml:266
+#, kde-format
+msgid "Select all packages"
+msgstr "Интихоб кардани ҳамаи бастаҳо"
+
+#: contents/ui/Full.qml:279
+#, kde-format
+msgid "Install Updates"
+msgstr "Насб кардани навсозиҳо"
+
+#: contents/ui/Full.qml:283
+#, kde-format
+msgid "Performs the software update"
+msgstr "Навсозиҳои нармафзорр насб мекунад"
+
+#: contents/ui/Full.qml:341
+#, kde-format
+msgid "weekly"
+msgstr "ҳар ҳафта"
+
+#: contents/ui/Full.qml:343
+#, kde-format
+msgid "monthly"
+msgstr "ҳар моҳ"
+
+#: contents/ui/Full.qml:345
+#, kde-format
+msgid "daily"
+msgstr "ҳар рӯз"
+
+#: contents/ui/PackageDelegate.qml:64
+#, kde-format
+msgctxt "Package Name (Version)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: contents/ui/PackageDelegate.qml:94
+#, kde-format
+msgctxt "description of the update"
+msgid "Update Description"
+msgstr "Тавсифи навсозӣ"
+
+#: contents/ui/PackageDelegate.qml:101
+#, kde-format
+msgid "No description available"
+msgstr "Ягон тавсиф дастрас нест"
+
+#: contents/ui/PackageDelegate.qml:109
+#, kde-format
+msgid "Related URLs"
+msgstr "Нишониҳои URL-и марбут"
+
+#~ msgid "Check for updates even when on battery"
+#~ msgstr "Омодагии навсозиҳоро ҳатто ҳангоми кор дар батарея тафтиш кунед"
+
+#~ msgid ""
+#~ "Updates are automatically checked %1.<br>Click the 'Check For Updates' "
+#~ "button below to search for updates manually."
+#~ msgstr ""
+#~ "Навсозиҳо %1 ба таври худкор тафтиш карда мешаванд.<br>Барои тафтиш "
+#~ "кардани навсозиҳо ба тафри дастӣ, тугмаи \"Омодагии навсозиҳоро тафтиш "
+#~ "кунед\"-ро зер кунед."
+
+#~ msgid "Checks for any available updates"
+#~ msgstr "Омодагии навсозиҳои дастрасро тафтиш мекунад"
