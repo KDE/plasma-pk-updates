@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-02-06 00:50+0000\n"
-"PO-Revision-Date: 2022-03-12 14:45+0300\n"
+"PO-Revision-Date: 2022-10-08 12:39+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 22.08.1\n"
 
 #: PkStrings.cpp:37
 #, kde-format
@@ -88,13 +88,13 @@ msgstr "İndiriliyor"
 #, kde-format
 msgctxt "transaction state, installing packages"
 msgid "Installing packages"
-msgstr "Paketler yükleniyor"
+msgstr "Paketler kuruluyor"
 
 #: PkStrings.cpp:79
 #, kde-format
 msgctxt "transaction state, refreshing internal lists"
 msgid "Refreshing software list"
-msgstr "Yazılım listesi tazeleniyor"
+msgstr "Yazılım listesi yenileniyor"
 
 #: PkStrings.cpp:82
 #, kde-format
@@ -379,13 +379,13 @@ msgstr "Kurulum denemesi yapılıyor"
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing"
-msgstr "Yükleniyor"
+msgstr "Kuruluyor"
 
 #: PkStrings.cpp:224
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating file install"
-msgstr "Dosya yükleme denemesi yapılıyor"
+msgstr "Dosya kurma denemesi yapılıyor"
 
 #: PkStrings.cpp:226
 #, kde-format
@@ -397,13 +397,13 @@ msgstr "Gerekli paketler indiriliyor"
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing file"
-msgstr "Dosya yükleniyor"
+msgstr "Dosya kuruluyor"
 
 #: PkStrings.cpp:230
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Refreshing package cache"
-msgstr "Paket önbelleği tazeleniyor"
+msgstr "Paket önbelleği yenileniyor"
 
 #: PkStrings.cpp:233
 #, kde-format
@@ -469,7 +469,7 @@ msgstr "Sağlananlar alınıyor"
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing signature"
-msgstr "İmza yükleniyor"
+msgstr "İmza kuruluyor"
 
 #: PkStrings.cpp:256
 #, kde-format
@@ -583,19 +583,19 @@ msgstr "Paketler kaldırıldı"
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed packages"
-msgstr "Paketler yüklendi"
+msgstr "Paketler kuruldu"
 
 #: PkStrings.cpp:305
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed local files"
-msgstr "Yerel dosyalar yüklendi"
+msgstr "Yerel dosyalar kuruldu"
 
 #: PkStrings.cpp:307
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Refreshed package cache"
-msgstr "Paket önbelleği tazelendi"
+msgstr "Paket önbelleği yenilendi"
 
 #: PkStrings.cpp:309
 #, kde-format
@@ -649,7 +649,7 @@ msgstr "Ne sağladığı alındı"
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed signature"
-msgstr "İmza yüklendi"
+msgstr "İmza kuruldu"
 
 #: PkStrings.cpp:328
 #, kde-format
@@ -712,7 +712,7 @@ msgstr "Güncelleniyor"
 #: PkStrings.cpp:356
 #, kde-format
 msgid "Installing"
-msgstr "Yükleniyor"
+msgstr "Kuruluyor"
 
 #: PkStrings.cpp:358
 #, kde-format
@@ -757,7 +757,7 @@ msgstr "Güncellendi"
 #: PkStrings.cpp:383
 #, kde-format
 msgid "Installed"
-msgstr "Yüklendi"
+msgstr "Kuruldu"
 
 #: PkStrings.cpp:385
 #, kde-format
@@ -777,7 +777,7 @@ msgstr "Atıl Olarak İşaretlendi"
 #: PkStrings.cpp:391
 #, kde-format
 msgid "Reinstalled"
-msgstr "Tekrar yüklendi"
+msgstr "Yeniden kuruldu"
 
 #: PkStrings.cpp:393
 #, kde-format
@@ -837,7 +837,7 @@ msgstr "Paket bulunamadı"
 #: PkStrings.cpp:424
 #, kde-format
 msgid "The package is already installed"
-msgstr "Paket zaten yüklenmiş"
+msgstr "Paket halihazırda kurulu"
 
 #: PkStrings.cpp:426
 #, kde-format
@@ -907,7 +907,7 @@ msgstr "Görev iptal edilemez"
 #: PkStrings.cpp:452
 #, kde-format
 msgid "Source packages cannot be installed"
-msgstr "Kaynak paketler yüklenemez"
+msgstr "Kaynak paketler kurulamaz"
 
 #: PkStrings.cpp:454
 #, kde-format
@@ -992,7 +992,7 @@ msgstr "Paket bozuk"
 #: PkStrings.cpp:486
 #, kde-format
 msgid "All packages are already installed"
-msgstr "Tüm paketler zaten yüklendi"
+msgstr "Tüm paketler halihazırda kurulu"
 
 #: PkStrings.cpp:488
 #, kde-format
@@ -1102,12 +1102,12 @@ msgstr "Sanal sağlama türü desteklenmiyor"
 #: PkStrings.cpp:530
 #, kde-format
 msgid "Install root is invalid"
-msgstr "Yükleme kökü geçersiz"
+msgstr "Kurulum kökü geçersiz"
 
 #: PkStrings.cpp:532
 #, kde-format
 msgid "Cannot fetch install sources"
-msgstr "Yükleme kaynakları getirilemiyor"
+msgstr "Kurulum kaynakları getirilemiyor"
 
 #: PkStrings.cpp:534
 #, kde-format
@@ -1207,7 +1207,7 @@ msgstr "Değiştirilen paket sisteminizde veya yazılım kaynaklarında bulunama
 #: PkStrings.cpp:574
 #, kde-format
 msgid "The package that is trying to be installed is already installed."
-msgstr "Kurulmaya çalışılan paket zaten yüklü."
+msgstr "Kurulmaya çalışılan paket zaten kurulu."
 
 #: PkStrings.cpp:576
 #, kde-format
@@ -1235,8 +1235,8 @@ msgid ""
 "error."
 msgstr ""
 "Grup listesi yüklenemedi.\n"
-"Önbelleğinizi tazelemek işe yarayabilir, ama bu normalde yazılım kaynağıyla "
-"ilgili bir hatadır."
+"Önbelleğinizi yenilemek işe yarayabilir; ancak bu normalde yazılım "
+"kaynağıyla ilgili bir hatadır."
 
 #: PkStrings.cpp:586
 #, kde-format
@@ -1319,8 +1319,8 @@ msgid ""
 "Source packages are not normally installed this way.\n"
 "Check the extension of the file you are trying to install."
 msgstr ""
-"Kaynak paketleri normalde bu şekilde yüklenmez.\n"
-"Yüklemeye çalıştığınız dosyanın uzantısını denetleyin."
+"Kaynak paketleri normalde böyle kurulamaz.\n"
+"Kurmaya çalıştığınız dosyanın uzantısını denetleyin."
 
 #: PkStrings.cpp:615
 #, kde-format
@@ -1431,7 +1431,7 @@ msgid ""
 "The package you are attempting to install is not valid.\n"
 "The package file could be corrupt, or not a proper package."
 msgstr ""
-"Yüklemeye çalıştığınız paket geçerli değil.\n"
+"Kurmaya çalıştığınız paket geçerli değil.\n"
 "Paket dosyası bozuk olabilir veya uygun bir paket olmayabilir."
 
 #: PkStrings.cpp:653
@@ -1453,7 +1453,7 @@ msgstr "İndirilen paket bozuk, tekrar indirilmesi gerekmektedir."
 #, kde-format
 msgid ""
 "All of the packages selected for install are already installed on the system."
-msgstr "Yüklemek için seçilen tüm paketler sistemde zaten yüklü."
+msgstr "Kurulmak için seçilen tüm paketler sistemde zaten kurulu."
 
 #: PkStrings.cpp:659
 #, kde-format
@@ -1616,7 +1616,7 @@ msgstr "Bu sistemde sanal sağlama türü desteklenmiyor."
 #: PkStrings.cpp:713
 #, kde-format
 msgid "The install root is invalid. Please contact your administrator."
-msgstr "Yükleme kökü geçersiz. Lütfen yönetici ile bağlantıya geçin."
+msgstr "Kurulum kökü geçersiz. Lütfen yönetici ile bağlantıya geçin."
 
 #: PkStrings.cpp:715
 #, kde-format
@@ -1905,7 +1905,7 @@ msgstr "Engellenmiş güncelleme"
 #, kde-format
 msgctxt "The type of update"
 msgid "Installed"
-msgstr "Yüklü"
+msgstr "Kurulu"
 
 #: PkStrings.cpp:831
 #, kde-format
@@ -2168,7 +2168,7 @@ msgstr "Güncellemeler alınıyor"
 #: pkupdates.cpp:144
 #, kde-format
 msgid "Installing updates"
-msgstr "Güncellemeler yükleniyor"
+msgstr "Güncellemeler kuruluyor"
 
 #: pkupdates.cpp:146
 #, kde-format
@@ -2246,7 +2246,7 @@ msgstr "%1 %2"
 #: pkupdates.cpp:474
 #, kde-format
 msgid "Updates Installed"
-msgstr "Güncellemeler Yüklendi"
+msgstr "Güncellemeler Kuruldu"
 
 #: pkupdates.cpp:475
 #, kde-format
