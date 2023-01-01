@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-02-06 00:50+0000\n"
-"PO-Revision-Date: 2022-12-11 19:54+0300\n"
+"PO-Revision-Date: 2022-12-31 18:46+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -2073,7 +2073,7 @@ msgstr "Lütfen '%1' etiketli ortamı takın ve Sürdür'e basın."
 #: PkStrings.cpp:950
 #, kde-format
 msgid "You do not have the necessary privileges to perform this action."
-msgstr "Bu eylemi gerçekleştirmek için yeterli yetkilere sahip değilsiniz."
+msgstr "Bu eylemi gerçekleştirmek için yeterli ayrıcalıklara sahip değilsiniz."
 
 #: PkStrings.cpp:952
 #, kde-format
