@@ -14,6 +14,7 @@ Name[fi]=Ohjelmistopäivitykset
 Name[fr]=Mises à jour des logiciels
 Name[gl]=Actualizacións de software
 Name[hu]=Szoftverfrissítések
+Name[ia]=Actualisationes de Software
 Name[id]=Pembaruan Perangkat Lunak
 Name[it]=Aggiornamenti software
 Name[ka]=პროგრამული განახლებები
