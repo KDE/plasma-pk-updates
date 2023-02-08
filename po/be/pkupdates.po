@@ -1,123 +1,127 @@
+# Zmicier <zmicerturok@gmail.com>, 2023.
 msgid ""
 msgstr ""
-"Project-Id-Version: kdeorg\n"
+"Project-Id-Version: 86ff119b1606fcaa910d6b44fc14b611\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-02-06 00:50+0000\n"
-"PO-Revision-Date: 2023-02-07 11:02\n"
-"Last-Translator: \n"
-"Language-Team: Chinese Simplified\n"
-"Language: zh_CN\n"
+"PO-Revision-Date: 2023-01-31 13:31\n"
+"Last-Translator: Zmicier <zmicerturok@gmail.com>\n"
+"Language-Team: Belarusian\n"
+"Language: be_BY\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Crowdin-Project: kdeorg\n"
-"X-Crowdin-Project-ID: 269464\n"
-"X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf5-trunk/messages/plasma-pk-updates/pkupdates.pot\n"
-"X-Crowdin-File-ID: 6052\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
+"%100>=11 && n%100<=14 ? 2 : 3);\n"
+"X-Generator: Lokalize 22.12.1\n"
+"X-Crowdin-Project: 86ff119b1606fcaa910d6b44fc14b611\n"
+"X-Crowdin-Project-ID: 127\n"
+"X-Crowdin-Language: be\n"
+"X-Crowdin-File: /main/be/plasma-pk-updates/pkupdates.po\n"
+"X-Crowdin-File-ID: 9086\n"
 
 #: PkStrings.cpp:37
 #, kde-format
 msgctxt "This is when the transaction status is not known"
 msgid "Unknown state"
-msgstr "未知状态"
+msgstr "Невядомы стан"
 
 #: PkStrings.cpp:40
 #, kde-format
 msgctxt "transaction state, the daemon is in the process of starting"
 msgid "Waiting for service to start"
-msgstr "正在等待服务启动"
+msgstr "Чаканне запуску службы"
 
 #: PkStrings.cpp:43
 #, kde-format
 msgctxt "transaction state, the transaction is waiting for another to complete"
 msgid "Waiting for other tasks"
-msgstr "正在等待其他任务"
+msgstr "Чаканне іншых задач"
 
 #: PkStrings.cpp:46
 #, kde-format
 msgctxt "transaction state, just started"
 msgid "Running task"
-msgstr "正在运行任务"
+msgstr "Запуск задачы"
 
 #: PkStrings.cpp:49
 #, kde-format
 msgctxt "transaction state, is querying data"
 msgid "Querying"
-msgstr "正在查询"
+msgstr "Запытванне"
 
 #: PkStrings.cpp:52
 #, kde-format
 msgctxt "transaction state, getting data from a server"
 msgid "Getting information"
-msgstr "正在获取信息"
+msgstr "Атрыманне інфармацыі"
 
 #: PkStrings.cpp:55
 #, kde-format
 msgctxt "transaction state, removing packages"
 msgid "Removing packages"
-msgstr "正在删除软件包"
+msgstr "Выдаленне пакункаў"
 
 #: PkStrings.cpp:59
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s, %2 remaining"
-msgstr "下载速度 %1/s, 还剩余 %2"
+msgstr "Спампоўванне %1/с, засталося %2"
 
 #: PkStrings.cpp:64
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s"
-msgstr "下载速度 %1/s"
+msgstr "Спампоўванне %1/с"
 
 #: PkStrings.cpp:68
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading, %1 remaining"
-msgstr "正在下载, 还剩余 %1 "
+msgstr "Спампоўванне, засталося %1"
 
 #: PkStrings.cpp:72
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading"
-msgstr "正在下载"
+msgstr "Спампоўванне"
 
 #: PkStrings.cpp:76
 #, kde-format
 msgctxt "transaction state, installing packages"
 msgid "Installing packages"
-msgstr "正在安装软件包"
+msgstr "Усталяванне пакункаў"
 
 #: PkStrings.cpp:79
 #, kde-format
 msgctxt "transaction state, refreshing internal lists"
 msgid "Refreshing software list"
-msgstr "正在刷新软件列表"
+msgstr "Абнаўленне спіса праграмнага забеспячэння"
 
 #: PkStrings.cpp:82
 #, kde-format
 msgctxt "transaction state, installing updates"
 msgid "Updating packages"
-msgstr "正在更新软件包"
+msgstr "Абнаўленне пакункаў"
 
 #: PkStrings.cpp:85
 #, kde-format
 msgctxt "transaction state, removing old packages, and cleaning config files"
 msgid "Cleaning up packages"
-msgstr "正在清理软件包"
+msgstr "Ачышчэнне пакункаў"
 
 #: PkStrings.cpp:88
 #, kde-format
 msgctxt "transaction state, obsoleting old packages"
 msgid "Obsoleting packages"
-msgstr "正在弃用软件包"
+msgstr "Выяўленне састарэлых пакункаў"
 
 #: PkStrings.cpp:91
 #, kde-format
 msgctxt "transaction state, checking the transaction before we do it"
 msgid "Resolving dependencies"
-msgstr "正在解决依赖关系"
+msgstr "Развязванне залежнасцяў"
 
 #: PkStrings.cpp:94
 #, kde-format
@@ -125,1008 +129,1008 @@ msgctxt ""
 "transaction state, checking if we have all the security keys for the "
 "operation"
 msgid "Checking signatures"
-msgstr "正在检查签名"
+msgstr "Правяранне подпісаў"
 
 #: PkStrings.cpp:97
 #, kde-format
 msgctxt "transaction state, when we're doing a test transaction"
 msgid "Testing changes"
-msgstr "正在测试更改"
+msgstr "Тэставанне зменаў"
 
 #: PkStrings.cpp:100
 #, kde-format
 msgctxt "transaction state, when we're writing to the system package database"
 msgid "Committing changes"
-msgstr "正在提交更改"
+msgstr "Унясенне зменаў"
 
 #: PkStrings.cpp:103
 #, kde-format
 msgctxt "transaction state, requesting data from a server"
 msgid "Requesting data"
-msgstr "正在请求数据"
+msgstr "Запытванне даных"
 
 #: PkStrings.cpp:106
 #, kde-format
 msgctxt "transaction state, all done!"
 msgid "Finished"
-msgstr "已完成"
+msgstr "Завершана"
 
 #: PkStrings.cpp:109
 #, kde-format
 msgctxt "transaction state, in the process of cancelling"
 msgid "Cancelling"
-msgstr "正在取消"
+msgstr "Скасаванне"
 
 #: PkStrings.cpp:112
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading repository information"
-msgstr "正在下载仓库信息"
+msgstr "Спампоўванне інфармацыі пра рэпазіторый"
 
 #: PkStrings.cpp:115
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading list of packages"
-msgstr "正在下载软件包列表"
+msgstr "Спампоўванне спіса пакункаў"
 
 #: PkStrings.cpp:118
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading file lists"
-msgstr "正在下载文件列表"
+msgstr "Спампоўванне спіса файлаў"
 
 #: PkStrings.cpp:121
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading lists of changes"
-msgstr "正在下载更改列表"
+msgstr "Спампоўванне спіса зменаў"
 
 #: PkStrings.cpp:124
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading groups"
-msgstr "正在下载分组"
+msgstr "Спампоўванне групаў"
 
 #: PkStrings.cpp:127
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading update information"
-msgstr "正在下载更新信息"
+msgstr "Спампоўванне інфармацыі пра абнаўленне"
 
 #: PkStrings.cpp:130
 #, kde-format
 msgctxt "transaction state, repackaging delta files"
 msgid "Repackaging files"
-msgstr "正在重新打包文件"
+msgstr "Перапакаванне файлаў"
 
 #: PkStrings.cpp:133
 #, kde-format
 msgctxt "transaction state, loading databases"
 msgid "Loading cache"
-msgstr "正在加载缓存"
+msgstr "Загрузка кэшу"
 
 #: PkStrings.cpp:136
 #, kde-format
 msgctxt "transaction state, scanning for running processes"
 msgid "Scanning installed applications"
-msgstr "正在扫描已安装的程序"
+msgstr "Сканаванне ўсталяваных праграм"
 
 #: PkStrings.cpp:139
 #, kde-format
 msgctxt ""
 "transaction state, generating a list of packages installed on the system"
 msgid "Generating package lists"
-msgstr "正在生成软件包列表"
+msgstr "Стварэнне спісаў пакункаў"
 
 #: PkStrings.cpp:142
 #, kde-format
 msgctxt "transaction state, when we're waiting for the native tools to exit"
 msgid "Waiting for package manager lock"
-msgstr "正在等候软件包管理器锁定"
+msgstr "Чаканне блакавання кіраўніка пакункаў"
 
 #: PkStrings.cpp:145
 #, kde-format
 msgctxt "waiting for user to type in a password"
 msgid "Waiting for authentication"
-msgstr "正在等待认证"
+msgstr "Чаканне аўтэнтыфікацыі"
 
 #: PkStrings.cpp:148
 #, kde-format
 msgctxt "we are updating the list of processes"
 msgid "Updating the list of running applications"
-msgstr "正在更新运行程序的列表"
+msgstr "Абнаўленне спіса запушчаных праграм"
 
 #: PkStrings.cpp:151
 #, kde-format
 msgctxt "we are checking executable files in use"
 msgid "Checking for applications currently in use"
-msgstr "正在检查正在使用的程序"
+msgstr "Правяранне праграм, якія выкарыстоўваюцца"
 
 #: PkStrings.cpp:154
 #, kde-format
 msgctxt "we are checking for libraries in use"
 msgid "Checking for libraries currently in use"
-msgstr "正在检查正在使用的库"
+msgstr "Правяранне бібліятэк, якія выкарыстоўваюцца"
 
 #: PkStrings.cpp:157
 #, kde-format
 msgctxt "we are copying package files to prepare to install"
 msgid "Copying files"
-msgstr "正在复制文件"
+msgstr "Капіяванне файлаў"
 
 #: PkStrings.cpp:167
 #, kde-format
 msgctxt "The action of the package, in past tense"
 msgid "Downloaded"
-msgstr "已下载"
+msgstr "Спампавана"
 
 #: PkStrings.cpp:169
 #, kde-format
 msgctxt "The action of the package, in past tense"
 msgid "Updated"
-msgstr "已更新"
+msgstr "Абноўлена"
 
 #: PkStrings.cpp:171
 #, kde-format
 msgctxt "The action of the package, in past tense"
 msgid "Installed"
-msgstr "已安装"
+msgstr "Усталявана"
 
 #: PkStrings.cpp:173
 #, kde-format
 msgctxt "The action of the package, in past tense"
 msgid "Removed"
-msgstr "已删除"
+msgstr "Выдалена"
 
 #: PkStrings.cpp:175
 #, kde-format
 msgctxt "The action of the package, in past tense"
 msgid "Cleaned Up"
-msgstr "已清理"
+msgstr "Ачышчана"
 
 #: PkStrings.cpp:177
 #, kde-format
 msgctxt "The action of the package, in past tense"
 msgid "Obsoleted"
-msgstr "已废弃"
+msgstr "Састарэла"
 
 #: PkStrings.cpp:188
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Unknown role type"
-msgstr "未知进度类型"
+msgstr "Невядомы тып ролі"
 
 #: PkStrings.cpp:190
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting dependencies"
-msgstr "正在获取依赖关系"
+msgstr "Атрыманне залежнасцяў"
 
 #: PkStrings.cpp:192
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting update detail"
-msgstr "正在获取更新详情"
+msgstr "Атрыманне звестак пра абнаўленне"
 
 #: PkStrings.cpp:195
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting details"
-msgstr "正在获取详情"
+msgstr "Атрыманне падрабязнасцяў"
 
 #: PkStrings.cpp:197
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting requires"
-msgstr "正在获取所需"
+msgstr "Атрыманне звестак пра неабходнасць"
 
 #: PkStrings.cpp:199
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting updates"
-msgstr "正在获取更新"
+msgstr "Атрыманне абнаўленняў"
 
 #: PkStrings.cpp:201
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching details"
-msgstr "正在搜索详情"
+msgstr "Пошук падрабязнасцяў"
 
 #: PkStrings.cpp:203
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching for file"
-msgstr "正在搜索文件"
+msgstr "Пошук файла"
 
 #: PkStrings.cpp:205
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching groups"
-msgstr "正在搜索分组"
+msgstr "Пошук групаў"
 
 #: PkStrings.cpp:207
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching by package name"
-msgstr "正在搜索软件包名称"
+msgstr "Пошук па назве пакунка"
 
 #: PkStrings.cpp:210
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating removal"
-msgstr "正在模拟删除"
+msgstr "Сімуляванне выдалення"
 
 #: PkStrings.cpp:212 PkStrings.cpp:219 PkStrings.cpp:260
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading packages"
-msgstr "正在下载软件包"
+msgstr "Спампоўванне пакункаў"
 
 #: PkStrings.cpp:214
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Removing"
-msgstr "正在删除"
+msgstr "Выдаленне"
 
 #: PkStrings.cpp:217
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating install"
-msgstr "正在模拟安装"
+msgstr "Сімуляванне ўсталявання"
 
 #: PkStrings.cpp:221
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing"
-msgstr "正在安装"
+msgstr "Усталяванне"
 
 #: PkStrings.cpp:224
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating file install"
-msgstr "正在模拟文件安装"
+msgstr "Сімуляванне ўсталявання файла"
 
 #: PkStrings.cpp:226
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading required packages"
-msgstr "正在下载需要的软件包"
+msgstr "Спампоўванне неабходных пакункаў"
 
 #: PkStrings.cpp:228
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing file"
-msgstr "正在安装文件"
+msgstr "Усталяванне файла"
 
 #: PkStrings.cpp:230
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Refreshing package cache"
-msgstr "正在刷新软件包缓存"
+msgstr "Абнаўленне кэшу пакункаў"
 
 #: PkStrings.cpp:233
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating update"
-msgstr "正在模拟更新"
+msgstr "Сімуляванне абнаўлення"
 
 #: PkStrings.cpp:235
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading updates"
-msgstr "正在下载更新"
+msgstr "Спампоўванне абнаўленняў"
 
 #: PkStrings.cpp:237
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Updating packages"
-msgstr "正在更新软件包"
+msgstr "Абнаўленне пакункаў"
 
 #: PkStrings.cpp:239
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Canceling"
-msgstr "正在取消"
+msgstr "Скасаванне"
 
 #: PkStrings.cpp:241
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting list of repositories"
-msgstr "正在获取仓库列表"
+msgstr "Атрыманне спіса рэпазіторыяў"
 
 #: PkStrings.cpp:243
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Enabling repository"
-msgstr "正在启用仓库"
+msgstr "Уключэнне рэпазіторыя"
 
 #: PkStrings.cpp:245
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Setting repository data"
-msgstr "正在设置仓库数据"
+msgstr "Наладжванне даных рэпазіторыя"
 
 #: PkStrings.cpp:247
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Resolving"
-msgstr "正在解决"
+msgstr "Развязанне"
 
 #: PkStrings.cpp:250
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting file list"
-msgstr "正在获取文件列表"
+msgstr "Атрыманне спіса файлаў"
 
 #: PkStrings.cpp:252
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting what provides"
-msgstr "正在获取所提供"
+msgstr "Атрыманне крыніц паходжання"
 
 #: PkStrings.cpp:254
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing signature"
-msgstr "正在安装签名"
+msgstr "Усталяванне подпісу"
 
 #: PkStrings.cpp:256
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting package lists"
-msgstr "正在获取软件包列表"
+msgstr "Атрыманне спісаў пакункаў"
 
 #: PkStrings.cpp:258
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Accepting EULA"
-msgstr "正在接受最终用户许可条例"
+msgstr "Ухваленне EULA"
 
 #: PkStrings.cpp:262
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting distribution upgrade information"
-msgstr "正在获取发行版升级信息"
+msgstr "Атрыманне інфармацыі пра абнаўленне дыстрыбутыва"
 
 #: PkStrings.cpp:264
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting categories"
-msgstr "正在获取分类"
+msgstr "Атрыманне катэгорый"
 
 #: PkStrings.cpp:266
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting old transactions"
-msgstr "正在获取旧的变更交易"
+msgstr "Атрыманне старых трансакцый"
 
 #: PkStrings.cpp:268
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Repairing system"
-msgstr "正在修复系统"
+msgstr "Выпраўленне сістэмы"
 
 #: PkStrings.cpp:270
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Removing repository"
-msgstr "正在从 SVN 仓库删除文件"
+msgstr "Выдаленне рэпазіторыя"
 
 #: PkStrings.cpp:280
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Unknown role type"
-msgstr "未知进度类型"
+msgstr "Невядомы тып ролі"
 
 #: PkStrings.cpp:282
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got dependencies"
-msgstr "已获取依赖关系"
+msgstr "Атрыманыя залежнасці"
 
 #: PkStrings.cpp:284
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got update detail"
-msgstr "已获取更新详情"
+msgstr "Атрыманыя звесткі пра абнаўленне"
 
 #: PkStrings.cpp:287
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got details"
-msgstr "已获取详情"
+msgstr "Атрыманыя падрабязнасці"
 
 #: PkStrings.cpp:289
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got requires"
-msgstr "已获取所需"
+msgstr "Атрыманыя звесткі пра неабходнасць"
 
 #: PkStrings.cpp:291
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got updates"
-msgstr "已获取更新"
+msgstr "Атрыманыя абнаўленні"
 
 #: PkStrings.cpp:293
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package details"
-msgstr "已搜索软件包名称"
+msgstr "Знойдзена па звестках пакунка"
 
 #: PkStrings.cpp:295
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for file"
-msgstr "已搜索文件"
+msgstr "Знойдзеныя файлы"
 
 #: PkStrings.cpp:297
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched groups"
-msgstr "已搜索分组"
+msgstr "Знойдзеныя групы"
 
 #: PkStrings.cpp:299
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package name"
-msgstr "已搜索软件包名称"
+msgstr "Знойдзена па назве пакунка"
 
 #: PkStrings.cpp:301
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed packages"
-msgstr "已删除软件包"
+msgstr "Выдаленыя пакункі"
 
 #: PkStrings.cpp:303
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed packages"
-msgstr "已安装软件包"
+msgstr "Усталяваныя пакункі"
 
 #: PkStrings.cpp:305
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed local files"
-msgstr "已安装本地文件"
+msgstr "Усталяваныя лакальныя файлы"
 
 #: PkStrings.cpp:307
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Refreshed package cache"
-msgstr "已刷新软件包缓存"
+msgstr "Абноўлены кэш пакункаў"
 
 #: PkStrings.cpp:309
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Updated packages"
-msgstr "已更新软件包"
+msgstr "Абноўленыя пакункі"
 
 #: PkStrings.cpp:311
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Canceled"
-msgstr "已取消"
+msgstr "Скасавана"
 
 #: PkStrings.cpp:313
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got list of repositories"
-msgstr "已获取仓库列表"
+msgstr "Атрыманы спіс рэпазіторыяў"
 
 #: PkStrings.cpp:315
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Enabled repository"
-msgstr "已启用仓库"
+msgstr "Уключаны рэпазіторый"
 
 #: PkStrings.cpp:317
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Set repository data"
-msgstr "已设置仓库数据"
+msgstr "Вызначаныя даныя рэпазіторыя"
 
 #: PkStrings.cpp:319
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Resolved"
-msgstr "已解决"
+msgstr "Развязана"
 
 #: PkStrings.cpp:322
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got file list"
-msgstr "已获取文件列表"
+msgstr "Атрыманы спіс файлаў"
 
 #: PkStrings.cpp:324
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got what provides"
-msgstr "已获取所提供"
+msgstr "Атрыманыя крыніцы паходжання"
 
 #: PkStrings.cpp:326
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed signature"
-msgstr "已安装签名"
+msgstr "Усталяваны подпіс"
 
 #: PkStrings.cpp:328
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got package lists"
-msgstr "已获取软件包列表"
+msgstr "Атрыманыя спісы пакункаў"
 
 #: PkStrings.cpp:330
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Accepted EULA"
-msgstr "已接受最终用户许可条例"
+msgstr "Ухваленае пагадненне EULA"
 
 #: PkStrings.cpp:332
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Downloaded packages"
-msgstr "已下载软件包"
+msgstr "Спампаваныя пакункі"
 
 #: PkStrings.cpp:334
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got distribution upgrades"
-msgstr "已获取发行版升级"
+msgstr "Атрыманыя абнаўленні дыстрыбутыва"
 
 #: PkStrings.cpp:336
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got categories"
-msgstr "已获取分类"
+msgstr "Атрыманыя катэгорыі"
 
 #: PkStrings.cpp:338
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got old transactions"
-msgstr "已获取旧的变更交易"
+msgstr "Атрыманыя старыя трансакцыі"
 
 #: PkStrings.cpp:340
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Repaired system"
-msgstr "已修复系统"
+msgstr "Выпраўленая сістэма"
 
 #: PkStrings.cpp:342
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed repository"
-msgstr "文件已从 SVN 仓库删除。"
+msgstr "Выдалены рэпазіторый"
 
 #: PkStrings.cpp:352
 #, kde-format
 msgid "Downloading"
-msgstr "正在下载"
+msgstr "Спампоўванне"
 
 #: PkStrings.cpp:354
 #, kde-format
 msgid "Updating"
-msgstr "正在更新"
+msgstr "Абнаўленне"
 
 #: PkStrings.cpp:356
 #, kde-format
 msgid "Installing"
-msgstr "正在安装"
+msgstr "Усталяванне"
 
 #: PkStrings.cpp:358
 #, kde-format
 msgid "Removing"
-msgstr "正在删除"
+msgstr "Выдаленне"
 
 #: PkStrings.cpp:360
 #, kde-format
 msgid "Cleaning up"
-msgstr "正在清理"
+msgstr "Ачышчэнне"
 
 #: PkStrings.cpp:362
 #, kde-format
 msgid "Obsoleting"
-msgstr "正在弃用"
+msgstr "Састарэлыя"
 
 #: PkStrings.cpp:364
 #, kde-format
 msgid "Reinstalling"
-msgstr "正在重新安装"
+msgstr "Пераўсталяванне"
 
 #: PkStrings.cpp:366
 #, kde-format
 msgid "Preparing"
-msgstr "正在准备"
+msgstr "Рыхтаванне"
 
 #: PkStrings.cpp:368
 #, kde-format
 msgid "Decompressing"
-msgstr "正在解压缩"
+msgstr "Распакоўванне"
 
 #: PkStrings.cpp:379
 #, kde-format
 msgid "Downloaded"
-msgstr "已下载"
+msgstr "Спампавана"
 
 #: PkStrings.cpp:381
 #, kde-format
 msgid "Updated"
-msgstr "已更新"
+msgstr "Абноўлена"
 
 #: PkStrings.cpp:383
 #, kde-format
 msgid "Installed"
-msgstr "已安装"
+msgstr "Усталявана"
 
 #: PkStrings.cpp:385
 #, kde-format
 msgid "Removed"
-msgstr "已删除"
+msgstr "Выдалена"
 
 #: PkStrings.cpp:387
 #, kde-format
 msgid "Cleaned up"
-msgstr "已清理"
+msgstr "Ачышчана"
 
 #: PkStrings.cpp:389
 #, kde-format
 msgid "Obsoleted"
-msgstr "已废弃"
+msgstr "Састарэла"
 
 #: PkStrings.cpp:391
 #, kde-format
 msgid "Reinstalled"
-msgstr "重新安装"
+msgstr "Пераўсталявана"
 
 #: PkStrings.cpp:393
 #, kde-format
 msgid "Prepared"
-msgstr "已经准备好"
+msgstr "Падрыхтавана"
 
 #: PkStrings.cpp:395
 #, kde-format
 msgid "Decompressed"
-msgstr "完成解压缩"
+msgstr "Распакавана"
 
 #: PkStrings.cpp:406
 #, kde-format
 msgid "No network connection available"
-msgstr "无可用的网络连接"
+msgstr "Няма сеткавага злучэння"
 
 #: PkStrings.cpp:408
 #, kde-format
 msgid "No package cache is available"
-msgstr "无软件包缓存可用"
+msgstr "Няма кэшу пакункаў"
 
 #: PkStrings.cpp:410
 #, kde-format
 msgid "Out of memory"
-msgstr "内存耗尽"
+msgstr "Не стае памяці"
 
 #: PkStrings.cpp:412
 #, kde-format
 msgid "Failed to create a thread"
-msgstr "创建线程失败"
+msgstr "Не ўдалося стварыць ланцужок"
 
 #: PkStrings.cpp:414
 #, kde-format
 msgid "Not supported by this backend"
-msgstr "此后端不支持"
+msgstr "Не падтрымліваецца гэтым рухавіком"
 
 #: PkStrings.cpp:416
 #, kde-format
 msgid "An internal system error has occurred"
-msgstr "发生内部系统错误"
+msgstr "Адбылася ўнутраная сістэмная памылка"
 
 #: PkStrings.cpp:418
 #, kde-format
 msgid "A security trust relationship is not present"
-msgstr "安全信任关系不存在"
+msgstr "Няма давераных сувязяў бяспекі"
 
 #: PkStrings.cpp:420
 #, kde-format
 msgid "The package is not installed"
-msgstr "软件包未安装"
+msgstr "Пакунак не ўсталяваны"
 
 #: PkStrings.cpp:422
 #, kde-format
 msgid "The package was not found"
-msgstr "软件包未找到"
+msgstr "Пакунак не знойдзены"
 
 #: PkStrings.cpp:424
 #, kde-format
 msgid "The package is already installed"
-msgstr "软件包已安装"
+msgstr "Пакунак ужо ўсталяваны"
 
 #: PkStrings.cpp:426
 #, kde-format
 msgid "The package download failed"
-msgstr "软件包下载失败"
+msgstr "Не ўдалося спампаваць пакунак"
 
 #: PkStrings.cpp:428
 #, kde-format
 msgid "The group was not found"
-msgstr "分组未找到"
+msgstr "Група не знойдзеная"
 
 #: PkStrings.cpp:430
 #, kde-format
 msgid "The group list was invalid"
-msgstr "分组列表无效"
+msgstr "Спіс групаў хібны"
 
 #: PkStrings.cpp:432
 #, kde-format
 msgid "Dependency resolution failed"
-msgstr "依赖关系解决失败"
+msgstr "Не ўдалося развязаць залежнасць"
 
 #: PkStrings.cpp:434
 #, kde-format
 msgid "Search filter was invalid"
-msgstr "搜索过滤规则无效"
+msgstr "Фільтр пошуку хібны"
 
 #: PkStrings.cpp:436
 #, kde-format
 msgid "The package identifier was not well formed"
-msgstr "软件包标识符未良好排列"
+msgstr "Ідэнтыфікатар пакунка быў няправільна сфармаваны"
 
 #: PkStrings.cpp:438
 #, kde-format
 msgid "Transaction error"
-msgstr "变更交易错误"
+msgstr "Памылка трансакцыі"
 
 #: PkStrings.cpp:440
 #, kde-format
 msgid "Repository name was not found"
-msgstr "仓库名称未找到"
+msgstr "Назва рэпазіторыя не знойдзеная"
 
 #: PkStrings.cpp:442
 #, kde-format
 msgid "Could not remove a protected system package"
-msgstr "无法删除受保护的系统软件包"
+msgstr "Немагчыма выдаліць абаронены сістэмны пакунак"
 
 #: PkStrings.cpp:444
 #, kde-format
 msgid "The task was canceled"
-msgstr "任务已取消"
+msgstr "Задача была скасаваная"
 
 #: PkStrings.cpp:446
 #, kde-format
 msgid "The task was forcibly canceled"
-msgstr "任务已被强制取消"
+msgstr "Задача была прымусова скасаваная"
 
 #: PkStrings.cpp:448
 #, kde-format
 msgid "Reading the config file failed"
-msgstr "读取配置文件失败"
+msgstr "Не ўдалося прачытаць файл канфігурацыі"
 
 #: PkStrings.cpp:450
 #, kde-format
 msgid "The task cannot be cancelled"
-msgstr "任务无法取消"
+msgstr "Задачу немагчыма скасаваць"
 
 #: PkStrings.cpp:452
 #, kde-format
 msgid "Source packages cannot be installed"
-msgstr "无法安装源码软件包"
+msgstr "Немагчыма ўсталяваць зыходныя пакункі"
 
 #: PkStrings.cpp:454
 #, kde-format
 msgid "The license agreement failed"
-msgstr "许可证同意失败"
+msgstr "Не ўдалося ўхваліць ліцэнзійнае пагадненне"
 
 #: PkStrings.cpp:456
 #, kde-format
 msgid "Local file conflict between packages"
-msgstr "本地文件于软件包间冲突"
+msgstr "Канфлікт лакальных файлаў паміж пакункамі"
 
 #: PkStrings.cpp:458
 #, kde-format
 msgid "Packages are not compatible"
-msgstr "软件包不兼容"
+msgstr "Пакункі несумяшчальныя"
 
 #: PkStrings.cpp:460
 #, kde-format
 msgid "Problem connecting to a software origin"
-msgstr "连接软件来源时遇到问题"
+msgstr "Не ўдалося падлучыцца да крыніцы праграмнага забеспячэння"
 
 #: PkStrings.cpp:462
 #, kde-format
 msgid "Failed to initialize"
-msgstr "初始化失败"
+msgstr "Не ўдалося ініцыялізаваць"
 
 #: PkStrings.cpp:464
 #, kde-format
 msgid "Failed to finalize"
-msgstr "完成化失败"
+msgstr "Не ўдалося скончыць"
 
 #: PkStrings.cpp:466
 #, kde-format
 msgid "Cannot get lock"
-msgstr "无法获得锁定"
+msgstr "Немагчыма атрымаць блакаванне"
 
 #: PkStrings.cpp:468
 #, kde-format
 msgid "No packages to update"
-msgstr "没有可更新的软件包"
+msgstr "Няма пакункаў для абнаўлення"
 
 #: PkStrings.cpp:470
 #, kde-format
 msgid "Cannot write repository configuration"
-msgstr "无法写入仓库配置"
+msgstr "Не ўдалося запісаць канфігурацыю рэпазіторыя"
 
 #: PkStrings.cpp:472
 #, kde-format
 msgid "Local install failed"
-msgstr "本地安装失败"
+msgstr "Не ўдалося выканаць лакальнае ўсталяванне"
 
 #: PkStrings.cpp:474
 #, kde-format
 msgid "Bad GPG signature"
-msgstr "损坏的 GPG 签名"
+msgstr "Дрэнны подпіс GPG"
 
 #: PkStrings.cpp:476
 #, kde-format
 msgid "Missing GPG signature"
-msgstr "缺失的 GPG 签名"
+msgstr "Няма подпісу GPG"
 
 #: PkStrings.cpp:478
 #, kde-format
 msgid "Repository configuration invalid"
-msgstr "仓库配置无效"
+msgstr "Хібная канфігурацыя рэпазіторыя"
 
 #: PkStrings.cpp:480
 #, kde-format
 msgid "Invalid package file"
-msgstr "无效的软件包文件"
+msgstr "Хібны файл пакунка"
 
 #: PkStrings.cpp:482
 #, kde-format
 msgid "Package install blocked"
-msgstr "软件包安装已屏蔽"
+msgstr "Усталяванне пакунка заблакавана"
 
 #: PkStrings.cpp:484
 #, kde-format
 msgid "Package is corrupt"
-msgstr "软件包损坏"
+msgstr "Пакунак пашкоджаны"
 
 #: PkStrings.cpp:486
 #, kde-format
 msgid "All packages are already installed"
-msgstr "已经安装全部软件包"
+msgstr "Усе пакункі ўжо ўсталяваныя"
 
 #: PkStrings.cpp:488
 #, kde-format
 msgid "The specified file could not be found"
-msgstr "指定的文件未找到"
+msgstr "Вызначаны файл не знойдзены"
 
 #: PkStrings.cpp:490
 #, kde-format
 msgid "No more mirrors are available"
-msgstr "无更多的镜像可用"
+msgstr "Больш няма люстэркаў"
 
 #: PkStrings.cpp:492
 #, kde-format
 msgid "No distribution upgrade data is available"
-msgstr "无发行版升级数据可用"
+msgstr "Няма даных пра абнаўленне дыстрыбутыва"
 
 #: PkStrings.cpp:494
 #, kde-format
 msgid "Package is incompatible with this system"
-msgstr "软件包与本系统不兼容"
+msgstr "Пакунак несумяшчальны з гэтай сістэмай"
 
 #: PkStrings.cpp:496
 #, kde-format
 msgid "No space is left on the disk"
-msgstr "磁盘没有剩余空间"
+msgstr "На дыску не засталося месца"
 
 #: PkStrings.cpp:498
 #, kde-format
 msgid "A media change is required"
-msgstr "需要更改媒体"
+msgstr "Патрабуецца змена носьбіта"
 
 #: PkStrings.cpp:500
 #, kde-format
 msgid "Authorization failed"
-msgstr "身份验证失败"
+msgstr "Не ўдалося выканаць аўтарызацыю"
 
 #: PkStrings.cpp:502
 #, kde-format
 msgid "Update not found"
-msgstr "更新未找到"
+msgstr "Абнаўленне не знойдзена"
 
 #: PkStrings.cpp:504
 #, kde-format
 msgid "Cannot install from untrusted origin"
-msgstr "无法从不信任的源安装软件包"
+msgstr "Немагчыма ўсталяваць з ненадзейнай крыніцы"
 
 #: PkStrings.cpp:506
 #, kde-format
 msgid "Cannot update from untrusted origin"
-msgstr "无法从不信任的源升级"
+msgstr "Немагчыма абнавіць з ненадзейнай крыніцы"
 
 #: PkStrings.cpp:508
 #, kde-format
 msgid "Cannot get the file list"
-msgstr "无法获取文件列表"
+msgstr "Немагчыма атрымаць спіс файлаў"
 
 #: PkStrings.cpp:510
 #, kde-format
 msgid "Cannot get package requires"
-msgstr "获取需要的软件包"
+msgstr "Не ўдалося атрымаць звесткі пра неабходнасць пакунка"
 
 #: PkStrings.cpp:512
 #, kde-format
 msgid "Cannot disable origin"
-msgstr "无法禁用源"
+msgstr "Немагчыма адключыць крыніцу"
 
 #: PkStrings.cpp:514
 #, kde-format
 msgid "The download failed"
-msgstr "下载软件包失败"
+msgstr "Не ўдалося спампаваць"
 
 #: PkStrings.cpp:516
 #, kde-format
 msgid "Package failed to configure"
-msgstr "配置软件包失败"
+msgstr "Не ўдалося наладзіць пакунак"
 
 #: PkStrings.cpp:518
 #, kde-format
 msgid "Package failed to build"
-msgstr "构建软件包失败"
+msgstr "Не ўдалося сабраць пакунак"
 
 #: PkStrings.cpp:520
 #, kde-format
 msgid "Package failed to install"
-msgstr "安装软件包失败"
+msgstr "Не ўдалося ўсталяваць пакунак"
 
 #: PkStrings.cpp:522
 #, kde-format
 msgid "Package failed to be removed"
-msgstr "删除软件包失败"
+msgstr "Не ўдалося выдаліць пакунак"
 
 #: PkStrings.cpp:524
 #, kde-format
 msgid "Update failed due to running process"
-msgstr "升级失败，因为有进程正在运行"
+msgstr "Не ўдалося абнавіць праз запушчаны працэс"
 
 #: PkStrings.cpp:526
 #, kde-format
 msgid "The package database was changed"
-msgstr "软件包数据库已更改"
+msgstr "База даных пакункаў была змененая"
 
 #: PkStrings.cpp:528
 #, kde-format
 msgid "Virtual provide type is not supported"
-msgstr "虚拟提供类型不被支持"
+msgstr "Віртуальны тып пастаўкі не падтрымліваецца"
 
 #: PkStrings.cpp:530
 #, kde-format
 msgid "Install root is invalid"
-msgstr "安装根目录无效"
+msgstr "Хібнае ўсталяванне root"
 
 #: PkStrings.cpp:532
 #, kde-format
 msgid "Cannot fetch install sources"
-msgstr "无法获得安装源"
+msgstr "Не ўдалося атрымаць крыніцы ўсталявання"
 
 #: PkStrings.cpp:534
 #, kde-format
 msgid "Rescheduled due to priority"
-msgstr "由于优先级问题而变更计划"
+msgstr "Перанесена праз прыярытэт"
 
 #: PkStrings.cpp:536
 #, kde-format
 msgid "Unfinished transaction"
-msgstr "未完成的变更"
+msgstr "Незавершаная трансакцыя"
 
 #: PkStrings.cpp:538
 #, kde-format
 msgid "Lock required"
-msgstr "需要锁定"
+msgstr "Патрабуецца блакаванне"
 
 #: PkStrings.cpp:540
 #, kde-format
 msgid "Unknown error"
-msgstr "未知错误"
+msgstr "Невядомая памылка"
 
 #: PkStrings.cpp:550
 #, kde-format
@@ -1134,8 +1138,8 @@ msgid ""
 "There is no network connection available.\n"
 "Please check your connection settings and try again"
 msgstr ""
-"没有可用的网络连接。\n"
-"请检查您的连接设置并重试"
+"Няма злучэння з сеткай.\n"
+"Праверце налады злучэння і паўтарыце спробу"
 
 #: PkStrings.cpp:553
 #, kde-format
@@ -1143,8 +1147,8 @@ msgid ""
 "The package list needs to be rebuilt.\n"
 "This should have been done by the backend automatically."
 msgstr ""
-"软件包列表需要重建。\n"
-"这应该由后端自动进行。"
+"Спіс пакункаў трэба перасабраць.\n"
+"Гэта павінна было зроблена рухавіком аўтаматычна."
 
 #: PkStrings.cpp:556
 #, kde-format
@@ -1153,13 +1157,14 @@ msgid ""
 "memory.\n"
 "Please close some programs or restart your computer."
 msgstr ""
-"负责处理用户请求的服务内存耗尽。\n"
-"请关闭一些程序和重启您的计算机。"
+"Для службы, якая адказвае за апрацоўванне запытаў карыстальнікаў, не хапае "
+"памяці.\n"
+"Закрыйце некаторыя праграмы або перазагрузіце камп'ютар."
 
 #: PkStrings.cpp:559
 #, kde-format
 msgid "A thread could not be created to service the user request."
-msgstr "无法创建线程以应对用户请求。"
+msgstr "Не ўдалося стварыць ланцужок для абслугоўвання запыту карыстальніка."
 
 #: PkStrings.cpp:561
 #, kde-format
@@ -1167,8 +1172,8 @@ msgid ""
 "The action is not supported by this backend.\n"
 "Please report a bug as this should not have happened."
 msgstr ""
-"您的后端程序不支持该操作。\n"
-"请报告错误，因为这不应该发生。"
+"Дзеянне не падтрымліваецца гэтым рухавіком.\n"
+"Адпраўце справаздачу пра хібу, бо гэтага не павінна было адбыцца."
 
 #: PkStrings.cpp:564
 #, kde-format
@@ -1176,8 +1181,8 @@ msgid ""
 "A problem that we were not expecting has occurred.\n"
 "Please report this bug with the error description."
 msgstr ""
-"遇到意外错误。\n"
-"请回报此 Bug 并上传错误说明。"
+"Паўстала нечаканая праблема.\n"
+"Адпраўце справаздачу пра хібу з апісаннем памылкі."
 
 #: PkStrings.cpp:567
 #, kde-format
@@ -1185,35 +1190,37 @@ msgid ""
 "A security trust relationship could not be made with the software origin.\n"
 "Please check your software signature settings."
 msgstr ""
-"无法与软件来源建立安全的信任关系。\n"
-"请检查软件签名设置。"
+"Не ўдалося наладзіць бяспечнае ўзаемадзеянне з крыніцай праграмнага "
+"забеспячэння.\n"
+"Праверце налады подпісу праграмнага забеспячэння."
 
 #: PkStrings.cpp:570
 #, kde-format
 msgid ""
 "The package that is trying to be removed or updated is not already installed."
-msgstr "要移除或更新的软件包尚未安装。"
+msgstr ""
+"Выконваецца спроба выдаліць або абнавіць пакунак, які яшчэ не ўсталяваны."
 
 #: PkStrings.cpp:572
 #, kde-format
 msgid ""
 "The package that is being modified was not found on your system or in any "
 "software origin."
-msgstr "正在被修改的软件包在系统和所有软件来源中均不存在。"
+msgstr ""
+"Выконваецца спроба змяніць пакунак, якога няма ў вашай сістэме або крыніцах "
+"праграмнага забеспячэння."
 
 #: PkStrings.cpp:574
 #, kde-format
 msgid "The package that is trying to be installed is already installed."
-msgstr "尝试安装的软件包已经安装过了。"
+msgstr "Выконваецца спроба ўсталяваць пакунак, які ўжо ўсталяваны."
 
 #: PkStrings.cpp:576
 #, kde-format
 msgid ""
 "The package download failed.\n"
 "Please check your network connectivity."
-msgstr ""
-"软件包下载失败。\n"
-"请检查您的网络连接性。"
+msgstr "Не ўдалося спампаваць пакунак. Праверце злучэнне з сеткай."
 
 #: PkStrings.cpp:579
 #, kde-format
@@ -1221,8 +1228,8 @@ msgid ""
 "The group type was not found.\n"
 "Please check your group list and try again."
 msgstr ""
-"未找到分组类型。\n"
-"请检查您的分组列表并重试。"
+"Тып групы не знойдзены.\n"
+"Праверце свой спіс групаў і паўтарыце спробу."
 
 #: PkStrings.cpp:582
 #, kde-format
@@ -1231,8 +1238,9 @@ msgid ""
 "Refreshing your cache may help, although this is normally a software origin "
 "error."
 msgstr ""
-"分组列表无法加载。\n"
-"虽然您可以尝试刷新缓存，但这通常是软件来源本身的故障造成的。"
+"Не ўдалося загрузіць спіс групаў.\n"
+"Можна паспрабаваць абнавіць кэш, але звычайна гэта адбываецца праз памылкі ў "
+"крыніцах праграмнага забеспячэння."
 
 #: PkStrings.cpp:586
 #, kde-format
@@ -1240,13 +1248,13 @@ msgid ""
 "A package dependency could not be found.\n"
 "More information is available in the detailed report."
 msgstr ""
-"无法找到软件包依赖关系。\n"
-"更多信息请见详细报告。"
+"Не ўдалося знайсці залежнасці пакунка.\n"
+"Больш падрабязную інфармацыю можна знайсці ў падрабязнай справаздачы."
 
 #: PkStrings.cpp:589
 #, kde-format
 msgid "The search filter was not correctly formed."
-msgstr "搜索过滤器格式错误。"
+msgstr "Фільтр пошуку быў няправільна сфармаваны."
 
 #: PkStrings.cpp:591
 #, kde-format
@@ -1254,8 +1262,10 @@ msgid ""
 "The package identifier was not well formed when sent to the system daemon.\n"
 "This normally indicates an internal bug and should be reported."
 msgstr ""
-"发送给守护程序的软件包标识格式不正确。\n"
-"这一般为内部Bug，应第一时间报告。"
+"Падчас адпраўлення ў сістэмны дэман быў няправільна сфармаваны ідэнтыфікатар "
+"пакунка.\n"
+"Звычайна гэта адбываецца праз унутраныя памылкі, трэба адправіць справаздачу "
+"пра хібу."
 
 #: PkStrings.cpp:594
 #, kde-format
@@ -1263,8 +1273,8 @@ msgid ""
 "An error occurred while running the transaction.\n"
 "More information is available in the detailed report."
 msgstr ""
-"运行事务时出错。\n"
-"更多信息请见详细报告。"
+"Падчас запуску трансакцыі адбылася памылка.\n"
+"Больш падрабязную інфармацыю можна знайсці ў падрабязнай справаздачы."
 
 #: PkStrings.cpp:597
 #, kde-format
@@ -1272,18 +1282,19 @@ msgid ""
 "The remote software origin name was not found.\n"
 "You may need to enable an item in Software Origins."
 msgstr ""
-"未找到远程软件来源。\n"
-"您可能需要在“软件来源”中启用至少一个来源。"
+"Назва адлеглай крыніцы праграмнага забеспячэння не знойдзена.\n"
+"Магчыма, вам спатрэбіцца ўключыць элемент у крыніцах праграмнага "
+"забеспячэння."
 
 #: PkStrings.cpp:600
 #, kde-format
 msgid "Removing a protected system package is not allowed."
-msgstr "不允许删除受保护的系统软件包。"
+msgstr "Выдаленне абароненых сістэмных пакункаў забаронена."
 
 #: PkStrings.cpp:602
 #, kde-format
 msgid "The task was canceled successfully and no packages were changed."
-msgstr "任务已成功取消并且未更改任何软件包。"
+msgstr "Задача была паспяхова скасаваная, і пакункі не былі змененыя."
 
 #: PkStrings.cpp:604
 #, kde-format
@@ -1291,8 +1302,8 @@ msgid ""
 "The task was canceled successfully and no packages were changed.\n"
 "The backend did not exit cleanly."
 msgstr ""
-"任务已成功取消并且未更改任何软件包。\n"
-"后端未干净退出。"
+"Задача была паспяхова скасаваная, пакункі не былі змененыя. Рухавік не "
+"скончыў працу без праблем."
 
 #: PkStrings.cpp:607
 #, kde-format
@@ -1300,13 +1311,13 @@ msgid ""
 "The native package configuration file could not be opened.\n"
 "Please make sure your system's configuration is valid."
 msgstr ""
-"本地包配置文件无法打开。\n"
-"请确保您的系统配置文件是有效的。"
+"Не ўдалося адкрыць уласны файл канфігурацыі пакункаў.\n"
+"Пераканайцеся, што канфігурацыя вашай сістэмы сапраўдная."
 
 #: PkStrings.cpp:610
 #, kde-format
 msgid "The task is not safe to be cancelled at this time."
-msgstr "任务在此刻取消是不安全的。"
+msgstr "Задачу небяспечна скасоўваць у гэты час."
 
 #: PkStrings.cpp:612
 #, kde-format
@@ -1314,8 +1325,8 @@ msgid ""
 "Source packages are not normally installed this way.\n"
 "Check the extension of the file you are trying to install."
 msgstr ""
-"源码包通常不以此方式安装。\n"
-"请检查您尝试安装的文件的扩展名。"
+"Зыходныя пакункі звычайна не ўсталёўваюцца такім чынам.\n"
+"Праверце пашырэнне файла, які вы спрабуеце ўсталяваць."
 
 #: PkStrings.cpp:615
 #, kde-format
@@ -1323,8 +1334,9 @@ msgid ""
 "The license agreement was not agreed to.\n"
 "To use this software you have to accept the license."
 msgstr ""
-"未统一许可证协议。\n"
-"要使用此软件，您必须接受此协议。"
+"Ліцэнзійнае пагадненне не было ўхвалена.\n"
+"Каб выкарыстоўваць гэтае праграмнае забеспячэнне, неабходна ўхваліць "
+"ліцэнзійнае пагадненне."
 
 #: PkStrings.cpp:618
 #, kde-format
@@ -1332,8 +1344,9 @@ msgid ""
 "Two packages provide the same file.\n"
 "This is usually due to mixing packages for different software origins."
 msgstr ""
-"有两个软件包提供了相同的文件。\n"
-"这通常是由于在不同的软件来源之间混用软件包造成的。"
+"Два пакункі пастаўляюць адзін і той жа файл.\n"
+"Звычайна гэта адбываецца праз змешванне пакункаў для праграмнага "
+"забеспячэння з розных крыніц."
 
 #: PkStrings.cpp:621
 #, kde-format
@@ -1341,8 +1354,9 @@ msgid ""
 "Multiple packages exist that are not compatible with each other.\n"
 "This is usually due to mixing packages from different software origins."
 msgstr ""
-"多个现存的软件包互不兼容。\n"
-"这通常是由于在不同的软件来源之间混用软件包造成的。"
+"У наяўнасці некалькі пакункаў, якія не сумяшчаюцца адзін з адным.\n"
+"Звычайна гэта адбываецца праз змешванне пакункаў з розных крыніц праграмнага "
+"забеспячэння."
 
 #: PkStrings.cpp:624
 #, kde-format
@@ -1350,8 +1364,9 @@ msgid ""
 "There was a (possibly temporary) problem connecting to a software origins.\n"
 "Please check the detailed error for further details."
 msgstr ""
-"连接软件来源时遇到问题 (可能只是暂时故障)。\n"
-"请检查错误信息以了解更多详情。"
+"Паўстала праблема (магчыма, часовая) з падлучэннем да крыніцы праграмнага "
+"забеспячэння.\n"
+"Глядзіце падрабязныя звесткі пра памылку."
 
 #: PkStrings.cpp:627
 #, kde-format
@@ -1359,8 +1374,9 @@ msgid ""
 "Failed to initialize packaging backend.\n"
 "This may occur if other packaging tools are being used simultaneously."
 msgstr ""
-"初始化软件包管理后端失败。\n"
-"这可能是由于其他软件包管理器正在被同时使用。"
+"Не ўдалося ініцыялізаваць сістэму кіравання пакункамі.\n"
+"Так можа адбывацца, калі адначасова выкарыстоўваюцца іншыя падобныя "
+"інструменты."
 
 #: PkStrings.cpp:630
 #, kde-format
@@ -1368,8 +1384,8 @@ msgid ""
 "Failed to close down the backend instance.\n"
 "This error can normally be ignored."
 msgstr ""
-"无法关闭后端实例。\n"
-"通常可以忽略此错误。"
+"Не ўдалося закрыць асобнік рухавіка.\n"
+"Гэтую памылку звычайна можна ігнараваць."
 
 #: PkStrings.cpp:633
 #, kde-format
@@ -1377,18 +1393,18 @@ msgid ""
 "Cannot get the exclusive lock on the packaging backend.\n"
 "Please close any other legacy packaging tools that may be open."
 msgstr ""
-"无法获得软件包管理后端的独占锁。\n"
-"请关闭所有其他可能打开着的旧式软件包管理器。"
+"Не ўдалося выканаць блакаванне ў сістэме кіравання пакункамі.\n"
+"Закрыйце ўсе іншыя падобныя інструменты, якія могуць быць адкрытыя."
 
 #: PkStrings.cpp:636
 #, kde-format
 msgid "None of the selected packages could be updated."
-msgstr "选中的软件包没有任何可被更新。"
+msgstr "Ніводны з абраных пакункаў не можа быць абноўлены."
 
 #: PkStrings.cpp:638
 #, kde-format
 msgid "The repository configuration could not be modified."
-msgstr "无法修改仓库配置。"
+msgstr "Не ўдалося змяніць канфігурацыю рэпазіторыя."
 
 #: PkStrings.cpp:640
 #, kde-format
@@ -1396,13 +1412,13 @@ msgid ""
 "Installing the local file failed.\n"
 "More information is available in the detailed report."
 msgstr ""
-"安装本地文件失败。\n"
-"更多信息请见详细报告。"
+"Не ўдалося ўсталяваць лакальны файл.\n"
+"Больш падрабязную інфармацыю можна знайсці ў падрабязнай справаздачы."
 
 #: PkStrings.cpp:643
 #, kde-format
 msgid "The package signature could not be verified."
-msgstr "无法验证软件包签名。"
+msgstr "Не ўдалося праверыць подпіс пакунка."
 
 #: PkStrings.cpp:645
 #, kde-format
@@ -1410,13 +1426,13 @@ msgid ""
 "The package signature was missing and this package is untrusted.\n"
 "This package was not signed with a GPG key when created."
 msgstr ""
-"软件包签名丢失切软件包不被信任。\n"
-"此软件包在创建的时候未用 GPG 密钥签名。"
+"Подпіс пакунка адсутнічае, ён ненадзейны.\n"
+"Пры стварэнні гэты пакунак не быў падпісаны ключом GPG."
 
 #: PkStrings.cpp:648
 #, kde-format
 msgid "Repository configuration was invalid and could not be read."
-msgstr "仓库配置无效且无法读取。"
+msgstr "Канфігурацыя рэпазіторыя хібная, яе нельга прачытаць."
 
 #: PkStrings.cpp:650
 #, kde-format
@@ -1424,27 +1440,29 @@ msgid ""
 "The package you are attempting to install is not valid.\n"
 "The package file could be corrupt, or not a proper package."
 msgstr ""
-"您正在尝试安装的软件包无效。\n"
-"软件包文件可能损坏，或者不是正确的软件包。"
+"Пакунак, які вы спрабуеце ўсталяваць, непрыдатны.\n"
+"Файл пакунка можа быць пашкоджаны або не быць пакункам."
 
 #: PkStrings.cpp:653
 #, kde-format
 msgid ""
 "Installation of this package was prevented by your packaging system's "
 "configuration."
-msgstr "您的软件包管理系统配置阻止了此软件包的安装。"
+msgstr ""
+"Ваша канфігурацыя сістэмы кіравання пакункамі прадухіліла ўсталяванне гэтага "
+"пакунка."
 
 #: PkStrings.cpp:655
 #, kde-format
 msgid ""
 "The package that was downloaded is corrupt and needs to be downloaded again."
-msgstr "下载的软件包已损坏，需要重新下载。"
+msgstr "Спампаваны пакунак пашкоджаны, яго трэба спампаваць зноў."
 
 #: PkStrings.cpp:657
 #, kde-format
 msgid ""
 "All of the packages selected for install are already installed on the system."
-msgstr "所有选中的软件包已经被安装到系统。"
+msgstr "Усе абраныя для ўсталявання пакункі ўжо ўсталяваныя ў сістэме."
 
 #: PkStrings.cpp:659
 #, kde-format
@@ -1452,8 +1470,8 @@ msgid ""
 "The specified file could not be found on the system.\n"
 "Check that the file still exists and has not been deleted."
 msgstr ""
-"指定的文件无法在系统上找到。\n"
-"请确认此文件仍然存在且未被删除。"
+"Не ўдалося знайсці вызначаны файл у сістэме.\n"
+"Пераканайцеся, што файл усё яшчэ існуе і не быў выдалены."
 
 #: PkStrings.cpp:662
 #, kde-format
@@ -1461,8 +1479,9 @@ msgid ""
 "Required data could not be found on any of the configured software origins.\n"
 "There were no more download mirrors that could be tried."
 msgstr ""
-"所需的数据在任何已配置的软件来源中均不存在。\n"
-"没有更多软件来源的镜像可供尝试。"
+"Не ўдалося знайсці неабходныя даныя ні ў адной з наладжаных крыніц "
+"праграмнага забеспячэння.\n"
+"Больш не было люстэркаў, з якіх можна было паспрабаваць спампаваць."
 
 #: PkStrings.cpp:665
 #, kde-format
@@ -1471,14 +1490,16 @@ msgid ""
 "origins.\n"
 "The list of distribution upgrades will be unavailable."
 msgstr ""
-"所需的更新数据在任何已配置的软件来源中均不存在。\n"
-"发行版更新列表将不可用。"
+"Не ўдалося знайсці неабходныя даныя ні ў адной з наладжаных крыніц "
+"праграмнага забеспячэння.\n"
+"Спіс абнаўленняў дыстрыбутыва будзе недаступны."
 
 #: PkStrings.cpp:668
 #, kde-format
 msgid ""
 "The package that is trying to be installed is incompatible with this system."
-msgstr "尝试安装的软件包与此系统不兼容。"
+msgstr ""
+"Выконваецца спроба ўсталяваць пакунак, які несумяшчальны з гэтай сістэмай."
 
 #: PkStrings.cpp:670
 #, kde-format
@@ -1486,13 +1507,13 @@ msgid ""
 "There is insufficient space on the device.\n"
 "Free some space on the system disk to perform this operation."
 msgstr ""
-"存储设备的可用空间不足。\n"
-"请腾出一些空间来完成操作。"
+"На прыладзе недастаткова месца.\n"
+"Каб выканаць гэтую аперацыю, вызваліце ​​месца на сістэмным дыску."
 
 #: PkStrings.cpp:673
 #, kde-format
 msgid "Additional media is required to complete the transaction."
-msgstr "需要额外介质来完成此操作。"
+msgstr "Для завяршэння трансакцыі неабходны дадатковы носьбіт."
 
 #: PkStrings.cpp:675
 #, kde-format
@@ -1500,8 +1521,8 @@ msgid ""
 "You have failed to provide correct authentication.\n"
 "Please check any passwords or account settings."
 msgstr ""
-"您未能提供正确的认证信息。\n"
-"请检查密码或账户设置。"
+"Вам не ўдалося выканаць правільную аўтэнтыфікацыю.\n"
+"Калі ласка, праверце ўсе паролі або налады акаўнта."
 
 #: PkStrings.cpp:678
 #, kde-format
@@ -1510,33 +1531,34 @@ msgid ""
 "It could have already been installed or no longer available on the remote "
 "server."
 msgstr ""
-"无法找到指定的更新。\n"
-"该更新可能已经安装或已经被从服务器上移除。"
+"Вызначанае абнаўленне не знойдзена.\n"
+"Яно ўжо магло быць ўсталявана або ўжо недаступна на адлеглым серверы."
 
 #: PkStrings.cpp:681
 #, kde-format
 msgid "The package could not be installed from untrusted origin."
-msgstr "无法从不信任的源安装软件包。"
+msgstr "Пакунак не можа быць усталяваны з ненадзейнай крыніцы."
 
 #: PkStrings.cpp:683
 #, kde-format
 msgid "The package could not be updated from untrusted origin."
-msgstr "无法从不信任的源更新软件包。"
+msgstr "Пакунак не можа быць абноўлены з ненадзейнай крыніцы."
 
 #: PkStrings.cpp:685
 #, kde-format
 msgid "The file list is not available for this package."
-msgstr "该软件包的文件列表不可用"
+msgstr "Спіс файлаў недаступны для гэтага пакунка."
 
 #: PkStrings.cpp:687
 #, kde-format
 msgid "The information about what requires this package could not be obtained."
-msgstr "无法获取软件包的被依赖信息。"
+msgstr ""
+"Не ўдалося атрымаць інфармацыю пра тое, для чаго неабходны гэты пакунак."
 
 #: PkStrings.cpp:689
 #, kde-format
 msgid "The specified software origin could not be disabled."
-msgstr "指定的软件来源不可禁用。"
+msgstr "Вызначаная крыніца праграмнага забеспячэння не можа быць адключаная."
 
 #: PkStrings.cpp:691
 #, kde-format
@@ -1544,8 +1566,9 @@ msgid ""
 "The download could not be done automatically and should be done manually.\n"
 "More information is available in the detailed report."
 msgstr ""
-"下载无法自动完成，需要手动操作。\n"
-"更多信息请见详细报告。"
+"Спампоўванне не можа быць скончана аўтаматычна, яго трэба завяршыць "
+"уласнаручна.\n"
+"Больш падрабязную інфармацыю можна знайсці ў падрабязнай справаздачы."
 
 #: PkStrings.cpp:694
 #, kde-format
@@ -1553,8 +1576,8 @@ msgid ""
 "One of the selected packages failed to configure correctly.\n"
 "More information is available in the detailed report."
 msgstr ""
-"选中的软件包之一无法正确配置。\n"
-"更多信息请见详细报告。"
+"Не ўдалося правільна наладзіць адзін з абраных пакункаў.\n"
+"Больш падрабязную інфармацыю можна знайсці ў падрабязнай справаздачы."
 
 #: PkStrings.cpp:697
 #, kde-format
@@ -1562,8 +1585,8 @@ msgid ""
 "One of the selected packages failed to build correctly.\n"
 "More information is available in the detailed report."
 msgstr ""
-"选中的软件包之一无法被正确构建。\n"
-"更多信息请见详细报告。"
+"Не ўдалося правільна сабраць адзін з абраных пакункаў.\n"
+"Больш падрабязную інфармацыю можна знайсці ў падрабязнай справаздачы."
 
 #: PkStrings.cpp:700
 #, kde-format
@@ -1571,8 +1594,8 @@ msgid ""
 "One of the selected packages failed to install correctly.\n"
 "More information is available in the detailed report."
 msgstr ""
-"选中的软件包之一无法被正确安装。\n"
-"更多信息请见详细报告。"
+"Не ўдалося правільна ўсталяваць адзін з абраных пакункаў.\n"
+"Больш падрабязную інфармацыю можна знайсці ў падрабязнай справаздачы."
 
 #: PkStrings.cpp:703
 #, kde-format
@@ -1580,8 +1603,8 @@ msgid ""
 "One of the selected packages failed to be removed correctly.\n"
 "More information is available in the detailed report."
 msgstr ""
-"选中的软件包之一无法被正确移除。\n"
-"更多信息请见详细报告。"
+"Не ўдалося правільна выдаліць адзін з абраных пакункаў.\n"
+"Больш падрабязную інфармацыю можна знайсці ў падрабязнай справаздачы."
 
 #: PkStrings.cpp:706
 #, kde-format
@@ -1589,45 +1612,48 @@ msgid ""
 "A program is running that has to be closed before the update can proceed.\n"
 "More information is available in the detailed report."
 msgstr ""
-"一个正在运行的程序必须先被关闭之后才能更新。\n"
-"更多信息请见详细报告。"
+"Запушчана праграма, якую трэба закрыць, перш чым можна будзе працягнуць "
+"абнаўленне.\n"
+"Больш падрабязную інфармацыю можна знайсці ў падрабязнай справаздачы."
 
 #: PkStrings.cpp:709
 #, kde-format
 msgid "The package database was changed while the request was running."
-msgstr "请求运行时软件包数据库被更改。"
+msgstr "Падчас выканання запыту база даных пакунка была змененая."
 
 #: PkStrings.cpp:711
 #, kde-format
 msgid "The virtual provide type is not supported by this system."
-msgstr "此虚拟包提供类型不受此系统支持。"
+msgstr "Віртуальны тып пастаўкі не падтрымліваецца ў гэтай сістэме."
 
 #: PkStrings.cpp:713
 #, kde-format
 msgid "The install root is invalid. Please contact your administrator."
-msgstr "安装根目录无效。请联系您的系统管理员。"
+msgstr "Хібнае ўсталяванне root. Звяжыцеся са сваім адміністратарам."
 
 #: PkStrings.cpp:715
 #, kde-format
 msgid "The list of software could not be downloaded."
-msgstr "软件列表无法下载。"
+msgstr "Не ўдалося спампаваць спіс праграмнага забеспячэння."
 
 #: PkStrings.cpp:717
 #, kde-format
 msgid ""
 "The transaction has been cancelled and will be retried when the system is "
 "idle."
-msgstr "操作已被取消，将在系统空闲时重试。"
+msgstr ""
+"Трансакцыя была скасаваная. Спроба будзе паўторана, калі сістэма будзе "
+"бяздзейнічаць."
 
 #: PkStrings.cpp:719
 #, kde-format
 msgid "A previous package management transaction was interrupted."
-msgstr "之前的软件包管理操作被中断。"
+msgstr "Папярэдняя трансакцыя кіравання пакункам была перарваная."
 
 #: PkStrings.cpp:721
 #, kde-format
 msgid "A package manager lock is required."
-msgstr "需要软件包管理器锁定。"
+msgstr "Патрабуецца блакаванне кіраўніка пакункаў."
 
 #: PkStrings.cpp:723
 #, kde-format
@@ -1635,581 +1661,609 @@ msgid ""
 "Unknown error, please report a bug.\n"
 "More information is available in the detailed report."
 msgstr ""
-"未知错误，请报告程序缺陷。\n"
-"更多信息请见详细报告。"
+"Невядомая памылка, адпраўце справаздачу пра хібу.\n"
+"Больш падрабязную інфармацыю можна знайсці ў падрабязнай справаздачы."
 
 #: PkStrings.cpp:734
 #, kde-format
 msgctxt "The group type"
 msgid "Accessibility"
-msgstr "辅助"
+msgstr "Адмысловыя магчымасці"
 
 #: PkStrings.cpp:736
 #, kde-format
 msgctxt "The group type"
 msgid "Accessories"
-msgstr "附件"
+msgstr "Інструменты"
 
 #: PkStrings.cpp:738
 #, kde-format
 msgctxt "The group type"
 msgid "Education"
-msgstr "教育"
+msgstr "Адукацыя"
 
 #: PkStrings.cpp:740
 #, kde-format
 msgctxt "The group type"
 msgid "Games"
-msgstr "游戏"
+msgstr "Гульні"
 
 #: PkStrings.cpp:742
 #, kde-format
 msgctxt "The group type"
 msgid "Graphics"
-msgstr "图像"
+msgstr "Графіка"
 
 #: PkStrings.cpp:744
 #, kde-format
 msgctxt "The group type"
 msgid "Internet"
-msgstr "互联网"
+msgstr "Інтэрнэт"
 
 #: PkStrings.cpp:746
 #, kde-format
 msgctxt "The group type"
 msgid "Office"
-msgstr "办公"
+msgstr "Офіс"
 
 #: PkStrings.cpp:748
 #, kde-format
 msgctxt "The group type"
 msgid "Others"
-msgstr "其他"
+msgstr "Іншае"
 
 #: PkStrings.cpp:750
 #, kde-format
 msgctxt "The group type"
 msgid "Development"
-msgstr "开发"
+msgstr "Распрацоўванне"
 
 #: PkStrings.cpp:752
 #, kde-format
 msgctxt "The group type"
 msgid "Multimedia"
-msgstr "多媒体"
+msgstr "Мультымедыя"
 
 #: PkStrings.cpp:754
 #, kde-format
 msgctxt "The group type"
 msgid "System"
-msgstr "系统"
+msgstr "Сістэма"
 
 #: PkStrings.cpp:756
 #, kde-format
 msgctxt "The group type"
 msgid "GNOME desktop"
-msgstr "GNOME 桌面"
+msgstr "Працоўнае асяроддзе GNOME"
 
 #: PkStrings.cpp:758
 #, kde-format
 msgctxt "The group type"
 msgid "KDE desktop"
-msgstr "KDE 桌面"
+msgstr "Працоўнае асяроддзе KDE"
 
 #: PkStrings.cpp:760
 #, kde-format
 msgctxt "The group type"
 msgid "XFCE desktop"
-msgstr "XFCE 桌面"
+msgstr "Працоўнае асяроддзе XFCE"
 
 #: PkStrings.cpp:762
 #, kde-format
 msgctxt "The group type"
 msgid "Other desktops"
-msgstr "其他桌面"
+msgstr "Іншыя працоўныя асяроддзі"
 
 #: PkStrings.cpp:764
 #, kde-format
 msgctxt "The group type"
 msgid "Publishing"
-msgstr "出版"
+msgstr "Выдавецкая справа"
 
 #: PkStrings.cpp:766
 #, kde-format
 msgctxt "The group type"
 msgid "Servers"
-msgstr "服务器"
+msgstr "Серверы"
 
 #: PkStrings.cpp:768
 #, kde-format
 msgctxt "The group type"
 msgid "Fonts"
-msgstr "字体"
+msgstr "Шрыфты"
 
 #: PkStrings.cpp:770
 #, kde-format
 msgctxt "The group type"
 msgid "Admin tools"
-msgstr "系统工具"
+msgstr "Інструменты адміністратара"
 
 #: PkStrings.cpp:772
 #, kde-format
 msgctxt "The group type"
 msgid "Legacy"
-msgstr "继承"
+msgstr "Састарэлыя"
 
 #: PkStrings.cpp:774
 #, kde-format
 msgctxt "The group type"
 msgid "Localization"
-msgstr "本地化"
+msgstr "Лакалізацыя"
 
 #: PkStrings.cpp:776
 #, kde-format
 msgctxt "The group type"
 msgid "Virtualization"
-msgstr "虚拟化"
+msgstr "Віртуалізацыя"
 
 #: PkStrings.cpp:778
 #, kde-format
 msgctxt "The group type"
 msgid "Security"
-msgstr "安全"
+msgstr "Бяспека"
 
 #: PkStrings.cpp:780
 #, kde-format
 msgctxt "The group type"
 msgid "Power management"
-msgstr "电源管理"
+msgstr "Кіраванне сілкаваннем"
 
 #: PkStrings.cpp:782
 #, kde-format
 msgctxt "The group type"
 msgid "Communication"
-msgstr "通讯"
+msgstr "Камунікацыя"
 
 #: PkStrings.cpp:784
 #, kde-format
 msgctxt "The group type"
 msgid "Network"
-msgstr "网络"
+msgstr "Сетка"
 
 #: PkStrings.cpp:786
 #, kde-format
 msgctxt "The group type"
 msgid "Maps"
-msgstr "地图"
+msgstr "Мапы"
 
 #: PkStrings.cpp:788
 #, kde-format
 msgctxt "The group type"
 msgid "Software sources"
-msgstr "软件来源"
+msgstr "Крыніцы праграмнага забеспячэння"
 
 #: PkStrings.cpp:790
 #, kde-format
 msgctxt "The group type"
 msgid "Science"
-msgstr "科学"
+msgstr "Навука"
 
 #: PkStrings.cpp:792
 #, kde-format
 msgctxt "The group type"
 msgid "Documentation"
-msgstr "文档"
+msgstr "Дакументацыя"
 
 #: PkStrings.cpp:794
 #, kde-format
 msgctxt "The group type"
 msgid "Electronics"
-msgstr "电子学"
+msgstr "Электроніка"
 
 #: PkStrings.cpp:796
 #, kde-format
 msgctxt "The group type"
 msgid "Package collections"
-msgstr "软件包集合"
+msgstr "Калекцыі пакункаў"
 
 #: PkStrings.cpp:798
 #, kde-format
 msgctxt "The group type"
 msgid "Vendor"
-msgstr "供应商"
+msgstr "Вытворца"
 
 #: PkStrings.cpp:800
 #, kde-format
 msgctxt "The group type"
 msgid "Newest packages"
-msgstr "最新的软件包"
+msgstr "Найноўшыя пакункі"
 
 #: PkStrings.cpp:802
 #, kde-format
 msgctxt "The group type"
 msgid "Unknown group"
-msgstr "未知分组"
+msgstr "Невядомая група"
 
 #: PkStrings.cpp:813
 #, kde-format
 msgctxt "The type of update"
 msgid "Trivial update"
-msgstr "次要更新"
+msgstr "Нязначнае абнаўленне"
 
 #: PkStrings.cpp:815
 #, kde-format
 msgctxt "The type of update"
 msgid "Normal update"
-msgstr "常规更新"
+msgstr "Звычайнае абнаўленне"
 
 #: PkStrings.cpp:817
 #, kde-format
 msgctxt "The type of update"
 msgid "Important update"
-msgstr "重要更新"
+msgstr "Важнае абнаўленне"
 
 #: PkStrings.cpp:819
 #, kde-format
 msgctxt "The type of update"
 msgid "Security update"
-msgstr "安全更新"
+msgstr "Абнаўленне бяспекі"
 
 #: PkStrings.cpp:821
 #, kde-format
 msgctxt "The type of update"
 msgid "Bug fix update"
-msgstr "错误修复更新"
+msgstr "Выпраўленне хібаў"
 
 #: PkStrings.cpp:823
 #, kde-format
 msgctxt "The type of update"
 msgid "Enhancement update"
-msgstr "增强更新"
+msgstr "Паляпшэнне"
 
 #: PkStrings.cpp:825
 #, kde-format
 msgctxt "The type of update"
 msgid "Blocked update"
-msgstr "已屏蔽的更新"
+msgstr "Заблакаванае абнаўленне"
 
 #: PkStrings.cpp:828
 #, kde-format
 msgctxt "The type of update"
 msgid "Installed"
-msgstr "已安装"
+msgstr "Усталявана"
 
 #: PkStrings.cpp:831
 #, kde-format
 msgctxt "The type of update"
 msgid "Available"
-msgstr "可用"
+msgstr "Даступна"
 
 #: PkStrings.cpp:833
 #, kde-format
 msgctxt "The type of update"
 msgid "Unknown update"
-msgstr "未知更新"
+msgstr "Невядомае абнаўленне"
 
 #: PkStrings.cpp:844
 #, kde-format
 msgid "No Updates Available"
-msgstr "无可用更新"
+msgstr "Няма абнаўленняў"
 
 #: PkStrings.cpp:847
 #, kde-format
 msgctxt "Some updates were selected on the view"
 msgid "1 Update Selected"
 msgid_plural "%1 Updates Selected"
-msgstr[0] "已选择 %1 个更新"
+msgstr[0] "Абрана %1 абнаўленне"
+msgstr[1] "Абрана %1 абнаўленні"
+msgstr[2] "Абрана %1 абнаўленняў"
+msgstr[3] "Абрана %1 абнаўленні"
 
 #: PkStrings.cpp:851
 #, kde-format
 msgctxt "Some updates are being shown on the screen"
 msgid "1 Update"
 msgid_plural "%1 Updates"
-msgstr[0] "%1 个更新"
+msgstr[0] "%1 абнаўленне"
+msgstr[1] "%1 абнаўленні"
+msgstr[2] "%1 абнаўленняў"
+msgstr[3] "%1 абнаўленні"
 
 #: PkStrings.cpp:854
 #, kde-format
 msgctxt "Type of update, in the case it's just an update"
 msgid "%1, %2"
-msgstr "%1，%2"
+msgstr "%1, %2"
 
 #: PkStrings.cpp:855
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Update"
 msgid_plural "%1 Updates"
-msgstr[0] "%1 个更新"
+msgstr[0] "%1 абнаўленне"
+msgstr[1] "%1 абнаўленні"
+msgstr[2] "%1 абнаўленняў"
+msgstr[3] "%1 абнаўленні"
 
 #: PkStrings.cpp:856
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Selected"
 msgid_plural "%1 Selected"
-msgstr[0] "已选 %1 个"
+msgstr[0] "%1 абрана"
+msgstr[1] "%1 абрана"
+msgstr[2] "%1 абрана"
+msgstr[3] "%1 абрана"
 
 #: PkStrings.cpp:860
 #, kde-format
 msgid "No Packages"
-msgstr "无软件包"
+msgstr "Няма пакункаў"
 
 #: PkStrings.cpp:862
 #, kde-format
 msgid "1 Package"
 msgid_plural "%1 Packages"
-msgstr[0] "%1 软件包"
+msgstr[0] "%1 пакунак"
+msgstr[1] "%1 пакункі"
+msgstr[2] "%1 пакункаў"
+msgstr[3] "%1 пакункі"
 
 #: PkStrings.cpp:870
 #, kde-format
 msgid "No restart is necessary"
-msgstr "不需要重启"
+msgstr "Не трэба перазапускаць"
 
 #: PkStrings.cpp:872
 #, kde-format
 msgid "You will be required to restart this application"
-msgstr "您需要重启应用程序"
+msgstr "Вам трэба будзе перазапусціць гэтую праграму"
 
 #: PkStrings.cpp:874
 #, kde-format
 msgid "You will be required to log out and back in"
-msgstr "您需要注销并再次登录"
+msgstr "Вам трэба будзе выйсці з сістэмы і ўвайсці зноў"
 
 #: PkStrings.cpp:876
 #, kde-format
 msgid "A restart will be required"
-msgstr "需要重启"
+msgstr "Трэба будзе перазапусціць"
 
 #: PkStrings.cpp:878
 #, kde-format
 msgid "You will be required to log out and back in due to a security update."
-msgstr "由于进行了安全更新，您需要注销并再次登录。"
+msgstr ""
+"Вам трэба будзе выйсці з сістэмы і ўвайсці зноў па прычыне ўсталявання "
+"абнаўлення бяспекі."
 
 #: PkStrings.cpp:880
 #, kde-format
 msgid "A restart will be required due to a security update."
-msgstr "由于进行了安全更新，需要重启。"
+msgstr ""
+"Вам трэба будзе перазапусціць камп'ютар па прычыне ўсталявання абнаўлення "
+"бяспекі."
 
 #: PkStrings.cpp:893
 #, kde-format
 msgid "No restart is required"
-msgstr "不需要重启"
+msgstr "Не трэба перазапускаць"
 
 #: PkStrings.cpp:895
 #, kde-format
 msgid "A restart is required"
-msgstr "需要重启"
+msgstr "Патрабуецца перазапуск"
 
 #: PkStrings.cpp:897
 #, kde-format
 msgid "You need to log out and log back in"
-msgstr "您需要注销并再次登录"
+msgstr "Вам трэба выйсці з сістэмы і ўвайсці зноў"
 
 #: PkStrings.cpp:899
 #, kde-format
 msgid "You need to restart the application"
-msgstr "您需要重启应用程序"
+msgstr "Вам трэба перазапусціць праграму"
 
 #: PkStrings.cpp:901
 #, kde-format
 msgid "You need to log out and log back in to remain secure."
-msgstr "为保证安全，您需要注销并再次登录。"
+msgstr "Каб заставацца ў бяспецы, вам трэба выйсці з сістэмы і ўвайсці зноў."
 
 #: PkStrings.cpp:903
 #, kde-format
 msgid "A restart is required to remain secure."
-msgstr "为保证安全，需要重新启动。"
+msgstr "Каб заставацца ў бяспецы, трэба перазапусціць камп'ютар."
 
 #: PkStrings.cpp:916
 #, kde-format
 msgid "Stable"
-msgstr "稳定"
+msgstr "Стабільная версія"
 
 #: PkStrings.cpp:918
 #, kde-format
 msgid "Unstable"
-msgstr "不稳定"
+msgstr "Нестабільная версія"
 
 #: PkStrings.cpp:920
 #, kde-format
 msgid "Testing"
-msgstr "测试"
+msgstr "Тэставая версія"
 
 #: PkStrings.cpp:933
 #, kde-format
 msgid "Please insert the CD labeled '%1', and press continue."
-msgstr "请插入标签为“%1”的 CD，并按继续。"
+msgstr "Устаўце CD з пазнакай \"%1\" і націсніце \"Працягнуць\"."
 
 #: PkStrings.cpp:935
 #, kde-format
 msgid "Please insert the DVD labeled '%1', and press continue."
-msgstr "请插入标签为“%1”的 DVD，并按继续。"
+msgstr "Устаўце DVD з пазнакай \"%1\" і націсніце \"Працягнуць\"."
 
 #: PkStrings.cpp:937
 #, kde-format
 msgid "Please insert the disc labeled '%1', and press continue."
-msgstr "请插入标签为“%1”的盘片，并按继续。"
+msgstr "Устаўце дыск з пазнакай \"%1\" і націсніце \"Працягнуць\"."
 
 #: PkStrings.cpp:939 PkStrings.cpp:942
 #, kde-format
 msgid "Please insert the medium labeled '%1', and press continue."
-msgstr "请插入标签为“%1”的媒体，并按继续。"
+msgstr "Устаўце носьбіт з пазнакай \"%1\" і націсніце \"Працягнуць\"."
 
 #: PkStrings.cpp:950
 #, kde-format
 msgid "You do not have the necessary privileges to perform this action."
-msgstr "您没有进行此操作的必需的权限。"
+msgstr "Вы не маеце правоў на выкананне гэтага дзеяння."
 
 #: PkStrings.cpp:952
 #, kde-format
 msgid "Could not get a transaction id from packagekitd."
-msgstr "无法从 packagekitd 获得交易 ID。"
+msgstr "Не ўдалося атрымаць ідэнтыфікатар трансакцыі з packagekitd."
 
 #: PkStrings.cpp:954
 #, kde-format
 msgid "Cannot connect to this transaction id."
-msgstr "无法连接到交易 ID。"
+msgstr "Не ўдалося падлучыцца да трансакцыі з гэтым ідэнтыфікатарам."
 
 #: PkStrings.cpp:956
 #, kde-format
 msgid "This action is unknown."
-msgstr "此操作未知。"
+msgstr "Невядомае дзеянне."
 
 #: PkStrings.cpp:958
 #, kde-format
 msgid "The packagekitd service could not be started."
-msgstr "无法启动 packagekitd 服务。"
+msgstr "Не ўдалося запусціць службу packagekitd."
 
 #: PkStrings.cpp:960
 #, kde-format
 msgid "The query is not valid."
-msgstr "查询无效。"
+msgstr "Запыт несапраўдны."
 
 #: PkStrings.cpp:962
 #, kde-format
 msgid "The file is not valid."
-msgstr "文件无效。"
+msgstr "Файл несапраўдны."
 
 #: PkStrings.cpp:964
 #, kde-format
 msgid "This function is not yet supported."
-msgstr "尚未支持此功能。"
+msgstr "Гэтая функцыя пакуль што не падтрымліваецца."
 
 #: PkStrings.cpp:966
 #, kde-format
 msgid "Could not talk to packagekitd."
-msgstr "无法与 packagekitd 对话。"
+msgstr "Не ўдалося звязацца з packagekitd."
 
 #: PkStrings.cpp:968
 #, kde-format
 msgid "Error talking to packagekitd."
-msgstr "与 packagekitd 对话遇到错误。"
+msgstr "Падчас сувязі з packagekitd адбылася памылка."
 
 #: PkStrings.cpp:971 PkStrings.cpp:974
 #, kde-format
 msgid "An unknown error happened."
-msgstr "发生未知错误。"
+msgstr "Адбылася невядомая памылка."
 
 #: PkStrings.cpp:988 pkupdates.cpp:170
 #, kde-format
 msgid "Your system is up to date"
-msgstr "系统已为最新"
+msgstr "Сістэма абноўленая"
 
 #: PkStrings.cpp:990
 #, kde-format
 msgid "You have no updates"
-msgstr "没有更新"
+msgstr "Няма абнаўленняў"
 
 #: PkStrings.cpp:992
 #, kde-format
 msgid "Last check for updates was more than a month ago"
-msgstr "距离上次检查更新时间已经超过一个月"
+msgstr "Апошні раз наяўнасць абнаўленняў правяралася больш за месяц таму"
 
 #: PkStrings.cpp:1000
 #, kde-format
 msgid "Verified %1 ago"
-msgstr "%1前验证"
+msgstr "Праверана %1 таму"
 
 #: PkStrings.cpp:1002
 #, kde-format
 msgid "It's strongly recommended that you check for new updates now"
-msgstr "强烈建议现在就检查是否有更新"
+msgstr "Вельмі рэкамендуецца праверыць на наяўнасць новых абнаўленняў зараз"
 
 #: pkupdates.cpp:54
 #, kde-format
 msgid "Idle"
-msgstr "空闲"
+msgstr "Бяздзейнічае"
 
 #: pkupdates.cpp:140
 #, kde-format
 msgid "Checking updates"
-msgstr "正在检查更新"
+msgstr "Правяранне наяўнасці абнаўленняў"
 
 #: pkupdates.cpp:142
 #, kde-format
 msgid "Getting updates"
-msgstr "正在获取更新"
+msgstr "Атрыманне абнаўленняў"
 
 #: pkupdates.cpp:144
 #, kde-format
 msgid "Installing updates"
-msgstr "正在安装更新"
+msgstr "Усталяванне абнаўленняў"
 
 #: pkupdates.cpp:146
 #, kde-format
 msgid "Working"
-msgstr "正在工作中"
+msgstr "Працуе"
 
 #: pkupdates.cpp:149 pkupdates.cpp:439
 #, kde-format
 msgid "You have 1 new update"
 msgid_plural "You have %1 new updates"
-msgstr[0] "您有 %1 个新的更新"
+msgstr[0] "Ёсць %1 абнаўленне"
+msgstr[1] "Ёсць %1 абнаўленні"
+msgstr[2] "Ёсць %1 абнаўленняў"
+msgstr[3] "Ёсць %1 абнаўленні"
 
 #: pkupdates.cpp:151
 #, kde-format
 msgid "1 security update"
 msgid_plural "%1 security updates"
-msgstr[0] "%1 个安全更新"
+msgstr[0] "%1 абнаўленне бяспекі"
+msgstr[1] "%1 абнаўленні бяспекі"
+msgstr[2] "%1 абнаўленняў бяспекі"
+msgstr[3] "%1 абнаўленні бяспекі"
 
 #: pkupdates.cpp:153
 #, kde-format
 msgid "1 important update"
 msgid_plural "%1 important updates"
-msgstr[0] "%1 个重要更新"
+msgstr[0] "%1 важнае абнаўленне"
+msgstr[1] "%1 важныя абнаўленні"
+msgstr[2] "%1 важных абнаўленняў"
+msgstr[3] "%1 важныя абнаўленні"
 
 #: pkupdates.cpp:158
 #, kde-format
 msgid " and "
-msgstr "和"
+msgstr " і "
 
 #: pkupdates.cpp:158
 #, kde-format
 msgid "(including %1)"
-msgstr "(包括 %1)"
+msgstr "(уключаючы %1)"
 
 #: pkupdates.cpp:160
 #, kde-format
 msgid "Your system is offline"
-msgstr "系统出于离线状态"
+msgstr "Ваша сістэма па-за сецівам"
 
 #: pkupdates.cpp:165
 #, kde-format
 msgid "Not checked for updates yet"
-msgstr "尚未检查更新"
+msgstr "Яшчэ не правяралася на наяўнасць абнаўленняў"
 
 #: pkupdates.cpp:168
 #, kde-format
 msgid "Checking for updates failed"
-msgstr "检查更新失败"
+msgstr "Не ўдалося праверыць на наяўнасць абнаўленняў"
 
 #: pkupdates.cpp:241
 #, kde-format
 msgid "Last check: %1 ago"
-msgstr "最后检查于：%1前"
+msgstr "Апошні раз правяралася: %1 таму"
 
 #: pkupdates.cpp:243
 #, kde-format
 msgid "Last check: never"
-msgstr "最后检查于：从未"
+msgstr "Апошні раз правяралася: ніколі"
 
 #: pkupdates.cpp:385
 #, kde-format
@@ -2221,44 +2275,47 @@ msgstr "%1 %2 (%3%)"
 #, kde-format
 msgctxt "1 installation status, 2 pkg name"
 msgid "%1 %2"
-msgstr "%1 %2"
+msgstr "%1%2"
 
 #: pkupdates.cpp:474
 #, kde-format
 msgid "Updates Installed"
-msgstr "更新已安装"
+msgstr "Абнаўленні ўсталяваныя"
 
 #: pkupdates.cpp:475
 #, kde-format
 msgid "Successfully updated %1 package"
 msgid_plural "Successfully updated %1 packages"
-msgstr[0] "成功更新了 %1 个软件包"
+msgstr[0] "Паспяхова ўсталяваны %1 пакунак"
+msgstr[1] "Паспяхова ўсталяваныя %1 пакункі"
+msgstr[2] "Паспяхова ўсталявана %1 пакункаў"
+msgstr[3] "Паспяхова ўсталяваныя %1 пакункі"
 
 #: pkupdates.cpp:539
 #, kde-format
 msgid "Update Error"
-msgstr "更新错误"
+msgstr "Памылка абнаўлення"
 
 #: pkupdates.cpp:593
 #, kde-format
 msgid "Restart is required"
-msgstr "需要重启"
+msgstr "Патрабуецца перазапуск"
 
 #: pkupdates.cpp:594
 #, kde-format
 msgid ""
 "The computer will have to be restarted after the update for the changes to "
 "take effect."
-msgstr "更新后计算机必须重启才能使更新生效。"
+msgstr "Каб змены набылі моц, пасля абнаўлення трэба перазапусціць камп'ютар."
 
 #: pkupdates.cpp:603
 #, kde-format
 msgid "Session restart is required"
-msgstr "需要重启会话"
+msgstr "Патрабуецца перазапуск сеанса"
 
 #: pkupdates.cpp:604
 #, kde-format
 msgid ""
 "You will need to log out and back in after the update for the changes to "
 "take effect."
-msgstr "由于进行了安全更新，您需要注销并再次登录。"
+msgstr "Каб змены набылі моц, пасля абнаўлення трэба выйсці і ўвайсці зноў."
