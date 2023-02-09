@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-02-06 00:50+0000\n"
-"PO-Revision-Date: 2023-02-01 00:25+0300\n"
+"PO-Revision-Date: 2023-02-08 20:02+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 22.12.2\n"
 
 #: PkStrings.cpp:37
 #, kde-format
@@ -1988,7 +1988,7 @@ msgstr "Bu uygulamayı yeniden başlatmanız gerekecek"
 #: PkStrings.cpp:874
 #, kde-format
 msgid "You will be required to log out and back in"
-msgstr "Çıkış yaparak oturumu yeniden başlatmanız gerekecek"
+msgstr "Oturumunuzu kapatıp yeniden açmanız gerekecek"
 
 #: PkStrings.cpp:876
 #, kde-format
@@ -1999,7 +1999,8 @@ msgstr "Yeniden başlatma gerekecek"
 #, kde-format
 msgid "You will be required to log out and back in due to a security update."
 msgstr ""
-"Güvenlik güncelleştirmesi nedeniyle çıkış yapıp giriş yapmanız gerekmektedir."
+"Güvenlik güncelleştirmesi nedeniyle oturumunuzu kapatıp yeniden açmanız "
+"gerekmektedir."
 
 #: PkStrings.cpp:880
 #, kde-format
@@ -2019,7 +2020,7 @@ msgstr "Yeniden başlatma gerekli"
 #: PkStrings.cpp:897
 #, kde-format
 msgid "You need to log out and log back in"
-msgstr "Çıkış yapıp tekrar giriş yapmanız gerekiyor"
+msgstr "Oturumunuzu kapatıp yeniden açmanız gerekiyor"
 
 #: PkStrings.cpp:899
 #, kde-format
@@ -2029,7 +2030,7 @@ msgstr "Uygulamayı yeniden başlatmanız gerekiyor"
 #: PkStrings.cpp:901
 #, kde-format
 msgid "You need to log out and log back in to remain secure."
-msgstr "Güvenli kalmak için çıkış yapıp tekrar giriş yapmanız gerekiyor."
+msgstr "Güvenli kalmak için oturumunuzu kapatıp yeniden açmanız gerekiyor."
 
 #: PkStrings.cpp:903
 #, kde-format
@@ -2286,5 +2287,5 @@ msgid ""
 "You will need to log out and back in after the update for the changes to "
 "take effect."
 msgstr ""
-"Değişikliklerin etkili olması için oturumdan çıkarak yeniden giriş yapmanız "
+"Değişikliklerin etkili olması için oturumunuzu kapatıp yeniden açmanız "
 "gerekiyor."
