@@ -1,20 +1,21 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the plasma-pk-updates package.
-# Wantoyo <wantoyek@gmail.com>, 2019.
+# Wantoyo <wantoyek@gmail.com>, 2019, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-pk-updates\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-03-07 00:46+0000\n"
-"PO-Revision-Date: 2019-12-15 14:38+0700\n"
-"Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
+"PO-Revision-Date: 2023-02-14 19:13+0700\n"
+"Last-Translator: Wantoyèk <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 22.12.2\n"
 
 #: contents/config/config.qml:26
 #, kde-format
@@ -22,11 +23,10 @@ msgid "General"
 msgstr "Umum"
 
 #: contents/ui/ConfigGeneral.qml:42
-#, fuzzy, kde-format
-#| msgid "Check Interval"
+#, kde-format
 msgctxt "@label check interval for updates"
 msgid "Check interval:"
-msgstr "Periksa Interval"
+msgstr "Interval periksa:"
 
 #: contents/ui/ConfigGeneral.qml:44
 #, kde-format
@@ -44,24 +44,22 @@ msgid "Monthly"
 msgstr "Bulanan"
 
 #: contents/ui/ConfigGeneral.qml:61
-#, fuzzy, kde-format
-#| msgid "Check For Updates"
+#, kde-format
 msgctxt "@label part of a sentence"
 msgid "Check for updates when:"
-msgstr "Periksa Pembaruan"
+msgstr "Periksa pembaruan ketika:"
 
 #: contents/ui/ConfigGeneral.qml:62
-#, fuzzy, kde-format
-#| msgid "Check for updates even on a mobile connection"
+#, kde-format
 msgctxt "@option:check part of a sentence: Check for updates when"
 msgid "On a mobile connection"
-msgstr "Periksa pembaruan bahkan pada saat koneksi seluler"
+msgstr "Saat koneksi seluler"
 
 #: contents/ui/ConfigGeneral.qml:67
 #, kde-format
 msgctxt "@option:check part of a sentence: Check for updates when"
 msgid "On battery"
-msgstr ""
+msgstr "Dalam baterai"
 
 #: contents/ui/Full.qml:67
 #, kde-format
@@ -86,13 +84,12 @@ msgstr "Jaringan telah offline"
 #: contents/ui/Full.qml:156
 #, kde-format
 msgid "Updates are automatically checked %1."
-msgstr ""
+msgstr "Pembaruan akan secara otomatis diperiksa %1."
 
 #: contents/ui/Full.qml:242
-#, fuzzy, kde-format
-#| msgid "No description available"
+#, kde-format
 msgid "No updates available"
-msgstr "Tak ada deskripsi yang tersedia"
+msgstr "Tidak ada pembaruan yang tersedia"
 
 #: contents/ui/Full.qml:266
 #, kde-format
