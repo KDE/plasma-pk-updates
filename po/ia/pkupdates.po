@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-pk-updates\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-02-06 00:50+0000\n"
-"PO-Revision-Date: 2023-02-03 12:19+0100\n"
+"PO-Revision-Date: 2023-02-23 15:31+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -146,7 +146,7 @@ msgid "Requesting data"
 msgstr ""
 
 #: PkStrings.cpp:106
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "transaction state, all done!"
 msgid "Finished"
 msgstr "Terminate"
@@ -182,10 +182,10 @@ msgid "Downloading lists of changes"
 msgstr ""
 
 #: PkStrings.cpp:124
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading groups"
-msgstr "Discargante gruppos..."
+msgstr "Discargante gruppos"
 
 #: PkStrings.cpp:127
 #, kde-format
@@ -375,7 +375,7 @@ msgid "Simulating install"
 msgstr ""
 
 #: PkStrings.cpp:221
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing"
 msgstr "Installante"
@@ -573,10 +573,10 @@ msgid "Searched for package name"
 msgstr ""
 
 #: PkStrings.cpp:301
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed packages"
-msgstr "Pacchettos Removite:"
+msgstr "Pacchettos Removite"
 
 #: PkStrings.cpp:303
 #, kde-format
@@ -704,12 +704,12 @@ msgid "Downloading"
 msgstr "Discargante"
 
 #: PkStrings.cpp:354
-#, fuzzy, kde-format
+#, kde-format
 msgid "Updating"
 msgstr "Actualisante"
 
 #: PkStrings.cpp:356
-#, fuzzy, kde-format
+#, kde-format
 msgid "Installing"
 msgstr "Installante"
 
@@ -719,9 +719,9 @@ msgid "Removing"
 msgstr "Removente"
 
 #: PkStrings.cpp:360
-#, fuzzy, kde-format
+#, kde-format
 msgid "Cleaning up"
-msgstr "Nettante..."
+msgstr "Nettante"
 
 #: PkStrings.cpp:362
 #, kde-format
@@ -1024,9 +1024,9 @@ msgid "A media change is required"
 msgstr "Un cambio es requirite"
 
 #: PkStrings.cpp:500
-#, fuzzy, kde-format
+#, kde-format
 msgid "Authorization failed"
-msgstr "Authorization falleva."
+msgstr "Authorization falleva"
 
 #: PkStrings.cpp:502
 #, kde-format
@@ -1124,7 +1124,7 @@ msgid "Lock required"
 msgstr "Bloco requirite"
 
 #: PkStrings.cpp:540
-#, fuzzy, kde-format
+#, kde-format
 msgid "Unknown error"
 msgstr "Error Incognite"
 
@@ -1573,7 +1573,7 @@ msgid "Accessories"
 msgstr "Accessorios"
 
 #: PkStrings.cpp:738
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "The group type"
 msgid "Education"
 msgstr "Education"
@@ -1585,7 +1585,7 @@ msgid "Games"
 msgstr "Jocos"
 
 #: PkStrings.cpp:742
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "The group type"
 msgid "Graphics"
 msgstr "Graphiches"
@@ -1609,10 +1609,10 @@ msgid "Others"
 msgstr "Alteres"
 
 #: PkStrings.cpp:750
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "The group type"
 msgid "Development"
-msgstr "Developpamento"
+msgstr "Disveloppamento"
 
 #: PkStrings.cpp:752
 #, kde-format
@@ -1651,7 +1651,7 @@ msgid "Other desktops"
 msgstr ""
 
 #: PkStrings.cpp:764
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "The group type"
 msgid "Publishing"
 msgstr "Publicante"
@@ -1663,7 +1663,7 @@ msgid "Servers"
 msgstr "Servitores"
 
 #: PkStrings.cpp:768
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "The group type"
 msgid "Fonts"
 msgstr "Fonts"
@@ -1711,7 +1711,7 @@ msgid "Communication"
 msgstr "Communication"
 
 #: PkStrings.cpp:784
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "The group type"
 msgid "Network"
 msgstr "Rete"
@@ -2061,7 +2061,7 @@ msgid "It's strongly recommended that you check for new updates now"
 msgstr ""
 
 #: pkupdates.cpp:54
-#, fuzzy, kde-format
+#, kde-format
 msgid "Idle"
 msgstr "Inactive"
 
@@ -2112,9 +2112,9 @@ msgid " and "
 msgstr "e"
 
 #: pkupdates.cpp:158
-#, fuzzy, kde-format
+#, kde-format
 msgid "(including %1)"
-msgstr "Includente %1"
+msgstr "(Includente %1)"
 
 #: pkupdates.cpp:160
 #, kde-format
