@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-02-06 00:50+0000\n"
-"PO-Revision-Date: 2023-02-15 11:05\n"
+"PO-Revision-Date: 2023-02-24 12:43\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -741,7 +741,7 @@ msgstr "正在准备"
 #: PkStrings.cpp:368
 #, kde-format
 msgid "Decompressing"
-msgstr "正在解压缩"
+msgstr "正在解压"
 
 #: PkStrings.cpp:379
 #, kde-format
@@ -786,7 +786,7 @@ msgstr "已经准备好"
 #: PkStrings.cpp:395
 #, kde-format
 msgid "Decompressed"
-msgstr "完成解压缩"
+msgstr "解压完成"
 
 #: PkStrings.cpp:406
 #, kde-format
