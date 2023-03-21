@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-pk-updates\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-02-06 00:50+0000\n"
-"PO-Revision-Date: 2023-02-23 15:31+0100\n"
+"PO-Revision-Date: 2023-03-20 15:42+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -1836,20 +1836,20 @@ msgid "No Updates Available"
 msgstr ""
 
 #: PkStrings.cpp:847
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "Some updates were selected on the view"
 msgid "1 Update Selected"
 msgid_plural "%1 Updates Selected"
-msgstr[0] "Actualisa selectionate"
-msgstr[1] "%1 %2 actualisationes selectionate (%3)"
+msgstr[0] "1 Actualisation selectionate"
+msgstr[1] "%1  actualisationes selectionate"
 
 #: PkStrings.cpp:851
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "Some updates are being shown on the screen"
 msgid "1 Update"
 msgid_plural "%1 Updates"
-msgstr[0] "Actualisa"
-msgstr[1] "Actualisationes"
+msgstr[0] "1 Actualisation"
+msgstr[1] "%1 Actualisationes"
 
 #: PkStrings.cpp:854
 #, kde-format
@@ -1858,20 +1858,20 @@ msgid "%1, %2"
 msgstr ""
 
 #: PkStrings.cpp:855
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Update"
 msgid_plural "%1 Updates"
-msgstr[0] "Actualisa"
-msgstr[1] "Actualisationes"
+msgstr[0] "%1 Actualisation"
+msgstr[1] "%1 Actualisationes"
 
 #: PkStrings.cpp:856
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Selected"
 msgid_plural "%1 Selected"
-msgstr[0] "<filename>%1</filename> selectionate"
-msgstr[1] "<filename>%1</filename> selectionate"
+msgstr[0] "%1 selectionate"
+msgstr[1] "%1 selectionate"
 
 #: PkStrings.cpp:860
 #, kde-format
@@ -1879,11 +1879,11 @@ msgid "No Packages"
 msgstr ""
 
 #: PkStrings.cpp:862
-#, fuzzy, kde-format
+#, kde-format
 msgid "1 Package"
 msgid_plural "%1 Packages"
-msgstr[0] "Pacchetto"
-msgstr[1] "Pacchettos"
+msgstr[0] "1 Pacchetto"
+msgstr[1] "%1 Pacchettos"
 
 #: PkStrings.cpp:870
 #, kde-format
@@ -1956,9 +1956,9 @@ msgid "Unstable"
 msgstr "Non stabile"
 
 #: PkStrings.cpp:920
-#, fuzzy, kde-format
+#, kde-format
 msgid "Testing"
-msgstr "Essayante "
+msgstr "Essayante"
 
 #: PkStrings.cpp:933
 #, kde-format
@@ -2107,7 +2107,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: pkupdates.cpp:158
-#, fuzzy, kde-format
+#, kde-format
 msgid " and "
 msgstr "e"
 
