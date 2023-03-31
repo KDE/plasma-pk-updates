@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-pk-updates\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-03-07 00:46+0000\n"
-"PO-Revision-Date: 2023-02-23 15:32+0100\n"
+"PO-Revision-Date: 2023-03-30 12:19+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -107,17 +107,17 @@ msgid "Performs the software update"
 msgstr ""
 
 #: contents/ui/Full.qml:341
-#, fuzzy, kde-format
+#, kde-format
 msgid "weekly"
 msgstr "Cata septimana"
 
 #: contents/ui/Full.qml:343
-#, fuzzy, kde-format
+#, kde-format
 msgid "monthly"
 msgstr "Cata mense"
 
 #: contents/ui/Full.qml:345
-#, fuzzy, kde-format
+#, kde-format
 msgid "daily"
 msgstr "Cata die"
 
