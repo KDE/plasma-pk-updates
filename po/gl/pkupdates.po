@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-#
 # Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail.com>, 2015, 2017.
-# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2019.
+# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2019, 2023.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-02-06 00:50+0000\n"
-"PO-Revision-Date: 2019-11-01 11:55+0100\n"
+"PO-Revision-Date: 2023-04-28 20:23+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 19.11.70\n"
+"X-Generator: Lokalize 23.04.0\n"
 
 #: PkStrings.cpp:37
 #, kde-format
@@ -1227,7 +1227,7 @@ msgid ""
 "Please check your group list and try again."
 msgstr ""
 "Non se atopou o tipo do grupo.\n"
-"Revise a sía lista de grupos e inténteo de novo."
+"Revise a súa lista de grupos e inténteo de novo."
 
 #: PkStrings.cpp:582
 #, kde-format
@@ -2225,10 +2225,9 @@ msgid "Your system is offline"
 msgstr "O sistema está desconectado."
 
 #: pkupdates.cpp:165
-#, fuzzy, kde-format
-#| msgid "Checking for updates failed"
+#, kde-format
 msgid "Not checked for updates yet"
-msgstr "A comprobación das actualizacións fallou"
+msgstr "Aínda non se comprobou se hai actualizacións"
 
 #: pkupdates.cpp:168
 #, kde-format
