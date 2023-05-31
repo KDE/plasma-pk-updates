@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 "X-Generator: Lokalize 2.0\n"
@@ -1932,16 +1932,14 @@ msgstr "更新なし"
 msgctxt "Some updates were selected on the view"
 msgid "1 Update Selected"
 msgid_plural "%1 Updates Selected"
-msgstr[0] "1 の更新選択済み"
-msgstr[1] "%1 の更新選択済み"
+msgstr[0] "%1 の更新選択済み"
 
 #: PkStrings.cpp:851
 #, kde-format
 msgctxt "Some updates are being shown on the screen"
 msgid "1 Update"
 msgid_plural "%1 Updates"
-msgstr[0] "1 の更新"
-msgstr[1] "%1 の更新"
+msgstr[0] "%1 の更新"
 
 #: PkStrings.cpp:854
 #, kde-format
@@ -1955,7 +1953,6 @@ msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Update"
 msgid_plural "%1 Updates"
 msgstr[0] "%1 の更新"
-msgstr[1] "%1 の更新"
 
 #: PkStrings.cpp:856
 #, kde-format
@@ -1963,7 +1960,6 @@ msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Selected"
 msgid_plural "%1 Selected"
 msgstr[0] "%1 選択済み"
-msgstr[1] "%1 選択済み"
 
 #: PkStrings.cpp:860
 #, kde-format
@@ -1974,8 +1970,7 @@ msgstr "パッケージなし"
 #, kde-format
 msgid "1 Package"
 msgid_plural "%1 Packages"
-msgstr[0] "1 のパッケージ"
-msgstr[1] "%1 のパッケージ"
+msgstr[0] "%1 のパッケージ"
 
 #: PkStrings.cpp:870
 #, kde-format
@@ -2181,22 +2176,19 @@ msgstr ""
 #, kde-format
 msgid "You have 1 new update"
 msgid_plural "You have %1 new updates"
-msgstr[0] "1 新しい更新"
-msgstr[1] "%1 新しい更新"
+msgstr[0] "%1 新しい更新"
 
 #: pkupdates.cpp:151
 #, kde-format
 msgid "1 security update"
 msgid_plural "%1 security updates"
-msgstr[0] "1 セキュリティ更新"
-msgstr[1] "%1 セキュリティ更新"
+msgstr[0] "%1 セキュリティ更新"
 
 #: pkupdates.cpp:153
 #, kde-format
 msgid "1 important update"
 msgid_plural "%1 important updates"
-msgstr[0] "1 の重要な更新"
-msgstr[1] "%1 の重要な更新"
+msgstr[0] "%1 の重要な更新"
 
 #: pkupdates.cpp:158
 #, kde-format
@@ -2256,7 +2248,6 @@ msgstr ""
 msgid "Successfully updated %1 package"
 msgid_plural "Successfully updated %1 packages"
 msgstr[0] "%1 のパッケージを正常に更新"
-msgstr[1] "%1 のパッケージを正常に更新"
 
 #: pkupdates.cpp:539
 #, kde-format
