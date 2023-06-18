@@ -77,7 +77,7 @@ Name[tg]=Навсозиҳо дастрасанд
 Name[tr]=Güncellemeler Kullanılabilir
 Name[uk]=Доступні оновлення
 Name[x-test]=xxUpdates Availablexx
-Name[zh_CN]=更新可用
+Name[zh_CN]=系统有可以安装的更新
 Name[zh_TW]=有更新可用
 Comment=Software updates for the system are available
 Comment[az]=Sistem üçün proqram təminatı yenilənmələri əlçatandır
@@ -115,7 +115,7 @@ Comment[tg]=Навсозиҳои нармафзор барои низоми шу
 Comment[tr]=Sistem için kullanılabilir yazılım güncelleştirmeleri var
 Comment[uk]=Випущено оновлення програмного забезпечення для вашої системи
 Comment[x-test]=xxSoftware updates for the system are availablexx
-Comment[zh_CN]=系统软件更新可用
+Comment[zh_CN]=系统有可以安装的软件更新
 Comment[zh_TW]=系統有可用的軟體更新
 Action=Popup
 
