@@ -209,7 +209,7 @@ msgstr "캐시 불러오는 중"
 #, kde-format
 msgctxt "transaction state, scanning for running processes"
 msgid "Scanning installed applications"
-msgstr "설치된 프로그램 조사 중"
+msgstr "설치된 앱 조사 중"
 
 #: PkStrings.cpp:139
 #, kde-format
@@ -234,13 +234,13 @@ msgstr "인증 대기 중"
 #, kde-format
 msgctxt "we are updating the list of processes"
 msgid "Updating the list of running applications"
-msgstr "실행 중인 프로그램 목록 업데이트 중"
+msgstr "실행 중인 앱 목록 업데이트 중"
 
 #: PkStrings.cpp:151
 #, kde-format
 msgctxt "we are checking executable files in use"
 msgid "Checking for applications currently in use"
-msgstr "사용 중인 프로그램 점검 중"
+msgstr "사용 중인 앱 점검 중"
 
 #: PkStrings.cpp:154
 #, kde-format
@@ -1969,7 +1969,7 @@ msgstr "다시 시작할 필요 없음"
 #: PkStrings.cpp:872
 #, kde-format
 msgid "You will be required to restart this application"
-msgstr "이 프로그램을 다시 시작해야 함"
+msgstr "이 앱을 다시 시작해야 함"
 
 #: PkStrings.cpp:874
 #, kde-format
@@ -2009,7 +2009,7 @@ msgstr "로그아웃 후 다시 로그인해야 함"
 #: PkStrings.cpp:899
 #, kde-format
 msgid "You need to restart the application"
-msgstr "프로그램을 다시 시작해야 함"
+msgstr "앱을 다시 시작해야 함"
 
 #: PkStrings.cpp:901
 #, kde-format
