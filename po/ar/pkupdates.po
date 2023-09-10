@@ -1,0 +1,2310 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the plasma-pk-updates package.
+#
+# Zayed Al-Saidi <zayed.alsaidi@gmail.com>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-pk-updates\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-02-06 00:50+0000\n"
+"PO-Revision-Date: 2023-09-09 20:45+0400\n"
+"Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
+"Language-Team: ar\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 22.12.3\n"
+
+#: PkStrings.cpp:37
+#, kde-format
+msgctxt "This is when the transaction status is not known"
+msgid "Unknown state"
+msgstr "حالة غير معروفة"
+
+#: PkStrings.cpp:40
+#, kde-format
+msgctxt "transaction state, the daemon is in the process of starting"
+msgid "Waiting for service to start"
+msgstr "ينتظر الخدمة لتبدأ"
+
+#: PkStrings.cpp:43
+#, kde-format
+msgctxt "transaction state, the transaction is waiting for another to complete"
+msgid "Waiting for other tasks"
+msgstr "ينتظر مهام أخرى"
+
+#: PkStrings.cpp:46
+#, kde-format
+msgctxt "transaction state, just started"
+msgid "Running task"
+msgstr "يشغل مهمة"
+
+#: PkStrings.cpp:49
+#, kde-format
+msgctxt "transaction state, is querying data"
+msgid "Querying"
+msgstr "يستعلم"
+
+#: PkStrings.cpp:52
+#, kde-format
+msgctxt "transaction state, getting data from a server"
+msgid "Getting information"
+msgstr "يحصل على معلومات"
+
+#: PkStrings.cpp:55
+#, kde-format
+msgctxt "transaction state, removing packages"
+msgid "Removing packages"
+msgstr "يزيل الحزم"
+
+#: PkStrings.cpp:59
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading at %1/s, %2 remaining"
+msgstr "ينزل بسرعة %1 /ثانية، باقي %2"
+
+#: PkStrings.cpp:64
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading at %1/s"
+msgstr "ينزل بسرعة %1 /ثانية"
+
+#: PkStrings.cpp:68
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading, %1 remaining"
+msgstr "ينزل، باقي %1"
+
+#: PkStrings.cpp:72
+#, kde-format
+msgctxt "transaction state, downloading package files"
+msgid "Downloading"
+msgstr "ينزل"
+
+#: PkStrings.cpp:76
+#, kde-format
+msgctxt "transaction state, installing packages"
+msgid "Installing packages"
+msgstr "يثبت الحزم"
+
+#: PkStrings.cpp:79
+#, kde-format
+msgctxt "transaction state, refreshing internal lists"
+msgid "Refreshing software list"
+msgstr "يحدث قائمة البرامج"
+
+#: PkStrings.cpp:82
+#, kde-format
+msgctxt "transaction state, installing updates"
+msgid "Updating packages"
+msgstr "يحدث الحزم"
+
+#: PkStrings.cpp:85
+#, kde-format
+msgctxt "transaction state, removing old packages, and cleaning config files"
+msgid "Cleaning up packages"
+msgstr "ينظف الحزم"
+
+#: PkStrings.cpp:88
+#, kde-format
+msgctxt "transaction state, obsoleting old packages"
+msgid "Obsoleting packages"
+msgstr "الحزم المتقادمة"
+
+#: PkStrings.cpp:91
+#, kde-format
+msgctxt "transaction state, checking the transaction before we do it"
+msgid "Resolving dependencies"
+msgstr "يحل التبعيات"
+
+#: PkStrings.cpp:94
+#, kde-format
+msgctxt ""
+"transaction state, checking if we have all the security keys for the "
+"operation"
+msgid "Checking signatures"
+msgstr "يتحقق من التواقيع"
+
+#: PkStrings.cpp:97
+#, kde-format
+msgctxt "transaction state, when we're doing a test transaction"
+msgid "Testing changes"
+msgstr "يجرب التغييرات"
+
+#: PkStrings.cpp:100
+#, kde-format
+msgctxt "transaction state, when we're writing to the system package database"
+msgid "Committing changes"
+msgstr "ينفذ التغييرات"
+
+#: PkStrings.cpp:103
+#, kde-format
+msgctxt "transaction state, requesting data from a server"
+msgid "Requesting data"
+msgstr "يطلب البيانات"
+
+#: PkStrings.cpp:106
+#, kde-format
+msgctxt "transaction state, all done!"
+msgid "Finished"
+msgstr "اكتمل"
+
+#: PkStrings.cpp:109
+#, kde-format
+msgctxt "transaction state, in the process of cancelling"
+msgid "Cancelling"
+msgstr "يلغي"
+
+#: PkStrings.cpp:112
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading repository information"
+msgstr "ينزل معلومات المستودع"
+
+#: PkStrings.cpp:115
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading list of packages"
+msgstr "ينزل قائمة من الحزم"
+
+#: PkStrings.cpp:118
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading file lists"
+msgstr "ينزل قوائم الملف"
+
+#: PkStrings.cpp:121
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading lists of changes"
+msgstr "ينزل قائمة التغييرات"
+
+#: PkStrings.cpp:124
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading groups"
+msgstr "ينزل المجموعات"
+
+#: PkStrings.cpp:127
+#, kde-format
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading update information"
+msgstr "ينزل معلومات التحديث"
+
+#: PkStrings.cpp:130
+#, kde-format
+msgctxt "transaction state, repackaging delta files"
+msgid "Repackaging files"
+msgstr "يعيد حزم الملفات"
+
+#: PkStrings.cpp:133
+#, kde-format
+msgctxt "transaction state, loading databases"
+msgid "Loading cache"
+msgstr "ينزل الذاكرة المؤقتة"
+
+#: PkStrings.cpp:136
+#, kde-format
+msgctxt "transaction state, scanning for running processes"
+msgid "Scanning installed applications"
+msgstr "يمسح التطبيقات المثبتة"
+
+#: PkStrings.cpp:139
+#, kde-format
+msgctxt ""
+"transaction state, generating a list of packages installed on the system"
+msgid "Generating package lists"
+msgstr "يولد قوائم الحزمة"
+
+#: PkStrings.cpp:142
+#, kde-format
+msgctxt "transaction state, when we're waiting for the native tools to exit"
+msgid "Waiting for package manager lock"
+msgstr "ينتظر قفل مدير الحزم"
+
+#: PkStrings.cpp:145
+#, kde-format
+msgctxt "waiting for user to type in a password"
+msgid "Waiting for authentication"
+msgstr "ينتظر المصادقة"
+
+#: PkStrings.cpp:148
+#, kde-format
+msgctxt "we are updating the list of processes"
+msgid "Updating the list of running applications"
+msgstr "يحدث قائمة التطبيقات المشتغلة"
+
+#: PkStrings.cpp:151
+#, kde-format
+msgctxt "we are checking executable files in use"
+msgid "Checking for applications currently in use"
+msgstr "يتحقق من التطبيقات المستخدمة حاليا"
+
+#: PkStrings.cpp:154
+#, kde-format
+msgctxt "we are checking for libraries in use"
+msgid "Checking for libraries currently in use"
+msgstr "يتحقق من المكتبات المستخدمة حاليا"
+
+#: PkStrings.cpp:157
+#, kde-format
+msgctxt "we are copying package files to prepare to install"
+msgid "Copying files"
+msgstr "ينسخ الملفات"
+
+#: PkStrings.cpp:167
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Downloaded"
+msgstr "مُنزل"
+
+#: PkStrings.cpp:169
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Updated"
+msgstr "مُحدث"
+
+#: PkStrings.cpp:171
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Installed"
+msgstr "مُثبت"
+
+#: PkStrings.cpp:173
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Removed"
+msgstr "مُزال"
+
+#: PkStrings.cpp:175
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Cleaned Up"
+msgstr "مُنظف"
+
+#: PkStrings.cpp:177
+#, kde-format
+msgctxt "The action of the package, in past tense"
+msgid "Obsoleted"
+msgstr "عفا عليه الزمن"
+
+#: PkStrings.cpp:188
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Unknown role type"
+msgstr "نوع دور غير معروف"
+
+#: PkStrings.cpp:190
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting dependencies"
+msgstr "يحصل على التبعيات"
+
+#: PkStrings.cpp:192
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting update detail"
+msgstr "يحصل على تفصيل التحديث"
+
+#: PkStrings.cpp:195
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting details"
+msgstr "يحصل على التفاصيل"
+
+#: PkStrings.cpp:197
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting requires"
+msgstr "يحصل على المتطلبات"
+
+#: PkStrings.cpp:199
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting updates"
+msgstr "يحصل على التحديثات"
+
+#: PkStrings.cpp:201
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching details"
+msgstr "يبحث عن التفاصيل"
+
+#: PkStrings.cpp:203
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching for file"
+msgstr "يبحث عن ملف"
+
+#: PkStrings.cpp:205
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching groups"
+msgstr "يبحث في المجموعات"
+
+#: PkStrings.cpp:207
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching by package name"
+msgstr "يبحث باسم الحزمة"
+
+#: PkStrings.cpp:210
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating removal"
+msgstr "يحاكي إزالة"
+
+#: PkStrings.cpp:212 PkStrings.cpp:219 PkStrings.cpp:260
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading packages"
+msgstr "ينزل الحزم"
+
+#: PkStrings.cpp:214
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Removing"
+msgstr "يزيل"
+
+#: PkStrings.cpp:217
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating install"
+msgstr "يحاكي تثبيت"
+
+#: PkStrings.cpp:221
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing"
+msgstr "يثبت"
+
+#: PkStrings.cpp:224
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating file install"
+msgstr "يحاكي تثبيت ملف"
+
+#: PkStrings.cpp:226
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading required packages"
+msgstr "ينزل الحزم المطلوبة"
+
+#: PkStrings.cpp:228
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing file"
+msgstr "يثبت ملف"
+
+#: PkStrings.cpp:230
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Refreshing package cache"
+msgstr "يحدث ذاكرة الحزمة المؤقتة"
+
+#: PkStrings.cpp:233
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating update"
+msgstr "يحاك تحديث"
+
+#: PkStrings.cpp:235
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading updates"
+msgstr "ينزل تحديثات"
+
+#: PkStrings.cpp:237
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Updating packages"
+msgstr "يحدث الحزم"
+
+#: PkStrings.cpp:239
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Canceling"
+msgstr "يلغي"
+
+#: PkStrings.cpp:241
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting list of repositories"
+msgstr "يحصل على قائمة من المستودعات"
+
+#: PkStrings.cpp:243
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Enabling repository"
+msgstr "يفعل المستودع"
+
+#: PkStrings.cpp:245
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Setting repository data"
+msgstr "إعداد بيانات المستودع"
+
+#: PkStrings.cpp:247
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Resolving"
+msgstr "يحل"
+
+#: PkStrings.cpp:250
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting file list"
+msgstr "يحصل على قائمة الملفات"
+
+#: PkStrings.cpp:252
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting what provides"
+msgstr "يحصل على ماذا يقدم"
+
+#: PkStrings.cpp:254
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing signature"
+msgstr "يثبت التوقيع"
+
+#: PkStrings.cpp:256
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting package lists"
+msgstr "يحصل على قوائم الحزم"
+
+#: PkStrings.cpp:258
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Accepting EULA"
+msgstr "يقبل اتفاقية ترخيص المستخدم النهائي"
+
+#: PkStrings.cpp:262
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting distribution upgrade information"
+msgstr "يحصل على معلومات ترقية التوزيعة"
+
+#: PkStrings.cpp:264
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting categories"
+msgstr "يحصل على التصنيفات"
+
+#: PkStrings.cpp:266
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting old transactions"
+msgstr "يحصل على المعاملات القديمة"
+
+#: PkStrings.cpp:268
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Repairing system"
+msgstr "يصلح النظام"
+
+#: PkStrings.cpp:270
+#, kde-format
+msgctxt "The role of the transaction, in present tense"
+msgid "Removing repository"
+msgstr "يزيل المستودع"
+
+#: PkStrings.cpp:280
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Unknown role type"
+msgstr "نوع دور غير معروف"
+
+#: PkStrings.cpp:282
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got dependencies"
+msgstr "حصل على التبعيات"
+
+#: PkStrings.cpp:284
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got update detail"
+msgstr "حصل على تفصيل التحديث"
+
+#: PkStrings.cpp:287
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got details"
+msgstr "حصل على التفاصيل"
+
+#: PkStrings.cpp:289
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got requires"
+msgstr "حصل على المتطلبات"
+
+#: PkStrings.cpp:291
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got updates"
+msgstr "حصل على التحديثات"
+
+#: PkStrings.cpp:293
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for package details"
+msgstr "بحثَ عن تفاصيل الحزمة"
+
+#: PkStrings.cpp:295
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for file"
+msgstr "بحثَ عن ملف"
+
+#: PkStrings.cpp:297
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched groups"
+msgstr "بحثَ في المجموعات"
+
+#: PkStrings.cpp:299
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for package name"
+msgstr "بحثَ عن اسم الحزمة"
+
+#: PkStrings.cpp:301
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Removed packages"
+msgstr "أزالَ الحزم"
+
+#: PkStrings.cpp:303
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed packages"
+msgstr "ثبتَ الحزم"
+
+#: PkStrings.cpp:305
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed local files"
+msgstr "ثبتَ الملفات المحلية"
+
+#: PkStrings.cpp:307
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Refreshed package cache"
+msgstr "أنعشَ ذاكرة الحزمة المؤقتة"
+
+#: PkStrings.cpp:309
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Updated packages"
+msgstr "الحزم المحدثة"
+
+#: PkStrings.cpp:311
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Canceled"
+msgstr "ملغي"
+
+#: PkStrings.cpp:313
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got list of repositories"
+msgstr "حصل على قائمة من المستودعات"
+
+#: PkStrings.cpp:315
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Enabled repository"
+msgstr "مستودع مفعل"
+
+#: PkStrings.cpp:317
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Set repository data"
+msgstr "تعيين بيانات المستودع"
+
+#: PkStrings.cpp:319
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Resolved"
+msgstr "محلول"
+
+#: PkStrings.cpp:322
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got file list"
+msgstr "حصل على قائمة الملفات"
+
+#: PkStrings.cpp:324
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got what provides"
+msgstr "حصل على ماذا يقدم"
+
+#: PkStrings.cpp:326
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed signature"
+msgstr "ثبتَ التوقيع"
+
+#: PkStrings.cpp:328
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got package lists"
+msgstr "حصل على قوائم الحزم"
+
+#: PkStrings.cpp:330
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Accepted EULA"
+msgstr "قبلَ اتفاقية ترخيص المستخدم النهائي"
+
+#: PkStrings.cpp:332
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Downloaded packages"
+msgstr "حملَ الحزم"
+
+#: PkStrings.cpp:334
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got distribution upgrades"
+msgstr "حصل على ترقيات التوزيعة"
+
+#: PkStrings.cpp:336
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got categories"
+msgstr "حصل على التصنيفات"
+
+#: PkStrings.cpp:338
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Got old transactions"
+msgstr "حصل على التعاملات القديمة"
+
+#: PkStrings.cpp:340
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Repaired system"
+msgstr "نظام مصلح"
+
+#: PkStrings.cpp:342
+#, kde-format
+msgctxt "The role of the transaction, in past tense"
+msgid "Removed repository"
+msgstr "مستودع مزال"
+
+#: PkStrings.cpp:352
+#, kde-format
+msgid "Downloading"
+msgstr "ينزل"
+
+#: PkStrings.cpp:354
+#, kde-format
+msgid "Updating"
+msgstr "يحدث"
+
+#: PkStrings.cpp:356
+#, kde-format
+msgid "Installing"
+msgstr "يثبت"
+
+#: PkStrings.cpp:358
+#, kde-format
+msgid "Removing"
+msgstr "يزيل"
+
+#: PkStrings.cpp:360
+#, kde-format
+msgid "Cleaning up"
+msgstr "ينظف"
+
+#: PkStrings.cpp:362
+#, kde-format
+msgid "Obsoleting"
+msgstr "يعفا عليه الزمن"
+
+#: PkStrings.cpp:364
+#, kde-format
+msgid "Reinstalling"
+msgstr "يعيد التثبيت"
+
+#: PkStrings.cpp:366
+#, kde-format
+msgid "Preparing"
+msgstr "يجهز"
+
+#: PkStrings.cpp:368
+#, kde-format
+msgid "Decompressing"
+msgstr "يفك الضغط"
+
+#: PkStrings.cpp:379
+#, kde-format
+msgid "Downloaded"
+msgstr "منزل"
+
+#: PkStrings.cpp:381
+#, kde-format
+msgid "Updated"
+msgstr "محدث"
+
+#: PkStrings.cpp:383
+#, kde-format
+msgid "Installed"
+msgstr "مثبت"
+
+#: PkStrings.cpp:385
+#, kde-format
+msgid "Removed"
+msgstr "مزال"
+
+#: PkStrings.cpp:387
+#, kde-format
+msgid "Cleaned up"
+msgstr "منظف"
+
+#: PkStrings.cpp:389
+#, kde-format
+msgid "Obsoleted"
+msgstr "عفا عليه الزمن"
+
+#: PkStrings.cpp:391
+#, kde-format
+msgid "Reinstalled"
+msgstr "معاد تثبيته"
+
+#: PkStrings.cpp:393
+#, kde-format
+msgid "Prepared"
+msgstr "مجهز"
+
+#: PkStrings.cpp:395
+#, kde-format
+msgid "Decompressed"
+msgstr "غير مضغوط"
+
+#: PkStrings.cpp:406
+#, kde-format
+msgid "No network connection available"
+msgstr "لا يتوفر اتصال شبكة"
+
+#: PkStrings.cpp:408
+#, kde-format
+msgid "No package cache is available"
+msgstr "لا تتوفر ذاكرة مؤقتة للحزمة"
+
+#: PkStrings.cpp:410
+#, kde-format
+msgid "Out of memory"
+msgstr "نفذت الذاكرة"
+
+#: PkStrings.cpp:412
+#, kde-format
+msgid "Failed to create a thread"
+msgstr "فشل في إنشاء خيط"
+
+#: PkStrings.cpp:414
+#, kde-format
+msgid "Not supported by this backend"
+msgstr "ليس مدعوما من هذه الخلفية"
+
+#: PkStrings.cpp:416
+#, kde-format
+msgid "An internal system error has occurred"
+msgstr "حدث خطأ نظام داخلي"
+
+#: PkStrings.cpp:418
+#, kde-format
+msgid "A security trust relationship is not present"
+msgstr "علاقة أمنية مضمونة غير حاضرة"
+
+#: PkStrings.cpp:420
+#, kde-format
+msgid "The package is not installed"
+msgstr "الحزمة لم تثبت"
+
+#: PkStrings.cpp:422
+#, kde-format
+msgid "The package was not found"
+msgstr "الحزمة غير موجودة"
+
+#: PkStrings.cpp:424
+#, kde-format
+msgid "The package is already installed"
+msgstr "الحزمة مثبتة مسبقا"
+
+#: PkStrings.cpp:426
+#, kde-format
+msgid "The package download failed"
+msgstr "فشل تنزيل الحزمة"
+
+#: PkStrings.cpp:428
+#, kde-format
+msgid "The group was not found"
+msgstr "المجموعة غير موجودة"
+
+#: PkStrings.cpp:430
+#, kde-format
+msgid "The group list was invalid"
+msgstr "المجموعة كانت غير صحيحة"
+
+#: PkStrings.cpp:432
+#, kde-format
+msgid "Dependency resolution failed"
+msgstr "فشل حل الاعتمادية"
+
+#: PkStrings.cpp:434
+#, kde-format
+msgid "Search filter was invalid"
+msgstr "مرشح البحث كان غير صحيح"
+
+#: PkStrings.cpp:436
+#, kde-format
+msgid "The package identifier was not well formed"
+msgstr "معرف الحزمة ليس مهيئ جيدا"
+
+#: PkStrings.cpp:438
+#, kde-format
+msgid "Transaction error"
+msgstr "خطأ عملية"
+
+#: PkStrings.cpp:440
+#, kde-format
+msgid "Repository name was not found"
+msgstr "اسم المستودع غير موجود"
+
+#: PkStrings.cpp:442
+#, kde-format
+msgid "Could not remove a protected system package"
+msgstr "لم استطع إزالة حزمة نظام محمية"
+
+#: PkStrings.cpp:444
+#, kde-format
+msgid "The task was canceled"
+msgstr "ألغيت المهمة"
+
+#: PkStrings.cpp:446
+#, kde-format
+msgid "The task was forcibly canceled"
+msgstr "ألغيت المهمة إجباريا"
+
+#: PkStrings.cpp:448
+#, kde-format
+msgid "Reading the config file failed"
+msgstr "أخفقت قراءة ملف الإعدادات"
+
+#: PkStrings.cpp:450
+#, kde-format
+msgid "The task cannot be cancelled"
+msgstr "لا يمكن إلغاء المهمة"
+
+#: PkStrings.cpp:452
+#, kde-format
+msgid "Source packages cannot be installed"
+msgstr "لا يمكن تثبيت الحزمة المصدرية"
+
+#: PkStrings.cpp:454
+#, kde-format
+msgid "The license agreement failed"
+msgstr "أخفقت اتفاقية الترخيص"
+
+#: PkStrings.cpp:456
+#, kde-format
+msgid "Local file conflict between packages"
+msgstr "ملف محلي يسبب نزاع بين الحزم"
+
+#: PkStrings.cpp:458
+#, kde-format
+msgid "Packages are not compatible"
+msgstr "الحزم غير متوافقة"
+
+#: PkStrings.cpp:460
+#, kde-format
+msgid "Problem connecting to a software origin"
+msgstr "مشكلة في الاتصال بأصل البرنامج"
+
+#: PkStrings.cpp:462
+#, kde-format
+msgid "Failed to initialize"
+msgstr "فشل في التهيئة"
+
+#: PkStrings.cpp:464
+#, kde-format
+msgid "Failed to finalize"
+msgstr "فشل في الإنهاء"
+
+#: PkStrings.cpp:466
+#, kde-format
+msgid "Cannot get lock"
+msgstr "لا يمكن الحصول على القفل"
+
+#: PkStrings.cpp:468
+#, kde-format
+msgid "No packages to update"
+msgstr "لا توجد حزم للتحديث"
+
+#: PkStrings.cpp:470
+#, kde-format
+msgid "Cannot write repository configuration"
+msgstr "لا يمكن كتابة إعدادات المستودع"
+
+#: PkStrings.cpp:472
+#, kde-format
+msgid "Local install failed"
+msgstr "فشل التثبيت المحلي"
+
+#: PkStrings.cpp:474
+#, kde-format
+msgid "Bad GPG signature"
+msgstr "توقيع GPG سيء"
+
+#: PkStrings.cpp:476
+#, kde-format
+msgid "Missing GPG signature"
+msgstr "توقيع GPG مفقود"
+
+#: PkStrings.cpp:478
+#, kde-format
+msgid "Repository configuration invalid"
+msgstr "إعدادات المستودع غير صحيحة"
+
+#: PkStrings.cpp:480
+#, kde-format
+msgid "Invalid package file"
+msgstr "ملف حزمة غير صحيح"
+
+#: PkStrings.cpp:482
+#, kde-format
+msgid "Package install blocked"
+msgstr "تثبيت الحزمة محجوب"
+
+#: PkStrings.cpp:484
+#, kde-format
+msgid "Package is corrupt"
+msgstr "الحزمة فاسدة"
+
+#: PkStrings.cpp:486
+#, kde-format
+msgid "All packages are already installed"
+msgstr "جميع الحزم مثبتة مسبقا"
+
+#: PkStrings.cpp:488
+#, kde-format
+msgid "The specified file could not be found"
+msgstr "الملف المحدد لا يمكن إيجاده"
+
+#: PkStrings.cpp:490
+#, kde-format
+msgid "No more mirrors are available"
+msgstr "لا يوجد يتوفر المزيد من المرايا"
+
+#: PkStrings.cpp:492
+#, kde-format
+msgid "No distribution upgrade data is available"
+msgstr "لا تتوفر معلومات ترقية التوزيعة"
+
+#: PkStrings.cpp:494
+#, kde-format
+msgid "Package is incompatible with this system"
+msgstr "الحزمة غير متوافقة مع هذا النظام"
+
+#: PkStrings.cpp:496
+#, kde-format
+msgid "No space is left on the disk"
+msgstr "لا توجد مساحة كافية على القرص"
+
+#: PkStrings.cpp:498
+#, kde-format
+msgid "A media change is required"
+msgstr "تغير الوسائط مطلوب"
+
+#: PkStrings.cpp:500
+#, kde-format
+msgid "Authorization failed"
+msgstr "فشل التفويض"
+
+#: PkStrings.cpp:502
+#, kde-format
+msgid "Update not found"
+msgstr "التحديث غير موجود"
+
+#: PkStrings.cpp:504
+#, kde-format
+msgid "Cannot install from untrusted origin"
+msgstr "لا يمكن التثبيت من أصل غير موثوق"
+
+#: PkStrings.cpp:506
+#, kde-format
+msgid "Cannot update from untrusted origin"
+msgstr "لا بمكن التحديث من أصل غير موثوق"
+
+#: PkStrings.cpp:508
+#, kde-format
+msgid "Cannot get the file list"
+msgstr "لا يمكن الحصول على قائمة الملفات"
+
+#: PkStrings.cpp:510
+#, kde-format
+msgid "Cannot get package requires"
+msgstr "لا يمكن الحصول على الحزمة المتطلبة"
+
+#: PkStrings.cpp:512
+#, kde-format
+msgid "Cannot disable origin"
+msgstr "لا يمكن تعطيل الأصل"
+
+#: PkStrings.cpp:514
+#, kde-format
+msgid "The download failed"
+msgstr "فشل التنزيل"
+
+#: PkStrings.cpp:516
+#, kde-format
+msgid "Package failed to configure"
+msgstr "فشل إعداد الحزمة"
+
+#: PkStrings.cpp:518
+#, kde-format
+msgid "Package failed to build"
+msgstr "فشل بناء الحزمة"
+
+#: PkStrings.cpp:520
+#, kde-format
+msgid "Package failed to install"
+msgstr "فشل تثبيت الحزمة"
+
+#: PkStrings.cpp:522
+#, kde-format
+msgid "Package failed to be removed"
+msgstr "فشل إزالة الحزمة"
+
+#: PkStrings.cpp:524
+#, kde-format
+msgid "Update failed due to running process"
+msgstr "فشل التحديث بسبب وجود عملية تعمل"
+
+#: PkStrings.cpp:526
+#, kde-format
+msgid "The package database was changed"
+msgstr "قاعدة بيانات الحزم غيرت"
+
+#: PkStrings.cpp:528
+#, kde-format
+msgid "Virtual provide type is not supported"
+msgstr "لا يدعم نوع التزويد الافتراضي"
+
+#: PkStrings.cpp:530
+#, kde-format
+msgid "Install root is invalid"
+msgstr "جذر التثبيت غير صحيح"
+
+#: PkStrings.cpp:532
+#, kde-format
+msgid "Cannot fetch install sources"
+msgstr "لا يمكن جلب مصادر التثبيت"
+
+#: PkStrings.cpp:534
+#, kde-format
+msgid "Rescheduled due to priority"
+msgstr "تم إعادة الجدولة الجدولة بسبب الأولوية"
+
+#: PkStrings.cpp:536
+#, kde-format
+msgid "Unfinished transaction"
+msgstr "عملية غير منتهية"
+
+#: PkStrings.cpp:538
+#, kde-format
+msgid "Lock required"
+msgstr "القفل مطلوب"
+
+#: PkStrings.cpp:540
+#, kde-format
+msgid "Unknown error"
+msgstr "خطأ غير معروف"
+
+#: PkStrings.cpp:550
+#, kde-format
+msgid ""
+"There is no network connection available.\n"
+"Please check your connection settings and try again"
+msgstr ""
+"لا يتوفر اتصال بالشابكة.\n"
+"رجاءً تحقق من إعدادات الاتصال وإعادة المحاولة"
+
+#: PkStrings.cpp:553
+#, kde-format
+msgid ""
+"The package list needs to be rebuilt.\n"
+"This should have been done by the backend automatically."
+msgstr ""
+"قائمة الحزم تحتاج إلى إعادة بناء.\n"
+"يجب أن يتم ذلك تلقائيا من قبل الخلفية."
+
+#: PkStrings.cpp:556
+#, kde-format
+msgid ""
+"The service that is responsible for handling user requests is out of "
+"memory.\n"
+"Please close some programs or restart your computer."
+msgstr ""
+"الخدمة المسؤولة عن التعامل مع طلبات المستخدم نفذت ذاكرتها.\n"
+"رجاءً أغلق بعض التطبيقات أو أعد تشغيل جهازك."
+
+#: PkStrings.cpp:559
+#, kde-format
+msgid "A thread could not be created to service the user request."
+msgstr "لا يمكن إنشاء خيط للخدمة التي طلبها المستخدم."
+
+#: PkStrings.cpp:561
+#, kde-format
+msgid ""
+"The action is not supported by this backend.\n"
+"Please report a bug as this should not have happened."
+msgstr ""
+"هذا الفعل غير مدعوم من قبل الخلفية.\n"
+"رجاءً ارفع تقرير بهذا الخطأ حيث أنه يجب أن لا يحدث."
+
+#: PkStrings.cpp:564
+#, kde-format
+msgid ""
+"A problem that we were not expecting has occurred.\n"
+"Please report this bug with the error description."
+msgstr ""
+"خطأ غير متوقع حدث.\n"
+"رجاءً ارفع تقرير بهذا الخطأ مع الوصف."
+
+#: PkStrings.cpp:567
+#, kde-format
+msgid ""
+"A security trust relationship could not be made with the software origin.\n"
+"Please check your software signature settings."
+msgstr ""
+"لا يمكن القيام بعلاقة وثوق أمنية مع أصل البرنامج.\n"
+"رجاءً تحقق من إعدادات توقيع البرنامج."
+
+#: PkStrings.cpp:570
+#, kde-format
+msgid ""
+"The package that is trying to be removed or updated is not already installed."
+msgstr "الحزمة التي تحاول أن تزال أو تحدث ليست مثبته مسبقا."
+
+#: PkStrings.cpp:572
+#, kde-format
+msgid ""
+"The package that is being modified was not found on your system or in any "
+"software origin."
+msgstr "الحزمة التي عدلت لم توجد في نظامك أو في أي أصل برنامج."
+
+#: PkStrings.cpp:574
+#, kde-format
+msgid "The package that is trying to be installed is already installed."
+msgstr "الحزمة التي تحاول التثبيت مثبته مسبقًا."
+
+#: PkStrings.cpp:576
+#, kde-format
+msgid ""
+"The package download failed.\n"
+"Please check your network connectivity."
+msgstr ""
+"فشل تنزيل الحزمة.\n"
+" رجاءً تحقق من اتصال شابكتك."
+
+#: PkStrings.cpp:579
+#, kde-format
+msgid ""
+"The group type was not found.\n"
+"Please check your group list and try again."
+msgstr ""
+"لم توجد المجموعة.\n"
+"رجاءً تحقق من قائمة مجموعاتك وحاول مجددا."
+
+#: PkStrings.cpp:582
+#, kde-format
+msgid ""
+"The group list could not be loaded.\n"
+"Refreshing your cache may help, although this is normally a software origin "
+"error."
+msgstr ""
+"لا يمكن تحميل قائمة المجموعات.\n"
+"إنعاش ذاكرتك المؤقتة قد يساعد، بالرغم من أن هذه عادة مشكلة أصل البرنامج."
+
+#: PkStrings.cpp:586
+#, kde-format
+msgid ""
+"A package dependency could not be found.\n"
+"More information is available in the detailed report."
+msgstr ""
+"لا توجد اعتمادية الحزمة.\n"
+"المزيد من المعلومات متوفرة في التقرير المفصل."
+
+#: PkStrings.cpp:589
+#, kde-format
+msgid "The search filter was not correctly formed."
+msgstr "مرشح البحث لم ينسق بشكل صحيح."
+
+#: PkStrings.cpp:591
+#, kde-format
+msgid ""
+"The package identifier was not well formed when sent to the system daemon.\n"
+"This normally indicates an internal bug and should be reported."
+msgstr ""
+"معرف الحزمة لم ينسق بشكل صحيح عندما أرسل إلى خدمة النظام.\n"
+"عادة هذا يشير إلى مشكلة داخلية ويجب رفع تقرير عنها."
+
+#: PkStrings.cpp:594
+#, kde-format
+msgid ""
+"An error occurred while running the transaction.\n"
+"More information is available in the detailed report."
+msgstr ""
+"حدث خطأ أثناء تشغيل العملية.\n"
+"المزيد من المعلومات متوفرة في التقرير المفصل."
+
+#: PkStrings.cpp:597
+#, kde-format
+msgid ""
+"The remote software origin name was not found.\n"
+"You may need to enable an item in Software Origins."
+msgstr ""
+"اسم أصل البرنامج البعيد غير موجود.\n"
+"قد تحتاج إلى تفعيل عنصر في أصول البرامج."
+
+#: PkStrings.cpp:600
+#, kde-format
+msgid "Removing a protected system package is not allowed."
+msgstr "إزالة حزمة نظام محمية غير مسموح به."
+
+#: PkStrings.cpp:602
+#, kde-format
+msgid "The task was canceled successfully and no packages were changed."
+msgstr "ألغيت المهمة بنجاح ولم يتم تغيير أي حزمة."
+
+#: PkStrings.cpp:604
+#, kde-format
+msgid ""
+"The task was canceled successfully and no packages were changed.\n"
+"The backend did not exit cleanly."
+msgstr ""
+"ألغيت المهمة بنجاح ولم يتم تغيير أي حزمة.\n"
+"الخلفية لم تخرج بنظافة."
+
+#: PkStrings.cpp:607
+#, kde-format
+msgid ""
+"The native package configuration file could not be opened.\n"
+"Please make sure your system's configuration is valid."
+msgstr ""
+"ملف إعدادات الحزمة الأصلية لا يمكن فتحه.\n"
+"رجاءً تأكد من أن إعدادات نظامك صالحة."
+
+#: PkStrings.cpp:610
+#, kde-format
+msgid "The task is not safe to be cancelled at this time."
+msgstr "إلغاء المهمة غير آمن في هذا الوقت."
+
+#: PkStrings.cpp:612
+#, kde-format
+msgid ""
+"Source packages are not normally installed this way.\n"
+"Check the extension of the file you are trying to install."
+msgstr ""
+"حزم المصدر عادة لا تثبت بهذه الطريقة.\n"
+"تحقق من امتداد الملف الذي تحاول تثبيته."
+
+#: PkStrings.cpp:615
+#, kde-format
+msgid ""
+"The license agreement was not agreed to.\n"
+"To use this software you have to accept the license."
+msgstr ""
+"لم يتم قبول اتفاقية الترخيص.\n"
+"لاستخدام البرنامج يجب أن تقبل الترخيص."
+
+#: PkStrings.cpp:618
+#, kde-format
+msgid ""
+"Two packages provide the same file.\n"
+"This is usually due to mixing packages for different software origins."
+msgstr ""
+"حزمتان قدمتا نفس الملف.\n"
+"يحدث هذا عادة بسبب خلط حزم من أصول برامج مختلفة."
+
+#: PkStrings.cpp:621
+#, kde-format
+msgid ""
+"Multiple packages exist that are not compatible with each other.\n"
+"This is usually due to mixing packages from different software origins."
+msgstr ""
+"يوجد العديد من الحزم التي لا تتطابق مع بعضها البعض.\n"
+"سبب ذلك عادة هو خلط الحزم من أصول برامج مختلفة."
+
+#: PkStrings.cpp:624
+#, kde-format
+msgid ""
+"There was a (possibly temporary) problem connecting to a software origins.\n"
+"Please check the detailed error for further details."
+msgstr ""
+"كان هنا مشكلة (متوقع أنها مؤقتة) في الاتصال بأصول البرامج.\n"
+"رجاءً تحقق من تفاصيل الخطأ للمزيد من المعلومات."
+
+#: PkStrings.cpp:627
+#, kde-format
+msgid ""
+"Failed to initialize packaging backend.\n"
+"This may occur if other packaging tools are being used simultaneously."
+msgstr ""
+"أخفقت في تهيئة خلفية الحزم.\n"
+"قد يحدث هذا إذا كان هناك أداوت حزم تستخدم في نفس الوقت."
+
+#: PkStrings.cpp:630
+#, kde-format
+msgid ""
+"Failed to close down the backend instance.\n"
+"This error can normally be ignored."
+msgstr ""
+"أخفقت في إغلاق الخلفية.\n"
+"هذا الخطأ يمكن تجاهله عادة."
+
+#: PkStrings.cpp:633
+#, kde-format
+msgid ""
+"Cannot get the exclusive lock on the packaging backend.\n"
+"Please close any other legacy packaging tools that may be open."
+msgstr ""
+"لم أستطع الحصول على قفل حصري لخلفية الحزم.\n"
+"رجاءً أغلق أي أداة أثرية حزم أخرى قد تكون مفتوحة."
+
+#: PkStrings.cpp:636
+#, kde-format
+msgid "None of the selected packages could be updated."
+msgstr "لا يمكن تحديث أي من الحزم المحددة."
+
+#: PkStrings.cpp:638
+#, kde-format
+msgid "The repository configuration could not be modified."
+msgstr "لا يمكن تعديل إعدادات المستودع."
+
+#: PkStrings.cpp:640
+#, kde-format
+msgid ""
+"Installing the local file failed.\n"
+"More information is available in the detailed report."
+msgstr ""
+"فشل تثبيت الملف المحلي.\n"
+"المزيد من المعلومات متوفرة في التقرير المفصل."
+
+#: PkStrings.cpp:643
+#, kde-format
+msgid "The package signature could not be verified."
+msgstr "لا يمكن التحقق من توقيع الحزمة."
+
+#: PkStrings.cpp:645
+#, kde-format
+msgid ""
+"The package signature was missing and this package is untrusted.\n"
+"This package was not signed with a GPG key when created."
+msgstr ""
+"توقيع الحزمة مفقود وهذه الحزمة غير موثوقة.\n"
+"هذه الحزمة غير موقعة بمفتاح GPG عند إنشائها."
+
+#: PkStrings.cpp:648
+#, kde-format
+msgid "Repository configuration was invalid and could not be read."
+msgstr "إعدادات الحزمة غير صحيحة ولا يمكن قرأتها."
+
+#: PkStrings.cpp:650
+#, kde-format
+msgid ""
+"The package you are attempting to install is not valid.\n"
+"The package file could be corrupt, or not a proper package."
+msgstr ""
+"الحزمة التي تحاول تثبيتها غير صالحة.\n"
+"قد يكون ملف الحزمة فاسد، أو أنها ليست حزمة مناسبة."
+
+#: PkStrings.cpp:653
+#, kde-format
+msgid ""
+"Installation of this package was prevented by your packaging system's "
+"configuration."
+msgstr "تثبيت هذه الحزمة منع بواسطة إعدادات نظام الحزم."
+
+#: PkStrings.cpp:655
+#, kde-format
+msgid ""
+"The package that was downloaded is corrupt and needs to be downloaded again."
+msgstr "الحزمة المنزلة فاسدة وتحتاج إلى إعادة التنزيل مرة أخرى."
+
+#: PkStrings.cpp:657
+#, kde-format
+msgid ""
+"All of the packages selected for install are already installed on the system."
+msgstr "جميع الحزم المحدد مثبتة مسبقا في النظام."
+
+#: PkStrings.cpp:659
+#, kde-format
+msgid ""
+"The specified file could not be found on the system.\n"
+"Check that the file still exists and has not been deleted."
+msgstr ""
+"الملف المحدد لا يمكن العثور عليه على النظام.\n"
+"تحقق من أن الملف موجود ولم يتم حذفه."
+
+#: PkStrings.cpp:662
+#, kde-format
+msgid ""
+"Required data could not be found on any of the configured software origins.\n"
+"There were no more download mirrors that could be tried."
+msgstr ""
+"البيانات المطلوبة لا يمكن العثور عليها في أي من أصول البرامج المعدة.\n"
+"لا توجد مرايا تنزيل يمكن تجربتها."
+
+#: PkStrings.cpp:665
+#, kde-format
+msgid ""
+"Required upgrade data could not be found in any of the configured software "
+"origins.\n"
+"The list of distribution upgrades will be unavailable."
+msgstr ""
+"بيانات الترقية المطلوبة لا يمكن العثور عليها في أي من أصول البرامج المعدة.\n"
+"قائمة ترقيات التوزيعة لن تتوفر."
+
+#: PkStrings.cpp:668
+#, kde-format
+msgid ""
+"The package that is trying to be installed is incompatible with this system."
+msgstr "الحزمة التي تحاول تثبيتها غير متوافقة مع هذا النظام."
+
+#: PkStrings.cpp:670
+#, kde-format
+msgid ""
+"There is insufficient space on the device.\n"
+"Free some space on the system disk to perform this operation."
+msgstr ""
+"لا توجد مساحة كافية في الجهاز.\n"
+"أفرغ بعض المساحة على قرص النظام لتنفيذ هذه العملية."
+
+#: PkStrings.cpp:673
+#, kde-format
+msgid "Additional media is required to complete the transaction."
+msgstr "وسائط إضافية مطلوبة لإكمال هذه العملية."
+
+#: PkStrings.cpp:675
+#, kde-format
+msgid ""
+"You have failed to provide correct authentication.\n"
+"Please check any passwords or account settings."
+msgstr ""
+"أخفقت في توفير توثيق صحيح.\n"
+"رجاءً تحقق من أي كلمات المرور أو إعدادات الحساب."
+
+#: PkStrings.cpp:678
+#, kde-format
+msgid ""
+"The specified update could not be found.\n"
+"It could have already been installed or no longer available on the remote "
+"server."
+msgstr ""
+"التحديث المحدد لا يمكن العثور عليه.\n"
+"قد يكون مثبت مسبقا أو لا انه غير متوفر على الخادم البعيد."
+
+#: PkStrings.cpp:681
+#, kde-format
+msgid "The package could not be installed from untrusted origin."
+msgstr "لا يمكن تثبيت الحزمة من أصل غير موثوق."
+
+#: PkStrings.cpp:683
+#, kde-format
+msgid "The package could not be updated from untrusted origin."
+msgstr "لا يمكن تحديث الحزمة من أصل غير موثوق."
+
+#: PkStrings.cpp:685
+#, kde-format
+msgid "The file list is not available for this package."
+msgstr "قائمة الملفات غير متوفرة لهذه الحزمة."
+
+#: PkStrings.cpp:687
+#, kde-format
+msgid "The information about what requires this package could not be obtained."
+msgstr "المعلومات عن من يحتاج هذه الحزمة لا يمكن الحصول عليها."
+
+#: PkStrings.cpp:689
+#, kde-format
+msgid "The specified software origin could not be disabled."
+msgstr "أصل البرنامج المحدد لا يمكن تعطيله."
+
+#: PkStrings.cpp:691
+#, kde-format
+msgid ""
+"The download could not be done automatically and should be done manually.\n"
+"More information is available in the detailed report."
+msgstr ""
+"التنزيل لا يمكن أن يتم تلقائيًا ويجب أن يتم يدويًا.\n"
+"المزيد من المعلومات متوفرة في التقرير المفصل."
+
+#: PkStrings.cpp:694
+#, kde-format
+msgid ""
+"One of the selected packages failed to configure correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"أحد الحزم المحددة أخفقت في إعدادها بشكل صحيح.\n"
+"المزيد من المعلومات متوفرة في التقرير المفصل."
+
+#: PkStrings.cpp:697
+#, kde-format
+msgid ""
+"One of the selected packages failed to build correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"أحد الحزم المحددة أخفقت في بنائها بشكل صحيح.\n"
+"المزيد من المعلومات متوفرة في التقرير المفصل."
+
+#: PkStrings.cpp:700
+#, kde-format
+msgid ""
+"One of the selected packages failed to install correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"أحد الحزم المحددة أخفقت في تثبيتها بشكل صحيح.\n"
+"المزيد من المعلومات متوفرة في التقرير المفصل."
+
+#: PkStrings.cpp:703
+#, kde-format
+msgid ""
+"One of the selected packages failed to be removed correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"أحد الحزم المحددة أخفقت في إزالتها بشكل صحيح.\n"
+"المزيد من المعلومات متوفرة في التقرير المفصل."
+
+#: PkStrings.cpp:706
+#, kde-format
+msgid ""
+"A program is running that has to be closed before the update can proceed.\n"
+"More information is available in the detailed report."
+msgstr ""
+"برنامج يعمل يجب إغلاقه قبل الاستمرار بالتحديث.\n"
+"المزيد من المعلومات متوفرة في التقرير المفصل."
+
+#: PkStrings.cpp:709
+#, kde-format
+msgid "The package database was changed while the request was running."
+msgstr "غيرت قاعدة بيانات الحزم أثناء عمل طلب."
+
+#: PkStrings.cpp:711
+#, kde-format
+msgid "The virtual provide type is not supported by this system."
+msgstr "لا يدعم هذا النظام نوع التزويد الافتراضي."
+
+#: PkStrings.cpp:713
+#, kde-format
+msgid "The install root is invalid. Please contact your administrator."
+msgstr "جذر التثبيت غير صحيح. رجاءً تواصل مع مدير النظام."
+
+#: PkStrings.cpp:715
+#, kde-format
+msgid "The list of software could not be downloaded."
+msgstr "لا يمكن تنزيل قائمة البرامج."
+
+#: PkStrings.cpp:717
+#, kde-format
+msgid ""
+"The transaction has been cancelled and will be retried when the system is "
+"idle."
+msgstr "العملية ألغيت وسيتم إعادة المحاولة عندما يكون النظام خامل."
+
+#: PkStrings.cpp:719
+#, kde-format
+msgid "A previous package management transaction was interrupted."
+msgstr "عملية إدارة الحزم السابقة تم مقاطعتها."
+
+#: PkStrings.cpp:721
+#, kde-format
+msgid "A package manager lock is required."
+msgstr "قفل مدير الحزم مطلوب."
+
+#: PkStrings.cpp:723
+#, kde-format
+msgid ""
+"Unknown error, please report a bug.\n"
+"More information is available in the detailed report."
+msgstr ""
+"خطأ غير معروف، الرجاء رفع تقرير المشكلة.\n"
+"المزيد من المعلومات متوفرة في التقرير المفصل."
+
+#: PkStrings.cpp:734
+#, kde-format
+msgctxt "The group type"
+msgid "Accessibility"
+msgstr "الإتاحة"
+
+#: PkStrings.cpp:736
+#, kde-format
+msgctxt "The group type"
+msgid "Accessories"
+msgstr "الإكسسوارات"
+
+#: PkStrings.cpp:738
+#, kde-format
+msgctxt "The group type"
+msgid "Education"
+msgstr "التعليم"
+
+#: PkStrings.cpp:740
+#, kde-format
+msgctxt "The group type"
+msgid "Games"
+msgstr "الألعاب"
+
+#: PkStrings.cpp:742
+#, kde-format
+msgctxt "The group type"
+msgid "Graphics"
+msgstr "الرسوميات"
+
+#: PkStrings.cpp:744
+#, kde-format
+msgctxt "The group type"
+msgid "Internet"
+msgstr "الإنترنت"
+
+#: PkStrings.cpp:746
+#, kde-format
+msgctxt "The group type"
+msgid "Office"
+msgstr "المكتب"
+
+#: PkStrings.cpp:748
+#, kde-format
+msgctxt "The group type"
+msgid "Others"
+msgstr "أخرى"
+
+#: PkStrings.cpp:750
+#, kde-format
+msgctxt "The group type"
+msgid "Development"
+msgstr "أدوات المطور"
+
+#: PkStrings.cpp:752
+#, kde-format
+msgctxt "The group type"
+msgid "Multimedia"
+msgstr "الوسائط المتعددة"
+
+#: PkStrings.cpp:754
+#, kde-format
+msgctxt "The group type"
+msgid "System"
+msgstr "النظام"
+
+#: PkStrings.cpp:756
+#, kde-format
+msgctxt "The group type"
+msgid "GNOME desktop"
+msgstr "سطح مكتب جنوم"
+
+#: PkStrings.cpp:758
+#, kde-format
+msgctxt "The group type"
+msgid "KDE desktop"
+msgstr "سطح مكتب كيدي"
+
+#: PkStrings.cpp:760
+#, kde-format
+msgctxt "The group type"
+msgid "XFCE desktop"
+msgstr "سطح مكتب XFCE"
+
+#: PkStrings.cpp:762
+#, kde-format
+msgctxt "The group type"
+msgid "Other desktops"
+msgstr "أسطح مكتب أخرى"
+
+#: PkStrings.cpp:764
+#, kde-format
+msgctxt "The group type"
+msgid "Publishing"
+msgstr "النشر"
+
+#: PkStrings.cpp:766
+#, kde-format
+msgctxt "The group type"
+msgid "Servers"
+msgstr "الخوادم"
+
+#: PkStrings.cpp:768
+#, kde-format
+msgctxt "The group type"
+msgid "Fonts"
+msgstr "الخطوط"
+
+#: PkStrings.cpp:770
+#, kde-format
+msgctxt "The group type"
+msgid "Admin tools"
+msgstr "أدوات مدير النظام"
+
+#: PkStrings.cpp:772
+#, kde-format
+msgctxt "The group type"
+msgid "Legacy"
+msgstr "الإرث"
+
+#: PkStrings.cpp:774
+#, kde-format
+msgctxt "The group type"
+msgid "Localization"
+msgstr "الترجمة"
+
+#: PkStrings.cpp:776
+#, kde-format
+msgctxt "The group type"
+msgid "Virtualization"
+msgstr "الافتراضية"
+
+#: PkStrings.cpp:778
+#, kde-format
+msgctxt "The group type"
+msgid "Security"
+msgstr "الأمن"
+
+#: PkStrings.cpp:780
+#, kde-format
+msgctxt "The group type"
+msgid "Power management"
+msgstr "إدارة الطاقة"
+
+#: PkStrings.cpp:782
+#, kde-format
+msgctxt "The group type"
+msgid "Communication"
+msgstr "الاتصالات"
+
+#: PkStrings.cpp:784
+#, kde-format
+msgctxt "The group type"
+msgid "Network"
+msgstr "الشابكة"
+
+#: PkStrings.cpp:786
+#, kde-format
+msgctxt "The group type"
+msgid "Maps"
+msgstr "الخرائط"
+
+#: PkStrings.cpp:788
+#, kde-format
+msgctxt "The group type"
+msgid "Software sources"
+msgstr "مصادر البرامج"
+
+#: PkStrings.cpp:790
+#, kde-format
+msgctxt "The group type"
+msgid "Science"
+msgstr "العلوم"
+
+#: PkStrings.cpp:792
+#, kde-format
+msgctxt "The group type"
+msgid "Documentation"
+msgstr "التوثيق"
+
+#: PkStrings.cpp:794
+#, kde-format
+msgctxt "The group type"
+msgid "Electronics"
+msgstr "الإلكترونيات"
+
+#: PkStrings.cpp:796
+#, kde-format
+msgctxt "The group type"
+msgid "Package collections"
+msgstr "مجموعات الحزمة"
+
+#: PkStrings.cpp:798
+#, kde-format
+msgctxt "The group type"
+msgid "Vendor"
+msgstr "المزود"
+
+#: PkStrings.cpp:800
+#, kde-format
+msgctxt "The group type"
+msgid "Newest packages"
+msgstr "الحزم الأحدث"
+
+#: PkStrings.cpp:802
+#, kde-format
+msgctxt "The group type"
+msgid "Unknown group"
+msgstr "مجموعة غير معروفة"
+
+#: PkStrings.cpp:813
+#, kde-format
+msgctxt "The type of update"
+msgid "Trivial update"
+msgstr "تحديث طفيف"
+
+#: PkStrings.cpp:815
+#, kde-format
+msgctxt "The type of update"
+msgid "Normal update"
+msgstr "تحديث عادي"
+
+#: PkStrings.cpp:817
+#, kde-format
+msgctxt "The type of update"
+msgid "Important update"
+msgstr "تحديث مهم"
+
+#: PkStrings.cpp:819
+#, kde-format
+msgctxt "The type of update"
+msgid "Security update"
+msgstr "تحديث أمني"
+
+#: PkStrings.cpp:821
+#, kde-format
+msgctxt "The type of update"
+msgid "Bug fix update"
+msgstr "تحديث إصلاح خلل"
+
+#: PkStrings.cpp:823
+#, kde-format
+msgctxt "The type of update"
+msgid "Enhancement update"
+msgstr "تحديث تحسيني"
+
+#: PkStrings.cpp:825
+#, kde-format
+msgctxt "The type of update"
+msgid "Blocked update"
+msgstr "تحديث محجوب"
+
+#: PkStrings.cpp:828
+#, kde-format
+msgctxt "The type of update"
+msgid "Installed"
+msgstr "مثبت"
+
+#: PkStrings.cpp:831
+#, kde-format
+msgctxt "The type of update"
+msgid "Available"
+msgstr "متوفر"
+
+#: PkStrings.cpp:833
+#, kde-format
+msgctxt "The type of update"
+msgid "Unknown update"
+msgstr "تحديث غير معروف"
+
+#: PkStrings.cpp:844
+#, kde-format
+msgid "No Updates Available"
+msgstr "لا تتوفر تحديثات"
+
+#: PkStrings.cpp:847
+#, kde-format
+msgctxt "Some updates were selected on the view"
+msgid "1 Update Selected"
+msgid_plural "%1 Updates Selected"
+msgstr[0] "لا يوجد تحديث"
+msgstr[1] "تحديث واحد محدد"
+msgstr[2] "تحديثان محددان"
+msgstr[3] "%1 تحديثات محددة"
+msgstr[4] "%1 تحديث محدد"
+msgstr[5] "%1 تحديث محدد"
+
+#: PkStrings.cpp:851
+#, kde-format
+msgctxt "Some updates are being shown on the screen"
+msgid "1 Update"
+msgid_plural "%1 Updates"
+msgstr[0] "لا يوجد تحديث"
+msgstr[1] "تحديث واحد"
+msgstr[2] "تحديثان"
+msgstr[3] "%1 تحديثات"
+msgstr[4] "%1 تحديث"
+msgstr[5] "%1 تحديث"
+
+#: PkStrings.cpp:854
+#, kde-format
+msgctxt "Type of update, in the case it's just an update"
+msgid "%1, %2"
+msgstr "%1، %2"
+
+#: PkStrings.cpp:855
+#, kde-format
+msgctxt "Part of: %1 Updates, %1 Selected"
+msgid "%1 Update"
+msgid_plural "%1 Updates"
+msgstr[0] "لا يوجد تحديث"
+msgstr[1] "تحديث واحد"
+msgstr[2] "تحديثان"
+msgstr[3] "%1 تحديثات"
+msgstr[4] "%1 تحديث"
+msgstr[5] "%1 تحديث"
+
+#: PkStrings.cpp:856
+#, kde-format
+msgctxt "Part of: %1 Updates, %1 Selected"
+msgid "%1 Selected"
+msgid_plural "%1 Selected"
+msgstr[0] "لم يحدد شيء"
+msgstr[1] "واحد محدد"
+msgstr[2] "اثنان محددان"
+msgstr[3] "%1 محددة"
+msgstr[4] "%1 محدد"
+msgstr[5] "%1 محدد"
+
+#: PkStrings.cpp:860
+#, kde-format
+msgid "No Packages"
+msgstr "لا توجد حزم"
+
+#: PkStrings.cpp:862
+#, kde-format
+msgid "1 Package"
+msgid_plural "%1 Packages"
+msgstr[0] "لا توجد حزمة"
+msgstr[1] "حزمة"
+msgstr[2] "حزمتان"
+msgstr[3] "%1 حزمات"
+msgstr[4] "%1 حزم"
+msgstr[5] "%1 حزم"
+
+#: PkStrings.cpp:870
+#, kde-format
+msgid "No restart is necessary"
+msgstr "إعادة التشغيل ليست ضرورية"
+
+#: PkStrings.cpp:872
+#, kde-format
+msgid "You will be required to restart this application"
+msgstr "ستحتاج إلى إعادة تشغيل هذا التطبيق"
+
+#: PkStrings.cpp:874
+#, kde-format
+msgid "You will be required to log out and back in"
+msgstr "ستحتاج إلى تسجيل الخروج والدخول مرة أخرى"
+
+#: PkStrings.cpp:876
+#, kde-format
+msgid "A restart will be required"
+msgstr "إعادة التشغيل مطلوبة"
+
+#: PkStrings.cpp:878
+#, kde-format
+msgid "You will be required to log out and back in due to a security update."
+msgstr "ستحتاج إلى تسجيل الخروج والدخول مرة أخرى نظرا لوجود تحديث أمني."
+
+#: PkStrings.cpp:880
+#, kde-format
+msgid "A restart will be required due to a security update."
+msgstr "إعادة التشغيل مطلوبة نظرا لوجود تحديث أمني."
+
+#: PkStrings.cpp:893
+#, kde-format
+msgid "No restart is required"
+msgstr "إعادة التشغيل غير مطلوبة"
+
+#: PkStrings.cpp:895
+#, kde-format
+msgid "A restart is required"
+msgstr "إعادة التشغيل مطلوبة"
+
+#: PkStrings.cpp:897
+#, kde-format
+msgid "You need to log out and log back in"
+msgstr "تحتاج إلى تسجيل الخروج والدخول مرة أخرى"
+
+#: PkStrings.cpp:899
+#, kde-format
+msgid "You need to restart the application"
+msgstr "تحتاج إلى إعادة تشغيل التطبيق"
+
+#: PkStrings.cpp:901
+#, kde-format
+msgid "You need to log out and log back in to remain secure."
+msgstr "تحتاج إلى تسجيل الخروج والدخول مرة أخرى لتبقى في أمان."
+
+#: PkStrings.cpp:903
+#, kde-format
+msgid "A restart is required to remain secure."
+msgstr "إعادة التشغيل مطلوبة لتبقى في أمان."
+
+#: PkStrings.cpp:916
+#, kde-format
+msgid "Stable"
+msgstr "مستقر"
+
+#: PkStrings.cpp:918
+#, kde-format
+msgid "Unstable"
+msgstr "غير مستقر"
+
+#: PkStrings.cpp:920
+#, kde-format
+msgid "Testing"
+msgstr "اختباري"
+
+#: PkStrings.cpp:933
+#, kde-format
+msgid "Please insert the CD labeled '%1', and press continue."
+msgstr "الرجاء إدخال القرص المضغوط المسمى بـ %1، واضغط على تابع."
+
+#: PkStrings.cpp:935
+#, kde-format
+msgid "Please insert the DVD labeled '%1', and press continue."
+msgstr "الرجاء إدخال DVD المسمى بـ %1، واضغط على تابع."
+
+#: PkStrings.cpp:937
+#, kde-format
+msgid "Please insert the disc labeled '%1', and press continue."
+msgstr "الرجاء إدخال القرص المسمى بـ %1، واضغط على تابع."
+
+#: PkStrings.cpp:939 PkStrings.cpp:942
+#, kde-format
+msgid "Please insert the medium labeled '%1', and press continue."
+msgstr "الرجاء إدخال الوسائط المسماة بـ %1، واضغط على تابع."
+
+#: PkStrings.cpp:950
+#, kde-format
+msgid "You do not have the necessary privileges to perform this action."
+msgstr "ليست لديك الصلاحيات المطلوبة لتنفيذ هذا الفعل."
+
+#: PkStrings.cpp:952
+#, kde-format
+msgid "Could not get a transaction id from packagekitd."
+msgstr "لا يمكن الحصول على معرف العملية من packagekitd."
+
+#: PkStrings.cpp:954
+#, kde-format
+msgid "Cannot connect to this transaction id."
+msgstr "لا يمكن الاتصال بمعرف هذه العملية."
+
+#: PkStrings.cpp:956
+#, kde-format
+msgid "This action is unknown."
+msgstr "هذا الفعل غير معروف."
+
+#: PkStrings.cpp:958
+#, kde-format
+msgid "The packagekitd service could not be started."
+msgstr "لا يمكن بدء خدمة packagekitd."
+
+#: PkStrings.cpp:960
+#, kde-format
+msgid "The query is not valid."
+msgstr "الاستعلام غير صالح."
+
+#: PkStrings.cpp:962
+#, kde-format
+msgid "The file is not valid."
+msgstr "الملف غير صالح."
+
+#: PkStrings.cpp:964
+#, kde-format
+msgid "This function is not yet supported."
+msgstr "هذه المهمة غير مدعومة بعد."
+
+#: PkStrings.cpp:966
+#, kde-format
+msgid "Could not talk to packagekitd."
+msgstr "لا يمكن مخاطبة packagekitd."
+
+#: PkStrings.cpp:968
+#, kde-format
+msgid "Error talking to packagekitd."
+msgstr "خطأ في مخاطبة packagekitd."
+
+#: PkStrings.cpp:971 PkStrings.cpp:974
+#, kde-format
+msgid "An unknown error happened."
+msgstr "حدث خطأ غير معروف."
+
+#: PkStrings.cpp:988 pkupdates.cpp:170
+#, kde-format
+msgid "Your system is up to date"
+msgstr "نظامك محدث"
+
+#: PkStrings.cpp:990
+#, kde-format
+msgid "You have no updates"
+msgstr "لا يوجد لديك أي تحديثات"
+
+#: PkStrings.cpp:992
+#, kde-format
+msgid "Last check for updates was more than a month ago"
+msgstr "آخر تحقق من التحديثات كان قبل أكثر من شهر"
+
+#: PkStrings.cpp:1000
+#, kde-format
+msgid "Verified %1 ago"
+msgstr "تحقق قبل %1"
+
+#: PkStrings.cpp:1002
+#, kde-format
+msgid "It's strongly recommended that you check for new updates now"
+msgstr "يوصى بشدة أن تتحقق من وجود تحديثات الآن"
+
+#: pkupdates.cpp:54
+#, kde-format
+msgid "Idle"
+msgstr "عاطل"
+
+#: pkupdates.cpp:140
+#, kde-format
+msgid "Checking updates"
+msgstr "يتحقق من التحديثات"
+
+#: pkupdates.cpp:142
+#, kde-format
+msgid "Getting updates"
+msgstr "يحصل على التحديثات"
+
+#: pkupdates.cpp:144
+#, kde-format
+msgid "Installing updates"
+msgstr "يثبت التحديثات"
+
+#: pkupdates.cpp:146
+#, kde-format
+msgid "Working"
+msgstr "يعمل"
+
+#: pkupdates.cpp:149 pkupdates.cpp:439
+#, kde-format
+msgid "You have 1 new update"
+msgid_plural "You have %1 new updates"
+msgstr[0] "لا يوجد تحديث"
+msgstr[1] "لديك تحديث واحد جديد"
+msgstr[2] "لديك تحديثان جديدان"
+msgstr[3] "لديك %1 تحديثات جديدة"
+msgstr[4] "لديك %1 تحديث جديد"
+msgstr[5] "لديك %1 تحديث جديد"
+
+#: pkupdates.cpp:151
+#, kde-format
+msgid "1 security update"
+msgid_plural "%1 security updates"
+msgstr[0] "لا يوجد تحديث أمني"
+msgstr[1] "تحديث أمني واحد"
+msgstr[2] "تحديثان أمنيان"
+msgstr[3] "%1 تحديثات أمنية"
+msgstr[4] "%1 تحديث أمني"
+msgstr[5] "%1 تحديث أمني"
+
+#: pkupdates.cpp:153
+#, kde-format
+msgid "1 important update"
+msgid_plural "%1 important updates"
+msgstr[0] "لا يوجد تحديث مهم"
+msgstr[1] "تحديث مهم واحد"
+msgstr[2] "تحديثان مهمان"
+msgstr[3] "%1 تحديثات مهمة"
+msgstr[4] "%1 تحديث مهمة"
+msgstr[5] "%1 تحديث مهمة"
+
+#: pkupdates.cpp:158
+#, kde-format
+msgid " and "
+msgstr " و "
+
+#: pkupdates.cpp:158
+#, kde-format
+msgid "(including %1)"
+msgstr "(يتضمن %1)"
+
+#: pkupdates.cpp:160
+#, kde-format
+msgid "Your system is offline"
+msgstr "نظامك غير متصل"
+
+#: pkupdates.cpp:165
+#, kde-format
+msgid "Not checked for updates yet"
+msgstr "لم يتحقق من وجود تحديثات بعد"
+
+#: pkupdates.cpp:168
+#, kde-format
+msgid "Checking for updates failed"
+msgstr "فشل التحقق من التحديثات"
+
+#: pkupdates.cpp:241
+#, kde-format
+msgid "Last check: %1 ago"
+msgstr "آخر تحقق: قبل %1"
+
+#: pkupdates.cpp:243
+#, kde-format
+msgid "Last check: never"
+msgstr "آخر تحقق: ألبته"
+
+#: pkupdates.cpp:385
+#, kde-format
+msgctxt "1 installation status, 2 pkg name, 3 percentage"
+msgid "%1 %2 (%3%)"
+msgstr "%1 %2 (%3%)"
+
+#: pkupdates.cpp:388
+#, kde-format
+msgctxt "1 installation status, 2 pkg name"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: pkupdates.cpp:474
+#, kde-format
+msgid "Updates Installed"
+msgstr "ثبتت التحديثات"
+
+#: pkupdates.cpp:475
+#, kde-format
+msgid "Successfully updated %1 package"
+msgid_plural "Successfully updated %1 packages"
+msgstr[0] "لم يحدث شيء"
+msgstr[1] "حدثَ حزمة واحدة بنجاح"
+msgstr[2] "حدثَ حزمتان بنجاح"
+msgstr[3] "حدثَ %1 حزمات بنجاح"
+msgstr[4] "حدثَ %1 حزم بنجاح"
+msgstr[5] "حدثَ %1 حزم بنجاح"
+
+#: pkupdates.cpp:539
+#, kde-format
+msgid "Update Error"
+msgstr "خطأ تحديث"
+
+#: pkupdates.cpp:593
+#, kde-format
+msgid "Restart is required"
+msgstr "إعادة التشغيل مطلوبة"
+
+#: pkupdates.cpp:594
+#, kde-format
+msgid ""
+"The computer will have to be restarted after the update for the changes to "
+"take effect."
+msgstr "يجب إعادة تشغيل النظام بعد التحديث لتنفذ التغييرات."
+
+#: pkupdates.cpp:603
+#, kde-format
+msgid "Session restart is required"
+msgstr "إعادة تشغيل الجلسة مطلوبة"
+
+#: pkupdates.cpp:604
+#, kde-format
+msgid ""
+"You will need to log out and back in after the update for the changes to "
+"take effect."
+msgstr "تحت إلى تسجيل الخروج والدخول مرة أخرى بعد التحديث لتنفذ التغييرات."
