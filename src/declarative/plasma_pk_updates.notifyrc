@@ -1,6 +1,7 @@
 [Global]
 IconName=system-software-update
 Comment=Software Updates
+Comment[ar]=تحديثات البرامج
 Comment[az]=Proqram Təminatı Yenilənmələri
 Comment[be]=Абнаўленні праграмнага забеспячэння
 Comment[ca]=Actualitzacions de programari
@@ -43,6 +44,7 @@ Comment[zh_TW]=軟體更新
 
 [Event/updatesAvailable]
 Name=Updates Available
+Name[ar]=التحديثات المتوفرة
 Name[az]=Yenilənmələr mövcuddur
 Name[be]=Даступны абнаўленні
 Name[ca]=Actualitzacions disponibles
@@ -82,6 +84,7 @@ Name[x-test]=xxUpdates Availablexx
 Name[zh_CN]=系统有可以安装的更新
 Name[zh_TW]=有更新可用
 Comment=Software updates for the system are available
+Comment[ar]=تحديثات برامج النظام متوفرة
 Comment[az]=Sistem üçün proqram təminatı yenilənmələri əlçatandır
 Comment[be]=Для сістэмы даступны абнаўленні праграмнага забеспячэння
 Comment[ca]=Hi ha disponibles actualitzacions de programari per al sistema
@@ -124,6 +127,7 @@ Action=Popup
 
 [Event/updatesInstalled]
 Name=Updates Installed
+Name[ar]=ثبتت التحديثات
 Name[az]=Yenilənmələr quraşdırıldı
 Name[be]=Абнаўленні ўсталяваныя
 Name[ca]=Actualitzacions instal·lades
@@ -163,6 +167,7 @@ Name[x-test]=xxUpdates Installedxx
 Name[zh_CN]=更新已安装
 Name[zh_TW]=已安裝更新
 Comment=The updates have been installed successfully
+Comment[ar]=ثبتت التحديثات بنجاح
 Comment[az]=Yenilənmələr müvəffəqiyyətlə quraşdırıldı
 Comment[be]=Абнаўленні былі паспяхова ўсталяваныя
 Comment[ca]=Les actualitzacions que s'han instal·lat correctament
@@ -205,6 +210,7 @@ Action=Popup
 
 [Event/restartRequired]
 Name=Restart Required
+Name[ar]=إعادة التشغيل مطلوبة
 Name[az]=Yenidən başlatmaq tələb olunur
 Name[be]=Патрабуецца перазапуск
 Name[ca]=Cal reiniciar
@@ -244,6 +250,7 @@ Name[x-test]=xxRestart Requiredxx
 Name[zh_CN]=需要重启
 Name[zh_TW]=需要重新啟動
 Comment=A session or computer restart is required
+Comment[ar]=إعادة تشغيل الجلسة أو الحاسب مطلوبة
 Comment[az]=Sessiyanın və ya kompyuterij yenidən başladılması tələb olunur
 Comment[be]=Патрабуецца перазапуск сеанса або камп'ютара
 Comment[ca]=Cal reiniciar una sessió o l'ordinador
@@ -286,6 +293,7 @@ Action=Popup
 
 [Event/updateError]
 Name=Update Error
+Name[ar]=خطأ تحديث
 Name[az]=Yenilənmə xatası
 Name[be]=Памылка абнаўлення
 Name[ca]=Error en actualitzar
@@ -325,6 +333,7 @@ Name[x-test]=xxUpdate Errorxx
 Name[zh_CN]=更新错误
 Name[zh_TW]=更新發生錯誤
 Comment=An error occurred
+Comment[ar]=حدث خطأ
 Comment[az]=Xəta baş verdi
 Comment[be]=Адбылася памылка
 Comment[ca]=S'ha produït un error
