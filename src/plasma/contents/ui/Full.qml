@@ -243,7 +243,7 @@ Item {
 
                 helpfulAction: QQC2.Action {
                     icon.name: "view-refresh"
-                    text: "Check for Updates"
+                    text: i18n("Check for Updates")
                     onTriggered: {
                         PkUpdates.checkUpdates(true /* manual */) // circumvent the checks, the user knows what they're doing ;)
                     }
