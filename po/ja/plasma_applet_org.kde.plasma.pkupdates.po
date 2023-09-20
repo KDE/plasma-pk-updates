@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_org.kde.plasma.pkupdates\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-03-07 00:46+0000\n"
+"POT-Creation-Date: 2023-09-20 00:48+0000\n"
 "PO-Revision-Date: 2015-11-30 23:44-0800\n"
 "Last-Translator: Japanese KDE translation team <kde-jp@kde.org>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -86,6 +86,11 @@ msgstr ""
 #: contents/ui/Full.qml:242
 #, kde-format
 msgid "No updates available"
+msgstr ""
+
+#: contents/ui/Full.qml:246
+#, kde-format
+msgid "Check for Updates"
 msgstr ""
 
 #: contents/ui/Full.qml:266

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-pk-updates\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-03-07 00:46+0000\n"
+"POT-Creation-Date: 2023-09-20 00:48+0000\n"
 "PO-Revision-Date: 2019-10-10 08:12+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -94,6 +94,12 @@ msgstr ""
 #| msgid "No description available"
 msgid "No updates available"
 msgstr "Ягон тавсиф дастрас нест"
+
+#: contents/ui/Full.qml:246
+#, fuzzy, kde-format
+#| msgid "Check For Updates"
+msgid "Check for Updates"
+msgstr "Омодагии навсозиҳоро тафтиш кунед"
 
 #: contents/ui/Full.qml:266
 #, kde-format

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_org.kde.plasma.pkupdates\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-03-07 00:46+0000\n"
+"POT-Creation-Date: 2023-09-20 00:48+0000\n"
 "PO-Revision-Date: 2023-02-09 01:13+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
@@ -91,6 +91,13 @@ msgstr "%1自動檢查更新。"
 #, kde-format
 msgid "No updates available"
 msgstr "沒有可用的更新"
+
+#: contents/ui/Full.qml:246
+#, fuzzy, kde-format
+#| msgctxt "@label part of a sentence"
+#| msgid "Check for updates when:"
+msgid "Check for Updates"
+msgstr "檢查更新："
 
 #: contents/ui/Full.qml:266
 #, kde-format

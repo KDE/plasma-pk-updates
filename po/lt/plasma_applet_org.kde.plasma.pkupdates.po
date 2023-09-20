@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-03-07 00:46+0000\n"
+"POT-Creation-Date: 2023-09-20 00:48+0000\n"
 "PO-Revision-Date: 2020-01-27 14:39+0200\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -96,6 +96,12 @@ msgstr "Atnaujinimų ieškoma %1.<br>"
 #| msgid "No description available"
 msgid "No updates available"
 msgstr "Nėra prieinamo aprašo"
+
+#: contents/ui/Full.qml:246
+#, fuzzy, kde-format
+#| msgid "Check For Updates"
+msgid "Check for Updates"
+msgstr "Tikrinti, ar yra atnaujinimų"
 
 #: contents/ui/Full.qml:266
 #, kde-format

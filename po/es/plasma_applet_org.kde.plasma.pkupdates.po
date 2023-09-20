@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-03-07 00:46+0000\n"
+"POT-Creation-Date: 2023-09-20 00:48+0000\n"
 "PO-Revision-Date: 2022-03-12 17:05+0100\n"
 "Last-Translator: Víctor Rodrigo Córdoba <vrcordoba@gmail.com>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -90,6 +90,13 @@ msgstr "Las actualizaciones se comprueban automáticamente %1."
 #, kde-format
 msgid "No updates available"
 msgstr "No existe ninguna actualización disponible"
+
+#: contents/ui/Full.qml:246
+#, fuzzy, kde-format
+#| msgctxt "@label part of a sentence"
+#| msgid "Check for updates when:"
+msgid "Check for Updates"
+msgstr "Comprobar actualizaciones cuando:"
 
 #: contents/ui/Full.qml:266
 #, kde-format

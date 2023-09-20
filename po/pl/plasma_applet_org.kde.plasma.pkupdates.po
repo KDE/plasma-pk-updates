@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-03-07 00:46+0000\n"
+"POT-Creation-Date: 2023-09-20 00:48+0000\n"
 "PO-Revision-Date: 2022-03-13 11:15+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -91,6 +91,13 @@ msgstr "Uaktualnienia są sprawdzanie samoczynnie %1."
 #, kde-format
 msgid "No updates available"
 msgstr "Brak uaktualnień"
+
+#: contents/ui/Full.qml:246
+#, fuzzy, kde-format
+#| msgctxt "@label part of a sentence"
+#| msgid "Check for updates when:"
+msgid "Check for Updates"
+msgstr "Sprawdź uaktualnienia gdy:"
 
 #: contents/ui/Full.qml:266
 #, kde-format

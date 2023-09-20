@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 86ff119b1606fcaa910d6b44fc14b611\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-03-07 00:46+0000\n"
+"POT-Creation-Date: 2023-09-20 00:48+0000\n"
 "PO-Revision-Date: 2023-01-30 16:02\n"
 "Last-Translator: Zmicier <zmicerturok@gmail.com>\n"
 "Language-Team: Belarusian\n"
@@ -95,6 +95,13 @@ msgstr "Наяўнасць аднаўленняў правяраецца аўт�
 #, kde-format
 msgid "No updates available"
 msgstr "Няма даступных абнаўленняў"
+
+#: contents/ui/Full.qml:246
+#, fuzzy, kde-format
+#| msgctxt "@label part of a sentence"
+#| msgid "Check for updates when:"
+msgid "Check for Updates"
+msgstr "Правяранне на наяўнасць абнаўленняў:"
 
 #: contents/ui/Full.qml:266
 #, kde-format

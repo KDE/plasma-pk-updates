@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-pk-updates\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-03-07 00:46+0000\n"
+"POT-Creation-Date: 2023-09-20 00:48+0000\n"
 "PO-Revision-Date: 2022-03-24 15:48+0400\n"
 "Last-Translator: Kheyyam Gojayev <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -90,6 +90,13 @@ msgstr "Yenilənmələrin avtomatik yoxlanılması dövrü: %1."
 #, kde-format
 msgid "No updates available"
 msgstr "Heç bir yenilənmə yoxdur"
+
+#: contents/ui/Full.qml:246
+#, fuzzy, kde-format
+#| msgctxt "@label part of a sentence"
+#| msgid "Check for updates when:"
+msgid "Check for Updates"
+msgstr "Yenilənmələrin yoxlanılma zamanı:"
 
 #: contents/ui/Full.qml:266
 #, kde-format

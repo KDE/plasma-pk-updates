@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_org.kde.plasma.pkupdates\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-03-07 00:46+0000\n"
+"POT-Creation-Date: 2023-09-20 00:48+0000\n"
 "PO-Revision-Date: 2017-05-16 06:42-0400\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
@@ -96,6 +96,12 @@ msgstr "נבדקו עדכונים אוטומטית ב־%1.<br>"
 #| msgid "No description available"
 msgid "No updates available"
 msgstr "אין תיאור זמין"
+
+#: contents/ui/Full.qml:246
+#, fuzzy, kde-format
+#| msgid "Check For Updates"
+msgid "Check for Updates"
+msgstr "בדוק עבור עדכונים"
 
 #: contents/ui/Full.qml:266
 #, kde-format

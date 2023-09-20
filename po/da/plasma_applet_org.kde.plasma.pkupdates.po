@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-03-07 00:46+0000\n"
+"POT-Creation-Date: 2023-09-20 00:48+0000\n"
 "PO-Revision-Date: 2020-02-15 15:50+0100\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -95,6 +95,12 @@ msgstr "Der tjekkes automatisk efter opdateringer %1.<br>"
 #| msgid "No description available"
 msgid "No updates available"
 msgstr "Ingen beskrivelse tilgængelig"
+
+#: contents/ui/Full.qml:246
+#, fuzzy, kde-format
+#| msgid "Check For Updates"
+msgid "Check for Updates"
+msgstr "Tjek efter opdateringer"
 
 #: contents/ui/Full.qml:266
 #, kde-format
