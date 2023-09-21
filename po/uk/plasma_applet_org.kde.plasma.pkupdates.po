@@ -3,13 +3,13 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2015, 2016, 2017, 2019, 2022.
+# Yuri Chornoivan <yurchor@ukr.net>, 2015, 2016, 2017, 2019, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_org.kde.plasma.pkupdates\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-20 00:48+0000\n"
-"PO-Revision-Date: 2022-03-07 09:13+0200\n"
+"PO-Revision-Date: 2023-09-20 08:55+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -95,11 +95,9 @@ msgid "No updates available"
 msgstr "Немає доступних оновлень"
 
 #: contents/ui/Full.qml:246
-#, fuzzy, kde-format
-#| msgctxt "@label part of a sentence"
-#| msgid "Check for updates when:"
+#, kde-format
 msgid "Check for Updates"
-msgstr "Шукати оновлення:"
+msgstr "Перевірити наявність оновлень"
 
 #: contents/ui/Full.qml:266
 #, kde-format

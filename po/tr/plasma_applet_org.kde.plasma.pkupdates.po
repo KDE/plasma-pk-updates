@@ -93,11 +93,9 @@ msgid "No updates available"
 msgstr "Güncelleme yok"
 
 #: contents/ui/Full.qml:246
-#, fuzzy, kde-format
-#| msgctxt "@label part of a sentence"
-#| msgid "Check for updates when:"
+#, kde-format
 msgid "Check for Updates"
-msgstr "Güncellemeleri denetleme zamanı:"
+msgstr "Güncellemeleri Denetle"
 
 #: contents/ui/Full.qml:266
 #, kde-format
@@ -150,16 +148,3 @@ msgstr "Kullanılabilir açıklama yok"
 #, kde-format
 msgid "Related URLs"
 msgstr "İlgili URL'ler"
-
-#~ msgid "Check for updates even when on battery"
-#~ msgstr "Pil kullanımında bile olsa güncellemeleri denetle"
-
-#~ msgid ""
-#~ "Updates are automatically checked %1.<br>Click the 'Check For Updates' "
-#~ "button below to search for updates manually."
-#~ msgstr ""
-#~ "Güncellemer otomatik olarak kontrol edildi %1.<br>Elle güncelleme yapmak "
-#~ "için, aşağıdaki 'Güncellemeleri Kontrol Et' düğmesine basın."
-
-#~ msgid "Checks for any available updates"
-#~ msgstr "Mevcut güncellemeleri denetler"
