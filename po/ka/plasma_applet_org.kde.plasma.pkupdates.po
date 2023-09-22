@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-pk-updates\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-20 00:48+0000\n"
-"PO-Revision-Date: 2022-09-25 16:30+0200\n"
+"PO-Revision-Date: 2023-09-21 05:37+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: contents/config/config.qml:26
 #, kde-format
@@ -93,11 +93,9 @@ msgid "No updates available"
 msgstr "განახლებების ვერ ვიპოვე"
 
 #: contents/ui/Full.qml:246
-#, fuzzy, kde-format
-#| msgctxt "@label part of a sentence"
-#| msgid "Check for updates when:"
+#, kde-format
 msgid "Check for Updates"
-msgstr "განახლებების შემოწმებa, როცა:"
+msgstr "განახლებების შემოწმება"
 
 #: contents/ui/Full.qml:266
 #, kde-format
