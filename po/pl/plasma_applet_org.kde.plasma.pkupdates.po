@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2015, 2016, 2017, 2019, 2022.
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2015, 2016, 2017, 2019, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-20 00:48+0000\n"
-"PO-Revision-Date: 2022-03-13 11:15+0100\n"
+"PO-Revision-Date: 2023-09-24 08:22+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 22.03.70\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #: contents/config/config.qml:26
 #, kde-format
@@ -93,11 +93,9 @@ msgid "No updates available"
 msgstr "Brak uaktualnień"
 
 #: contents/ui/Full.qml:246
-#, fuzzy, kde-format
-#| msgctxt "@label part of a sentence"
-#| msgid "Check for updates when:"
+#, kde-format
 msgid "Check for Updates"
-msgstr "Sprawdź uaktualnienia gdy:"
+msgstr "Sprawdź uaktualnienia"
 
 #: contents/ui/Full.qml:266
 #, kde-format

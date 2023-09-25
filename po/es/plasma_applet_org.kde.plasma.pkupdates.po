@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Víctor Rodrigo Córdoba <vrcordoba@gmail.com>, 2015, 2016, 2017, 2019, 2022.
+# Víctor Rodrigo Córdoba <vrcordoba@gmail.com>, 2015, 2016, 2017, 2019, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-20 00:48+0000\n"
-"PO-Revision-Date: 2022-03-12 17:05+0100\n"
+"PO-Revision-Date: 2023-09-23 18:48+0200\n"
 "Last-Translator: Víctor Rodrigo Córdoba <vrcordoba@gmail.com>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.04.2\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: contents/config/config.qml:26
 #, kde-format
@@ -92,11 +92,9 @@ msgid "No updates available"
 msgstr "No existe ninguna actualización disponible"
 
 #: contents/ui/Full.qml:246
-#, fuzzy, kde-format
-#| msgctxt "@label part of a sentence"
-#| msgid "Check for updates when:"
+#, kde-format
 msgid "Check for Updates"
-msgstr "Comprobar actualizaciones cuando:"
+msgstr "Comprobar actualizaciones"
 
 #: contents/ui/Full.qml:266
 #, kde-format
