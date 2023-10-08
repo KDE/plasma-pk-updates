@@ -19,7 +19,7 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  ***************************************************************************/
 
-import QtQuick 2.1
+import QtQuick 2.15
 import QtQuick.Layouts 1.1
 import QtQuick.Controls 2.5 as QQC2
 import QtQuick.Dialogs 1.2
@@ -194,6 +194,7 @@ Item {
             ListView {
                 id: updatesView
 
+                reuseItems: true
                 clip: true
                 model: PlasmaCore.SortFilterModel {
                     sourceModel: updatesModel
