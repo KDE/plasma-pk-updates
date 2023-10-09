@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-20 00:48+0000\n"
+"POT-Creation-Date: 2023-10-09 00:44+0000\n"
 "PO-Revision-Date: 2023-09-16 10:09\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -87,44 +87,44 @@ msgstr "网络处于离线状态"
 msgid "Updates are automatically checked %1."
 msgstr "%1自动检查更新。"
 
-#: contents/ui/Full.qml:242
+#: contents/ui/Full.qml:243
 #, kde-format
 msgid "No updates available"
 msgstr "没有可用更新"
 
-#: contents/ui/Full.qml:246
+#: contents/ui/Full.qml:247
 #, fuzzy, kde-format
 #| msgctxt "@label part of a sentence"
 #| msgid "Check for updates when:"
 msgid "Check for Updates"
 msgstr "检查更新条件："
 
-#: contents/ui/Full.qml:266
+#: contents/ui/Full.qml:267
 #, kde-format
 msgid "Select all packages"
 msgstr "选择所有软件包"
 
-#: contents/ui/Full.qml:279
+#: contents/ui/Full.qml:280
 #, kde-format
 msgid "Install Updates"
 msgstr "安装更新"
 
-#: contents/ui/Full.qml:283
+#: contents/ui/Full.qml:284
 #, kde-format
 msgid "Performs the software update"
 msgstr "执行软件更新"
 
-#: contents/ui/Full.qml:341
+#: contents/ui/Full.qml:342
 #, kde-format
 msgid "weekly"
 msgstr "每周"
 
-#: contents/ui/Full.qml:343
+#: contents/ui/Full.qml:344
 #, kde-format
 msgid "monthly"
 msgstr "每月"
 
-#: contents/ui/Full.qml:345
+#: contents/ui/Full.qml:346
 #, kde-format
 msgid "daily"
 msgstr "每天"

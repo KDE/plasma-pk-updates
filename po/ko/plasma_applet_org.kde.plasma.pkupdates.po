@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-pk-updates\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-20 00:48+0000\n"
+"POT-Creation-Date: 2023-10-09 00:44+0000\n"
 "PO-Revision-Date: 2022-04-16 01:25+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -86,44 +86,44 @@ msgstr "네트워크가 오프라인 상태임"
 msgid "Updates are automatically checked %1."
 msgstr "업데이트 검사 주기는 %1입니다."
 
-#: contents/ui/Full.qml:242
+#: contents/ui/Full.qml:243
 #, kde-format
 msgid "No updates available"
 msgstr "사용 가능한 업데이트 없음"
 
-#: contents/ui/Full.qml:246
+#: contents/ui/Full.qml:247
 #, fuzzy, kde-format
 #| msgctxt "@label part of a sentence"
 #| msgid "Check for updates when:"
 msgid "Check for Updates"
 msgstr "다음 상황에서 업데이트 확인:"
 
-#: contents/ui/Full.qml:266
+#: contents/ui/Full.qml:267
 #, kde-format
 msgid "Select all packages"
 msgstr "모든 패키지 선택"
 
-#: contents/ui/Full.qml:279
+#: contents/ui/Full.qml:280
 #, kde-format
 msgid "Install Updates"
 msgstr "업데이트 설치"
 
-#: contents/ui/Full.qml:283
+#: contents/ui/Full.qml:284
 #, kde-format
 msgid "Performs the software update"
 msgstr "소프트웨어 업데이트 실행"
 
-#: contents/ui/Full.qml:341
+#: contents/ui/Full.qml:342
 #, kde-format
 msgid "weekly"
 msgstr "주간"
 
-#: contents/ui/Full.qml:343
+#: contents/ui/Full.qml:344
 #, kde-format
 msgid "monthly"
 msgstr "월간"
 
-#: contents/ui/Full.qml:345
+#: contents/ui/Full.qml:346
 #, kde-format
 msgid "daily"
 msgstr "일간"

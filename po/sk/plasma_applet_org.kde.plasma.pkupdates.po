@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_org.kde.plasma.pkupdates\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-20 00:48+0000\n"
+"POT-Creation-Date: 2023-10-09 00:44+0000\n"
 "PO-Revision-Date: 2022-04-09 20:13+0200\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -85,44 +85,44 @@ msgstr "Sieť je offline"
 msgid "Updates are automatically checked %1."
 msgstr "Aktualizácie sú automaticky kontrolované %1."
 
-#: contents/ui/Full.qml:242
+#: contents/ui/Full.qml:243
 #, kde-format
 msgid "No updates available"
 msgstr "Nie sú dostupné žiadne aktualizácie"
 
-#: contents/ui/Full.qml:246
+#: contents/ui/Full.qml:247
 #, fuzzy, kde-format
 #| msgctxt "@label part of a sentence"
 #| msgid "Check for updates when:"
 msgid "Check for Updates"
 msgstr "Skontrolovať aktualizácie keď:"
 
-#: contents/ui/Full.qml:266
+#: contents/ui/Full.qml:267
 #, kde-format
 msgid "Select all packages"
 msgstr "Vybrať všetky balíky"
 
-#: contents/ui/Full.qml:279
+#: contents/ui/Full.qml:280
 #, kde-format
 msgid "Install Updates"
 msgstr "Inštalovať updaty"
 
-#: contents/ui/Full.qml:283
+#: contents/ui/Full.qml:284
 #, kde-format
 msgid "Performs the software update"
 msgstr "Vykoná aktualizáciu systému"
 
-#: contents/ui/Full.qml:341
+#: contents/ui/Full.qml:342
 #, kde-format
 msgid "weekly"
 msgstr "týždenne"
 
-#: contents/ui/Full.qml:343
+#: contents/ui/Full.qml:344
 #, kde-format
 msgid "monthly"
 msgstr "mesačne"
 
-#: contents/ui/Full.qml:345
+#: contents/ui/Full.qml:346
 #, kde-format
 msgid "daily"
 msgstr "denne"

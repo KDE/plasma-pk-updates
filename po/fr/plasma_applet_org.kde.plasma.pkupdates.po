@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_org.kde.plasma.pkupdates\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-20 00:48+0000\n"
+"POT-Creation-Date: 2023-10-09 00:44+0000\n"
 "PO-Revision-Date: 2023-09-26 10:04+0200\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard@neuf.fr>\n"
 "Language-Team: fr\n"
@@ -87,42 +87,42 @@ msgstr "Le réseau est déconnecté"
 msgid "Updates are automatically checked %1."
 msgstr "Les mises à jour sont automatiquement vérifiées %1."
 
-#: contents/ui/Full.qml:242
+#: contents/ui/Full.qml:243
 #, kde-format
 msgid "No updates available"
 msgstr "Aucune mise à jour disponible."
 
-#: contents/ui/Full.qml:246
+#: contents/ui/Full.qml:247
 #, kde-format
 msgid "Check for Updates"
 msgstr "Rechercher des mises à jour"
 
-#: contents/ui/Full.qml:266
+#: contents/ui/Full.qml:267
 #, kde-format
 msgid "Select all packages"
 msgstr "Sélectionner tous les paquets"
 
-#: contents/ui/Full.qml:279
+#: contents/ui/Full.qml:280
 #, kde-format
 msgid "Install Updates"
 msgstr "Installer les mises à jour"
 
-#: contents/ui/Full.qml:283
+#: contents/ui/Full.qml:284
 #, kde-format
 msgid "Performs the software update"
 msgstr "Mets à jour les logiciels"
 
-#: contents/ui/Full.qml:341
+#: contents/ui/Full.qml:342
 #, kde-format
 msgid "weekly"
 msgstr "toutes les semaines"
 
-#: contents/ui/Full.qml:343
+#: contents/ui/Full.qml:344
 #, kde-format
 msgid "monthly"
 msgstr "tous les mois"
 
-#: contents/ui/Full.qml:345
+#: contents/ui/Full.qml:346
 #, kde-format
 msgid "daily"
 msgstr "tous les jours"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-pk-updates\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-20 00:48+0000\n"
+"POT-Creation-Date: 2023-10-09 00:44+0000\n"
 "PO-Revision-Date: 2020-11-01 21:32-0800\n"
 "Last-Translator: A S Alam <aalam.yellow@gmail.com>\n"
 "Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
@@ -89,44 +89,44 @@ msgstr "ਨੈੱਟਵਰਕ ਆਫ਼ਲਾਈਨ ਹੈ"
 msgid "Updates are automatically checked %1."
 msgstr ""
 
-#: contents/ui/Full.qml:242
+#: contents/ui/Full.qml:243
 #, fuzzy, kde-format
 #| msgid "No description available"
 msgid "No updates available"
 msgstr "ਕੋਈ ਵੇਰਵਾ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ"
 
-#: contents/ui/Full.qml:246
+#: contents/ui/Full.qml:247
 #, fuzzy, kde-format
 #| msgid "Check For Updates"
 msgid "Check for Updates"
 msgstr "ਅੱਪਡੇਟ ਲਈ ਜਾਂਚ ਕਰੋ"
 
-#: contents/ui/Full.qml:266
+#: contents/ui/Full.qml:267
 #, kde-format
 msgid "Select all packages"
 msgstr "ਸਾਰੇ ਪੈਕੇਜਾਂ ਨੂੰ ਚੁਣੋ"
 
-#: contents/ui/Full.qml:279
+#: contents/ui/Full.qml:280
 #, kde-format
 msgid "Install Updates"
 msgstr "ਅੱਪਡੇਟ ਇੰਸਟਾਲ ਕਰੋ"
 
-#: contents/ui/Full.qml:283
+#: contents/ui/Full.qml:284
 #, kde-format
 msgid "Performs the software update"
 msgstr "ਸਾਫਟਵੇਅਰ ਅੱਪਡੇਟ ਕਰਦਾ ਹੈ"
 
-#: contents/ui/Full.qml:341
+#: contents/ui/Full.qml:342
 #, kde-format
 msgid "weekly"
 msgstr "ਹਫ਼ਤੇਵਾਰ"
 
-#: contents/ui/Full.qml:343
+#: contents/ui/Full.qml:344
 #, kde-format
 msgid "monthly"
 msgstr "ਮਹੀਨੇਵਾਰ"
 
-#: contents/ui/Full.qml:345
+#: contents/ui/Full.qml:346
 #, kde-format
 msgid "daily"
 msgstr "ਰੋਜ਼ਾਨਾ"

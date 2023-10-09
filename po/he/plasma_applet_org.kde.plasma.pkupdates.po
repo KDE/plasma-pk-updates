@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_org.kde.plasma.pkupdates\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-20 00:48+0000\n"
+"POT-Creation-Date: 2023-10-09 00:44+0000\n"
 "PO-Revision-Date: 2017-05-16 06:42-0400\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
@@ -91,44 +91,44 @@ msgstr "הרשת לא מחוברת"
 msgid "Updates are automatically checked %1."
 msgstr "נבדקו עדכונים אוטומטית ב־%1.<br>"
 
-#: contents/ui/Full.qml:242
+#: contents/ui/Full.qml:243
 #, fuzzy, kde-format
 #| msgid "No description available"
 msgid "No updates available"
 msgstr "אין תיאור זמין"
 
-#: contents/ui/Full.qml:246
+#: contents/ui/Full.qml:247
 #, fuzzy, kde-format
 #| msgid "Check For Updates"
 msgid "Check for Updates"
 msgstr "בדוק עבור עדכונים"
 
-#: contents/ui/Full.qml:266
+#: contents/ui/Full.qml:267
 #, kde-format
 msgid "Select all packages"
 msgstr "בחר את כל החבילות"
 
-#: contents/ui/Full.qml:279
+#: contents/ui/Full.qml:280
 #, kde-format
 msgid "Install Updates"
 msgstr "התקן עדכונים"
 
-#: contents/ui/Full.qml:283
+#: contents/ui/Full.qml:284
 #, kde-format
 msgid "Performs the software update"
 msgstr "בצע את עדכוני התוכנה"
 
-#: contents/ui/Full.qml:341
+#: contents/ui/Full.qml:342
 #, kde-format
 msgid "weekly"
 msgstr "שבועי"
 
-#: contents/ui/Full.qml:343
+#: contents/ui/Full.qml:344
 #, kde-format
 msgid "monthly"
 msgstr "חודשי"
 
-#: contents/ui/Full.qml:345
+#: contents/ui/Full.qml:346
 #, kde-format
 msgid "daily"
 msgstr "יומי"
