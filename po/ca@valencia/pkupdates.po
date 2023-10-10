@@ -2286,7 +2286,7 @@ msgstr[1] "S'han actualitzat amb èxit %1 paquets"
 #: pkupdates.cpp:539
 #, kde-format
 msgid "Update Error"
-msgstr "S'ha produït un error en actualitzar"
+msgstr "S'ha produït un error durant l'actualització"
 
 #: pkupdates.cpp:593
 #, kde-format
