@@ -817,7 +817,7 @@ msgstr "Non permitido por esta infraestrutura"
 #: PkStrings.cpp:416
 #, kde-format
 msgid "An internal system error has occurred"
-msgstr "Ocorreu un erro interno do sistema"
+msgstr "Produciuse un erro interno do sistema"
 
 #: PkStrings.cpp:418
 #, kde-format
@@ -2139,7 +2139,7 @@ msgstr "Erro ao comunicarse con packagekitd."
 #: PkStrings.cpp:971 PkStrings.cpp:974
 #, kde-format
 msgid "An unknown error happened."
-msgstr "Ocorreu un erro descoñecido."
+msgstr "Produciuse un erro descoñecido."
 
 #: PkStrings.cpp:988 pkupdates.cpp:170
 #, kde-format
