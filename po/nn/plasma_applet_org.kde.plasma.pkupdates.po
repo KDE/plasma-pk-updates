@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-20 00:48+0000\n"
+"POT-Creation-Date: 2023-10-09 00:44+0000\n"
 "PO-Revision-Date: 2022-06-18 14:52+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -88,42 +88,42 @@ msgstr "Er fråkopla nettet"
 msgid "Updates are automatically checked %1."
 msgstr "Det vert sett etter oppdateringar automatisk %1."
 
-#: contents/ui/Full.qml:242
+#: contents/ui/Full.qml:243
 #, kde-format
 msgid "No updates available"
 msgstr "Ingen programoppdateringar"
 
-#: contents/ui/Full.qml:246
+#: contents/ui/Full.qml:247
 #, kde-format
 msgid "Check for Updates"
 msgstr ""
 
-#: contents/ui/Full.qml:266
+#: contents/ui/Full.qml:267
 #, kde-format
 msgid "Select all packages"
 msgstr "Merk alle pakkane"
 
-#: contents/ui/Full.qml:279
+#: contents/ui/Full.qml:280
 #, kde-format
 msgid "Install Updates"
 msgstr "Installer oppdateringar"
 
-#: contents/ui/Full.qml:283
+#: contents/ui/Full.qml:284
 #, kde-format
 msgid "Performs the software update"
 msgstr "Utfør programoppdateringar"
 
-#: contents/ui/Full.qml:341
+#: contents/ui/Full.qml:342
 #, kde-format
 msgid "weekly"
 msgstr "vekentleg"
 
-#: contents/ui/Full.qml:343
+#: contents/ui/Full.qml:344
 #, kde-format
 msgid "monthly"
 msgstr "månadleg"
 
-#: contents/ui/Full.qml:345
+#: contents/ui/Full.qml:346
 #, kde-format
 msgid "daily"
 msgstr "dagleg"
