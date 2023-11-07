@@ -37,6 +37,7 @@ Name[sv]=Uppdateringar av programvara
 Name[tg]=Навсозиҳои нармафзор
 Name[tr]=Yazılım Güncellemeleri
 Name[uk]=Оновлення програм
+Name[x-test]=xxSoftware Updatesxx
 Name[zh_CN]=软件更新
 Name[zh_TW]=軟體更新
 
@@ -77,6 +78,7 @@ Comment[sv]=Hämta uppdateringar av programvara
 Comment[tg]=Гирифтани навсозиҳои нармафзор
 Comment[tr]=Yazılım güncellemelerini al
 Comment[uk]=Отримання оновлень програм
+Comment[x-test]=xxGet software updatesxx
 Comment[zh_CN]=获取软件更新
 Comment[zh_TW]=取得軟體更新
 
