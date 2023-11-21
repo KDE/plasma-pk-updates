@@ -2,20 +2,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Freek de Kruijf <freekdekruijf@kde.nl>, 2015, 2016, 2017, 2018, 2019, 2020, 2022.
+# SPDX-FileCopyrightText: 2023 pieter <pieterkristensen@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-05 12:39+0000\n"
-"PO-Revision-Date: 2022-01-31 11:18+0100\n"
-"Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2023-11-19 16:01+0100\n"
+"Last-Translator: pieter <pieterkristensen@gmail.com>\n"
+"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.12.1\n"
+"X-Generator: Lokalize 23.08.3\n"
 
 #: PkStrings.cpp:37
 #, kde-format
@@ -57,7 +58,7 @@ msgstr "Informatie ophalen"
 #, kde-format
 msgctxt "transaction state, removing packages"
 msgid "Removing packages"
-msgstr "Pakketten aan het verwijderen"
+msgstr "Pakketten verwijderen"
 
 #: PkStrings.cpp:59
 #, kde-format
@@ -75,49 +76,49 @@ msgstr "Downloaden met %1/s"
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading, %1 remaining"
-msgstr "Bezig met downloaden, %1 resterend"
+msgstr "Downloaden, %1 resterend"
 
 #: PkStrings.cpp:72
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading"
-msgstr "Bezig met downloaden"
+msgstr "Downloaden"
 
 #: PkStrings.cpp:76
 #, kde-format
 msgctxt "transaction state, installing packages"
 msgid "Installing packages"
-msgstr "Pakketten aan het installeren"
+msgstr "Pakketten installeren"
 
 #: PkStrings.cpp:79
 #, kde-format
 msgctxt "transaction state, refreshing internal lists"
 msgid "Refreshing software list"
-msgstr "Softwarelijst aan het vernieuwen"
+msgstr "Softwarelijst vernieuwen"
 
 #: PkStrings.cpp:82
 #, kde-format
 msgctxt "transaction state, installing updates"
 msgid "Updating packages"
-msgstr "Pakketten aan het bijwerken"
+msgstr "Pakketten bijwerken"
 
 #: PkStrings.cpp:85
 #, kde-format
 msgctxt "transaction state, removing old packages, and cleaning config files"
 msgid "Cleaning up packages"
-msgstr "Pakketten aan het opschonen"
+msgstr "Pakketten opschonen"
 
 #: PkStrings.cpp:88
 #, kde-format
 msgctxt "transaction state, obsoleting old packages"
 msgid "Obsoleting packages"
-msgstr "Pakketten aan het verouderd maken"
+msgstr "Pakketten verouderd maken"
 
 #: PkStrings.cpp:91
 #, kde-format
 msgctxt "transaction state, checking the transaction before we do it"
 msgid "Resolving dependencies"
-msgstr "Afhankelijkheden aan het oplossen"
+msgstr "Afhankelijkheden oplossen"
 
 #: PkStrings.cpp:94
 #, kde-format
@@ -125,25 +126,25 @@ msgctxt ""
 "transaction state, checking if we have all the security keys for the "
 "operation"
 msgid "Checking signatures"
-msgstr "Ondertekening aan het controleren"
+msgstr "Ondertekening controleren"
 
 #: PkStrings.cpp:97
 #, kde-format
 msgctxt "transaction state, when we're doing a test transaction"
 msgid "Testing changes"
-msgstr "Wijzigingen aan het testen"
+msgstr "Wijzigingen testen"
 
 #: PkStrings.cpp:100
 #, kde-format
 msgctxt "transaction state, when we're writing to the system package database"
 msgid "Committing changes"
-msgstr "Wijzigingen aan het vastleggen"
+msgstr "Wijzigingen vastleggen"
 
 #: PkStrings.cpp:103
 #, kde-format
 msgctxt "transaction state, requesting data from a server"
 msgid "Requesting data"
-msgstr "Gegevens aan het opvragen"
+msgstr "Gegevens opvragen"
 
 #: PkStrings.cpp:106
 #, kde-format
@@ -161,13 +162,13 @@ msgstr "Annuleren"
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading repository information"
-msgstr "Downloaden van installatiebron-informatie"
+msgstr "Downloaden van repository-informatie"
 
 #: PkStrings.cpp:115
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading list of packages"
-msgstr "Downloaden van de lijst van pakketten"
+msgstr "Pakkettenlijst downloaden"
 
 #: PkStrings.cpp:118
 #, kde-format
@@ -179,7 +180,7 @@ msgstr "Downloaden van bestandslijsten"
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading lists of changes"
-msgstr "Downloaden van wijzigingslijsten"
+msgstr "Wijzigingslijsten downloaden"
 
 #: PkStrings.cpp:124
 #, kde-format
@@ -197,7 +198,7 @@ msgstr "Downloaden van bijwerken-informatie"
 #, kde-format
 msgctxt "transaction state, repackaging delta files"
 msgid "Repackaging files"
-msgstr "Bestanden opnieuw inpakken"
+msgstr "Opnieuw pakketten maken van bestanden"
 
 #: PkStrings.cpp:133
 #, kde-format
@@ -240,13 +241,13 @@ msgstr "De lijst met actieve toepassingen bijwerken"
 #, kde-format
 msgctxt "we are checking executable files in use"
 msgid "Checking for applications currently in use"
-msgstr "Controleren op nu in gebruik zijnde toepassingen"
+msgstr "Controleren op toepassingen die nu in gebruik zijn"
 
 #: PkStrings.cpp:154
 #, kde-format
 msgctxt "we are checking for libraries in use"
 msgid "Checking for libraries currently in use"
-msgstr "Controleren op nu in gebruik zijnde bibliotheken"
+msgstr "Controleren op bibliotheken die in gebruik zijn"
 
 #: PkStrings.cpp:157
 #, kde-format
@@ -324,7 +325,7 @@ msgstr "Vereisten worden opgehaald"
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting updates"
-msgstr "Bijwerkgegevens ophalen"
+msgstr "Updates ophalen"
 
 #: PkStrings.cpp:201
 #, kde-format
@@ -354,13 +355,13 @@ msgstr "Op pakketnaam zoeken"
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating removal"
-msgstr "Bezig verwijderen te simuleren"
+msgstr "Verwijdering simuleren"
 
 #: PkStrings.cpp:212 PkStrings.cpp:219 PkStrings.cpp:260
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading packages"
-msgstr "Pakketten aan het downloaden"
+msgstr "Pakketten downloaden"
 
 #: PkStrings.cpp:214
 #, kde-format
@@ -372,25 +373,25 @@ msgstr "Verwijderen"
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating install"
-msgstr "Bezig installeren te simuleren"
+msgstr "Installatie simuleren"
 
 #: PkStrings.cpp:221
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing"
-msgstr "Bezig met installeren"
+msgstr "Installeren"
 
 #: PkStrings.cpp:224
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating file install"
-msgstr "Bezig bestand installeren te simuleren"
+msgstr "Installatie simuleren"
 
 #: PkStrings.cpp:226
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading required packages"
-msgstr "Bezig vereiste pakketten down te loaden"
+msgstr "Vereiste pakketten downloaden"
 
 #: PkStrings.cpp:228
 #, kde-format
@@ -414,13 +415,13 @@ msgstr "Bijwerken simuleren"
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading updates"
-msgstr "Bezig elementen voor bijwerken down te loaden"
+msgstr "Downloaden updates"
 
 #: PkStrings.cpp:237
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Updating packages"
-msgstr "Pakketten aan het bijwerken"
+msgstr "Pakketten bijwerken"
 
 #: PkStrings.cpp:239
 #, kde-format
@@ -432,19 +433,19 @@ msgstr "Annuleren"
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting list of repositories"
-msgstr "Lijst met opslagruimten ophalen"
+msgstr "Repository-lijst ophalen"
 
 #: PkStrings.cpp:243
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Enabling repository"
-msgstr "Installatiebron activeren"
+msgstr "Repository activeren"
 
 #: PkStrings.cpp:245
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Setting repository data"
-msgstr "Instellen van gegevens over installatiebron"
+msgstr "Repository gegevens instellen"
 
 #: PkStrings.cpp:247
 #, kde-format
@@ -480,7 +481,7 @@ msgstr "Pakketlijsten ophalen"
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Accepting EULA"
-msgstr "Accepteren van EULA"
+msgstr "Accepteren EULA"
 
 #: PkStrings.cpp:262
 #, kde-format
@@ -504,13 +505,13 @@ msgstr "Ophalen van oude transacties"
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Repairing system"
-msgstr "Bezig systeem te repareren"
+msgstr "Systeem repareren"
 
 #: PkStrings.cpp:270
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Removing repository"
-msgstr "Bezig installatiebron te verwijderen"
+msgstr "Repository verwijderen"
 
 #: PkStrings.cpp:280
 #, kde-format
@@ -552,7 +553,7 @@ msgstr "Opwaarderingen opgehaald"
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package details"
-msgstr "Op pakketdetails gezocht"
+msgstr "Naar pakketdetails gezocht"
 
 #: PkStrings.cpp:295
 #, kde-format
@@ -576,7 +577,7 @@ msgstr "Pakketnaam opgezocht"
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed packages"
-msgstr "Verwijderde pakketten"
+msgstr "Pakketten verwijderd"
 
 #: PkStrings.cpp:303
 #, kde-format
@@ -612,19 +613,19 @@ msgstr "Geannuleerd"
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got list of repositories"
-msgstr "Lijst met opslagruimten opgehaald"
+msgstr "Repository-lijst opgehaald"
 
 #: PkStrings.cpp:315
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Enabled repository"
-msgstr "Installatiebron geactiveerd"
+msgstr "Repository geactiveerd"
 
 #: PkStrings.cpp:317
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Set repository data"
-msgstr "Gegevens van installatiebron ingesteld"
+msgstr "Repository gegevens instellen"
 
 #: PkStrings.cpp:319
 #, kde-format
@@ -696,22 +697,22 @@ msgstr "Systeem is gerepareerd"
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed repository"
-msgstr "Installatiebron verwijderd"
+msgstr "Repository verwijderd"
 
 #: PkStrings.cpp:352
 #, kde-format
 msgid "Downloading"
-msgstr "Bezig met downloaden"
+msgstr "Downloaden"
 
 #: PkStrings.cpp:354
 #, kde-format
 msgid "Updating"
-msgstr "Bezig met bijwerken"
+msgstr "Bijwerken"
 
 #: PkStrings.cpp:356
 #, kde-format
 msgid "Installing"
-msgstr "Bezig met installeren"
+msgstr "Installeren"
 
 #: PkStrings.cpp:358
 #, kde-format
@@ -841,7 +842,7 @@ msgstr "Het pakket is al geïnstalleerd"
 #: PkStrings.cpp:426
 #, kde-format
 msgid "The package download failed"
-msgstr "Het downloaden van het pakket is mislukt"
+msgstr "Downloaden van het pakket is mislukt"
 
 #: PkStrings.cpp:428
 #, kde-format
@@ -866,7 +867,7 @@ msgstr "Het zoekfilter is ongeldig"
 #: PkStrings.cpp:436
 #, kde-format
 msgid "The package identifier was not well formed"
-msgstr "De pakketidentificatie is onjuist geformuleerd"
+msgstr "De pakket-identificatie was onjuist"
 
 #: PkStrings.cpp:438
 #, kde-format
@@ -876,7 +877,7 @@ msgstr "Transactiefout"
 #: PkStrings.cpp:440
 #, kde-format
 msgid "Repository name was not found"
-msgstr "Naam van installatiebron is niet gevonden"
+msgstr "Naam van repository is niet gevonden"
 
 #: PkStrings.cpp:442
 #, kde-format
@@ -951,7 +952,7 @@ msgstr "Geen pakketten om te opwaarderen"
 #: PkStrings.cpp:470
 #, kde-format
 msgid "Cannot write repository configuration"
-msgstr "Kan de configuratie van de installatiebron niet wegschrijven"
+msgstr "Kan de configuratie van de repository niet wegschrijven"
 
 #: PkStrings.cpp:472
 #, kde-format
@@ -971,7 +972,7 @@ msgstr "Ontbrekende GPG-ondertekening"
 #: PkStrings.cpp:478
 #, kde-format
 msgid "Repository configuration invalid"
-msgstr "Configuratie van installatiebron is ongeldig"
+msgstr "Configuratie van repository is ongeldig"
 
 #: PkStrings.cpp:480
 #, kde-format
@@ -996,7 +997,7 @@ msgstr "Alle pakketten zijn al geïnstalleerd"
 #: PkStrings.cpp:488
 #, kde-format
 msgid "The specified file could not be found"
-msgstr "Het gespecificeerdebestand is niet gevonden"
+msgstr "Het gespecificeerde bestand is niet gevonden"
 
 #: PkStrings.cpp:490
 #, kde-format
@@ -1016,7 +1017,7 @@ msgstr "Het pakket is niet compatibel met dit systeem"
 #: PkStrings.cpp:496
 #, kde-format
 msgid "No space is left on the disk"
-msgstr "Er is geen ruimte meer op de schijf."
+msgstr "Geen ruimte meer op de schijf."
 
 #: PkStrings.cpp:498
 #, kde-format
@@ -1031,22 +1032,22 @@ msgstr "Autorisatie is mislukt"
 #: PkStrings.cpp:502
 #, kde-format
 msgid "Update not found"
-msgstr "Element voor bijwerken is niet gevonden"
+msgstr "Update is niet gevonden"
 
 #: PkStrings.cpp:504
 #, kde-format
 msgid "Cannot install from untrusted origin"
-msgstr "Kan niet vanaf een niet vertrouwde bron installeren"
+msgstr "Kan installeren uit een niet vertrouwde bron"
 
 #: PkStrings.cpp:506
 #, kde-format
 msgid "Cannot update from untrusted origin"
-msgstr "Kan niet vanaf een niet vertrouwde bron opwaarderen"
+msgstr "Kan niet opwaarderen uit een niet-vertrouwde bron"
 
 #: PkStrings.cpp:508
 #, kde-format
 msgid "Cannot get the file list"
-msgstr "Bestandslijst kan niet worden opgehaald"
+msgstr "Bestandslijst kan niet worden geladen"
 
 #: PkStrings.cpp:510
 #, kde-format
@@ -1086,7 +1087,7 @@ msgstr "Pakket verwijderen is mislukt"
 #: PkStrings.cpp:524
 #, kde-format
 msgid "Update failed due to running process"
-msgstr "Bijwerken is mislukt vanwege een actief proces"
+msgstr "Bijwerken is mislukt vanwege een draaiend proces"
 
 #: PkStrings.cpp:526
 #, kde-format
@@ -1143,7 +1144,7 @@ msgid ""
 "The package list needs to be rebuilt.\n"
 "This should have been done by the backend automatically."
 msgstr ""
-"De pakketlijst dient opnieuw te worden opgebouwd.\n"
+"De pakketlijst dient opnieuw te worden gebouwd.\n"
 "Dit hoort de backend automatisch te doen."
 
 #: PkStrings.cpp:556
@@ -1155,7 +1156,7 @@ msgid ""
 msgstr ""
 "De service die verantwoordelijk is voor het afhandelen van "
 "gebruikersverzoeken heeft onvoldoende geheugen.\n"
-"Gaarne enkele programma's sluiten of herstart uw computer."
+"Sluit enkele programma's of herstart uw computer."
 
 #: PkStrings.cpp:559
 #, kde-format
@@ -1196,8 +1197,8 @@ msgstr ""
 msgid ""
 "The package that is trying to be removed or updated is not already installed."
 msgstr ""
-"Het pakket dat opgewaardeerd of verwijderd moet worden blijkt niet te zijn "
-"geïnstalleerd."
+"Het pakket dat u probeert te opwaarderen of verwijderen is "
+"nietgeïnstalleerd. "
 
 #: PkStrings.cpp:572
 #, kde-format
@@ -1205,15 +1206,13 @@ msgid ""
 "The package that is being modified was not found on your system or in any "
 "software origin."
 msgstr ""
-"Het pakket dat gewijzigd moet worden is niet op uw computer gevonden, noch "
-"in een van de softwarebronnen."
+"Het pakket dat wordt gewijzigd is niet op uw computer gevonden, of in een "
+"van de softwarebronnen."
 
 #: PkStrings.cpp:574
 #, kde-format
 msgid "The package that is trying to be installed is already installed."
-msgstr ""
-"Het pakket dat geïnstalleerd moet worden blijkt al op uw systeem te zijn "
-"geïnstalleerd."
+msgstr "Het pakket dat u probeert te installeren is al geïnstalleerd."
 
 #: PkStrings.cpp:576
 #, kde-format
@@ -1221,7 +1220,7 @@ msgid ""
 "The package download failed.\n"
 "Please check your network connectivity."
 msgstr ""
-"Het downloaden van het pakket is mislukt.\n"
+"Downloaden van het pakket is mislukt.\n"
 "Controleer uw netwerkverbinding."
 
 #: PkStrings.cpp:579
@@ -1240,9 +1239,9 @@ msgid ""
 "Refreshing your cache may help, although this is normally a software origin "
 "error."
 msgstr ""
-"De groepenlijst kon niet worden geladen.\n"
-"Het vernieuwen van uw cache kan helpen, maar normaliter betreft dit een fout "
-"in de softwarebron."
+"De groepslijst kon niet worden geladen.\n"
+"Het vernieuwen van uw cache kan helpen, maar meestal betreft dit een fout in "
+"de softwarebron."
 
 #: PkStrings.cpp:586
 #, kde-format
@@ -1250,13 +1249,13 @@ msgid ""
 "A package dependency could not be found.\n"
 "More information is available in the detailed report."
 msgstr ""
-"Een pakket dat benodigd is om de taak te voltooien is niet gevonden.\n"
+"Een pakket-afhankelijkheid is niet gevonden.\n"
 "Meer informatie is beschikbaar in het gedetailleerde rapport."
 
 #: PkStrings.cpp:589
 #, kde-format
 msgid "The search filter was not correctly formed."
-msgstr "Het zoekfilter is onjuist geformuleerd."
+msgstr "Het zoekfilter is onjuist."
 
 #: PkStrings.cpp:591
 #, kde-format
@@ -1264,10 +1263,10 @@ msgid ""
 "The package identifier was not well formed when sent to the system daemon.\n"
 "This normally indicates an internal bug and should be reported."
 msgstr ""
-"De pakketidentificatie is heeft niet de juiste vorm bij het verzenden naar "
-"systeem-daemon.\n"
-"Normaliter wordt dit door een interne fout veroorzaakt, die zou moeten "
-"worden gerapporteerd."
+"De pakketidentificatie is met een onjuiste vorm verzonden naar systeem-"
+"daemon.\n"
+"Meestal wordt dit door een interne fout veroorzaakt die zou moeten worden "
+"gerapporteerd."
 
 #: PkStrings.cpp:594
 #, kde-format
@@ -1295,9 +1294,7 @@ msgstr "Het verwijderen van een beveiligd systeempakket is niet toegestaan."
 #: PkStrings.cpp:602
 #, kde-format
 msgid "The task was canceled successfully and no packages were changed."
-msgstr ""
-"De taak is met succes geannuleerd en er deden zich geen pakketwijzigingen "
-"voor."
+msgstr "De taak is met succes geannuleerd en er geen pakketten gewijzigd. "
 
 #: PkStrings.cpp:604
 #, kde-format
@@ -1305,9 +1302,8 @@ msgid ""
 "The task was canceled successfully and no packages were changed.\n"
 "The backend did not exit cleanly."
 msgstr ""
-"De taak is succesvol geannuleerd en er deden zich geen pakketwijzigingen "
-"voor.\n"
-"De backend is echter niet goed afgesloten."
+"De taak is succesvol geannuleerd, er werden geen pakketten gewijzigd. \n"
+"De backend is niet goed afgesloten."
 
 #: PkStrings.cpp:607
 #, kde-format
@@ -1315,7 +1311,7 @@ msgid ""
 "The native package configuration file could not be opened.\n"
 "Please make sure your system's configuration is valid."
 msgstr ""
-"Het native-pakket-configuratiebestand kon niet worden geopend.\n"
+"Het pakket-configuratiebestand van het systeem kon niet worden geopend.\n"
 "Controleer of de configuratie geldig is."
 
 #: PkStrings.cpp:610
@@ -1329,7 +1325,7 @@ msgid ""
 "Source packages are not normally installed this way.\n"
 "Check the extension of the file you are trying to install."
 msgstr ""
-"Bronpakketten worden normaliter niet op deze manier geïnstalleerd.\n"
+"Bronpakketten worden normaal gesproken niet op deze manier geïnstalleerd.\n"
 "Controleer de extensie van het pakket dat u probeert te installeren."
 
 #: PkStrings.cpp:615
@@ -1348,7 +1344,7 @@ msgid ""
 "This is usually due to mixing packages for different software origins."
 msgstr ""
 "Twee pakketten bieden hetzelfde bestand aan.\n"
-"Normaliter komt dit door het mixen van verschillende softwarebronnen."
+"Meestal komt dit door het mixen van verschillende softwarebronnen."
 
 #: PkStrings.cpp:621
 #, kde-format
@@ -1357,7 +1353,7 @@ msgid ""
 "This is usually due to mixing packages from different software origins."
 msgstr ""
 "Er zijn verschillende pakketten die niet compatibel zijn met elkaar.\n"
-"Normaliter komt dit door het mixen van verschillende softwarebronnen."
+"Meestal komt dit door het mixen van verschillende softwarebronnen."
 
 #: PkStrings.cpp:624
 #, kde-format
@@ -1386,7 +1382,7 @@ msgid ""
 "This error can normally be ignored."
 msgstr ""
 "Kon de backend niet afsluiten.\n"
-"Deze fout kan normaliter worden genegeerd."
+"Deze fout kan meestal worden genegeerd."
 
 #: PkStrings.cpp:633
 #, kde-format
@@ -1405,7 +1401,7 @@ msgstr "Geen van de geselecteerde pakketten kon worden opgewaardeerd."
 #: PkStrings.cpp:638
 #, kde-format
 msgid "The repository configuration could not be modified."
-msgstr "De configuratie van de installatiebronnen kan niet gewijzigd worden."
+msgstr "De configuratie van de repository kan niet worden gewijzigd."
 
 #: PkStrings.cpp:640
 #, kde-format
@@ -1427,14 +1423,13 @@ msgid ""
 "The package signature was missing and this package is untrusted.\n"
 "This package was not signed with a GPG key when created."
 msgstr ""
-"De pakketondertekening ontbrak en dit pakket is niet vertrouwd.\n"
-"Het pakket is tijdens het aanmaken ervan niet ondertekent met een GPG-"
-"sleutel."
+"De pakket-ondertekening ontbrak en dit pakket is niet vertrouwd.\n"
+"Het pakket is niet ondertekent met een GPG-sleutel."
 
 #: PkStrings.cpp:648
 #, kde-format
 msgid "Repository configuration was invalid and could not be read."
-msgstr "De bronconfiguratie is ongeldig en daardoor onleesbaar."
+msgstr "De bronconfiguratie is ongeldig en onleesbaar."
 
 #: PkStrings.cpp:650
 #, kde-format
@@ -1443,7 +1438,7 @@ msgid ""
 "The package file could be corrupt, or not a proper package."
 msgstr ""
 "Het pakket dat u probeert te installeren is niet geldig.\n"
-"Het pakketbestand kan beschadigd zijn of geen geschikt pakket bevatten."
+"Het pakketbestand kan beschadigd zijn of geen geschikt pakket."
 
 #: PkStrings.cpp:653
 #, kde-format
@@ -1456,8 +1451,7 @@ msgstr "Uw pakketconfiguratie verhindert het installeren van dit pakket."
 #, kde-format
 msgid ""
 "The package that was downloaded is corrupt and needs to be downloaded again."
-msgstr ""
-"Het gedownloade pakket is corrupt en het is nodig het opnieuw te downloaden."
+msgstr "Het gedownloade pakket is corrupt en moet opnieuw gedownload worden."
 
 #: PkStrings.cpp:657
 #, kde-format
@@ -1482,7 +1476,8 @@ msgid ""
 "Required data could not be found on any of the configured software origins.\n"
 "There were no more download mirrors that could be tried."
 msgstr ""
-"De vereiste data is niet gevonden in enige geconfigureerde softwarebron.\n"
+"De vereiste gegevens zijn niet gevonden in de geconfigureerde "
+"softwarebronnen.\n"
 "Er zijn niet nog meer download-mirrors die geprobeerd kunnen worden."
 
 #: PkStrings.cpp:665
@@ -1492,15 +1487,15 @@ msgid ""
 "origins.\n"
 "The list of distribution upgrades will be unavailable."
 msgstr ""
-"De vereiste data is niet gevonden in enige geconfigureerde softwarebron.\n"
+"De vereiste upgrade gegevens zijn niet gevonden in de geconfigureerde "
+"softwarebronnen.\n"
 "De lijst distributieopwaarderingen is niet beschikbaar."
 
 #: PkStrings.cpp:668
 #, kde-format
 msgid ""
 "The package that is trying to be installed is incompatible with this system."
-msgstr ""
-"Het pakket dat geïnstalleerd moet worden is niet compatibel met uw systeem."
+msgstr "Het pakket dat u probeert te installeren incompatibel met dit systeem."
 
 #: PkStrings.cpp:670
 #, kde-format
@@ -1523,7 +1518,7 @@ msgid ""
 "Please check any passwords or account settings."
 msgstr ""
 "U hebt geen juiste gegevens voor authenticatie ingevoerd.\n"
-"Controleer wachtwoorden of instellingen van accounts."
+"Controleer wachtwoorden of accountinstellingen."
 
 #: PkStrings.cpp:678
 #, kde-format
@@ -1539,23 +1534,23 @@ msgstr ""
 #: PkStrings.cpp:681
 #, kde-format
 msgid "The package could not be installed from untrusted origin."
-msgstr "Het pakket kon niet worden geïnstalleerd uit een niet vertrouwde bron."
+msgstr "Het pakket kan niet worden geïnstalleerd uit een niet vertrouwde bron."
 
 #: PkStrings.cpp:683
 #, kde-format
 msgid "The package could not be updated from untrusted origin."
-msgstr "Het pakket kon niet opgewaardeerd worden uit een niet vertrouwde bron."
+msgstr "Het pakket kan niet opgewaardeerd worden uit een niet vertrouwde bron."
 
 #: PkStrings.cpp:685
 #, kde-format
 msgid "The file list is not available for this package."
-msgstr "De bestandenlijst is niet beschikbaar voor dit pakket."
+msgstr "De bestandslijst is niet beschikbaar voor dit pakket."
 
 #: PkStrings.cpp:687
 #, kde-format
 msgid "The information about what requires this package could not be obtained."
 msgstr ""
-"De informatie over waar vereist is voor dit pakket kon niet worden verkregen."
+"De informatie over wat dit pakket vereist is kon niet worden verkregen."
 
 #: PkStrings.cpp:689
 #, kde-format
@@ -1568,7 +1563,7 @@ msgid ""
 "The download could not be done automatically and should be done manually.\n"
 "More information is available in the detailed report."
 msgstr ""
-"De download kon niet automatisch worden gedaan an zou handmatig moeten "
+"De download kon niet automatisch worden gedaan en zou handmatig moeten "
 "worden uitgevoerd.\n"
 "Meer informatie is beschikbaar in het gedetailleerde rapport."
 
@@ -1587,7 +1582,7 @@ msgid ""
 "One of the selected packages failed to build correctly.\n"
 "More information is available in the detailed report."
 msgstr ""
-"Het correct bouwen van de geselecteerde pakketten is mislukt.\n"
+"Het correct bouwen een van de geselecteerde pakketten is mislukt.\n"
 "Meer informatie is beschikbaar in het gedetailleerde rapport."
 
 #: PkStrings.cpp:700
@@ -1596,7 +1591,7 @@ msgid ""
 "One of the selected packages failed to install correctly.\n"
 "More information is available in the detailed report."
 msgstr ""
-"Correcte installatie van een van de geselecteerde pakketten is mislukt.\n"
+"Eén van de geselecteerde bestanden werd niet correct geïnstalleerd.\n"
 "Meer informatie is beschikbaar in het gedetailleerde rapport."
 
 #: PkStrings.cpp:703
@@ -1647,8 +1642,8 @@ msgid ""
 "The transaction has been cancelled and will be retried when the system is "
 "idle."
 msgstr ""
-"De transactie is geannuleerd en zal opnieuw geprobeerd worden wanneer het "
-"systeem is niets heeft te doen."
+"De transactie is afgebroken. Er wordt opnieuw geprobeerd worden wanneer het "
+"systeem \"idle\" is."
 
 #: PkStrings.cpp:719
 #, kde-format
@@ -1666,7 +1661,7 @@ msgid ""
 "Unknown error, please report a bug.\n"
 "More information is available in the detailed report."
 msgstr ""
-"Onbekende fout, gaarne een bugrapport indienen.\n"
+"Onbekende fout, dien a.u.b. een bugrapport in.\n"
 "Meer informatie is beschikbaar in het gedetailleerde rapport."
 
 #: PkStrings.cpp:734
@@ -1697,7 +1692,7 @@ msgstr "Spellen"
 #, kde-format
 msgctxt "The group type"
 msgid "Graphics"
-msgstr "Illustraties"
+msgstr "Grafisch"
 
 #: PkStrings.cpp:744
 #, kde-format
@@ -1811,7 +1806,7 @@ msgstr "Beveiliging"
 #, kde-format
 msgctxt "The group type"
 msgid "Power management"
-msgstr "Vermogensbeheer"
+msgstr "Energiebeheer"
 
 #: PkStrings.cpp:782
 #, kde-format
@@ -1853,7 +1848,7 @@ msgstr "Documentatie"
 #, kde-format
 msgctxt "The group type"
 msgid "Electronics"
-msgstr "Electronics"
+msgstr "Electronica"
 
 #: PkStrings.cpp:796
 #, kde-format
@@ -1883,43 +1878,43 @@ msgstr "Onbekende groep"
 #, kde-format
 msgctxt "The type of update"
 msgid "Trivial update"
-msgstr "Triviaal iets voor bijwerken"
+msgstr "Onbelangrijke update"
 
 #: PkStrings.cpp:815
 #, kde-format
 msgctxt "The type of update"
 msgid "Normal update"
-msgstr "Normaal iets voor bijwerken"
+msgstr "Normale update"
 
 #: PkStrings.cpp:817
 #, kde-format
 msgctxt "The type of update"
 msgid "Important update"
-msgstr "Belangrijke iets voor bijwerken"
+msgstr "Belangrijke update"
 
 #: PkStrings.cpp:819
 #, kde-format
 msgctxt "The type of update"
 msgid "Security update"
-msgstr "Iets voor bijwerken van beveiliging"
+msgstr "Veiligheidsupdate"
 
 #: PkStrings.cpp:821
 #, kde-format
 msgctxt "The type of update"
 msgid "Bug fix update"
-msgstr "Bijwerken voor bugreparatie"
+msgstr "Bug-reparatie update"
 
 #: PkStrings.cpp:823
 #, kde-format
 msgctxt "The type of update"
 msgid "Enhancement update"
-msgstr "Bijwerken voor verbetering"
+msgstr "Verbeteringsupdate"
 
 #: PkStrings.cpp:825
 #, kde-format
 msgctxt "The type of update"
 msgid "Blocked update"
-msgstr "Geblokkeerd iets voor bijwerken"
+msgstr "Geblokkeerde update"
 
 #: PkStrings.cpp:828
 #, kde-format
@@ -1937,7 +1932,7 @@ msgstr "Beschikbaar"
 #, kde-format
 msgctxt "The type of update"
 msgid "Unknown update"
-msgstr "Onbekende iets voor bijwerken"
+msgstr "Onbekende update"
 
 #: PkStrings.cpp:844
 #, kde-format
@@ -1949,7 +1944,7 @@ msgstr "Niets om bij te werken"
 msgctxt "Some updates were selected on the view"
 msgid "1 Update Selected"
 msgid_plural "%1 Updates Selected"
-msgstr[0] "1 element voor bijwerken geselecteerd"
+msgstr[0] "1 update geselecteerd"
 msgstr[1] "%1 elementen voor bijwerken van software geselecteerd"
 
 #: PkStrings.cpp:851
@@ -1957,7 +1952,7 @@ msgstr[1] "%1 elementen voor bijwerken van software geselecteerd"
 msgctxt "Some updates are being shown on the screen"
 msgid "1 Update"
 msgid_plural "%1 Updates"
-msgstr[0] "1 element voor bijwerken"
+msgstr[0] "1 update"
 msgstr[1] "%1 elementen voor bijwerken"
 
 #: PkStrings.cpp:854
@@ -1971,7 +1966,7 @@ msgstr "%1, %2"
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Update"
 msgid_plural "%1 Updates"
-msgstr[0] "%1 element voor bijwerken"
+msgstr[0] "%1 update"
 msgstr[1] "%1 elementen voor bijwerken"
 
 #: PkStrings.cpp:856
@@ -2002,7 +1997,7 @@ msgstr "Opnieuw opstarten is niet vereist"
 #: PkStrings.cpp:872
 #, kde-format
 msgid "You will be required to restart this application"
-msgstr "U dient de toepassing opnieuw te starten"
+msgstr "U dient deze toepassing opnieuw te starten"
 
 #: PkStrings.cpp:874
 #, kde-format
@@ -2018,8 +2013,8 @@ msgstr "Een herstart is vereist"
 #, kde-format
 msgid "You will be required to log out and back in due to a security update."
 msgstr ""
-"U dient uzelf af te melden en opnieuw aan te melden vanwege het bijwerken "
-"voor beveiliging."
+"U dient uzelf af te melden en opnieuw aan te melden vanwege de "
+"beveiligingsupdate."
 
 #: PkStrings.cpp:880
 #, kde-format
@@ -2096,7 +2091,7 @@ msgstr "Gaarne het medium met label '%1' invoeren en op doorgaan drukken."
 #, kde-format
 msgid "You do not have the necessary privileges to perform this action."
 msgstr ""
-"U beschikt niet over de noodzakelijke privileges om deze actie uit te voeren."
+"U beschikt niet over de rechten die nodig zijn om deze actie uit te voeren."
 
 #: PkStrings.cpp:952
 #, kde-format
@@ -2141,7 +2136,7 @@ msgstr "Kon niet praten met packagekitd."
 #: PkStrings.cpp:968
 #, kde-format
 msgid "Error talking to packagekitd."
-msgstr "Fout bij praten met packagekitd."
+msgstr "Fout bij communicatie met packagekitd."
 
 #: PkStrings.cpp:971 PkStrings.cpp:974
 #, kde-format
@@ -2161,7 +2156,7 @@ msgstr "Er is niets om bij te werken"
 #: PkStrings.cpp:992
 #, kde-format
 msgid "Last check for updates was more than a month ago"
-msgstr "Laatste controle op bijwerken was meer dan een maand geleden"
+msgstr "Updaten meer dan een maand geledenS"
 
 #: PkStrings.cpp:1000
 #, kde-format
@@ -2171,9 +2166,7 @@ msgstr "Geverifieerd %1 geleden"
 #: PkStrings.cpp:1002
 #, kde-format
 msgid "It's strongly recommended that you check for new updates now"
-msgstr ""
-"Het is ten zeerste aanbevolen om nu te controleren op nieuwe elementen voor "
-"het bijwerken van software"
+msgstr "Het is ten zeerste aanbevolen om nu te controleren op updates"
 
 #: pkupdates.cpp:54
 #, kde-format
@@ -2183,42 +2176,42 @@ msgstr "Inactief"
 #: pkupdates.cpp:140
 #, kde-format
 msgid "Checking updates"
-msgstr "Controleren op elementen voor bijwerken"
+msgstr "Controleren updates"
 
 #: pkupdates.cpp:142
 #, kde-format
 msgid "Getting updates"
-msgstr "Bijwerkgegevens ophalen"
+msgstr "Updates ophalen"
 
 #: pkupdates.cpp:144
 #, kde-format
 msgid "Installing updates"
-msgstr "Bezig met installeren van elementen voor bijwerken"
+msgstr "Updates installeren"
 
 #: pkupdates.cpp:146
 #, kde-format
 msgid "Working"
-msgstr "Aan het werk"
+msgstr "Bezig"
 
 #: pkupdates.cpp:149 pkupdates.cpp:439
 #, kde-format
 msgid "You have 1 new update"
 msgid_plural "You have %1 new updates"
-msgstr[0] "Er is één nieuw element voor bijwerken"
+msgstr[0] "Er is 1 nieuwe update"
 msgstr[1] "Er zijn %1 nieuwe elementen voor bijwerken"
 
 #: pkupdates.cpp:151
 #, kde-format
 msgid "1 security update"
 msgid_plural "%1 security updates"
-msgstr[0] "Iets voor bijwerken van beveiliging"
+msgstr[0] "1 veiligheidsupdate"
 msgstr[1] "%1 elementen voor het bijwerken van de beveiligingsw"
 
 #: pkupdates.cpp:153
 #, kde-format
 msgid "1 important update"
 msgid_plural "%1 important updates"
-msgstr[0] "1 belangrijk element voor bijwerken"
+msgstr[0] "1 belangrijke update"
 msgstr[1] "%1 belangrijke elementen voor bijwerken"
 
 #: pkupdates.cpp:158
@@ -2239,12 +2232,12 @@ msgstr "Uw systeem is offline"
 #: pkupdates.cpp:165
 #, kde-format
 msgid "Not checked for updates yet"
-msgstr "Controleren op elementen voor bijwerken is nog niet gedaan"
+msgstr "Nog niet gecontroleerd op updates"
 
 #: pkupdates.cpp:168
 #, kde-format
 msgid "Checking for updates failed"
-msgstr "Controleren op elementen voor bijwerken is mislukt"
+msgstr "Controleren op updates mislukt"
 
 #: pkupdates.cpp:241
 #, kde-format
@@ -2271,7 +2264,7 @@ msgstr "%1 %2"
 #: pkupdates.cpp:474
 #, kde-format
 msgid "Updates Installed"
-msgstr "Elementen voor bijwerken zijn geïnstalleerd"
+msgstr "Updates geïnstalleerd"
 
 #: pkupdates.cpp:475
 #, kde-format
@@ -2295,9 +2288,7 @@ msgstr "Een herstart is nodig"
 msgid ""
 "The computer will have to be restarted after the update for the changes to "
 "take effect."
-msgstr ""
-"De computer moet opnieuw gestart worden na het bijwerken om de wijzigingen "
-"effectief te maken."
+msgstr "De updates hebben pas effect na een herstart van de computer."
 
 #: pkupdates.cpp:603
 #, kde-format
@@ -2310,8 +2301,8 @@ msgid ""
 "You will need to log out and back in after the update for the changes to "
 "take effect."
 msgstr ""
-"U dient uzelf af te melden en opnieuw bij het systeem aan te melden om de "
-"wijzigingen effect te laten hebben."
+"U dient uzelf af te melden en opnieuw bij het systeem aan te melden voordat "
+"de wijzigingen effect hebben."
 
 #~ msgctxt "@action:button"
 #~ msgid "Restart"
