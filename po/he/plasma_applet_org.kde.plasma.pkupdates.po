@@ -3,20 +3,21 @@
 #
 # Elkana Bardugo <ttv200@gmail.com>, 2016.
 # Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
+# SPDX-FileCopyrightText: 2023 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_org.kde.plasma.pkupdates\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-05 12:39+0000\n"
-"PO-Revision-Date: 2017-05-16 06:42-0400\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2023-12-05 12:07+0200\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Zanata 3.9.6\n"
+"X-Generator: Poedit 3.4.1\n"
 
 #: contents/config/config.qml:26
 #, kde-format
@@ -24,11 +25,10 @@ msgid "General"
 msgstr "כללי"
 
 #: contents/ui/ConfigGeneral.qml:42
-#, fuzzy, kde-format
-#| msgid "Check Interval"
+#, kde-format
 msgctxt "@label check interval for updates"
 msgid "Check interval:"
-msgstr "מרווח בדיקה"
+msgstr "מרווח בדיקה:"
 
 #: contents/ui/ConfigGeneral.qml:44
 #, kde-format
@@ -46,39 +46,37 @@ msgid "Monthly"
 msgstr "חודשי"
 
 #: contents/ui/ConfigGeneral.qml:61
-#, fuzzy, kde-format
-#| msgid "Check For Updates"
+#, kde-format
 msgctxt "@label part of a sentence"
 msgid "Check for updates when:"
-msgstr "בדוק עבור עדכונים"
+msgstr "לבדוק אם יש עדכונים כאשר:"
 
 #: contents/ui/ConfigGeneral.qml:62
-#, fuzzy, kde-format
-#| msgid "Check for updates even on a mobile connection"
+#, kde-format
 msgctxt "@option:check part of a sentence: Check for updates when"
 msgid "On a mobile connection"
-msgstr "בדוק עדכונים אפילו בחיבור סוללרי"
+msgstr "בחיבור סלולרי"
 
 #: contents/ui/ConfigGeneral.qml:67
 #, kde-format
 msgctxt "@option:check part of a sentence: Check for updates when"
 msgid "On battery"
-msgstr ""
+msgstr "על סוללה"
 
 #: contents/ui/Full.qml:67
 #, kde-format
 msgid "License Agreement for %1"
-msgstr ""
+msgstr "הסכם רישוי עבור %1"
 
 #: contents/ui/Full.qml:74
 #, kde-format
 msgid "License agreement required for %1 (from %2):"
-msgstr ""
+msgstr "דרוש הסכם רישוי עבור %1 (מאת %2):"
 
 #: contents/ui/Full.qml:101
 #, kde-format
 msgid "Do you accept?"
-msgstr ""
+msgstr "מקובל עליך?"
 
 #: contents/ui/Full.qml:145
 #, kde-format
@@ -86,65 +84,61 @@ msgid "Network is offline"
 msgstr "הרשת לא מחוברת"
 
 #: contents/ui/Full.qml:156
-#, fuzzy, kde-format
-#| msgid "Updates are automatically checked %1.<br>"
+#, kde-format
 msgid "Updates are automatically checked %1."
-msgstr "נבדקו עדכונים אוטומטית ב־%1.<br>"
+msgstr "עדכונים נבדקים אוטומטית ב־%1."
 
 #: contents/ui/Full.qml:243
-#, fuzzy, kde-format
-#| msgid "No description available"
+#, kde-format
 msgid "No updates available"
-msgstr "אין תיאור זמין"
+msgstr "אין עדכונים זמינים"
 
 #: contents/ui/Full.qml:247
-#, fuzzy, kde-format
-#| msgid "Check For Updates"
+#, kde-format
 msgid "Check for Updates"
-msgstr "בדוק עבור עדכונים"
+msgstr "חיפוש עדכונים"
 
 #: contents/ui/Full.qml:267
 #, kde-format
 msgid "Select all packages"
-msgstr "בחר את כל החבילות"
+msgstr "בחירה בכל החבילות"
 
 #: contents/ui/Full.qml:280
 #, kde-format
 msgid "Install Updates"
-msgstr "התקן עדכונים"
+msgstr "התקנת עדכונים"
 
 #: contents/ui/Full.qml:284
 #, kde-format
 msgid "Performs the software update"
-msgstr "בצע את עדכוני התוכנה"
+msgstr "מבצע עדכוני תוכנה"
 
 #: contents/ui/Full.qml:342
 #, kde-format
 msgid "weekly"
-msgstr "שבועי"
+msgstr "שבועית"
 
 #: contents/ui/Full.qml:344
 #, kde-format
 msgid "monthly"
-msgstr "חודשי"
+msgstr "חודשית"
 
 #: contents/ui/Full.qml:346
 #, kde-format
 msgid "daily"
-msgstr "יומי"
+msgstr "יומית"
 
 #: contents/ui/PackageDelegate.qml:64
 #, kde-format
 msgctxt "Package Name (Version)"
 msgid "%1 (%2)"
-msgstr ""
+msgstr "%1 (%2)"
 
 #: contents/ui/PackageDelegate.qml:94
-#, fuzzy, kde-format
-#| msgid "Update Description"
+#, kde-format
 msgctxt "description of the update"
 msgid "Update Description"
-msgstr "עדכן תיאור"
+msgstr "תיאור העדכון"
 
 #: contents/ui/PackageDelegate.qml:101
 #, kde-format
