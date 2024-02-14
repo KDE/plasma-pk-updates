@@ -1,7 +1,7 @@
 # translation of plasma_applet_org.kde.plasma.pkupdates.pot to Esperanto
 # Copyright (C) 2023 Free Software Foundation, Inc.
 # This file is distributed under the same license as the plasma-pk-updates package.
-# Oliver Kellogg <okellogg.sourceforge.net>, 2023.
+# Oliver Kellogg <okellogg@users.sourceforge.net>, 2023.
 #
 msgid ""
 msgstr ""
