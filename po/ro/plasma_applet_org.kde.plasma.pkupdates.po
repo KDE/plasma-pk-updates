@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the plasma-pk-updates package.
-# Sergiu Bivol <sergiu@cip.md>, 2020, 2022.
+# Sergiu Bivol <sergiu@cip.md>, 2020, 2022, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-pk-updates\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-05 12:39+0000\n"
-"PO-Revision-Date: 2022-05-05 12:55+0100\n"
+"PO-Revision-Date: 2024-02-24 16:46+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
@@ -93,11 +93,9 @@ msgid "No updates available"
 msgstr "Nicio actualizare disponibilă"
 
 #: contents/ui/Full.qml:247
-#, fuzzy, kde-format
-#| msgctxt "@label part of a sentence"
-#| msgid "Check for updates when:"
+#, kde-format
 msgid "Check for Updates"
-msgstr "Caută actualizări:"
+msgstr "Caută actualizări"
 
 #: contents/ui/Full.qml:267
 #, kde-format
