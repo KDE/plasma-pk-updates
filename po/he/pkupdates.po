@@ -3,20 +3,21 @@
 #
 # Elkana Bardugo <ttv200@gmail.com>, 2016.
 # Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
+# SPDX-FileCopyrightText: 2024 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: pkupdates\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-05 12:39+0000\n"
-"PO-Revision-Date: 2017-05-16 06:42-0400\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2024-04-08 19:15+0300\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Zanata 3.9.6\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: PkStrings.cpp:37
 #, kde-format
@@ -64,13 +65,13 @@ msgstr "מסיר חבילות"
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s, %2 remaining"
-msgstr "מוריד ב־%1 לשניה, %2 נותרו"
+msgstr "מוריד ב־%1 לשנייה, %2 נותרו"
 
 #: PkStrings.cpp:64
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s"
-msgstr "מוריד ב־%1 לשניה"
+msgstr "מוריד ב־%1 לשנייה"
 
 #: PkStrings.cpp:68
 #, kde-format
@@ -589,7 +590,7 @@ msgstr "חבילות הותקנו"
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed local files"
-msgstr "הותקנו קבצי התקנה"
+msgstr "הותקנו קבצים מקומיים"
 
 #: PkStrings.cpp:307
 #, kde-format
