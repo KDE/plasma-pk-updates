@@ -1912,7 +1912,7 @@ msgstr "Actualització de seguretat"
 #, kde-format
 msgctxt "The type of update"
 msgid "Bug fix update"
-msgstr "Actualització de correcció d'errors"
+msgstr "Actualització d'esmena d'errors"
 
 #: PkStrings.cpp:823
 #, kde-format

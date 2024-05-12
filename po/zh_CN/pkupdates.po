@@ -57,25 +57,25 @@ msgstr "正在获取信息"
 #, kde-format
 msgctxt "transaction state, removing packages"
 msgid "Removing packages"
-msgstr "正在删除软件包"
+msgstr "正在移除软件包"
 
 #: PkStrings.cpp:59
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s, %2 remaining"
-msgstr "下载速度 %1/s, 还剩余 %2"
+msgstr "下载速度 %1/秒，剩余 %2"
 
 #: PkStrings.cpp:64
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s"
-msgstr "下载速度 %1/s"
+msgstr "下载速度 %1/秒"
 
 #: PkStrings.cpp:68
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading, %1 remaining"
-msgstr "正在下载, 还剩余 %1 "
+msgstr "正在下载，剩余 %1"
 
 #: PkStrings.cpp:72
 #, kde-format
@@ -111,7 +111,7 @@ msgstr "正在清理软件包"
 #, kde-format
 msgctxt "transaction state, obsoleting old packages"
 msgid "Obsoleting packages"
-msgstr "正在弃用软件包"
+msgstr "正在将旧的软件包设为过时"
 
 #: PkStrings.cpp:91
 #, kde-format
@@ -161,7 +161,7 @@ msgstr "正在取消"
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading repository information"
-msgstr "正在下载仓库信息"
+msgstr "正在下载软件仓库信息"
 
 #: PkStrings.cpp:115
 #, kde-format
@@ -222,31 +222,31 @@ msgstr "正在生成软件包列表"
 #, kde-format
 msgctxt "transaction state, when we're waiting for the native tools to exit"
 msgid "Waiting for package manager lock"
-msgstr "正在等候软件包管理器锁定"
+msgstr "正在等待软件包管理器退出锁定"
 
 #: PkStrings.cpp:145
 #, kde-format
 msgctxt "waiting for user to type in a password"
 msgid "Waiting for authentication"
-msgstr "正在等待认证"
+msgstr "正在等待身份认证"
 
 #: PkStrings.cpp:148
 #, kde-format
 msgctxt "we are updating the list of processes"
 msgid "Updating the list of running applications"
-msgstr "正在更新运行程序的列表"
+msgstr "正在更新当前正在运行的应用程序列表"
 
 #: PkStrings.cpp:151
 #, kde-format
 msgctxt "we are checking executable files in use"
 msgid "Checking for applications currently in use"
-msgstr "正在检查正在使用的程序"
+msgstr "正在检查当前正在被使用的应用程序"
 
 #: PkStrings.cpp:154
 #, kde-format
 msgctxt "we are checking for libraries in use"
 msgid "Checking for libraries currently in use"
-msgstr "正在检查正在使用的库"
+msgstr "正在检查当前正在被使用的程序库"
 
 #: PkStrings.cpp:157
 #, kde-format
@@ -276,7 +276,7 @@ msgstr "已安装"
 #, kde-format
 msgctxt "The action of the package, in past tense"
 msgid "Removed"
-msgstr "已删除"
+msgstr "已移除"
 
 #: PkStrings.cpp:175
 #, kde-format
@@ -288,13 +288,13 @@ msgstr "已清理"
 #, kde-format
 msgctxt "The action of the package, in past tense"
 msgid "Obsoleted"
-msgstr "已废弃"
+msgstr "已过时"
 
 #: PkStrings.cpp:188
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Unknown role type"
-msgstr "未知进度类型"
+msgstr "未知角色类型"
 
 #: PkStrings.cpp:190
 #, kde-format
@@ -318,7 +318,7 @@ msgstr "正在获取详情"
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting requires"
-msgstr "正在获取所需"
+msgstr "正在获取需求信息"
 
 #: PkStrings.cpp:199
 #, kde-format
@@ -354,7 +354,7 @@ msgstr "正在搜索软件包名称"
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating removal"
-msgstr "正在模拟删除"
+msgstr "正在模拟移除"
 
 #: PkStrings.cpp:212 PkStrings.cpp:219 PkStrings.cpp:260
 #, kde-format
@@ -366,7 +366,7 @@ msgstr "正在下载软件包"
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Removing"
-msgstr "正在删除"
+msgstr "正在移除"
 
 #: PkStrings.cpp:217
 #, kde-format
@@ -432,19 +432,19 @@ msgstr "正在取消"
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting list of repositories"
-msgstr "正在获取仓库列表"
+msgstr "正在获取软件仓库列表"
 
 #: PkStrings.cpp:243
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Enabling repository"
-msgstr "正在启用仓库"
+msgstr "正在启用软件仓库"
 
 #: PkStrings.cpp:245
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Setting repository data"
-msgstr "正在设置仓库数据"
+msgstr "正在设置软件仓库数据"
 
 #: PkStrings.cpp:247
 #, kde-format
@@ -462,7 +462,7 @@ msgstr "正在获取文件列表"
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting what provides"
-msgstr "正在获取所提供"
+msgstr "正在获取所提供的内容"
 
 #: PkStrings.cpp:254
 #, kde-format
@@ -480,7 +480,7 @@ msgstr "正在获取软件包列表"
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Accepting EULA"
-msgstr "正在接受最终用户许可条例"
+msgstr "正在接受最终用户许可协议"
 
 #: PkStrings.cpp:262
 #, kde-format
@@ -498,7 +498,7 @@ msgstr "正在获取分类"
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting old transactions"
-msgstr "正在获取旧的变更交易"
+msgstr "正在获取旧的安装进程记录"
 
 #: PkStrings.cpp:268
 #, kde-format
@@ -510,13 +510,13 @@ msgstr "正在修复系统"
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Removing repository"
-msgstr "正在从 SVN 仓库删除文件"
+msgstr "正在移除软件仓库"
 
 #: PkStrings.cpp:280
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Unknown role type"
-msgstr "未知进度类型"
+msgstr "未知角色类型"
 
 #: PkStrings.cpp:282
 #, kde-format
@@ -540,7 +540,7 @@ msgstr "已获取详情"
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got requires"
-msgstr "已获取所需"
+msgstr "已获取需求"
 
 #: PkStrings.cpp:291
 #, kde-format
@@ -552,7 +552,7 @@ msgstr "已获取更新"
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package details"
-msgstr "已搜索软件包名称"
+msgstr "已搜索软件包详情"
 
 #: PkStrings.cpp:295
 #, kde-format
@@ -576,7 +576,7 @@ msgstr "已搜索软件包名称"
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed packages"
-msgstr "已删除软件包"
+msgstr "已移除软件包"
 
 #: PkStrings.cpp:303
 #, kde-format
@@ -612,19 +612,19 @@ msgstr "已取消"
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got list of repositories"
-msgstr "已获取仓库列表"
+msgstr "已获取软件仓库列表"
 
 #: PkStrings.cpp:315
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Enabled repository"
-msgstr "已启用仓库"
+msgstr "已启用软件仓库"
 
 #: PkStrings.cpp:317
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Set repository data"
-msgstr "已设置仓库数据"
+msgstr "已设置软件仓库数据"
 
 #: PkStrings.cpp:319
 #, kde-format
@@ -642,7 +642,7 @@ msgstr "已获取文件列表"
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got what provides"
-msgstr "已获取所提供"
+msgstr "已获取所提供的内容"
 
 #: PkStrings.cpp:326
 #, kde-format
@@ -660,7 +660,7 @@ msgstr "已获取软件包列表"
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Accepted EULA"
-msgstr "已接受最终用户许可条例"
+msgstr "已接受最终用户许可协议"
 
 #: PkStrings.cpp:332
 #, kde-format
@@ -684,7 +684,7 @@ msgstr "已获取分类"
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got old transactions"
-msgstr "已获取旧的变更交易"
+msgstr "已获取旧的安装进程记录"
 
 #: PkStrings.cpp:340
 #, kde-format
@@ -696,7 +696,7 @@ msgstr "已修复系统"
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed repository"
-msgstr "文件已从 SVN 仓库删除。"
+msgstr "已移除软件仓库"
 
 #: PkStrings.cpp:352
 #, kde-format
@@ -716,7 +716,7 @@ msgstr "正在安装"
 #: PkStrings.cpp:358
 #, kde-format
 msgid "Removing"
-msgstr "正在删除"
+msgstr "正在移除"
 
 #: PkStrings.cpp:360
 #, kde-format
@@ -726,7 +726,7 @@ msgstr "正在清理"
 #: PkStrings.cpp:362
 #, kde-format
 msgid "Obsoleting"
-msgstr "正在弃用"
+msgstr "正在将旧软件包设置为过时"
 
 #: PkStrings.cpp:364
 #, kde-format
@@ -761,7 +761,7 @@ msgstr "已安装"
 #: PkStrings.cpp:385
 #, kde-format
 msgid "Removed"
-msgstr "已删除"
+msgstr "已移除"
 
 #: PkStrings.cpp:387
 #, kde-format
@@ -771,37 +771,37 @@ msgstr "已清理"
 #: PkStrings.cpp:389
 #, kde-format
 msgid "Obsoleted"
-msgstr "已废弃"
+msgstr "已过时"
 
 #: PkStrings.cpp:391
 #, kde-format
 msgid "Reinstalled"
-msgstr "重新安装"
+msgstr "已重新安装"
 
 #: PkStrings.cpp:393
 #, kde-format
 msgid "Prepared"
-msgstr "已经准备好"
+msgstr "已完成准备"
 
 #: PkStrings.cpp:395
 #, kde-format
 msgid "Decompressed"
-msgstr "解压完成"
+msgstr "已解压"
 
 #: PkStrings.cpp:406
 #, kde-format
 msgid "No network connection available"
-msgstr "无可用的网络连接"
+msgstr "没有可用的网络连接"
 
 #: PkStrings.cpp:408
 #, kde-format
 msgid "No package cache is available"
-msgstr "无软件包缓存可用"
+msgstr "没有可用的软件包缓存"
 
 #: PkStrings.cpp:410
 #, kde-format
 msgid "Out of memory"
-msgstr "内存耗尽"
+msgstr "内存不足"
 
 #: PkStrings.cpp:412
 #, kde-format
@@ -811,7 +811,7 @@ msgstr "创建线程失败"
 #: PkStrings.cpp:414
 #, kde-format
 msgid "Not supported by this backend"
-msgstr "此后端不支持"
+msgstr "不支持此后端程序"
 
 #: PkStrings.cpp:416
 #, kde-format
@@ -826,17 +826,17 @@ msgstr "安全信任关系不存在"
 #: PkStrings.cpp:420
 #, kde-format
 msgid "The package is not installed"
-msgstr "软件包未安装"
+msgstr "软件包没有安装"
 
 #: PkStrings.cpp:422
 #, kde-format
 msgid "The package was not found"
-msgstr "软件包未找到"
+msgstr "软件包没有找到"
 
 #: PkStrings.cpp:424
 #, kde-format
 msgid "The package is already installed"
-msgstr "软件包已安装"
+msgstr "软件包已经安装"
 
 #: PkStrings.cpp:426
 #, kde-format
@@ -846,7 +846,7 @@ msgstr "软件包下载失败"
 #: PkStrings.cpp:428
 #, kde-format
 msgid "The group was not found"
-msgstr "分组未找到"
+msgstr "分组没有找到"
 
 #: PkStrings.cpp:430
 #, kde-format
@@ -856,32 +856,32 @@ msgstr "分组列表无效"
 #: PkStrings.cpp:432
 #, kde-format
 msgid "Dependency resolution failed"
-msgstr "依赖关系解决失败"
+msgstr "解决依赖关系失败"
 
 #: PkStrings.cpp:434
 #, kde-format
 msgid "Search filter was invalid"
-msgstr "搜索过滤规则无效"
+msgstr "搜索过滤条件无效"
 
 #: PkStrings.cpp:436
 #, kde-format
 msgid "The package identifier was not well formed"
-msgstr "软件包标识符未良好排列"
+msgstr "软件包标识符格式不正确"
 
 #: PkStrings.cpp:438
 #, kde-format
 msgid "Transaction error"
-msgstr "变更交易错误"
+msgstr "安装进程错误"
 
 #: PkStrings.cpp:440
 #, kde-format
 msgid "Repository name was not found"
-msgstr "仓库名称未找到"
+msgstr "软件仓库名称没有找到"
 
 #: PkStrings.cpp:442
 #, kde-format
 msgid "Could not remove a protected system package"
-msgstr "无法删除受保护的系统软件包"
+msgstr "无法移除受保护的系统软件包"
 
 #: PkStrings.cpp:444
 #, kde-format
@@ -906,7 +906,7 @@ msgstr "任务无法取消"
 #: PkStrings.cpp:452
 #, kde-format
 msgid "Source packages cannot be installed"
-msgstr "无法安装源码软件包"
+msgstr "无法安装源代码包"
 
 #: PkStrings.cpp:454
 #, kde-format
@@ -916,7 +916,7 @@ msgstr "许可证同意失败"
 #: PkStrings.cpp:456
 #, kde-format
 msgid "Local file conflict between packages"
-msgstr "本地文件于软件包间冲突"
+msgstr "软件包之间的本地文件存在冲突"
 
 #: PkStrings.cpp:458
 #, kde-format
@@ -936,7 +936,7 @@ msgstr "初始化失败"
 #: PkStrings.cpp:464
 #, kde-format
 msgid "Failed to finalize"
-msgstr "完成化失败"
+msgstr "完成操作失败"
 
 #: PkStrings.cpp:466
 #, kde-format
@@ -951,7 +951,7 @@ msgstr "没有可更新的软件包"
 #: PkStrings.cpp:470
 #, kde-format
 msgid "Cannot write repository configuration"
-msgstr "无法写入仓库配置"
+msgstr "无法写入软件仓库配置"
 
 #: PkStrings.cpp:472
 #, kde-format
@@ -961,17 +961,17 @@ msgstr "本地安装失败"
 #: PkStrings.cpp:474
 #, kde-format
 msgid "Bad GPG signature"
-msgstr "损坏的 GPG 签名"
+msgstr "GPG 签名错误"
 
 #: PkStrings.cpp:476
 #, kde-format
 msgid "Missing GPG signature"
-msgstr "缺失的 GPG 签名"
+msgstr "GPG 签名缺失"
 
 #: PkStrings.cpp:478
 #, kde-format
 msgid "Repository configuration invalid"
-msgstr "仓库配置无效"
+msgstr "软件仓库配置无效"
 
 #: PkStrings.cpp:480
 #, kde-format
@@ -981,7 +981,7 @@ msgstr "无效的软件包文件"
 #: PkStrings.cpp:482
 #, kde-format
 msgid "Package install blocked"
-msgstr "软件包安装已屏蔽"
+msgstr "软件包的安装已被阻止"
 
 #: PkStrings.cpp:484
 #, kde-format
@@ -991,27 +991,27 @@ msgstr "软件包损坏"
 #: PkStrings.cpp:486
 #, kde-format
 msgid "All packages are already installed"
-msgstr "已经安装全部软件包"
+msgstr "所有软件包已经安装"
 
 #: PkStrings.cpp:488
 #, kde-format
 msgid "The specified file could not be found"
-msgstr "指定的文件未找到"
+msgstr "无法找到指定的文件"
 
 #: PkStrings.cpp:490
 #, kde-format
 msgid "No more mirrors are available"
-msgstr "无更多的镜像可用"
+msgstr "没有其他可用的镜像"
 
 #: PkStrings.cpp:492
 #, kde-format
 msgid "No distribution upgrade data is available"
-msgstr "无发行版升级数据可用"
+msgstr "没有可用的发行版升级数据"
 
 #: PkStrings.cpp:494
 #, kde-format
 msgid "Package is incompatible with this system"
-msgstr "软件包与本系统不兼容"
+msgstr "软件包不兼容此系统"
 
 #: PkStrings.cpp:496
 #, kde-format
@@ -1021,7 +1021,7 @@ msgstr "磁盘没有剩余空间"
 #: PkStrings.cpp:498
 #, kde-format
 msgid "A media change is required"
-msgstr "需要更改媒体"
+msgstr "需要更换媒体"
 
 #: PkStrings.cpp:500
 #, kde-format
@@ -1031,17 +1031,17 @@ msgstr "身份验证失败"
 #: PkStrings.cpp:502
 #, kde-format
 msgid "Update not found"
-msgstr "更新未找到"
+msgstr "没有找到更新"
 
 #: PkStrings.cpp:504
 #, kde-format
 msgid "Cannot install from untrusted origin"
-msgstr "无法从不信任的源安装软件包"
+msgstr "无法从不信任的来源安装软件包"
 
 #: PkStrings.cpp:506
 #, kde-format
 msgid "Cannot update from untrusted origin"
-msgstr "无法从不信任的源升级"
+msgstr "无法从不信任的来源升级软件包"
 
 #: PkStrings.cpp:508
 #, kde-format
@@ -1051,37 +1051,37 @@ msgstr "无法获取文件列表"
 #: PkStrings.cpp:510
 #, kde-format
 msgid "Cannot get package requires"
-msgstr "获取需要的软件包"
+msgstr "无法获取需要的软件包"
 
 #: PkStrings.cpp:512
 #, kde-format
 msgid "Cannot disable origin"
-msgstr "无法禁用源"
+msgstr "无法禁用来源"
 
 #: PkStrings.cpp:514
 #, kde-format
 msgid "The download failed"
-msgstr "下载软件包失败"
+msgstr "下载失败"
 
 #: PkStrings.cpp:516
 #, kde-format
 msgid "Package failed to configure"
-msgstr "配置软件包失败"
+msgstr "软件包配置失败"
 
 #: PkStrings.cpp:518
 #, kde-format
 msgid "Package failed to build"
-msgstr "构建软件包失败"
+msgstr "软件包构建失败"
 
 #: PkStrings.cpp:520
 #, kde-format
 msgid "Package failed to install"
-msgstr "安装软件包失败"
+msgstr "软件包安装失败"
 
 #: PkStrings.cpp:522
 #, kde-format
 msgid "Package failed to be removed"
-msgstr "删除软件包失败"
+msgstr "软件包移除失败"
 
 #: PkStrings.cpp:524
 #, kde-format
@@ -1096,7 +1096,7 @@ msgstr "软件包数据库已更改"
 #: PkStrings.cpp:528
 #, kde-format
 msgid "Virtual provide type is not supported"
-msgstr "虚拟提供类型不被支持"
+msgstr "不支持虚拟提供类型"
 
 #: PkStrings.cpp:530
 #, kde-format
@@ -1106,17 +1106,17 @@ msgstr "安装根目录无效"
 #: PkStrings.cpp:532
 #, kde-format
 msgid "Cannot fetch install sources"
-msgstr "无法获得安装源"
+msgstr "无法获取安装来源"
 
 #: PkStrings.cpp:534
 #, kde-format
 msgid "Rescheduled due to priority"
-msgstr "由于优先级问题而变更计划"
+msgstr "由于优先级问题，已重新安排处理时间"
 
 #: PkStrings.cpp:536
 #, kde-format
 msgid "Unfinished transaction"
-msgstr "未完成的变更"
+msgstr "未完成的安装进程"
 
 #: PkStrings.cpp:538
 #, kde-format
@@ -1144,7 +1144,7 @@ msgid ""
 "This should have been done by the backend automatically."
 msgstr ""
 "软件包列表需要重建。\n"
-"这应该由后端自动进行。"
+"此操作本应由后端程序自动进行。"
 
 #: PkStrings.cpp:556
 #, kde-format
@@ -1153,8 +1153,8 @@ msgid ""
 "memory.\n"
 "Please close some programs or restart your computer."
 msgstr ""
-"负责处理用户请求的服务内存耗尽。\n"
-"请关闭一些程序和重启您的计算机。"
+"负责处理用户请求的服务内存不足。\n"
+"请关闭一些程序，或者重新启动电脑。"
 
 #: PkStrings.cpp:559
 #, kde-format
@@ -1168,7 +1168,7 @@ msgid ""
 "Please report a bug as this should not have happened."
 msgstr ""
 "您的后端程序不支持该操作。\n"
-"请报告错误，因为这不应该发生。"
+"请报告此程序缺陷，因为这不应该发生。"
 
 #: PkStrings.cpp:564
 #, kde-format
@@ -1176,8 +1176,8 @@ msgid ""
 "A problem that we were not expecting has occurred.\n"
 "Please report this bug with the error description."
 msgstr ""
-"遇到意外错误。\n"
-"请回报此 Bug 并上传错误说明。"
+"发生未知的错误。\n"
+"请报告此程序缺陷并附上错误描述。"
 
 #: PkStrings.cpp:567
 #, kde-format
@@ -1185,26 +1185,26 @@ msgid ""
 "A security trust relationship could not be made with the software origin.\n"
 "Please check your software signature settings."
 msgstr ""
-"无法与软件来源建立安全的信任关系。\n"
+"无法与软件来源建立安全信任关系。\n"
 "请检查软件签名设置。"
 
 #: PkStrings.cpp:570
 #, kde-format
 msgid ""
 "The package that is trying to be removed or updated is not already installed."
-msgstr "要移除或更新的软件包尚未安装。"
+msgstr "正在尝试移除或者更新的软件包并未安装。"
 
 #: PkStrings.cpp:572
 #, kde-format
 msgid ""
 "The package that is being modified was not found on your system or in any "
 "software origin."
-msgstr "正在被修改的软件包在系统和所有软件来源中均不存在。"
+msgstr "正在修改的软件包在系统和所有软件来源中均不存在。"
 
 #: PkStrings.cpp:574
 #, kde-format
 msgid "The package that is trying to be installed is already installed."
-msgstr "尝试安装的软件包已经安装过了。"
+msgstr "正在尝试安装的软件包已经安装。"
 
 #: PkStrings.cpp:576
 #, kde-format
@@ -1213,7 +1213,7 @@ msgid ""
 "Please check your network connectivity."
 msgstr ""
 "软件包下载失败。\n"
-"请检查您的网络连接性。"
+"请检查您的网络连接情况。"
 
 #: PkStrings.cpp:579
 #, kde-format
@@ -1221,7 +1221,7 @@ msgid ""
 "The group type was not found.\n"
 "Please check your group list and try again."
 msgstr ""
-"未找到分组类型。\n"
+"没有找到分组类型。\n"
 "请检查您的分组列表并重试。"
 
 #: PkStrings.cpp:582
@@ -1246,7 +1246,7 @@ msgstr ""
 #: PkStrings.cpp:589
 #, kde-format
 msgid "The search filter was not correctly formed."
-msgstr "搜索过滤器格式错误。"
+msgstr "搜索过滤条件格式不正确。"
 
 #: PkStrings.cpp:591
 #, kde-format
@@ -1255,7 +1255,7 @@ msgid ""
 "This normally indicates an internal bug and should be reported."
 msgstr ""
 "发送给守护程序的软件包标识格式不正确。\n"
-"这一般为内部Bug，应第一时间报告。"
+"这通常意味着程序内部存在缺陷，应该向相关项目报告。"
 
 #: PkStrings.cpp:594
 #, kde-format
@@ -1263,7 +1263,7 @@ msgid ""
 "An error occurred while running the transaction.\n"
 "More information is available in the detailed report."
 msgstr ""
-"运行事务时出错。\n"
+"运行安装进程时发生错误。\n"
 "更多信息请见详细报告。"
 
 #: PkStrings.cpp:597
@@ -1272,18 +1272,18 @@ msgid ""
 "The remote software origin name was not found.\n"
 "You may need to enable an item in Software Origins."
 msgstr ""
-"未找到远程软件来源。\n"
+"没有找到远程软件来源的名称。\n"
 "您可能需要在“软件来源”中启用至少一个来源。"
 
 #: PkStrings.cpp:600
 #, kde-format
 msgid "Removing a protected system package is not allowed."
-msgstr "不允许删除受保护的系统软件包。"
+msgstr "不允许移除受保护的系统软件包。"
 
 #: PkStrings.cpp:602
 #, kde-format
 msgid "The task was canceled successfully and no packages were changed."
-msgstr "任务已成功取消并且未更改任何软件包。"
+msgstr "任务已成功取消，没有更改任何软件包。"
 
 #: PkStrings.cpp:604
 #, kde-format
@@ -1291,8 +1291,8 @@ msgid ""
 "The task was canceled successfully and no packages were changed.\n"
 "The backend did not exit cleanly."
 msgstr ""
-"任务已成功取消并且未更改任何软件包。\n"
-"后端未干净退出。"
+"任务已成功取消，没有更改任何软件包。\n"
+"但是后端程序没有正常退出。"
 
 #: PkStrings.cpp:607
 #, kde-format
@@ -1300,13 +1300,13 @@ msgid ""
 "The native package configuration file could not be opened.\n"
 "Please make sure your system's configuration is valid."
 msgstr ""
-"本地包配置文件无法打开。\n"
-"请确保您的系统配置文件是有效的。"
+"系统原生的软件包配置文件无法打开。\n"
+"请检查并确保您的系统配置文件有效。"
 
 #: PkStrings.cpp:610
 #, kde-format
 msgid "The task is not safe to be cancelled at this time."
-msgstr "任务在此刻取消是不安全的。"
+msgstr "在现阶段取消任务是不安全的。"
 
 #: PkStrings.cpp:612
 #, kde-format
@@ -1314,8 +1314,8 @@ msgid ""
 "Source packages are not normally installed this way.\n"
 "Check the extension of the file you are trying to install."
 msgstr ""
-"源码包通常不以此方式安装。\n"
-"请检查您尝试安装的文件的扩展名。"
+"源代码包通常不会通过这种方式安装。\n"
+"请检查正在尝试安装的文件的扩展名。"
 
 #: PkStrings.cpp:615
 #, kde-format
@@ -1323,8 +1323,8 @@ msgid ""
 "The license agreement was not agreed to.\n"
 "To use this software you have to accept the license."
 msgstr ""
-"未统一许可证协议。\n"
-"要使用此软件，您必须接受此协议。"
+"您没有接受许可证协议。\n"
+"要使用此软件，您必须接受它的许可证协议。"
 
 #: PkStrings.cpp:618
 #, kde-format
@@ -1333,7 +1333,7 @@ msgid ""
 "This is usually due to mixing packages for different software origins."
 msgstr ""
 "有两个软件包提供了相同的文件。\n"
-"这通常是由于在不同的软件来源之间混用软件包造成的。"
+"这通常是由于混用不同的软件来源的软件包造成的。"
 
 #: PkStrings.cpp:621
 #, kde-format
@@ -1342,7 +1342,7 @@ msgid ""
 "This is usually due to mixing packages from different software origins."
 msgstr ""
 "多个现存的软件包互不兼容。\n"
-"这通常是由于在不同的软件来源之间混用软件包造成的。"
+"这通常是由于混用不同的软件来源的软件包造成的。"
 
 #: PkStrings.cpp:624
 #, kde-format
@@ -1359,8 +1359,8 @@ msgid ""
 "Failed to initialize packaging backend.\n"
 "This may occur if other packaging tools are being used simultaneously."
 msgstr ""
-"初始化软件包管理后端失败。\n"
-"这可能是由于其他软件包管理器正在被同时使用。"
+"软件包管理后端程序初始化失败。\n"
+"这可能是因为有其他软件包管理工具正在被同时使用。"
 
 #: PkStrings.cpp:630
 #, kde-format
@@ -1368,8 +1368,8 @@ msgid ""
 "Failed to close down the backend instance.\n"
 "This error can normally be ignored."
 msgstr ""
-"无法关闭后端实例。\n"
-"通常可以忽略此错误。"
+"关闭后端程序实例失败。\n"
+"一般情况下可以忽略此错误。"
 
 #: PkStrings.cpp:633
 #, kde-format
@@ -1377,18 +1377,18 @@ msgid ""
 "Cannot get the exclusive lock on the packaging backend.\n"
 "Please close any other legacy packaging tools that may be open."
 msgstr ""
-"无法获得软件包管理后端的独占锁。\n"
-"请关闭所有其他可能打开着的旧式软件包管理器。"
+"无法获得软件包后端程序的独占锁定。\n"
+"请关闭其他被打开的旧式软件包管理工具。"
 
 #: PkStrings.cpp:636
 #, kde-format
 msgid "None of the selected packages could be updated."
-msgstr "选中的软件包没有任何可被更新。"
+msgstr "选中的软件包全部无法更新。"
 
 #: PkStrings.cpp:638
 #, kde-format
 msgid "The repository configuration could not be modified."
-msgstr "无法修改仓库配置。"
+msgstr "无法修改软件仓库配置。"
 
 #: PkStrings.cpp:640
 #, kde-format
@@ -1402,7 +1402,7 @@ msgstr ""
 #: PkStrings.cpp:643
 #, kde-format
 msgid "The package signature could not be verified."
-msgstr "无法验证软件包签名。"
+msgstr "无法验证软件包的签名。"
 
 #: PkStrings.cpp:645
 #, kde-format
@@ -1410,13 +1410,13 @@ msgid ""
 "The package signature was missing and this package is untrusted.\n"
 "This package was not signed with a GPG key when created."
 msgstr ""
-"软件包签名丢失切软件包不被信任。\n"
-"此软件包在创建的时候未用 GPG 密钥签名。"
+"软件包没有签名，因此它不被信任。\n"
+"此软件包在创建时并未使用 GPG 密钥进行签名。"
 
 #: PkStrings.cpp:648
 #, kde-format
 msgid "Repository configuration was invalid and could not be read."
-msgstr "仓库配置无效且无法读取。"
+msgstr "软件仓库配置无效，无法读取。"
 
 #: PkStrings.cpp:650
 #, kde-format
@@ -1425,14 +1425,14 @@ msgid ""
 "The package file could be corrupt, or not a proper package."
 msgstr ""
 "您正在尝试安装的软件包无效。\n"
-"软件包文件可能损坏，或者不是正确的软件包。"
+"软件包的文件可能损坏，或者打包格式不正确。"
 
 #: PkStrings.cpp:653
 #, kde-format
 msgid ""
 "Installation of this package was prevented by your packaging system's "
 "configuration."
-msgstr "您的软件包管理系统配置阻止了此软件包的安装。"
+msgstr "软件包管理系统的配置阻止了此软件包的安装。"
 
 #: PkStrings.cpp:655
 #, kde-format
@@ -1452,8 +1452,8 @@ msgid ""
 "The specified file could not be found on the system.\n"
 "Check that the file still exists and has not been deleted."
 msgstr ""
-"指定的文件无法在系统上找到。\n"
-"请确认此文件仍然存在且未被删除。"
+"无法在系统中找到指定的文件。\n"
+"请检查此文件是否存在并确保它未被删除。"
 
 #: PkStrings.cpp:662
 #, kde-format
@@ -1478,7 +1478,7 @@ msgstr ""
 #, kde-format
 msgid ""
 "The package that is trying to be installed is incompatible with this system."
-msgstr "尝试安装的软件包与此系统不兼容。"
+msgstr "正在尝试安装的软件包不兼容此系统。"
 
 #: PkStrings.cpp:670
 #, kde-format
@@ -1486,13 +1486,13 @@ msgid ""
 "There is insufficient space on the device.\n"
 "Free some space on the system disk to perform this operation."
 msgstr ""
-"存储设备的可用空间不足。\n"
-"请腾出一些空间来完成操作。"
+"此设备的存储空间不足。\n"
+"请在系统分区上释放一些空间以进行此操作。"
 
 #: PkStrings.cpp:673
 #, kde-format
 msgid "Additional media is required to complete the transaction."
-msgstr "需要额外介质来完成此操作。"
+msgstr "需要额外的媒体来完成安装进程。"
 
 #: PkStrings.cpp:675
 #, kde-format
@@ -1500,8 +1500,8 @@ msgid ""
 "You have failed to provide correct authentication.\n"
 "Please check any passwords or account settings."
 msgstr ""
-"您未能提供正确的认证信息。\n"
-"请检查密码或账户设置。"
+"您提供的身份认证信息不正确。\n"
+"请检查密码或者账户设置。"
 
 #: PkStrings.cpp:678
 #, kde-format
@@ -1511,32 +1511,32 @@ msgid ""
 "server."
 msgstr ""
 "无法找到指定的更新。\n"
-"该更新可能已经安装或已经被从服务器上移除。"
+"该更新可能已经安装，或者已经从服务器上移除。"
 
 #: PkStrings.cpp:681
 #, kde-format
 msgid "The package could not be installed from untrusted origin."
-msgstr "无法从不信任的源安装软件包。"
+msgstr "无法从不信任的来源安装软件包。"
 
 #: PkStrings.cpp:683
 #, kde-format
 msgid "The package could not be updated from untrusted origin."
-msgstr "无法从不信任的源更新软件包。"
+msgstr "无法从不信任的来源更新软件包。"
 
 #: PkStrings.cpp:685
 #, kde-format
 msgid "The file list is not available for this package."
-msgstr "该软件包的文件列表不可用"
+msgstr "软件包的文件列表不可用。"
 
 #: PkStrings.cpp:687
 #, kde-format
 msgid "The information about what requires this package could not be obtained."
-msgstr "无法获取软件包的被依赖信息。"
+msgstr "无法获取软件包的被依赖信息"
 
 #: PkStrings.cpp:689
 #, kde-format
 msgid "The specified software origin could not be disabled."
-msgstr "指定的软件来源不可禁用。"
+msgstr "指定的软件来源无法禁用。"
 
 #: PkStrings.cpp:691
 #, kde-format
@@ -1553,7 +1553,7 @@ msgid ""
 "One of the selected packages failed to configure correctly.\n"
 "More information is available in the detailed report."
 msgstr ""
-"选中的软件包之一无法正确配置。\n"
+"选中的软件包中有一个软件包配置失败。\n"
 "更多信息请见详细报告。"
 
 #: PkStrings.cpp:697
@@ -1562,7 +1562,7 @@ msgid ""
 "One of the selected packages failed to build correctly.\n"
 "More information is available in the detailed report."
 msgstr ""
-"选中的软件包之一无法被正确构建。\n"
+"选中的软件包中有一个软件包构建失败。\n"
 "更多信息请见详细报告。"
 
 #: PkStrings.cpp:700
@@ -1571,7 +1571,7 @@ msgid ""
 "One of the selected packages failed to install correctly.\n"
 "More information is available in the detailed report."
 msgstr ""
-"选中的软件包之一无法被正确安装。\n"
+"选中的软件包中有一个软件包安装失败。\n"
 "更多信息请见详细报告。"
 
 #: PkStrings.cpp:703
@@ -1580,7 +1580,7 @@ msgid ""
 "One of the selected packages failed to be removed correctly.\n"
 "More information is available in the detailed report."
 msgstr ""
-"选中的软件包之一无法被正确移除。\n"
+"选中的软件包中有一个软件包移除失败。\n"
 "更多信息请见详细报告。"
 
 #: PkStrings.cpp:706
@@ -1589,18 +1589,18 @@ msgid ""
 "A program is running that has to be closed before the update can proceed.\n"
 "More information is available in the detailed report."
 msgstr ""
-"一个正在运行的程序必须先被关闭之后才能更新。\n"
+"必须先关闭某个正在运行的程序之后才能进行更新。\n"
 "更多信息请见详细报告。"
 
 #: PkStrings.cpp:709
 #, kde-format
 msgid "The package database was changed while the request was running."
-msgstr "请求运行时软件包数据库被更改。"
+msgstr "软件包数据库在安装请求运行的过程中发生了更改。"
 
 #: PkStrings.cpp:711
 #, kde-format
 msgid "The virtual provide type is not supported by this system."
-msgstr "此虚拟包提供类型不受此系统支持。"
+msgstr "系统不支持此虚拟包提供类型。"
 
 #: PkStrings.cpp:713
 #, kde-format
@@ -1610,19 +1610,19 @@ msgstr "安装根目录无效。请联系您的系统管理员。"
 #: PkStrings.cpp:715
 #, kde-format
 msgid "The list of software could not be downloaded."
-msgstr "软件列表无法下载。"
+msgstr "无法下载软件列表。"
 
 #: PkStrings.cpp:717
 #, kde-format
 msgid ""
 "The transaction has been cancelled and will be retried when the system is "
 "idle."
-msgstr "操作已被取消，将在系统空闲时重试。"
+msgstr "安装进程已被取消，将在系统空闲时重试。"
 
 #: PkStrings.cpp:719
 #, kde-format
 msgid "A previous package management transaction was interrupted."
-msgstr "之前的软件包管理操作被中断。"
+msgstr "之前的软件包安装进程已被中断。"
 
 #: PkStrings.cpp:721
 #, kde-format
@@ -1642,13 +1642,13 @@ msgstr ""
 #, kde-format
 msgctxt "The group type"
 msgid "Accessibility"
-msgstr "辅助"
+msgstr "无障碍辅助"
 
 #: PkStrings.cpp:736
 #, kde-format
 msgctxt "The group type"
 msgid "Accessories"
-msgstr "附件"
+msgstr "系统附件"
 
 #: PkStrings.cpp:738
 #, kde-format
@@ -1666,7 +1666,7 @@ msgstr "游戏"
 #, kde-format
 msgctxt "The group type"
 msgid "Graphics"
-msgstr "图像"
+msgstr "图形图像处理"
 
 #: PkStrings.cpp:744
 #, kde-format
@@ -1708,25 +1708,25 @@ msgstr "系统"
 #, kde-format
 msgctxt "The group type"
 msgid "GNOME desktop"
-msgstr "GNOME 桌面"
+msgstr "GNOME 桌面环境"
 
 #: PkStrings.cpp:758
 #, kde-format
 msgctxt "The group type"
 msgid "KDE desktop"
-msgstr "KDE 桌面"
+msgstr "KDE 桌面环境"
 
 #: PkStrings.cpp:760
 #, kde-format
 msgctxt "The group type"
 msgid "XFCE desktop"
-msgstr "XFCE 桌面"
+msgstr "XFCE 桌面环境"
 
 #: PkStrings.cpp:762
 #, kde-format
 msgctxt "The group type"
 msgid "Other desktops"
-msgstr "其他桌面"
+msgstr "其他桌面环境"
 
 #: PkStrings.cpp:764
 #, kde-format
@@ -1750,13 +1750,13 @@ msgstr "字体"
 #, kde-format
 msgctxt "The group type"
 msgid "Admin tools"
-msgstr "系统工具"
+msgstr "管理工具"
 
 #: PkStrings.cpp:772
 #, kde-format
 msgctxt "The group type"
 msgid "Legacy"
-msgstr "继承"
+msgstr "旧式软件"
 
 #: PkStrings.cpp:774
 #, kde-format
@@ -1822,7 +1822,7 @@ msgstr "文档"
 #, kde-format
 msgctxt "The group type"
 msgid "Electronics"
-msgstr "电子学"
+msgstr "电子"
 
 #: PkStrings.cpp:796
 #, kde-format
@@ -1858,7 +1858,7 @@ msgstr "次要更新"
 #, kde-format
 msgctxt "The type of update"
 msgid "Normal update"
-msgstr "常规更新"
+msgstr "一般更新"
 
 #: PkStrings.cpp:817
 #, kde-format
@@ -1876,7 +1876,7 @@ msgstr "安全更新"
 #, kde-format
 msgctxt "The type of update"
 msgid "Bug fix update"
-msgstr "错误修复更新"
+msgstr "程序缺陷修复更新"
 
 #: PkStrings.cpp:823
 #, kde-format
@@ -1911,7 +1911,7 @@ msgstr "未知更新"
 #: PkStrings.cpp:844
 #, kde-format
 msgid "No Updates Available"
-msgstr "无可用更新"
+msgstr "没有可用的更新"
 
 #: PkStrings.cpp:847
 #, kde-format
@@ -1945,78 +1945,78 @@ msgstr[0] "%1 个更新"
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Selected"
 msgid_plural "%1 Selected"
-msgstr[0] "已选 %1 个"
+msgstr[0] "已选择 %1 个"
 
 #: PkStrings.cpp:860
 #, kde-format
 msgid "No Packages"
-msgstr "无软件包"
+msgstr "没有软件包"
 
 #: PkStrings.cpp:862
 #, kde-format
 msgid "1 Package"
 msgid_plural "%1 Packages"
-msgstr[0] "%1 软件包"
+msgstr[0] "%1 个软件包"
 
 #: PkStrings.cpp:870
 #, kde-format
 msgid "No restart is necessary"
-msgstr "不需要重启"
+msgstr "无需重新启动"
 
 #: PkStrings.cpp:872
 #, kde-format
 msgid "You will be required to restart this application"
-msgstr "您需要重启应用程序"
+msgstr "您需要重新启动应用程序"
 
 #: PkStrings.cpp:874
 #, kde-format
 msgid "You will be required to log out and back in"
-msgstr "您需要注销并再次登录"
+msgstr "您需要注销并重新登录"
 
 #: PkStrings.cpp:876
 #, kde-format
 msgid "A restart will be required"
-msgstr "需要重启"
+msgstr "需要重新启动"
 
 #: PkStrings.cpp:878
 #, kde-format
 msgid "You will be required to log out and back in due to a security update."
-msgstr "由于进行了安全更新，您需要注销并再次登录。"
+msgstr "由于安装了安全更新，您需要注销并重新登录。"
 
 #: PkStrings.cpp:880
 #, kde-format
 msgid "A restart will be required due to a security update."
-msgstr "由于进行了安全更新，需要重启。"
+msgstr "由于安装了安全更新，需要重新启动。"
 
 #: PkStrings.cpp:893
 #, kde-format
 msgid "No restart is required"
-msgstr "不需要重启"
+msgstr "无需重新启动"
 
 #: PkStrings.cpp:895
 #, kde-format
 msgid "A restart is required"
-msgstr "需要重启"
+msgstr "需要重新启动"
 
 #: PkStrings.cpp:897
 #, kde-format
 msgid "You need to log out and log back in"
-msgstr "您需要注销并再次登录"
+msgstr "您需要注销并重新登录"
 
 #: PkStrings.cpp:899
 #, kde-format
 msgid "You need to restart the application"
-msgstr "您需要重启应用程序"
+msgstr "您需要重新启动应用程序"
 
 #: PkStrings.cpp:901
 #, kde-format
 msgid "You need to log out and log back in to remain secure."
-msgstr "为保证安全，您需要注销并再次登录。"
+msgstr "为了确保系统的安全性，您需要注销并重新登录。"
 
 #: PkStrings.cpp:903
 #, kde-format
 msgid "A restart is required to remain secure."
-msgstr "为保证安全，需要重新启动。"
+msgstr "为了确保系统的安全性，需要重新启动。"
 
 #: PkStrings.cpp:916
 #, kde-format
@@ -2036,22 +2036,22 @@ msgstr "测试"
 #: PkStrings.cpp:933
 #, kde-format
 msgid "Please insert the CD labeled '%1', and press continue."
-msgstr "请插入标签为“%1”的 CD，并按继续。"
+msgstr "请插入标签为“%1”的 CD，然后点击继续。"
 
 #: PkStrings.cpp:935
 #, kde-format
 msgid "Please insert the DVD labeled '%1', and press continue."
-msgstr "请插入标签为“%1”的 DVD，并按继续。"
+msgstr "请插入标签为“%1”的 DVD，然后点击继续。"
 
 #: PkStrings.cpp:937
 #, kde-format
 msgid "Please insert the disc labeled '%1', and press continue."
-msgstr "请插入标签为“%1”的盘片，并按继续。"
+msgstr "请插入标签为“%1”的盘片，然后点击继续。"
 
 #: PkStrings.cpp:939 PkStrings.cpp:942
 #, kde-format
 msgid "Please insert the medium labeled '%1', and press continue."
-msgstr "请插入标签为“%1”的媒体，并按继续。"
+msgstr "请插入标签为“%1”的媒体，然后点击继续。"
 
 #: PkStrings.cpp:950
 #, kde-format
@@ -2061,17 +2061,17 @@ msgstr "您没有进行此操作的必需的权限。"
 #: PkStrings.cpp:952
 #, kde-format
 msgid "Could not get a transaction id from packagekitd."
-msgstr "无法从 packagekitd 获得交易 ID。"
+msgstr "无法从 packagekitd 获取安装进程 ID。"
 
 #: PkStrings.cpp:954
 #, kde-format
 msgid "Cannot connect to this transaction id."
-msgstr "无法连接到交易 ID。"
+msgstr "无法连接到此安装进程 ID。"
 
 #: PkStrings.cpp:956
 #, kde-format
 msgid "This action is unknown."
-msgstr "此操作未知。"
+msgstr "未知的操作。"
 
 #: PkStrings.cpp:958
 #, kde-format
@@ -2096,12 +2096,12 @@ msgstr "尚未支持此功能。"
 #: PkStrings.cpp:966
 #, kde-format
 msgid "Could not talk to packagekitd."
-msgstr "无法与 packagekitd 对话。"
+msgstr "无法与 packagekitd 建立通信。"
 
 #: PkStrings.cpp:968
 #, kde-format
 msgid "Error talking to packagekitd."
-msgstr "与 packagekitd 对话遇到错误。"
+msgstr "与 packagekitd 建立通信时发生错误。"
 
 #: PkStrings.cpp:971 PkStrings.cpp:974
 #, kde-format
@@ -2111,7 +2111,7 @@ msgstr "发生未知错误。"
 #: PkStrings.cpp:988 pkupdates.cpp:170
 #, kde-format
 msgid "Your system is up to date"
-msgstr "系统已为最新"
+msgstr "系统已更新到最新状态"
 
 #: PkStrings.cpp:990
 #, kde-format
@@ -2121,17 +2121,17 @@ msgstr "没有更新"
 #: PkStrings.cpp:992
 #, kde-format
 msgid "Last check for updates was more than a month ago"
-msgstr "距离上次检查更新时间已经超过一个月"
+msgstr "距离上次检查更新已经超过一个月"
 
 #: PkStrings.cpp:1000
 #, kde-format
 msgid "Verified %1 ago"
-msgstr "%1前验证"
+msgstr "在 %1 之前验证"
 
 #: PkStrings.cpp:1002
 #, kde-format
 msgid "It's strongly recommended that you check for new updates now"
-msgstr "强烈建议现在就检查是否有更新"
+msgstr "强烈建议立即检查更新"
 
 #: pkupdates.cpp:54
 #, kde-format
@@ -2156,13 +2156,13 @@ msgstr "正在安装更新"
 #: pkupdates.cpp:146
 #, kde-format
 msgid "Working"
-msgstr "正在工作中"
+msgstr "正在处理"
 
 #: pkupdates.cpp:149 pkupdates.cpp:439
 #, kde-format
 msgid "You have 1 new update"
 msgid_plural "You have %1 new updates"
-msgstr[0] "您有 %1 个新的更新"
+msgstr[0] "系统有 %1 个更新"
 
 #: pkupdates.cpp:151
 #, kde-format
@@ -2179,7 +2179,7 @@ msgstr[0] "%1 个重要更新"
 #: pkupdates.cpp:158
 #, kde-format
 msgid " and "
-msgstr "和"
+msgstr " 和 "
 
 #: pkupdates.cpp:158
 #, kde-format
@@ -2189,7 +2189,7 @@ msgstr "(包括 %1)"
 #: pkupdates.cpp:160
 #, kde-format
 msgid "Your system is offline"
-msgstr "系统出于离线状态"
+msgstr "系统处在离线状态"
 
 #: pkupdates.cpp:165
 #, kde-format
@@ -2204,12 +2204,12 @@ msgstr "检查更新失败"
 #: pkupdates.cpp:241
 #, kde-format
 msgid "Last check: %1 ago"
-msgstr "最后检查于：%1前"
+msgstr "上次检查更新：%1 前"
 
 #: pkupdates.cpp:243
 #, kde-format
 msgid "Last check: never"
-msgstr "最后检查于：从未"
+msgstr "上次检查更新：从未检查"
 
 #: pkupdates.cpp:385
 #, kde-format
@@ -2242,23 +2242,23 @@ msgstr "更新错误"
 #: pkupdates.cpp:593
 #, kde-format
 msgid "Restart is required"
-msgstr "需要重启"
+msgstr "需要重新启动"
 
 #: pkupdates.cpp:594
 #, kde-format
 msgid ""
 "The computer will have to be restarted after the update for the changes to "
 "take effect."
-msgstr "更新后计算机必须重启才能使更新生效。"
+msgstr "更新后必须重新启动电脑才能生效。"
 
 #: pkupdates.cpp:603
 #, kde-format
 msgid "Session restart is required"
-msgstr "需要重启会话"
+msgstr "需要重新启动会话"
 
 #: pkupdates.cpp:604
 #, kde-format
 msgid ""
 "You will need to log out and back in after the update for the changes to "
 "take effect."
-msgstr "由于进行了安全更新，您需要注销并再次登录。"
+msgstr "更新后必须注销并重新登录才能生效。"
