@@ -31,5 +31,7 @@ Makefile*
 *.qmlproject.user
 *.qmlproject.user.*
 
+.vscode
+
 # The file src/plasma/metadata.desktop is generated.
 src/plasma/metadata.desktop
