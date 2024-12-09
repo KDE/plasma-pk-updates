@@ -1,22 +1,22 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 # Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail.com>, 2015, 2017.
-# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2019, 2023.
+# SPDX-FileCopyrightText: 2024 Adrián Chaves (Gallaecio)
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-05 12:39+0000\n"
-"PO-Revision-Date: 2023-04-28 20:23+0200\n"
+"PO-Revision-Date: 2024-12-08 15:47+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
-"Language-Team: Galician <proxecto@trasno.gal>\n"
+"Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.0\n"
+"X-Generator: Lokalize 24.08.3\n"
 
 #: PkStrings.cpp:37
 #, kde-format
@@ -94,7 +94,7 @@ msgstr "Instalando paquetes"
 #, kde-format
 msgctxt "transaction state, refreshing internal lists"
 msgid "Refreshing software list"
-msgstr "Anovando a lista de software"
+msgstr "Anovando a lista de programas"
 
 #: PkStrings.cpp:82
 #, kde-format
@@ -927,7 +927,7 @@ msgstr "Os paquetes non son compatíbeis"
 #: PkStrings.cpp:460
 #, kde-format
 msgid "Problem connecting to a software origin"
-msgstr "Hai problemas ao conectarse a unha fonte de software"
+msgstr "Hai problemas ao conectarse a unha fonte de programas"
 
 #: PkStrings.cpp:462
 #, kde-format
@@ -1189,8 +1189,8 @@ msgid ""
 "Please check your software signature settings."
 msgstr ""
 "Non foi posíbel estabelecer unha relación de confianza coa fonte de "
-"software.\n"
-"Revise a configuración de sinatura de software."
+"programas.\n"
+"Revise a configuración de sinatura do programa."
 
 #: PkStrings.cpp:570
 #, kde-format
@@ -1205,7 +1205,7 @@ msgid ""
 "software origin."
 msgstr ""
 "O paquete que se está a modificar non se atopou nin sistema nin en ningunha "
-"fonte de software."
+"fonte de programas."
 
 #: PkStrings.cpp:574
 #, kde-format
@@ -1239,7 +1239,7 @@ msgid ""
 msgstr ""
 "Non foi posíbel cargar a lista de grupos.\n"
 "Pódeche axudar actualizar a caché, aínda que normalmente isto é un erro da "
-"fonte de software."
+"fonte de programas."
 
 #: PkStrings.cpp:586
 #, kde-format
@@ -1280,8 +1280,8 @@ msgid ""
 "The remote software origin name was not found.\n"
 "You may need to enable an item in Software Origins."
 msgstr ""
-"Non se atopou o nome da fonte remota de software.\n"
-"Poida que teñas que activar un elemento nas fontes de software."
+"Non se atopou o nome da fonte remota de programas.\n"
+"Poida que teñas que activar un elemento nas fontes de programas."
 
 #: PkStrings.cpp:600
 #, kde-format
@@ -1332,7 +1332,7 @@ msgid ""
 "To use this software you have to accept the license."
 msgstr ""
 "Non se aceptou o acordo de licenza.\n"
-"Para usar este software terás que aceptar a licenza."
+"Para usar este programa terá que aceptar a licenza."
 
 #: PkStrings.cpp:618
 #, kde-format
@@ -1341,7 +1341,8 @@ msgid ""
 "This is usually due to mixing packages for different software origins."
 msgstr ""
 "Fornecen o mesmo ficheiro dous paquetes.\n"
-"Polo xeral isto débese a que se mesturan paquetes de distintas fontes."
+"Polo xeral isto débese a que se mesturan paquetes de distintas fontes de "
+"programas."
 
 #: PkStrings.cpp:621
 #, kde-format
@@ -1350,7 +1351,8 @@ msgid ""
 "This is usually due to mixing packages from different software origins."
 msgstr ""
 "Hai varios paquetes incompatíbeis entre si.\n"
-"Polo xeral isto débese a que se mesturan paquetes de distintas fontes."
+"Polo xeral isto débese a que se mesturan paquetes de distintas fontes de "
+"programas."
 
 #: PkStrings.cpp:624
 #, kde-format
@@ -1359,7 +1361,7 @@ msgid ""
 "Please check the detailed error for further details."
 msgstr ""
 "Ocorreu un problema (posibelmente temporal) ao conectar cunha fonte de "
-"software.\n"
+"programas.\n"
 "Comprobe o erro detallado para máis información."
 
 #: PkStrings.cpp:627
@@ -1474,7 +1476,7 @@ msgid ""
 "There were no more download mirrors that could be tried."
 msgstr ""
 "Non foi posíbel atopar os datos requiridos en ningunha das fontes de "
-"software configuradas.\n"
+"programas configuradas.\n"
 "Non había máis réplicas de descarga onde probar a atopalo."
 
 #: PkStrings.cpp:665
@@ -1485,7 +1487,7 @@ msgid ""
 "The list of distribution upgrades will be unavailable."
 msgstr ""
 "Non foi posíbel atopar os datos de anovación requiridos en ningunha das "
-"fontes de software coñecidas.\n"
+"fontes de programas coñecidas.\n"
 "Non había máis sitios de replica onde intentalo."
 
 #: PkStrings.cpp:668
@@ -1554,7 +1556,7 @@ msgstr "A información sobre o que precisa este paquete non se puido obter."
 #: PkStrings.cpp:689
 #, kde-format
 msgid "The specified software origin could not be disabled."
-msgstr "Non foi posíbel desactivar a fonte de software especificada."
+msgstr "Non foi posíbel desactivar a fonte de programas indicada."
 
 #: PkStrings.cpp:691
 #, kde-format
@@ -1630,7 +1632,7 @@ msgstr "O root de instalación é incorrecto. Contacta co teu administrador."
 #: PkStrings.cpp:715
 #, kde-format
 msgid "The list of software could not be downloaded."
-msgstr "Non foi posíbel descargar a lista de software."
+msgstr "Non foi posíbel descargar a lista de programas."
 
 #: PkStrings.cpp:717
 #, kde-format
@@ -1826,7 +1828,7 @@ msgstr "Mapas"
 #, kde-format
 msgctxt "The group type"
 msgid "Software sources"
-msgstr "Fontes de software"
+msgstr "Fontes de programas"
 
 #: PkStrings.cpp:790
 #, kde-format
